@@ -9,10 +9,6 @@
     "url": "https://github.com/pplancq/dev-tools",
     "directory": "packages/prettier-config"
   },
-  "scripts": {
-    "prettier": "prettier . --check",
-    "prettier:fix": "prettier . --write"
-  },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },

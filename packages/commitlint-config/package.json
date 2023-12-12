@@ -9,9 +9,6 @@
     "url": "https://github.com/pplancq/dev-tools",
     "directory": "packages/commitlint-config"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
