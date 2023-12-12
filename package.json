@@ -11,6 +11,7 @@
   "scripts": {
     "prettier": "prettier . --check",
     "prettier:fix": "prettier . --write",
+    "release": "multi-semantic-release",
     "prepare": "husky install"
   },
   "bugs": {
@@ -26,6 +27,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@anolilab/multi-semantic-release": "^1.0.3",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0"
   },
@@ -36,6 +38,11 @@
   "commitlint": {
     "extends": [
       "@pplancq/commitlint-config"
+    ]
+  },
+  "release": {
+    "extends": [
+      "@pplancq/semantic-release-config"
     ]
   },
   "volta": {
