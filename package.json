@@ -9,7 +9,9 @@
     "url": "https://github.com/pplancq/dev-tools"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier . --check",
+    "prettier:fix": "prettier . --write",
+    "prepare": "husky install"
   },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
@@ -23,6 +25,19 @@
   "workspaces": [
     "packages/*"
   ],
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0"
+  },
+  "lint-staged": {
+    "*": "prettier --write"
+  },
+  "prettier": "@pplancq/prettier-config",
+  "commitlint": {
+    "extends": [
+      "@pplancq/commitlint-config"
+    ]
+  },
   "volta": {
     "node": "20.10.0",
     "npm": "10.2.5"
