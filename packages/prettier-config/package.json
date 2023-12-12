@@ -24,6 +24,9 @@
     "prettier",
     "config"
   ],
+  "dependencies": {
+    "prettier-plugin-sh": "^0.13.1"
+  },
   "peerDependencies": {
     "prettier": "^3.1.1"
   },
