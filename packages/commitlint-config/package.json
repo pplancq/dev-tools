@@ -20,6 +20,12 @@
     "commitlint",
     "config"
   ],
+  "dependencies": {
+    "@commitlint/config-conventional": "^18.4.3"
+  },
+  "peerDependencies": {
+    "@commitlint/cli": "^18.4.3"
+  },
   "volta": {
     "node": "20.10.0",
     "npm": "10.2.5"
