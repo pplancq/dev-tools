@@ -1,0 +1,27 @@
+{
+  "name": "@pplancq/prettier-config",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "pplancq prettier config",
+  "author": "pplancq <paul.plancq@outlook.fr>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pplancq/dev-tools",
+    "directory": "packages/prettier-config"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/pplancq/dev-tools/issues"
+  },
+  "main": "index.js",
+  "keywords": [
+    "prettier",
+    "config"
+  ],
+  "volta": {
+    "node": "20.10.0",
+    "npm": "10.2.5"
+  }
+}
