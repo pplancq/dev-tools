@@ -17,6 +17,9 @@
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
   "main": "index.js",
+  "bin": {
+    "init-prettier-config": "bin/init.js"
+  },
   "keywords": [
     "prettier",
     "config"
