@@ -17,6 +17,18 @@
     "semantic-release",
     "config"
   ],
+  "dependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.6",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "conventional-changelog-conventionalcommits": "^7.0.2"
+  },
+  "peerDependencies": {
+    "semantic-release": "^22.0.12"
+  },
   "volta": {
     "node": "20.10.0",
     "npm": "10.2.5"
