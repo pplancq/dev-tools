@@ -1,0 +1,3 @@
+module.exports = {
+  extends: ['./rules/baseCss.js', './rules/order.js'].map(require.resolve),
+};

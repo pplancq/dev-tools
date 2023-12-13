@@ -17,6 +17,13 @@
     "stylelint",
     "config"
   ],
+  "dependencies": {
+    "stylelint-config-pretty-order": "^0.4.1",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">=15.11.0"
+  },
   "volta": {
     "node": "20.10.0",
     "npm": "10.2.5"
