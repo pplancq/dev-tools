@@ -9,6 +9,7 @@
     "url": "https://github.com/pplancq/dev-tools"
   },
   "scripts": {
+    "lint": "concurrently --prefix-colors magenta,cyan \"npm:eslint\" \"npm:prettier\"",
     "eslint": "eslint . --ext js,jsx,ts,tsx",
     "eslint:fix": "eslint . --ext js,jsx,ts,tsx --fix",
     "prettier": "prettier \"**/*.!(js|jsx|ts|tsx)\" --check",
@@ -30,6 +31,7 @@
   ],
   "devDependencies": {
     "@anolilab/multi-semantic-release": "^1.0.3",
+    "concurrently": "^8.2.2",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0"
   },
