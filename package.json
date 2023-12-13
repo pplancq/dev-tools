@@ -9,8 +9,10 @@
     "url": "https://github.com/pplancq/dev-tools"
   },
   "scripts": {
-    "prettier": "prettier . --check",
-    "prettier:fix": "prettier . --write",
+    "eslint": "eslint . --ext js,jsx,ts,tsx",
+    "eslint:fix": "eslint . --ext js,jsx,ts,tsx --fix",
+    "prettier": "prettier \"**/*.!(js|jsx|ts|tsx)\" --check",
+    "prettier:fix": "prettier \"**/*.!(js|jsx|ts|tsx)\" --write",
     "release": "multi-semantic-release",
     "prepare": "husky install"
   },
@@ -32,9 +34,15 @@
     "lint-staged": "^15.2.0"
   },
   "lint-staged": {
-    "*": "prettier --write"
+    "*.(js|jsx|ts|tsx)": "eslint --fix",
+    "*.!(js|jsx|ts|tsx)": "prettier --write"
   },
   "prettier": "@pplancq/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "@pplancq/eslint-config/node"
+    ]
+  },
   "commitlint": {
     "extends": [
       "@pplancq/commitlint-config"

@@ -1,4 +1,5 @@
 .husky/
 .npmignore
 .prettierignore
+.gitignore
 LICENSE
