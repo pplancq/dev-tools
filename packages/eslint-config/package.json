@@ -17,6 +17,13 @@
     "eslint",
     "config"
   ],
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.55.0"
+  },
   "volta": {
     "node": "20.10.0",
     "npm": "10.2.5"
