@@ -18,6 +18,9 @@
     "./jest": "./jest.js",
     "./vitest": "./vitest.js"
   },
+  "bin": {
+    "init-eslint-config": "./bin/init.js"
+  },
   "keywords": [
     "eslint",
     "config"
