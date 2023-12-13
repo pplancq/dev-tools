@@ -1,0 +1,24 @@
+{
+  "name": "@pplancq/eslint-config",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "pplancq eslint config",
+  "author": "pplancq <paul.plancq@outlook.fr>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pplancq/dev-tools",
+    "directory": "packages/eslint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/pplancq/dev-tools/issues"
+  },
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "config"
+  ],
+  "volta": {
+    "node": "20.10.0",
+    "npm": "10.2.5"
+  }
+}
