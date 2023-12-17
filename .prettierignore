@@ -2,4 +2,5 @@
 .npmignore
 .prettierignore
 .gitignore
+.env
 LICENSE

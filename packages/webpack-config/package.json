@@ -14,6 +14,9 @@
   },
   "main": "index.js",
   "types": "index.d.ts",
+  "bin": {
+    "init-webpack-config": "./bin/init.js"
+  },
   "keywords": [
     "webpack",
     "config"
