@@ -13,6 +13,9 @@
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
   "main": "index.js",
+  "bin": {
+    "init-postcss-config": "bin/init.js"
+  },
   "keywords": [
     "postcss",
     "config"
