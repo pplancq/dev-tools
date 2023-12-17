@@ -43,6 +43,9 @@
   "eslintConfig": {
     "extends": [
       "@pplancq/eslint-config/node"
+    ],
+    "ignorePatterns": [
+      "packages/react-template/*"
     ]
   },
   "commitlint": {

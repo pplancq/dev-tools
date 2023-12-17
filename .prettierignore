@@ -4,3 +4,4 @@
 .gitignore
 .env
 LICENSE
+packages/react-template/

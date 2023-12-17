@@ -9,6 +9,10 @@
     "url": "https://github.com/pplancq/dev-tools",
     "directory": "packages/webpack-config"
   },
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack --mode production"
+  },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
@@ -16,8 +20,32 @@
     "react",
     "template"
   ],
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@pplancq/babel-config": "*",
+    "@pplancq/postcss-config": "*",
+    "@pplancq/webpack-config": "*",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "typescript": "^5.3.3"
+  },
   "volta": {
     "node": "20.10.0",
     "npm": "10.2.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
