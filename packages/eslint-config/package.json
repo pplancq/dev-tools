@@ -12,7 +12,12 @@
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
-  "main": "index.js",
+  "exports": {
+    "./node": "./node.js",
+    "./react": "./react.js",
+    "./jest": "./jest.js",
+    "./vitest": "./vitest.js"
+  },
   "keywords": [
     "eslint",
     "config"
@@ -24,12 +29,16 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jest": "^27.6.0",
     "eslint-plugin-jest-dom": "^5.1.0",
+    "eslint-plugin-jest-extended": "^2.0.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-testing-library": "^6.2.0"
+    "eslint-plugin-testing-library": "^6.2.0",
+    "eslint-plugin-vitest": "^0.3.17",
+    "eslint-plugin-vitest-globals": "^1.4.0"
   },
   "peerDependencies": {
     "prettier": "^3.1.1",
