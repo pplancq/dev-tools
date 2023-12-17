@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies, import/no-default-export, @typescript-eslint/triple-slash-reference */
 /// <reference types="react" />
 /// <reference types="react-dom" />
 
