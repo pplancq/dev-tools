@@ -1,0 +1,23 @@
+{
+  "name": "@pplancq/react-template",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "react template",
+  "author": "pplancq <paul.plancq@outlook.fr>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pplancq/dev-tools",
+    "directory": "packages/webpack-config"
+  },
+  "bugs": {
+    "url": "https://github.com/pplancq/dev-tools/issues"
+  },
+  "keywords": [
+    "react",
+    "template"
+  ],
+  "volta": {
+    "node": "20.10.0",
+    "npm": "10.2.5"
+  }
+}
