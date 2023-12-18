@@ -4,14 +4,20 @@
   "license": "MIT",
   "description": "Dev tools for React App",
   "author": "pplancq <paul.plancq@outlook.fr>",
+  "contributors": [
+    "Triki-Ahmed <ahmed.triki.1996@gmail.com>"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/pplancq/dev-tools"
   },
   "scripts": {
-    "lint": "concurrently --prefix-colors magenta,cyan \"npm:eslint\" \"npm:prettier\"",
-    "eslint": "eslint . --ext js,jsx,ts,tsx",
-    "eslint:fix": "eslint . --ext js,jsx,ts,tsx --fix",
+    "lint": "concurrently --prefix-colors auto \"npm:eslint\" \"npm:prettier\" \"npm:stylelint\" \"npm:tsc\"",
+    "eslint": "eslint . --ext js,jsx,ts,tsx --ignore-pattern packages/react-template && npm run eslint -w @pplancq/react-template",
+    "eslint:fix": "eslint . --ext js,jsx,ts,tsx --fix --ignore-pattern packages/react-template npm run eslint:fix -w @pplancq/react-template",
+    "stylelint": "npm run stylelint -w @pplancq/react-template",
+    "stylelint:fix": "npm run stylelint:fix -w @pplancq/react-template",
+    "tsc": "npm run tsc -w @pplancq/react-template",
     "prettier": "prettier \"**/*.!(js|jsx|ts|tsx)\" --check",
     "prettier:fix": "prettier \"**/*.!(js|jsx|ts|tsx)\" --write",
     "release": "multi-semantic-release",
@@ -36,16 +42,13 @@
     "lint-staged": "^15.2.0"
   },
   "lint-staged": {
-    "*.(js|jsx|ts|tsx)": "eslint --fix",
+    "*.(js|jsx|ts|tsx)": "eslint --ignore-pattern packages/react-template --fix",
     "*.!(js|jsx|ts|tsx)": "prettier --write"
   },
   "prettier": "@pplancq/prettier-config",
   "eslintConfig": {
     "extends": [
       "@pplancq/eslint-config/node"
-    ],
-    "ignorePatterns": [
-      "packages/react-template/*"
     ]
   },
   "commitlint": {
