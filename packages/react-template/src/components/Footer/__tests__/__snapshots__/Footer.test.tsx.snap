@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Footer Component > should render the Footer component correctly 1`] = `
+<div>
+  <div
+    class="_container_eb428f"
+  >
+    <hr />
+    <a
+      href="/"
+    >
+      <img
+        alt="logo"
+        class="_logoStyle_a0661f"
+        src="/src/assets/images/logo.png"
+        style="width: 50px;"
+      />
+    </a>
+  </div>
+</div>
+`;

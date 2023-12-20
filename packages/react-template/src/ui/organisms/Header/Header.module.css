@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00008f;
+}
+
+@media screen and (width <= 900px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

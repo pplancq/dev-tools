@@ -1,0 +1,10 @@
+footer {
+  width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  letter-spacing: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: #00008f;
+}

@@ -1,3 +1,5 @@
+import { queryClient } from '@Front/config';
+import { withProvider } from '@Front/providers';
 import { createRouter } from '@Front/routing/routerFactory';
 import { RouterProvider } from 'react-router-dom';
 
@@ -7,8 +9,10 @@ type AppProps = {
   basename?: string;
 };
 
+const AppWithProviders = withProvider(RouterProvider);
+
 export const App = ({ basename }: AppProps) => {
   const router = createRouter({ basename });
 
-  return <RouterProvider router={router} />;
+  return <AppWithProviders queryClient={queryClient} router={router} />;
 };

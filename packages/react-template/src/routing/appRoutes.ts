@@ -1,3 +1,4 @@
 export const approutes = {
-  demo: '/',
+  home: '/',
+  reactQueryDemo: '/reactQueryDemo',
 };

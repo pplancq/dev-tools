@@ -1,0 +1,518 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Demo Component > should render the Demo component correctly 1`] = `
+<div>
+  <div
+    class="_container_85a2c3"
+  >
+    <div
+      class="_bigTitleStyle_85a2c3"
+    >
+      Welcome to Your React Starter Kit
+      <span>
+        Welcome
+      </span>
+    </div>
+    <div
+      class="_foo_85a2c3"
+    >
+      FlexBlug
+    </div>
+    <div
+      class="_paragraphContainer_85a2c3"
+    >
+      <h1
+        class="_titleStyle_85a2c3"
+      >
+        Overview
+      </h1>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <span
+          class="_centredText_85a2c3"
+        >
+          <p
+            class="_paragraphStyle_85a2c3"
+          >
+            <span
+              class="_highlight_85a2c3"
+            >
+              Congratulations
+            </span>
+             on starting your project with our
+             
+            <span
+              class="_highlight_85a2c3"
+            >
+              React Starter Kit!
+            </span>
+             This kit is designed to jumpstart your development with a well-organized project structure and pre-configured tools.
+          </p>
+          <p
+            class="_paragraphStyle_85a2c3"
+          >
+            Below, you'll find an overview of the key features, tools, and architecture used in this starter kit.
+          </p>
+        </span>
+      </div>
+    </div>
+    <img
+      alt="template"
+      class="_imagePlace_85a2c3"
+      src="/src/assets/images/templatePlugins.png"
+    />
+    <div
+      class="_paragraphContainer_85a2c3"
+    >
+      <h1
+        class="_titleStyle_85a2c3"
+      >
+        Objective
+      </h1>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <p
+          class="_paragraphStyle_85a2c3"
+        >
+          The goal of this 
+          <span
+            class="_boldText_85a2c3"
+          >
+            starter kit
+          </span>
+           is to enable you to quickly start a new project with all the necessary tools.
+        </p>
+        <p
+          class="_paragraphStyle_85a2c3"
+        >
+          Additionally, this 
+          <span
+            class="_boldText_85a2c3"
+          >
+            starter kit
+          </span>
+           offers a robust set of options for structuring your 
+          <span
+            class="_boldText_85a2c3"
+          >
+            React application
+          </span>
+          , providing flexibility to adapt to various project architectures.
+        </p>
+        <p
+          class="_paragraphStyle_85a2c3"
+        >
+          It has been thoughtfully designed not only to expedite the initial setup but also to streamline the implementation of 
+          <span
+            class="_highlight_85a2c3"
+          >
+            Micro-Frontends
+          </span>
+          , making it a versatile solution for projects of different scales. (for more details check the
+           
+          <span
+            class="_highlight_85a2c3"
+          >
+            README.md
+          </span>
+           file)
+        </p>
+      </div>
+    </div>
+    <div
+      class="_paragraphContainer_85a2c3"
+    >
+      <h1
+        class="_titleStyle_85a2c3"
+      >
+        Features
+      </h1>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <p
+          class="_paragraphStyle_85a2c3"
+        >
+          <span
+            class="_boldText_85a2c3"
+          >
+            React: 
+          </span>
+          A JavaScript library for building user interfaces.
+        </p>
+      </div>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <p
+          class="_paragraphStyle_85a2c3"
+        >
+          <span
+            class="_boldText_85a2c3"
+          >
+            TypeScript: 
+          </span>
+          A superset of JavaScript that adds static typing.
+        </p>
+      </div>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <p
+          class="_paragraphStyle_85a2c3"
+        >
+          <span
+            class="_boldText_85a2c3"
+          >
+            React Query: 
+          </span>
+          A library for managing, caching, and updating server state in React applications. (for more details check the
+           
+          <span
+            class="_highlight_85a2c3"
+          >
+            README.md
+          </span>
+           file under the
+           
+          <span
+            class="_boldText_85a2c3"
+          >
+            hooks
+          </span>
+           folder)
+        </p>
+        <div
+          class="_demoStyle_85a2c3"
+        >
+          <a
+            class="_a_85a2c3"
+            href="/reactQueryDemo"
+          >
+            Run Demo
+          </a>
+        </div>
+      </div>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <p
+          class="_paragraphStyle_85a2c3"
+        >
+          <span
+            class="_boldText_85a2c3"
+          >
+            React Router: 
+          </span>
+          A declarative routing solution for React. (for more details check the 
+          <span
+            class="_highlight_85a2c3"
+          >
+            README.md
+          </span>
+           file under the
+           
+          <span
+            class="_boldText_85a2c3"
+          >
+            routing
+          </span>
+           folder)
+        </p>
+      </div>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <p
+          class="_paragraphStyle_85a2c3"
+        >
+          <span
+            class="_boldText_85a2c3"
+          >
+            ...and more: 
+          </span>
+          Explore the
+           
+          <span
+            class="_highlight_85a2c3"
+          >
+            Package.json
+          </span>
+           file to see additional dependencies.
+        </p>
+      </div>
+    </div>
+    <div
+      class="_paragraphContainer_85a2c3"
+    >
+      <h1
+        class="_titleStyle_85a2c3"
+      >
+        Project Structure
+      </h1>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <div
+          class="_tableWrapper_85a2c3"
+        >
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  Folder
+                </th>
+                <th>
+                  Description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    api
+                  </span>
+                </td>
+                <td>
+                  Place your API-related code here.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    assets
+                  </span>
+                </td>
+                <td>
+                  Store your static assets (images, fonts, etc.) in this directory.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    components
+                  </span>
+                </td>
+                <td>
+                  Reusable React components go here.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    config
+                  </span>
+                </td>
+                <td>
+                  Configuration files and environment variables are managed here.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    forms
+                  </span>
+                </td>
+                <td>
+                  Define your forms using React Hook Form.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    hooks
+                  </span>
+                </td>
+                <td>
+                  Custom React hooks to share logic across components.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    pages
+                  </span>
+                </td>
+                <td>
+                  React components that represent individual pages or views.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    providers
+                  </span>
+                </td>
+                <td>
+                  React context providers for state management.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    routing
+                  </span>
+                </td>
+                <td>
+                  Configure your application routes here.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    types
+                  </span>
+                </td>
+                <td>
+                  TypeScript type definitions.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    ui
+                  </span>
+                </td>
+                <td>
+                  Presentational components and styles.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    class="_boldText_85a2c3"
+                  >
+                    utils
+                  </span>
+                </td>
+                <td>
+                  General utility functions.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div
+      class="_paragraphContainer_85a2c3"
+    >
+      <h1
+        class="_titleStyle_85a2c3"
+      >
+        Additional Information
+      </h1>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <ul>
+          <li>
+            - Customize the project configuration in the 
+            <code>
+              config
+            </code>
+             directory.
+          </li>
+          <li>
+            - Explore the 
+            <code>
+              utils
+            </code>
+             directory for utility functions.
+          </li>
+          <li>
+            - Leverage React Query for efficient data fetching.
+          </li>
+          <li>
+            - Take advantage of React Hook Form for managing forms seamlessly.
+          </li>
+          <li>
+            - Refer to the 
+            <code>
+              types
+            </code>
+             directory for TypeScript type definitions.
+          </li>
+        </ul>
+      </div>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <span
+          class="_centredText_85a2c3"
+        >
+          <p
+            class="_paragraphStyle_85a2c3"
+          >
+            Our project is organized into various folders, each containing its own
+             
+            <span
+              class="_highlight_85a2c3"
+            >
+              README.md
+            </span>
+             file with specific details, instructions, and additional information. This documentation will guide you through setting up the environment, understanding the project structure, and using the available components and features. For more details, check the 
+            <span
+              class="_highlight_85a2c3"
+            >
+              README.md
+            </span>
+             file in
+             
+            <span
+              class="_boldText_85a2c3"
+            >
+              each folder of the project
+            </span>
+            .
+          </p>
+        </span>
+      </div>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <span
+          class="_centredText_85a2c3"
+        >
+          <p
+            class="_paragraphStyle_85a2c3"
+          >
+            Feel free to explore and modify the structure to suit your project's needs.
+             
+            <span
+              class="_boldText_85a2c3"
+            >
+              Happy coding!
+            </span>
+          </p>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

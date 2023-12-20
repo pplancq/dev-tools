@@ -1,0 +1,1 @@
+export { withProvider } from './withProviders';

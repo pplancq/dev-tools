@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header Component > should render the Header component correctly 1`] = `
+<div>
+  <div
+    class="_container_63c2ea"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="logo"
+        class="_logoStyle_a0661f"
+        src="/src/assets/images/logo.png"
+        style="width: 50px;"
+      />
+    </a>
+    <nav>
+      <ul
+        class="_navList_75d6d6"
+      >
+        <li>
+          <a
+            aria-current="page"
+            class="_a_75d6d6 active"
+            href="/"
+          >
+            Demo
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;

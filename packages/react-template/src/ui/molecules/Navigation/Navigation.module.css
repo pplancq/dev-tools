@@ -1,0 +1,22 @@
+.navList {
+  padding: 0;
+  list-style: none;
+}
+
+.navList li {
+  display: inline;
+  margin: 20px;
+}
+
+@media screen and (width <= 900px) {
+  .navList li {
+    display: none;
+  }
+}
+
+.a {
+  letter-spacing: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
