@@ -1,0 +1,32 @@
+.inputContainerStyle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%inputStyle {
+  margin: 10px;
+  padding: 10px;
+}
+
+.inputStyle {
+  @extend %inputStyle;
+}
+
+.hasInputError {
+  @extend %inputStyle;
+
+  border: 1px solid red;
+  border-radius: 2px;
+
+  &:focus {
+    border: 2px solid red;
+    outline: none !important;
+  }
+}
+
+.errorsStyle {
+  font-size: x-small;
+  color: red;
+}

@@ -1,0 +1,32 @@
+.container {
+  padding: 32px;
+}
+
+.fieldsetStyle {
+  margin-top: 24px;
+}
+
+.title {
+  padding-top: 16px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #00008f;
+}
+
+.lineStyle {
+  width: 20%;
+}
+
+.paragraph {
+  padding-top: 16px;
+}
+
+.profileSectionStyle {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}

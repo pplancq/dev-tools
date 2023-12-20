@@ -204,6 +204,43 @@ exports[`Demo Component > should render the Demo component correctly 1`] = `
           <span
             class="_boldText_85a2c3"
           >
+            React Hook Form: 
+          </span>
+          A library for managing forms with React hooks. (for more details check the 
+          <span
+            class="_highlight_85a2c3"
+          >
+            README.md
+          </span>
+           file under the
+           
+          <span
+            class="_boldText_85a2c3"
+          >
+            forms
+          </span>
+           folder)
+        </p>
+        <div
+          class="_demoStyle_85a2c3"
+        >
+          <a
+            class="_a_85a2c3"
+            href="/reactHookFormDemo"
+          >
+            Run Demo
+          </a>
+        </div>
+      </div>
+      <div
+        class="_infoSection_85a2c3"
+      >
+        <p
+          class="_paragraphStyle_85a2c3"
+        >
+          <span
+            class="_boldText_85a2c3"
+          >
             React Router: 
           </span>
           A declarative routing solution for React. (for more details check the 

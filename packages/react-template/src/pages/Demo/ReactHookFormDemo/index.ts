@@ -1,0 +1,1 @@
+export { reactHookFormDemoRoutes } from './routes';

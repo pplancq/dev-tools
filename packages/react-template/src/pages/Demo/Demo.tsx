@@ -76,6 +76,18 @@ export const Demo = () => {
             </NavLink>
           </div>
         </div>
+        <div className={classes.infoSection}>
+          <p className={classes.paragraphStyle}>
+            <span className={classes.boldText}>React Hook Form: </span>A library for managing forms with React hooks.
+            (for more details check the <span className={classes.highlight}>README.md</span> file under the{' '}
+            <span className={classes.boldText}>forms</span> folder)
+          </p>
+          <div className={classes.demoStyle}>
+            <NavLink to={approutes.reactHookFormDemo} className={classes.a}>
+              Run Demo
+            </NavLink>
+          </div>
+        </div>
 
         <div className={classes.infoSection}>
           <p className={classes.paragraphStyle}>
