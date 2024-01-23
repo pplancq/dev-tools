@@ -9,6 +9,7 @@
     "url": "https://github.com/pplancq/dev-tools",
     "directory": "packages/create-react-app"
   },
+  "bin": "./index.js",
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
@@ -17,6 +18,10 @@
     "create",
     "react"
   ],
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0"
+  },
   "volta": {
     "node": "20.10.0",
     "npm": "10.2.5"
