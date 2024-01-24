@@ -2,6 +2,7 @@ import { App } from '@Front/components/App';
 import { StrictMode } from 'react';
 import { createRoot, type Root } from 'react-dom/client';
 
+// eslint-disable-next-line import/no-default-export
 export default class Bootstrap extends HTMLElement {
   private readonly root: Root;
 

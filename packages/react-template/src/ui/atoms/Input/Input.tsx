@@ -23,3 +23,5 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({ label, hasError
     </>
   );
 });
+
+Input.displayName = 'Input';
