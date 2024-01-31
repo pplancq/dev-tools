@@ -21,7 +21,7 @@
     "prettier": "prettier \"**/*.!(js|jsx|ts|tsx)\" --check",
     "prettier:fix": "prettier \"**/*.!(js|jsx|ts|tsx)\" --write",
     "release": "multi-semantic-release",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@anolilab/multi-semantic-release": "^1.0.3",
     "concurrently": "^8.2.2",
-    "husky": "^8.0.3",
+    "husky": "^9.0.7",
     "lint-staged": "^15.2.0"
   },
   "lint-staged": {

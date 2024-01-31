@@ -20,7 +20,7 @@
     "stylelint": "stylelint \"src/**/*.{scss,css}\"",
     "stylelint:fix": "stylelint \"src**/*.{scss,css}\" --fix",
     "tsc": "tsc --noEmit",
-    "_prepare": "husky install"
+    "_prepare": "husky"
   },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
@@ -55,8 +55,8 @@
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.0.4",
     "concurrently": "^8.2.2",
-    "husky": "^8.0.3",
-    "jsdom": "^23.0.1",
+    "husky": "^9.0.7",
+    "jsdom": "^24.0.0",
     "lint-staged": "^15.2.0",
     "tsc-files": "^1.1.4",
     "typescript": "^5.3.3",
