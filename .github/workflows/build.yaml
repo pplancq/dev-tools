@@ -13,7 +13,7 @@ env:
 
 jobs:
   install:
-    name: Install pacakge
+    name: Install package
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -31,7 +31,7 @@ jobs:
   lint:
     name: Lint code
     needs:
-      - init
+      - install
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -46,7 +46,7 @@ jobs:
   build:
     name: Build template
     needs:
-      - init
+      - install
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -55,5 +55,5 @@ jobs:
       - name: Setup Node
         uses: ./.github/actions/setup-node
 
-      - name: Run lint
+      - name: Run build
         run: npm run build -w @pplancq/react-template
