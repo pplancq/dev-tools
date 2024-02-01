@@ -1,0 +1,59 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+env:
+  HUSKY: 0
+
+jobs:
+  install:
+    name: Install pacakge
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
+
+      - name: Check package-lock.json
+        run: npm exec --yes package-lock-utd@1.1.3
+
+      - name: Install package
+        run: npm ci
+
+  lint:
+    name: Lint code
+    needs:
+      - init
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
+
+      - name: Run lint
+        run: npm run lint -- --max-processes 1
+
+  build:
+    name: Build template
+    needs:
+      - init
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
+
+      - name: Run lint
+        run: npm run build -w @pplancq/react-template
