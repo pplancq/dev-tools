@@ -1,0 +1,18 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Community Support
+    url: https://support.github.com
+    about: Check out our Community Support for help with non-bug related issues.
+issue_templates:
+  - name: Bug report
+    about: Create a report to help us improve
+    labels: bug
+    template: bug_report.md
+  - name: Feature request
+    about: Suggest an idea for this project
+    labels: feature
+    template: feature_request.md
+  - name: General discussion
+    about: Use this template for a question or discussion
+    labels: discussion
+    template: general_discussion.md
