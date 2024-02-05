@@ -1,12 +1,15 @@
 name: Build
 
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
       - main
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 env:
   HUSKY: 0
@@ -57,3 +60,37 @@ jobs:
 
       - name: Run build
         run: npm run build -w @pplancq/react-template
+
+  release:
+    if: github.event_name == 'workflow_dispatch' && github.actor == 'pplancq'
+    name: Release
+    needs:
+      - lint
+      - build
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
+
+      - name: Config npm
+        run: npm config set access=public
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GIT_AUTHOR_EMAIL: ${{ vars.GIT_AUTHOR_EMAIL }}
+          GIT_AUTHOR_NAME: ${{ vars.GIT_AUTHOR_NAME }}
+          GIT_COMMITTER_EMAIL: ${{ vars.GIT_COMMITTER_EMAIL }}
+          GIT_COMMITTER_NAME: ${{ vars.GIT_COMMITTER_NAME }}
+        run: npm run release
