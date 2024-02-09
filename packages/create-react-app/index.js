@@ -62,6 +62,7 @@ const main = async () => {
   rmSync(`${repoDir}/node_modules`, { recursive: true });
   rmSync(`${repoDir}/package-lock.json`);
   rmSync(`${repoDir}/LICENSE`);
+  rmSync(`${repoDir}/CHANGELOG.md`);
 
   console.info('\nInitialized a git repository.');
   runCommand(`cd ${repoDir} && git init --initial-branch=main`, { stdio: 'ignore' });
