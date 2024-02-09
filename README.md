@@ -3,6 +3,36 @@
 This repository aims to provide tools for developing ReactJS applications.\
 A React template is available to facilitate the creation of new React projects, particularly for creating micro front-end applications.
 
+## Motivation
+
+With over 6 years of experience in developing React applications, I have always been on the lookout for tools that could streamline and enhance my workflow. When Facebook discontinued its Create React App project, I began searching for a new starter for my React applications.
+
+However, I couldn't find a starter that met my specific needs. For instance, some, like Vite, didn't provide a testing package and had a very light ESLint configuration, which didn't align with my preferences. Moreover, none of the starters I found offered a folder structure that promotes more structured code writing.
+
+This motivated me to create this project, with several specific objectives in mind:
+
+- Provide ready-to-use configurations for **ESLint**, **Webpack**, and **Vite**.
+- Include tools like **Husky** and **lint-staged** to control code quality at each commit.
+- Install and preconfigure useful packages like **react-router-dom** and **@tanstack/react-query**.
+- Provide a folder structure that encourages more organized and structured code writing.
+
+By achieving these objectives, I hope this React application starter will be a valuable tool for all React developers, whether they are beginners or experienced.
+
+## Package Details
+
+| Package Name                       | Version                                                                           | Description                          |
+| ---------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------ |
+| `@pplancq/babel-config`            | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fbabel-config)            | Babel configuration                  |
+| `@pplancq/commitlint-config`       | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fcommitlint-config)       | Commitlint configuration             |
+| `@pplancq/create-react-app`        | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fcreate-react-app)        | Tool for creating React applications |
+| `@pplancq/eslint-config`           | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Feslint-config)           | ESLint configuration                 |
+| `@pplancq/postcss-config`          | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fpostcss-config)          | PostCSS configuration                |
+| `@pplancq/prettier-config`         | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fprettier-config)         | Prettier configuration               |
+| `@pplancq/semantic-release-config` | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fsemantic-release-config) | Semantic Release configuration       |
+| `@pplancq/stylelint-config`        | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fstylelint-config)        | Stylelint configuration              |
+| `@pplancq/webpack-config`          | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fwebpack-config)          | Webpack configuration                |
+| `@pplancq/react-template`          | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Freact-template)          | Template for React applications      |
+
 ## How to use
 
 To generate a new React project, simply run the following command:
