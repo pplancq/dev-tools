@@ -43,13 +43,11 @@ module.exports = (env, { mode = 'development' }) => {
       rules: [
         {
           test: /\.css$/,
-          include: paths.src,
           use: basseCssRules,
           sideEffects: true,
         },
         {
           test: /\.(scss|sass)$/,
-          include: paths.src,
           use: [
             ...basseCssRules,
             {
