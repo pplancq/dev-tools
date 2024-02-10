@@ -209,6 +209,16 @@ export const ComponentName = () => {
 
 ==> Component names, file names, and folder names should follow the **PascalCase** convention.
 
+## ⚠️ Caution with Environment Variables
+
+The webpack configuration of this project allows for environment variables to be included in the application bundle. This could potentially expose sensitive information if the bundle is publicly accessible.
+
+It is recommended to only include non-sensitive environment variables in the application bundle. Sensitive information should not be exposed even if the bundle is publicly accessible.
+
+Ensure you understand the security implications before including environment variables in your bundle.
+
+Please note that the web configuration pre-filters environment variables via the default prefix ‘FRONT_’. This means that only environment variables starting with ‘FRONT_’ will be included in the bundle. This is an additional layer of security to prevent the accidental exposure of sensitive environment variables.
+
 ## 🙇 <span id="learnmore">Learn More</span>
 
 - React & co
