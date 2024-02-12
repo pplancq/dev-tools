@@ -61,6 +61,11 @@
       "@pplancq/semantic-release-config"
     ]
   },
+  "multi-release": {
+    "deps": {
+      "bump": "satisfy"
+    }
+  },
   "volta": {
     "node": "20.10.0",
     "npm": "10.2.5"
