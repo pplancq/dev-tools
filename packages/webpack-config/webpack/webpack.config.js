@@ -1,11 +1,10 @@
 const { resolve, relative } = require('path');
-const { existsSync } = require('fs');
+const { existsSync, readFileSync } = require('fs');
 const { DefinePlugin } = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const { createHash } = require('crypto');
 const paths = require('../helper/paths');
 const generateMetaEnv = require('../helper/generateMetaEnv');
 
@@ -13,6 +12,7 @@ module.exports = (env, { mode = 'development' }) => {
   const isEnvProduction = mode === 'production';
   const isEnvDevelopment = !isEnvProduction;
 
+  const packageJson = JSON.parse(readFileSync(paths.packageJson, { encoding: 'utf-8' }));
   const metaEnv = generateMetaEnv(mode);
 
   return {
@@ -36,7 +36,7 @@ module.exports = (env, { mode = 'development' }) => {
     },
     cache: {
       type: 'filesystem',
-      version: createHash('md5').update(JSON.stringify(metaEnv)).digest('hex'),
+      version: `${packageJson.version}-${Date.now()}`,
       cacheDirectory: paths.cache,
       store: 'pack',
       buildDependencies: {
