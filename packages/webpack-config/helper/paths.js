@@ -10,6 +10,7 @@ const paths = {
   entry: resolve(process.cwd(), './src/main.ts'),
   cache: resolve(process.cwd(), './node_modules/.cache'),
   tsconfig: resolve(process.cwd(), './tsconfig.json'),
+  packageJson: resolve(process.cwd(), './package.json'),
   indexHtml: resolve(process.cwd(), './public/index.html'),
 };
 
