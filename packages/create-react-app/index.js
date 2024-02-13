@@ -29,6 +29,17 @@ const main = async () => {
     })
     .parse(process.argv);
 
+  if (!/^(@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/.test(projectName)) {
+    console.error(`The project name '${projectName}' is not valid.`);
+    console.error(
+      'A valid npm project name must start with a lowercase letter, a number, a hyphen, or a tilde, and can include dots, hyphens, tildes, or underscores.',
+    );
+    console.error(
+      "If the project name starts with '@', it must be followed by a valid scope name and a '/'. Please check and try again.",
+    );
+    process.exit(-1);
+  }
+
   const reactTemplate = '@pplancq/react-template';
 
   const repoDir = resolve(process.cwd(), `./${projectName}`);
