@@ -31,6 +31,9 @@ jobs:
       - name: Install package
         run: npm ci
 
+      - name: Add git hook to auto add package-lock.json
+        run: echo '#!/bin/sh\ngit add package-lock.json' >> .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+
       - name: Config npm
         run: npm config set access=public
 
