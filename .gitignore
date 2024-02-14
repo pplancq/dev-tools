@@ -1,2 +1,6 @@
 .idea/
 node_modules/
+build/
+coverage/
+junit-report.xml
+sonar-report.xml
