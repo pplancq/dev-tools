@@ -10,7 +10,8 @@
 
 # production
 /build
-/test-report.xml
+/junit-report.xml
+/sonar-report.xml
 
 # misc
 .DS_Store
