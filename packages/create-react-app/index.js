@@ -4,12 +4,27 @@ const { Command } = require('commander');
 const { cpSync, existsSync, readFileSync, renameSync, rmSync, writeFileSync, mkdirSync } = require('fs');
 const { resolve } = require('path');
 
+const NPM = 'npm';
+const YARN = 'yarn';
+const PNPM = 'pnpm';
+
 const runCommand = (command, options = { stdio: 'inherit' }) => {
   try {
     execSync(command, options);
   } catch (e) {
     console.error(`Failed to execute ${command}`, e);
     process.exit(-1);
+  }
+};
+
+const getPackageManager = () => {
+  switch (true) {
+    case process.env.npm_config_user_agent.includes(YARN):
+      return YARN;
+    case process.env.npm_config_user_agent.includes(PNPM):
+      return PNPM;
+    default:
+      return NPM;
   }
 };
 
@@ -31,6 +46,8 @@ const main = async () => {
       useVite = options.useVite ?? false;
     })
     .parse(process.argv);
+
+  const packageManager = getPackageManager();
 
   if (!/^(@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/.test(projectName)) {
     console.error(`The project name '${projectName}' is not valid.`);
@@ -58,8 +75,12 @@ const main = async () => {
 
   console.info(`\nInstall react template from ${chalk.green(reactTemplate)}`);
   mkdirSync(repoDir);
-  runCommand(`cd ${repoDir} && npm install ${reactTemplate}`);
-  cpSync(templateDir, repoDir, { recursive: true });
+  runCommand(`cd ${repoDir} && npm init -y`, { stdio: 'ignore' });
+  if (packageManager === YARN) {
+    runCommand(`cd ${repoDir} && yarn config set nodeLinker node-modules`, { stdio: 'ignore' });
+  }
+  runCommand(`cd ${repoDir} && ${packageManager} ${packageManager === YARN ? 'add' : 'install'} ${reactTemplate}`);
+  cpSync(templateDir, repoDir, { recursive: true, dereference: true });
   renameSync(`${repoDir}/_gitignore`, `${repoDir}/.gitignore`);
   const repoPackageJson = JSON.parse(readFileSync(resolve(repoDir, 'package.json'), { encoding: 'utf-8' }));
   repoPackageJson.name = projectName;
@@ -74,20 +95,39 @@ const main = async () => {
 
   writeFileSync(resolve(repoDir, 'package.json'), JSON.stringify(repoPackageJson, null, 2), { encoding: 'utf-8' });
   rmSync(`${repoDir}/node_modules`, { recursive: true });
-  rmSync(`${repoDir}/package-lock.json`);
   rmSync(`${repoDir}/LICENSE`);
   rmSync(`${repoDir}/CHANGELOG.md`);
   rmSync(`${repoDir}/README.md`);
   renameSync(`${repoDir}/_README.md`, `${repoDir}/README.md`);
 
+  let readme = readFileSync(resolve(repoDir, 'README.md'), { encoding: 'utf-8' });
+  switch (packageManager) {
+    case YARN:
+      rmSync(`${repoDir}/yarn.lock`);
+      readme = readme.replaceAll('npm install', 'yarn');
+      readme = readme.replaceAll('npm', 'yarn');
+      break;
+    case PNPM:
+      rmSync(`${repoDir}/pnpm-lock.yaml`);
+      readme = readme.replaceAll('npm', 'pnpm');
+      break;
+    default:
+      rmSync(`${repoDir}/package-lock.json`);
+  }
+  writeFileSync(resolve(repoDir, 'README.md'), readme, { encoding: 'utf-8' });
+
   console.info('\nInitialized a git repository.');
   runCommand(`cd ${repoDir} && git init --initial-branch=main`, { stdio: 'ignore' });
 
   console.info('\nInstalling packages. This might take a couple of minutes.');
-  runCommand(`cd ${repoDir} && npm install`);
+  runCommand(`cd ${repoDir} && ${packageManager} install`);
+
+  if (packageManager === PNPM) {
+    runCommand(`cd ${repoDir} && ${packageManager} install -D vite`);
+  }
 
   if (useVite) {
-    runCommand(`cd ${repoDir} && npm run migrate:vite`);
+    runCommand(`cd ${repoDir} && ${packageManager} run migrate:vite`);
   }
 
   console.info('\nCreated git commit.');
@@ -97,21 +137,24 @@ const main = async () => {
 
   console.info(`\n${chalk.yellow('Success \\o/')}  Created ${chalk.green(projectName)} at ${chalk.green(repoDir)}`);
   console.info('Inside that directory, you can run several commands:');
-  console.info(`\n  ${chalk.cyan('npm start')}`);
+  const logCommand = command => {
+    console.info(`\n  ${chalk.cyan(command)}`);
+  };
+  logCommand(`${packageManager} start`);
   console.info('    Starts the development server.');
-  console.info(`\n  ${chalk.cyan('npm run build')}`);
+  logCommand(`${packageManager} run build`);
   console.info('    Bundles the app into static files for production.');
-  console.info(`\n  ${chalk.cyan('npm test')}`);
+  logCommand(`${packageManager} test`);
   console.info('    Starts the test runner.');
-  console.info(`\n  ${chalk.cyan('npm run remove:demo')}`);
+  logCommand(`${packageManager} run remove:demo`);
   console.info('    Remove the demo application.');
   if (!useVite) {
-    console.info(`\n  ${chalk.cyan('npm run migrate:vite')}`);
+    logCommand(`${packageManager} run migrate:vite`);
     console.info('    Migrate from webpack to vite.');
   }
   console.info('\nWe suggest that you begin by typing:');
   console.info(`\n  ${chalk.cyan('cd')} ${projectName}`);
-  console.info(`  ${chalk.cyan('npm start')}`);
+  logCommand(`${packageManager} start`);
   console.info('\nHappy hacking!');
 };
 
