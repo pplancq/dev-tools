@@ -20,18 +20,18 @@ By achieving these objectives, I hope this React application starter will be a v
 
 ## Package Details
 
-| Package Name                       | Version                                                                           | Description                          |
-| ---------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------ |
-| `@pplancq/babel-config`            | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fbabel-config)            | Babel configuration                  |
-| `@pplancq/commitlint-config`       | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fcommitlint-config)       | Commitlint configuration             |
-| `@pplancq/create-react-app`        | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fcreate-react-app)        | Tool for creating React applications |
-| `@pplancq/eslint-config`           | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Feslint-config)           | ESLint configuration                 |
-| `@pplancq/postcss-config`          | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fpostcss-config)          | PostCSS configuration                |
-| `@pplancq/prettier-config`         | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fprettier-config)         | Prettier configuration               |
-| `@pplancq/semantic-release-config` | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fsemantic-release-config) | Semantic Release configuration       |
-| `@pplancq/stylelint-config`        | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fstylelint-config)        | Stylelint configuration              |
-| `@pplancq/webpack-config`          | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Fwebpack-config)          | Webpack configuration                |
-| `@pplancq/react-template`          | ![NPM Version](https://img.shields.io/npm/v/%40pplancq%2Freact-template)          | Template for React applications      |
+| Package Name                       | Version                                                                                                                                  | Description                          |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| `@pplancq/babel-config`            | [![](https://img.shields.io/npm/v/%40pplancq%2Fbabel-config)](https://www.npmjs.com/package/@pplancq/babel-config)                       | Babel configuration                  |
+| `@pplancq/commitlint-config`       | [![](https://img.shields.io/npm/v/%40pplancq%2Fcommitlint-config)](https://www.npmjs.com/package/@pplancq/commitlint-config)             | Commitlint configuration             |
+| `@pplancq/create-react-app`        | [![](https://img.shields.io/npm/v/%40pplancq%2Fcreate-react-app)](https://www.npmjs.com/package/@pplancq/create-react-app)               | Tool for creating React applications |
+| `@pplancq/eslint-config`           | [![](https://img.shields.io/npm/v/%40pplancq%2Feslint-config)](https://www.npmjs.com/package/@pplancq/eslint-config)                     | ESLint configuration                 |
+| `@pplancq/postcss-config`          | [![](https://img.shields.io/npm/v/%40pplancq%2Fpostcss-config)](https://www.npmjs.com/package/@pplancq/postcss-config)                   | PostCSS configuration                |
+| `@pplancq/prettier-config`         | [![](https://img.shields.io/npm/v/%40pplancq%2Fprettier-config)](https://www.npmjs.com/package/@pplancq/prettier-config)                 | Prettier configuration               |
+| `@pplancq/semantic-release-config` | [![](https://img.shields.io/npm/v/%40pplancq%2Fsemantic-release-config)](https://www.npmjs.com/package/@pplancq/semantic-release-config) | Semantic Release configuration       |
+| `@pplancq/stylelint-config`        | [![](https://img.shields.io/npm/v/%40pplancq%2Fstylelint-config)](https://www.npmjs.com/package/@pplancq/stylelint-config)               | Stylelint configuration              |
+| `@pplancq/webpack-config`          | [![](https://img.shields.io/npm/v/%40pplancq%2Fwebpack-config)](https://www.npmjs.com/package/@pplancq/webpack-config)                   | Webpack configuration                |
+| `@pplancq/react-template`          | [![](https://img.shields.io/npm/v/%40pplancq%2Freact-template)](https://www.npmjs.com/package/@pplancq/react-template)                   | Template for React applications      |
 
 ## How to use
 
@@ -39,6 +39,18 @@ To generate a new React project, simply run the following command:
 
 ```shell
 npm create @pplancq/react-app@latest <project_name>
+```
+
+or
+
+```shell
+yarn create @pplancq/react-app@latest <project_name>
+```
+
+or
+
+```shell
+pnpm create @pplancq/react-app@latest <project_name>
 ```
 
 Replace <project_name> with the name of your new project.

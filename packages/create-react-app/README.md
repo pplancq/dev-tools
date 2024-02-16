@@ -10,6 +10,18 @@ To create a new React project with this package, use the following command:
 npm create @pplancq/react-app@latest <project_name>
 ```
 
+or
+
+```shell
+yarn create @pplancq/react-app@latest <project_name>
+```
+
+or
+
+```shell
+pnpm create @pplancq/react-app@latest <project_name>
+```
+
 Replace <project_name> with the name of your new project.
 
 ### Using Vite
