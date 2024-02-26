@@ -2,13 +2,13 @@ import logo from '@Front/assets/images/logo.png';
 import { Logo } from '@Front/ui/atoms/Logo';
 import { Link, useRouteError } from 'react-router-dom';
 
-import classes from './Error.module.css';
+import classes from './UnexpectedError.module.css';
 
-export const Error = () => {
+export const UnexpectedError = () => {
   const error: unknown = useRouteError();
 
   return (
-    <div className={classes.errorPageStyle}>
+    <div className={classes.root}>
       <Link to="/">
         <Logo src={logo} alt="logo" />
       </Link>
