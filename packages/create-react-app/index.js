@@ -74,6 +74,8 @@ const main = async () => {
   rmSync(`${repoDir}/package-lock.json`);
   rmSync(`${repoDir}/LICENSE`);
   rmSync(`${repoDir}/CHANGELOG.md`);
+  rmSync(`${repoDir}/README.md`);
+  renameSync(`${repoDir}/_README.md`, `${repoDir}/README.md`);
 
   console.info('\nInitialized a git repository.');
   runCommand(`cd ${repoDir} && git init --initial-branch=main`, { stdio: 'ignore' });
