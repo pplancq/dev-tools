@@ -7,8 +7,7 @@ export const Demo = () => {
   return (
     <div className={classes.container}>
       <div className={classes.bigTitleStyle}>
-        Welcome to Your React Starter Kit
-        <span>Welcome</span>
+        Welcome to Your React Starter Kit <span>Welcome</span>
       </div>
 
       <div className={classes.foo}>FlexBlug</div>
