@@ -6,5 +6,5 @@ updates:
       interval: 'weekly'
     labels:
       - 'dependencies'
-    open-pull-requests-limit: 6
+    open-pull-requests-limit: 0
     target-branch: 'main'
