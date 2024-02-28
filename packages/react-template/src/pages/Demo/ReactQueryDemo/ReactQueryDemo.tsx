@@ -28,20 +28,20 @@ export const ReactQueryDemo = () => {
                 <thead>
                   <tr>
                     <th>ID</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Age</th>
+                    <th>Name</th>
+                    <th>Username</th>
                     <th>Email</th>
+                    <th>Website</th>
                   </tr>
                 </thead>
                 <tbody>
                   {result?.map(eachResult => (
                     <tr key={eachResult.id}>
                       <td>{eachResult.id}</td>
-                      <td>{eachResult.firstName}</td>
-                      <td>{eachResult.lastName}</td>
-                      <td>{eachResult.age}</td>
+                      <td>{eachResult.name}</td>
+                      <td>{eachResult.username}</td>
                       <td>{eachResult.email}</td>
+                      <td>{eachResult.website}</td>
                     </tr>
                   ))}
                 </tbody>
