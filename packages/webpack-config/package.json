@@ -39,7 +39,7 @@
     "fork-ts-checker-webpack-plugin": "^9.0.2",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
-    "postcss-loader": "^8.1.0",
+    "postcss-loader": "^8.1.1",
     "react-refresh": "^0.14.0",
     "resolve-url-loader": "^5.0.0",
     "sass": "^1.71.1",
