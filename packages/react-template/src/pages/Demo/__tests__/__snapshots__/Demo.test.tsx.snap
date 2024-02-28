@@ -8,7 +8,7 @@ exports[`Demo Component > should render the Demo component correctly 1`] = `
     <div
       class="_bigTitleStyle_85a2c3"
     >
-      Welcome to Your React Starter Kit
+      Welcome to Your React Starter Kit 
       <span>
         Welcome
       </span>
