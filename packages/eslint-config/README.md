@@ -23,12 +23,12 @@ npx init-eslint-config
 ### @pplancq/eslint-config/react
 
 To use, add `"eslintConfig": { "extends": ["@pplancq/eslint-config/react"] }` to your `package.json`.\
-This configuration enables the rules of base, typescript, prettier, react and testing-library files.
+This configuration enables the rules of base, typescript, react and testing-library files.
 
 ### @pplancq/eslint-config/node
 
 To use, add `"eslintConfig": { "extends": ["@pplancq/eslint-config/node"] }` to your `package.json`.\
-This configuration enables the rules of base, typescript and prettier files.
+This configuration enables the rules of base and typescript files.
 
 ### @pplancq/eslint-config/vitest
 
@@ -39,3 +39,14 @@ This configuration enables the rules of vitest file.
 
 To use, add `"eslintConfig": { "extends": ["@pplancq/eslint-config/jest"] }` to your `package.json`.\
 This configuration enables the rules of jest file.
+
+### @pplancq/eslint-config/prettier
+
+To use, add `"eslintConfig": { "extends": ["@pplancq/eslint-config/prettier"] }` to your `package.json`.\
+This configuration enables the rules of prettier file.
+
+need add package
+
+```shell
+npm install --save-dev prettier eslint-plugin-prettier
+```
