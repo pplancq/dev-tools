@@ -24,7 +24,7 @@
     "@commitlint/config-conventional": "^19.0.3"
   },
   "peerDependencies": {
-    "@commitlint/cli": "^18.4.3"
+    "@commitlint/cli": "^19.0.3"
   },
   "volta": {
     "node": "20.10.0",
