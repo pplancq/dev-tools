@@ -48,7 +48,8 @@
   "prettier": "@pplancq/prettier-config",
   "eslintConfig": {
     "extends": [
-      "@pplancq/eslint-config/node"
+      "@pplancq/eslint-config/node",
+      "@pplancq/eslint-config/prettier"
     ]
   },
   "commitlint": {

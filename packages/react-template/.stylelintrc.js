@@ -1,1 +1,1 @@
-module.exports = { extends: ['@pplancq/stylelint-config'] };
+module.exports = { extends: ['@pplancq/stylelint-config/prettier'] };
