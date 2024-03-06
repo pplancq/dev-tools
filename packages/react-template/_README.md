@@ -59,6 +59,10 @@ Allows you to fix eslint errors.
 
 Allows you to fix style lint errors.
 
+### `npm run remove:demo`
+
+To remove the demo application.
+
 ## 🏗 <span id="project-structure">Project Structure</span>
 
 ```
