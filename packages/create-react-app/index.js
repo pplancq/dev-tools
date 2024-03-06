@@ -96,6 +96,8 @@ const main = async () => {
   console.info('    Bundles the app into static files for production.');
   console.info(`\n  ${chalk.cyan('npm test')}`);
   console.info('    Starts the test runner.');
+  console.info(`\n  ${chalk.cyan('npm run remove:demo')}`);
+  console.info('    Remove the demo application.');
   console.info('\nWe suggest that you begin by typing:');
   console.info(`\n  ${chalk.cyan('cd')} ${projectName}`);
   console.info(`  ${chalk.cyan('npm start')}`);
