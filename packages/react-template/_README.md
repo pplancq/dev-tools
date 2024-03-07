@@ -63,6 +63,10 @@ Allows you to fix style lint errors.
 
 To remove the demo application.
 
+### `npm run migrate:vite`
+
+To migrate from webpack to vite.
+
 ## 🏗 <span id="project-structure">Project Structure</span>
 
 ```
