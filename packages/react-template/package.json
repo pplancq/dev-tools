@@ -40,7 +40,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.0",
     "react-router-dom": "^6.22.3",
-    "yup": "^1.3.3"
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@pplancq/babel-config": "^1.0.0",
