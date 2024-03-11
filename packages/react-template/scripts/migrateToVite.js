@@ -3,6 +3,10 @@ const { execSync } = require('child_process');
 const { rmSync, writeFileSync, readFileSync } = require('fs');
 const { resolve } = require('path');
 
+const NPM = 'npm';
+const YARN = 'yarn';
+const PNPM = 'pnpm';
+
 const runCommand = (command, options = { stdio: 'inherit' }) => {
   try {
     execSync(command, options);
@@ -12,11 +16,26 @@ const runCommand = (command, options = { stdio: 'inherit' }) => {
   }
 };
 
+const getPackageManager = () => {
+  switch (true) {
+    case process.env.npm_config_user_agent.includes(YARN):
+      return YARN;
+    case process.env.npm_config_user_agent.includes(PNPM):
+      return PNPM;
+    default:
+      return NPM;
+  }
+};
+
+const packageManager = getPackageManager();
+
 console.info('\nremove webpack ...');
-runCommand('npm remove @pplancq/webpack-config');
+runCommand(`${packageManager} remove @pplancq/webpack-config webpack webpack-cli webpack-dev-server`);
 rmSync(resolve(__dirname, '../webpack.config.js'));
 console.info('\ninstall vite package ...');
-runCommand('npm install --save-dev vite vite-plugin-eslint2 vite-plugin-stylelint');
+runCommand(
+  `${packageManager} ${packageManager === YARN ? 'add' : 'install'} --save-dev vite vite-plugin-eslint2 vite-plugin-stylelint`,
+);
 
 writeFileSync(
   resolve(__dirname, '../vite.config.mts'),
