@@ -40,7 +40,7 @@
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-testing-library": "^6.2.0",
-    "eslint-plugin-vitest": "^0.3.22",
+    "eslint-plugin-vitest": "^0.3.25",
     "eslint-plugin-vitest-globals": "^1.4.0"
   },
   "peerDependencies": {
