@@ -43,6 +43,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.0.3",
     "@pplancq/babel-config": "^1.0.0",
     "@pplancq/commitlint-config": "^1.0.0",
     "@pplancq/eslint-config": "^1.0.0",
@@ -71,7 +72,10 @@
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.2.2",
     "vitest": "^1.0.4",
-    "vitest-sonar-reporter": "^2.0.0"
+    "vitest-sonar-reporter": "^2.0.0",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2"
   },
   "volta": {
     "node": "20.10.0",
