@@ -1,3 +1,36 @@
+## @pplancq/react-template [1.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.0.0...@pplancq/react-template@1.1.0) (2024-03-12)
+
+
+### Features
+
+* **react-template:** add fetchApi example ([c2318c3](https://github.com/pplancq/dev-tools/commit/c2318c36097b9d4e3d1c33a15045dafd1a45c8d5))
+* **webpack-config:** add note about the inclusion of environment variable ([e6e4e31](https://github.com/pplancq/dev-tools/commit/e6e4e310aa1a631a4e6013939c52a025f548b31d))
+* **react-template:** add peerDependencies of commitLint and webpack config ([d501781](https://github.com/pplancq/dev-tools/commit/d501781810aae970db0553fd14935e549a0385fc))
+* **react-template:** add script for migrate to vite ([d5d3337](https://github.com/pplancq/dev-tools/commit/d5d333786677f14b846298eba0739c9f55872949))
+* **react-template:** add script for remove Demo ([355d887](https://github.com/pplancq/dev-tools/commit/355d887afdbe09a4b63073ebed6718846eaf717b))
+* **react-template:** add support for yarn and pnpm to script migrate to vite ([b4b9d6b](https://github.com/pplancq/dev-tools/commit/b4b9d6ba9b95f3810b2cfcb03a861a02caf8af8a))
+* **create-react-app:** add support for yarn and pnpm ([eafc39d](https://github.com/pplancq/dev-tools/commit/eafc39d972b178ca21ed307166a9ba394161803f))
+* **react-template:** add test report on .gitignore ([072a240](https://github.com/pplancq/dev-tools/commit/072a2405ed421d22b9ba1b9b11f524a9aa7d0889))
+* **react-template:** rename Error page to UnexpectedError ([c6eea7b](https://github.com/pplancq/dev-tools/commit/c6eea7b1d3e7dd6589945949d03c25485d22fc6c))
+* **react-template:** update eslint un stylelint config ([82a4df3](https://github.com/pplancq/dev-tools/commit/82a4df3e8a3ce1932f915f11ca3495aa43d2aca5))
+* **react-template:** update react-query@3 to @tanstack/react-query@5 ([f79e642](https://github.com/pplancq/dev-tools/commit/f79e6425668bd22b2e278e85a68fc1c214ed8586))
+* **react-template:** update readme ([3aa2543](https://github.com/pplancq/dev-tools/commit/3aa2543948a697f6604f4984884184d3f285d297))
+
+
+### Bug Fixes
+
+* **react-template:** ambiguous Spacing before <span> ([56c9a8e](https://github.com/pplancq/dev-tools/commit/56c9a8e558a8e0c7e62faba4bf7db85278eb7f80))
+* **react-template:** fix peerDependencies of commitlint-config ([fe0dd7c](https://github.com/pplancq/dev-tools/commit/fe0dd7ca706e4287b36e2ed861a509a8dc7742e2))
+
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 2.0.0
+* **@pplancq/eslint-config:** upgraded to 2.0.0
+* **@pplancq/stylelint-config:** upgraded to 2.0.0
+* **@pplancq/webpack-config:** upgraded to 1.1.0
+
 ## @pplancq/react-template 1.0.0 (2024-02-05)
 
 
