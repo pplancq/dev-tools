@@ -10,7 +10,7 @@ module.exports = (env, { mode = 'development' }) => {
           test: /\.(jpeg?|png|gif|ico|bmp)$/,
           include: paths.src,
           use: {
-            loader: 'file-loader',
+            loader: require.resolve('file-loader'),
             options: {
               name: isEnvProduction ? 'images/[name].[contenthash:8].[ext]' : 'images/[name].[ext]',
               limit: 100000,
@@ -22,7 +22,7 @@ module.exports = (env, { mode = 'development' }) => {
           test: /\.(woff2?|ttf|eot)$/,
           include: paths.src,
           use: {
-            loader: 'file-loader',
+            loader: require.resolve('file-loader'),
             options: {
               name: isEnvProduction ? 'fonts/[name].[contenthash:8].[ext]' : 'fonts/[name].[ext]',
               esModule: false,
