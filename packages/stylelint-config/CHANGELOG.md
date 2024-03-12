@@ -1,3 +1,16 @@
+## @pplancq/stylelint-config [2.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@1.0.0...@pplancq/stylelint-config@2.0.0) (2024-03-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **stylelint-config:** The default configuration no longer supports the stylelint-prettier plugin.\
+You must now install prettier and stylelint-prettier separately and use the alternative configuration.\
+To use is alternative configuration, replace `"stylelint": { "extends": ["@pplancq/stylelint-config/prettier"] }` to your `package.json`.
+
+### Features
+
+* **stylelint-config:** prettier made fully optional ([984aa69](https://github.com/pplancq/dev-tools/commit/984aa694f0fe41a5293196ca90c640bba83596ec))
+
 ## @pplancq/stylelint-config 1.0.0 (2024-02-05)
 
 
