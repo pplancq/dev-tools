@@ -10,7 +10,11 @@ module.exports = (env, { mode = 'development' }) => {
           test: /\.svg$/,
           include: paths.src,
           resourceQuery: /react/,
-          use: ['@svgr/webpack'],
+          use: [
+            {
+              loader: require.resolve('@svgr/webpack'),
+            },
+          ],
         },
         {
           test: /\.svg$/,
@@ -18,7 +22,7 @@ module.exports = (env, { mode = 'development' }) => {
           resourceQuery: { not: [/react/] },
           use: [
             {
-              loader: 'file-loader',
+              loader: require.resolve('file-loader'),
               options: {
                 name: isEnvProduction ? 'images/[name].[contenthash:8].[ext]' : 'images/[name].[ext]',
                 limit: 100000,
