@@ -1,3 +1,19 @@
+## @pplancq/eslint-config [2.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@1.0.0...@pplancq/eslint-config@2.0.0) (2024-03-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config:** The default configuration no longer supports the eslint-plugin-prettier plugin.\
+You must now install prettier and eslint-plugin-prettier separately and use the alternative configuration.\
+Use prettier configuration, add `"eslintConfig": { "extends": ["@pplancq/eslint-config/prettier"] }` to your `package.json`.
+* **eslint-config:** Bumps ESLint ^8.55.0 to ^8.57.0 the minimum requirements
+* **eslint-config:** Bumps Prettier ^3.1.1 to ^3.2.5 the minimum requirements
+
+### Features
+
+* **eslint-config:** bump ESLint and Prettier minimum version requirements ([24f920f](https://github.com/pplancq/dev-tools/commit/24f920ff481b05b2c64541e54242adb5f598beb2))
+* **eslint-config:** prettier made fully optional ([dff82e3](https://github.com/pplancq/dev-tools/commit/dff82e30a738a65c762e77cc49de8bca15981d08))
+
 ## @pplancq/eslint-config 1.0.0 (2024-02-05)
 
 
