@@ -30,7 +30,7 @@
     "conventional-changelog-conventionalcommits": "^7.0.2"
   },
   "peerDependencies": {
-    "semantic-release": "^22.0.12 || ^23.0.2"
+    "semantic-release": ">=22.0.12 <24"
   },
   "volta": {
     "node": "20.10.0",
