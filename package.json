@@ -60,6 +60,19 @@
   "release": {
     "extends": [
       "@pplancq/semantic-release-config"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "../../package-lock.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.name} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
     ]
   },
   "multi-release": {
