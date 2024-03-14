@@ -9,6 +9,9 @@
     "url": "https://github.com/pplancq/dev-tools",
     "directory": "packages/create-react-app"
   },
+  "scripts": {
+    "postversion": "git add ../../package-lock.json"
+  },
   "bin": "./index.js",
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"

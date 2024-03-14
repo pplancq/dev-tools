@@ -85,7 +85,7 @@ const main = async () => {
   const repoPackageJson = JSON.parse(readFileSync(resolve(repoDir, 'package.json'), { encoding: 'utf-8' }));
   repoPackageJson.name = projectName;
   repoPackageJson.description = projectName;
-  const { _prepare, ...scripts } = repoPackageJson.scripts;
+  const { _prepare, postversion, ...scripts } = repoPackageJson.scripts;
   repoPackageJson.scripts = { ...scripts, prepare: _prepare };
 
   delete repoPackageJson.author;

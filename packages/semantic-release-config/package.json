@@ -10,7 +10,7 @@
     "directory": "packages/semantic-release-config"
   },
   "scripts": {
-    "version": "git add ../../package-lock.json"
+    "postversion": "git add ../../package-lock.json"
   },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
