@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const { rmSync, readFileSync, writeFileSync } = require('fs');
+const { rmSync, readFileSync, writeFileSync, mkdirSync } = require('fs');
 const { resolve } = require('path');
 
 const resolveSrc = path => resolve(__dirname, `../src${path}`);
@@ -30,6 +30,7 @@ writeFileSync(resolveSrc('/hooks/api/queryKey.ts'), queryKey, { encoding: 'utf-8
 rmSync(resolveSrc('/pages/Demo'), { recursive: true });
 rmSync(resolveSrc('/pages/Layout'), { recursive: true });
 rmSync(resolveSrc('/pages/UnexpectedError'), { recursive: true });
+mkdirSync(resolveSrc('/pages/Home'));
 writeFileSync(resolveSrc('/pages/Home/index.ts'), "export { homeRoutes } from './routes';\n", { encoding: 'utf-8' });
 writeFileSync(
   resolveSrc('/pages/Home/routes.tsx'),
