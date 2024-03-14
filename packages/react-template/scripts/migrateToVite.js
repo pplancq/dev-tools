@@ -34,7 +34,7 @@ runCommand(`${packageManager} remove @pplancq/webpack-config webpack webpack-cli
 rmSync(resolve(__dirname, '../webpack.config.js'));
 console.info('\ninstall vite package ...');
 runCommand(
-  `${packageManager} ${packageManager === YARN ? 'add' : 'install'} --save-dev vite vite-plugin-eslint2 vite-plugin-stylelint`,
+  `${packageManager} ${packageManager === YARN ? 'add --dev' : 'install --save-dev'} vite vite-plugin-eslint2 vite-plugin-stylelint`,
 );
 
 writeFileSync(
