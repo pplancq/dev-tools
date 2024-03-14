@@ -1,3 +1,12 @@
+## @pplancq/react-template [1.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.1.0...@pplancq/react-template@1.1.1) (2024-03-14)
+
+
+### Bug Fixes
+
+* **react-template:** fix webpack-dev-server@4 peerDependencies of webpack-config ([24e6db9](https://github.com/pplancq/dev-tools/commit/24e6db9e81dbaf6e874614edee0190a7bf129a6a))
+* **react-template:** fix yarn add on script migrate to vite ([739ee45](https://github.com/pplancq/dev-tools/commit/739ee45f2867d7db1140e03ede235667f5704260))
+* **react-template:** update interpackage dependencies to '*' ([23d766a](https://github.com/pplancq/dev-tools/commit/23d766aa12968d36cbd989c65d92744d926298e6))
+
 ## @pplancq/react-template [1.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.0.0...@pplancq/react-template@1.1.0) (2024-03-12)
 
 
