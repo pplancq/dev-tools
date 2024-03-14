@@ -1,3 +1,10 @@
+## @pplancq/semantic-release-config [1.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.0.0...@pplancq/semantic-release-config@1.1.0) (2024-03-14)
+
+
+### Features
+
+* **semantic-release-config:** add semantic-release v23 in peerDependencies ([a9f2dae](https://github.com/pplancq/dev-tools/commit/a9f2daebb9f673e79e73a6ed5e55d2c3b042d20d))
+
 ## @pplancq/semantic-release-config 1.0.0 (2024-02-05)
 
 
