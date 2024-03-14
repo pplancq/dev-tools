@@ -23,6 +23,7 @@
     "package:check": "npm exec --yes package-lock-utd@1.1.3",
     "remove:demo": "./scripts/removeDemo.js",
     "migrate:vite": "./scripts/migrateToVite.js",
+    "postversion": "git add ../../package-lock.json",
     "_prepare": "husky"
   },
   "bugs": {
