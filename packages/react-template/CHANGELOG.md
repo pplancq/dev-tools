@@ -1,3 +1,10 @@
+## @pplancq/react-template [1.1.2](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.1.1...@pplancq/react-template@1.1.2) (2024-03-14)
+
+
+### Bug Fixes
+
+* **react-template:** fix remove demo when create Home page ([b9df040](https://github.com/pplancq/dev-tools/commit/b9df04091f896b362694044ab29869b865e4aac4))
+
 ## @pplancq/react-template [1.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.1.0...@pplancq/react-template@1.1.1) (2024-03-14)
 
 
