@@ -1,3 +1,15 @@
+## @pplancq/create-react-app [1.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.1.0...@pplancq/create-react-app@1.2.0) (2024-03-18)
+
+
+### Features
+
+* **create-react-app:** update documentation for create new project ([3af363f](https://github.com/pplancq/dev-tools/commit/3af363f5c3e436fdbf346af3f19a33d4f17cecac))
+
+
+### Reverts
+
+* **dev-tool:** add package-lock when execute npm postversion ([1e83fe7](https://github.com/pplancq/dev-tools/commit/1e83fe7ee8d2529ce3b85e1abb56968171ee01ff))
+
 ## @pplancq/create-react-app [1.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.0.0...@pplancq/create-react-app@1.1.0) (2024-03-12)
 
 
