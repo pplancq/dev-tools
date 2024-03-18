@@ -1,3 +1,21 @@
+## @pplancq/react-template [1.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.1.2...@pplancq/react-template@1.2.0) (2024-03-18)
+
+
+### Features
+
+* **react-template:** add sass when migrate to vite ([790a621](https://github.com/pplancq/dev-tools/commit/790a6211df2f94a18631c5adf40edcbfc343ddd8))
+* **react-template:** remove babel-config when use script migrate to vite ([de680b0](https://github.com/pplancq/dev-tools/commit/de680b039ab27c3174ba46d49681ca178e11f6d2))
+
+
+### Bug Fixes
+
+* **react-package:** fix computability of script with npm on Windows ([c6b8d7d](https://github.com/pplancq/dev-tools/commit/c6b8d7db1f2029ae602186ec92b53b362c65dc1c))
+
+
+### Reverts
+
+* **dev-tool:** add package-lock when execute npm postversion ([1e83fe7](https://github.com/pplancq/dev-tools/commit/1e83fe7ee8d2529ce3b85e1abb56968171ee01ff))
+
 ## @pplancq/react-template [1.1.2](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.1.1...@pplancq/react-template@1.1.2) (2024-03-14)
 
 
