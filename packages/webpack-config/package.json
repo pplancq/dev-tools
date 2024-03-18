@@ -9,9 +9,6 @@
     "url": "https://github.com/pplancq/dev-tools",
     "directory": "packages/webpack-config"
   },
-  "scripts": {
-    "postversion": "git add ../../package-lock.json"
-  },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
