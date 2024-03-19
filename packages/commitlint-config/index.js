@@ -2,6 +2,11 @@
 const config = {
   extends: ['@commitlint/config-conventional'],
   ignores: [commit => /release/.test(commit)],
+  rules: {
+    'header-max-length': [2, 'always', 200],
+    'body-max-line-length': [0],
+    'footer-max-line-length': [0],
+  },
 };
 
 module.exports = config;
