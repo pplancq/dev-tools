@@ -1,3 +1,10 @@
+const gitAssets = [
+  'package.json',
+  'package-lock.json',
+  'CHANGELOG.md',
+  ...(process.env.GIT_ASSETS ?? '').split(','),
+].filter(Boolean);
+
 /** @type {import('semantic-release').GlobalConfig} */
 const config = {
   branches: ['main'],
@@ -33,7 +40,7 @@ const config = {
     [
       '@semantic-release/git',
       {
-        assets: ['package.json', 'package-lock.json', 'CHANGELOG.md'],
+        assets: gitAssets,
         // eslint-disable-next-line no-template-curly-in-string
         message: 'chore(release): ${nextRelease.name} [skip ci]\n\n${nextRelease.notes}',
       },
