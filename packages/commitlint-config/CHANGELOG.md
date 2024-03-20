@@ -1,3 +1,15 @@
+## @pplancq/commitlint-config [2.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@2.0.0...@pplancq/commitlint-config@2.1.0) (2024-03-20)
+
+
+### Features
+
+* **commitlint-config:** update max length for header body and footer ([861521d](https://github.com/pplancq/dev-tools/commit/861521da4efff31124675c46d82332e1d0bc09bf)), closes [#149](https://github.com/pplancq/dev-tools/issues/149)
+
+
+### Reverts
+
+* **dev-tool:** add package-lock when execute npm postversion ([1e83fe7](https://github.com/pplancq/dev-tools/commit/1e83fe7ee8d2529ce3b85e1abb56968171ee01ff))
+
 ## @pplancq/commitlint-config [2.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@1.0.0...@pplancq/commitlint-config@2.0.0) (2024-03-12)
 
 
