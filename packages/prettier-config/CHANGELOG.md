@@ -1,3 +1,10 @@
+## @pplancq/prettier-config [1.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@1.0.0...@pplancq/prettier-config@1.0.1) (2024-03-20)
+
+
+### Reverts
+
+* **dev-tool:** add package-lock when execute npm postversion ([1e83fe7](https://github.com/pplancq/dev-tools/commit/1e83fe7ee8d2529ce3b85e1abb56968171ee01ff))
+
 ## @pplancq/prettier-config 1.0.0 (2024-02-05)
 
 
