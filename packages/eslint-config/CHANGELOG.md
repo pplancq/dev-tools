@@ -1,3 +1,10 @@
+## @pplancq/eslint-config [2.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.0.1...@pplancq/eslint-config@2.1.0) (2024-03-23)
+
+
+### Features
+
+* **eslint-config:** steps suffix added for test-related overrides ([937fe16](https://github.com/pplancq/dev-tools/commit/937fe16867d435c816f8f395cdd58be3a3f103c8))
+
 ## @pplancq/eslint-config [2.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.0.0...@pplancq/eslint-config@2.0.1) (2024-03-20)
 
 
