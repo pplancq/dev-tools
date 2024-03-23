@@ -89,7 +89,7 @@ module.exports = {
     },
     {
       extends: ['plugin:jest-dom/recommended'],
-      files: ['*.{test,spec}.{js,jsx,ts,tsx}'],
+      files: ['*.{test,spec,steps}.{js,jsx,ts,tsx}'],
       plugins: ['testing-library'],
       rules: {
         // eslint-plugin-testing-library https://github.com/testing-library/eslint-plugin-testing-library

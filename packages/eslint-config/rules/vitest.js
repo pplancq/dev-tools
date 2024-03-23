@@ -1,7 +1,7 @@
 module.exports = {
   overrides: [
     {
-      files: ['*.{test,spec}.{js,jsx,ts,tsx}'],
+      files: ['*.{test,spec,steps}.{js,jsx,ts,tsx}'],
       plugins: ['vitest', 'vitest-globals'],
       env: {
         'vitest-globals/env': true,
