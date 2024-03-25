@@ -1,3 +1,10 @@
+## @pplancq/commitlint-config [2.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@2.1.0...@pplancq/commitlint-config@2.1.1) (2024-03-25)
+
+
+### Bug Fixes
+
+* **commitlint-config:** fix case-sensitive to ignores release commit ([ab9c5fd](https://github.com/pplancq/dev-tools/commit/ab9c5fd433a75264e943530cf2006bbad70b306a))
+
 ## @pplancq/commitlint-config [2.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@2.0.0...@pplancq/commitlint-config@2.1.0) (2024-03-20)
 
 
