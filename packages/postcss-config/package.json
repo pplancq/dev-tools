@@ -23,7 +23,7 @@
   "dependencies": {
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-normalize": "^10.0.1",
-    "postcss-preset-env": "^9.5.2"
+    "postcss-preset-env": "^9.5.3"
   },
   "volta": {
     "node": "20.10.0",
