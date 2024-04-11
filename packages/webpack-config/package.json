@@ -55,7 +55,6 @@
     "webpack-dev-server": "^4.15.1"
   },
   "volta": {
-    "node": "20.10.0",
-    "npm": "10.2.5"
+    "extends": "../../package.json"
   }
 }
