@@ -27,7 +27,6 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
   },
   "volta": {
-    "node": "20.10.0",
-    "npm": "10.2.5"
+    "extends": "../../package.json"
   }
 }
