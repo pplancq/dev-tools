@@ -1,3 +1,11 @@
+## @pplancq/webpack-config [1.1.2](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.1.1...@pplancq/webpack-config@1.1.2) (2024-04-16)
+
+
+### Bug Fixes
+
+* **webpack-config:** fix css-loader namedExport ([b6eb779](https://github.com/pplancq/dev-tools/commit/b6eb77987d85b04c0649f5ace7e086df7fb4c1b7))
+* **webpack-config:** remove include src for file and svg loader ([3591cbd](https://github.com/pplancq/dev-tools/commit/3591cbdfac999315d16196c5478765b8a938ebcd))
+
 ## @pplancq/webpack-config [1.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.1.0...@pplancq/webpack-config@1.1.1) (2024-03-20)
 
 
