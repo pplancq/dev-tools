@@ -1,3 +1,23 @@
+## @pplancq/react-template [1.3.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.2.0...@pplancq/react-template@1.3.0) (2024-04-16)
+
+
+### Features
+
+* **react-template:** add cleanup from @testing-library/react on vitest setup ([a981e0a](https://github.com/pplancq/dev-tools/commit/a981e0a253bda642e2a5a776400d7269a4cdd9cd))
+* **react-template:** add vitest-axe for test a11y violation ([4786b4a](https://github.com/pplancq/dev-tools/commit/4786b4a7701e8601e3fee87cf26ffda6ffb4431f))
+
+
+
+### Dependencies
+
+* **@pplancq/babel-config:** upgraded to 1.0.2
+* **@pplancq/commitlint-config:** upgraded to 2.1.2
+* **@pplancq/eslint-config:** upgraded to 2.1.1
+* **@pplancq/postcss-config:** upgraded to 1.0.2
+* **@pplancq/prettier-config:** upgraded to 1.0.2
+* **@pplancq/stylelint-config:** upgraded to 2.0.2
+* **@pplancq/webpack-config:** upgraded to 1.1.2
+
 ## @pplancq/react-template [1.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.1.2...@pplancq/react-template@1.2.0) (2024-03-18)
 
 
