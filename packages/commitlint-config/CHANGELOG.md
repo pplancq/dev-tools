@@ -1,3 +1,5 @@
+## @pplancq/commitlint-config [2.1.2](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@2.1.1...@pplancq/commitlint-config@2.1.2) (2024-04-16)
+
 ## @pplancq/commitlint-config [2.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@2.1.0...@pplancq/commitlint-config@2.1.1) (2024-03-25)
 
 
