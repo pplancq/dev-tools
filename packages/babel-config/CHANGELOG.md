@@ -1,3 +1,5 @@
+## @pplancq/babel-config [1.0.2](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.0.1...@pplancq/babel-config@1.0.2) (2024-04-16)
+
 ## @pplancq/babel-config [1.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.0.0...@pplancq/babel-config@1.0.1) (2024-03-20)
 
 
