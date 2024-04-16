@@ -1,3 +1,5 @@
+## @pplancq/semantic-release-config [1.2.1](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.2.0...@pplancq/semantic-release-config@1.2.1) (2024-04-16)
+
 ## @pplancq/semantic-release-config [1.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.1.0...@pplancq/semantic-release-config@1.2.0) (2024-03-20)
 
 
