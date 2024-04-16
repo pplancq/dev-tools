@@ -1,3 +1,5 @@
+## @pplancq/eslint-config [2.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.1.0...@pplancq/eslint-config@2.1.1) (2024-04-16)
+
 ## @pplancq/eslint-config [2.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.0.1...@pplancq/eslint-config@2.1.0) (2024-03-23)
 
 
