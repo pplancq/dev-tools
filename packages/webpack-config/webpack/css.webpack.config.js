@@ -23,6 +23,7 @@ module.exports = (env, { mode = 'development' }) => {
         modules: {
           auto: /\.module\.\w+$/i,
           localIdentName: isEnvProduction ? 'css--[hash:base64:16]' : '[name]--[local]--[hash:base64:8]',
+          namedExport: false,
         },
       },
     },
