@@ -1,5 +1,3 @@
-const paths = require('../helper/paths');
-
 module.exports = (env, { mode = 'development' }) => {
   const isEnvProduction = mode === 'production';
 
@@ -8,7 +6,6 @@ module.exports = (env, { mode = 'development' }) => {
       rules: [
         {
           test: /\.(jpeg?|png|gif|ico|bmp)$/,
-          include: paths.src,
           use: {
             loader: require.resolve('file-loader'),
             options: {
@@ -20,7 +17,6 @@ module.exports = (env, { mode = 'development' }) => {
         },
         {
           test: /\.(woff2?|ttf|eot)$/,
-          include: paths.src,
           use: {
             loader: require.resolve('file-loader'),
             options: {

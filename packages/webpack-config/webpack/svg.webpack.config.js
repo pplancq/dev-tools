@@ -1,5 +1,3 @@
-const paths = require('../helper/paths');
-
 module.exports = (env, { mode = 'development' }) => {
   const isEnvProduction = mode === 'production';
 
@@ -8,7 +6,6 @@ module.exports = (env, { mode = 'development' }) => {
       rules: [
         {
           test: /\.svg$/,
-          include: paths.src,
           resourceQuery: /react/,
           use: [
             {
@@ -18,7 +15,6 @@ module.exports = (env, { mode = 'development' }) => {
         },
         {
           test: /\.svg$/,
-          include: paths.src,
           resourceQuery: { not: [/react/] },
           use: [
             {
