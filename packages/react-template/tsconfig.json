@@ -6,7 +6,13 @@
       "dom.iterable",
       "esnext"
     ],
-    "types": ["./src/react-app-env.d.ts", "@pplancq/webpack-config", "vitest/globals", "@testing-library/jest-dom/vitest"],
+    "types": [
+      "./src/react-app-env.d.ts",
+      "@pplancq/webpack-config",
+      "vitest/globals",
+      "@testing-library/jest-dom/vitest",
+      "vitest-axe/extend-expect"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
