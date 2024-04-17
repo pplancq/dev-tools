@@ -1,3 +1,15 @@
+## @pplancq/semantic-release-config [1.3.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.2.1...@pplancq/semantic-release-config@1.3.0) (2024-04-17)
+
+
+### Features
+
+* **semantic-release-config:** add environment variable for disable PR comment and label ([4310ea2](https://github.com/pplancq/dev-tools/commit/4310ea2f5a59ccebaa196e1c6eccfef08e3a1adb))
+
+
+### Reverts
+
+* **semantic-release-config:** add type of commit chore, docs, style, refactor, perf and test to patch release ([c94b9af](https://github.com/pplancq/dev-tools/commit/c94b9af7eac1c42fc31e7ff5971e96ef435d3068))
+
 ## @pplancq/semantic-release-config [1.2.1](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.2.0...@pplancq/semantic-release-config@1.2.1) (2024-04-16)
 
 ## @pplancq/semantic-release-config [1.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.1.0...@pplancq/semantic-release-config@1.2.0) (2024-03-20)
