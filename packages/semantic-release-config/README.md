@@ -26,6 +26,8 @@ This is the default configuration. To use, add `"release": { "extends": ["@pplan
 
 ## Git environment variables
 
-| Variable   | Description                                                                                                                                              |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GIT_ASSETS | Allows you to add files to be included in the release commit. To add several files, simply separate them with ','.<br/>Example: GIT_ASSETS=foo.js,bar.md |
+| Variable                        | Description                                                                                                                                              |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GIT_ASSETS                      | Allows you to add files to be included in the release commit. To add several files, simply separate them with ','.<br/>Example: GIT_ASSETS=foo.js,bar.md |
+| GITHUB_DISABLED_SUCCESS_COMMENT | Set to 'true' to disable commenting on issues and pull requests                                                                                          |
+| GITHUB_DISABLED_RELEASED_LABELS | Set to 'true' to not add any label.                                                                                                                      |

@@ -46,4 +46,6 @@ jobs:
           GIT_COMMITTER_EMAIL: ${{ vars.GIT_COMMITTER_EMAIL }}
           GIT_COMMITTER_NAME: ${{ vars.GIT_COMMITTER_NAME }}
           GIT_ASSETS: ${{ vars.GIT_ASSETS }}
+          GITHUB_DISABLED_SUCCESS_COMMENT: 'true'
+          GITHUB_DISABLED_RELEASED_LABELS: 'true'
         run: npm run release
