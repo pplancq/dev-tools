@@ -16,16 +16,10 @@ module.exports = (env, { mode = 'development' }) => {
         {
           test: /\.svg$/,
           resourceQuery: { not: [/react/] },
-          use: [
-            {
-              loader: require.resolve('file-loader'),
-              options: {
-                name: isEnvProduction ? 'images/[name].[contenthash:8].[ext]' : 'images/[name].[ext]',
-                limit: 100000,
-                esModule: true,
-              },
-            },
-          ],
+          type: 'asset/resource',
+          generator: {
+            filename: isEnvProduction ? 'images/[name].[contenthash:8].[ext]' : 'images/[name].[ext]',
+          },
         },
       ],
     },

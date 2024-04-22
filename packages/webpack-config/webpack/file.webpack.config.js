@@ -6,23 +6,16 @@ module.exports = (env, { mode = 'development' }) => {
       rules: [
         {
           test: /\.(jpeg?|png|gif|ico|bmp)$/,
-          use: {
-            loader: require.resolve('file-loader'),
-            options: {
-              name: isEnvProduction ? 'images/[name].[contenthash:8].[ext]' : 'images/[name].[ext]',
-              limit: 100000,
-              esModule: true,
-            },
+          type: 'asset/resource',
+          generator: {
+            filename: isEnvProduction ? 'images/[name].[contenthash:8].[ext]' : 'images/[name].[ext]',
           },
         },
         {
           test: /\.(woff2?|ttf|eot)$/,
-          use: {
-            loader: require.resolve('file-loader'),
-            options: {
-              name: isEnvProduction ? 'fonts/[name].[contenthash:8].[ext]' : 'fonts/[name].[ext]',
-              esModule: false,
-            },
+          type: 'asset/resource',
+          generator: {
+            filename: isEnvProduction ? 'fonts/[name].[contenthash:8].[ext]' : 'fonts/[name].[ext]',
           },
         },
       ],
