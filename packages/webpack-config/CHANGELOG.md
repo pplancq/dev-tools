@@ -1,3 +1,10 @@
+## @pplancq/webpack-config [1.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.1.2...@pplancq/webpack-config@1.2.0) (2024-04-22)
+
+
+### Features
+
+* **webpack-config:** replace file-loader by asset modules ([42edabe](https://github.com/pplancq/dev-tools/commit/42edabeb59494bfdca13ac901062f3f844790347))
+
 ## @pplancq/webpack-config [1.1.2](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.1.1...@pplancq/webpack-config@1.1.2) (2024-04-16)
 
 
