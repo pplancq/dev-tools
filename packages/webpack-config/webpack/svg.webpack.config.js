@@ -18,7 +18,7 @@ module.exports = (env, { mode = 'development' }) => {
           resourceQuery: { not: [/react/] },
           type: 'asset/resource',
           generator: {
-            filename: isEnvProduction ? 'images/[name].[contenthash:8].[ext]' : 'images/[name].[ext]',
+            filename: isEnvProduction ? 'images/[name].[contenthash:8][ext]' : 'images/[name][ext]',
           },
         },
       ],
