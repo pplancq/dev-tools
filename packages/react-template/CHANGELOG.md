@@ -1,3 +1,16 @@
+## @pplancq/react-template [1.4.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.3.0...@pplancq/react-template@1.4.0) (2024-05-02)
+
+
+### Features
+
+* **webpack-config:** add an environment variable to disable source map generation ([61bf247](https://github.com/pplancq/dev-tools/commit/61bf2476cb59a81d23ac8ade2d370adff58a1730))
+
+
+
+### Dependencies
+
+* **@pplancq/webpack-config:** upgraded to 1.3.0
+
 ## @pplancq/react-template [1.3.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.2.0...@pplancq/react-template@1.3.0) (2024-04-16)
 
 
