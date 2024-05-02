@@ -15,6 +15,8 @@ module.exports = (env, { mode = 'development' }) => {
   const packageJson = JSON.parse(readFileSync(paths.packageJson, { encoding: 'utf-8' }));
   const metaEnv = generateMetaEnv(mode);
 
+  const disableSourceMap = (process.env.DISABLE_SOURCE_MAP ?? 'false') === 'true' ? false : 'source-map';
+
   return {
     extends: [
       resolve(__dirname, 'js.webpack.config.js'),
@@ -24,7 +26,7 @@ module.exports = (env, { mode = 'development' }) => {
       resolve(__dirname, 'devServer.webpack.config.js'),
     ],
     mode: isEnvProduction ? 'production' : 'development',
-    devtool: isEnvProduction ? 'source-map' : 'cheap-module-source-map',
+    devtool: isEnvProduction ? disableSourceMap : 'cheap-module-source-map',
     entry: paths.entry,
     output: {
       path: paths.build,

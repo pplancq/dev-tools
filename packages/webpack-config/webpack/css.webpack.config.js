@@ -9,6 +9,7 @@ module.exports = (env, { mode = 'development' }) => {
   const isEnvDevelopment = !isEnvProduction;
   const disableStyleLintPlugin =
     (process.env.DISABLE_STYLELINT_PLUGIN ?? 'false') === 'true' || !resolveModule('stylelint');
+  const disableSourceMap = (process.env.DISABLE_SOURCE_MAP ?? 'false') === 'true';
 
   const basseCssRules = [
     isEnvDevelopment && require.resolve('style-loader'),
@@ -19,7 +20,7 @@ module.exports = (env, { mode = 'development' }) => {
       loader: require.resolve('css-loader'),
       options: {
         importLoaders: 1,
-        sourceMap: true,
+        sourceMap: !disableSourceMap,
         modules: {
           auto: /\.module\.\w+$/i,
           localIdentName: isEnvProduction ? 'css--[hash:base64:16]' : '[name]--[local]--[hash:base64:8]',
@@ -30,7 +31,7 @@ module.exports = (env, { mode = 'development' }) => {
     {
       loader: require.resolve('postcss-loader'),
       options: {
-        sourceMap: true,
+        sourceMap: !disableSourceMap,
       },
     },
   ].filter(Boolean);
@@ -54,14 +55,14 @@ module.exports = (env, { mode = 'development' }) => {
             {
               loader: require.resolve('resolve-url-loader'),
               options: {
-                sourceMap: true,
+                sourceMap: !disableSourceMap,
                 root: paths.src,
               },
             },
             {
               loader: require.resolve('sass-loader'),
               options: {
-                sourceMap: true,
+                sourceMap: !disableSourceMap,
               },
             },
           ],
