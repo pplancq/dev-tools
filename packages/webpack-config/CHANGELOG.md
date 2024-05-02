@@ -1,3 +1,15 @@
+## @pplancq/webpack-config [1.3.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.2.0...@pplancq/webpack-config@1.3.0) (2024-05-02)
+
+
+### Features
+
+* **webpack-config:** add an environment variable to disable source map generation ([61bf247](https://github.com/pplancq/dev-tools/commit/61bf2476cb59a81d23ac8ade2d370adff58a1730))
+
+
+### Bug Fixes
+
+* **webpack-config:** fix filename for resource to use "type: 'asset/resource'" ([c44b30e](https://github.com/pplancq/dev-tools/commit/c44b30ec72c841ebd043365c1d278919d411d7e8))
+
 ## @pplancq/webpack-config [1.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.1.2...@pplancq/webpack-config@1.2.0) (2024-04-22)
 
 
