@@ -1,6 +1,6 @@
 {
   "name": "@pplancq/commitlint-config",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "license": "MIT",
   "description": "pplancq commitlint config",
   "author": "pplancq <paul.plancq@outlook.fr>",
