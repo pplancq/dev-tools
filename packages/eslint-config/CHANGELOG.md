@@ -1,3 +1,10 @@
+## @pplancq/eslint-config [2.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.1.1...@pplancq/eslint-config@2.2.0) (2024-05-06)
+
+
+### Features
+
+* **dev-tools:** add minimal nodejs versions for each package ([0d8447a](https://github.com/pplancq/dev-tools/commit/0d8447a6f4e26ff9cb28baac8434020156d5dac0))
+
 ## @pplancq/eslint-config [2.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.1.0...@pplancq/eslint-config@2.1.1) (2024-04-16)
 
 ## @pplancq/eslint-config [2.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.0.1...@pplancq/eslint-config@2.1.0) (2024-03-23)
