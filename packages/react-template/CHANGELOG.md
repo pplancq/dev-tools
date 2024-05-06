@@ -1,3 +1,22 @@
+## @pplancq/react-template [1.5.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.4.0...@pplancq/react-template@1.5.0) (2024-05-06)
+
+
+### Features
+
+* **dev-tools:** add minimal nodejs versions for each package ([0d8447a](https://github.com/pplancq/dev-tools/commit/0d8447a6f4e26ff9cb28baac8434020156d5dac0))
+
+
+
+### Dependencies
+
+* **@pplancq/babel-config:** upgraded to 1.1.0
+* **@pplancq/commitlint-config:** upgraded to 2.2.0
+* **@pplancq/eslint-config:** upgraded to 2.2.0
+* **@pplancq/postcss-config:** upgraded to 1.1.0
+* **@pplancq/prettier-config:** upgraded to 1.1.0
+* **@pplancq/stylelint-config:** upgraded to 2.1.0
+* **@pplancq/webpack-config:** upgraded to 1.4.0
+
 ## @pplancq/react-template [1.4.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.3.0...@pplancq/react-template@1.4.0) (2024-05-02)
 
 
