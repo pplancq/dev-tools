@@ -1,3 +1,10 @@
+## @pplancq/webpack-config [1.4.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.3.0...@pplancq/webpack-config@1.4.0) (2024-05-06)
+
+
+### Features
+
+* **dev-tools:** add minimal nodejs versions for each package ([0d8447a](https://github.com/pplancq/dev-tools/commit/0d8447a6f4e26ff9cb28baac8434020156d5dac0))
+
 ## @pplancq/webpack-config [1.3.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.2.0...@pplancq/webpack-config@1.3.0) (2024-05-02)
 
 
