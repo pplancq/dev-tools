@@ -1,3 +1,15 @@
+## @pplancq/semantic-release-config [1.4.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.3.0...@pplancq/semantic-release-config@1.4.0) (2024-05-06)
+
+
+### Features
+
+* **dev-tools:** add minimal nodejs versions for each package ([0d8447a](https://github.com/pplancq/dev-tools/commit/0d8447a6f4e26ff9cb28baac8434020156d5dac0))
+
+
+### Reverts
+
+* **deps:** bump conventional-changelog-conventionalcommits ([e87bc11](https://github.com/pplancq/dev-tools/commit/e87bc11ec7b58e10e4a6248a83afc9c56c6a7b0d))
+
 ## @pplancq/semantic-release-config [1.3.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.2.1...@pplancq/semantic-release-config@1.3.0) (2024-04-17)
 
 
