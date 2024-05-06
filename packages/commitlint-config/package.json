@@ -26,6 +26,9 @@
   "peerDependencies": {
     "@commitlint/cli": "^19.0.3"
   },
+  "engines": {
+    "node": ">=v18"
+  },
   "volta": {
     "extends": "../../package.json"
   }

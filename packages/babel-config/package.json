@@ -26,6 +26,9 @@
     "@babel/preset-typescript": "^7.24.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
   },
+  "engines": {
+    "node": ">=6.9.0"
+  },
   "volta": {
     "extends": "../../package.json"
   }

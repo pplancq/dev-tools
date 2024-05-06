@@ -25,6 +25,9 @@
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^9.5.11"
   },
+  "engines": {
+    "node": "^14 || ^16 || >=18"
+  },
   "volta": {
     "extends": "../../package.json"
   }

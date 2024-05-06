@@ -35,6 +35,9 @@
   "peerDependencies": {
     "semantic-release": ">=22.0.12 <24"
   },
+  "engines": {
+    "node": ">=20.8.1"
+  },
   "volta": {
     "extends": "../../package.json"
   }
