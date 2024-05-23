@@ -13,7 +13,7 @@ module.exports = (env, { mode = 'development' }) => {
   const isEnvDevelopment = !isEnvProduction;
 
   const packageJson = JSON.parse(readFileSync(paths.packageJson, { encoding: 'utf-8' }));
-  const metaEnv = generateMetaEnv(mode);
+  const metaEnv = generateMetaEnv(mode, env);
 
   const disableSourceMap = (process.env.DISABLE_SOURCE_MAP ?? 'false') === 'true' ? false : 'source-map';
 

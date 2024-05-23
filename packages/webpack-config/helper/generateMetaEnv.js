@@ -3,7 +3,7 @@ const dotenvExpand = require('dotenv-expand');
 const dotenv = require('dotenv');
 const paths = require('./paths');
 
-module.exports = mode => {
+module.exports = (mode, env = {}) => {
   const isEnvProduction = mode === 'production';
   const isEnvDevelopment = !isEnvProduction;
 
@@ -18,6 +18,8 @@ module.exports = mode => {
       }
     },
   );
+
+  process.env = { ...process.env, ...env };
 
   const metaEnv = {
     'import.meta.env.MODE': JSON.stringify(mode),
