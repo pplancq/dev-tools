@@ -1,3 +1,10 @@
+## @pplancq/webpack-config [1.4.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.4.0...@pplancq/webpack-config@1.4.1) (2024-05-23)
+
+
+### Bug Fixes
+
+* **webpack-config:** merge webpack cli --env param with env var ([557c4ca](https://github.com/pplancq/dev-tools/commit/557c4cac86b1c5e01dc49cdbb9358d3e2a016b0e))
+
 ## @pplancq/webpack-config [1.4.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.3.0...@pplancq/webpack-config@1.4.0) (2024-05-06)
 
 
