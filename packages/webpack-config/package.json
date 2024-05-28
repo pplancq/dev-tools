@@ -22,7 +22,7 @@
     "config"
   ],
   "dependencies": {
-    "@babel/core": "^7.24.5",
+    "@babel/core": "^7.24.6",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.13",
     "@svgr/webpack": "^8.1.0",
     "babel-loader": "^9.1.3",
