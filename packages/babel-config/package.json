@@ -21,7 +21,7 @@
     "config"
   ],
   "dependencies": {
-    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-env": "^7.24.6",
     "@babel/preset-react": "^7.24.6",
     "@babel/preset-typescript": "^7.24.6",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
