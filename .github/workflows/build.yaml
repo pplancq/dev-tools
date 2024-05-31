@@ -25,6 +25,26 @@ jobs:
       - name: Install package
         run: npm ci
 
+  commitlint:
+    if: github.event_name == 'pull_request'
+    name: CommitLint
+    needs:
+      - install
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: ./.github/actions/setup-node
+
+      # https://commitlint.js.org/guides/ci-setup.html#github-actions
+      - name: Validate PR commits with commitlint
+        run: npx commitlint --from ${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }} --to ${{ github.event.pull_request.head.sha }} --verbose --color
+
   lint:
     name: Lint code
     needs:
