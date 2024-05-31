@@ -1,9 +1,9 @@
 import type { Json } from '@Front/types/api';
-import { HEADERS, METHODS, MINE_TYPES } from './constant';
+import { HEADERS, METHODS, MIME_TYPES } from './constant';
 
 export type FetchApiError = Error & {
   code?: number;
-  contentType?: MINE_TYPES;
+  contentType?: MIME_TYPES;
 };
 
 type FetchApiProps = {
@@ -22,7 +22,7 @@ export const fetchApi = async <T extends Json | string>({
   const mergeHeaders = new Headers(headers);
 
   if (data) {
-    mergeHeaders.append(HEADERS.contentType, MINE_TYPES.json);
+    mergeHeaders.append(HEADERS.contentType, MIME_TYPES.json);
   }
 
   const response = await fetch(path, {
@@ -36,7 +36,7 @@ export const fetchApi = async <T extends Json | string>({
   if (!response.ok) {
     const error: FetchApiError = new Error(content);
     error.code = response.status;
-    error.contentType = (response.headers.get(HEADERS.contentType) as MINE_TYPES) ?? MINE_TYPES.text;
+    error.contentType = (response.headers.get(HEADERS.contentType) as MIME_TYPES) ?? MIME_TYPES.text;
 
     throw error;
   }

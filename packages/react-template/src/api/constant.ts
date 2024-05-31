@@ -10,7 +10,7 @@ export enum HEADERS {
   contentType = 'content-type',
 }
 
-export enum MINE_TYPES {
+export enum MIME_TYPES {
   json = 'application/json',
   text = 'plain/text',
 }
