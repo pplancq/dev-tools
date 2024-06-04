@@ -14,6 +14,7 @@ if (disabledSuccessComment) {
 }
 if (disabledReleasedLabels) {
   githubOptions.releasedLabels = false;
+  githubOptions.labels = false;
 }
 
 /** @type {import('semantic-release').GlobalConfig} */
