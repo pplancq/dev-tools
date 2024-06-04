@@ -1,3 +1,9 @@
+## @pplancq/react-template [1.5.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.5.0...@pplancq/react-template@1.5.1) (2024-06-04)
+
+### Bug Fixes
+
+* **react-template:** fix typo in fetch contanst ([05ca8ce](https://github.com/pplancq/dev-tools/commit/05ca8ce81440d9ced56ecbd6307ff43ca85df848))
+
 ## @pplancq/react-template [1.5.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.4.0...@pplancq/react-template@1.5.0) (2024-05-06)
 
 
