@@ -1,3 +1,9 @@
+## @pplancq/semantic-release-config [1.4.1](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.4.0...@pplancq/semantic-release-config@1.4.1) (2024-06-04)
+
+### Bug Fixes
+
+* **semantic-release-config:** disabled labels optiosn when disabled releasedLabels ([fedc862](https://github.com/pplancq/dev-tools/commit/fedc862f46bb8b9a7d9c9407197c695fad765026))
+
 ## @pplancq/semantic-release-config [1.4.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.3.0...@pplancq/semantic-release-config@1.4.0) (2024-05-06)
 
 
