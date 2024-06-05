@@ -1,3 +1,9 @@
+## @pplancq/react-template [1.6.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.5.1...@pplancq/react-template@1.6.0) (2024-06-05)
+
+### Features
+
+* **react-template:** added mocks and pre-configured them with msw ([c150fc4](https://github.com/pplancq/dev-tools/commit/c150fc42427600de5c92c81d417d267f7455bdde))
+
 ## @pplancq/react-template [1.5.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.5.0...@pplancq/react-template@1.5.1) (2024-06-04)
 
 ### Bug Fixes
