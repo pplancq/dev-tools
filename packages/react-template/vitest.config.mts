@@ -1,14 +1,21 @@
-import react from '@vitejs/plugin-react'
-import { loadEnv } from 'vite'
-import svgr from 'vite-plugin-svgr'
-import viteTsconfigPaths from 'vite-tsconfig-paths'
-import { defineConfig } from 'vitest/config'
+import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
+import { loadEnv } from 'vite';
+import svgr from 'vite-plugin-svgr';
+import viteTsconfigPaths from 'vite-tsconfig-paths';
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
-    plugins: [react(), viteTsconfigPaths(), svgr()],
+    plugins: [
+      react(),
+      viteTsconfigPaths({
+        projects: [resolve(__dirname, './tsconfig.test.json')],
+      }),
+      svgr()
+    ],
     envPrefix: env.ENV_PREFIX ?? 'FRONT_',
     test: {
       globals: true,

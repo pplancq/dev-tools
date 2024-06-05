@@ -1,3 +1,3 @@
-// interface ImportMetaEnv {
-//   readonly FRONT_FOO: string;
-// }
+interface ImportMetaEnv {
+  readonly FRONT_MOCK_ENABLE: 'true' | 'false';
+}

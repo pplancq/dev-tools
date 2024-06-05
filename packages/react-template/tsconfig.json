@@ -28,7 +28,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@Front/*": ["src/*"]
+      "@Front/*": ["src/*"],
+      "@Mocks/*": ["mocks/*"],
     }
   },
   "include": [
