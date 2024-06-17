@@ -41,7 +41,7 @@
     "postcss-loader": "^8.1.1",
     "react-refresh": "^0.14.2",
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.77.4",
+    "sass": "^1.77.5",
     "sass-loader": "^14.2.1",
     "style-loader": "^4.0.0",
     "stylelint-webpack-plugin": "^5.0.1",
