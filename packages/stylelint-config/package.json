@@ -25,7 +25,7 @@
     "config"
   ],
   "dependencies": {
-    "stylelint-config-pretty-order": "^0.5.1",
+    "stylelint-config-pretty-order": "^0.6.0",
     "stylelint-config-recommended-scss": "^14.0.0",
     "stylelint-config-standard": "^36.0.1"
   },
