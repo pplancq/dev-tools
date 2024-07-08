@@ -23,7 +23,7 @@
   "dependencies": {
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-normalize": "^10.0.1",
-    "postcss-preset-env": "^9.5.15"
+    "postcss-preset-env": "^9.6.0"
   },
   "engines": {
     "node": "^14 || ^16 || >=18"
