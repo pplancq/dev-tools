@@ -44,7 +44,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
+    "@commitlint/cli": "^19.4.0",
     "@pplancq/babel-config": "*",
     "@pplancq/commitlint-config": "*",
     "@pplancq/eslint-config": "*",
