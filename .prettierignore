@@ -7,3 +7,4 @@ LICENSE
 packages/react-template/
 CHANGELOG.md
 sonar-project.properties
+.DS_Store

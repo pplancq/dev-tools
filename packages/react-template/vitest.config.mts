@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import { loadEnv } from 'vite';
@@ -5,6 +6,7 @@ import svgr from 'vite-plugin-svgr';
 import viteTsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
 
+// eslint-disable-next-line import/no-default-export
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
@@ -14,7 +16,7 @@ export default defineConfig(({ mode }) => {
       viteTsconfigPaths({
         projects: [resolve(__dirname, './tsconfig.test.json')],
       }),
-      svgr()
+      svgr(),
     ],
     envPrefix: env.ENV_PREFIX ?? 'FRONT_',
     test: {
@@ -26,7 +28,7 @@ export default defineConfig(({ mode }) => {
       reporters: ['basic', 'junit', 'vitest-sonar-reporter'],
       outputFile: {
         'vitest-sonar-reporter': 'sonar-report.xml',
-        'junit': 'junit-report.xml',
+        junit: 'junit-report.xml',
       },
       include: ['src/**/*.(spec|test|steps).[jt]s?(x)'],
       poolOptions: {
@@ -36,6 +38,7 @@ export default defineConfig(({ mode }) => {
         },
       },
       coverage: {
+        enabled: env.CI,
         reporter: ['lcov', 'json', 'html', 'text', 'cobertura'],
         provider: 'v8',
         lines: 80,
