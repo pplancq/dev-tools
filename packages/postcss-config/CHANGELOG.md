@@ -1,3 +1,14 @@
+## @pplancq/postcss-config [2.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/postcss-config@1.1.0...@pplancq/postcss-config@2.0.0) (2024-08-16)
+
+### ⚠ BREAKING CHANGES
+
+* **postcss-config:** Node.js versions 14 and 16 are no longer supported.
+
+### Features
+
+* **postcss-config:** bump postcss-preset-env from 9.6.0 to 10.0.0 ([22eb6f8](https://github.com/pplancq/dev-tools/commit/22eb6f862bc13bd9cf01a0d6e0820efcb4586c39))
+* **postcss-config:** update Node.js engine requirement to >=18 ([0b3fa49](https://github.com/pplancq/dev-tools/commit/0b3fa4994673fb4bcdbbb973b15e7d39e3a542df))
+
 ## @pplancq/postcss-config [1.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/postcss-config@1.0.2...@pplancq/postcss-config@1.1.0) (2024-05-06)
 
 
