@@ -1,4 +1,5 @@
 const { resolve } = require('path');
+const getEntryFile = require('./getEntryFile');
 
 const paths = {
   root: resolve(process.cwd()),
@@ -7,7 +8,7 @@ const paths = {
   public: resolve(process.cwd(), './public'),
   build: resolve(process.cwd(), './build'),
   dotenv: resolve(process.cwd(), './.env'),
-  entry: resolve(process.cwd(), './src/main.ts'),
+  entry: getEntryFile(),
   cache: resolve(process.cwd(), './node_modules/.cache'),
   tsconfig: resolve(process.cwd(), './tsconfig.json'),
   packageJson: resolve(process.cwd(), './package.json'),
