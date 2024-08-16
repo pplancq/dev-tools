@@ -1,3 +1,10 @@
+## @pplancq/webpack-config [1.5.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.4.1...@pplancq/webpack-config@1.5.0) (2024-08-16)
+
+### Features
+
+* **webpack-config:** add automatic entry point selection for main.js and main.ts in src directory ([bd9b941](https://github.com/pplancq/dev-tools/commit/bd9b9410d3ed6587c3e99d4ebec2310ddeebda19))
+* **webpack-config:** bump sass-loaderfrom 14.2.1 to 16.0.0 ([8f4aba0](https://github.com/pplancq/dev-tools/commit/8f4aba08c529487ea1054581cb25100d1190d661))
+
 ## @pplancq/webpack-config [1.4.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.4.0...@pplancq/webpack-config@1.4.1) (2024-05-23)
 
 
