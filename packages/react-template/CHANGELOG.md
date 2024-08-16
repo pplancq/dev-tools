@@ -1,3 +1,15 @@
+## @pplancq/react-template [1.7.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.6.0...@pplancq/react-template@1.7.0) (2024-08-16)
+
+### Features
+
+* **react-template:** bump vitest from 1.6.0 to 2.0.5 ([4c129d3](https://github.com/pplancq/dev-tools/commit/4c129d303cc27d5b73dbbdb9710f2ad64745c1cf))
+
+
+### Dependencies
+
+* **@pplancq/postcss-config:** upgraded to 2.0.0
+* **@pplancq/webpack-config:** upgraded to 1.5.0
+
 ## @pplancq/react-template [1.6.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.5.1...@pplancq/react-template@1.6.0) (2024-06-05)
 
 ### Features
