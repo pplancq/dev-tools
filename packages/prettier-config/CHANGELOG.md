@@ -1,3 +1,9 @@
+## @pplancq/prettier-config [1.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@1.1.0...@pplancq/prettier-config@1.2.0) (2024-08-19)
+
+### Features
+
+* **prettier-config:** add plugin for gherkin, nginx and properties files ([037c908](https://github.com/pplancq/dev-tools/commit/037c9081ca212979a3c053ce8c84ea18da016756))
+
 ## @pplancq/prettier-config [1.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@1.0.2...@pplancq/prettier-config@1.1.0) (2024-05-06)
 
 
