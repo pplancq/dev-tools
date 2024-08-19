@@ -21,6 +21,9 @@
     "config"
   ],
   "dependencies": {
+    "prettier-plugin-gherkin": "^3.0.0",
+    "prettier-plugin-nginx": "^1.0.3",
+    "prettier-plugin-properties": "^0.3.0",
     "prettier-plugin-sh": "^0.14.0"
   },
   "peerDependencies": {
