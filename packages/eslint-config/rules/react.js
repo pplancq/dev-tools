@@ -1,6 +1,6 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', './base.js', './typescript.js'],
-  plugins: ['react'],
+  extends: ['airbnb', './base.js', './typescript.js'],
+  plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -610,6 +610,15 @@ module.exports = {
     'react/void-dom-elements-no-children': 'error',
 
     // eslint-plugin-react-hooks https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hook
+
+    // Enforce Rules of Hooks
+    // https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/src/RulesOfHooks.js
+    // https://react.dev/reference/rules/rules-of-hooks
+    'react-hooks/rules-of-hooks': 'error',
+
+    // Verify the list of the dependencies for Hooks like useEffect and similar
+    // https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/src/ExhaustiveDeps.js
+    // https://github.com/facebook/react/issues/14920
     'react-hooks/exhaustive-deps': 'warn',
   },
   settings: {
@@ -649,9 +658,11 @@ module.exports = {
         ],
 
         // eslint-plugin-react https://github.com/jsx-eslint/eslint-plugin-react
+
         // Enforce a defaultProps definition for every prop that is not a required prop
         // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-default-props.md
         'react/require-default-props': 'off',
+
         // Disallow file extensions that may contain JSX
         // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
         'react/jsx-filename-extension': [
