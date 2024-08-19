@@ -35,25 +35,25 @@ Replace <project_name> with the name of your new project.
 This package also supports creating a new React project with Vite. If you prefer to use Vite instead of webpack, you can use the `--use-vite` option
 
 ```shell
-npm create @pplancq/react-app@latest <project_name> -- --use-vite
+npm create @pplancq/react-app@latest --use-vite < project_name > --
 ```
 
 or
 
 ```shell
-npx @pplancq/create-react-app@latest <project_name> --use-vite
+npx @pplancq/create-react-app@latest < project_name > --use-vite
 ```
 
 or
 
 ```shell
-yarn create @pplancq/react-app@latest <project_name> --use-vite
+yarn create @pplancq/react-app@latest < project_name > --use-vite
 ```
 
 or
 
 ```shell
-pnpm create @pplancq/react-app@latest <project_name> --use-vite
+pnpm create @pplancq/react-app@latest < project_name > --use-vite
 ```
 
 ## Template
