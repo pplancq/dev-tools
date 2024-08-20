@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', './base.js', './typescript.js'],
+  extends: ['airbnb', './react-jsx-a11y.js', './base.js', './typescript.js'],
   plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
