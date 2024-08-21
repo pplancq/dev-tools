@@ -7,6 +7,10 @@ module.exports = {
         'vitest-globals/env': true,
       },
       rules: {
+        // eslint-plugin-import https://github.com/import-js/eslint-plugin-import
+
+        // import/no-extraneous-dependencies
+        // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
         'import/no-extraneous-dependencies': 'off',
 
         // eslint-plugin-vitest https://github.com/veritem/eslint-plugin-vitest

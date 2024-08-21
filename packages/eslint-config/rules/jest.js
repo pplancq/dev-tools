@@ -8,6 +8,9 @@ module.exports = {
       },
       rules: {
         // eslint-plugin-import https://github.com/import-js/eslint-plugin-import
+
+        // import/no-extraneous-dependencies
+        // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-extraneous-dependencies.md
         'import/no-extraneous-dependencies': 'off',
 
         // eslint-plugin-jest https://github.com/jest-community/eslint-plugin-jest

@@ -8,6 +8,9 @@ module.exports = {
   },
   rules: {
     // eslint-plugin-import https://github.com/import-js/eslint-plugin-import
+
+    // import/extensions
+    // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -646,6 +649,9 @@ module.exports = {
       },
       rules: {
         // eslint-plugin-import https://github.com/import-js/eslint-plugin-import
+
+        // import/extensions
+        // https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md
         'import/extensions': [
           'error',
           'ignorePackages',

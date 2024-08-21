@@ -1,6 +1,5 @@
 module.exports = {
-  extends: ['airbnb/base'],
-  plugins: ['import'],
+  extends: ['airbnb/base', './import.js'],
   parserOptions: {
     ecmaVersion: 'latest',
   },
@@ -22,16 +21,5 @@ module.exports = {
         allowForLoopAfterthoughts: true,
       },
     ],
-
-    // eslint-plugin-import https://github.com/import-js/eslint-plugin-import
-    'import/prefer-default-export': 'off',
-    'import/no-default-export': 'error',
-  },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js'],
-      },
-    },
   },
 };
