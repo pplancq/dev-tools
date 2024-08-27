@@ -33,7 +33,7 @@
     "conventional-changelog-conventionalcommits": "^8.0.0"
   },
   "peerDependencies": {
-    "semantic-release": ">=22.0.12 <24"
+    "semantic-release": ">=22.0.12 <25"
   },
   "engines": {
     "node": ">=20.8.1"
