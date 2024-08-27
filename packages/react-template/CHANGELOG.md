@@ -1,3 +1,10 @@
+## @pplancq/react-template [1.8.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.7.0...@pplancq/react-template@1.8.0) (2024-08-27)
+
+### Features
+
+* **react-template:** bump jsdom 24.1.1 to 25.0.0 ([c3c8993](https://github.com/pplancq/dev-tools/commit/c3c8993e852a01ba0366d78e6597fc01b00aa7f9))
+* **react-template:** update scripts command for lint code ([50b50f8](https://github.com/pplancq/dev-tools/commit/50b50f88b427c4eef11b81142aad8fb09a908ce3))
+
 ## @pplancq/react-template [1.7.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.6.0...@pplancq/react-template@1.7.0) (2024-08-16)
 
 ### Features
