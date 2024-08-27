@@ -1,3 +1,19 @@
+## @pplancq/eslint-config [2.3.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.2.0...@pplancq/eslint-config@2.3.0) (2024-08-27)
+
+### Features
+
+* **eslint-config:** replace @typescript-eslint/eslint-plugin recommended config with specific rules ([fc781a5](https://github.com/pplancq/dev-tools/commit/fc781a5dcc5495b66242da60f8b16ec8292ed037))
+* **eslint-config:** replace eslint-config-airbnb config with specific rules ([113d046](https://github.com/pplancq/dev-tools/commit/113d046f93173f29348eed8fa988f7671490dceb))
+* **eslint-config:** replace eslint-plugin-import recommended config with specific rules ([f425c62](https://github.com/pplancq/dev-tools/commit/f425c62338990cebbaf0a5e2198731de39d3883a))
+* **eslint-config:** replace eslint-plugin-jest and eslint-plugin-jest-extended recommended config with specific rules ([a1c0705](https://github.com/pplancq/dev-tools/commit/a1c0705a641614c915e0629121f62a93d82408fb))
+* **eslint-config:** replace eslint-plugin-jest-dom recommended config with specific rules ([8ec4083](https://github.com/pplancq/dev-tools/commit/8ec4083d6791d17e746bb916c97ae45fc4692e6e))
+* **eslint-config:** replace eslint-plugin-jsx-a11y recommended config with specific rules ([19f1994](https://github.com/pplancq/dev-tools/commit/19f1994e1be4d41ab6cca98c28824595c4e8e45e))
+* **eslint-config:** replace eslint-plugin-prettier recommended config with specific rules and remove eslint-config-prettier ([46e36f3](https://github.com/pplancq/dev-tools/commit/46e36f3cc2e21d3c5885943c91aeac38f4014654))
+* **eslint-config:** replace eslint-plugin-react recommended config with specific rules ([ef29e01](https://github.com/pplancq/dev-tools/commit/ef29e0177793b8391e65f8df15424b9cd977bec3))
+* **eslint-config:** replace eslint-plugin-react-hooks recommended config with specific rules ([237905e](https://github.com/pplancq/dev-tools/commit/237905e364a155e3ccc9581fa38c266bc8d4ce57))
+* **eslint-config:** replace eslint-plugin-testing-library recommended config with specific rules ([160e7bc](https://github.com/pplancq/dev-tools/commit/160e7bc6443aa5d25361065874e32803ffd236ec))
+* **eslint-config:** replace eslint-plugin-vitest recommended config with specific rules ([1c8cf9c](https://github.com/pplancq/dev-tools/commit/1c8cf9cce9d6e9df414b73a7cd2a9f7d4019fdcb))
+
 ## @pplancq/eslint-config [2.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.1.1...@pplancq/eslint-config@2.2.0) (2024-05-06)
 
 
