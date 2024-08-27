@@ -1,14 +1,15 @@
-# 📁 ui 
-The "ui" folder is a directory designed to group and organize reusable components. 
+# 📁 ui
+
+The "ui" folder is a directory designed to group and organize reusable components.
 
 We follow the concept of Atomic design to structure our components into "atoms," "molecules," "organisms," and "templates," ensuring consistent design and maximum reusability.
 
 ## 📑 Table of Contents
-  - [Why use a "ui" folder with Atomic Design](#folder-organization)
-  - [Structure of a "ui" folder according to Atomic Design](#structure)
-  - [Usage Example](#usage)
-  - [Best Practice](#best-practice)
 
+- [Why use a "ui" folder with Atomic Design](#folder-organization)
+- [Structure of a "ui" folder according to Atomic Design](#structure)
+- [Usage Example](#usage)
+- [Best Practice](#best-practice)
 
 ## <span id="folder-organization">Why use a "ui" folder with Atomic Design?</span>
 
@@ -63,12 +64,12 @@ export const MyComponent = () => {
       {/* ... other elements of the application */}
     </div>
   );
-}
+};
 ```
 
 ### Molecule - "SearchBar" Component
-"Molecules" are more complex components that group atoms to form a functional set. In our "ui/molecules" folder, we have the "SearchBar" component that uses the atomic "Button":
 
+"Molecules" are more complex components that group atoms to form a functional set. In our "ui/molecules" folder, we have the "SearchBar" component that uses the atomic "Button":
 
 ```javascript
 import { SearchBar } from '@Front/ui/molecules/SearchBar';
@@ -77,14 +78,16 @@ export const MyComponent = () => {
   return (
     <div>
       <SearchBar placeholder="Rechercher..." />
-        {/* ... other elements of the application */}
+      {/* ... other elements of the application */}
     </div>
   );
-}
+};
 ```
+
 The "SearchBar" component is a molecule because it combines the "Button" atom with other atoms.
 
 ### Organism - "Header" Component
+
 "Organisms" are even more complex components that combine molecules and atoms to create self-contained parts of the UI. In our "ui/organisms" folder, we have the "Header" component that might include the molecular "SearchBar":
 
 ```javascript
@@ -94,14 +97,16 @@ export const MyComponent = () => {
   return (
     <div>
       <Header />
-       {/* ... other elements of the application */}
+      {/* ... other elements of the application */}
     </div>
   );
-}
+};
 ```
+
 The "Header" component is an organism because it combines the molecular "SearchBar" with other elements to form a self-contained part of the interface.
 
 ### Templates - "PageTemplate" Component
+
 "Templates" are "skeleton" components that define the placement of elements using React's composition ability.
 
 In our "ui/templates" folder, we have the "PageTemplate" component that defines the placement of the "topBar," "body," and "footer" to create a complete page:
@@ -110,32 +115,30 @@ In our "ui/templates" folder, we have the "PageTemplate" component that defines 
 import PageTemplate from '@Front/ui/templates/PageTemplate';
 
 export const MyComponent = () => {
-  return (
-    <PageTemplate
-      topBar={<div>TopBar</div>}
-      body={<div>Boby</div>}
-      footer={<div>Footer</div>}
-    />
-  );
-}
+  return <PageTemplate topBar={<div>TopBar</div>} body={<div>Boby</div>} footer={<div>Footer</div>} />;
+};
 ```
+
 The "PageTemplate" component is a template because it incorporates the "Header" organism and other elements to create a complete page.
 
 ## <span id="best-practice">🎖️ Best Practice</span>
+
 When incorporating external component libraries, it is recommended to adhere to the following best practices for the organization of UI components:
 
 #### - Export Components via the `ui` Directory
 
-Always export UI components from the `ui` directory, even if they are sourced from an external component library. 
+Always export UI components from the `ui` directory, even if they are sourced from an external component library.
 
 This practice serves as a central point for managing component exports and facilitates handling bugs or breaking changes.
 
 #### - Centralized Component Management
-By exporting components through the ui directory, you establish a centralized location for managing changes or addressing issues related to external components. 
+
+By exporting components through the ui directory, you establish a centralized location for managing changes or addressing issues related to external components.
 
 In the event of a bug or breaking change, modifications can be made at a single location, preventing the need to update multiple parts of the codebase.
 
 This approach contributes to better maintainability and ensures that updates to external components are efficiently managed.
 
 ---
-***By adopting this practice, you create a clear separation between your custom components and external components, simplifying maintenance and reducing the impact of changes from external dependencies.***
+
+**_By adopting this practice, you create a clear separation between your custom components and external components, simplifying maintenance and reducing the impact of changes from external dependencies._**

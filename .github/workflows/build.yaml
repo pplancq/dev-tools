@@ -58,7 +58,7 @@ jobs:
         uses: ./.github/actions/setup-node
 
       - name: Run lint
-        run: npm run lint -- --max-processes 1
+        run: npm run lint
 
   build:
     name: Build template

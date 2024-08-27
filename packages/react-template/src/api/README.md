@@ -1,21 +1,22 @@
 # 📁 api
 
 The "api" folder is designed to handle calls to native APIs using the fetch function. These calls are essential for retrieving real-time data from external sources, such as remote servers or web services.
-## 📑 Table of Contents
-  - [Folder Organization](#folder-organization)
-  - [Usage](#usage)
-  - [Error Handling](#error-handling)
-  - [Security](#security)
-  - [Documentation](#documentation)
-  - [Testing](#testing)
-  - [Best Practice](#best-practice)
 
+## 📑 Table of Contents
+
+- [Folder Organization](#folder-organization)
+- [Usage](#usage)
+- [Error Handling](#error-handling)
+- [Security](#security)
+- [Documentation](#documentation)
+- [Testing](#testing)
+- [Best Practice](#best-practice)
 
 ## <span id="folder-organization">Folder Organization</span>
 
 The "api" folder can be organized as follows :
 
-1. **API Endpoints** : Create a separate file for each API you are calling. For example, if you have a user management API and a data retrieval API, you can have the files `users.ts`  and `data.ts`  to handle these respective calls.
+1. **API Endpoints** : Create a separate file for each API you are calling. For example, if you have a user management API and a data retrieval API, you can have the files `users.ts` and `data.ts` to handle these respective calls.
 
 2. **Call Functions** : Inside each API file, define dedicated functions to make `fetch` requests to the corresponding endpoints. These functions can also include handling responses and errors.
 

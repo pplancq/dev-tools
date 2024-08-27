@@ -36,6 +36,10 @@ You will also see lint errors in the console.
 
 ### `npm test`
 
+Launches the test runner.
+
+### `npm run test:watch`
+
 Launches the test runner in interactive mode.
 
 ### `npm run build`
@@ -51,13 +55,17 @@ Your application is ready to be deployed!
 
 Allows you to see lint errors without fixing them. This command initiates the linting process with three linters: **eslint**, **stylelint**, and **tsc** (TypeScript Compiler).
 
-### `npm run eslint:fix`
+### `npm run lint:eslint:fix`
 
 Allows you to fix eslint errors.
 
-### `npm run stylelint:fix`
+### `npm run lint:stylelint:fix`
 
 Allows you to fix style lint errors.
+
+### `npm run lint:prettier:fix`
+
+Allows you to fix prettier lint errors.
 
 ### `npm run remove:demo`
 

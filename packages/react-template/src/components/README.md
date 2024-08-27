@@ -3,9 +3,9 @@
 The "components" folder is a crucial element of any React application. It is used to organize and store reusable components that make up the user interface of your application. React components are self-contained pieces of the user interface, each having its own logic and rendering.
 
 ## 📑 Table of Contents
-  - [Why Use a "components" Folder](#folder-organization)
-  - [Usage](#usage)
 
+- [Why Use a "components" Folder](#folder-organization)
+- [Usage](#usage)
 
 ## <span id="folder-organization">Why Use a "components" Folder?</span>
 
@@ -14,7 +14,6 @@ The "components" folder is a crucial element of any React application. It is use
 2. **Clarity** : By grouping all your components in a "components" folder, it is easier to understand the structure of your application. It also facilitates the search and management of components.
 
 3. **Better Organization** : Organizing components in a dedicated folder helps clearly distinguish components from other elements of the application, such as styles, images, or configuration files.
-
 
 ## <span id="usage">🧑🏻‍💻 Usage Example </span>
 
@@ -30,5 +29,5 @@ export const App = () => {
       {/* ... other elements of the application */}
     </div>
   );
-}
+};
 ```

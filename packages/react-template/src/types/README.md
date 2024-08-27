@@ -1,11 +1,12 @@
-# 📁 types 
+# 📁 types
 
 The "types" folder: since we are using TypeScript, this folder is intended to contain custom type definition files that enhance type checking and auto-completion in your code.
 
 ## 📑 Table of Contents
-  - [Why use a "types" folder?](#folder-organization)
-  - [Structure of a "types" folder](#structure)
-  - [Example of usage](#usage)
+
+- [Why use a "types" folder?](#folder-organization)
+- [Structure of a "types" folder](#structure)
+- [Example of usage](#usage)
 
 ## <span id="folder-organization">Why use a "types" folder?</span>
 

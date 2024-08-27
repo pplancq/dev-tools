@@ -3,10 +3,11 @@
 The "routing" folder is responsible for managing navigation within the application. We use the `react-router-dom` library to facilitate route creation and navigation between different views of our application.
 
 ## 📑 Table of Contents
-  - [Folder Organization](#folder-organization)
-  - [Using `react-router-dom`](#react-router-dom)
-  - [Using `appRoutes.ts`](#using-appRoutes)
-  - [Learn More](#learn-more)
+
+- [Folder Organization](#folder-organization)
+- [Using `react-router-dom`](#react-router-dom)
+- [Using `appRoutes.ts`](#using-appRoutes)
+- [Learn More](#learn-more)
 
 ## <span id="folder-organization">Folder Organization</span>
 
@@ -23,15 +24,12 @@ In the "routing" folder, you can find the following files and components:
 `react-router-dom` is a library that makes it easy to create routes in a React application. You can import it into the appropriate files to define routes and manage navigation between views. Here's a simple example of its usage:
 
 ```javascript
-import { createRoot } from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
- } from "react-router-dom";
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: (
       <div>
         <h1>Hello World</h1>
@@ -40,18 +38,17 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "about",
+    path: 'about',
     element: <div>About</div>,
   },
 ]);
 
-createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
-);
+createRoot(document.getElementById('root')).render(<RouterProvider router={router} />);
 ```
 
 ## <span id="using-appRoutes">Using `appRoutes.ts`</span>
-How to define a router with parameters ? 
+
+How to define a router with parameters ?
 
 The simplest way is to write it with the parameters as `react-router` requires, and when using it in a `NavLink` call the `generatPath` function from `react-router`.
 
@@ -63,18 +60,17 @@ export const appRoutes = {
   home: '/',
   post: '/post',
   article: '/post/:id',
-}
+};
 // component.tsx
 import { NavLink, generatePath } from 'react-router-dom';
-import { appRoutes  } from '@Front/routing/appRoutes';
+import { appRoutes } from '@Front/routing/appRoutes';
 export const ComponentName = () => {
-  return (
-    <NavLink to={generatePath(appRoutes .article, { id: 1 })}>link to article 1</NavLink>
- );
+  return <NavLink to={generatePath(appRoutes.article, { id: 1 })}>link to article 1</NavLink>;
 };
 ```
+
 With the `generatePath` function, it is possible to generate URIs with dynamic parameters.
 
-  
 ## <span id="learn-more">🙇 Learn More</span>
+
 - [React Router](https://reactrouter.com/en/main/start/overview)

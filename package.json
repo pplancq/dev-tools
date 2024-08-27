@@ -12,14 +12,14 @@
     "url": "https://github.com/pplancq/dev-tools"
   },
   "scripts": {
-    "lint": "concurrently --prefix-colors auto \"npm:eslint\" \"npm:prettier\" \"npm:stylelint\" \"npm:tsc\"",
-    "eslint": "eslint . --ext js,jsx,ts,tsx --ignore-pattern packages/react-template && npm run eslint -w @pplancq/react-template",
-    "eslint:fix": "eslint . --ext js,jsx,ts,tsx --fix --ignore-pattern packages/react-template npm run eslint:fix -w @pplancq/react-template",
-    "stylelint": "npm run stylelint -w @pplancq/react-template",
-    "stylelint:fix": "npm run stylelint:fix -w @pplancq/react-template",
-    "tsc": "npm run tsc -w @pplancq/react-template",
-    "prettier": "prettier \"**/*.!(js|jsx|ts|tsx)\" --check",
-    "prettier:fix": "prettier \"**/*.!(js|jsx|ts|tsx)\" --write",
+    "lint": "node scripts/lint.js",
+    "lint:eslint": "eslint . --ext js,jsx,ts,tsx --ignore-pattern packages/react-template && npm run lint:eslint -w @pplancq/react-template",
+    "lint:eslint:fix": "eslint . --ext js,jsx,ts,tsx --fix --ignore-pattern packages/react-template npm run lint:eslint:fix -w @pplancq/react-template",
+    "lint:stylelint": "npm run lint:stylelint -w @pplancq/react-template",
+    "lint:stylelint:fix": "npm run lint:stylelint:fix -w @pplancq/react-template",
+    "lint:tsc": "npm run lint:tsc -w @pplancq/react-template",
+    "lint:prettier": "prettier \"**/*.!(js|jsx|ts|tsx)\" --check",
+    "lint:prettier:fix": "prettier \"**/*.!(js|jsx|ts|tsx)\" --write",
     "release": "multi-semantic-release",
     "prepare": "husky"
   },
