@@ -1,20 +1,22 @@
 # @pplancq/eslint-config
 
-This package provides pplancq eslint as an extensible shared config.
+This package has been designed to provide a simplified and customizable ESLint configuration for your React/Node.js applications. Whether you are a beginner or an experienced developer, this package will help you configure ESLint with strict rules to ensure better code structure. Based on Airbnb’s ESLint configuration, this package includes additional rules for TypeScript files and test files.
 
-## Usage
+## Getting Started
 
-We export three eslint configurations for your usage.
+### Prerequisites
 
-## Install
+- Node.js 18.18.0 or higher
+
+### Installation
 
 ```shell
-npm install --save-dev @pplancq/eslint-config
+npm install --save-dev eslint@8 @pplancq/eslint-config
 ```
 
-## eslint config
+## ESLint Configuration
 
-Use with command to enable the default configuration.
+Use the following command to enable the default configuration:
 
 ```shell
 npx init-eslint-config
@@ -22,30 +24,65 @@ npx init-eslint-config
 
 ### @pplancq/eslint-config/react
 
-To use, add `"eslintConfig": { "extends": ["@pplancq/eslint-config/react"] }` to your `package.json`.\
-This configuration enables the rules of base, typescript, react and testing-library files.
+To use, add the following to your `package.json`:
+
+```json
+{
+  "eslintConfig": { "extends": ["@pplancq/eslint-config/react"] }
+}
+```
+
+This configuration enables the rules for base, TypeScript, React, and Testing Library files.
 
 ### @pplancq/eslint-config/node
 
-To use, add `"eslintConfig": { "extends": ["@pplancq/eslint-config/node"] }` to your `package.json`.\
-This configuration enables the rules of base and typescript files.
+To use, add the following to your `package.json`:
+
+```json
+{
+  "eslintConfig": { "extends": ["@pplancq/eslint-config/node"] }
+}
+```
+
+This configuration enables the rules for base and TypeScript files.
 
 ### @pplancq/eslint-config/vitest
 
-To use, add `"eslintConfig": { "extends": ["@pplancq/eslint-config/vitest"] }` to your `package.json`.\
-This configuration enables the rules of vitest file.
+To use, add the following to your `package.json`:
+
+```json
+{
+  "eslintConfig": { "extends": ["@pplancq/eslint-config/vitest"] }
+}
+```
+
+This configuration enables the rules for Vitest files.
 
 ### @pplancq/eslint-config/jest
 
-To use, add `"eslintConfig": { "extends": ["@pplancq/eslint-config/jest"] }` to your `package.json`.\
-This configuration enables the rules of jest file.
+To use, add the following to your `package.json`:
+
+```json
+{
+  "eslintConfig": { "extends": ["@pplancq/eslint-config/jest"] }
+}
+```
+
+This configuration enables the rules for Jest files.
 
 ### @pplancq/eslint-config/prettier
 
-To use, add `"eslintConfig": { "extends": ["@pplancq/eslint-config/prettier"] }` to your `package.json`.\
-This configuration enables the rules of prettier file.
+To use, add the following to your `package.json`:
 
-need add package
+```json
+{
+  "eslintConfig": { "extends": ["@pplancq/eslint-config/prettier"] }
+}
+```
+
+This configuration enables the rules for Prettier files.
+
+You will need to install the following packages:
 
 ```shell
 npm install --save-dev prettier eslint-plugin-prettier
