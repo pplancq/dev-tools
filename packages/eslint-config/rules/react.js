@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', './react-jsx-a11y.js', './base.js', './typescript.js'],
+  extends: ['./react-jsx-a11y.js', './base.js', './typescript.js'],
   plugins: ['react', 'react-hooks'],
   parserOptions: {
     ecmaFeatures: {
@@ -626,6 +626,7 @@ module.exports = {
   },
   settings: {
     react: {
+      pragma: 'React',
       version: 'detect',
     },
     'import/resolver': {
@@ -633,6 +634,11 @@ module.exports = {
         extensions: ['.js', '.jsx'],
       },
     },
+    propWrapperFunctions: [
+      'forbidExtraProps', // https://www.npmjs.com/package/airbnb-prop-types
+      'exact', // https://www.npmjs.com/package/prop-types-exact
+      'Object.freeze', // https://tc39.github.io/ecma262/#sec-object.freeze
+    ],
   },
   overrides: [
     {
