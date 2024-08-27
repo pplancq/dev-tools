@@ -1,3 +1,9 @@
+## @pplancq/semantic-release-config [1.5.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.4.1...@pplancq/semantic-release-config@1.5.0) (2024-08-27)
+
+### Features
+
+* **semantic-release-config:** add support of semantic-release 24 ([db1fd6c](https://github.com/pplancq/dev-tools/commit/db1fd6cc0e979058f5c59e672721da5060086a36))
+
 ## @pplancq/semantic-release-config [1.4.1](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.4.0...@pplancq/semantic-release-config@1.4.1) (2024-06-04)
 
 ### Bug Fixes
