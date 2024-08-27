@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [1.4.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.3.0...@pplancq/create-react-app@1.4.0) (2024-08-27)
+
+### Features
+
+* **eslint-config:** replace eslint-plugin-vitest recommended config with specific rules ([1c8cf9c](https://github.com/pplancq/dev-tools/commit/1c8cf9cce9d6e9df414b73a7cd2a9f7d4019fdcb))
+
 ## @pplancq/create-react-app [1.3.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.2.1...@pplancq/create-react-app@1.3.0) (2024-05-06)
 
 
