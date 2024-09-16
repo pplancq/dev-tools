@@ -1,3 +1,9 @@
+## @pplancq/postcss-config [2.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/postcss-config@2.0.0...@pplancq/postcss-config@2.1.0) (2024-09-16)
+
+### Features
+
+* **postcss-config:** bump postcss-normalize from 10.0.1 to 13.0.0 ([1b9a020](https://github.com/pplancq/dev-tools/commit/1b9a0204f741fc4b1f13377558785c2cfdc1a937))
+
 ## @pplancq/postcss-config [2.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/postcss-config@1.1.0...@pplancq/postcss-config@2.0.0) (2024-08-16)
 
 ### ⚠ BREAKING CHANGES
