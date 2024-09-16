@@ -1,3 +1,15 @@
+## @pplancq/react-template [1.9.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.8.0...@pplancq/react-template@1.9.0) (2024-09-16)
+
+### Features
+
+* **react-template:** bump concurrently from 8.2.2 to 9.0.1 ([a77f951](https://github.com/pplancq/dev-tools/commit/a77f9512bc26d127e4cdbd02c8ff70b80338e8d6))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 3.0.0
+* **@pplancq/postcss-config:** upgraded to 2.1.0
+
 ## @pplancq/react-template [1.8.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.7.0...@pplancq/react-template@1.8.0) (2024-08-27)
 
 ### Features
