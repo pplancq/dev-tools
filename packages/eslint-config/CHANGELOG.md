@@ -1,3 +1,15 @@
+## @pplancq/eslint-config [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.3.0...@pplancq/eslint-config@3.0.0) (2024-09-16)
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config:** Node.js engine requirement to >=18.18.0 or >=20.9.0 or >=21.1.0
+
+### Features
+
+* **eslint-config:** bump @typescript-eslint/eslint-plugin and @typescript-eslint/parser 7.17.0 to 8.3.0 ([61beba7](https://github.com/pplancq/dev-tools/commit/61beba79c480f2fd5dce39559b301194b8b6efa5))
+* **eslint-config:** bump eslint-plugin-vitest 0.5.4 to @vitest/eslint-plugin 1.1.4 ([9a1af23](https://github.com/pplancq/dev-tools/commit/9a1af239bdcf249bec444ce757babf478fdbd900))
+* **eslint-config:** update Node.js engine requirement to >=18.18.0 or >=20.9.0 or >=21.1.0 ([4239b0d](https://github.com/pplancq/dev-tools/commit/4239b0dd419c8eb1cfbd9ad881ed64c9dd56894a))
+
 ## @pplancq/eslint-config [2.3.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@2.2.0...@pplancq/eslint-config@2.3.0) (2024-08-27)
 
 ### Features
