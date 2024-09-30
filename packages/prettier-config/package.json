@@ -27,7 +27,7 @@
     "prettier-plugin-sh": "^0.14.0"
   },
   "peerDependencies": {
-    "prettier": "^3.1.1"
+    "prettier": "^3.3.3"
   },
   "engines": {
     "node": ">=16.0.0"

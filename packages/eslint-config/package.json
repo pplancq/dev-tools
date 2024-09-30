@@ -43,7 +43,7 @@
   "peerDependencies": {
     "eslint": "^8.57.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.2.5"
+    "prettier": "^3.3.3"
   },
   "peerDependenciesMeta": {
     "prettier": {
