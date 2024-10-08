@@ -45,7 +45,7 @@
     "sass-loader": "^16.0.1",
     "style-loader": "^4.0.0",
     "stylelint-webpack-plugin": "^5.0.1",
-    "terser-webpack-plugin": "^5.3.9",
+    "terser-webpack-plugin": "^5.3.10",
     "tsconfig-paths-webpack-plugin": "^4.1.0"
   },
   "peerDependencies": {
