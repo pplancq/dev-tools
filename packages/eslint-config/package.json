@@ -31,7 +31,7 @@
     "@typescript-eslint/parser": "^8.5.0",
     "@vitest/eslint-plugin": "^1.1.6",
     "eslint-import-resolver-typescript": "^3.6.3",
-    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest": "^28.8.3",
     "eslint-plugin-jest-dom": "^5.4.0",
     "eslint-plugin-jest-extended": "^2.4.0",
