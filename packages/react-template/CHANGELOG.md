@@ -1,3 +1,19 @@
+## @pplancq/react-template [1.9.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.9.0...@pplancq/react-template@1.9.1) (2024-10-15)
+
+### Bug Fixes
+
+* **deps:** update react-query packages to ^5.59.0 ([be48ebd](https://github.com/pplancq/dev-tools/commit/be48ebdedca0d289957930019fffd8420457b8e6))
+* **deps:** update react-query packages to ^5.59.9 ([bdd0a11](https://github.com/pplancq/dev-tools/commit/bdd0a11857884e5f1e577f065c658e2bde00e3bf))
+
+
+### Dependencies
+
+* **@pplancq/babel-config:** upgraded to 1.1.1
+* **@pplancq/eslint-config:** upgraded to 3.0.1
+* **@pplancq/postcss-config:** upgraded to 2.1.1
+* **@pplancq/stylelint-config:** upgraded to 2.1.1
+* **@pplancq/webpack-config:** upgraded to 1.5.1
+
 ## @pplancq/react-template [1.9.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.8.0...@pplancq/react-template@1.9.0) (2024-09-16)
 
 ### Features
