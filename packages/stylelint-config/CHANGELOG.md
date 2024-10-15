@@ -1,3 +1,9 @@
+## @pplancq/stylelint-config [2.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@2.1.0...@pplancq/stylelint-config@2.1.1) (2024-10-15)
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-pretty-order to ^0.7.0 ([875ebd7](https://github.com/pplancq/dev-tools/commit/875ebd731b4393601653f303c4255441254dc04e))
+
 ## @pplancq/stylelint-config [2.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@2.0.2...@pplancq/stylelint-config@2.1.0) (2024-05-06)
 
 

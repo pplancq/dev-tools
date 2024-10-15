@@ -1,6 +1,6 @@
 {
   "name": "@pplancq/stylelint-config",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "license": "MIT",
   "description": "pplancq stylelint config",
   "author": "pplancq <paul.plancq@outlook.fr>",
