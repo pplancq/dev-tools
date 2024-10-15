@@ -1,3 +1,17 @@
+## @pplancq/webpack-config [1.5.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.5.0...@pplancq/webpack-config@1.5.1) (2024-10-15)
+
+### Bug Fixes
+
+* **deps:** update babel packages to ^7.25.7 ([a01c8e1](https://github.com/pplancq/dev-tools/commit/a01c8e1a283c3fe6d333e753591b0c633009a3ef))
+* **deps:** update babel packages to ^7.25.8 ([58f2185](https://github.com/pplancq/dev-tools/commit/58f2185eaf0babed2b42a50c14de333d96f3c685))
+* **deps:** update dependency babel-loader to ^9.2.1 ([4a26eaa](https://github.com/pplancq/dev-tools/commit/4a26eaa1006047ed4e79850f5b44513bff869a70))
+* **deps:** update dependency browserslist to ^4.24.0 ([543b80f](https://github.com/pplancq/dev-tools/commit/543b80f7bbcce2cf98ce94c4594e8f6db1b1f89a))
+* **deps:** update dependency dotenv to ^16.4.5 ([c1e2234](https://github.com/pplancq/dev-tools/commit/c1e223458c31557493e250f118b4b4e5ac5d0478))
+* **deps:** update dependency html-webpack-plugin to ^5.6.0 ([63d24b6](https://github.com/pplancq/dev-tools/commit/63d24b600fae4c559a52b508e82d604628296de8))
+* **deps:** update dependency sass to ^1.79.4 ([6027200](https://github.com/pplancq/dev-tools/commit/6027200ede95cb08a29726498657a97167213629))
+* **deps:** update dependency sass-loader to ^16.0.2 ([d2b4e3d](https://github.com/pplancq/dev-tools/commit/d2b4e3d50c537e5b997439d4c8b189512c06c42b))
+* **deps:** update dependency terser-webpack-plugin to ^5.3.10 ([fc6ac8d](https://github.com/pplancq/dev-tools/commit/fc6ac8de1774d01882a7537d31cee6b0d67e658b))
+
 ## @pplancq/webpack-config [1.5.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.4.1...@pplancq/webpack-config@1.5.0) (2024-08-16)
 
 ### Features
