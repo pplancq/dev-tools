@@ -1,3 +1,10 @@
+## @pplancq/babel-config [1.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.1.0...@pplancq/babel-config@1.1.1) (2024-10-15)
+
+### Bug Fixes
+
+* **deps:** update babel packages to ^7.25.7 ([a01c8e1](https://github.com/pplancq/dev-tools/commit/a01c8e1a283c3fe6d333e753591b0c633009a3ef))
+* **deps:** update babel packages to ^7.25.8 ([58f2185](https://github.com/pplancq/dev-tools/commit/58f2185eaf0babed2b42a50c14de333d96f3c685))
+
 ## @pplancq/babel-config [1.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.0.2...@pplancq/babel-config@1.1.0) (2024-05-06)
 
 
