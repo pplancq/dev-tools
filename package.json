@@ -35,6 +35,14 @@
   "workspaces": [
     "packages/*"
   ],
+  "overrides": {
+    "eslint-plugin-jest-extended": {
+      "@typescript-eslint/utils": "8.13.0"
+    },
+    "eslint-plugin-testing-library": {
+      "@typescript-eslint/utils": "8.13.0"
+    }
+  },
   "devDependencies": {
     "@anolilab/multi-semantic-release": "^1.1.4",
     "concurrently": "^9.0.1",
