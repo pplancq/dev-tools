@@ -1,3 +1,3 @@
-module.exports = {
-  extends: ['./rules/jest.js'].map(require.resolve),
-};
+const jestConfig = require('./rules/jest');
+
+module.exports = [...jestConfig];
