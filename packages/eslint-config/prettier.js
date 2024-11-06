@@ -1,3 +1,3 @@
-module.exports = {
-  extends: ['./rules/prettier.js'].map(require.resolve),
-};
+const prettierConfig = require('./rules/prettier');
+
+module.exports = [...prettierConfig];

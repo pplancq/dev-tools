@@ -1,3 +1,3 @@
-module.exports = {
-  extends: ['./rules/vitest.js'].map(require.resolve),
-};
+const vitestConfig = require('./rules/vitest');
+
+module.exports = [...vitestConfig];

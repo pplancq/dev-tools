@@ -1,3 +1,4 @@
-module.exports = {
-  extends: ['./rules/base.js', './rules/typescript.js'].map(require.resolve),
-};
+const baseConfig = require('./rules/base');
+const typescriptConfig = require('./rules/typescript');
+
+module.exports = [...baseConfig, ...typescriptConfig];
