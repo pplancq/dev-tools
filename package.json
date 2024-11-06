@@ -13,8 +13,8 @@
   },
   "scripts": {
     "lint": "node scripts/lint.js",
-    "lint:eslint": "eslint . --ext js,jsx,ts,tsx --ignore-pattern packages/react-template && npm run lint:eslint -w @pplancq/react-template",
-    "lint:eslint:fix": "eslint . --ext js,jsx,ts,tsx --fix --ignore-pattern packages/react-template npm run lint:eslint:fix -w @pplancq/react-template",
+    "lint:eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --ignore-pattern packages/react-template && npm run lint:eslint -w @pplancq/react-template",
+    "lint:eslint:fix": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix --ignore-pattern packages/react-template && npm run lint:eslint:fix -w @pplancq/react-template",
     "lint:stylelint": "npm run lint:stylelint -w @pplancq/react-template",
     "lint:stylelint:fix": "npm run lint:stylelint:fix -w @pplancq/react-template",
     "lint:tsc": "npm run lint:tsc -w @pplancq/react-template",
@@ -55,12 +55,6 @@
     "*.!(js|jsx|ts|tsx)": "prettier --write"
   },
   "prettier": "@pplancq/prettier-config",
-  "eslintConfig": {
-    "extends": [
-      "@pplancq/eslint-config/node",
-      "@pplancq/eslint-config/prettier"
-    ]
-  },
   "commitlint": {
     "extends": [
       "@pplancq/commitlint-config"
