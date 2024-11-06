@@ -12,13 +12,7 @@
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
-  "exports": {
-    "./node": "./node.js",
-    "./react": "./react.js",
-    "./jest": "./jest.js",
-    "./vitest": "./vitest.js",
-    "./prettier": "./prettier.js"
-  },
+  "main": "main.js",
   "bin": {
     "init-eslint-config": "./bin/init.js"
   },
