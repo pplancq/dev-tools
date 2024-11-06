@@ -13,13 +13,13 @@
   },
   "scripts": {
     "lint": "node scripts/lint.js",
-    "lint:eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --ignore-pattern packages/react-template && npm run lint:eslint -w @pplancq/react-template",
-    "lint:eslint:fix": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix --ignore-pattern packages/react-template && npm run lint:eslint:fix -w @pplancq/react-template",
+    "lint:eslint": "eslint \"**/*.{js,mjs}\" --ignore-pattern packages/react-template && npm run lint:eslint -w @pplancq/react-template",
+    "lint:eslint:fix": "eslint \"**/*.{js,mjs}\" --fix --ignore-pattern packages/react-template && npm run lint:eslint:fix -w @pplancq/react-template",
     "lint:stylelint": "npm run lint:stylelint -w @pplancq/react-template",
     "lint:stylelint:fix": "npm run lint:stylelint:fix -w @pplancq/react-template",
     "lint:tsc": "npm run lint:tsc -w @pplancq/react-template",
-    "lint:prettier": "prettier \"**/*.!(js|jsx|ts|tsx)\" --check",
-    "lint:prettier:fix": "prettier \"**/*.!(js|jsx|ts|tsx)\" --write",
+    "lint:prettier": "prettier \"**/*.!(js|mjs)\" --check",
+    "lint:prettier:fix": "prettier \"**/*.!(js|mjs)\" --write",
     "release": "multi-semantic-release",
     "prepare": "husky"
   },
@@ -51,8 +51,8 @@
     "semantic-release": "^24.2.0"
   },
   "lint-staged": {
-    "*.(js|jsx|ts|tsx)": "eslint --ignore-pattern packages/react-template --fix",
-    "*.!(js|jsx|ts|tsx)": "prettier --write"
+    "*.(js|mjs)": "eslint --ignore-pattern packages/react-template --fix",
+    "*.!(js|mjs)": "prettier --write"
   },
   "prettier": "@pplancq/prettier-config",
   "commitlint": {
