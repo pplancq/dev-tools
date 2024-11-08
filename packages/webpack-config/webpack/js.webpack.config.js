@@ -80,6 +80,7 @@ module.exports = (env, { mode = 'development' }) => {
       !disableEsLintPlugin &&
         new ESLintPlugin({
           extensions: ['js', 'jsx', 'ts', 'tsx'],
+          configType: process.env.ESLINT_CONFIG_TYPE ?? 'eslintrc',
           eslintPath: require.resolve('eslint'),
           failOnError: isEnvProduction,
           context: paths.src,
