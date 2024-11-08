@@ -1,3 +1,23 @@
+## @pplancq/eslint-config [4.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@3.0.1...@pplancq/eslint-config@4.0.0) (2024-11-08)
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config:** this version support only eslint v9 with new flat configuration.\ Please refer to the Migration Guide for detailed instructions: [Migration Guide](./MIGRATION.md#migration-guide-pplancqeslint-config-v3-to-v4)
+
+### Features
+
+* **eslint-config:** make factory for define eslint flat config ([4f5e261](https://github.com/pplancq/dev-tools/commit/4f5e26169d3258b2b0f0de982ae664e69317a6ee))
+* **eslint-config:** migrate rule to flat config ([40fc36e](https://github.com/pplancq/dev-tools/commit/40fc36e6aac55baa634a55c4dd499c7ce4058dc1))
+* **eslint-config:** update eslint v8 to v9 ([5cf5721](https://github.com/pplancq/dev-tools/commit/5cf57215c74172fd0f611c8425522d927752026e))
+* **eslint-config:** update script to set default config ([16215da](https://github.com/pplancq/dev-tools/commit/16215da3e7c9cebc078f31cf5cc1b2006ee65634))
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jsx-a11y to ^6.10.1 ([69f02a2](https://github.com/pplancq/dev-tools/commit/69f02a2f3cbf00ee75168b48345458c9effbeaf1))
+* **deps:** update dependency eslint-plugin-jsx-a11y to ^6.10.2 ([cd2bf08](https://github.com/pplancq/dev-tools/commit/cd2bf08034f8bca2d62d6a1d5d366a9d424e9ab9))
+* **deps:** update dependency eslint-plugin-react to ^7.37.2 ([c57c4a6](https://github.com/pplancq/dev-tools/commit/c57c4a6cc78bd0d8fa627f015acc6bc92dea59d1))
+* **deps:** update dependency eslint-plugin-testing-library to ^6.4.0 ([94274e0](https://github.com/pplancq/dev-tools/commit/94274e08effe5bbf59f37f4213b21cb0bb293690))
+
 ## @pplancq/eslint-config [3.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@3.0.0...@pplancq/eslint-config@3.0.1) (2024-10-15)
 
 ### Bug Fixes
