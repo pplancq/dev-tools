@@ -1,6 +1,6 @@
 {
   "name": "@pplancq/postcss-config",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "license": "MIT",
   "description": "pplancq postcss config",
   "author": "pplancq <paul.plancq@outlook.fr>",
