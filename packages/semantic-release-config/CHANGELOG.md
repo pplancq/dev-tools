@@ -1,3 +1,9 @@
+## @pplancq/semantic-release-config [1.5.2](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.5.1...@pplancq/semantic-release-config@1.5.2) (2024-11-08)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/github to v11 ([955e5e1](https://github.com/pplancq/dev-tools/commit/955e5e1dc0b28281310ad30e772eaf383de603ee))
+
 ## @pplancq/semantic-release-config [1.5.1](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.5.0...@pplancq/semantic-release-config@1.5.1) (2024-10-15)
 
 ### Bug Fixes
