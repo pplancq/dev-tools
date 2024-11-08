@@ -1,3 +1,30 @@
+## @pplancq/react-template [2.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.9.1...@pplancq/react-template@2.0.0) (2024-11-08)
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config:** this version support only eslint v9 with new flat configuration.\ Please refer to the Migration Guide for detailed instructions: [Migration Guide](./MIGRATION.md#migration-guide-pplancqeslint-config-v3-to-v4)
+
+### Features
+
+* **react-template:** set eslint flat config for eslint webpack plugin ([d7ef000](https://github.com/pplancq/dev-tools/commit/d7ef00091c0f03d4f3a4dfc69d626f6e230ab55e))
+* **eslint-config:** update eslint v8 to v9 ([5cf5721](https://github.com/pplancq/dev-tools/commit/5cf57215c74172fd0f611c8425522d927752026e))
+* **react-template:** use eslint flat config ([a145c2a](https://github.com/pplancq/dev-tools/commit/a145c2a7690b8c6fb9f0f8e2765d1fb02c0fd6c0))
+
+### Bug Fixes
+
+* **deps:** update dependency @hookform/resolvers to ^3.9.1 ([a881b6a](https://github.com/pplancq/dev-tools/commit/a881b6a07fe9835318939e44d89f76053027876d))
+* **deps:** update dependency react-hook-form to ^7.53.1 ([98fe84f](https://github.com/pplancq/dev-tools/commit/98fe84f9742f9fa43050fe81c53b5675e6912a83))
+* **deps:** update dependency react-router-dom to ^6.27.0 ([ecb8b37](https://github.com/pplancq/dev-tools/commit/ecb8b372d060bd17f64f2366608dc1aea4b57721))
+* **deps:** update react-query mono repo to ^5.59.15 ([47bf3b4](https://github.com/pplancq/dev-tools/commit/47bf3b42b54e5018dff960ed6171b736c1738fe8))
+
+
+### Dependencies
+
+* **@pplancq/babel-config:** upgraded to 1.1.2
+* **@pplancq/eslint-config:** upgraded to 4.0.0
+* **@pplancq/postcss-config:** upgraded to 2.1.2
+* **@pplancq/webpack-config:** upgraded to 1.6.0
+
 ## @pplancq/react-template [1.9.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@1.9.0...@pplancq/react-template@1.9.1) (2024-10-15)
 
 ### Bug Fixes
