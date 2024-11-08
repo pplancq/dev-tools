@@ -1,3 +1,17 @@
+## @pplancq/webpack-config [1.6.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.5.1...@pplancq/webpack-config@1.6.0) (2024-11-08)
+
+### Features
+
+* **webpack-config:** add environment variables for specifu type of eslint config ([5161f0e](https://github.com/pplancq/dev-tools/commit/5161f0e92b1b4e4a79bf414b799ff830a0862576))
+
+### Bug Fixes
+
+* **deps:** update babel mono repo ([a8dfaef](https://github.com/pplancq/dev-tools/commit/a8dfaef4314951caaa9f2fc70197e54b3497d6cd))
+* **deps:** update dependency browserslist to ^4.24.2 ([89fda1d](https://github.com/pplancq/dev-tools/commit/89fda1dabb1f07b607df24ce7ffd8823e18e7ec8))
+* **deps:** update dependency html-webpack-plugin to ^5.6.2 ([1ad45ec](https://github.com/pplancq/dev-tools/commit/1ad45ecef3cf0da5198f4b11a2432af3cddae198))
+* **deps:** update dependency html-webpack-plugin to ^5.6.3 ([d51229c](https://github.com/pplancq/dev-tools/commit/d51229cd41cfdac92ac335aac12f14481e19489a))
+* **deps:** update dependency mini-css-extract-plugin to ^2.9.2 ([b289d78](https://github.com/pplancq/dev-tools/commit/b289d78aa0942833080983e17d6899e2fee47ab2))
+
 ## @pplancq/webpack-config [1.5.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.5.0...@pplancq/webpack-config@1.5.1) (2024-10-15)
 
 ### Bug Fixes
