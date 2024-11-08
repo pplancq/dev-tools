@@ -1,3 +1,9 @@
+## @pplancq/babel-config [1.1.2](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.1.1...@pplancq/babel-config@1.1.2) (2024-11-08)
+
+### Bug Fixes
+
+* **deps:** update babel mono repo ([a8dfaef](https://github.com/pplancq/dev-tools/commit/a8dfaef4314951caaa9f2fc70197e54b3497d6cd))
+
 ## @pplancq/babel-config [1.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.1.0...@pplancq/babel-config@1.1.1) (2024-10-15)
 
 ### Bug Fixes
