@@ -1,3 +1,9 @@
+## @pplancq/eslint-config [4.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.0.0...@pplancq/eslint-config@4.0.1) (2024-11-11)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-jest to ^28.9.0 ([db2bb8d](https://github.com/pplancq/dev-tools/commit/db2bb8d283207659cf3db7f8636f70aef5dcfd0c))
+
 ## @pplancq/eslint-config [4.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@3.0.1...@pplancq/eslint-config@4.0.0) (2024-11-08)
 
 ### ⚠ BREAKING CHANGES
