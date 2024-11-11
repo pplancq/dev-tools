@@ -73,7 +73,7 @@
     "stylelint-prettier": "^5.0.2",
     "tsc-files": "^1.1.4",
     "typescript": "^5.6.3",
-    "vite-plugin-svgr": "^4.2.0",
+    "vite-plugin-svgr": "^4.3.0",
     "vite-tsconfig-paths": "^5.0.1",
     "vitest": "^2.1.4",
     "vitest-axe": "^1.0.0-pre.3",
