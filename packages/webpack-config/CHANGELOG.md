@@ -1,3 +1,10 @@
+## @pplancq/webpack-config [1.6.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.6.0...@pplancq/webpack-config@1.6.1) (2024-11-11)
+
+### Bug Fixes
+
+* **deps:** update dependency sass to ^1.80.6 ([4f02dd6](https://github.com/pplancq/dev-tools/commit/4f02dd655fe5d2a358950793b2051d2cee4ccee4))
+* **deps:** update dependency sass-loader to ^16.0.3 ([05482da](https://github.com/pplancq/dev-tools/commit/05482dac63988fa60736a9d12474968c4e087a49))
+
 ## @pplancq/webpack-config [1.6.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.5.1...@pplancq/webpack-config@1.6.0) (2024-11-08)
 
 ### Features
