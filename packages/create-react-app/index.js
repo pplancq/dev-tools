@@ -87,6 +87,7 @@ const main = async () => {
   repoPackageJson.description = projectName;
   const { _prepare, ...scripts } = repoPackageJson.scripts;
   repoPackageJson.scripts = { ...scripts, prepare: _prepare };
+  repoPackageJson.version = '0.1.0';
 
   delete repoPackageJson.author;
   delete repoPackageJson.repository;
