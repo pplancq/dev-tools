@@ -55,11 +55,6 @@
     "*.!(js|mjs)": "prettier --write"
   },
   "prettier": "@pplancq/prettier-config",
-  "commitlint": {
-    "extends": [
-      "@pplancq/commitlint-config"
-    ]
-  },
   "release": {
     "extends": [
       "@pplancq/semantic-release-config"
