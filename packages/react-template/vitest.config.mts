@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react-swc';
 import { resolve } from 'path';
 import { loadEnv } from 'vite';
 import svgr from 'vite-plugin-svgr';
