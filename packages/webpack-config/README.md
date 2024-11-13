@@ -56,7 +56,7 @@ webpack --mode production
 
 This configuration includes the following:
 
-- **JavaScript/TypeScript files**: Uses `babel-loader` (recommended to use [`@pplancq/babel-config`](https://www.npmjs.com/package/@pplancq/babel-config)).
+- **JavaScript/TypeScript files**: Uses `swc-loader`.
 - **CSS files**: Uses `css-loader` and `postcss-loader` with modules option enabled (see [CSS/SCSS Modules](#cssscss-modules)).
 - **SCSS/SASS files**: Uses `sass-loader` with modules option enabled (see [CSS/SCSS Modules](#cssscss-modules)).
 - **Image or font** files: Uses `asset/resource` type of Webpack 5.

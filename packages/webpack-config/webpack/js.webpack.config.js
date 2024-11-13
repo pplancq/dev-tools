@@ -9,7 +9,6 @@ const resolveModule = require('../helper/resolveModule');
 module.exports = (env, { mode = 'development' }) => {
   const isEnvProduction = mode === 'production';
   const isEnvDevelopment = !isEnvProduction;
-  const isEnvProductionProfile = isEnvProduction && process.argv.includes('--profile');
   const disableEsLintPlugin = (process.env.DISABLE_ESLINT_PLUGIN ?? 'false') === 'true' || !resolveModule('eslint');
 
   return {
@@ -19,27 +18,7 @@ module.exports = (env, { mode = 'development' }) => {
       chunkIds: 'named',
       minimizer: [
         new TerserPlugin({
-          terserOptions: {
-            parse: {
-              ecma: 8,
-            },
-            compress: {
-              ecma: 5,
-              warnings: false,
-              comparisons: false,
-              inline: 2,
-            },
-            mangle: {
-              safari10: true,
-            },
-            keep_classnames: isEnvProductionProfile,
-            keep_fnames: isEnvProductionProfile,
-            output: {
-              ecma: 5,
-              comments: false,
-              ascii_only: true,
-            },
-          },
+          minify: TerserPlugin.swcMinify,
         }),
       ],
       splitChunks: {
@@ -65,13 +44,22 @@ module.exports = (env, { mode = 'development' }) => {
         {
           test: /\.[jt]sx?$/,
           include: paths.src,
-          loader: require.resolve('babel-loader'),
+          loader: require.resolve('swc-loader'),
           exclude: /node_modules/,
           options: {
-            cacheDirectory: true,
-            cacheCompression: false,
-            compact: isEnvProduction,
-            plugins: [isEnvDevelopment && require.resolve('react-refresh/babel')].filter(Boolean),
+            jsc: {
+              parser: {
+                syntax: 'typescript',
+                jsx: true,
+              },
+              transform: {
+                react: {
+                  runtime: 'automatic',
+                  development: isEnvDevelopment,
+                  refresh: isEnvDevelopment,
+                },
+              },
+            },
           },
         },
       ],
