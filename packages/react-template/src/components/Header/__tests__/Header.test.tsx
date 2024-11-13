@@ -5,7 +5,7 @@ import { Header } from '../Header';
 describe('Header Component', () => {
   it('should render the Header component correctly', () => {
     const { container } = render(
-      <Router>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Header />
       </Router>,
     );

@@ -6,5 +6,13 @@ interface CreateRouterProps {
 }
 
 export const createRouter = ({ basename }: CreateRouterProps = {}) => {
-  return createBrowserRouter(routeObject, { basename });
+  return createBrowserRouter(routeObject, {
+    basename,
+    future: {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
+      v7_startTransition: true,
+      v7_relativeSplatPath: true,
+    },
+  });
 };

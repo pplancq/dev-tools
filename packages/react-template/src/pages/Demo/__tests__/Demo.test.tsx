@@ -5,7 +5,7 @@ import { Demo } from '../Demo';
 describe('Demo Component', () => {
   it('should render the Demo component correctly', () => {
     const { container } = render(
-      <Router>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Demo />
       </Router>,
     );
