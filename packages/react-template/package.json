@@ -47,7 +47,6 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
-    "@pplancq/babel-config": "*",
     "@pplancq/commitlint-config": "*",
     "@pplancq/eslint-config": "*",
     "@pplancq/postcss-config": "*",

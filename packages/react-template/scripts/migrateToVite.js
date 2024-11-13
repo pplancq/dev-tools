@@ -30,11 +30,8 @@ const getPackageManager = () => {
 const packageManager = getPackageManager();
 
 console.info('\nremove webpack ...');
-runCommand(
-  `${packageManager} remove @pplancq/webpack-config @pplancq/babel-config webpack webpack-cli webpack-dev-server`,
-);
+runCommand(`${packageManager} remove @pplancq/webpack-config webpack webpack-cli webpack-dev-server`);
 rmSync(resolve(__dirname, '../webpack.config.js'));
-rmSync(resolve(__dirname, '../babelrc.js'));
 console.info('\ninstall vite package ...');
 runCommand(
   `${packageManager} ${packageManager === YARN ? 'add --dev' : 'install --save-dev'} vite vite-plugin-eslint2 vite-plugin-stylelint sass`,
