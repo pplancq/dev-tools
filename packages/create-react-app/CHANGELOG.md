@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [1.4.1](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.4.0...@pplancq/create-react-app@1.4.1) (2024-11-18)
+
+### Bug Fixes
+
+* **create-react-app:** fix change version in package.json ([85cad87](https://github.com/pplancq/dev-tools/commit/85cad879a03490e51a24a09396cae0301a55633f))
+
 ## @pplancq/create-react-app [1.4.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.3.0...@pplancq/create-react-app@1.4.0) (2024-08-27)
 
 ### Features
