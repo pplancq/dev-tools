@@ -37,10 +37,10 @@
   ],
   "overrides": {
     "eslint-plugin-jest-extended": {
-      "@typescript-eslint/utils": "8.13.0"
+      "@typescript-eslint/utils": "8.14.0"
     },
     "eslint-plugin-testing-library": {
-      "@typescript-eslint/utils": "8.13.0"
+      "@typescript-eslint/utils": "8.14.0"
     }
   },
   "devDependencies": {
