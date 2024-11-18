@@ -1,3 +1,14 @@
+## @pplancq/webpack-config [1.7.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.6.1...@pplancq/webpack-config@1.7.0) (2024-11-18)
+
+### Features
+
+* **webpack-config:** replace babel-loader by swc-loader ([92224bf](https://github.com/pplancq/dev-tools/commit/92224bf34843bb4b8e96c7094f902b14c2b6a91e))
+
+### Bug Fixes
+
+* **deps:** update dependency dotenv-expand to ^11.0.7 ([957c585](https://github.com/pplancq/dev-tools/commit/957c5856cdf825c66f560889797e2be9ab748016))
+* **deps:** update dependency sass to ^1.81.0 ([3ff8411](https://github.com/pplancq/dev-tools/commit/3ff8411582e8c47c13141941ccb6f185afdb44f0))
+
 ## @pplancq/webpack-config [1.6.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.6.0...@pplancq/webpack-config@1.6.1) (2024-11-11)
 
 ### Bug Fixes
