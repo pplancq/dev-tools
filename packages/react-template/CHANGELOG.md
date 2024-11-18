@@ -1,3 +1,23 @@
+## @pplancq/react-template [2.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.0.1...@pplancq/react-template@2.1.0) (2024-11-18)
+
+### Features
+
+* **react-template:** remove babel config ([c2990a0](https://github.com/pplancq/dev-tools/commit/c2990a08061bed421d85d48d8381f5fd9096d4e5))
+* **react-template:** replace @vitejs/plugin-react by @vitejs/plugin-react-swc ([e613869](https://github.com/pplancq/dev-tools/commit/e613869e5233833d6fe0cd4a9ab67a24ab575db2))
+
+### Bug Fixes
+
+* **react-template:** fix warning fron react-router-dom ([6e71da3](https://github.com/pplancq/dev-tools/commit/6e71da3ac8393d2e6975bb84a388499f63947265))
+* **deps:** update dependency react-hook-form to ^7.53.2 ([ea74c8c](https://github.com/pplancq/dev-tools/commit/ea74c8cd15493d60213c4ca6b9979e88c793f11f))
+* **deps:** update react-query mono repo to ^5.60.2 ([d95ce29](https://github.com/pplancq/dev-tools/commit/d95ce290ca9a9730bdeb0ff330897449bf2a0f79))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.2
+* **@pplancq/postcss-config:** upgraded to 2.1.4
+* **@pplancq/webpack-config:** upgraded to 1.7.0
+
 ## @pplancq/react-template [2.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.0.0...@pplancq/react-template@2.0.1) (2024-11-11)
 
 ### Bug Fixes
