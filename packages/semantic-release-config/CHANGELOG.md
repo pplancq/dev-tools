@@ -1,3 +1,9 @@
+## @pplancq/semantic-release-config [1.6.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.5.3...@pplancq/semantic-release-config@1.6.0) (2024-11-18)
+
+### Features
+
+* **semantic-release-config:** use default config for branches ([2826341](https://github.com/pplancq/dev-tools/commit/2826341d5199aeafd22935fd8e35d09e14bfbf4c))
+
 ## @pplancq/semantic-release-config [1.5.3](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.5.2...@pplancq/semantic-release-config@1.5.3) (2024-11-11)
 
 ### Bug Fixes
