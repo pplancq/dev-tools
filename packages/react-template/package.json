@@ -86,7 +86,7 @@
   },
   "volta": {
     "node": "22.11.0",
-    "npm": "10.9.0"
+    "npm": "10.9.1"
   },
   "browserslist": {
     "production": [
