@@ -46,7 +46,7 @@
     "yup": "^1.4.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
+    "@commitlint/cli": "^19.6.0",
     "@pplancq/commitlint-config": "*",
     "@pplancq/eslint-config": "*",
     "@pplancq/postcss-config": "*",
