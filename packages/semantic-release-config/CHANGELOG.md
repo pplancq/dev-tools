@@ -1,3 +1,9 @@
+## @pplancq/semantic-release-config [1.6.1](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.6.0...@pplancq/semantic-release-config@1.6.1) (2024-11-26)
+
+### Bug Fixes
+
+* **semantic-release-config:** fix deprecation of successComment for github plugin ([8e03057](https://github.com/pplancq/dev-tools/commit/8e03057eefe5a3fd1e930cdf3291df0a9f9085dd))
+
 ## @pplancq/semantic-release-config [1.6.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.5.3...@pplancq/semantic-release-config@1.6.0) (2024-11-18)
 
 ### Features
