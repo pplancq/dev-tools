@@ -1,7 +1,7 @@
 import logo from '@Front/assets/images/logo.png';
 import { Logo } from '@Front/ui/atoms/Logo';
 import { Navigation } from '@Front/ui/molecules/Navigation';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 import classes from './Header.module.css';
 

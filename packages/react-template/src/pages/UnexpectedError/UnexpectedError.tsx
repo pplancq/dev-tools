@@ -1,6 +1,6 @@
 import logo from '@Front/assets/images/logo.png';
 import { Logo } from '@Front/ui/atoms/Logo';
-import { Link, useRouteError } from 'react-router-dom';
+import { Link, useRouteError } from 'react-router';
 
 import classes from './UnexpectedError.module.css';
 

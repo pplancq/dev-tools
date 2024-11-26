@@ -189,6 +189,7 @@ exports[`Demo Component > should render the Demo component correctly 1`] = `
         >
           <a
             class="_a_85a2c3"
+            data-discover="true"
             href="/reactQueryDemo"
           >
             Run Demo
@@ -226,6 +227,7 @@ exports[`Demo Component > should render the Demo component correctly 1`] = `
         >
           <a
             class="_a_85a2c3"
+            data-discover="true"
             href="/reactHookFormDemo"
           >
             Run Demo

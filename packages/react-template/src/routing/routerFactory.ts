@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router';
 import { routeObject } from './routes';
 
 interface CreateRouterProps {
@@ -8,11 +8,5 @@ interface CreateRouterProps {
 export const createRouter = ({ basename }: CreateRouterProps = {}) => {
   return createBrowserRouter(routeObject, {
     basename,
-    future: {
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-expect-error
-      v7_startTransition: true,
-      v7_relativeSplatPath: true,
-    },
   });
 };

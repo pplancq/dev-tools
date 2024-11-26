@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router';
 import { Footer } from '../Footer';
 
 describe('Footer Component', () => {
   it('should render the Footer component correctly', () => {
     const { container } = render(
-      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <Router>
         <Footer />
       </Router>,
     );

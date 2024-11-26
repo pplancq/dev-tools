@@ -1,5 +1,5 @@
 import { ComponentProps } from 'react';
-import { NavLink as RouterNavLink } from 'react-router-dom';
+import { NavLink as RouterNavLink } from 'react-router';
 
 type NavLinkProps = ComponentProps<typeof RouterNavLink>;
 

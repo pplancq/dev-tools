@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router';
 import { Demo } from '../Demo';
 
 describe('Demo Component', () => {
   it('should render the Demo component correctly', () => {
     const { container } = render(
-      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <Router>
         <Demo />
       </Router>,
     );

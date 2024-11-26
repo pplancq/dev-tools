@@ -1,6 +1,6 @@
 import logo from '@Front/assets/images/logo.png';
 import { Logo } from '@Front/ui/atoms/Logo';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 import classes from './Footer.module.css';
 

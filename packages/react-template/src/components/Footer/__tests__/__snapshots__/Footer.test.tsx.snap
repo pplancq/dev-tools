@@ -7,6 +7,7 @@ exports[`Footer Component > should render the Footer component correctly 1`] = `
   >
     <hr />
     <a
+      data-discover="true"
       href="/"
     >
       <img

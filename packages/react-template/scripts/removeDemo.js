@@ -34,7 +34,7 @@ mkdirSync(resolveSrc('/pages/Home'));
 writeFileSync(resolveSrc('/pages/Home/index.ts'), "export { homeRoutes } from './routes';\n", { encoding: 'utf-8' });
 writeFileSync(
   resolveSrc('/pages/Home/routes.tsx'),
-  "import type { RouteObject } from 'react-router-dom';\n" +
+  "import type { RouteObject } from 'react-router';\n" +
     "import { Home } from './Home';\n" +
     '\n' +
     'export const homeRoutes: RouteObject = {\n' +

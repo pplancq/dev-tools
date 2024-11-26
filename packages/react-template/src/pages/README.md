@@ -48,8 +48,8 @@ Suppose we have a "UserProfile" page with a complex structure:
 // index.ts
 export { userProfileRoutes } from './routes';
 
-// routes.tsx (react-router-dom v6)
-import { RouteObject } from 'react-router-dom';
+// routes.tsx (react-router v7)
+import { RouteObject } from 'react-router';
 import { UserProfile } from './UserProfile';
 
 export const userProfileRoutes: RouteObject = {

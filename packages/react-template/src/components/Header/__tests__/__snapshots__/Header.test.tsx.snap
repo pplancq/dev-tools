@@ -6,6 +6,7 @@ exports[`Header Component > should render the Header component correctly 1`] = `
     class="_container_63c2ea"
   >
     <a
+      data-discover="true"
       href="/"
     >
       <img
@@ -23,6 +24,7 @@ exports[`Header Component > should render the Header component correctly 1`] = `
           <a
             aria-current="page"
             class="_a_75d6d6 active"
+            data-discover="true"
             href="/"
           >
             Demo

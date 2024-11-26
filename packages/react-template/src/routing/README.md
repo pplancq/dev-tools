@@ -1,11 +1,11 @@
 # 📁routing
 
-The "routing" folder is responsible for managing navigation within the application. We use the `react-router-dom` library to facilitate route creation and navigation between different views of our application.
+The "routing" folder is responsible for managing navigation within the application. We use the `react-router` library to facilitate route creation and navigation between different views of our application.
 
 ## 📑 Table of Contents
 
 - [Folder Organization](#folder-organization)
-- [Using `react-router-dom`](#react-router-dom)
+- [Using `react-router`](#react-router)
 - [Using `appRoutes.ts`](#using-appRoutes)
 - [Learn More](#learn-more)
 
@@ -19,13 +19,13 @@ In the "routing" folder, you can find the following files and components:
 
 3. **`appRoutes.ts`** It contains a simple structure to define the paths of our application.
 
-## <span id="react-router-dom">🧑🏻‍💻 Using `react-router-dom` </span>
+## <span id="react-router">🧑🏻‍💻 Using `react-router` </span>
 
-`react-router-dom` is a library that makes it easy to create routes in a React application. You can import it into the appropriate files to define routes and manage navigation between views. Here's a simple example of its usage:
+`react-router` is a library that makes it easy to create routes in a React application. You can import it into the appropriate files to define routes and manage navigation between views. Here's a simple example of its usage:
 
 ```javascript
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router/dom';
 
 const router = createBrowserRouter([
   {
@@ -62,7 +62,7 @@ export const appRoutes = {
   article: '/post/:id',
 };
 // component.tsx
-import { NavLink, generatePath } from 'react-router-dom';
+import { NavLink, generatePath } from 'react-router/dom';
 import { appRoutes } from '@Front/routing/appRoutes';
 export const ComponentName = () => {
   return <NavLink to={generatePath(appRoutes.article, { id: 1 })}>link to article 1</NavLink>;
