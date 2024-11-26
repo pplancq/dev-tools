@@ -10,7 +10,7 @@ const disabledReleasedLabels = (process.env.GITHUB_DISABLED_RELEASED_LABELS ?? '
 
 const githubOptions = {};
 if (disabledSuccessComment) {
-  githubOptions.successComment = false;
+  githubOptions.successCommentCondition = false;
 }
 if (disabledReleasedLabels) {
   githubOptions.releasedLabels = false;
