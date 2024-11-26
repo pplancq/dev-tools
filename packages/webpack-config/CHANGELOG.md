@@ -1,3 +1,11 @@
+## @pplancq/webpack-config [1.7.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.7.0...@pplancq/webpack-config@1.7.1) (2024-11-26)
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.9.3 ([7008b11](https://github.com/pplancq/dev-tools/commit/7008b1143eef6f61f4cc266f34850656740cdf34))
+* **deps:** update dependency dotenv-expand to v12 ([09574c2](https://github.com/pplancq/dev-tools/commit/09574c2410620f3507553719b32296d9b692e2bf))
+* **deps:** update dependency tsconfig-paths-webpack-plugin to ^4.2.0 ([0e513bc](https://github.com/pplancq/dev-tools/commit/0e513bc7e081486b43698a5539e870e54cf633f0))
+
 ## @pplancq/webpack-config [1.7.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.6.1...@pplancq/webpack-config@1.7.0) (2024-11-18)
 
 ### Features
