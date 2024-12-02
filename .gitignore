@@ -5,3 +5,4 @@ build/
 coverage/
 junit-report.xml
 sonar-report.xml
+/packages/react-template/public/mockServiceWorker.js
