@@ -1,3 +1,9 @@
+## @pplancq/webpack-config [1.8.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.8.0...@pplancq/webpack-config@1.8.1) (2024-12-09)
+
+### Bug Fixes
+
+* **webpack-config:** fix training slash of PUBLIC_URL ([e4ed8a0](https://github.com/pplancq/dev-tools/commit/e4ed8a07b15717c01f258e88214b5ad5acda3d6b))
+
 ## @pplancq/webpack-config [1.8.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.7.1...@pplancq/webpack-config@1.8.0) (2024-12-09)
 
 ### Features
