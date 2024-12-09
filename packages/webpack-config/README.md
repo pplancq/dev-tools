@@ -131,15 +131,16 @@ Real system environment variables take precedence over .env files.
 
 ### Default environment variables
 
-| Variable                 | Default  | Description                                                                                                                                                                                                |
-| ------------------------ | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BROWSER                  | false    | Enables/disables launching the browser when npm start is run.                                                                                                                                              |
-| PORT                     | 3000     | Sets the port for the development web server.                                                                                                                                                              |
-| DISABLE_STYLELINT_PLUGIN | false    | Allows you to deactivate the stylelint plugin                                                                                                                                                              |
-| DISABLE_ESLINT_PLUGIN    | false    | Allows you to deactivate the eslint plugin                                                                                                                                                                 |
-| ESLINT_CONFIG_TYPE       | eslintrc | Specify the type of configuration to use with ESLint.<br/>- 'eslintrc' is the classic configuration format available in most ESLint versions.<br/> - 'flat' is the new format introduced in ESLint 8.21.0. |
-| DISABLE_SOURCE_MAP       | false    | Allows you to deactivate the sourcemap                                                                                                                                                                     |
-| ENV_PREFIX               | FRONT\_  | Sets the prefix for environment variables that will be passed to the frontend.<br/>Access environment variables using import.meta.env.FRONT_FOO in the code.                                               |
+| Variable                 | Default           | Description                                                                                                                                                                                                |
+| ------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| BROWSER                  | false             | Enables/disables launching the browser when npm start is run.                                                                                                                                              |
+| PORT                     | 3000              | Sets the port for the development web server.                                                                                                                                                              |
+| DISABLE_STYLELINT_PLUGIN | false             | Allows you to deactivate the stylelint plugin                                                                                                                                                              |
+| DISABLE_ESLINT_PLUGIN    | false             | Allows you to deactivate the eslint plugin                                                                                                                                                                 |
+| ESLINT_CONFIG_TYPE       | eslintrc          | Specify the type of configuration to use with ESLint.<br/>- 'eslintrc' is the classic configuration format available in most ESLint versions.<br/> - 'flat' is the new format introduced in ESLint 8.21.0. |
+| DISABLE_SOURCE_MAP       | false             | Allows you to deactivate the sourcemap                                                                                                                                                                     |
+| PUBLIC_URL               | http://localhost/ | Sets the public URL or path for production environment.                                                                                                                                                    |
+| ENV_PREFIX               | FRONT\_           | Sets the prefix for environment variables that will be passed to the frontend.<br/>Access environment variables using import.meta.env.FRONT_FOO in the code.                                               |
 
 ### Caution with Environment Variables
 
