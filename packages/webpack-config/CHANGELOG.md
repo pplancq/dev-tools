@@ -1,3 +1,16 @@
+## @pplancq/webpack-config [1.8.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.7.1...@pplancq/webpack-config@1.8.0) (2024-12-09)
+
+### Features
+
+* **webpack-config:** add PUBLIC_URL for sets the public URL or path for production environment ([e13e338](https://github.com/pplancq/dev-tools/commit/e13e33832953c44e9048ff68603f1865fcc01efd))
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.10.0 ([a1c075c](https://github.com/pplancq/dev-tools/commit/a1c075cc7629d75e482ee695cfe581468bf0f980))
+* **deps:** update dependency dotenv to ^16.4.7 ([dd0acae](https://github.com/pplancq/dev-tools/commit/dd0acae5690dd8efc890299192f3c2091ffb9283))
+* **deps:** update dependency sass to ^1.82.0 ([256d46d](https://github.com/pplancq/dev-tools/commit/256d46d383a76d4223d7edf8b361a31d28a3f30f))
+* **deps:** update dependency sass-loader to ^16.0.4 ([3e8ea01](https://github.com/pplancq/dev-tools/commit/3e8ea016d0134ddf74b13c3e313874f5448e437c))
+
 ## @pplancq/webpack-config [1.7.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.7.0...@pplancq/webpack-config@1.7.1) (2024-11-26)
 
 ### Bug Fixes
