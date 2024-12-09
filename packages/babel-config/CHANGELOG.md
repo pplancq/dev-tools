@@ -1,3 +1,9 @@
+## @pplancq/babel-config [1.1.3](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.1.2...@pplancq/babel-config@1.1.3) (2024-12-09)
+
+### Bug Fixes
+
+* **deps:** update dependency @babel/preset-react to ^7.26.3 ([6e74b25](https://github.com/pplancq/dev-tools/commit/6e74b25b985254ff88b54067309c86da12e54aba))
+
 ## @pplancq/babel-config [1.1.2](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.1.1...@pplancq/babel-config@1.1.2) (2024-11-08)
 
 ### Bug Fixes
