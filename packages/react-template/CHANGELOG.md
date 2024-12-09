@@ -1,3 +1,23 @@
+## @pplancq/react-template [2.3.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.2.0...@pplancq/react-template@2.3.0) (2024-12-09)
+
+### Features
+
+* **webpack-config:** add PUBLIC_URL for sets the public URL or path for production environment ([e13e338](https://github.com/pplancq/dev-tools/commit/e13e33832953c44e9048ff68603f1865fcc01efd))
+* **deps:** update react to v19 ([8ee050e](https://github.com/pplancq/dev-tools/commit/8ee050ed8d3ef2125bcf7e661239c4796bc9a4a4))
+
+### Bug Fixes
+
+* **deps:** update dependency react-router to ^7.0.2 ([d47859e](https://github.com/pplancq/dev-tools/commit/d47859e67fa72c228d1483921f594ffc58d8f470))
+* **deps:** update dependency yup to ^1.5.0 ([2ff356e](https://github.com/pplancq/dev-tools/commit/2ff356e6c823bc7fe9fee32f27c2a06057cbddd9))
+* **deps:** update react-query mono repo to ^5.62.0 ([75cd49b](https://github.com/pplancq/dev-tools/commit/75cd49be2678b1a0b64cb076c051fb8b88d18c84))
+* **deps:** update react-query mono repo to ^5.62.2 ([de08f42](https://github.com/pplancq/dev-tools/commit/de08f42859b3a0262642cfcd0a8ab69f32573095))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.4
+* **@pplancq/webpack-config:** upgraded to 1.8.0
+
 ## @pplancq/react-template [2.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.1.0...@pplancq/react-template@2.2.0) (2024-11-26)
 
 ### Features
