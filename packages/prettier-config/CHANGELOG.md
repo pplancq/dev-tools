@@ -1,3 +1,9 @@
+## @pplancq/prettier-config [1.2.1](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@1.2.0...@pplancq/prettier-config@1.2.1) (2024-12-16)
+
+### Bug Fixes
+
+* **deps:** update dependency prettier-plugin-gherkin to ^3.1.1 ([f02543c](https://github.com/pplancq/dev-tools/commit/f02543c2927283278567305bcaf3709ee7a270ee))
+
 ## @pplancq/prettier-config [1.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@1.1.0...@pplancq/prettier-config@1.2.0) (2024-08-19)
 
 ### Features
