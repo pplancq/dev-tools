@@ -1,3 +1,10 @@
+## @pplancq/webpack-config [1.8.2](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.8.1...@pplancq/webpack-config@1.8.2) (2024-12-16)
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.10.1 ([a0de8fc](https://github.com/pplancq/dev-tools/commit/a0de8fcdbcc610496b1b0c40069c435c75d62563))
+* **deps:** update dependency sass to ^1.83.0 ([cb3fa6e](https://github.com/pplancq/dev-tools/commit/cb3fa6e14b476d25a06d7633508535a1c722023d))
+
 ## @pplancq/webpack-config [1.8.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.8.0...@pplancq/webpack-config@1.8.1) (2024-12-09)
 
 ### Bug Fixes
