@@ -45,7 +45,7 @@
     "style-loader": "^4.0.0",
     "stylelint-webpack-plugin": "^5.0.1",
     "swc-loader": "^0.2.6",
-    "terser-webpack-plugin": "^5.3.10",
+    "terser-webpack-plugin": "^5.3.11",
     "tsconfig-paths-webpack-plugin": "^4.2.0"
   },
   "peerDependencies": {
