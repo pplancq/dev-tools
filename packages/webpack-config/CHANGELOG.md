@@ -1,3 +1,13 @@
+## @pplancq/webpack-config [1.8.3](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.8.2...@pplancq/webpack-config@1.8.3) (2025-01-06)
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.10.3 ([21e2701](https://github.com/pplancq/dev-tools/commit/21e27013304ca8222093706ec50c45469c6e2946))
+* **deps:** update dependency @swc/core to ^1.10.4 ([88070ae](https://github.com/pplancq/dev-tools/commit/88070ae82a545263051933f05e9194956b7d6f31))
+* **deps:** update dependency browserslist to ^4.24.3 ([19607ae](https://github.com/pplancq/dev-tools/commit/19607aeb1ce07625dd470e2558594088aa6f4621))
+* **deps:** update dependency terser-webpack-plugin to ^5.3.11 ([ac69c27](https://github.com/pplancq/dev-tools/commit/ac69c27d382197ec6f03e4b30264f6ff3e2276d4))
+* **deps:** update dependency webpack-cli to v6 ([0aad921](https://github.com/pplancq/dev-tools/commit/0aad9211805118ff0e53f12766333003862091b5))
+
 ## @pplancq/webpack-config [1.8.2](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.8.1...@pplancq/webpack-config@1.8.2) (2024-12-16)
 
 ### Bug Fixes
