@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [1.4.3](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.4.2...@pplancq/create-react-app@1.4.3) (2025-01-06)
+
+### Bug Fixes
+
+* **react-template:** fix postinstall script ([330af19](https://github.com/pplancq/dev-tools/commit/330af1987fc8ab9a8f9b7125ef69da25897ddb07))
+
 ## @pplancq/create-react-app [1.4.2](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.4.1...@pplancq/create-react-app@1.4.2) (2025-01-06)
 
 ### Bug Fixes
