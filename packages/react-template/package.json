@@ -27,7 +27,7 @@
     "remove:demo": "node ./scripts/removeDemo.js",
     "migrate:vite": "node ./scripts/migrateToVite.js",
     "_prepare": "husky",
-    "postinstall": "msw init"
+    "_postinstall": "msw init"
   },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
