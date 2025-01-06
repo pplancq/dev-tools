@@ -1,3 +1,22 @@
+## @pplancq/react-template [2.3.2](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.1...@pplancq/react-template@2.3.2) (2025-01-06)
+
+### Bug Fixes
+
+* **deps:** update dependency react-hook-form to ^7.54.2 ([ca56fbc](https://github.com/pplancq/dev-tools/commit/ca56fbc936de62425b5fc0e5f0b2e6e985fa328e))
+* **deps:** update dependency react-router to ^7.1.1 ([fd6a55f](https://github.com/pplancq/dev-tools/commit/fd6a55fc987f799850beb5136a1a177c0a364e13))
+* **deps:** update dependency webpack-cli to v6 ([0aad921](https://github.com/pplancq/dev-tools/commit/0aad9211805118ff0e53f12766333003862091b5))
+* **deps:** update dependency yup to ^1.6.1 ([f6e50f3](https://github.com/pplancq/dev-tools/commit/f6e50f32b7add4467974089130aff99efca1401b))
+* **deps:** update react-query mono repo to ^5.62.11 ([81ca50e](https://github.com/pplancq/dev-tools/commit/81ca50eec29146dce70ca8f6a0d6626511d29050))
+* **deps:** update react-query mono repo to ^5.62.12 ([73b4436](https://github.com/pplancq/dev-tools/commit/73b443684cd46f656540604c26cd94d3707a818c))
+* **deps:** update react-query mono repo to ^5.62.8 ([31ae060](https://github.com/pplancq/dev-tools/commit/31ae0606ef8bdad87018450150160ffb3e8f51a8))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.6
+* **@pplancq/postcss-config:** upgraded to 2.1.7
+* **@pplancq/webpack-config:** upgraded to 1.8.3
+
 ## @pplancq/react-template [2.3.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.0...@pplancq/react-template@2.3.1) (2024-12-16)
 
 ### Bug Fixes
