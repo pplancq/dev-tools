@@ -1,3 +1,9 @@
+## @pplancq/webpack-config [1.8.5](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.8.4...@pplancq/webpack-config@1.8.5) (2025-01-20)
+
+### Bug Fixes
+
+* **deps:** update dependency sass to ^1.83.4 ([6c54691](https://github.com/pplancq/dev-tools/commit/6c5469118501b49d2efdd7a0ce184bb7c2e11944))
+
 ## @pplancq/webpack-config [1.8.4](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.8.3...@pplancq/webpack-config@1.8.4) (2025-01-13)
 
 ### Bug Fixes
