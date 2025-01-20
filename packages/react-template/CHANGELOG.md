@@ -1,3 +1,18 @@
+## @pplancq/react-template [2.3.5](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.4...@pplancq/react-template@2.3.5) (2025-01-20)
+
+### Bug Fixes
+
+* **react-template:** fix deprecated reporters of vitest ([1371b79](https://github.com/pplancq/dev-tools/commit/1371b798a18c86187ba59169aba850edaeff392c))
+* **deps:** update dependency react-router to ^7.1.2 ([1d2f918](https://github.com/pplancq/dev-tools/commit/1d2f9180e0ba809d6b5abdbbc8914421357eb831))
+* **deps:** update react-query mono repo to ^5.64.1 ([453e34f](https://github.com/pplancq/dev-tools/commit/453e34fda308be9c9bf0befded17913c476e6fa9))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.8
+* **@pplancq/stylelint-config:** upgraded to 3.0.0
+* **@pplancq/webpack-config:** upgraded to 1.8.5
+
 ## @pplancq/react-template [2.3.4](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.3...@pplancq/react-template@2.3.4) (2025-01-13)
 
 ### Bug Fixes
