@@ -1,3 +1,14 @@
+## @pplancq/stylelint-config [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@2.1.1...@pplancq/stylelint-config@3.0.0) (2025-01-20)
+
+### ⚠ BREAKING CHANGES
+
+* **stylelint-config:** Bumps stylelint ^16.2.1 to ^16.13.0 the minimum requirements
+
+### Bug Fixes
+
+* **stylelint-config:** bump stylelint from 16.2.1 to 16.13.0 ([d50f38b](https://github.com/pplancq/dev-tools/commit/d50f38bea6b37a887256e185abcbce4e5d5f831c))
+* **deps:** update dependency stylelint-config-standard to v37 ([c293137](https://github.com/pplancq/dev-tools/commit/c2931370cd098ebe7576c8a331510f585db8d32c))
+
 ## @pplancq/stylelint-config [2.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@2.1.0...@pplancq/stylelint-config@2.1.1) (2024-10-15)
 
 ### Bug Fixes
