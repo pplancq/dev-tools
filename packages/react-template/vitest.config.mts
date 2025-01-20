@@ -25,7 +25,7 @@ export default defineConfig(({ mode }) => {
       setupFiles: 'vitest.setup.ts',
       clearMocks: true,
       css: false,
-      reporters: ['basic', 'junit', 'vitest-sonar-reporter'],
+      reporters: ['default', 'junit', 'vitest-sonar-reporter'],
       outputFile: {
         'vitest-sonar-reporter': 'sonar-report.xml',
         junit: 'junit-report.xml',
