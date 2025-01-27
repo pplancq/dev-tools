@@ -53,13 +53,6 @@ module.exports = (env, { mode = 'development' }) => {
           use: [
             ...basseCssRules,
             {
-              loader: require.resolve('resolve-url-loader'),
-              options: {
-                sourceMap: !disableSourceMap,
-                root: paths.src,
-              },
-            },
-            {
               loader: require.resolve('sass-loader'),
               options: {
                 sourceMap: !disableSourceMap,
