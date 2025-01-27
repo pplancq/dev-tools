@@ -76,7 +76,7 @@
     "vite-plugin-svgr": "^4.3.0",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.4",
-    "vitest-axe": "^1.0.0-pre.3",
+    "vitest-axe": "^1.0.0-pre.5",
     "vitest-sonar-reporter": "^2.0.0",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
