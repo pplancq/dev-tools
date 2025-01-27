@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [1.4.4](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.4.3...@pplancq/create-react-app@1.4.4) (2025-01-27)
+
+### Bug Fixes
+
+* **deps:** update dependency commander to v13 ([9e94956](https://github.com/pplancq/dev-tools/commit/9e949560000970854e0906dd2c19fe8d86198b00))
+
 ## @pplancq/create-react-app [1.4.3](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.4.2...@pplancq/create-react-app@1.4.3) (2025-01-06)
 
 ### Bug Fixes
