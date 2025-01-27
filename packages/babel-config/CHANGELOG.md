@@ -1,3 +1,9 @@
+## @pplancq/babel-config [1.1.4](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.1.3...@pplancq/babel-config@1.1.4) (2025-01-27)
+
+### Bug Fixes
+
+* **deps:** update dependency @babel/preset-env to ^7.26.7 ([b0bc3f8](https://github.com/pplancq/dev-tools/commit/b0bc3f825597c2397ae89aa339024888f87ddb32))
+
 ## @pplancq/babel-config [1.1.3](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.1.2...@pplancq/babel-config@1.1.3) (2024-12-09)
 
 ### Bug Fixes
