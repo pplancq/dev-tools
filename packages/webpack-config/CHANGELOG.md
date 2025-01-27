@@ -1,3 +1,13 @@
+## @pplancq/webpack-config [1.9.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.8.5...@pplancq/webpack-config@1.9.0) (2025-01-27)
+
+### Features
+
+* **webpack-config:** remove resolve-url-loader ([91956ad](https://github.com/pplancq/dev-tools/commit/91956ad2ed591bafa484ddcbcc52e4fe05c49abe))
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.10.9 ([2a6ca00](https://github.com/pplancq/dev-tools/commit/2a6ca00ba4e600025b0a3f24ec3577a98dac264d))
+
 ## @pplancq/webpack-config [1.8.5](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.8.4...@pplancq/webpack-config@1.8.5) (2025-01-20)
 
 ### Bug Fixes
