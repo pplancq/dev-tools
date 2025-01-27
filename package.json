@@ -36,7 +36,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@anolilab/multi-semantic-release": "^1.1.8",
+    "@anolilab/multi-semantic-release": "^1.1.9",
     "concurrently": "^9.1.2",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.2",
