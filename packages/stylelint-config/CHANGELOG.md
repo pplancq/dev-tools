@@ -1,3 +1,9 @@
+## @pplancq/stylelint-config [3.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@3.0.0...@pplancq/stylelint-config@3.1.0) (2025-02-10)
+
+### Features
+
+* **stylelint-config:** add selector-pseudo-class-no-unknown rule with global ignore ([a07cbea](https://github.com/pplancq/dev-tools/commit/a07cbea5516b7b53c2a8a389b54eb59556750a9c)), closes [#747](https://github.com/pplancq/dev-tools/issues/747)
+
 ## @pplancq/stylelint-config [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@2.1.1...@pplancq/stylelint-config@3.0.0) (2025-01-20)
 
 ### ⚠ BREAKING CHANGES
