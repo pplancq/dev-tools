@@ -16,6 +16,12 @@ module.exports = {
             message: 'Expected class selector "%s" to be camelCase',
           },
         ],
+        'selector-pseudo-class-no-unknown': [
+          true,
+          {
+            ignorePseudoClasses: ['global'],
+          },
+        ],
       },
     },
   ],
