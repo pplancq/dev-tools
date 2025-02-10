@@ -5,7 +5,7 @@ module.exports = (env, { mode = 'development' }) => {
     module: {
       rules: [
         {
-          test: /\.(jpeg?|png|gif|ico|bmp)$/,
+          test: /\.(jpe?g|png|gif|ico|bmp)$/,
           type: 'asset/resource',
           generator: {
             filename: isEnvProduction ? 'images/[name].[contenthash:8][ext]' : 'images/[name][ext]',
