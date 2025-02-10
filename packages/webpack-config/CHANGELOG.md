@@ -1,3 +1,11 @@
+## @pplancq/webpack-config [1.9.1](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.0...@pplancq/webpack-config@1.9.1) (2025-02-10)
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.10.14 ([05ea536](https://github.com/pplancq/dev-tools/commit/05ea5367f044ae53a5a9ce5b42cf8bf629266c2c))
+* **deps:** update dependency sass to ^1.84.0 ([e8f845a](https://github.com/pplancq/dev-tools/commit/e8f845a3958545053de55479057ddf9ca1589f4e))
+* **webpack-config:** update image file regex to support both jpeg and jpg extensions ([d8d17e7](https://github.com/pplancq/dev-tools/commit/d8d17e7bcd2973d8572999b29d4fd5dd237ba48b)), closes [#734](https://github.com/pplancq/dev-tools/issues/734)
+
 ## @pplancq/webpack-config [1.9.0](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.8.5...@pplancq/webpack-config@1.9.0) (2025-01-27)
 
 ### Features
