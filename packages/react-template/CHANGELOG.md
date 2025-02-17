@@ -1,3 +1,16 @@
+## @pplancq/react-template [2.3.8](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.7...@pplancq/react-template@2.3.8) (2025-02-17)
+
+### Bug Fixes
+
+* **deps:** update dependency @hookform/resolvers to v4 ([40b21a3](https://github.com/pplancq/dev-tools/commit/40b21a300e305367ce2b51090c1967473ef8b217))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.11
+* **@pplancq/postcss-config:** upgraded to 2.1.8
+* **@pplancq/webpack-config:** upgraded to 1.9.2
+
 ## @pplancq/react-template [2.3.7](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.6...@pplancq/react-template@2.3.7) (2025-02-10)
 
 ### Bug Fixes
