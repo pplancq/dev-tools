@@ -40,7 +40,7 @@
     "postcss-loader": "^8.1.1",
     "react-refresh": "^0.16.0",
     "sass": "^1.84.0",
-    "sass-loader": "^16.0.4",
+    "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
     "stylelint-webpack-plugin": "^5.0.1",
     "swc-loader": "^0.2.6",
