@@ -56,3 +56,4 @@ jobs:
           git add package-lock.json
           git commit -m "chore(dev-tools): fix package-lock.json [skip ci]"
           git push origin main
+        continue-on-error: true
