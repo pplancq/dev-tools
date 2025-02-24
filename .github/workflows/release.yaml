@@ -30,10 +30,6 @@ jobs:
 
       - name: Install package
         run: npm ci
-
-      #      - name: Add git hook to auto add package-lock.json
-      #        run: echo '#!/bin/sh\ngit add package-lock.json' >> .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
-
       - name: Config npm
         run: npm config set access=public
 
@@ -49,3 +45,14 @@ jobs:
           GITHUB_DISABLED_SUCCESS_COMMENT: 'true'
           GITHUB_DISABLED_RELEASED_LABELS: 'true'
         run: npm run release
+
+      - name: Update package-lock.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm install
+          git config user.email "${{ vars.GIT_COMMITTER_EMAIL }}"
+          git config user.name "${{ vars.GIT_COMMITTER_NAME }}"
+          git add package-lock.json
+          git commit -m "chore(dev-tools): fix package-lock.json [skip ci]"
+          git push origin main
