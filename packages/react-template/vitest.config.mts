@@ -32,9 +32,9 @@ export default defineConfig(({ mode }) => {
       },
       include: ['src/**/*.(spec|test|steps).[jt]s?(x)'],
       poolOptions: {
-        threads: {
-          minThreads: env.CI ? 1 : undefined,
-          maxThreads: env.CI ? 2 : undefined,
+        forks: {
+          minForks: env.CI ? 1 : undefined,
+          maxForks: env.CI ? 2 : undefined,
         },
       },
       coverage: {
