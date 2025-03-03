@@ -1,3 +1,13 @@
+## @pplancq/webpack-config [1.9.4](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.3...@pplancq/webpack-config@1.9.4) (2025-03-03)
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.11.5 ([f890c41](https://github.com/pplancq/dev-tools/commit/f890c4181be890f8ef3f2f8fe70edc286a6aa718))
+* **deps:** update dependency copy-webpack-plugin to v13 ([bfbacc0](https://github.com/pplancq/dev-tools/commit/bfbacc02311027df2530a112ab4accba861ecfdd))
+* **deps:** update dependency eslint-webpack-plugin to v5 ([1287657](https://github.com/pplancq/dev-tools/commit/12876578c7dff712a958ee1ee262301679d62c95))
+* **deps:** update dependency sass to ^1.85.1 ([cb5a0b4](https://github.com/pplancq/dev-tools/commit/cb5a0b4622d0cf0eb6a43f7ad3913e9d106bfd73))
+* **deps:** update dependency terser-webpack-plugin to ^5.3.12 ([82d4bb4](https://github.com/pplancq/dev-tools/commit/82d4bb420cfd5b6789770b415ee353f54963a9aa))
+
 ## @pplancq/webpack-config [1.9.3](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.2...@pplancq/webpack-config@1.9.3) (2025-02-24)
 
 ### Bug Fixes
