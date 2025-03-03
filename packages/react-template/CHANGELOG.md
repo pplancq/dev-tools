@@ -1,3 +1,19 @@
+## @pplancq/react-template [2.3.10](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.9...@pplancq/react-template@2.3.10) (2025-03-03)
+
+### Bug Fixes
+
+* **react-template:** rename thread options to fork options in configuration ([f8ac458](https://github.com/pplancq/dev-tools/commit/f8ac458b63cae6f9423b4e9c8e8761e306343270))
+* **deps:** update dependency @hookform/resolvers to ^4.1.2 ([2dd88e7](https://github.com/pplancq/dev-tools/commit/2dd88e7b6e3bd0d3eeaf3171cbeba66540d0b7ee))
+* **deps:** update react-query mono repo to ^5.66.11 ([3d8a4d2](https://github.com/pplancq/dev-tools/commit/3d8a4d254371b151adb7f0f947a3c9bea1655bd8))
+* **deps:** update react-query mono repo to ^5.66.9 ([aeb45d0](https://github.com/pplancq/dev-tools/commit/aeb45d0313874e907118286e4b61da1df703e8d0))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.13
+* **@pplancq/postcss-config:** upgraded to 2.1.9
+* **@pplancq/webpack-config:** upgraded to 1.9.4
+
 ## @pplancq/react-template [2.3.9](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.8...@pplancq/react-template@2.3.9) (2025-02-24)
 
 ### Bug Fixes
