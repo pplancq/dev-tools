@@ -1,3 +1,11 @@
+## @pplancq/webpack-config [1.9.5](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.4...@pplancq/webpack-config@1.9.5) (2025-03-10)
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.11.7 ([2df6109](https://github.com/pplancq/dev-tools/commit/2df6109ecc597f0bdf2e456d13c0a5c2b4a45344))
+* **deps:** update dependency css-minimizer-webpack-plugin to ^7.0.2 ([4c4a73a](https://github.com/pplancq/dev-tools/commit/4c4a73a50a9743e58cff623e9f4626a8ead77d8c))
+* **deps:** update dependency terser-webpack-plugin to ^5.3.14 ([37156c0](https://github.com/pplancq/dev-tools/commit/37156c060c050a4325388e6f63d0765d787fa86d))
+
 ## @pplancq/webpack-config [1.9.4](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.3...@pplancq/webpack-config@1.9.4) (2025-03-03)
 
 ### Bug Fixes
