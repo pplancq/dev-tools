@@ -1,3 +1,19 @@
+## @pplancq/react-template [2.3.11](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.10...@pplancq/react-template@2.3.11) (2025-03-10)
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to ^19.8.0 ([6416809](https://github.com/pplancq/dev-tools/commit/64168092add95424270118b244af178340a86a25))
+* **deps:** update dependency @hookform/resolvers to ^4.1.3 ([96fc3f8](https://github.com/pplancq/dev-tools/commit/96fc3f88909f86fbfbce09097025a12d42579282))
+* **deps:** update dependency react-router to ^7.3.0 ([57a0147](https://github.com/pplancq/dev-tools/commit/57a0147d3a52cd199b90e489966b036a213275af))
+* **deps:** update react-query mono repo to ^5.67.2 ([2713cba](https://github.com/pplancq/dev-tools/commit/2713cba1997f5e25fbe81da87c3f77071b5c4176))
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 2.2.2
+* **@pplancq/eslint-config:** upgraded to 4.0.14
+* **@pplancq/webpack-config:** upgraded to 1.9.5
+
 ## @pplancq/react-template [2.3.10](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.9...@pplancq/react-template@2.3.10) (2025-03-03)
 
 ### Bug Fixes
