@@ -23,7 +23,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.26.1",
     "@typescript-eslint/parser": "^8.26.1",
-    "@vitest/eslint-plugin": "^1.1.36",
+    "@vitest/eslint-plugin": "^1.1.37",
     "eslint-import-resolver-typescript": "^3.8.7",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jest": "^28.11.0",
