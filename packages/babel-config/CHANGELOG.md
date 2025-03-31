@@ -1,3 +1,9 @@
+## @pplancq/babel-config [1.1.6](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.1.5...@pplancq/babel-config@1.1.6) (2025-03-31)
+
+### Bug Fixes
+
+* **deps:** update dependency @babel/preset-typescript to ^7.27.0 ([68e59e8](https://github.com/pplancq/dev-tools/commit/68e59e870232f5a6307e90de6320df4b1379ce1a))
+
 ## @pplancq/babel-config [1.1.5](https://github.com/pplancq/dev-tools/compare/@pplancq/babel-config@1.1.4...@pplancq/babel-config@1.1.5) (2025-02-17)
 
 ### Bug Fixes
