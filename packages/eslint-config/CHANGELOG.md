@@ -1,3 +1,10 @@
+## @pplancq/eslint-config [4.0.17](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.0.16...@pplancq/eslint-config@4.0.17) (2025-03-31)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to ^4.2.5 ([cba9d10](https://github.com/pplancq/dev-tools/commit/cba9d10d2fde9349972af325bd97d0d942cd6491))
+* **deps:** update typescript-eslint mono repo to ^8.28.0 ([dab5681](https://github.com/pplancq/dev-tools/commit/dab5681fc63d12e08c6a8377c97be8bd9d74b963))
+
 ## @pplancq/eslint-config [4.0.16](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.0.15...@pplancq/eslint-config@4.0.16) (2025-03-24)
 
 ### Bug Fixes
