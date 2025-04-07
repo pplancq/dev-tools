@@ -1,3 +1,16 @@
+## @pplancq/react-template [2.3.15](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.14...@pplancq/react-template@2.3.15) (2025-04-07)
+
+### Bug Fixes
+
+* **deps:** update dependency react-router to ^7.4.1 ([7004425](https://github.com/pplancq/dev-tools/commit/700442559d777f27ac7139db730ea083beae322e))
+* **deps:** update react-query mono repo to ^5.71.10 ([fcbf6d9](https://github.com/pplancq/dev-tools/commit/fcbf6d9f456a3835f2832e5d6e5a846ba750e3cd))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.18
+* **@pplancq/webpack-config:** upgraded to 1.9.9
+
 ## @pplancq/react-template [2.3.14](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.13...@pplancq/react-template@2.3.14) (2025-03-31)
 
 ### Bug Fixes
