@@ -69,7 +69,7 @@
     "lint-staged": "^15.5.0",
     "msw": "^2.7.3",
     "prettier": "^3.5.3",
-    "stylelint": "^16.17.0",
+    "stylelint": "^16.18.0",
     "stylelint-prettier": "^5.0.3",
     "tsc-files": "^1.1.4",
     "typescript": "^5.8.3",
