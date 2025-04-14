@@ -1,3 +1,9 @@
+## @pplancq/stylelint-config [3.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@3.1.0...@pplancq/stylelint-config@3.1.1) (2025-04-14)
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-standard to v38 ([841bedd](https://github.com/pplancq/dev-tools/commit/841beddd14bd44130d80a82856ebcf635f41f517))
+
 ## @pplancq/stylelint-config [3.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@3.0.0...@pplancq/stylelint-config@3.1.0) (2025-02-10)
 
 ### Features
