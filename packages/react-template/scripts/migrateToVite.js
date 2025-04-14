@@ -56,7 +56,6 @@ export default defineConfig(({ mode }) => {
       viteTsconfigPaths(),
       svgr(),
       eslintPlugin({
-        useEslintrc: true,
         emitErrorAsWarning: true,
         cache: false
       }),
