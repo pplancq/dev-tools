@@ -1,3 +1,13 @@
+## @pplancq/webpack-config [1.9.10](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.9...@pplancq/webpack-config@1.9.10) (2025-04-14)
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.11.18 ([d7965f4](https://github.com/pplancq/dev-tools/commit/d7965f43dbf48267b46b75a80c6252a98e593dc4))
+* **deps:** update dependency @swc/core to ^1.11.20 ([8bc03fe](https://github.com/pplancq/dev-tools/commit/8bc03fedee443d4b79be959f35ec1596691e0e57))
+* **deps:** update dependency dotenv to ^16.5.0 ([e9cd04e](https://github.com/pplancq/dev-tools/commit/e9cd04e0ce984a753d749fb1be0a896e438aa7d9))
+* **deps:** update dependency fork-ts-checker-webpack-plugin to ^9.1.0 ([25dbe28](https://github.com/pplancq/dev-tools/commit/25dbe2825f3409cf3806c13eaf7de8e6af9bf1d3))
+* **deps:** update react monorepo ([2706189](https://github.com/pplancq/dev-tools/commit/2706189df070f2df9430524a8d229d9f814d699e))
+
 ## @pplancq/webpack-config [1.9.9](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.8...@pplancq/webpack-config@1.9.9) (2025-04-07)
 
 ### Bug Fixes
