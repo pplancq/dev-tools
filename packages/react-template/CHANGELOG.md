@@ -1,3 +1,22 @@
+## @pplancq/react-template [2.3.16](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.15...@pplancq/react-template@2.3.16) (2025-04-14)
+
+### Bug Fixes
+
+* **react-template:** remove useEslintrc option from eslintPlugin configuration ([d99d21e](https://github.com/pplancq/dev-tools/commit/d99d21eacb6d9bd91dc725fcc1671006bd5820db))
+* **deps:** update dependency @hookform/resolvers to v5 ([d87bef2](https://github.com/pplancq/dev-tools/commit/d87bef293d2cdaa5d7d08c6dc03fef416b79788b))
+* **deps:** update dependency react-hook-form to ^7.55.0 ([7f74527](https://github.com/pplancq/dev-tools/commit/7f74527add03d957052e29ba4e8f4af96420c9df))
+* **deps:** update dependency react-router to ^7.5.0 ([5530cf4](https://github.com/pplancq/dev-tools/commit/5530cf4f3f029a30aa738a1be22ef0757f06ab16))
+* **deps:** update react monorepo ([2706189](https://github.com/pplancq/dev-tools/commit/2706189df070f2df9430524a8d229d9f814d699e))
+* **deps:** update react-query mono repo to ^5.72.2 ([6cb3445](https://github.com/pplancq/dev-tools/commit/6cb3445d2f12328c7f9bc287528e3891b2a5a71a))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.19
+* **@pplancq/prettier-config:** upgraded to 1.2.4
+* **@pplancq/stylelint-config:** upgraded to 3.1.1
+* **@pplancq/webpack-config:** upgraded to 1.9.10
+
 ## @pplancq/react-template [2.3.15](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.14...@pplancq/react-template@2.3.15) (2025-04-07)
 
 ### Bug Fixes
