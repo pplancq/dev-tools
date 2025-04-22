@@ -6,7 +6,7 @@
   "author": "pplancq <paul.plancq@outlook.fr>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pplancq/dev-tools",
+    "url": "git+https://github.com/pplancq/dev-tools.git",
     "directory": "packages/prettier-config"
   },
   "bugs": {

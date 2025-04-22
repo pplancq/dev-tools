@@ -6,10 +6,12 @@
   "author": "pplancq <paul.plancq@outlook.fr>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pplancq/dev-tools",
+    "url": "git+https://github.com/pplancq/dev-tools.git",
     "directory": "packages/create-react-app"
   },
-  "bin": "./index.js",
+  "bin": {
+    "create-react-app": "index.js"
+  },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },

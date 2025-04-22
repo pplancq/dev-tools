@@ -6,8 +6,8 @@
   "author": "pplancq <paul.plancq@outlook.fr>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pplancq/dev-tools",
-    "directory": "packages/webpack-config"
+    "url": "git+https://github.com/pplancq/dev-tools.git",
+    "directory": "packages/react-template"
   },
   "scripts": {
     "start": "webpack serve",

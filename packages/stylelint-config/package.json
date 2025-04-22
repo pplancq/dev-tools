@@ -6,7 +6,7 @@
   "author": "pplancq <paul.plancq@outlook.fr>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pplancq/dev-tools",
+    "url": "git+https://github.com/pplancq/dev-tools.git",
     "directory": "packages/stylelint-config"
   },
   "bugs": {
@@ -18,7 +18,7 @@
     "./prettier": "./prettier.js"
   },
   "bin": {
-    "init-stylelint-config": "./bin/init.js"
+    "init-stylelint-config": "bin/init.js"
   },
   "keywords": [
     "stylelint",
