@@ -40,7 +40,6 @@ runCommand(
 writeFileSync(
   resolve(__dirname, '../vite.config.mts'),
   `import react from '@vitejs/plugin-react-swc'
-import { resolve } from 'path'
 import { defineConfig, loadEnv } from 'vite'
 import eslintPlugin from 'vite-plugin-eslint2'
 import stylelintPlugin from 'vite-plugin-stylelint'
@@ -69,14 +68,6 @@ export default defineConfig(({ mode }) => {
       port: parseInt(process.env.PORT ?? '3000', 10),
       open: (process.env.BROWSER ?? 'false') === 'true'
     },
-    root: resolve(__dirname, 'public'),
-    publicDir: resolve(__dirname, 'public'),
-    resolve: {
-      alias: { '/src': resolve(__dirname, 'src') }
-    },
-    build: {
-      outDir: resolve(__dirname, 'build')
-    }
   }
 })
 `,
@@ -94,7 +85,8 @@ writeFileSync(resolve(__dirname, '../package.json'), JSON.stringify(packagesJson
 
 let indexHTML = readFileSync(resolve(__dirname, '../public/index.html'), { encoding: 'utf-8' });
 indexHTML = indexHTML.replace('  </body>', '    <script type="module" src="/src/main.ts"></script>\n  </body>');
-writeFileSync(resolve(__dirname, '../public/index.html'), indexHTML, { encoding: 'utf-8' });
+writeFileSync(resolve(__dirname, '../index.html'), indexHTML, { encoding: 'utf-8' });
+rmSync(resolve(__dirname, '../public/index.html'));
 
 rmSync(resolve(__dirname, '../scripts/migrateToVite.js'));
 
