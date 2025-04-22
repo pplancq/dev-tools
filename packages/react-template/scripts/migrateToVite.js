@@ -46,23 +46,37 @@ import stylelintPlugin from 'vite-plugin-stylelint'
 import svgr from 'vite-plugin-svgr'
 import viteTsconfigPaths from 'vite-tsconfig-paths'
 
+const resolveModule = (module: string) => {
+  try {
+    require.resolve(module);
+    return true;
+  } catch {
+    return false;
+  }
+};
+
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
+
+  const disableStyleLintPlugin =
+    (env.DISABLE_STYLELINT_PLUGIN ?? 'false') === 'true' || !resolveModule('stylelint');
+  const disableEsLintPlugin =
+   (env.DISABLE_ESLINT_PLUGIN ?? 'false') === 'true' || !resolveModule('eslint');
 
   return {
     plugins: [
       react(),
       viteTsconfigPaths(),
       svgr(),
-      eslintPlugin({
+      !disableEsLintPlugin && eslintPlugin({
         emitErrorAsWarning: true,
         cache: false
       }),
-      stylelintPlugin({
+      !disableStyleLintPlugin && stylelintPlugin({
         emitErrorAsWarning: true,
         cache: false
       })
-    ],
+    ].filter(Boolean),
     envPrefix: env.ENV_PREFIX ?? 'FRONT_',
     server: {
       port: parseInt(process.env.PORT ?? '3000', 10),
@@ -87,6 +101,19 @@ let indexHTML = readFileSync(resolve(__dirname, '../public/index.html'), { encod
 indexHTML = indexHTML.replace('  </body>', '    <script type="module" src="/src/main.ts"></script>\n  </body>');
 writeFileSync(resolve(__dirname, '../index.html'), indexHTML, { encoding: 'utf-8' });
 rmSync(resolve(__dirname, '../public/index.html'));
+
+let envFile = readFileSync(resolve(__dirname, '../.env'), { encoding: 'utf-8' });
+envFile = envFile.replace(
+  `
+
+# Specify the type of configuration to use with ESLint.
+# - 'eslintrc' is the classic configuration format available in most ESLint versions.
+# - 'flat'  is the new format introduced in ESLint 8.21.0.
+# Default is 'eslintrc'
+ESLINT_CONFIG_TYPE='flat'`,
+  '',
+);
+writeFileSync(resolve(__dirname, '../.env'), envFile, { encoding: 'utf-8' });
 
 rmSync(resolve(__dirname, '../scripts/migrateToVite.js'));
 
