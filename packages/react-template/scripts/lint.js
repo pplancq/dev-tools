@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
-const concurrently = require('concurrently');
+import concurrently from 'concurrently';
 
 const { result } = concurrently(['npm:lint:eslint', 'npm:lint:tsc', 'npm:lint:stylelint', 'npm:lint:prettier'], {
   prefixColors: 'auto',

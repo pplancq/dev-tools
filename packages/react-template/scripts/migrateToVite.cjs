@@ -138,6 +138,6 @@ writeFileSync(
   { encoding: 'utf-8' },
 );
 
-rmSync(resolve(__dirname, '../scripts/migrateToVite.js'));
+rmSync(resolve(__dirname, '../scripts/migrateToVite.cjs'));
 
 console.info('\nThe application has been migrate to vite');

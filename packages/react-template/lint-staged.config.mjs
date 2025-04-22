@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   '*.{js,jsx,mjs,ts,tsx}': 'eslint --fix',
   '*.{ts,tsx}': 'tsc-files --noEmit',
   '*.{scss,css}': 'stylelint --fix',

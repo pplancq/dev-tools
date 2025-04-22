@@ -11,5 +11,12 @@ export default defineConfig({
         'import/no-extraneous-dependencies': 'off',
       },
     },
+    {
+      files: ['**/*.config.{js,cjs,mjs,ts,cts,mts}'],
+      rules: {
+        'import/no-default-export': 'off',
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
   ],
 });

@@ -83,6 +83,6 @@ const { 'remove:demo': _, ...scripts } = packagesJson.scripts;
 packagesJson.scripts = { ...scripts };
 writeFileSync(resolve(__dirname, '../package.json'), JSON.stringify(packagesJson, null, 2), { encoding: 'utf-8' });
 
-rmSync(resolve(__dirname, '../scripts/removeDemo.js'));
+rmSync(resolve(__dirname, '../scripts/removeDemo.cjs'));
 
 console.info('\nThe demo application has been removed\n');
