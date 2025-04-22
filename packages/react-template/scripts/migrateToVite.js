@@ -45,6 +45,7 @@ import eslintPlugin from 'vite-plugin-eslint2'
 import stylelintPlugin from 'vite-plugin-stylelint'
 import svgr from 'vite-plugin-svgr'
 import viteTsconfigPaths from 'vite-tsconfig-paths'
+import packageJson from './package.json'
 
 const resolveModule = (module: string) => {
   try {
@@ -62,6 +63,10 @@ export default defineConfig(({ mode }) => {
     (env.DISABLE_STYLELINT_PLUGIN ?? 'false') === 'true' || !resolveModule('stylelint');
   const disableEsLintPlugin =
    (env.DISABLE_ESLINT_PLUGIN ?? 'false') === 'true' || !resolveModule('eslint');
+  const publicUrl = env.PUBLIC_URL ?? packageJson.homepage ?? '/';
+  const publicPath = mode === 'development'
+    ? '/'
+    : new URL(publicUrl.endsWith('/') ? publicUrl : \`\${publicUrl}/\`, 'http://localhost').pathname;
 
   return {
     plugins: [
@@ -78,9 +83,14 @@ export default defineConfig(({ mode }) => {
       })
     ].filter(Boolean),
     envPrefix: env.ENV_PREFIX ?? 'FRONT_',
+    base: publicPath,
     server: {
-      port: parseInt(process.env.PORT ?? '3000', 10),
-      open: (process.env.BROWSER ?? 'false') === 'true'
+      port: parseInt(env.PORT ?? '3000', 10),
+      open: (env.BROWSER ?? 'false') === 'true'
+    },
+    build: {
+      sourcemap: (env.DISABLE_SOURCE_MAP ?? 'false') !== 'true',
+      outDir: 'build',
     },
   }
 })
