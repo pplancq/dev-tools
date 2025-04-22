@@ -83,6 +83,10 @@ export default defineConfig(({ mode }) => {
   { encoding: 'utf-8' },
 );
 
+let tsconfig = readFileSync(resolve(__dirname, '../tsconfig.json'), { encoding: 'utf-8' });
+tsconfig = tsconfig.replace('@pplancq/webpack-config', 'vite/client');
+writeFileSync(resolve(__dirname, '../tsconfig.json'), tsconfig, { encoding: 'utf-8' });
+
 const packagesJson = JSON.parse(readFileSync(resolve(__dirname, '../package.json'), { encoding: 'utf-8' }));
 const { start, build, 'migrate:vite': _, ...scripts } = packagesJson.scripts;
 packagesJson.scripts = { start: 'vite', build: 'vite build', preview: 'vite preview', ...scripts };
