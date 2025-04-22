@@ -93,8 +93,14 @@ tsconfig = tsconfig.replace('@pplancq/webpack-config', 'vite/client');
 writeFileSync(resolve(__dirname, '../tsconfig.json'), tsconfig, { encoding: 'utf-8' });
 
 const packagesJson = JSON.parse(readFileSync(resolve(__dirname, '../package.json'), { encoding: 'utf-8' }));
-const { start, build, 'migrate:vite': _, ...scripts } = packagesJson.scripts;
-packagesJson.scripts = { start: 'vite', build: 'vite build', preview: 'vite preview', ...scripts };
+const { start, build, 'migrate:vite': a, 'start:mock': b, ...scripts } = packagesJson.scripts;
+packagesJson.scripts = {
+  start: 'vite',
+  build: 'vite build',
+  preview: 'vite preview',
+  'start:mock': 'vite --mode mock',
+  ...scripts,
+};
 writeFileSync(resolve(__dirname, '../package.json'), JSON.stringify(packagesJson, null, 2), { encoding: 'utf-8' });
 
 let indexHTML = readFileSync(resolve(__dirname, '../public/index.html'), { encoding: 'utf-8' });
@@ -114,6 +120,13 @@ ESLINT_CONFIG_TYPE='flat'`,
   '',
 );
 writeFileSync(resolve(__dirname, '../.env'), envFile, { encoding: 'utf-8' });
+
+writeFileSync(
+  resolve(__dirname, '../.env.mock'),
+  `FRONT_MOCK_ENABLE=true
+`,
+  { encoding: 'utf-8' },
+);
 
 rmSync(resolve(__dirname, '../scripts/migrateToVite.js'));
 
