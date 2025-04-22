@@ -93,6 +93,7 @@ const main = async () => {
   delete repoPackageJson.repository;
   delete repoPackageJson.bugs;
   delete repoPackageJson.keywords;
+  delete repoPackageJson.engines;
 
   writeFileSync(resolve(repoDir, 'package.json'), JSON.stringify(repoPackageJson, null, 2), { encoding: 'utf-8' });
   rmSync(`${repoDir}/node_modules`, { recursive: true });
