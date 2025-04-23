@@ -8,6 +8,9 @@ on:
 env:
   HUSKY: 0
 
+permissions:
+  contents: read
+
 jobs:
   install:
     name: Install package
