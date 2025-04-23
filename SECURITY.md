@@ -11,7 +11,7 @@
 | `@pplancq/postcss-config`          | 2.0.x   | :white_check_mark: |
 | `@pplancq/prettier-config`         | 1.0.x   | :white_check_mark: |
 | `@pplancq/semantic-release-config` | 1.0.x   | :white_check_mark: |
-| `@pplancq/stylelint-config`        | 2.0.x   | :white_check_mark: |
+| `@pplancq/stylelint-config`        | 3.0.x   | :white_check_mark: |
 | `@pplancq/webpack-config`          | 1.0.x   | :white_check_mark: |
 | `@pplancq/react-template`          | 2.0.x   | :white_check_mark: |
 
