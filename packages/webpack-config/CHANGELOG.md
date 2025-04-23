@@ -1,3 +1,11 @@
+## @pplancq/webpack-config [1.9.11](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.10...@pplancq/webpack-config@1.9.11) (2025-04-23)
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.11.21 ([662a654](https://github.com/pplancq/dev-tools/commit/662a654734b222c2e8263883db16a6cc3a4f95d6))
+* **deps:** update dependency dotenv-expand to ^12.0.2 ([0d61080](https://github.com/pplancq/dev-tools/commit/0d61080f86ecd7438dd48fa672b08333a624f9b0))
+* **deps:** update dependency eslint-webpack-plugin to ^5.0.1 ([4979c94](https://github.com/pplancq/dev-tools/commit/4979c9406e2b3444346ef2429f23e8f4ef62891a))
+
 ## @pplancq/webpack-config [1.9.10](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.9...@pplancq/webpack-config@1.9.10) (2025-04-14)
 
 ### Bug Fixes
