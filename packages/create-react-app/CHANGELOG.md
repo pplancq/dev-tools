@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [1.4.5](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.4.4...@pplancq/create-react-app@1.4.5) (2025-04-23)
+
+### Bug Fixes
+
+* **create-react-app:** remove engines field from package.json ([ec33b6b](https://github.com/pplancq/dev-tools/commit/ec33b6b803e6a34f14f7eaedc70485af3249cb9b))
+
 ## @pplancq/create-react-app [1.4.4](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.4.3...@pplancq/create-react-app@1.4.4) (2025-01-27)
 
 ### Bug Fixes
