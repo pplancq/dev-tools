@@ -4,7 +4,7 @@
 
 | Package Name                       | Version | Supported          |
 | ---------------------------------- | ------- | ------------------ |
-| `@pplancq/babel-config`            | 1.0.x   | :white_check_mark: |
+| `@pplancq/babel-config`            | 1.0.x   | :x:                |
 | `@pplancq/commitlint-config`       | 2.0.x   | :white_check_mark: |
 | `@pplancq/create-react-app`        | 1.0.x   | :white_check_mark: |
 | `@pplancq/eslint-config`           | 4.0.x   | :white_check_mark: |

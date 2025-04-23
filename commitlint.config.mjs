@@ -7,7 +7,6 @@ export default {
       'always',
       [
         'dev-tools',
-        'babel-config',
         'commitlint-config',
         'create-react-app',
         'eslint-config',
