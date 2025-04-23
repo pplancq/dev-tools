@@ -1,3 +1,25 @@
+## @pplancq/react-template [2.4.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.16...@pplancq/react-template@2.4.0) (2025-04-23)
+
+### Features
+
+* **react-template:** enhance Vite migration by adding public path configuration and build options ([4bfa14a](https://github.com/pplancq/dev-tools/commit/4bfa14a8f1765f02281742f2d3f189e74460b4e3))
+* **react-template:** improve plugin configuration and update ESLint settings ([a311045](https://github.com/pplancq/dev-tools/commit/a31104522edeeccd252a498348c9fb8d4df2d125))
+* **react-template:** migrate configuration files to ES module syntax and update related scripts ([b9d9bd0](https://github.com/pplancq/dev-tools/commit/b9d9bd04a42a024b276254772765b3ecfeda4415))
+* **react-template:** update file paths and remove obsolete configurations ([d48bbe0](https://github.com/pplancq/dev-tools/commit/d48bbe042c304bc8a708bd0d741613601d0ee9cf))
+* **react-template:** update package scripts for Vite integration and add mock environment support ([e534e40](https://github.com/pplancq/dev-tools/commit/e534e40e5dbcf2c14231b7e6d400b8591ecdffd2))
+
+### Bug Fixes
+
+* **deps:** update dependency react-router to ^7.5.1 ([ae0c0e5](https://github.com/pplancq/dev-tools/commit/ae0c0e579612faf1371644ce3a6d7fa40883993a))
+* **deps:** update react-query mono repo to ^5.74.4 ([8c56b6b](https://github.com/pplancq/dev-tools/commit/8c56b6be39c9e3e932b1a8d994dc676c5068efad))
+* **react-template:** update tsconfig to replace webpack config with vite ([68b87e2](https://github.com/pplancq/dev-tools/commit/68b87e2ce031f771efc0c0f087362242afc3ec73))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.20
+* **@pplancq/webpack-config:** upgraded to 1.9.11
+
 ## @pplancq/react-template [2.3.16](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.15...@pplancq/react-template@2.3.16) (2025-04-14)
 
 ### Bug Fixes
