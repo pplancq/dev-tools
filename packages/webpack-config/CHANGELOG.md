@@ -1,3 +1,11 @@
+## @pplancq/webpack-config [1.9.12](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.11...@pplancq/webpack-config@1.9.12) (2025-05-05)
+
+### Bug Fixes
+
+* **deps:** update dependency @pmmmwh/react-refresh-webpack-plugin to ^0.6.0 ([ef51a04](https://github.com/pplancq/dev-tools/commit/ef51a04ac9c7e28ebcf8dc67354558480c144f32))
+* **deps:** update dependency @swc/core to ^1.11.22 ([1dc3b1b](https://github.com/pplancq/dev-tools/commit/1dc3b1b9158f387a29c1518669c55b38e8780cc3))
+* **deps:** update dependency sass to ^1.87.0 ([2dcd3e2](https://github.com/pplancq/dev-tools/commit/2dcd3e2ca5bfd2a9c3f34c722fbf34226bd52ddc))
+
 ## @pplancq/webpack-config [1.9.11](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.10...@pplancq/webpack-config@1.9.11) (2025-04-23)
 
 ### Bug Fixes
