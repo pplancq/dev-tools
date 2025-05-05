@@ -1,3 +1,21 @@
+## @pplancq/react-template [2.4.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.4.0...@pplancq/react-template@2.4.1) (2025-05-05)
+
+### Bug Fixes
+
+* **deps:** update dependency @tanstack/react-query-devtools to ^5.74.6 ([69d5494](https://github.com/pplancq/dev-tools/commit/69d5494ccff7180150e7ce82689b6aa7012f0edc))
+* **deps:** update dependency react-hook-form to ^7.56.1 ([c1bac28](https://github.com/pplancq/dev-tools/commit/c1bac28d52010e9d52f8268d79bf3d7caa8f56d8))
+* **deps:** update dependency react-router to ^7.5.2 ([91381af](https://github.com/pplancq/dev-tools/commit/91381af3ea604e56f7db91e90e5b346e5ba7ddc9))
+* **deps:** update dependency react-router to ^7.5.3 ([7f27493](https://github.com/pplancq/dev-tools/commit/7f274931028c3ded16b920a9f51e1ff96ed8581d))
+* **react-template:** update migration script to remove webpack configuration file ([fe77fa2](https://github.com/pplancq/dev-tools/commit/fe77fa2e2f4c9549e694d31aca61da29b7156cf9))
+* **deps:** update react-query mono repo to ^5.75.0 ([45f1c7e](https://github.com/pplancq/dev-tools/commit/45f1c7e3d65cc9e28ff7c026ffcc5f2c019db15c))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.21
+* **@pplancq/postcss-config:** upgraded to 2.1.10
+* **@pplancq/webpack-config:** upgraded to 1.9.12
+
 ## @pplancq/react-template [2.4.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.3.16...@pplancq/react-template@2.4.0) (2025-04-23)
 
 ### Features
