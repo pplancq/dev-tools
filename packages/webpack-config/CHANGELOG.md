@@ -1,3 +1,10 @@
+## @pplancq/webpack-config [1.9.13](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.12...@pplancq/webpack-config@1.9.13) (2025-05-13)
+
+### Bug Fixes
+
+* **webpack-config:** normalize public URL handling in configuration ([6d4880e](https://github.com/pplancq/dev-tools/commit/6d4880e37fc5f966671fe3a52f9d5e6c253e3863))
+* **deps:** update dependency browserslist to ^4.24.5 ([b39d22b](https://github.com/pplancq/dev-tools/commit/b39d22b2e1e258bf3b52dc1887d2d0b3b224988b))
+
 ## @pplancq/webpack-config [1.9.12](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.11...@pplancq/webpack-config@1.9.12) (2025-05-05)
 
 ### Bug Fixes
