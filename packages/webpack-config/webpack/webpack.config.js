@@ -17,9 +17,8 @@ module.exports = (env, { mode = 'development' }) => {
 
   const disableSourceMap = (process.env.DISABLE_SOURCE_MAP ?? 'false') === 'true' ? false : 'source-map';
   const publicUrl = process.env.PUBLIC_URL ?? packageJson.homepage ?? '/';
-  const publicPath = isEnvDevelopment
-    ? '/'
-    : new URL(publicUrl.endsWith('/') ? publicUrl : `${publicUrl}/`, 'http://localhost').pathname;
+  const normalizedPublicUrl = publicUrl.endsWith('/') ? publicUrl : `${publicUrl}/`;
+  const publicPath = isEnvDevelopment ? '/' : new URL(normalizedPublicUrl, 'http://localhost').pathname;
 
   return {
     extends: [
