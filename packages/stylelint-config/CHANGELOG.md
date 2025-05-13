@@ -1,3 +1,16 @@
+## @pplancq/stylelint-config [4.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@3.1.1...@pplancq/stylelint-config@4.0.0) (2025-05-13)
+
+### ⚠ BREAKING CHANGES
+
+* **stylelint-config:** Node.js less than 22 support.
+* **stylelint-config:** stylelint less than 16.16.0 from peer dependencies.
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-recommended-scss to v15 ([d37ac01](https://github.com/pplancq/dev-tools/commit/d37ac01deb437dca66017c58a66f41ad1c2cfa44))
+* **stylelint-config:** update node engine requirement to >=22 ([613e22b](https://github.com/pplancq/dev-tools/commit/613e22b7d581070dbe784e342c04e04c2f1c2fda))
+* **stylelint-config:** update stylelint peer dependency to v16.16.0 ([55efaa4](https://github.com/pplancq/dev-tools/commit/55efaa4168abd9c8ac80ca98c8064e95eb8215fe))
+
 ## @pplancq/stylelint-config [3.1.1](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@3.1.0...@pplancq/stylelint-config@3.1.1) (2025-04-14)
 
 ### Bug Fixes
