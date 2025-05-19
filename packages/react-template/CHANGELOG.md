@@ -1,3 +1,16 @@
+## @pplancq/react-template [2.4.3](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.4.2...@pplancq/react-template@2.4.3) (2025-05-19)
+
+### Bug Fixes
+
+* **deps:** update react-query mono repo to ^5.76.1 ([b486b23](https://github.com/pplancq/dev-tools/commit/b486b233dbe0725e228ef492670823a2fc54e604))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.23
+* **@pplancq/prettier-config:** upgraded to 1.2.6
+* **@pplancq/webpack-config:** upgraded to 1.9.14
+
 ## @pplancq/react-template [2.4.2](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.4.1...@pplancq/react-template@2.4.2) (2025-05-13)
 
 ### Bug Fixes
