@@ -1,12 +1,11 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import react from '@vitejs/plugin-react-swc';
 import { resolve } from 'path';
 import { loadEnv } from 'vite';
 import svgr from 'vite-plugin-svgr';
 import viteTsconfigPaths from 'vite-tsconfig-paths';
+// eslint-disable-next-line import/no-unresolved
 import { defineConfig } from 'vitest/config';
 
-// eslint-disable-next-line import/no-default-export
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
@@ -38,7 +37,7 @@ export default defineConfig(({ mode }) => {
         },
       },
       coverage: {
-        enabled: env.CI,
+        enabled: env.CI === 'true',
         reporter: ['lcov', 'json', 'html', 'text', 'cobertura'],
         provider: 'v8',
         lines: 80,
