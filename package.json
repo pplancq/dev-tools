@@ -39,7 +39,7 @@
     "@anolilab/multi-semantic-release": "^1.1.11",
     "concurrently": "^9.1.2",
     "husky": "^9.1.7",
-    "lint-staged": "^16.0.0",
+    "lint-staged": "^16.1.0",
     "semantic-release": "^24.2.5"
   },
   "lint-staged": {
