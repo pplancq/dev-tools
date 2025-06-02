@@ -1,3 +1,9 @@
+## @pplancq/webpack-config [1.9.16](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.15...@pplancq/webpack-config@1.9.16) (2025-06-02)
+
+### Bug Fixes
+
+* **deps:** update dependency browserslist to ^4.25.0 ([3a9a32d](https://github.com/pplancq/dev-tools/commit/3a9a32ddd9d704fa3577d098a9f2f65c4371a327))
+
 ## @pplancq/webpack-config [1.9.15](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.14...@pplancq/webpack-config@1.9.15) (2025-05-26)
 
 ### Bug Fixes
