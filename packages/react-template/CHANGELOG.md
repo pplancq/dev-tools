@@ -1,3 +1,18 @@
+## @pplancq/react-template [2.4.5](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.4.4...@pplancq/react-template@2.4.5) (2025-06-02)
+
+### Bug Fixes
+
+* **react-template:** ensure coverage is enabled only when CI is true ([4c03fd7](https://github.com/pplancq/dev-tools/commit/4c03fd719c5520840769471ebf6bf1093c5de6c9))
+* **deps:** update dependency react-router to ^7.6.1 ([fa3d5e5](https://github.com/pplancq/dev-tools/commit/fa3d5e5bbbd54d1682b50706e554fee2c5916363))
+* **deps:** update react-query mono repo to ^5.79.0 ([2addaa3](https://github.com/pplancq/dev-tools/commit/2addaa3807fee055f76c74d9dcd09340b903d8aa))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.0.25
+* **@pplancq/postcss-config:** upgraded to 2.1.11
+* **@pplancq/webpack-config:** upgraded to 1.9.16
+
 ## @pplancq/react-template [2.4.4](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.4.3...@pplancq/react-template@2.4.4) (2025-05-26)
 
 ### Bug Fixes
