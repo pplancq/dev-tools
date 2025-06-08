@@ -3,6 +3,8 @@
 node_modules/
 build/
 coverage/
+/packages/react-template/playwright-report/
+/packages/react-template/test-results/
 junit-report.xml
 sonar-report.xml
 /packages/react-template/public/mockServiceWorker.js

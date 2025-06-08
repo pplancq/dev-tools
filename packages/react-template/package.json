@@ -24,6 +24,10 @@
     "lint:prettier": "prettier \"{mocks,public,src}/**/*.!(js|jsx|mjs|ts|tsx|scss|css)\" --check --ignore-unknown",
     "lint:prettier:fix": "prettier \"{mocks,public,src}/**/*.!(js|jsx|mjs|ts|tsx|scss|css)\" --write --ignore-unknown",
     "lint:tsc": "tsc --noEmit",
+    "playwright:install": "playwright install",
+    "playwright:test": "playwright test",
+    "playwright:show-report": "playwright show-report",
+    "playwright:codegen": "playwright codegen",
     "package:check": "npm exec --yes package-lock-utd@1.1.3",
     "remove:demo": "node ./scripts/removeDemo.cjs",
     "migrate:vite": "node ./scripts/migrateToVite.cjs",
@@ -48,7 +52,9 @@
     "yup": "^1.6.1"
   },
   "devDependencies": {
+    "@bdellegrazie/playwright-sonar-reporter": "^0.4.0",
     "@commitlint/cli": "^19.8.1",
+    "@playwright/test": "^1.52.0",
     "@pplancq/commitlint-config": "*",
     "@pplancq/eslint-config": "*",
     "@pplancq/postcss-config": "*",
