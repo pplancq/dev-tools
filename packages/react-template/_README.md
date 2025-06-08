@@ -19,9 +19,8 @@ cd mon-projet
 2. Install dependencies.
 
 ```bash
-npm install 
+npm install
 ```
-
 
 In the project directory, you can run the following commands:
 
@@ -36,11 +35,22 @@ You will also see lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner.
+Runs all tests (unit and e2e).
 
-### `npm run test:watch`
+> You can add the `--coverage` flag to generate a coverage report for both unit and e2e tests.  
+> Example: `npm run test -- --coverage`
 
-Launches the test runner in interactive mode.
+### `npm run test:unit`
+
+Runs unit tests using Vitest.
+
+### `npm run test:unit:watch`
+
+Runs unit tests in watch mode using Vitest.
+
+### `npm run test:e2e`
+
+Runs end-to-end tests using Playwright.
 
 ### `npm run build`
 
@@ -115,20 +125,20 @@ To migrate from webpack to vite.
 
 Here is the project folder structure, with a brief description of each folder:
 
-| Folder | Description|
-| -------- | -------- |
-| **📁 src**  | ***The root directory of the application source code.***
-| [**📁 ui**](./src/ui/README.md) | Contains reusable components designed to be used across projects. Components can be basic (Atoms), more complex (Molecules), higher-level components (Organisms), or page templates (Templates).    |
-| [**📁&#160;components**](./src/components/README.md)     | Contains project-specific reusable components, for example, form components using React Hook Form.   |
-| [**📁 providers**](./src/providers/README.md)   | This folder contains context providers or custom hooks that provide data to the entire application.   |
-| [**📁 pages**](./src/pages/README.md)    | Contains the pages of the application. Each subfolder represents a distinct page or view of the application.    |
-| [**📁 forms**](./src/forms/README.md)   | Contains the forms of the application, grouping hooks related to forms.    |
-| [**📁 hooks**](./src/hooks/README.md)    | Includes custom hooks for various application features, such as API calls with React Query.    |
-| [**📁 utils**](./src/utils/README.md)    | Contains utilities and services such as test files, utility functions, etc.    |
-| [**📁 routing**](./src/routing/README.md)    | This folder is intended for native API calls using the `fetch`. function. These calls are essential for fetching real-time data from external sources, such as remote servers or web services.    |
-| [**📁 types**](./src/types/README.md)     | Provides TypeScript type definitions to enhance the robustness of your code.   |
-| [**📁 assets**](./src/assets/README.md)    | Contains static files such as images, fonts, etc., used in the application.    |
-| [**📁 config**](./src/config/README.md)   | Contains all the important configurations and utilities needed for our project.    |
+| Folder                                               | Description                                                                                                                                                                                      |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **📁 src**                                           | **_The root directory of the application source code._**                                                                                                                                         |
+| [**📁 ui**](./src/ui/README.md)                      | Contains reusable components designed to be used across projects. Components can be basic (Atoms), more complex (Molecules), higher-level components (Organisms), or page templates (Templates). |
+| [**📁&#160;components**](./src/components/README.md) | Contains project-specific reusable components, for example, form components using React Hook Form.                                                                                               |
+| [**📁 providers**](./src/providers/README.md)        | This folder contains context providers or custom hooks that provide data to the entire application.                                                                                              |
+| [**📁 pages**](./src/pages/README.md)                | Contains the pages of the application. Each subfolder represents a distinct page or view of the application.                                                                                     |
+| [**📁 forms**](./src/forms/README.md)                | Contains the forms of the application, grouping hooks related to forms.                                                                                                                          |
+| [**📁 hooks**](./src/hooks/README.md)                | Includes custom hooks for various application features, such as API calls with React Query.                                                                                                      |
+| [**📁 utils**](./src/utils/README.md)                | Contains utilities and services such as test files, utility functions, etc.                                                                                                                      |
+| [**📁 routing**](./src/routing/README.md)            | This folder is intended for native API calls using the `fetch`. function. These calls are essential for fetching real-time data from external sources, such as remote servers or web services.   |
+| [**📁 types**](./src/types/README.md)                | Provides TypeScript type definitions to enhance the robustness of your code.                                                                                                                     |
+| [**📁 assets**](./src/assets/README.md)              | Contains static files such as images, fonts, etc., used in the application.                                                                                                                      |
+| [**📁 config**](./src/config/README.md)              | Contains all the important configurations and utilities needed for our project.                                                                                                                  |
 
 ## 🏗 <span id="component-structure">React Component Structure</span>
 
@@ -198,7 +208,6 @@ export const useComponentName = ({ foo }: UseComponentNameProps): UseComponentNa
     bar: foo,
   };
 };
-
 ```
 
 #### 📄 ComponentName.module.scss
@@ -209,7 +218,6 @@ The style specific to the component will be written in module form. This allows 
 .root {
   background-color: red;
 }
-
 ```
 
 ```typescript
@@ -221,6 +229,7 @@ export const ComponentName = () => {
  );
 };
 ```
+
 ### ❗ Naming Conventions
 
 ==> Component names, file names, and folder names should follow the **PascalCase** convention.
@@ -233,7 +242,7 @@ It is recommended to only include non-sensitive environment variables in the app
 
 Ensure you understand the security implications before including environment variables in your bundle.
 
-Please note that the web configuration pre-filters environment variables via the default prefix ‘FRONT_’. This means that only environment variables starting with ‘FRONT_’ will be included in the bundle. This is an additional layer of security to prevent the accidental exposure of sensitive environment variables.
+Please note that the web configuration pre-filters environment variables via the default prefix ‘FRONT*’. This means that only environment variables starting with ‘FRONT*’ will be included in the bundle. This is an additional layer of security to prevent the accidental exposure of sensitive environment variables.
 
 ## 🙇 <span id="learnmore">Learn More</span>
 
