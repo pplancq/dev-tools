@@ -1,9 +1,10 @@
-import { expect, test as it, test } from '@playwright/test';
+import { expect } from '@playwright/test';
+import { describe, it } from './utils/playwright.testWithCoverage';
 
-test.describe('Demo Test', () => {
+describe('Demo Test', () => {
   it('should have a title', async ({ page }) => {
     await page.goto('/');
-    const title = await page.title();
-    expect(title).toBe('React App');
+    const title = page.getByText('WELCOME TO YOUR REACT STARTER KIT');
+    await expect(title).toBeVisible();
   });
 });
