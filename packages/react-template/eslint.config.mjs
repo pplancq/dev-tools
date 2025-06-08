@@ -4,6 +4,7 @@ export default defineConfig({
   enableReact: true,
   enablePrettier: 'on',
   enableVitest: true,
+  unitTestFiles: ['src/**/*.{test,spec,steps}.{js,jsx,ts,tsx}'],
   extendConfig: [
     {
       files: ['mocks/**/*'],

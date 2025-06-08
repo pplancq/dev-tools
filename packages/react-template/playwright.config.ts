@@ -18,6 +18,8 @@ export default defineConfig({
       { outputFile: 'playwright-report/sonar-results.xml', sonarcloud: true },
     ],
   ],
+  globalSetup: 'tests/utils/playwright.globalSetup.ts',
+  globalTeardown: 'tests/utils/playwright.globalTeardown.ts',
   use: {
     baseURL: appUrl,
     trace: 'retain-on-failure',
