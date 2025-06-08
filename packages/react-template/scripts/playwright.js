@@ -13,6 +13,20 @@ const main = async () => {
 
   let playwrightArgs = [...args];
 
+  if (args.indexOf('--watch') !== -1) {
+    const filteredArgs = args.filter(a => a !== '--watch');
+    runCommand('npx', [
+      'nodemon',
+      '--watch',
+      './tests/',
+      '--ext',
+      'js,jx,ts,tsx',
+      '--exec',
+      ['node', 'scripts/playwright.js', ...filteredArgs].join(' '),
+    ]);
+    return;
+  }
+
   if (playwrightArgs.indexOf('--coverage') !== -1) {
     process.env.ENABLED_COVERAGE = 'true';
     playwrightArgs = playwrightArgs.filter(p => p !== '--coverage');
