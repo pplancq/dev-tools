@@ -6,6 +6,7 @@ const { typescriptRules } = require('./rules/typescript');
 const { prettierRules } = require('./rules/prettier');
 const { vitestRules } = require('./rules/vitest');
 const { jestRules } = require('./rules/jest');
+const { playwrightRules } = require('./rules/playwright');
 
 /**
  * define eslint flat config.
@@ -13,9 +14,11 @@ const { jestRules } = require('./rules/jest');
  * @param {Object} options
  * @param {string[]} [options.tsFiles=['**\/*.ts?(x)']]
  * @param {string[]} [options.unitTestFiles=['**\/*.{test,spec,steps}.{js,jsx,ts,tsx}']]
+ * @param {string[]} [options.unitE2eFiles=['tests/**\/*.{test,spec}.{js,jsx,ts,tsx}']]
  * @param {boolean} [options.enableReact=false]
  * @param {boolean} [options.enableVitest=false]
  * @param {boolean} [options.enableJest=false]
+ * @param {boolean} [options.enablePlaywright=false]
  * @param {'off' | 'on' | 'disableStyleOnly'} [options.enablePrettier='on']
  * @param {Array<import('eslint').Linter.Config>} [options.extendConfig=[]]
  *
@@ -24,9 +27,11 @@ const { jestRules } = require('./rules/jest');
 const defineConfig = ({
   tsFiles = ['**/*.ts?(x)'],
   unitTestFiles = ['**/*.{test,spec,steps}.{js,jsx,ts,tsx}'],
+  unitE2eFiles = ['tests/**/*.{test,spec}.{js,jsx,ts,tsx}'],
   enableReact = false,
   enableVitest = false,
   enableJest = false,
+  enablePlaywright = false,
   enablePrettier = 'off',
   extendConfig = [],
 } = {}) => {
@@ -35,6 +40,7 @@ const defineConfig = ({
   reactTestRules.files = unitTestFiles;
   vitestRules.files = unitTestFiles;
   jestRules.files = unitTestFiles;
+  playwrightRules.files = unitE2eFiles;
 
   if (enablePrettier === 'disableStyleOnly') {
     prettierRules.rules['prettier/prettier'] = 'off';
@@ -51,6 +57,7 @@ const defineConfig = ({
     enablePrettier !== 'off' && prettierRules,
     enableVitest && vitestRules,
     enableJest && jestRules,
+    enablePlaywright && playwrightRules,
     {
       files: ['eslint.config.*'],
       rules: {
