@@ -1,3 +1,26 @@
+## @pplancq/react-template [2.5.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.4.5...@pplancq/react-template@2.5.0) (2025-06-09)
+
+### Features
+
+* **react-template:** add Playwright support in ESLint configuration and update linting scripts ([c8b11ce](https://github.com/pplancq/dev-tools/commit/c8b11cef09478edd6a2fad02fc14e2828b3239b7))
+* **react-template:** add Playwright testing setup and configuration ([f4f7089](https://github.com/pplancq/dev-tools/commit/f4f7089540e743fa8e4b7c03e3f534758c61b159))
+* **react-template:** add watch mode for Playwright tests using nodemon ([ecb400a](https://github.com/pplancq/dev-tools/commit/ecb400a52a076aa58c6f9065441c049c9d3c44b4))
+* **react-template:** enhance Playwright testing setup with coverage reporting ([d7b1422](https://github.com/pplancq/dev-tools/commit/d7b14229773bc5b4b1e1defa83a258f214a21d21))
+* **react-template:** update test scripts and add concurrent execution for unit and e2e tests ([05f0205](https://github.com/pplancq/dev-tools/commit/05f0205e81c17e8c9b5cb6a90358d3de3f954a9e))
+
+### Bug Fixes
+
+* **deps:** update dependency react-hook-form to ^7.57.0 ([502badf](https://github.com/pplancq/dev-tools/commit/502badf5767175f9944bec67e673d54ec4fb837e))
+* **deps:** update dependency react-router to ^7.6.2 ([f0da2c0](https://github.com/pplancq/dev-tools/commit/f0da2c08810dd3396fd79174f1f9289e26784521))
+* **deps:** update react-query mono repo to ^5.80.6 ([fbdbdc2](https://github.com/pplancq/dev-tools/commit/fbdbdc2255cb6619ee1d9aca6e749627267ec93a))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.1.0
+* **@pplancq/postcss-config:** upgraded to 2.1.12
+* **@pplancq/webpack-config:** upgraded to 1.9.17
+
 ## @pplancq/react-template [2.4.5](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.4.4...@pplancq/react-template@2.4.5) (2025-06-02)
 
 ### Bug Fixes
