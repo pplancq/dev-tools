@@ -1,3 +1,15 @@
+## @pplancq/eslint-config [4.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.0.25...@pplancq/eslint-config@4.1.0) (2025-06-09)
+
+### Features
+
+* **eslint-config:** integrate ESLint rules for Playwright testing ([784121c](https://github.com/pplancq/dev-tools/commit/784121c78fe1d03774247039817de61e38ea1ce9))
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-import-resolver-typescript to ^4.4.3 ([1dfbb12](https://github.com/pplancq/dev-tools/commit/1dfbb12308936414293cd2f48e57077d4da8d2ae))
+* **deps:** update dependency eslint-plugin-testing-library to ^7.4.0 ([d81f9bf](https://github.com/pplancq/dev-tools/commit/d81f9bf1a42039e9f5ddf775319591ba25bf25e0))
+* **deps:** update typescript-eslint mono repo to ^8.33.1 ([8d7df0e](https://github.com/pplancq/dev-tools/commit/8d7df0e94bd2af5a4ad1d7e61ac651df093862e9))
+
 ## @pplancq/eslint-config [4.0.25](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.0.24...@pplancq/eslint-config@4.0.25) (2025-06-02)
 
 ### Bug Fixes
