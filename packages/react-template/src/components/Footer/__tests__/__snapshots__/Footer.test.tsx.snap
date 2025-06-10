@@ -3,7 +3,7 @@
 exports[`Footer Component > should render the Footer component correctly 1`] = `
 <div>
   <div
-    class="_container_eb428f"
+    class="_container_acfd2c"
   >
     <hr />
     <a
@@ -12,7 +12,7 @@ exports[`Footer Component > should render the Footer component correctly 1`] = `
     >
       <img
         alt="logo"
-        class="_logoStyle_a0661f"
+        class="_logoStyle_9e86a7"
         src="/src/assets/images/logo.png"
         style="width: 50px;"
       />
