@@ -3,7 +3,7 @@
 exports[`Header Component > should render the Header component correctly 1`] = `
 <div>
   <div
-    class="_container_63c2ea"
+    class="_container_a5b977"
   >
     <a
       data-discover="true"
@@ -11,19 +11,19 @@ exports[`Header Component > should render the Header component correctly 1`] = `
     >
       <img
         alt="logo"
-        class="_logoStyle_a0661f"
+        class="_logoStyle_9e86a7"
         src="/src/assets/images/logo.png"
         style="width: 50px;"
       />
     </a>
     <nav>
       <ul
-        class="_navList_75d6d6"
+        class="_navList_eee024"
       >
         <li>
           <a
             aria-current="page"
-            class="_a_75d6d6 active"
+            class="_a_eee024 active"
             data-discover="true"
             href="/"
           >
