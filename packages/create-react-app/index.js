@@ -32,18 +32,15 @@ const main = async () => {
   const chalk = await import('chalk').then(m => m.default);
 
   let projectName = '';
-  let useVite = false;
   const packageJson = JSON.parse(readFileSync(resolve(__dirname, './package.json'), { encoding: 'utf-8' }));
 
   const cli = new Command(packageJson.name);
   cli
     .version(packageJson.version)
     .argument('<project-name>')
-    .option('--use-vite', 'use vite on your application')
     .usage(chalk.green('<project-name>'))
-    .action((name, options) => {
+    .action(name => {
       projectName = name;
-      useVite = options.useVite ?? false;
     })
     .parse(process.argv);
 
@@ -128,10 +125,6 @@ const main = async () => {
     runCommand(`cd ${repoDir} && ${packageManager} install -D vite`);
   }
 
-  if (useVite) {
-    runCommand(`cd ${repoDir} && ${packageManager} run migrate:vite`);
-  }
-
   console.info('\nCreated git commit.');
   runCommand(`cd ${repoDir} && git add . && git commit --no-verify --message "Initial commit"`, {
     stdio: 'ignore',
@@ -150,10 +143,6 @@ const main = async () => {
   console.info('    Starts the test runner.');
   logCommand(`${packageManager} run remove:demo`);
   console.info('    Remove the demo application.');
-  if (!useVite) {
-    logCommand(`${packageManager} run migrate:vite`);
-    console.info('    Migrate from webpack to vite.');
-  }
   console.info('\nWe suggest that you begin by typing:');
   console.info(`\n  ${chalk.cyan('cd')} ${projectName}`);
   logCommand(`${packageManager} start`);
