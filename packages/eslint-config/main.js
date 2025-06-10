@@ -17,7 +17,7 @@ const { playwrightRules } = require('./rules/playwright');
  * @param {string[]} [options.unitE2eFiles=['tests/**\/*.{test,spec}.{js,jsx,ts,tsx}']]
  * @param {boolean} [options.enableReact=false]
  * @param {boolean} [options.enableVitest=false]
- * @param {boolean} [options.enableJest=false]
+ * @param {boolean} [options.enableJest=false] - Deprecated This option is deprecated and will be removed in the next major release. Please migrate to an alternative (e.g., Vitest).
  * @param {boolean} [options.enablePlaywright=false]
  * @param {'off' | 'on' | 'disableStyleOnly'} [options.enablePrettier='on']
  * @param {Array<import('eslint').Linter.Config>} [options.extendConfig=[]]
@@ -35,6 +35,12 @@ const defineConfig = ({
   enablePrettier = 'off',
   extendConfig = [],
 } = {}) => {
+  if (enableJest) {
+    console.warn(
+      '[DEPRECATED] The "enableJest" option is deprecated and will be removed in the next major release. Please migrate to an alternative (e.g., Vitest).',
+    );
+  }
+
   typescriptRules.files = tsFiles;
   reactTypescriptRules.files = tsFiles;
   reactTestRules.files = unitTestFiles;
