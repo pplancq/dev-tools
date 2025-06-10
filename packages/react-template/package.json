@@ -34,7 +34,6 @@
     "playwright:codegen": "playwright codegen",
     "package:check": "npm exec --yes package-lock-utd@1.1.3",
     "remove:demo": "node ./scripts/removeDemo.cjs",
-    "migrate:vite": "node ./scripts/migrateToVite.cjs",
     "_prepare": "husky",
     "_postinstall": "msw init"
   },
