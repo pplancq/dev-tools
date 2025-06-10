@@ -11,7 +11,7 @@ However, I couldn't find a starter that met my specific needs. For instance, som
 
 This motivated me to create this project, with several specific objectives in mind:
 
-- Provide ready-to-use configurations for **ESLint**, **Webpack**, and **Vite**.
+- Provide ready-to-use configurations for **ESLint**, **Rsbuild**, and **Vitest**.
 - Include tools like **Husky** and **lint-staged** to control code quality at each commit.
 - Install and preconfigure useful packages like **react-router-dom** and **@tanstack/react-query**.
 - Provide a folder structure that encourages more organized and structured code writing.
@@ -69,7 +69,7 @@ Unlike Facebook's create-react-app, the Webpack configuration remains easily exp
 - **TypeScript**: This is a language for application-scale JavaScript development. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any operating system.
 - **ESLint**: This is a tool for identifying and reporting patterns found in ECMAScript/JavaScript code. ESLint uses Espree for JavaScript syntax parsing. It uses an AST to evaluate patterns in the code.
 - **Stylelint**: This is a powerful CSS linter that helps you avoid errors and apply conventions. It has over 100 built-in rules for modern CSS syntax and features.
-- **Webpack**: This is a module bundler for JavaScript. It is mainly used for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included.
+- **Rsbuild**: Rsbuild is a modern and high-performance bundler for front-end applications, designed to replace Webpack or Vite. It offers simple configuration, fast build times, and excellent compatibility with React projects, making development and optimization easier.
 - **Vitest**: This is a next-generation testing framework powered by Vite. It is fast and can be configured to match your Vite application's plugins and configuration.
 
 ## License
