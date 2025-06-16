@@ -1,3 +1,21 @@
+## @pplancq/react-template [2.6.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.5.0...@pplancq/react-template@2.6.0) (2025-06-16)
+
+### Features
+
+* **react-template:** migrate to rsbuild and update configuration ([16c9362](https://github.com/pplancq/dev-tools/commit/16c9362d5478a6efd50ff4ea3dedee733807becb))
+* **create-react-app:** remove Vite support and update documentation ([6702c40](https://github.com/pplancq/dev-tools/commit/6702c407da239438e6767b06eaa96aac70645996))
+
+### Bug Fixes
+
+* **deps:** update dependency @hookform/resolvers to ^5.1.1 ([7822d53](https://github.com/pplancq/dev-tools/commit/7822d53ab18348e0b66ae1f17ec800d0587b8cea))
+* **deps:** update react-query mono repo to ^5.80.7 ([3fd7b8c](https://github.com/pplancq/dev-tools/commit/3fd7b8cb3a7f30aebec0c87ac5cc8dbad0610fc3))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.2.0
+* **@pplancq/postcss-config:** upgraded to 2.1.13
+
 ## @pplancq/react-template [2.5.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.4.5...@pplancq/react-template@2.5.0) (2025-06-09)
 
 ### Features
