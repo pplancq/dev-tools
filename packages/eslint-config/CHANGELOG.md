@@ -1,3 +1,16 @@
+## @pplancq/eslint-config [4.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.1.0...@pplancq/eslint-config@4.2.0) (2025-06-16)
+
+### Features
+
+* **eslint-config:** deprecate enableJest option and add warning message ([c07d2b9](https://github.com/pplancq/dev-tools/commit/c07d2b9630b690938e7ea041ed3edbc097d0c7fc))
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to ^1.2.4 ([ea7ad02](https://github.com/pplancq/dev-tools/commit/ea7ad028181c41e54cbac83c124c075496363331))
+* **deps:** update dependency eslint-plugin-jest to ^28.13.5 ([2b5dee8](https://github.com/pplancq/dev-tools/commit/2b5dee8dc96abe36c003d29965cc810e5b069f98))
+* **deps:** update dependency eslint-plugin-testing-library to ^7.5.2 ([b316fda](https://github.com/pplancq/dev-tools/commit/b316fdabbbb2927817bc3985f07c26d9920794c9))
+* **deps:** update typescript-eslint mono repo to ^8.34.0 ([e95b957](https://github.com/pplancq/dev-tools/commit/e95b95748641f9720bea45da76432c540ee2d59b))
+
 ## @pplancq/eslint-config [4.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.0.25...@pplancq/eslint-config@4.1.0) (2025-06-09)
 
 ### Features
