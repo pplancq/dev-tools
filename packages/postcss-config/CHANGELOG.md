@@ -1,3 +1,9 @@
+## @pplancq/postcss-config [2.1.13](https://github.com/pplancq/dev-tools/compare/@pplancq/postcss-config@2.1.12...@pplancq/postcss-config@2.1.13) (2025-06-16)
+
+### Bug Fixes
+
+* **deps:** update dependency postcss-preset-env to ^10.2.3 ([d9f4b06](https://github.com/pplancq/dev-tools/commit/d9f4b06be9775d0c262d14d31bc60b036a546836))
+
 ## @pplancq/postcss-config [2.1.12](https://github.com/pplancq/dev-tools/compare/@pplancq/postcss-config@2.1.11...@pplancq/postcss-config@2.1.12) (2025-06-09)
 
 ### Bug Fixes
