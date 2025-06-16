@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [1.5.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.4.6...@pplancq/create-react-app@1.5.0) (2025-06-16)
+
+### Features
+
+* **create-react-app:** remove Vite support and update documentation ([6702c40](https://github.com/pplancq/dev-tools/commit/6702c407da239438e6767b06eaa96aac70645996))
+
 ## @pplancq/create-react-app [1.4.6](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.4.5...@pplancq/create-react-app@1.4.6) (2025-05-26)
 
 ### Bug Fixes
