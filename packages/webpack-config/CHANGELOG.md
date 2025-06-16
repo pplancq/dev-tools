@@ -1,3 +1,11 @@
+## @pplancq/webpack-config [1.9.18](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.17...@pplancq/webpack-config@1.9.18) (2025-06-16)
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.12.1 ([68c8701](https://github.com/pplancq/dev-tools/commit/68c8701b5d5352373ce4c6e74f309d70cece82c2))
+* **deps:** update dependency eslint-webpack-plugin to ^5.0.2 ([12c4189](https://github.com/pplancq/dev-tools/commit/12c418986063ec14bfb524543c5dd04a6ff6819c))
+* **deps:** update dependency sass to ^1.89.2 ([21ad2c1](https://github.com/pplancq/dev-tools/commit/21ad2c13feb31f33546906493f0c05acc7dabf7b))
+
 ## @pplancq/webpack-config [1.9.17](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.16...@pplancq/webpack-config@1.9.17) (2025-06-09)
 
 ### Bug Fixes
