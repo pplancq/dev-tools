@@ -1,6 +1,6 @@
 {
   "name": "@pplancq/webpack-config",
-  "version": "1.9.18",
+  "version": "1.9.19",
   "license": "MIT",
   "description": "pplancq webpack config",
   "author": "pplancq <paul.plancq@outlook.fr>",
