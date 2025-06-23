@@ -1,3 +1,15 @@
+## @pplancq/react-template [2.6.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.6.0...@pplancq/react-template@2.6.1) (2025-06-23)
+
+### Bug Fixes
+
+* **deps:** update dependency react-hook-form to ^7.58.1 ([3a603b7](https://github.com/pplancq/dev-tools/commit/3a603b749ced280c9318682a1b51b902e933505d))
+* **deps:** update react-query mono repo to ^5.80.10 ([fa604a4](https://github.com/pplancq/dev-tools/commit/fa604a4003a6cf8a561c6566edb1b8c5b7773ca3))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 4.2.1
+
 ## @pplancq/react-template [2.6.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.5.0...@pplancq/react-template@2.6.0) (2025-06-16)
 
 ### Features
