@@ -1,3 +1,12 @@
+## @pplancq/eslint-config [4.2.1](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.2.0...@pplancq/eslint-config@4.2.1) (2025-06-23)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to ^1.2.7 ([327299e](https://github.com/pplancq/dev-tools/commit/327299e75a1b9b8a66c5a6eb14ef4f55fb801f30))
+* **deps:** update dependency eslint-plugin-jest to ^28.14.0 ([4cfeb00](https://github.com/pplancq/dev-tools/commit/4cfeb00c2666e9db32a85d569f81836a8b93217e))
+* **deps:** update dependency eslint-plugin-testing-library to ^7.5.3 ([b07bf55](https://github.com/pplancq/dev-tools/commit/b07bf55cc02028f7b894ff004765e23d6866b937))
+* **deps:** update typescript-eslint mono repo to ^8.34.1 ([a5ca6e3](https://github.com/pplancq/dev-tools/commit/a5ca6e374879a93326262b2440850b25ee03954a))
+
 ## @pplancq/eslint-config [4.2.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.1.0...@pplancq/eslint-config@4.2.0) (2025-06-16)
 
 ### Features
