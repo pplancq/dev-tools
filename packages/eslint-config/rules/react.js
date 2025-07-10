@@ -230,7 +230,7 @@ const reactRules = {
 
     // Disallow problematic leaked values from being rendered
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-leaked-render.md
-    'react/jsx-no-leaked-render': 'off',
+    'react/jsx-no-leaked-render': ['error', { validStrategies: ['ternary', 'coerce'] }],
 
     // Disallow usage of string literals in JSX
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-literals.md
