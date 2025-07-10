@@ -15,11 +15,11 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({ label, hasError
         <label htmlFor={id}>{label} </label>
         <input id={id} ref={ref} {...rest} className={hasError ? classes.hasInputError : classes.inputStyle} />
       </div>
-      {hasError && (
+      {hasError ? (
         <p role="alert" className={classes.errorsStyle}>
           {helperText}
         </p>
-      )}
+      ) : null}
     </>
   );
 });

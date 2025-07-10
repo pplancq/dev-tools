@@ -33,7 +33,7 @@ export const ProfileForm = ({ onSubmit, resetForm }: ProfileFormProps) => {
 
         <div className={classes.buttonsStyle}>
           <input type="submit" className={classes.inputStyle} />
-          {methods.formState.isSubmitted && (
+          {methods.formState.isSubmitted ? (
             <input
               type="button"
               className={classes.inputStyle}
@@ -43,7 +43,7 @@ export const ProfileForm = ({ onSubmit, resetForm }: ProfileFormProps) => {
                 resetForm();
               }}
             />
-          )}
+          ) : null}
         </div>
       </form>
     </FormProvider>

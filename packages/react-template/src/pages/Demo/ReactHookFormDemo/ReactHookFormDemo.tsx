@@ -33,14 +33,14 @@ export const ReactHookFormDemo = () => {
             <ProfileForm onSubmit={onSubmit} resetForm={resetForm} />
           </fieldset>
 
-          {profileData && (
+          {profileData ? (
             <fieldset>
               <legend>Résultat</legend>
               <p>E-mail: {profileData.mail} </p>
               <p>First-name: {profileData.firstName} </p>
               <p>Last-name: {profileData.lastName} </p>
             </fieldset>
-          )}
+          ) : null}
         </div>
       </fieldset>
     </div>
