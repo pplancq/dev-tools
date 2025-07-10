@@ -5,7 +5,6 @@ const { reactRules, reactTypescriptRules, reactTestRules } = require('./rules/re
 const { typescriptRules } = require('./rules/typescript');
 const { prettierRules } = require('./rules/prettier');
 const { vitestRules } = require('./rules/vitest');
-const { jestRules } = require('./rules/jest');
 const { playwrightRules } = require('./rules/playwright');
 
 /**
@@ -17,7 +16,6 @@ const { playwrightRules } = require('./rules/playwright');
  * @param {string[]} [options.unitE2eFiles=['tests/**\/*.{test,spec}.{js,jsx,ts,tsx}']]
  * @param {boolean} [options.enableReact=false]
  * @param {boolean} [options.enableVitest=false]
- * @param {boolean} [options.enableJest=false] - Deprecated This option is deprecated and will be removed in the next major release. Please migrate to an alternative (e.g., Vitest).
  * @param {boolean} [options.enablePlaywright=false]
  * @param {'off' | 'on' | 'disableStyleOnly'} [options.enablePrettier='on']
  * @param {Array<import('eslint').Linter.Config>} [options.extendConfig=[]]
@@ -30,22 +28,14 @@ const defineConfig = ({
   unitE2eFiles = ['tests/**/*.{test,spec}.{js,jsx,ts,tsx}'],
   enableReact = false,
   enableVitest = false,
-  enableJest = false,
   enablePlaywright = false,
   enablePrettier = 'off',
   extendConfig = [],
 } = {}) => {
-  if (enableJest) {
-    console.warn(
-      '[DEPRECATED] The "enableJest" option is deprecated and will be removed in the next major release. Please migrate to an alternative (e.g., Vitest).',
-    );
-  }
-
   typescriptRules.files = tsFiles;
   reactTypescriptRules.files = tsFiles;
   reactTestRules.files = unitTestFiles;
   vitestRules.files = unitTestFiles;
-  jestRules.files = unitTestFiles;
   playwrightRules.files = unitE2eFiles;
 
   if (enablePrettier === 'disableStyleOnly') {
@@ -62,7 +52,6 @@ const defineConfig = ({
     enableReact && reactTestRules,
     enablePrettier !== 'off' && prettierRules,
     enableVitest && vitestRules,
-    enableJest && jestRules,
     enablePlaywright && playwrightRules,
     {
       files: ['eslint.config.*'],
