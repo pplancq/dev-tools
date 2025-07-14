@@ -1,3 +1,21 @@
+## @pplancq/eslint-config [5.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.2.3...@pplancq/eslint-config@5.0.0) (2025-07-14)
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config:** The ESLint configuration no longer includes Jest-specific rules. Please update any dependencies or configurations that rely on these rules.
+* **eslint-config:** The option `enableJest` is no longer available. If migrating to Vite, please use `enableVitest`. Alternatively, use `extendConfig` to manually apply Jest rules.
+* **eslint-config:** The update enforces 'react/jsx-no-leaked-render' rule, requiring ESLint auto-fix to address leaked render issues in existing code.
+
+### Features
+
+* **eslint-config:** remove jest-related eslint rules ([5bf2be6](https://github.com/pplancq/dev-tools/commit/5bf2be69b938dba3aae97d04923d93a5c5d849a9))
+* **eslint-config:** update configuration to enforce 'react/jsx-no-leaked-render' rule ([7a9b451](https://github.com/pplancq/dev-tools/commit/7a9b45144f72f628bd0734aaa3b9b71ff8c288c0))
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-testing-library to ^7.5.4 ([55ae342](https://github.com/pplancq/dev-tools/commit/55ae342cb95b8a16e5ff51411ccc62fadd548131))
+* **deps:** update typescript-eslint mono repo to ^8.36.0 ([c299492](https://github.com/pplancq/dev-tools/commit/c299492ba23b9e249ad0fe1f685b571b12423920))
+
 ## @pplancq/eslint-config [4.2.3](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.2.2...@pplancq/eslint-config@4.2.3) (2025-07-07)
 
 ### Bug Fixes
