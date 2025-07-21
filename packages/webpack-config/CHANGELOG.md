@@ -1,3 +1,9 @@
+## @pplancq/webpack-config [1.9.23](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.22...@pplancq/webpack-config@1.9.23) (2025-07-21)
+
+### Bug Fixes
+
+* **deps:** update dependency @swc/core to ^1.13.0 ([79454f7](https://github.com/pplancq/dev-tools/commit/79454f7a836f440e9242138146f4e7cbcb9c27d1))
+
 ## @pplancq/webpack-config [1.9.22](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.21...@pplancq/webpack-config@1.9.22) (2025-07-14)
 
 ### Bug Fixes
