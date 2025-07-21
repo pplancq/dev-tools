@@ -2,6 +2,17 @@ name: Release
 
 on:
   workflow_dispatch:
+    inputs:
+      dryRun:
+        description: 'Dry run'
+        required: false
+        type: boolean
+        default: false
+      debug:
+        description: 'Debug mode'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -31,7 +42,9 @@ jobs:
       - name: Install package
         run: npm ci
       - name: Config npm
-        run: npm config set access=public
+        run: |
+          npm config set access=public
+          npm config set provenance=true
 
       - name: Release
         env:
@@ -44,7 +57,15 @@ jobs:
           GIT_ASSETS: ${{ vars.GIT_ASSETS }}
           GITHUB_DISABLED_SUCCESS_COMMENT: 'true'
           GITHUB_DISABLED_RELEASED_LABELS: 'true'
-        run: npm run release
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dryRun }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          if [ "${{ github.event.inputs.debug }}" = "true" ]; then
+            ARGS="$ARGS --debug"
+          fi
+          npm run release -- $ARGS
 
       - name: Update package-lock.json
         env:
