@@ -1,3 +1,10 @@
+## @pplancq/eslint-config [5.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@5.0.0...@pplancq/eslint-config@5.0.1) (2025-07-21)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-testing-library to ^7.6.0 ([ef25713](https://github.com/pplancq/dev-tools/commit/ef257135f4aa22d9cc27d5568c8cc9d3831bb294))
+* **deps:** update typescript-eslint mono repo to ^8.37.0 ([c059d0e](https://github.com/pplancq/dev-tools/commit/c059d0e3c377f0cf8103ae05c40960137d2ab2db))
+
 ## @pplancq/eslint-config [5.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@4.2.3...@pplancq/eslint-config@5.0.0) (2025-07-14)
 
 ### ⚠ BREAKING CHANGES
