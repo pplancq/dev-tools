@@ -1,3 +1,10 @@
+## @pplancq/eslint-config [5.0.3](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@5.0.2...@pplancq/eslint-config@5.0.3) (2025-08-04)
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-playwright to ^2.2.2 ([62f53d5](https://github.com/pplancq/dev-tools/commit/62f53d50a2339f3656b244be6544743e274796b1))
+* **deps:** update dependency eslint-plugin-testing-library to ^7.6.3 ([bd6f366](https://github.com/pplancq/dev-tools/commit/bd6f366ce84b0e397a6b0de0a6d94f3915e806a8))
+
 ## @pplancq/eslint-config [5.0.2](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@5.0.1...@pplancq/eslint-config@5.0.2) (2025-07-28)
 
 ### Bug Fixes
