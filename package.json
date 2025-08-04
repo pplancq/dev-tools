@@ -62,7 +62,7 @@
   },
   "volta": {
     "node": "22.17.1",
-    "npm": "11.5.1"
+    "npm": "11.5.2"
   },
   "optionalDependencies": {
     "@rspack/binding-darwin-arm64": "^1.4.10",
