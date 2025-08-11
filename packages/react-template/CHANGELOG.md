@@ -1,3 +1,17 @@
+## @pplancq/react-template [2.6.8](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.6.7...@pplancq/react-template@2.6.8) (2025-08-11)
+
+### Bug Fixes
+
+* **deps:** update dependency react-hook-form to ^7.62.0 ([12d709c](https://github.com/pplancq/dev-tools/commit/12d709c7e8dbccb1db662e0f61e34db52b2355a1))
+* **deps:** update dependency react-router to ^7.8.0 ([5887d34](https://github.com/pplancq/dev-tools/commit/5887d34af157f49a33239db9625c015cc473fdaf))
+* **deps:** update dependency yup to ^1.7.0 ([437e41f](https://github.com/pplancq/dev-tools/commit/437e41ffd05aa35c005f1bbea73c1de8e4f31f7d))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 5.0.4
+* **@pplancq/stylelint-config:** upgraded to 4.0.3
+
 ## @pplancq/react-template [2.6.7](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.6.6...@pplancq/react-template@2.6.7) (2025-08-04)
 
 ### Bug Fixes
