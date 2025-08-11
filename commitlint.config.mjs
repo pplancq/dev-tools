@@ -15,7 +15,6 @@ export default {
         'react-template',
         'semantic-release-config',
         'stylelint-config',
-        'webpack-config',
         'deps',
         'release',
       ],
