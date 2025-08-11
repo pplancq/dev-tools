@@ -1,3 +1,10 @@
+## @pplancq/webpack-config [1.9.26](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.25...@pplancq/webpack-config@1.9.26) (2025-08-11)
+
+### Bug Fixes
+
+* **deps:** update dependency mini-css-extract-plugin to ^2.9.3 ([df2ee0f](https://github.com/pplancq/dev-tools/commit/df2ee0fb7400f26f28172588a3d64af42f123bd8))
+* **deps:** update dependency sass to ^1.90.0 ([029c1a3](https://github.com/pplancq/dev-tools/commit/029c1a3ff305691c43be339878343b7de2d7011d))
+
 ## @pplancq/webpack-config [1.9.25](https://github.com/pplancq/dev-tools/compare/@pplancq/webpack-config@1.9.24...@pplancq/webpack-config@1.9.25) (2025-08-04)
 
 ### Bug Fixes
