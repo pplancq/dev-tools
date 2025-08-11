@@ -93,7 +93,7 @@
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4",
     "vitest-axe": "^1.0.0-pre.5",
-    "vitest-sonar-reporter": "^2.0.1"
+    "vitest-sonar-reporter": "^2.0.4"
   },
   "engines": {
     "node": ">=20.12.2"
