@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [1.5.1](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.5.0...@pplancq/create-react-app@1.5.1) (2025-08-11)
+
+### Bug Fixes
+
+* **deps:** update dependency chalk to ^5.5.0 ([f03cb23](https://github.com/pplancq/dev-tools/commit/f03cb23cf86b1255552412bcb1e95bc6499e3ea7))
+
 ## @pplancq/create-react-app [1.5.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.4.6...@pplancq/create-react-app@1.5.0) (2025-06-16)
 
 ### Features
