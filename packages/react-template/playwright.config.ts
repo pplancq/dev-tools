@@ -40,7 +40,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'npm run start:mock',
+    command: 'npm run start',
     url: appUrl,
     stdout: 'pipe',
     reuseExistingServer: !process.env.CI,
