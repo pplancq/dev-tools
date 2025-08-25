@@ -15,10 +15,22 @@
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
+  "type": "module",
   "main": "index.js",
+  "scripts": {
+    "start": "rslib build --watch",
+    "build": "rslib build"
+  },
   "keywords": [
     "create",
     "react"
+  ],
+  "files": [
+    "dist",
+    "index.js",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "dependencies": {
     "chalk": "^5.6.0",
@@ -29,5 +41,10 @@
   },
   "volta": {
     "extends": "../../package.json"
+  },
+  "devDependencies": {
+    "@rslib/core": "^0.12.2",
+    "tsc-files": "^1.1.4",
+    "typescript": "^5.9.2"
   }
 }

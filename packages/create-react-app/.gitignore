@@ -1,0 +1,22 @@
+## IDE
+.vscode/
+.idea/
+
+## MacOs
+.DS_*
+
+## Node.js
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## dependencies
+node_modules/
+.pnp/
+.pnp.js
+.yarn
+
+## production
+build/
+dist/
