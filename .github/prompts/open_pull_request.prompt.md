@@ -130,9 +130,6 @@ Use: (a) objective derived/confirmed, (b) issue context (if present), (c) analys
 **Associated Issue:**
 <Closes #123 | N/A>
 
-**Objective:**
-<One concise sentence describing the goal>
-
 **Context:**
 <Why the change is needed; reference issue intent; summarize problem / motivation>
 
@@ -141,10 +138,10 @@ Use: (a) objective derived/confirmed, (b) issue context (if present), (c) analys
 
 **Checklist:**
 
-- [ ] Changes work as expected locally
-- [ ] Documentation updated if needed
-- [ ] Branch rebased / merge strategy validated
-- [ ] Correct label applied (bug/feature/documentation/other)
+- [ ] I have verified that my changes work as expected
+- [ ] I have updated the documentation if necessary
+- [ ] I have thought to rebase my branch
+- [ ] I have applied the correct label according to the type of PR (bug/feature/documentation)
 
 **Additional Information:**
 <Risks, edge cases, performance or accessibility considerations, migration notes, or state `None` if nothing notable>
