@@ -35,7 +35,6 @@
     "CHANGELOG.md"
   ],
   "dependencies": {
-    "chalk": "^5.6.0",
     "commander": "^14.0.0"
   },
   "engines": {
@@ -47,6 +46,7 @@
   "devDependencies": {
     "@rslib/core": "^0.12.2",
     "@vitest/coverage-v8": "^3.2.4",
+    "picocolors": "^1.1.1",
     "tsc-files": "^1.1.4",
     "typescript": "^5.9.2",
     "vite-tsconfig-paths": "^5.1.4",
