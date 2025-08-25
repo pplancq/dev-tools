@@ -2,6 +2,8 @@ import { execSync, type ExecSyncOptions } from 'child_process';
 import { Command } from 'commander';
 import { cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import pc from 'picocolors';
 
 const NPM = 'npm';
 const YARN = 'yarn';
@@ -28,8 +30,6 @@ const getPackageManager = () => {
 };
 
 export const main = async () => {
-  const chalk = await import('chalk').then(m => m.default);
-
   let projectName = '';
   const packageJson = JSON.parse(readFileSync(resolve(__dirname, './package.json'), { encoding: 'utf-8' }));
 
@@ -37,7 +37,7 @@ export const main = async () => {
   cli
     .version(packageJson.version)
     .argument('<project-name>')
-    .usage(chalk.green('<project-name>'))
+    .usage(pc.green('<project-name>'))
     .action(name => {
       projectName = name;
     })
@@ -62,14 +62,14 @@ export const main = async () => {
   const templateDir = resolve(repoDir, `./node_modules/${reactTemplate}`);
 
   if (existsSync(repoDir)) {
-    console.error(`\nThe directory ${chalk.green(projectName)} is already exist.`);
+    console.error(`\nThe directory ${pc.green(projectName)} is already exist.`);
     console.error('Either try using a new directory name, or remove the files listed above.');
     process.exit(-1);
   }
 
-  console.info(`\nCreating a new App React in ${chalk.green(repoDir)}.`);
+  console.info(`\nCreating a new App React in ${pc.green(repoDir)}.`);
 
-  console.info(`\nInstall react template from ${chalk.green(reactTemplate)}`);
+  console.info(`\nInstall react template from ${pc.green(reactTemplate)}`);
   mkdirSync(repoDir);
   runCommand(`cd ${repoDir} && npm init -y`, { stdio: 'ignore' });
   if (packageManager === YARN) {
@@ -129,10 +129,10 @@ export const main = async () => {
     stdio: 'ignore',
   });
 
-  console.info(`\n${chalk.yellow('Success \\o/')}  Created ${chalk.green(projectName)} at ${chalk.green(repoDir)}`);
+  console.info(`\n${pc.yellow('Success \\o/')}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
   console.info('Inside that directory, you can run several commands:');
   const logCommand = (command: string) => {
-    console.info(`\n  ${chalk.cyan(command)}`);
+    console.info(`\n  ${pc.cyan(command)}`);
   };
   logCommand(`${packageManager} start`);
   console.info('    Starts the development server.');
@@ -143,7 +143,7 @@ export const main = async () => {
   logCommand(`${packageManager} run remove:demo`);
   console.info('    Remove the demo application.');
   console.info('\nWe suggest that you begin by typing:');
-  console.info(`\n  ${chalk.cyan('cd')} ${projectName}`);
+  console.info(`\n  ${pc.cyan('cd')} ${projectName}`);
   logCommand(`${packageManager} start`);
   console.info('\nHappy hacking!');
 };
