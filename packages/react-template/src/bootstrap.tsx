@@ -6,6 +6,8 @@ import { createRoot, type Root } from 'react-dom/client';
 export default class Bootstrap extends HTMLElement {
   private readonly root: Root;
 
+  private isMounted = false;
+
   constructor() {
     super();
 
@@ -13,6 +15,7 @@ export default class Bootstrap extends HTMLElement {
   }
 
   connectedCallback() {
+    this.isMounted = true;
     this.root.render(
       <StrictMode>
         <App basename={this.getAttribute('basename') ?? ''} />
@@ -21,6 +24,12 @@ export default class Bootstrap extends HTMLElement {
   }
 
   disconnectedCallback() {
-    queueMicrotask(() => this.root.unmount());
+    this.isMounted = false;
+
+    queueMicrotask(() => {
+      if (!this.isMounted) {
+        this.root.unmount();
+      }
+    });
   }
 }
