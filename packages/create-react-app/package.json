@@ -21,7 +21,11 @@
     "start": "rslib build --watch",
     "build": "rslib build",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "lint:eslint": "eslint \"**/*.{js,mjs,ts}\"",
+    "lint:eslint:fix": "eslint \"**/*.{js,mjs,ts}\" --fix",
+    "lint:prettier": "prettier \"**/*.!(js|mjs|ts)\" --check --ignore-unknown",
+    "lint:prettier:fix": "prettier \"**/*.!(js|mjs|ts)\" --write --ignore-unknown"
   },
   "keywords": [
     "create",
@@ -37,20 +41,26 @@
   "dependencies": {
     "commander": "^14.0.0"
   },
+  "devDependencies": {
+    "@pplancq/eslint-config": "*",
+    "@pplancq/prettier-config": "*",
+    "@rslib/core": "^0.12.2",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.34.0",
+    "eslint-plugin-prettier": "^5.5.4",
+    "picocolors": "^1.1.1",
+    "prettier": "^3.6.2",
+    "tsc-files": "^1.1.4",
+    "typescript": "^5.9.2",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4",
+    "vitest-sonar-reporter": "^2.0.4"
+  },
   "engines": {
     "node": ">=20.12.2"
   },
   "volta": {
     "extends": "../../package.json"
   },
-  "devDependencies": {
-    "@rslib/core": "^0.12.2",
-    "@vitest/coverage-v8": "^3.2.4",
-    "picocolors": "^1.1.1",
-    "tsc-files": "^1.1.4",
-    "typescript": "^5.9.2",
-    "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.2.4",
-    "vitest-sonar-reporter": "^2.0.4"
-  }
+  "prettier": "@pplancq/prettier-config"
 }
