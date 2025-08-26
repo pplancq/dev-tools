@@ -66,6 +66,7 @@
     "@pplancq/prettier-config": "*",
     "eslint": "^9.34.0",
     "eslint-plugin-prettier": "^5.5.4",
+    "lint-staged": "^16.1.5",
     "prettier": "^3.6.2"
   },
   "engines": {
@@ -74,5 +75,9 @@
   "volta": {
     "extends": "../../package.json"
   },
-  "prettier": "@pplancq/prettier-config"
+  "prettier": "@pplancq/prettier-config",
+  "lint-staged": {
+    "*.(js|mjs)": "eslint --fix",
+    "*.!(js|mjs)": "prettier --write --ignore-unknown"
+  }
 }
