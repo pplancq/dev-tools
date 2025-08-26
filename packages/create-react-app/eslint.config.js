@@ -5,13 +5,6 @@ export default defineConfig({
   enableVitest: true,
   extendConfig: [
     {
-      files: ['**/*.config.{js,cjs,mjs,ts,cts,mts}'],
-      rules: {
-        'import/no-default-export': 'off',
-        'import/no-extraneous-dependencies': 'off',
-      },
-    },
-    {
       ignores: ['dist'],
     },
     {
@@ -19,6 +12,23 @@ export default defineConfig({
       rules: {
         'import/extensions': 'off',
         'import/no-unresolved': 'off',
+      },
+    },
+    {
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true,
+          },
+        ],
+      },
+    },
+    {
+      files: ['**/*.config.{js,cjs,mjs,ts,cts,mts}'],
+      rules: {
+        'import/no-default-export': 'off',
+        'import/no-extraneous-dependencies': 'off',
       },
     },
   ],
