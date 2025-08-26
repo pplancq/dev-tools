@@ -38,14 +38,13 @@
     "LICENSE",
     "CHANGELOG.md"
   ],
-  "dependencies": {
-    "commander": "^14.0.0"
-  },
   "devDependencies": {
+    "@clack/prompts": "^0.11.0",
     "@pplancq/eslint-config": "*",
     "@pplancq/prettier-config": "*",
     "@rslib/core": "^0.12.2",
     "@vitest/coverage-v8": "^3.2.4",
+    "commander": "^14.0.0",
     "eslint": "^9.34.0",
     "eslint-plugin-prettier": "^5.5.4",
     "lint-staged": "^16.1.5",
