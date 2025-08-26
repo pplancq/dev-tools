@@ -1,9 +1,10 @@
 {
   "name": "@pplancq/dev-tools",
   "version": "0.0.0",
+  "private": true,
   "license": "MIT",
   "description": "Dev tools for React App",
-  "author": "pplancq <paul.plancq@outlook.fr>",
+  "author": "Paul PLANCQ <paul.plancq@outlook.fr>",
   "contributors": [
     "Triki-Ahmed <ahmed.triki.1996@gmail.com>"
   ],
@@ -12,18 +13,19 @@
     "url": "https://github.com/pplancq/dev-tools"
   },
   "scripts": {
-    "build": "npm run build -w @pplancq/create-react-app",
+    "build": "npm run build --workspaces --if-present",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "node scripts/lint.js",
-    "lint:eslint": "eslint \"**/*.{js,mjs}\" --ignore-pattern packages/react-template && npm run lint:eslint -w @pplancq/react-template",
-    "lint:eslint:fix": "eslint \"**/*.{js,mjs}\" --fix --ignore-pattern packages/react-template && npm run lint:eslint:fix -w @pplancq/react-template",
-    "lint:stylelint": "npm run lint:stylelint -w @pplancq/react-template",
-    "lint:stylelint:fix": "npm run lint:stylelint:fix -w @pplancq/react-template",
-    "lint:tsc": "npm run lint:tsc -w @pplancq/react-template",
-    "lint:prettier": "prettier \"**/*.!(js|mjs)\" --check",
-    "lint:prettier:fix": "prettier \"**/*.!(js|mjs)\" --write",
+    "lint:eslint": "npm run lint:eslint --workspaces --if-present",
+    "lint:eslint:fix": "npm run lint:eslint:fix --workspaces --if-present",
+    "lint:stylelint": "npm run lint:stylelint --workspaces --if-present",
+    "lint:stylelint:fix": "npm run lint:stylelint:fix --workspaces --if-present",
+    "lint:tsc": "npm run lint:tsc --workspaces --if-present",
+    "lint:prettier": "npm run lint:prettier --workspaces --if-present",
+    "lint:prettier:fix": "npm run lint:prettier:fix --workspaces --if-present",
     "release": "multi-semantic-release",
+    "package:check": "npm exec --yes package-lock-utd@1.1.3",
     "prepare": "husky"
   },
   "bugs": {
@@ -40,14 +42,16 @@
   ],
   "devDependencies": {
     "@anolilab/multi-semantic-release": "^2.0.3",
+    "@pplancq/prettier-config": "*",
     "concurrently": "^9.2.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2",
     "semantic-release": "^24.2.7"
   },
   "lint-staged": {
-    "*.(js|mjs)": "eslint --ignore-pattern packages/react-template --fix",
-    "*.!(js|mjs)": "prettier --write"
+    "(package|package-lock).json": "npm run package:check",
+    "*": "prettier --write --ignore-unknown"
   },
   "prettier": "@pplancq/prettier-config",
   "release": {

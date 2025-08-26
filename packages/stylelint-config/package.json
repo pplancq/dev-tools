@@ -9,6 +9,20 @@
     "url": "git+https://github.com/pplancq/dev-tools.git",
     "directory": "packages/stylelint-config"
   },
+  "scripts": {
+    "lint:eslint": "eslint \"**/*.{js,mjs}\"",
+    "lint:eslint:fix": "eslint \"**/*.{js,mjs}\" --fix",
+    "lint:prettier": "prettier \"**/*.!(js|mjs)\" --check --ignore-unknown",
+    "lint:prettier:fix": "prettier \"**/*.!(js|mjs)\" --write --ignore-unknown"
+  },
+  "files": [
+    "bin",
+    "rules",
+    "index.js",
+    "prettier.js",
+    "LICENSE",
+    "README.md"
+  ],
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
@@ -42,10 +56,18 @@
       "optional": true
     }
   },
+  "devDependencies": {
+    "@pplancq/eslint-config": "*",
+    "@pplancq/prettier-config": "^1.2.7",
+    "eslint": "^9.34.0",
+    "eslint-plugin-prettier": "*",
+    "prettier": "^3.6.2"
+  },
   "engines": {
     "node": ">=22"
   },
   "volta": {
     "extends": "../../package.json"
-  }
+  },
+  "prettier": "@pplancq/prettier-config"
 }

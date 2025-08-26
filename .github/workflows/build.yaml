@@ -92,6 +92,3 @@ jobs:
 
       - name: Run build
         run: npm run build
-
-      - name: Run build template
-        run: npm run build -w @pplancq/react-template
