@@ -2,6 +2,7 @@ import { endProcess } from '@/helpers/endProcess';
 import { runCommand } from '@/helpers/runCommand';
 import { getInteractiveArgs } from '@/steps/getInteractiveArgs';
 import { getPromptArgs } from '@/steps/getPromptArgs';
+import { validatePromptArgs } from '@/steps/validatePromptArgs';
 import { intro } from '@clack/prompts';
 import { cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -28,20 +29,11 @@ export const main = async () => {
 
   intro(`Create ${pc.blue('React')} App`);
 
+  validatePromptArgs(args);
+
   const { projectName } = await getInteractiveArgs(args);
 
   const packageManager = getPackageManager();
-
-  if (!/^(@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/.test(projectName)) {
-    console.error(`The project name '${projectName}' is not valid.`);
-    console.error(
-      'A valid npm project name must start with a lowercase letter, a number, a hyphen, or a tilde, and can include dots, hyphens, tildes, or underscores.',
-    );
-    console.error(
-      "If the project name starts with '@', it must be followed by a valid scope name and a '/'. Please check and try again.",
-    );
-    endProcess(true);
-  }
 
   const reactTemplate = '@pplancq/react-template';
 

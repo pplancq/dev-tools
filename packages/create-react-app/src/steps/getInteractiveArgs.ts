@@ -1,4 +1,5 @@
 import { checkCancel } from '@/helpers/checkCancel';
+import { validateProjectName } from '@/validates/validateProjectName';
 import { text } from '@clack/prompts';
 
 type InteractiveArgs = {
@@ -17,6 +18,7 @@ export const getInteractiveArgs = async ({ projectName }: InteractiveArgs): Prom
         await text({
           message: 'What is the name of your project?',
           placeholder: 'my-project',
+          validate: validateProjectName,
         }),
       ).toString(),
   };
