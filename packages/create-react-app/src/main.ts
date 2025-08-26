@@ -1,6 +1,8 @@
 import { endProcess } from '@/helpers/endProcess';
 import { runCommand } from '@/helpers/runCommand';
+import { getInteractiveArgs } from '@/steps/getInteractiveArgs';
 import { getPromptArgs } from '@/steps/getPromptArgs';
+import { intro } from '@clack/prompts';
 import { cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import * as process from 'node:process';
@@ -22,7 +24,11 @@ const getPackageManager = () => {
 };
 
 export const main = async () => {
-  const { projectName = 'my-app' } = getPromptArgs();
+  const args = getPromptArgs();
+
+  intro(`Create ${pc.blue('React')} App`);
+
+  const { projectName } = await getInteractiveArgs(args);
 
   const packageManager = getPackageManager();
 
