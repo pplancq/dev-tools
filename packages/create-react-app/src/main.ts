@@ -1,22 +1,15 @@
-import { execSync, type ExecSyncOptions } from 'child_process';
+import { endProcess } from '@/helpers/endProcess';
+import { runCommand } from '@/helpers/runCommand';
 import { Command } from 'commander';
-import { cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'fs';
-import { resolve } from 'path';
-// eslint-disable-next-line import/no-extraneous-dependencies
+import { cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
+import { dirname, resolve } from 'node:path';
+import * as process from 'node:process';
+import { fileURLToPath } from 'node:url';
 import pc from 'picocolors';
 
 const NPM = 'npm';
 const YARN = 'yarn';
 const PNPM = 'pnpm';
-
-const runCommand = (command: string, options: ExecSyncOptions = { stdio: 'inherit' }) => {
-  try {
-    execSync(command, options);
-  } catch (e) {
-    console.error(`Failed to execute ${command}`, e);
-    process.exit(-1);
-  }
-};
 
 const getPackageManager = () => {
   switch (true) {
@@ -31,7 +24,9 @@ const getPackageManager = () => {
 
 export const main = async () => {
   let projectName = '';
-  const packageJson = JSON.parse(readFileSync(resolve(__dirname, './package.json'), { encoding: 'utf-8' }));
+  const packageJson = JSON.parse(
+    readFileSync(resolve(dirname(fileURLToPath(import.meta.url)), '../package.json'), { encoding: 'utf-8' }),
+  );
 
   const cli = new Command(packageJson.name);
   cli
@@ -53,7 +48,7 @@ export const main = async () => {
     console.error(
       "If the project name starts with '@', it must be followed by a valid scope name and a '/'. Please check and try again.",
     );
-    process.exit(-1);
+    endProcess(true);
   }
 
   const reactTemplate = '@pplancq/react-template';
@@ -64,18 +59,21 @@ export const main = async () => {
   if (existsSync(repoDir)) {
     console.error(`\nThe directory ${pc.green(projectName)} is already exist.`);
     console.error('Either try using a new directory name, or remove the files listed above.');
-    process.exit(-1);
+    endProcess(true);
   }
 
   console.info(`\nCreating a new App React in ${pc.green(repoDir)}.`);
 
   console.info(`\nInstall react template from ${pc.green(reactTemplate)}`);
   mkdirSync(repoDir);
-  runCommand(`cd ${repoDir} && npm init -y`, { stdio: 'ignore' });
+  await runCommand('npm', ['init', '-y'], { cwd: repoDir });
+
   if (packageManager === YARN) {
-    runCommand(`cd ${repoDir} && yarn config set nodeLinker node-modules`, { stdio: 'ignore' });
+    await runCommand('yarn', ['config', 'set', 'nodeLinker', 'node-modules'], { cwd: repoDir });
   }
-  runCommand(`cd ${repoDir} && ${packageManager} ${packageManager === YARN ? 'add' : 'install'} ${reactTemplate}`);
+  await runCommand(packageManager, [packageManager === YARN ? 'add' : 'install', reactTemplate], {
+    cwd: repoDir,
+  });
   cpSync(templateDir, repoDir, { recursive: true, dereference: true });
   renameSync(`${repoDir}/_gitignore`, `${repoDir}/.gitignore`);
   const repoPackageJson = JSON.parse(readFileSync(resolve(repoDir, 'package.json'), { encoding: 'utf-8' }));
@@ -115,19 +113,18 @@ export const main = async () => {
   writeFileSync(resolve(repoDir, 'README.md'), readme, { encoding: 'utf-8' });
 
   console.info('\nInitialized a git repository.');
-  runCommand(`cd ${repoDir} && git init --initial-branch=main`, { stdio: 'ignore' });
+  await runCommand('git', ['init', '--initial-branch=main'], { cwd: repoDir });
 
   console.info('\nInstalling packages. This might take a couple of minutes.');
-  runCommand(`cd ${repoDir} && ${packageManager} install`);
+  await runCommand(packageManager, ['install'], { cwd: repoDir });
 
   if (packageManager === PNPM) {
-    runCommand(`cd ${repoDir} && ${packageManager} install -D vite`);
+    await runCommand(packageManager, ['install', '-D', 'vite'], { cwd: repoDir });
   }
 
   console.info('\nCreated git commit.');
-  runCommand(`cd ${repoDir} && git add . && git commit --no-verify --message "Initial commit"`, {
-    stdio: 'ignore',
-  });
+  await runCommand('git', ['add', '.'], { cwd: repoDir });
+  await runCommand('git', ['commit', '--no-verify', '--message', 'Initial commit'], { cwd: repoDir });
 
   console.info(`\n${pc.yellow('Success \\o/')}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
   console.info('Inside that directory, you can run several commands:');
