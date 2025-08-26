@@ -3,10 +3,9 @@ import { runCommand } from '@/helpers/runCommand';
 import { getInteractiveArgs } from '@/steps/getInteractiveArgs';
 import { getPromptArgs } from '@/steps/getPromptArgs';
 import { validatePromptArgs } from '@/steps/validatePromptArgs';
-import { intro } from '@clack/prompts';
+import { intro, log, note, outro } from '@clack/prompts';
 import { cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import * as process from 'node:process';
 import pc from 'picocolors';
 
 const NPM = 'npm';
@@ -37,18 +36,18 @@ export const main = async () => {
 
   const reactTemplate = '@pplancq/react-template';
 
-  const repoDir = resolve(process.cwd(), `./${projectName}`);
-  const templateDir = resolve(repoDir, `./node_modules/${reactTemplate}`);
+  const repoDir = resolve(process.cwd(), projectName);
+  const templateDir = resolve(repoDir, `node_modules/${reactTemplate}`);
 
   if (existsSync(repoDir)) {
-    console.error(`\nThe directory ${pc.green(projectName)} is already exist.`);
-    console.error('Either try using a new directory name, or remove the files listed above.');
+    log.error(`The directory ${pc.green(projectName)} is already exist.
+Either try using a new directory name, or remove the files listed above.`);
+    outro('Please check and try again.');
     endProcess(true);
   }
 
-  console.info(`\nCreating a new App React in ${pc.green(repoDir)}.`);
-
-  console.info(`\nInstall react template from ${pc.green(reactTemplate)}`);
+  log.info(`Creating a new App React in ${pc.green(repoDir)}.`);
+  log.info(`Install react template from ${pc.green(reactTemplate)}`);
   mkdirSync(repoDir);
   await runCommand('npm', ['init', '-y'], { cwd: repoDir });
 
@@ -96,35 +95,33 @@ export const main = async () => {
   }
   writeFileSync(resolve(repoDir, 'README.md'), readme, { encoding: 'utf-8' });
 
-  console.info('\nInitialized a git repository.');
+  log.info('Initialized a git repository.');
   await runCommand('git', ['init', '--initial-branch=main'], { cwd: repoDir });
 
-  console.info('\nInstalling packages. This might take a couple of minutes.');
+  log.info('Installing packages. This might take a couple of minutes.');
   await runCommand(packageManager, ['install'], { cwd: repoDir });
 
   if (packageManager === PNPM) {
     await runCommand(packageManager, ['install', '-D', 'vite'], { cwd: repoDir });
   }
 
-  console.info('\nCreated git commit.');
+  log.info('Created git commit.');
   await runCommand('git', ['add', '.'], { cwd: repoDir });
   await runCommand('git', ['commit', '--no-verify', '--message', 'Initial commit'], { cwd: repoDir });
 
-  console.info(`\n${pc.yellow('Success \\o/')}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
-  console.info('Inside that directory, you can run several commands:');
-  const logCommand = (command: string) => {
-    console.info(`\n  ${pc.cyan(command)}`);
-  };
-  logCommand(`${packageManager} start`);
-  console.info('    Starts the development server.');
-  logCommand(`${packageManager} run build`);
-  console.info('    Bundles the app into static files for production.');
-  logCommand(`${packageManager} test`);
-  console.info('    Starts the test runner.');
-  logCommand(`${packageManager} run remove:demo`);
-  console.info('    Remove the demo application.');
-  console.info('\nWe suggest that you begin by typing:');
-  console.info(`\n  ${pc.cyan('cd')} ${projectName}`);
-  logCommand(`${packageManager} start`);
-  console.info('\nHappy hacking!');
+  log.success(`${pc.yellow('Success \\o/')}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
+  note(
+    `Inside that directory, you can run several commands:
+ ${pc.cyan(`${packageManager} start`)}            Starts the development server.
+ ${pc.cyan(`${packageManager} run build`)}        Bundles the app into static files for production.
+ ${pc.cyan(`${packageManager} test`)}             Runs tests using Vitest and Playwright.
+ ${pc.cyan(`${packageManager} run remove:demo`)}  Remove the demo application.
+
+We suggest that you begin by typing:
+ ${pc.cyan('cd')} ${projectName}
+ ${pc.cyan('npm start')}`,
+    'What next?',
+  );
+
+  outro('Happy hacking!');
 };
