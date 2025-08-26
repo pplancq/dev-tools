@@ -1,10 +1,9 @@
 import { endProcess } from '@/helpers/endProcess';
 import { runCommand } from '@/helpers/runCommand';
-import { Command } from 'commander';
+import { getPromptArgs } from '@/steps/getPromptArgs';
 import { cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
-import { dirname, resolve } from 'node:path';
+import { resolve } from 'node:path';
 import * as process from 'node:process';
-import { fileURLToPath } from 'node:url';
 import pc from 'picocolors';
 
 const NPM = 'npm';
@@ -23,20 +22,7 @@ const getPackageManager = () => {
 };
 
 export const main = async () => {
-  let projectName = '';
-  const packageJson = JSON.parse(
-    readFileSync(resolve(dirname(fileURLToPath(import.meta.url)), '../package.json'), { encoding: 'utf-8' }),
-  );
-
-  const cli = new Command(packageJson.name);
-  cli
-    .version(packageJson.version)
-    .argument('<project-name>')
-    .usage(pc.green('<project-name>'))
-    .action(name => {
-      projectName = name;
-    })
-    .parse(process.argv);
+  const { projectName = 'my-app' } = getPromptArgs();
 
   const packageManager = getPackageManager();
 
