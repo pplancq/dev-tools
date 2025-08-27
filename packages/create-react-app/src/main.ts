@@ -6,6 +6,7 @@ import { validatePromptArgs } from '@/steps/validatePromptArgs';
 import { intro, log, note, outro } from '@clack/prompts';
 import { cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import process from 'node:process';
 import pc from 'picocolors';
 
 export const main = async () => {
@@ -15,7 +16,7 @@ export const main = async () => {
 
   validatePromptArgs(args);
 
-  const { projectName } = await getInteractiveArgs(args);
+  const { projectName, skipDepInstall } = await getInteractiveArgs(args);
 
   const reactTemplate = '@pplancq/react-template';
 
@@ -62,8 +63,10 @@ Either try using a new directory name, or remove the files listed above.`);
   log.info('Initialized a git repository.');
   await runCommand('git', ['init', '--initial-branch=main'], { cwd: repoDir });
 
-  log.info('Installing packages. This might take a couple of minutes.');
-  await runCommand('npm', ['install'], { cwd: repoDir });
+  if (!skipDepInstall) {
+    log.info('Installing packages. This might take a couple of minutes.');
+    await runCommand('npm', ['install'], { cwd: repoDir });
+  }
 
   log.info('Created git commit.');
   await runCommand('git', ['add', '.'], { cwd: repoDir });
