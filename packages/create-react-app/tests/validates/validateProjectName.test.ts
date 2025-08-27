@@ -1,5 +1,6 @@
 import { validateProjectName } from '@/validates/validateProjectName';
-import { describe, expect, it } from 'vitest';
+import { existsSync } from 'node:fs';
+import { describe, expect, it, type Mock, vi } from 'vitest';
 
 const validNames = [
   'myproject',
@@ -15,6 +16,10 @@ const validNames = [
   '@scope/my~project',
   '@scope/123project',
 ];
+
+vi.mock('node:fs', () => ({
+  existsSync: vi.fn(),
+}));
 
 describe('validateProjectName', () => {
   it('should return empty string for valid project names', () => {
@@ -49,5 +54,18 @@ describe('validateProjectName', () => {
   it('should return error message containing the invalid value', () => {
     expect(validateProjectName('my project')).toContain("'my project'");
     expect(validateProjectName('@scope/')).toContain("'@scope/'");
+  });
+
+  it('should return error message if directory exists', () => {
+    (existsSync as Mock).mockReturnValueOnce(true);
+    const result = validateProjectName('existing-dir');
+    expect(result).toContain('The directory');
+    expect(result).toMatch(/already exists/);
+  });
+
+  it('should return empty string if directory does not exist', () => {
+    (existsSync as Mock).mockReturnValueOnce(false);
+    const result = validateProjectName('non-existing-dir');
+    expect(result).toStrictEqual('');
   });
 });
