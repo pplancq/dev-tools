@@ -1,10 +1,9 @@
-import { endProcess } from '@/helpers/endProcess';
 import { runCommand } from '@/helpers/runCommand';
 import { getInteractiveArgs } from '@/steps/getInteractiveArgs';
 import { getPromptArgs } from '@/steps/getPromptArgs';
 import { validatePromptArgs } from '@/steps/validatePromptArgs';
 import { intro, log, note, outro } from '@clack/prompts';
-import { cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import process from 'node:process';
 import pc from 'picocolors';
@@ -22,13 +21,6 @@ export const main = async () => {
 
   const repoDir = resolve(process.cwd(), projectName);
   const templateDir = resolve(repoDir, `node_modules/${reactTemplate}`);
-
-  if (existsSync(repoDir)) {
-    log.error(`The directory ${pc.green(projectName)} is already exist.
-Either try using a new directory name, or remove the files listed above.`);
-    outro('Please check and try again.');
-    endProcess(true);
-  }
 
   log.info(`Creating a new App React in ${pc.green(repoDir)}.`);
   log.info(`Install react template from ${pc.green(reactTemplate)}`);
