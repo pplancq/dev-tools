@@ -53,6 +53,22 @@ describe('processArgv', () => {
     expect(result).toStrictEqual({});
   });
 
+  it('should return skipGitInit true when --skip-git-init flag is provided', () => {
+    process.argv = ['node', 'script.js', '--skip-git-init'];
+
+    const result = getPromptArgs();
+
+    expect(result).toStrictEqual({ skipGitInit: true });
+  });
+
+  it('should not return skipGitInit when --skip-git-init flag is not provided', () => {
+    process.argv = ['node', 'script.js'];
+
+    const result = getPromptArgs();
+
+    expect(result).toStrictEqual({});
+  });
+
   it.each([{ arg: '--version' }, { arg: '-v' }])('should print version when $arg flag is provided', ({ arg }) => {
     process.argv = ['node', 'script.js', arg];
 

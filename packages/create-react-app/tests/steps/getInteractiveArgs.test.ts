@@ -30,4 +30,19 @@ describe('getInteractiveArgs', () => {
 
     expect(skipDepInstall).toBeTruthy();
   });
+
+  it('returns the provided skipGitInit when specified', async () => {
+    (text as Mock).mockResolvedValueOnce('my-project');
+    const { skipGitInit } = await getInteractiveArgs({ skipGitInit: true });
+
+    expect(skipGitInit).toBeTruthy();
+  });
+
+  it('prompts for skipGitInit when not provided', async () => {
+    (text as Mock).mockResolvedValueOnce('my-project');
+    (confirm as Mock).mockResolvedValueOnce(false).mockResolvedValueOnce(true);
+    const { skipGitInit } = await getInteractiveArgs({});
+
+    expect(skipGitInit).toBeTruthy();
+  });
 });
