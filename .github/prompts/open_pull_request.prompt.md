@@ -1,3 +1,8 @@
+---
+mode: agent
+description: 'Generate a well-structured Pull Request description.'
+---
+
 # Prompt: Generate a Well-Structured Pull Request Description
 
 ## Goal
@@ -18,39 +23,29 @@ If any required data is missing or ambiguous, you MUST ask a follow-up question 
 2. GitHub issue retrieval & objective derivation
 3. PR description generation (single atomic output)
 
-You MUST NOT proceed to step 2 before step 1 is confirmed complete. You MUST NOT generate the PR before both steps 1 and 2 are complete (or issue marked N/A with confirmed absence).
+You MUST NOT proceed to step 2 before step 1 is confirmed complete. You MUST NOT generate the PR before both step 1 and 2 are complete (or issue marked N/A with confirmed absence).
 
 ---
 
 ## 1. Branch & Diff Acquisition (ALWAYS FIRST)
 
-### 1.1 Detect current branch
+### 1.1 Determine and confirm main branch
 
-Execute:
+Check if a default branch is specified in `.github/copilot-instructions.md`. If specified, use that branch without user confirmation. Otherwise, propose `main` as default and request explicit confirmation from user. Do NOT run the diff command before confirmation.
 
-```
-git branch --show-current
-```
-
-Set `<current-branch>` from the output.
-
-### 1.2 Propose main branch & request explicit confirmation
-
-Default candidate is `main`. Regardless of candidate, ALWAYS ask user to confirm the `<main-branch>` (even if it is `main`). Do NOT run the diff command before explicit user confirmation. If the user specifies another (e.g. `develop`, `trunk`), use that—still confirm.
-
-### 1.3 Generate fresh diff after confirmation
+### 1.2 Generate fresh diff after confirmation
 
 Execute exactly (no reuse, no stale files):
 
 ```
-git diff $(git merge-base <main-branch> <current-branch>) <current-branch> > gitDiff.md
+git diff $(git merge-base <main-branch> $(git branch --show-current)) $(git branch --show-current) > gitDiff.md
 ```
 
 Rules:
 
 - Must execute after confirmation every session (no caching).
 - Immediately read `gitDiff.md` after generation.
-- If file is empty → ask user whether to proceed with an “empty changes” PR before continuing.
+- If file is empty → ask user whether to proceed with an "empty changes" PR before continuing.
 - If branch detection fails, instruct user with generic fallback:
 
 ```
@@ -61,9 +56,9 @@ Explain that the file is required for technical analysis.
 
 - NEVER include raw diff content or mention the diff command in the final PR description.
 
-### 1.4 Validation
+### 1.3 Validation
 
-Confirm: (a) current branch name, (b) confirmed main branch name, (c) diff file successfully read.
+Confirm: (a) main branch determined/confirmed, (b) diff file successfully read.
 If any missing → ask a focused question (confidence <97%).
 
 ---

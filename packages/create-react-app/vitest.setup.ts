@@ -11,4 +11,8 @@ vi.mock('@clack/prompts', () => ({
   log: {
     error: vi.fn(),
   },
+  spinner: vi.fn().mockImplementation(() => ({
+    start: vi.fn(),
+    stop: vi.fn(),
+  })),
 }));
