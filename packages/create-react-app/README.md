@@ -43,6 +43,8 @@ create-react-app [options] [project-name]
 
 - `--skip-dep-install`  
   Skip installing dependencies (`npm install`).
+- `--skip-git-init`  
+  Skip initializing a git repository.
 - `-v, --version`  
   Show the version of the starter.
 

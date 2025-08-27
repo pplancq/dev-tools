@@ -16,7 +16,7 @@ export const main = async () => {
 
   validatePromptArgs(args);
 
-  const { projectName, skipDepInstall } = await getInteractiveArgs(args);
+  const { projectName, skipDepInstall, skipGitInit } = await getInteractiveArgs(args);
 
   const reactTemplate = '@pplancq/react-template';
 
@@ -60,17 +60,21 @@ Either try using a new directory name, or remove the files listed above.`);
   rmSync(`${repoDir}/README.md`);
   renameSync(`${repoDir}/_README.md`, `${repoDir}/README.md`);
 
-  log.info('Initialized a git repository.');
-  await runCommand('git', ['init', '--initial-branch=main'], { cwd: repoDir });
+  if (!skipGitInit) {
+    log.info('Initialized a git repository.');
+    await runCommand('git', ['init', '--initial-branch=main'], { cwd: repoDir });
+  }
 
   if (!skipDepInstall) {
     log.info('Installing packages. This might take a couple of minutes.');
     await runCommand('npm', ['install'], { cwd: repoDir });
   }
 
-  log.info('Created git commit.');
-  await runCommand('git', ['add', '.'], { cwd: repoDir });
-  await runCommand('git', ['commit', '--no-verify', '--message', 'Initial commit'], { cwd: repoDir });
+  if (!skipGitInit) {
+    log.info('Created git commit.');
+    await runCommand('git', ['add', '.'], { cwd: repoDir });
+    await runCommand('git', ['commit', '--no-verify', '--message', 'Initial commit'], { cwd: repoDir });
+  }
 
   log.success(`${pc.yellow('Success \\o/')}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
   note(
