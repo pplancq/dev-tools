@@ -36,22 +36,10 @@ By achieving these objectives, I hope this React application starter will be a v
 To generate a new React project, simply run the following command:
 
 ```shell
-npm create @pplancq/react-app@latest <project_name>
+npm create @pplancq/react-app@latest
 ```
 
-or
-
-```shell
-yarn create @pplancq/react-app@latest <project_name>
-```
-
-or
-
-```shell
-pnpm create @pplancq/react-app@latest <project_name>
-```
-
-Replace <project_name> with the name of your new project.
+More details about the command line options can be found in the [create-react-app documentation](./packages/create-react-app/README.md).
 
 ## @pplancq/react-template
 
@@ -66,10 +54,13 @@ Unlike Facebook's create-react-app, the Webpack configuration remains easily exp
 - **React Query**: This is a library for managing, caching, and synchronizing asynchronous and remote data in React.
 - **React Hook Form**: This is a high-performance, flexible, and extensible library for forms with React Hooks.
 - **TypeScript**: This is a language for application-scale JavaScript development. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any operating system.
+- **Prettier**: This is an opinionated code formatter that supports many languages and integrates with most editors. It enforces a consistent style by parsing your code and re-printing it with its own rules.
 - **ESLint**: This is a tool for identifying and reporting patterns found in ECMAScript/JavaScript code. ESLint uses Espree for JavaScript syntax parsing. It uses an AST to evaluate patterns in the code.
 - **Stylelint**: This is a powerful CSS linter that helps you avoid errors and apply conventions. It has over 100 built-in rules for modern CSS syntax and features.
 - **Rsbuild**: Rsbuild is a modern and high-performance bundler for front-end applications, designed to replace Webpack or Vite. It offers simple configuration, fast build times, and excellent compatibility with React projects, making development and optimization easier.
 - **Vitest**: This is a next-generation testing framework powered by Vite. It is fast and can be configured to match your Vite application's plugins and configuration.
+- **Playwright**: This is a Node.js library to automate Chromium, Firefox, and WebKit with a single API. It enables cross-browser web automation that is ever-green, capable, reliable, and fast.
+- **MSW (Mock Service Worker)**: This is an API mocking library for browser and Node. It uses Service Workers to intercept actual requests on the network level, providing a realistic testing environment.
 
 ## License
 
