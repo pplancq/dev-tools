@@ -1,11 +1,14 @@
-import { runCommand } from '@/helpers/runCommand';
+import { createRepository } from '@/steps/createRepository';
 import { getInteractiveArgs } from '@/steps/getInteractiveArgs';
 import { getPromptArgs } from '@/steps/getPromptArgs';
+import { gitCommit } from '@/steps/gitCommit';
+import { initializeGit } from '@/steps/initializeGit';
+import { installPackage } from '@/steps/installPackage';
+import { installTemplate } from '@/steps/installTemplate';
 import { validatePromptArgs } from '@/steps/validatePromptArgs';
 import { intro, log, note, outro } from '@clack/prompts';
-import { cpSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
+import { readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-import process from 'node:process';
 import pc from 'picocolors';
 
 export const main = async () => {
@@ -17,19 +20,9 @@ export const main = async () => {
 
   const { projectName, skipDepInstall, skipGitInit } = await getInteractiveArgs(args);
 
-  const reactTemplate = '@pplancq/react-template';
+  const { repoDir } = await createRepository(projectName);
 
-  const repoDir = resolve(process.cwd(), projectName);
-  const templateDir = resolve(repoDir, `node_modules/${reactTemplate}`);
-
-  log.info(`Creating a new App React in ${pc.green(repoDir)}.`);
-  log.info(`Install react template from ${pc.green(reactTemplate)}`);
-  mkdirSync(repoDir);
-  await runCommand('npm', ['init', '-y'], { cwd: repoDir });
-
-  await runCommand('npm', ['install', reactTemplate], { cwd: repoDir });
-  rmSync(`${repoDir}/package-lock.json`);
-  cpSync(templateDir, repoDir, { recursive: true, dereference: true });
+  await installTemplate(repoDir, '@pplancq/react-template');
 
   renameSync(`${repoDir}/_gitignore`, `${repoDir}/.gitignore`);
   const repoPackageJson = JSON.parse(readFileSync(resolve(repoDir, 'package.json'), { encoding: 'utf-8' }));
@@ -52,21 +45,11 @@ export const main = async () => {
   rmSync(`${repoDir}/README.md`);
   renameSync(`${repoDir}/_README.md`, `${repoDir}/README.md`);
 
-  if (!skipGitInit) {
-    log.info('Initialized a git repository.');
-    await runCommand('git', ['init', '--initial-branch=main'], { cwd: repoDir });
-  }
+  await initializeGit(repoDir, skipGitInit);
 
-  if (!skipDepInstall) {
-    log.info('Installing packages. This might take a couple of minutes.');
-    await runCommand('npm', ['install'], { cwd: repoDir });
-  }
+  await installPackage(repoDir, skipDepInstall);
 
-  if (!skipGitInit) {
-    log.info('Created git commit.');
-    await runCommand('git', ['add', '.'], { cwd: repoDir });
-    await runCommand('git', ['commit', '--no-verify', '--message', 'Initial commit'], { cwd: repoDir });
-  }
+  await gitCommit(repoDir, skipGitInit);
 
   log.success(`${pc.yellow('Success \\o/')}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
   note(

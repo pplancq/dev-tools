@@ -8,6 +8,10 @@ All instructions and prompts in this repository must be written in English. This
 - All prompt files in `.github/prompts/`
 - All documentation and code comments intended for contributors
 
+## Repository Configuration
+
+**Default Branch:** `main`
+
 ## Development Code Generation
 
 When working with TypeScript, React, and other technologies in this project, follow these instructions very carefully.
