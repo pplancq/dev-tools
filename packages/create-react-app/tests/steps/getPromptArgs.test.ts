@@ -37,6 +37,22 @@ describe('processArgv', () => {
     expect(result).toStrictEqual({});
   });
 
+  it('should return skipDepInstall true when --skip-dep-install flag is provided', () => {
+    process.argv = ['node', 'script.js', '--skip-dep-install'];
+
+    const result = getPromptArgs();
+
+    expect(result).toStrictEqual({ skipDepInstall: true });
+  });
+
+  it('should not return skipDepInstall when --skip-dep-install flag is not provided', () => {
+    process.argv = ['node', 'script.js'];
+
+    const result = getPromptArgs();
+
+    expect(result).toStrictEqual({});
+  });
+
   it.each([{ arg: '--version' }, { arg: '-v' }])('should print version when $arg flag is provided', ({ arg }) => {
     process.argv = ['node', 'script.js', arg];
 

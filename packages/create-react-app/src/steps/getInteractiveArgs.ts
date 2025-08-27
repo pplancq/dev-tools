@@ -1,16 +1,21 @@
 import { checkCancel } from '@/helpers/checkCancel';
 import { validateProjectName } from '@/validates/validateProjectName';
-import { text } from '@clack/prompts';
+import { confirm, text } from '@clack/prompts';
 
 type InteractiveArgs = {
   projectName?: string;
+  skipDepInstall?: boolean;
 };
 
 type InteractiveArgsResult = {
   projectName: string;
+  skipDepInstall: boolean;
 };
 
-export const getInteractiveArgs = async ({ projectName }: InteractiveArgs): Promise<InteractiveArgsResult> => {
+export const getInteractiveArgs = async ({
+  projectName,
+  skipDepInstall,
+}: InteractiveArgs): Promise<InteractiveArgsResult> => {
   return {
     projectName:
       projectName ||
@@ -21,5 +26,12 @@ export const getInteractiveArgs = async ({ projectName }: InteractiveArgs): Prom
           validate: validateProjectName,
         }),
       ).toString(),
+    skipDepInstall:
+      skipDepInstall ||
+      Boolean(
+        checkCancel(
+          await confirm({ message: 'Do you want to skip installing dependencies (npm install)?', initialValue: false }),
+        ),
+      ),
   };
 };
