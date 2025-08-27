@@ -8,21 +8,6 @@ import { cpSync, existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeF
 import { resolve } from 'node:path';
 import pc from 'picocolors';
 
-const NPM = 'npm';
-const YARN = 'yarn';
-const PNPM = 'pnpm';
-
-const getPackageManager = () => {
-  switch (true) {
-    case process.env.npm_config_user_agent && process.env.npm_config_user_agent.includes(YARN):
-      return YARN;
-    case process.env.npm_config_user_agent && process.env.npm_config_user_agent.includes(PNPM):
-      return PNPM;
-    default:
-      return NPM;
-  }
-};
-
 export const main = async () => {
   const args = getPromptArgs();
 
@@ -31,8 +16,6 @@ export const main = async () => {
   validatePromptArgs(args);
 
   const { projectName } = await getInteractiveArgs(args);
-
-  const packageManager = getPackageManager();
 
   const reactTemplate = '@pplancq/react-template';
 
@@ -51,13 +34,10 @@ Either try using a new directory name, or remove the files listed above.`);
   mkdirSync(repoDir);
   await runCommand('npm', ['init', '-y'], { cwd: repoDir });
 
-  if (packageManager === YARN) {
-    await runCommand('yarn', ['config', 'set', 'nodeLinker', 'node-modules'], { cwd: repoDir });
-  }
-  await runCommand(packageManager, [packageManager === YARN ? 'add' : 'install', reactTemplate], {
-    cwd: repoDir,
-  });
+  await runCommand('npm', ['install', reactTemplate], { cwd: repoDir });
+  rmSync(`${repoDir}/package-lock.json`);
   cpSync(templateDir, repoDir, { recursive: true, dereference: true });
+
   renameSync(`${repoDir}/_gitignore`, `${repoDir}/.gitignore`);
   const repoPackageJson = JSON.parse(readFileSync(resolve(repoDir, 'package.json'), { encoding: 'utf-8' }));
   repoPackageJson.name = projectName;
@@ -79,31 +59,11 @@ Either try using a new directory name, or remove the files listed above.`);
   rmSync(`${repoDir}/README.md`);
   renameSync(`${repoDir}/_README.md`, `${repoDir}/README.md`);
 
-  let readme = readFileSync(resolve(repoDir, 'README.md'), { encoding: 'utf-8' });
-  switch (packageManager) {
-    case YARN:
-      rmSync(`${repoDir}/yarn.lock`);
-      readme = readme.replaceAll('npm install', 'yarn');
-      readme = readme.replaceAll('npm', 'yarn');
-      break;
-    case PNPM:
-      rmSync(`${repoDir}/pnpm-lock.yaml`);
-      readme = readme.replaceAll('npm', 'pnpm');
-      break;
-    default:
-      rmSync(`${repoDir}/package-lock.json`);
-  }
-  writeFileSync(resolve(repoDir, 'README.md'), readme, { encoding: 'utf-8' });
-
   log.info('Initialized a git repository.');
   await runCommand('git', ['init', '--initial-branch=main'], { cwd: repoDir });
 
   log.info('Installing packages. This might take a couple of minutes.');
-  await runCommand(packageManager, ['install'], { cwd: repoDir });
-
-  if (packageManager === PNPM) {
-    await runCommand(packageManager, ['install', '-D', 'vite'], { cwd: repoDir });
-  }
+  await runCommand('npm', ['install'], { cwd: repoDir });
 
   log.info('Created git commit.');
   await runCommand('git', ['add', '.'], { cwd: repoDir });
@@ -112,10 +72,10 @@ Either try using a new directory name, or remove the files listed above.`);
   log.success(`${pc.yellow('Success \\o/')}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
   note(
     `Inside that directory, you can run several commands:
- ${pc.cyan(`${packageManager} start`)}            Starts the development server.
- ${pc.cyan(`${packageManager} run build`)}        Bundles the app into static files for production.
- ${pc.cyan(`${packageManager} test`)}             Runs tests using Vitest and Playwright.
- ${pc.cyan(`${packageManager} run remove:demo`)}  Remove the demo application.
+ ${pc.cyan('npm start')}            Starts the development server.
+ ${pc.cyan('npm run build')}        Bundles the app into static files for production.
+ ${pc.cyan('npm test')}             Runs tests using Vitest and Playwright.
+ ${pc.cyan('npm run remove:demo')}  Remove the demo application.
 
 We suggest that you begin by typing:
  ${pc.cyan('cd')} ${projectName}
