@@ -1,4 +1,5 @@
 import { runCommand } from '@/helpers/runCommand';
+import { log } from '@clack/prompts';
 import { execFile } from 'node:child_process';
 import { describe, expect, it, type Mock, vi } from 'vitest';
 
@@ -6,13 +7,7 @@ vi.mock('node:child_process', () => ({
   execFile: vi.fn(),
 }));
 
-const mockConsoleError = vi.fn();
 const mockProcessExit = vi.fn();
-
-vi.stubGlobal('console', {
-  ...console,
-  error: mockConsoleError,
-});
 
 vi.stubGlobal('process', {
   ...process,
@@ -52,7 +47,7 @@ describe('runCommand', () => {
 
     await runCommand('invalid-command', ['arg']);
 
-    expect(mockConsoleError).toHaveBeenCalledWith('Failed to execute invalid-command arg', error);
+    expect(log.error).toHaveBeenCalledWith('Failed to execute invalid-command arg');
     expect(mockProcessExit).toHaveBeenCalledWith(1);
   });
 });
