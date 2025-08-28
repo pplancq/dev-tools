@@ -8,13 +8,6 @@ export default defineConfig({
       ignores: ['dist'],
     },
     {
-      files: ['index.js'],
-      rules: {
-        'import/extensions': 'off',
-        'import/no-unresolved': 'off',
-      },
-    },
-    {
       rules: {
         'import/no-extraneous-dependencies': [
           'error',
