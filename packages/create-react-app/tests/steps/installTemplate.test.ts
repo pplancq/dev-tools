@@ -42,4 +42,10 @@ describe('installTemplate', () => {
     expect(existsSync(`${testPath}/package.json`)).toBeTruthy();
     expect(existsSync(`${testPath}/package-lock.json`)).toBeFalsy();
   });
+
+  it('should copy the template and remove node_modules directory', async () => {
+    await installTemplate(testPath, testTemplate);
+
+    expect(existsSync(`${testPath}/node_modules`)).toBeFalsy();
+  });
 });

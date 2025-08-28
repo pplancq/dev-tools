@@ -39,7 +39,6 @@ export const main = async () => {
   delete repoPackageJson.engines;
 
   writeFileSync(resolve(repoDir, 'package.json'), JSON.stringify(repoPackageJson, null, 2), { encoding: 'utf-8' });
-  rmSync(`${repoDir}/node_modules`, { recursive: true });
   rmSync(`${repoDir}/LICENSE`);
   rmSync(`${repoDir}/CHANGELOG.md`);
   rmSync(`${repoDir}/README.md`);

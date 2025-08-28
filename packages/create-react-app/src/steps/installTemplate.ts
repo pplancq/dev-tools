@@ -15,6 +15,7 @@ export const installTemplate = async (repoDir: string, reactTemplate: string) =>
   await runCommand('npm', ['install', reactTemplate, '--install-strategy=nested'], { cwd: repoDir });
   cpSync(templateDir, repoDir, { recursive: true, dereference: true });
   rmSync(`${repoDir}/package-lock.json`);
+  rmSync(`${repoDir}/node_modules`, { recursive: true });
 
   spinnerInstance.stop('React template installed.');
 };
