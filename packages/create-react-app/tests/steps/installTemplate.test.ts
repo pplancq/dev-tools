@@ -31,7 +31,9 @@ describe('installTemplate', () => {
   it('should call npm install with the correct template and directory', async () => {
     await installTemplate(testPath, testTemplate);
 
-    expect(runCommand).toHaveBeenCalledWith('npm', ['install', testTemplate], { cwd: testPath });
+    expect(runCommand).toHaveBeenCalledWith('npm', ['install', testTemplate, '--install-strategy=nested'], {
+      cwd: testPath,
+    });
   });
 
   it('should copy the template and remove package-lock.json', async () => {

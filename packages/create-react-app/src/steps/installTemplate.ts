@@ -12,7 +12,7 @@ export const installTemplate = async (repoDir: string, reactTemplate: string) =>
     `Installing react template from ${pc.green(reactTemplate)}. This might take a couple of minutes.`,
   );
 
-  await runCommand('npm', ['install', reactTemplate], { cwd: repoDir });
+  await runCommand('npm', ['install', reactTemplate, '--install-strategy=nested'], { cwd: repoDir });
   cpSync(templateDir, repoDir, { recursive: true, dereference: true });
   rmSync(`${repoDir}/package-lock.json`);
 
