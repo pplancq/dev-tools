@@ -10,6 +10,9 @@
     "directory": "packages/react-template"
   },
   "type": "module",
+  "bin": {
+    "template-install": "bin/template-install.js"
+  },
   "scripts": {
     "start": "rsbuild dev",
     "start:mock": "rsbuild dev --env-mode mock",
