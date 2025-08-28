@@ -10,13 +10,13 @@
     "directory": "packages/create-react-app"
   },
   "bin": {
-    "create-react-app": "index.js"
+    "create-react-app": "dist/main.js"
   },
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
   "type": "module",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
     "start": "rslib build --watch",
     "build": "rslib build",

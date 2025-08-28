@@ -4,7 +4,7 @@ export default defineConfig({
   source: {
     tsconfigPath: './tsconfig.build.json',
     entry: {
-      main: './src/main.ts',
+      main: './src/index.ts',
     },
   },
   lib: [
