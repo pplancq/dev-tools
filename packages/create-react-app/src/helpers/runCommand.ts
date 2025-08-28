@@ -1,5 +1,4 @@
-import { endProcess } from '@/helpers/endProcess';
-import { log } from '@clack/prompts';
+import { RunCommandError } from '@/Error/RunCommandError';
 import type { ExecFileOptions } from 'child_process';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
@@ -11,7 +10,6 @@ export const runCommand = async (command: string, args: string[] = [], options?:
     await execFileAsync(command, args, options);
   } catch {
     const commandStr = [command, ...args].join(' ');
-    log.error(`Failed to execute ${commandStr}`);
-    endProcess(true);
+    throw new RunCommandError(`Failed to execute ${commandStr}`);
   }
 };

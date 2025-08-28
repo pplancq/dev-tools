@@ -1,5 +1,5 @@
+import { RunCommandError } from '@/Error/RunCommandError';
 import { runCommand } from '@/helpers/runCommand';
-import { log } from '@clack/prompts';
 import { execFile } from 'node:child_process';
 import { describe, expect, it, type Mock, vi } from 'vitest';
 
@@ -38,16 +38,13 @@ describe('runCommand', () => {
     expect(execFile).toHaveBeenCalledWith('echo', ['Hello World'], testOptions, expect.any(Function));
   });
 
-  it('should handle command execution error', async () => {
+  it('should throw an error if command is not valid', async () => {
     const error = new Error('Command failed');
     (execFile as unknown as Mock).mockImplementation((command, args, options, callback) => {
       const cb = typeof options === 'function' ? options : callback;
       cb(error);
     });
 
-    await runCommand('invalid-command', ['arg']);
-
-    expect(log.error).toHaveBeenCalledWith('Failed to execute invalid-command arg');
-    expect(mockProcessExit).toHaveBeenCalledWith(1);
+    await expect(runCommand('invalid-command', ['arg'])).rejects.toThrow(RunCommandError);
   });
 });
