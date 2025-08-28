@@ -1,3 +1,5 @@
+import { RunCommandError } from '@/Error/RunCommandError';
+import { runCommand } from '@/helpers/runCommand';
 import { createRepository } from '@/steps/createRepository';
 import { getInteractiveArgs } from '@/steps/getInteractiveArgs';
 import { getPromptArgs } from '@/steps/getPromptArgs';
@@ -6,9 +8,7 @@ import { initializeGit } from '@/steps/initializeGit';
 import { installPackage } from '@/steps/installPackage';
 import { installTemplate } from '@/steps/installTemplate';
 import { validatePromptArgs } from '@/steps/validatePromptArgs';
-import { intro, log, note, outro } from '@clack/prompts';
-import { readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { intro, log, note } from '@clack/prompts';
 import pc from 'picocolors';
 
 export const main = async () => {
@@ -24,25 +24,15 @@ export const main = async () => {
 
   await installTemplate(repoDir, '@pplancq/react-template');
 
-  renameSync(`${repoDir}/_gitignore`, `${repoDir}/.gitignore`);
-  const repoPackageJson = JSON.parse(readFileSync(resolve(repoDir, 'package.json'), { encoding: 'utf-8' }));
-  repoPackageJson.name = projectName;
-  repoPackageJson.description = projectName;
-  const { _prepare, _postinstall, ...scripts } = repoPackageJson.scripts;
-  repoPackageJson.scripts = { ...scripts, prepare: _prepare, postinstall: _postinstall };
-  repoPackageJson.version = '0.1.0';
+  try {
+    await runCommand('npx', ['template-install', projectName], { cwd: repoDir });
+  } catch (error) {
+    if (!(error instanceof RunCommandError)) {
+      throw error;
+    }
 
-  delete repoPackageJson.author;
-  delete repoPackageJson.repository;
-  delete repoPackageJson.bugs;
-  delete repoPackageJson.keywords;
-  delete repoPackageJson.engines;
-
-  writeFileSync(resolve(repoDir, 'package.json'), JSON.stringify(repoPackageJson, null, 2), { encoding: 'utf-8' });
-  rmSync(`${repoDir}/LICENSE`);
-  rmSync(`${repoDir}/CHANGELOG.md`);
-  rmSync(`${repoDir}/README.md`);
-  renameSync(`${repoDir}/_README.md`, `${repoDir}/README.md`);
+    log.error('Failed to run template-install command');
+  }
 
   await initializeGit(repoDir, skipGitInit);
 
@@ -63,6 +53,4 @@ We suggest that you begin by typing:
  ${pc.cyan('npm start')}`,
     'What next?',
   );
-
-  outro('Happy hacking!');
 };
