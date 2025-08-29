@@ -45,4 +45,21 @@ describe('getInteractiveArgs', () => {
 
     expect(skipGitInit).toBeTruthy();
   });
+
+  it('returns the provided template when specified', async () => {
+    (text as Mock).mockResolvedValueOnce('my-project');
+    (confirm as Mock).mockResolvedValue(false);
+    const { template } = await getInteractiveArgs({ template: 'custom-template' });
+
+    expect(template).toStrictEqual('custom-template');
+  });
+
+  it('prompts for template when not provided and useCustomTemplate is true', async () => {
+    (text as Mock).mockResolvedValueOnce('my-project');
+    (confirm as Mock).mockResolvedValue(true);
+    (text as Mock).mockResolvedValueOnce('custom-template');
+    const { template } = await getInteractiveArgs({});
+
+    expect(template).toStrictEqual('custom-template');
+  });
 });
