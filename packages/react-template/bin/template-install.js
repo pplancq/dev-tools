@@ -27,5 +27,4 @@ renameSync(`${repoDir}/_README.md`, `${repoDir}/README.md`);
 
 rmSync(`${repoDir}/LICENSE`);
 rmSync(`${repoDir}/CHANGELOG.md`);
-rmSync(`${repoDir}/README.md`);
 rmSync(`${repoDir}/bin`, { recursive: true });
