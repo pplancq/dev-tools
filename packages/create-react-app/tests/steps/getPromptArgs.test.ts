@@ -69,6 +69,17 @@ describe('processArgv', () => {
     expect(result).toStrictEqual({});
   });
 
+  it.each([{ arg: '--template' }, { arg: '-t' }])(
+    'should return the template when $arg flag is provided',
+    ({ arg }) => {
+      process.argv = ['node', 'script.js', arg, 'my-template'];
+
+      const result = getPromptArgs();
+
+      expect(result).toStrictEqual({ template: 'my-template' });
+    },
+  );
+
   it.each([{ arg: '--version' }, { arg: '-v' }])('should print version when $arg flag is provided', ({ arg }) => {
     process.argv = ['node', 'script.js', arg];
 

@@ -17,11 +17,11 @@ export const main = async () => {
 
   validatePromptArgs(args);
 
-  const { projectName, skipDepInstall, skipGitInit } = await getInteractiveArgs(args);
+  const { projectName, skipDepInstall, skipGitInit, template } = await getInteractiveArgs(args);
 
   const { repoDir } = await createRepository(projectName);
 
-  await installTemplate(repoDir, '@pplancq/react-template');
+  await installTemplate(repoDir, template);
 
   await postInstallTemplate(projectName, repoDir);
 
