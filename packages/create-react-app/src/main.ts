@@ -1,5 +1,3 @@
-import { RunCommandError } from '@/Error/RunCommandError';
-import { runCommand } from '@/helpers/runCommand';
 import { createRepository } from '@/steps/createRepository';
 import { getInteractiveArgs } from '@/steps/getInteractiveArgs';
 import { getPromptArgs } from '@/steps/getPromptArgs';
@@ -7,6 +5,7 @@ import { gitCommit } from '@/steps/gitCommit';
 import { initializeGit } from '@/steps/initializeGit';
 import { installPackage } from '@/steps/installPackage';
 import { installTemplate } from '@/steps/installTemplate';
+import { postInstallTemplate } from '@/steps/postInstallTemplate';
 import { validatePromptArgs } from '@/steps/validatePromptArgs';
 import { intro, log, note } from '@clack/prompts';
 import pc from 'picocolors';
@@ -24,15 +23,7 @@ export const main = async () => {
 
   await installTemplate(repoDir, '@pplancq/react-template');
 
-  try {
-    await runCommand('npx', ['template-install', projectName], { cwd: repoDir });
-  } catch (error) {
-    if (!(error instanceof RunCommandError)) {
-      throw error;
-    }
-
-    log.error('Failed to run template-install command');
-  }
+  await postInstallTemplate(projectName, repoDir);
 
   await initializeGit(repoDir, skipGitInit);
 
