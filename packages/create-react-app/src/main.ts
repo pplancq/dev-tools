@@ -33,14 +33,13 @@ export const main = async () => {
 
   log.success(`${pc.yellow('Success \\o/')}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
   note(
-    `Inside that directory, you can run several commands:
- ${pc.cyan('npm start')}            Starts the development server.
- ${pc.cyan('npm run build')}        Bundles the app into static files for production.
- ${pc.cyan('npm test')}             Runs tests using Vitest and Playwright.
- ${pc.cyan('npm run remove:demo')}  Remove the demo application.
-
-We suggest that you begin by typing:
- ${pc.cyan('cd')} ${projectName}
+    `We suggest that you begin by typing:
+ ${pc.cyan('cd')} ${projectName}${
+   skipDepInstall
+     ? `
+ ${pc.cyan('npm install')}`
+     : ''
+ }
  ${pc.cyan('npm start')}`,
     'What next?',
   );
