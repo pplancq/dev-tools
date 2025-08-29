@@ -10,6 +10,7 @@ vi.mock('@clack/prompts', () => ({
   outro: vi.fn(),
   log: {
     error: vi.fn(),
+    warn: vi.fn(),
   },
   spinner: vi.fn().mockImplementation(() => ({
     start: vi.fn(),
