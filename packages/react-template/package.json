@@ -93,7 +93,7 @@
     "stylelint-webpack-plugin": "^5.0.1",
     "tsc-files": "^1.1.4",
     "typescript": "^5.9.2",
-    "vite-plugin-svgr": "^4.3.0",
+    "vite-plugin-svgr": "^4.5.0",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.2.4",
     "vitest-axe": "^1.0.0-pre.5",
