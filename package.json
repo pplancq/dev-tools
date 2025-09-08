@@ -69,7 +69,7 @@
   },
   "volta": {
     "node": "22.18.0",
-    "npm": "11.5.2"
+    "npm": "11.6.0"
   },
   "optionalDependencies": {
     "@rollup/rollup-darwin-arm64": "^4.48.1",
