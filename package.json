@@ -45,7 +45,7 @@
     "@pplancq/prettier-config": "*",
     "concurrently": "^9.2.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^16.1.6",
     "prettier": "^3.6.2",
     "semantic-release": "^24.2.7"
   },
