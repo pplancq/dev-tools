@@ -61,7 +61,7 @@
     "@pplancq/prettier-config": "^1.2.7",
     "eslint": "^9.34.0",
     "eslint-plugin-prettier": "*",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^16.1.6",
     "prettier": "^3.6.2"
   },
   "engines": {
