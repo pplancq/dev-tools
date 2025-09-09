@@ -77,6 +77,6 @@
     "@rspack/binding-darwin-arm64": "^1.4.11",
     "@rspack/binding-linux-x64-gnu": "^1.4.11",
     "sass-embedded-darwin-arm64": "^1.90.0",
-    "sass-embedded-linux-x64": "^1.90.0"
+    "sass-embedded-linux-x64": "^1.92.1"
   }
 }
