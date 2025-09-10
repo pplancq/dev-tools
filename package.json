@@ -73,7 +73,7 @@
   },
   "optionalDependencies": {
     "@rollup/rollup-darwin-arm64": "^4.50.0",
-    "@rollup/rollup-linux-x64-gnu": "^4.48.1",
+    "@rollup/rollup-linux-x64-gnu": "^4.50.1",
     "@rspack/binding-darwin-arm64": "^1.5.2",
     "@rspack/binding-linux-x64-gnu": "^1.5.2",
     "sass-embedded-darwin-arm64": "^1.90.0",
