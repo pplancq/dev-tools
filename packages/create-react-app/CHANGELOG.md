@@ -1,3 +1,34 @@
+## @pplancq/create-react-app [2.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.5.1...@pplancq/create-react-app@2.0.0) (2025-09-15)
+
+### ⚠ BREAKING CHANGES
+
+* **create-react-app:** only npm is supported for project creation, yarn and pnpm are no longer compatible
+
+### Features
+
+* **create-react-app:** add interactive project name prompt with cancellation support ([3f1dba7](https://github.com/pplancq/dev-tools/commit/3f1dba752c7aa49cba9eb1b78671a33f94102d32))
+* **react-template:** add option --template to use a custom template ([12c0007](https://github.com/pplancq/dev-tools/commit/12c0007f50d1c49941d5923fa0ee92a681ac6dd5))
+* **create-react-app:** add option to skip git initialization during project setup ([6deaef9](https://github.com/pplancq/dev-tools/commit/6deaef958b485f6413067eb0dff111fd0c4c16ea))
+* **react-template:** add post-install script check and warning ([851defc](https://github.com/pplancq/dev-tools/commit/851defcd935820a863e2efe8bc22c452710ffac6))
+* **create-react-app:** add project name validation to interactive prompt ([8d5ac97](https://github.com/pplancq/dev-tools/commit/8d5ac97a69b1f351ffa54234a3f34c3c4a413451))
+* **create-react-app:** add skip dependency installation option to interactive prompt ([3b34c55](https://github.com/pplancq/dev-tools/commit/3b34c55f7800b93bd7159649e79278448012b7da))
+* **create-react-app:** argument project name is now optional ([a2eee97](https://github.com/pplancq/dev-tools/commit/a2eee976b7ce3d36b3f29110f7e4071b9e392a0d))
+* **create-react-app:** enhance interactive prompt with improved logging and user guidance ([49c51e5](https://github.com/pplancq/dev-tools/commit/49c51e505f66fd49c8d954231be90b0a4e2d066b))
+* **create-react-app:** implement spinner feedback for all long-running steps ([6392686](https://github.com/pplancq/dev-tools/commit/6392686dff4d70fa0af25b84facd719f56c2f9a4))
+* **create-react-app:** migrate build configuration to rslib and typescript ([75ff896](https://github.com/pplancq/dev-tools/commit/75ff896fe524b469c868e3413338f369c25c0a24))
+* **create-react-app:** move in project name validation check existing directories ([cf97c03](https://github.com/pplancq/dev-tools/commit/cf97c03144ed08b4683b06b71a8b5945ad62c8ba))
+* **create-react-app:** remove yarn and pnpm compatibility ([74707ff](https://github.com/pplancq/dev-tools/commit/74707ff1afa0f18085353b1da1bbbab7f8f550a7))
+* **create-react-app:** replace chalk with picocolors for console output ([2f035f4](https://github.com/pplancq/dev-tools/commit/2f035f45adb424d455a3ead478acdac7c6ab2184))
+* **react-template:** run post-install template script ([eefbd6e](https://github.com/pplancq/dev-tools/commit/eefbd6e7430b305d90d2efa01ba794705b3570e2))
+* **create-react-app:** update npm install template command to use nested strategy ([55dd48d](https://github.com/pplancq/dev-tools/commit/55dd48d7017cfe98f27e145885b2604cec3ecfdc))
+
+### Bug Fixes
+
+* **create-react-app:** remove node_modules directory after template installation ([37ff28a](https://github.com/pplancq/dev-tools/commit/37ff28a3f64e2c503b84c199a5746d562d478a93))
+* **create-react-app:** replace console.error with log.error for better logging ([531dd1d](https://github.com/pplancq/dev-tools/commit/531dd1d0eb58f13030d25226e8b05e50d837e991))
+* **create-react-app:** runCommand to use execFileSync for improved security ([79f34ef](https://github.com/pplancq/dev-tools/commit/79f34ef09a5549a9e0de47cf4c0dea9310e399aa))
+* **deps:** update dependency chalk to ^5.6.0 ([614fe09](https://github.com/pplancq/dev-tools/commit/614fe0955f6b6e445a79d682860ce69810942667))
+
 ## @pplancq/create-react-app [1.5.1](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.5.0...@pplancq/create-react-app@1.5.1) (2025-08-11)
 
 ### Bug Fixes
