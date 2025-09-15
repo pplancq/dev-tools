@@ -1,3 +1,14 @@
+## @pplancq/stylelint-config [4.0.4](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@4.0.3...@pplancq/stylelint-config@4.0.4) (2025-09-15)
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-recommended-scss to ^16.0.1 ([eb7515f](https://github.com/pplancq/dev-tools/commit/eb7515f8ca806ac294127209ef3beb72d86d1d34))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 5.0.5
+
 ## @pplancq/stylelint-config [4.0.3](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@4.0.2...@pplancq/stylelint-config@4.0.3) (2025-08-11)
 
 ### Bug Fixes
