@@ -1,3 +1,29 @@
+## @pplancq/react-template [2.7.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.6.8...@pplancq/react-template@2.7.0) (2025-09-15)
+
+### Features
+
+* **react-template:** add @msw/playwright fixture support for tests ([7e48cc7](https://github.com/pplancq/dev-tools/commit/7e48cc7b99988649cc65a6eb12971019e22c74ff))
+* **react-template:** add template installation script for project setup ([a00aed6](https://github.com/pplancq/dev-tools/commit/a00aed680a7e6ac1545ee93696f04504233a5950))
+* **react-template:** simplify linting command to exclude fix tasks ([9629197](https://github.com/pplancq/dev-tools/commit/9629197067f9f948262962db6d8e66189b33ce0b))
+* **react-template:** update coverage reporter configuration ([544eaa0](https://github.com/pplancq/dev-tools/commit/544eaa065f5f18585728036e5987ac29b932f644))
+
+### Bug Fixes
+
+* **react-template:** improve component unmounting logic for accessibility ([8879708](https://github.com/pplancq/dev-tools/commit/88797086084bbbe8a615ad1f45b61792a6627fb6))
+* **deps:** update dependency react-router to ^7.8.1 ([55ea372](https://github.com/pplancq/dev-tools/commit/55ea37273894b0f842c176f47d85a0a8eaf3b62f))
+* **deps:** update dependency react-router to ^7.8.2 ([575e7af](https://github.com/pplancq/dev-tools/commit/575e7af2f422d1f9798b76c3618d6e952674c6d4))
+* **deps:** update react-query mono repo to ^5.85.3 ([ba66607](https://github.com/pplancq/dev-tools/commit/ba6660714bb31c8c0f10d7d318578fcbb7835573))
+* **deps:** update react-query mono repo to ^5.85.5 ([c8451ff](https://github.com/pplancq/dev-tools/commit/c8451ffc7a611ae779916d519b6a96fda91b5212))
+* **deps:** update react-query mono repo to ^5.87.1 ([0630ba9](https://github.com/pplancq/dev-tools/commit/0630ba9e1a6306e8f60f53a837c886c6de79613c))
+* **deps:** update react-query mono repo to ^5.87.4 ([bbd8fca](https://github.com/pplancq/dev-tools/commit/bbd8fcae5d30970269234f1b78db81d6a0c2ff54))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 5.0.5
+* **@pplancq/postcss-config:** upgraded to 2.1.15
+* **@pplancq/stylelint-config:** upgraded to 4.0.4
+
 ## @pplancq/react-template [2.6.8](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.6.7...@pplancq/react-template@2.6.8) (2025-08-11)
 
 ### Bug Fixes
