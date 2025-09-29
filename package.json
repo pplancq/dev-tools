@@ -75,7 +75,7 @@
     "@rollup/rollup-linux-x64-gnu": "^4.52.0",
     "@rspack/binding-darwin-arm64": "^1.5.5",
     "@rspack/binding-linux-x64-gnu": "^1.5.5",
-    "sass-embedded-darwin-arm64": "^1.92.1",
+    "sass-embedded-darwin-arm64": "^1.93.2",
     "sass-embedded-linux-x64": "^1.93.2"
   }
 }
