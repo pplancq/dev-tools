@@ -25,7 +25,9 @@
     "lint:prettier": "npm run lint:prettier --workspaces --if-present",
     "lint:prettier:fix": "npm run lint:prettier:fix --workspaces --if-present",
     "release": "multi-semantic-release",
+    "prepackage:check": "[ -e node_modules/.bin/npm ] && mv node_modules/.bin/npm node_modules/.bin/npmTemp || true",
     "package:check": "npm exec --yes package-lock-utd@1.1.3",
+    "postpackage:check": "[ -e node_modules/.bin/npmTemp ] && mv node_modules/.bin/npmTemp node_modules/.bin/npm || true",
     "prepare": "husky"
   },
   "bugs": {
