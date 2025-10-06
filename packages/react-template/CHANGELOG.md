@@ -1,3 +1,16 @@
+## @pplancq/react-template [2.7.3](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.2...@pplancq/react-template@2.7.3) (2025-10-06)
+
+### Bug Fixes
+
+* **deps:** update dependency react-router to ^7.9.3 ([8638a8b](https://github.com/pplancq/dev-tools/commit/8638a8b3c294981f09594e6b8879c8c4edad7593))
+* **deps:** update react monorepo to ^19.2.0 ([fe6e789](https://github.com/pplancq/dev-tools/commit/fe6e7895fe531844beaa7c51bd3157d7e4a785d5))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 5.0.8
+* **@pplancq/stylelint-config:** upgraded to 4.0.5
+
 ## @pplancq/react-template [2.7.2](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.1...@pplancq/react-template@2.7.2) (2025-09-29)
 
 ### Bug Fixes
