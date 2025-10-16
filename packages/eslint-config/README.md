@@ -62,6 +62,10 @@ If you set `enablePrettier: 'on'`, you will need to install the following packag
 npm install --save-dev prettier eslint-plugin-prettier
 ```
 
+## Rules Documentation
+
+For a complete list of all active ESLint rules in each configuration, please refer to the [Rules Documentation](./docs/rules.md).
+
 ## Migration
 
 If you are upgrading from version 3 to version 4 of `@pplancq/eslint-config`, please refer to the [Migration Guide](./MIGRATION.md#migration-guide-pplancqeslint-config-v3-to-v4) for detailed instructions.

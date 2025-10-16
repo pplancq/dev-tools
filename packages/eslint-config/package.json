@@ -19,6 +19,7 @@
     "bin",
     "rules",
     "main.js",
+    "docs",
     "CHANGELOG.md",
     "LICENSE",
     "README.md"
