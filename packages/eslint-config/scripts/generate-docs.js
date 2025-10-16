@@ -4,34 +4,42 @@ const fs = require('fs');
 const path = require('path');
 
 // Load all rule files
-const baseRules = require('../rules/base.js');
-const importRules = require('../rules/import.js');
-const typescriptRules = require('../rules/typescript.js');
-const reactRules = require('../rules/react.js');
-const reactJsxA11yRules = require('../rules/react-jsx-a11y.js');
-const vitestRules = require('../rules/vitest.js');
-const playwrightRules = require('../rules/playwright.js');
-const prettierRules = require('../rules/prettier.js');
+const baseRules = require('../rules/base');
+const importRules = require('../rules/import');
+const typescriptRules = require('../rules/typescript');
+const reactRules = require('../rules/react');
+const reactJsxA11yRules = require('../rules/react-jsx-a11y');
+const vitestRules = require('../rules/vitest');
+const playwrightRules = require('../rules/playwright');
+const prettierRules = require('../rules/prettier');
 
 // Function to get plugin name from rule name
 function getPluginName(ruleName) {
   if (ruleName.startsWith('@typescript-eslint/')) {
     return '@typescript-eslint/eslint-plugin';
-  } else if (ruleName.startsWith('import/')) {
+  }
+  if (ruleName.startsWith('import/')) {
     return 'eslint-plugin-import';
-  } else if (ruleName.startsWith('react/') || ruleName.startsWith('react-hooks/')) {
+  }
+  if (ruleName.startsWith('react/') || ruleName.startsWith('react-hooks/')) {
     return 'eslint-plugin-react';
-  } else if (ruleName.startsWith('jsx-a11y/')) {
+  }
+  if (ruleName.startsWith('jsx-a11y/')) {
     return 'eslint-plugin-jsx-a11y';
-  } else if (ruleName.startsWith('@vitest/')) {
+  }
+  if (ruleName.startsWith('@vitest/')) {
     return '@vitest/eslint-plugin';
-  } else if (ruleName.startsWith('playwright/')) {
+  }
+  if (ruleName.startsWith('playwright/')) {
     return 'eslint-plugin-playwright';
-  } else if (ruleName.startsWith('prettier/')) {
+  }
+  if (ruleName.startsWith('prettier/')) {
     return 'eslint-plugin-prettier';
-  } else if (ruleName.startsWith('jest-dom/')) {
+  }
+  if (ruleName.startsWith('jest-dom/')) {
     return 'eslint-plugin-jest-dom';
-  } else if (ruleName.startsWith('testing-library/')) {
+  }
+  if (ruleName.startsWith('testing-library/')) {
     return 'eslint-plugin-testing-library';
   }
   return 'eslint (core)';
@@ -42,31 +50,40 @@ function getRuleDocUrl(ruleName) {
   if (ruleName.startsWith('@typescript-eslint/')) {
     const rule = ruleName.replace('@typescript-eslint/', '');
     return `https://typescript-eslint.io/rules/${rule}`;
-  } else if (ruleName.startsWith('import/')) {
+  }
+  if (ruleName.startsWith('import/')) {
     const rule = ruleName.replace('import/', '');
     return `https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/${rule}.md`;
-  } else if (ruleName.startsWith('react/')) {
+  }
+  if (ruleName.startsWith('react/')) {
     const rule = ruleName.replace('react/', '');
     return `https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/${rule}.md`;
-  } else if (ruleName.startsWith('react-hooks/')) {
+  }
+  if (ruleName.startsWith('react-hooks/')) {
     const rule = ruleName.replace('react-hooks/', '');
     return `https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#${rule}`;
-  } else if (ruleName.startsWith('jsx-a11y/')) {
+  }
+  if (ruleName.startsWith('jsx-a11y/')) {
     const rule = ruleName.replace('jsx-a11y/', '');
     return `https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/${rule}.md`;
-  } else if (ruleName.startsWith('@vitest/')) {
+  }
+  if (ruleName.startsWith('@vitest/')) {
     const rule = ruleName.replace('@vitest/', '');
     return `https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/${rule}.md`;
-  } else if (ruleName.startsWith('playwright/')) {
+  }
+  if (ruleName.startsWith('playwright/')) {
     const rule = ruleName.replace('playwright/', '');
     return `https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/${rule}.md`;
-  } else if (ruleName.startsWith('prettier/')) {
+  }
+  if (ruleName.startsWith('prettier/')) {
     const rule = ruleName.replace('prettier/', '');
     return `https://github.com/prettier/eslint-plugin-prettier#${rule}`;
-  } else if (ruleName.startsWith('jest-dom/')) {
+  }
+  if (ruleName.startsWith('jest-dom/')) {
     const rule = ruleName.replace('jest-dom/', '');
     return `https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/${rule}.md`;
-  } else if (ruleName.startsWith('testing-library/')) {
+  }
+  if (ruleName.startsWith('testing-library/')) {
     const rule = ruleName.replace('testing-library/', '');
     return `https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/${rule}.md`;
   }
@@ -78,11 +95,11 @@ function getRuleDocUrl(ruleName) {
 function extractDescription(ruleName, ruleFile) {
   const fileContent = fs.readFileSync(ruleFile, 'utf8');
   const lines = fileContent.split('\n');
-  
+
   // Find the rule name in the file
   const rulePattern = new RegExp(`['"]${ruleName.replace('/', '\\/')}['"]:`);
   let descriptionLine = null;
-  
+
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     if (rulePattern.test(line)) {
@@ -103,7 +120,7 @@ function extractDescription(ruleName, ruleFile) {
       break;
     }
   }
-  
+
   return descriptionLine || '';
 }
 
@@ -111,21 +128,15 @@ function extractDescription(ruleName, ruleFile) {
 function processRules(rulesConfig, ruleFile) {
   const rules = [];
   const rulesObj = rulesConfig.rules || {};
-  
-  for (const [ruleName, ruleValue] of Object.entries(rulesObj)) {
-    let severity = null;
-    
-    if (Array.isArray(ruleValue)) {
-      severity = ruleValue[0];
-    } else {
-      severity = ruleValue;
-    }
-    
+
+  Object.entries(rulesObj).forEach(([ruleName, ruleValue]) => {
+    const severity = Array.isArray(ruleValue) ? ruleValue[0] : ruleValue;
+
     // Only include warn and error rules
     if (severity === 'warn' || severity === 'error' || severity === 2 || severity === 1) {
-      const mode = (severity === 'error' || severity === 2) ? 'error' : 'warn';
+      const mode = severity === 'error' || severity === 2 ? 'error' : 'warn';
       const description = extractDescription(ruleName, ruleFile);
-      
+
       rules.push({
         name: ruleName,
         mode,
@@ -134,8 +145,8 @@ function processRules(rulesConfig, ruleFile) {
         url: getRuleDocUrl(ruleName),
       });
     }
-  }
-  
+  });
+
   return rules.sort((a, b) => a.name.localeCompare(b.name));
 }
 
@@ -144,19 +155,19 @@ function generateMarkdownTable(rules) {
   if (rules.length === 0) {
     return 'Aucune règle active.\n';
   }
-  
+
   let markdown = '| Règle | Mode | Description | Plugin |\n';
   markdown += '|-------|------|-------------|--------|\n';
-  
-  for (const rule of rules) {
+
+  rules.forEach(rule => {
     const name = `[${rule.name}](${rule.url})`;
-    const mode = rule.mode;
+    const { mode } = rule;
     const description = rule.description || '-';
-    const plugin = rule.plugin;
-    
+    const { plugin } = rule;
+
     markdown += `| ${name} | ${mode} | ${description} | ${plugin} |\n`;
-  }
-  
+  });
+
   return markdown;
 }
 
@@ -164,82 +175,101 @@ function generateMarkdownTable(rules) {
 function generateDocumentation() {
   const rootDir = path.join(__dirname, '..');
   const docsDir = path.join(rootDir, 'docs');
-  
+
   // Create docs directory if it doesn't exist
   if (!fs.existsSync(docsDir)) {
     fs.mkdirSync(docsDir, { recursive: true });
   }
-  
+
   // Process each configuration section
-  console.log('Processing base rules...');
+  console.info('Processing base rules...');
   const baseRulesProcessed = processRules(baseRules.baseRules, path.join(rootDir, 'rules', 'base.js'));
   const importRulesProcessed = processRules(importRules.importRules, path.join(rootDir, 'rules', 'import.js'));
-  const typescriptRulesProcessed = processRules(typescriptRules.typescriptRules, path.join(rootDir, 'rules', 'typescript.js'));
-  
-  console.log('Processing React rules...');
+  const typescriptRulesProcessed = processRules(
+    typescriptRules.typescriptRules,
+    path.join(rootDir, 'rules', 'typescript.js'),
+  );
+
+  console.info('Processing React rules...');
   const reactRulesProcessed = processRules(reactRules.reactRules, path.join(rootDir, 'rules', 'react.js'));
-  const reactTypescriptRulesProcessed = processRules(reactRules.reactTypescriptRules, path.join(rootDir, 'rules', 'react.js'));
+  const reactTypescriptRulesProcessed = processRules(
+    reactRules.reactTypescriptRules,
+    path.join(rootDir, 'rules', 'react.js'),
+  );
   const reactTestRulesProcessed = processRules(reactRules.reactTestRules, path.join(rootDir, 'rules', 'react.js'));
-  const reactJsxA11yRulesProcessed = processRules(reactJsxA11yRules.reactJsxA11yRules, path.join(rootDir, 'rules', 'react-jsx-a11y.js'));
-  
-  console.log('Processing Vitest rules...');
+  const reactJsxA11yRulesProcessed = processRules(
+    reactJsxA11yRules.reactJsxA11yRules,
+    path.join(rootDir, 'rules', 'react-jsx-a11y.js'),
+  );
+
+  console.info('Processing Vitest rules...');
   const vitestRulesProcessed = processRules(vitestRules.vitestRules, path.join(rootDir, 'rules', 'vitest.js'));
-  
-  console.log('Processing Playwright rules...');
-  const playwrightRulesProcessed = processRules(playwrightRules.playwrightRules, path.join(rootDir, 'rules', 'playwright.js'));
-  
-  console.log('Processing Prettier rules...');
+
+  console.info('Processing Playwright rules...');
+  const playwrightRulesProcessed = processRules(
+    playwrightRules.playwrightRules,
+    path.join(rootDir, 'rules', 'playwright.js'),
+  );
+
+  console.info('Processing Prettier rules...');
   const prettierRulesProcessed = processRules(prettierRules.prettierRules, path.join(rootDir, 'rules', 'prettier.js'));
-  
+
   // Combine all base rules (base + import + typescript)
   const allBaseRules = [...baseRulesProcessed, ...importRulesProcessed, ...typescriptRulesProcessed];
-  
+
   // Combine all React rules
-  const allReactRules = [...reactRulesProcessed, ...reactTypescriptRulesProcessed, ...reactTestRulesProcessed, ...reactJsxA11yRulesProcessed];
-  
+  const allReactRules = [
+    ...reactRulesProcessed,
+    ...reactTypescriptRulesProcessed,
+    ...reactTestRulesProcessed,
+    ...reactJsxA11yRulesProcessed,
+  ];
+
   // Generate markdown content
   let markdown = '# Documentation des Règles ESLint\n\n';
-  markdown += 'Cette documentation liste toutes les règles ESLint actives dans la configuration `@pplancq/eslint-config`.\n\n';
+  markdown +=
+    'Cette documentation liste toutes les règles ESLint actives dans la configuration `@pplancq/eslint-config`.\n\n';
   markdown += '## Table des Matières\n\n';
   markdown += '- [Configuration de Base](#configuration-de-base)\n';
   markdown += '- [Configuration React](#configuration-react)\n';
   markdown += '- [Configuration Vitest](#configuration-vitest)\n';
   markdown += '- [Configuration Playwright](#configuration-playwright)\n';
   markdown += '- [Configuration Prettier](#configuration-prettier)\n\n';
-  
+
   markdown += '## Configuration de Base\n\n';
   markdown += 'Règles actives avec `defineConfig()` (configuration par défaut).\n\n';
-  markdown += 'Cette configuration inclut les règles de base, les règles d\'import et les règles TypeScript.\n\n';
+  markdown += "Cette configuration inclut les règles de base, les règles d'import et les règles TypeScript.\n\n";
   markdown += generateMarkdownTable(allBaseRules);
   markdown += '\n';
-  
+
   markdown += '## Configuration React\n\n';
   markdown += 'Règles additionnelles actives avec `defineConfig({ enableReact: true })`.\n\n';
-  markdown += 'Cette configuration ajoute les règles React, React Hooks, JSX a11y et Testing Library aux règles de base.\n\n';
+  markdown +=
+    'Cette configuration ajoute les règles React, React Hooks, JSX a11y et Testing Library aux règles de base.\n\n';
   markdown += generateMarkdownTable(allReactRules);
   markdown += '\n';
-  
+
   markdown += '## Configuration Vitest\n\n';
   markdown += 'Règles additionnelles actives avec `defineConfig({ enableVitest: true })`.\n\n';
   markdown += generateMarkdownTable(vitestRulesProcessed);
   markdown += '\n';
-  
+
   markdown += '## Configuration Playwright\n\n';
   markdown += 'Règles additionnelles actives avec `defineConfig({ enablePlaywright: true })`.\n\n';
   markdown += generateMarkdownTable(playwrightRulesProcessed);
   markdown += '\n';
-  
+
   markdown += '## Configuration Prettier\n\n';
-  markdown += 'Règles additionnelles actives avec `defineConfig({ enablePrettier: \'on\' })`.\n\n';
+  markdown += "Règles additionnelles actives avec `defineConfig({ enablePrettier: 'on' })`.\n\n";
   markdown += 'Cette configuration active Prettier et désactive les règles de formatage conflictuelles.\n\n';
   markdown += generateMarkdownTable(prettierRulesProcessed);
   markdown += '\n';
-  
+
   // Write to file
   const outputPath = path.join(docsDir, 'rules.md');
   fs.writeFileSync(outputPath, markdown);
-  console.log(`Documentation generated successfully at ${outputPath}`);
-  
+  console.info(`Documentation generated successfully at ${outputPath}`);
+
   return outputPath;
 }
 
