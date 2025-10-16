@@ -153,11 +153,11 @@ function processRules(rulesConfig, ruleFile) {
 // Generate markdown table
 function generateMarkdownTable(rules) {
   if (rules.length === 0) {
-    return 'Aucune règle active.\n';
+    return 'No active rules.\n';
   }
 
-  let markdown = '| Règle | Mode | Description | Plugin |\n';
-  markdown += '|-------|------|-------------|--------|\n';
+  let markdown = '| Rule | Mode | Description | Plugin |\n';
+  markdown += '|------|------|-------------|--------|\n';
 
   rules.forEach(rule => {
     const name = `[${rule.name}](${rule.url})`;
@@ -226,42 +226,40 @@ function generateDocumentation() {
   ];
 
   // Generate markdown content
-  let markdown = '# Documentation des Règles ESLint\n\n';
-  markdown +=
-    'Cette documentation liste toutes les règles ESLint actives dans la configuration `@pplancq/eslint-config`.\n\n';
-  markdown += '## Table des Matières\n\n';
-  markdown += '- [Configuration de Base](#configuration-de-base)\n';
-  markdown += '- [Configuration React](#configuration-react)\n';
-  markdown += '- [Configuration Vitest](#configuration-vitest)\n';
-  markdown += '- [Configuration Playwright](#configuration-playwright)\n';
-  markdown += '- [Configuration Prettier](#configuration-prettier)\n\n';
+  let markdown = '# ESLint Rules Documentation\n\n';
+  markdown += 'This documentation lists all active ESLint rules in the `@pplancq/eslint-config` configuration.\n\n';
+  markdown += '## Table of Contents\n\n';
+  markdown += '- [Base Configuration](#base-configuration)\n';
+  markdown += '- [React Configuration](#react-configuration)\n';
+  markdown += '- [Vitest Configuration](#vitest-configuration)\n';
+  markdown += '- [Playwright Configuration](#playwright-configuration)\n';
+  markdown += '- [Prettier Configuration](#prettier-configuration)\n\n';
 
-  markdown += '## Configuration de Base\n\n';
-  markdown += 'Règles actives avec `defineConfig()` (configuration par défaut).\n\n';
-  markdown += "Cette configuration inclut les règles de base, les règles d'import et les règles TypeScript.\n\n";
+  markdown += '## Base Configuration\n\n';
+  markdown += 'Active rules with `defineConfig()` (default configuration).\n\n';
+  markdown += 'This configuration includes base rules, import rules, and TypeScript rules.\n\n';
   markdown += generateMarkdownTable(allBaseRules);
   markdown += '\n';
 
-  markdown += '## Configuration React\n\n';
-  markdown += 'Règles additionnelles actives avec `defineConfig({ enableReact: true })`.\n\n';
-  markdown +=
-    'Cette configuration ajoute les règles React, React Hooks, JSX a11y et Testing Library aux règles de base.\n\n';
+  markdown += '## React Configuration\n\n';
+  markdown += 'Additional active rules with `defineConfig({ enableReact: true })`.\n\n';
+  markdown += 'This configuration adds React, React Hooks, JSX a11y, and Testing Library rules to the base rules.\n\n';
   markdown += generateMarkdownTable(allReactRules);
   markdown += '\n';
 
-  markdown += '## Configuration Vitest\n\n';
-  markdown += 'Règles additionnelles actives avec `defineConfig({ enableVitest: true })`.\n\n';
+  markdown += '## Vitest Configuration\n\n';
+  markdown += 'Additional active rules with `defineConfig({ enableVitest: true })`.\n\n';
   markdown += generateMarkdownTable(vitestRulesProcessed);
   markdown += '\n';
 
-  markdown += '## Configuration Playwright\n\n';
-  markdown += 'Règles additionnelles actives avec `defineConfig({ enablePlaywright: true })`.\n\n';
+  markdown += '## Playwright Configuration\n\n';
+  markdown += 'Additional active rules with `defineConfig({ enablePlaywright: true })`.\n\n';
   markdown += generateMarkdownTable(playwrightRulesProcessed);
   markdown += '\n';
 
-  markdown += '## Configuration Prettier\n\n';
-  markdown += "Règles additionnelles actives avec `defineConfig({ enablePrettier: 'on' })`.\n\n";
-  markdown += 'Cette configuration active Prettier et désactive les règles de formatage conflictuelles.\n\n';
+  markdown += '## Prettier Configuration\n\n';
+  markdown += "Additional active rules with `defineConfig({ enablePrettier: 'on' })`.\n\n";
+  markdown += 'This configuration enables Prettier and disables conflicting formatting rules.\n\n';
   markdown += generateMarkdownTable(prettierRulesProcessed);
   markdown += '\n';
 

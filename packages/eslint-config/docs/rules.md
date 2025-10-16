@@ -1,23 +1,23 @@
-# Documentation des Règles ESLint
+# ESLint Rules Documentation
 
-Cette documentation liste toutes les règles ESLint actives dans la configuration `@pplancq/eslint-config`.
+This documentation lists all active ESLint rules in the `@pplancq/eslint-config` configuration.
 
-## Table des Matières
+## Table of Contents
 
-- [Configuration de Base](#configuration-de-base)
-- [Configuration React](#configuration-react)
-- [Configuration Vitest](#configuration-vitest)
-- [Configuration Playwright](#configuration-playwright)
-- [Configuration Prettier](#configuration-prettier)
+- [Base Configuration](#base-configuration)
+- [React Configuration](#react-configuration)
+- [Vitest Configuration](#vitest-configuration)
+- [Playwright Configuration](#playwright-configuration)
+- [Prettier Configuration](#prettier-configuration)
 
-## Configuration de Base
+## Base Configuration
 
-Règles actives avec `defineConfig()` (configuration par défaut).
+Active rules with `defineConfig()` (default configuration).
 
-Cette configuration inclut les règles de base, les règles d'import et les règles TypeScript.
+This configuration includes base rules, import rules, and TypeScript rules.
 
-| Règle | Mode | Description | Plugin |
-|-------|------|-------------|--------|
+| Rule | Mode | Description | Plugin |
+|------|------|-------------|--------|
 | [array-bracket-spacing](https://eslint.org/docs/latest/rules/array-bracket-spacing) | error | - | eslint (core) |
 | [array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return) | error | eslint https://eslint.org | eslint (core) |
 | [arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style) | error | Require braces around arrow function bodies | eslint (core) |
@@ -287,14 +287,14 @@ Cette configuration inclut les règles de base, les règles d'import et les règ
 | [import/extensions](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md) | error | eslint-plugin-import https://github.com/import-js/eslint-plugin-import | eslint-plugin-import |
 | [no-var](https://eslint.org/docs/latest/rules/no-var) | error | - | eslint (core) |
 
-## Configuration React
+## React Configuration
 
-Règles additionnelles actives avec `defineConfig({ enableReact: true })`.
+Additional active rules with `defineConfig({ enableReact: true })`.
 
-Cette configuration ajoute les règles React, React Hooks, JSX a11y et Testing Library aux règles de base.
+This configuration adds React, React Hooks, JSX a11y, and Testing Library rules to the base rules.
 
-| Règle | Mode | Description | Plugin |
-|-------|------|-------------|--------|
+| Rule | Mode | Description | Plugin |
+|------|------|-------------|--------|
 | [import/extensions](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md) | error | eslint-plugin-import https://github.com/import-js/eslint-plugin-import | eslint-plugin-import |
 | [react-hooks/exhaustive-deps](https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#exhaustive-deps) | warn | Verify the list of the dependencies for Hooks like useEffect and similar | eslint-plugin-react |
 | [react-hooks/rules-of-hooks](https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#rules-of-hooks) | error | eslint-plugin-react-hooks https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hook | eslint-plugin-react |
@@ -436,12 +436,12 @@ Cette configuration ajoute les règles React, React Hooks, JSX a11y et Testing L
 | [jsx-a11y/scope](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/scope.md) | error | Enforce scope prop is only used on <th> elements. | eslint-plugin-jsx-a11y |
 | [jsx-a11y/tabindex-no-positive](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/tabindex-no-positive.md) | error | Enforce tabIndex value is not greater than zero. | eslint-plugin-jsx-a11y |
 
-## Configuration Vitest
+## Vitest Configuration
 
-Règles additionnelles actives avec `defineConfig({ enableVitest: true })`.
+Additional active rules with `defineConfig({ enableVitest: true })`.
 
-| Règle | Mode | Description | Plugin |
-|-------|------|-------------|--------|
+| Rule | Mode | Description | Plugin |
+|------|------|-------------|--------|
 | [@vitest/no-conditional-expect](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-conditional-expect.md) | error | Disallow conditional expects | @vitest/eslint-plugin |
 | [@vitest/no-identical-title](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-identical-title.md) | error | Disallow identical titles | @vitest/eslint-plugin |
 | [@vitest/no-interpolation-in-snapshots](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-interpolation-in-snapshots.md) | error | Disallow string interpolation in snapshots | @vitest/eslint-plugin |
@@ -457,12 +457,12 @@ Règles additionnelles actives avec `defineConfig({ enableVitest: true })`.
 | [@vitest/valid-expect](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-expect.md) | error | Enforce valid expect() usage | @vitest/eslint-plugin |
 | [@vitest/valid-title](https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-title.md) | warn | Enforce valid titles | @vitest/eslint-plugin |
 
-## Configuration Playwright
+## Playwright Configuration
 
-Règles additionnelles actives avec `defineConfig({ enablePlaywright: true })`.
+Additional active rules with `defineConfig({ enablePlaywright: true })`.
 
-| Règle | Mode | Description | Plugin |
-|-------|------|-------------|--------|
+| Rule | Mode | Description | Plugin |
+|------|------|-------------|--------|
 | [playwright/expect-expect](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/expect-expect.md) | warn | eslint-plugin-playwright https://github.com/playwright-community/eslint-plugin-playwright | eslint-plugin-playwright |
 | [playwright/max-nested-describe](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/max-nested-describe.md) | warn | playwright/max-nested-describe | eslint-plugin-playwright |
 | [playwright/missing-playwright-await](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/missing-playwright-await.md) | error | playwright/missing-playwright-await | eslint-plugin-playwright |
@@ -492,13 +492,13 @@ Règles additionnelles actives avec `defineConfig({ enablePlaywright: true })`.
 | [playwright/valid-expect-in-promise](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/valid-expect-in-promise.md) | error | playwright/valid-expect-in-promise | eslint-plugin-playwright |
 | [playwright/valid-title](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/valid-title.md) | error | playwright/valid-title | eslint-plugin-playwright |
 
-## Configuration Prettier
+## Prettier Configuration
 
-Règles additionnelles actives avec `defineConfig({ enablePrettier: 'on' })`.
+Additional active rules with `defineConfig({ enablePrettier: 'on' })`.
 
-Cette configuration active Prettier et désactive les règles de formatage conflictuelles.
+This configuration enables Prettier and disables conflicting formatting rules.
 
-| Règle | Mode | Description | Plugin |
-|-------|------|-------------|--------|
+| Rule | Mode | Description | Plugin |
+|------|------|-------------|--------|
 | [prettier/prettier](https://github.com/prettier/eslint-plugin-prettier#prettier) | error | eslint-plugin-prettier https://github.com/prettier/eslint-plugin-prettier | eslint-plugin-prettier |
 
