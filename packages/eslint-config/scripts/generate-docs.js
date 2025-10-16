@@ -109,11 +109,15 @@ function extractDescription(ruleName, ruleFile) {
         if (prevLine.startsWith('//')) {
           // Extract the description from the comment
           const desc = prevLine.replace(/^\/\/\s*/, '').trim();
-          // Skip URLs
-          if (!desc.startsWith('http')) {
-            descriptionLine = desc;
+          // Skip URLs and empty lines
+          if (!desc.startsWith('http') && desc.length > 0) {
+            // Store the first non-URL comment as description
+            if (!descriptionLine) {
+              descriptionLine = desc;
+            }
           }
         } else if (prevLine !== '' && !prevLine.startsWith('//')) {
+          // Stop when we hit non-comment, non-empty line
           break;
         }
       }

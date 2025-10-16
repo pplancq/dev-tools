@@ -19,7 +19,7 @@ This configuration includes base rules, import rules, and TypeScript rules.
 | Rule | Mode | Description | Plugin |
 |------|------|-------------|--------|
 | [array-bracket-spacing](https://eslint.org/docs/latest/rules/array-bracket-spacing) | error | - | eslint (core) |
-| [array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return) | error | eslint https://eslint.org | eslint (core) |
+| [array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return) | error | Enforce return statements in callbacks of array methods | eslint (core) |
 | [arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style) | error | Require braces around arrow function bodies | eslint (core) |
 | [arrow-parens](https://eslint.org/docs/latest/rules/arrow-parens) | error | - | eslint (core) |
 | [arrow-spacing](https://eslint.org/docs/latest/rules/arrow-spacing) | error | - | eslint (core) |
@@ -173,7 +173,7 @@ This configuration includes base rules, import rules, and TypeScript rules.
 | [no-unsafe-finally](https://eslint.org/docs/latest/rules/no-unsafe-finally) | error | Disallow control flow statements in finally blocks | eslint (core) |
 | [no-unsafe-negation](https://eslint.org/docs/latest/rules/no-unsafe-negation) | error | Disallow negating the left operand of relational operators | eslint (core) |
 | [no-unsafe-optional-chaining](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining) | error | Disallow use of optional chaining in contexts where the undefined value is not allowed | eslint (core) |
-| [no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions) | error | Disallow unused expressions | eslint (core) |
+| [no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions) | error | no-unused-expressions | eslint (core) |
 | [no-unused-labels](https://eslint.org/docs/latest/rules/no-unused-labels) | error | Disallow unused labels | eslint (core) |
 | [no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | error | Disallow unused variables | eslint (core) |
 | [no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define) | error | Disallow the use of variables before they are defined | eslint (core) |
@@ -261,7 +261,7 @@ This configuration includes base rules, import rules, and TypeScript rules.
 | [import/order](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/order.md) | error | import/order | eslint-plugin-import |
 | [@typescript-eslint/ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment) | error | Disallow `@ts-<directive>` comments or require descriptions after directives. | @typescript-eslint/eslint-plugin |
 | [@typescript-eslint/consistent-type-assertions](https://typescript-eslint.io/rules/consistent-type-assertions) | warn | Enforce consistent usage of type assertions. | @typescript-eslint/eslint-plugin |
-| [@typescript-eslint/no-array-constructor](https://typescript-eslint.io/rules/no-array-constructor) | error | Disallow generic `Array` constructors. | @typescript-eslint/eslint-plugin |
+| [@typescript-eslint/no-array-constructor](https://typescript-eslint.io/rules/no-array-constructor) | error | 'no-array-constructor': 'off', | @typescript-eslint/eslint-plugin |
 | [@typescript-eslint/no-duplicate-enum-values](https://typescript-eslint.io/rules/no-duplicate-enum-values) | error | Disallow duplicate enum member values. | @typescript-eslint/eslint-plugin |
 | [@typescript-eslint/no-empty-object-type](https://typescript-eslint.io/rules/no-empty-object-type) | error | Disallow accidentally using the "empty object" type. | @typescript-eslint/eslint-plugin |
 | [@typescript-eslint/no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any) | error | Disallow the `any` type. | @typescript-eslint/eslint-plugin |
@@ -284,7 +284,7 @@ This configuration includes base rules, import rules, and TypeScript rules.
 | [@typescript-eslint/prefer-as-const](https://typescript-eslint.io/rules/prefer-as-const) | error | Enforce the use of `as const` over literal type. | @typescript-eslint/eslint-plugin |
 | [@typescript-eslint/prefer-namespace-keyword](https://typescript-eslint.io/rules/prefer-namespace-keyword) | error | Require using `namespace` keyword over `module` keyword to declare custom TypeScript modules. | @typescript-eslint/eslint-plugin |
 | [@typescript-eslint/triple-slash-reference](https://typescript-eslint.io/rules/triple-slash-reference) | error | Disallow certain triple slash directives in favor of ES6-style import declarations. | @typescript-eslint/eslint-plugin |
-| [import/extensions](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md) | error | eslint-plugin-import https://github.com/import-js/eslint-plugin-import | eslint-plugin-import |
+| [import/extensions](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md) | error | import/extensions | eslint-plugin-import |
 | [no-var](https://eslint.org/docs/latest/rules/no-var) | error | - | eslint (core) |
 
 ## React Configuration
@@ -295,9 +295,9 @@ This configuration adds React, React Hooks, JSX a11y, and Testing Library rules 
 
 | Rule | Mode | Description | Plugin |
 |------|------|-------------|--------|
-| [import/extensions](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md) | error | eslint-plugin-import https://github.com/import-js/eslint-plugin-import | eslint-plugin-import |
+| [import/extensions](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md) | error | import/extensions | eslint-plugin-import |
 | [react-hooks/exhaustive-deps](https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#exhaustive-deps) | warn | Verify the list of the dependencies for Hooks like useEffect and similar | eslint-plugin-react |
-| [react-hooks/rules-of-hooks](https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#rules-of-hooks) | error | eslint-plugin-react-hooks https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hook | eslint-plugin-react |
+| [react-hooks/rules-of-hooks](https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#rules-of-hooks) | error | Enforce Rules of Hooks | eslint-plugin-react |
 | [react/button-has-type](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/button-has-type.md) | error | Disallow usage of button elements without an explicit type attribute | eslint-plugin-react |
 | [react/default-props-match-prop-types](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md) | error | Enforce all defaultProps have a corresponding non-required PropType | eslint-plugin-react |
 | [react/destructuring-assignment](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md) | error | Enforce consistent usage of destructuring assignment of props, state, and context | eslint-plugin-react |
@@ -371,9 +371,9 @@ This configuration adds React, React Hooks, JSX a11y, and Testing Library rules 
 | [react/static-property-placement](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md) | error | Enforces where React component static properties should be positioned | eslint-plugin-react |
 | [react/style-prop-object](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md) | error | Enforce style prop value is an object | eslint-plugin-react |
 | [react/void-dom-elements-no-children](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md) | error | Disallow void DOM elements (e.g. <img />, <br />) from receiving children | eslint-plugin-react |
-| [import/extensions](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md) | error | eslint-plugin-import https://github.com/import-js/eslint-plugin-import | eslint-plugin-import |
+| [import/extensions](https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/extensions.md) | error | import/extensions | eslint-plugin-import |
 | [react/jsx-filename-extension](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md) | error | Disallow file extensions that may contain JSX | eslint-plugin-react |
-| [jest-dom/prefer-checked](https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-checked.md) | error | eslint-plugin-jest-dom https://github.com/testing-library/eslint-plugin-jest-dom | eslint-plugin-jest-dom |
+| [jest-dom/prefer-checked](https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-checked.md) | error | Prefer toBeChecked over checking attributes | eslint-plugin-jest-dom |
 | [jest-dom/prefer-empty](https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-empty.md) | error | Prefer toBeEmpty over checking innerHTML | eslint-plugin-jest-dom |
 | [jest-dom/prefer-enabled-disabled](https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-enabled-disabled.md) | error | Prefer toBeDisabled or toBeEnabled over checking attributes | eslint-plugin-jest-dom |
 | [jest-dom/prefer-focus](https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-focus.md) | error | Prefer toHaveFocus over checking document.activeElement | eslint-plugin-jest-dom |
@@ -463,7 +463,7 @@ Additional active rules with `defineConfig({ enablePlaywright: true })`.
 
 | Rule | Mode | Description | Plugin |
 |------|------|-------------|--------|
-| [playwright/expect-expect](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/expect-expect.md) | warn | eslint-plugin-playwright https://github.com/playwright-community/eslint-plugin-playwright | eslint-plugin-playwright |
+| [playwright/expect-expect](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/expect-expect.md) | warn | playwright/expect-expect | eslint-plugin-playwright |
 | [playwright/max-nested-describe](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/max-nested-describe.md) | warn | playwright/max-nested-describe | eslint-plugin-playwright |
 | [playwright/missing-playwright-await](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/missing-playwright-await.md) | error | playwright/missing-playwright-await | eslint-plugin-playwright |
 | [playwright/no-conditional-expect](https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/no-conditional-expect.md) | warn | playwright/no-conditional-expect | eslint-plugin-playwright |
