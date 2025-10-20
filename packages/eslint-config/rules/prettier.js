@@ -5,7 +5,8 @@ const prettierRules = {
     prettier: prettierPlugin,
   },
   rules: {
-    // eslint-plugin-prettier https://github.com/prettier/eslint-plugin-prettier
+    // eslint-plugin-prettier
+    // https://github.com/prettier/eslint-plugin-prettier
     'prettier/prettier': 'error',
 
     // eslint

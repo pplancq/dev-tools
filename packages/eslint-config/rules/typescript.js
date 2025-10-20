@@ -56,7 +56,7 @@ const typescriptRules = {
     // @typescript-eslint/eslint-plugin https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/README.md
     // turn off ESLint equivalents
 
-    // Require that function overload signatures be consecutive.
+    // Require that `function` overload signatures be consecutive.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/adjacent-overload-signatures.mdx
     '@typescript-eslint/adjacent-overload-signatures': 'off',
 
@@ -64,7 +64,7 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/array-type.mdx
     '@typescript-eslint/array-type': 'off',
 
-    // Disallow awaiting a value that is not a Thenable.
+    // Disallow awaiting a value that is not a `Thenable`.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/await-thenable.mdx
     '@typescript-eslint/await-thenable': 'off',
 
@@ -85,7 +85,7 @@ const typescriptRules = {
     // 'class-methods-use-this': 'off',
     '@typescript-eslint/class-methods-use-this': 'off',
 
-    // Enforce specifying generic type arguments on type annotation or constructor name of a constructor call.
+    // Enforce specifying generic type arguments on type annotation or `constructor` name of a constructor call.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/consistent-generic-constructors.mdx
     '@typescript-eslint/consistent-generic-constructors': 'off',
 
@@ -156,9 +156,9 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/naming-convention.mdx
     '@typescript-eslint/naming-convention': 'off',
 
+    // 'no-array-constructor': 'off',
     // Disallow generic `Array` constructors.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-array-constructor.mdx
-    // 'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': 'error',
 
     // Disallow using the `delete` operator on array values.
@@ -173,7 +173,7 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-confusing-non-null-assertion.mdx
     '@typescript-eslint/no-confusing-non-null-assertion': 'off',
 
-    // Require expressions of type void to appear in statement position.
+    // Require expressions of type `void` to appear in statement position.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-confusing-void-expression.mdx
     '@typescript-eslint/no-confusing-void-expression': 'off',
 
@@ -181,12 +181,12 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-deprecated.mdx
     '@typescript-eslint/no-deprecated': 'off',
 
-    // Disallow duplicate class members.
+    // Disallow duplicate `class` members.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-dupe-class-members.mdx
     // 'no-dupe-class-members': 'off',
     '@typescript-eslint/no-dupe-class-members': 'off',
 
-    // Disallow duplicate enum member values.
+    // Disallow duplicate `enum` member values.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-duplicate-enum-values.mdx
     '@typescript-eslint/no-duplicate-enum-values': 'error',
 
@@ -219,11 +219,11 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-extraneous-class.mdx
     '@typescript-eslint/no-extraneous-class': 'off',
 
-    // Require Promise-like statements to be handled appropriately.
+    // Require `Promise`-like statements to be handled appropriately.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-floating-promises.mdx
     '@typescript-eslint/no-floating-promises': 'off',
 
-    // Disallow iterating over an array with a for-in loop.
+    // Disallow iterating over an array with a `for-in` loop.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-for-in-array.mdx
     '@typescript-eslint/no-for-in-array': 'off',
 
@@ -232,11 +232,11 @@ const typescriptRules = {
     // 'no-implied-eval': 'off',
     '@typescript-eslint/no-implied-eval': 'off',
 
-    // Enforce the use of top-level import type qualifier when an import only has specifiers with inline type qualifiers.
+    // Enforce the use of top-level `import type` qualifier when an import only has specifiers with inline type qualifiers.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-import-type-side-effects.mdx
     '@typescript-eslint/no-import-type-side-effects': 'off',
 
-    // Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean.
+    // Disallow explicit type declarations for variables or parameters initialized to a `number`, `string`, or `boolean`.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-inferrable-types.mdx
     '@typescript-eslint/no-inferrable-types': 'off',
 
@@ -249,12 +249,12 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-invalid-void-type.mdx
     '@typescript-eslint/no-invalid-void-type': 'off',
 
-    // Disallow function declarations that contain unsafe references inside loop statements.
+    // Disallow `function` declarations that contain unsafe references inside loop statements.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-loop-func.mdx
     // 'no-loop-func': 'off',
     '@typescript-eslint/no-loop-func': 'off',
 
-    // import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem';
+    // Disallow magic numbers.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-magic-numbers.mdx
     // 'no-magic-numbers': 'off',
     '@typescript-eslint/no-magic-numbers': 'off',
@@ -267,11 +267,11 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-misused-new.mdx
     '@typescript-eslint/no-misused-new': 'error',
 
-    // Disallow Promises in places not designed to handle them.
+    // Disallow `Promise`s in places not designed to handle them.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-misused-promises.mdx
     '@typescript-eslint/no-misused-promises': 'off',
 
-    // Disallow enums from having both number and string members.
+    // Disallow `enum`s from having both number and string members.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-mixed-enums.mdx
     '@typescript-eslint/no-mixed-enums': 'off',
 
@@ -322,7 +322,7 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.mdx
     '@typescript-eslint/no-this-alias': 'error',
 
-    // Disallow unnecessary equality comparisons against boolean literals.
+    // Disallow unnecessary equality comparisons against `boolean` literals.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-boolean-literal-compare.mdx
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
 
@@ -330,7 +330,7 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-condition.mdx
     '@typescript-eslint/no-unnecessary-condition': 'off',
 
-    // Disallow unnecessary assignment of constructor property parameter.
+    // Disallow unnecessary assignment of `constructor` property parameter.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-parameter-property-assignment.mdx
     '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'off',
 
@@ -358,7 +358,7 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unnecessary-type-parameters.mdx
     '@typescript-eslint/no-unnecessary-type-parameters': 'off',
 
-    // Disallow calling a function with a value with type `any`.
+    // Disallow calling a `function` with a value with type `any`.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-argument.mdx
     '@typescript-eslint/no-unsafe-argument': 'off',
 
@@ -374,11 +374,11 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-declaration-merging.mdx
     '@typescript-eslint/no-unsafe-declaration-merging': 'error',
 
-    // Disallow comparing an enum value with a non-enum value.
+    // Disallow comparing an `enum` value with a non-`enum` value.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-enum-comparison.mdx
     '@typescript-eslint/no-unsafe-enum-comparison': 'off',
 
-    // Disallow using the unsafe built-in Function type.
+    // Disallow using the unsafe built-in `Function` type.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-function-type.mdx
     '@typescript-eslint/no-unsafe-function-type': 'error',
 
@@ -386,11 +386,11 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-member-access.mdx
     '@typescript-eslint/no-unsafe-member-access': 'off',
 
-    // Disallow returning a value with type `any` from a function.
+    // Disallow returning a value with type `any` from a `function`.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-return.mdx
     '@typescript-eslint/no-unsafe-return': 'off',
 
-    // Require unary negation to take a number.
+    // Require unary negation to take a `number`.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-unsafe-unary-minus.mdx
     '@typescript-eslint/no-unsafe-unary-minus': 'off',
 
@@ -444,11 +444,11 @@ const typescriptRules = {
     // 'prefer-destructuring': 'off',
     '@typescript-eslint/prefer-destructuring': 'off',
 
-    // Require each enum member value to be explicitly initialized.
+    // Require each `enum` member value to be explicitly initialized.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-enum-initializers.mdx
     '@typescript-eslint/prefer-enum-initializers': 'off',
 
-    // Enforce the use of Array.prototype.find() over Array.prototype.filter() followed by [0] when looking for a single result.
+    // Enforce the use of `Array.prototype.find()` over `Array.prototype.filter()` followed by `[0]` when looking for a single result.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-find.mdx
     '@typescript-eslint/prefer-find': 'off',
 
@@ -456,7 +456,7 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-for-of.mdx
     '@typescript-eslint/prefer-for-of': 'off',
 
-    // Enforce using function types instead of interfaces with call signatures.
+    // Enforce using `function` types instead of interfaces with call signatures.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-function-type.mdx
     '@typescript-eslint/prefer-function-type': 'off',
 
@@ -464,7 +464,7 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-includes.mdx
     '@typescript-eslint/prefer-includes': 'off',
 
-    // Require all enum members to be literal values.
+    // Require all `enum` members to be literal values.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-literal-enum-member.mdx
     '@typescript-eslint/prefer-literal-enum-member': 'off',
 
@@ -480,16 +480,16 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-optional-chain.mdx
     '@typescript-eslint/prefer-optional-chain': 'off',
 
-    // Require using Error objects as Promise rejection reasons.
+    // Require using `Error` objects as `Promise` rejection reasons.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-promise-reject-errors.mdx
     // 'prefer-promise-reject-errors': 'off',
     '@typescript-eslint/prefer-promise-reject-errors': 'off',
 
-    // Require private members to be marked as `readonly` if they're never modified outside of the constructor.
+    // Require private members to be marked as `readonly` if they're never modified outside of the `constructor`.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-readonly.mdx
     '@typescript-eslint/prefer-readonly': 'off',
 
-    // Require function parameters to be typed as `readonly` to prevent accidental mutation of inputs.
+    // Require `function` parameters to be typed as `readonly` to prevent accidental mutation of inputs.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.mdx
     '@typescript-eslint/prefer-readonly-parameter-types': 'off',
 
@@ -509,7 +509,7 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/prefer-string-starts-ends-with.mdx
     '@typescript-eslint/prefer-string-starts-ends-with': 'off',
 
-    // Require any function or method that returns a Promise to be marked async.
+    // Require any `function` or method that returns a `Promise` to be marked `async`.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/promise-function-async.mdx
     '@typescript-eslint/promise-function-async': 'off',
 
@@ -517,7 +517,7 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/require-array-sort-compare.mdx
     '@typescript-eslint/require-array-sort-compare': 'off',
 
-    // Disallow async functions which do not return promises and have no `await` expression.
+    // Disallow `async` functions which do not return promises and have no `await` expression.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/require-await.mdx
     // 'require-await': 'off',
     '@typescript-eslint/require-await': 'off',
@@ -535,15 +535,15 @@ const typescriptRules = {
     // 'no-return-await': 'off',
     '@typescript-eslint/return-await': 'off',
 
-    // Disallow certain types in boolean expressions.
+    // Disallow certain types in `boolean` expressions.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/strict-boolean-expressions.mdx
     '@typescript-eslint/strict-boolean-expressions': 'off',
 
-    // Require switch-case statements to be exhaustive.
+    // Require `switch-case` statements to be exhaustive.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/switch-exhaustiveness-check.mdx
     '@typescript-eslint/switch-exhaustiveness-check': 'off',
 
-    // Disallow certain triple slash directives in favor of ES6-style import declarations.
+    // Disallow certain triple slash directives in favor of ES6-style `import` declarations.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/triple-slash-reference.mdx
     '@typescript-eslint/triple-slash-reference': 'error',
 
@@ -559,7 +559,7 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/unified-signatures.mdx
     '@typescript-eslint/unified-signatures': 'off',
 
-    // Enforce typing arguments in Promise rejection callbacks as `unknown`.
+    // Enforce typing arguments in `Promise` rejection callbacks as `unknown`.
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/use-unknown-in-catch-callback-variable.mdx
     '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
   },
