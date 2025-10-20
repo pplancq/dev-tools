@@ -20,35 +20,35 @@ const baseRules = {
     // eslint https://eslint.org
     // Possible Problems - These rules relate to possible logic errors in code
 
-    // Enforce return statements in callbacks of array methods
+    // Enforce `return` statements in callbacks of array methods
     // https://eslint.org/docs/latest/rules/array-callback-return
     'array-callback-return': ['error', { allowImplicit: true }],
 
-    // Require super() calls in constructors
+    // Require `super()` calls in constructors
     // https://eslint.org/docs/latest/rules/constructor-super
     'constructor-super': 'error',
 
-    // Enforce "for" loop update clause moving the counter in the right direction
+    // Enforce `for` loop update clause moving the counter in the right direction
     // https://eslint.org/docs/latest/rules/for-direction
     'for-direction': 'error',
 
-    // Enforce return statements in getters
+    // Enforce `return` statements in getters
     // https://eslint.org/docs/latest/rules/getter-return
     'getter-return': ['error', { allowImplicit: true }],
 
-    // Disallow using an async function as a Promise executor
+    // Disallow using an `async` function as a `Promise` executor
     // https://eslint.org/docs/latest/rules/no-async-promise-executor
     'no-async-promise-executor': 'error',
 
-    // Disallow await inside of loops
+    // Disallow `await` inside of loops
     // https://eslint.org/docs/lates/rules/no-await-in-loop
     'no-await-in-loop': 'error',
 
-    // Disallow reassigning class members
+    // Disallow reassigning `class` members
     // https://eslint.org/docs/lates/rules/no-class-assign
     'no-class-assign': 'error',
 
-    // Disallow comparing against -0
+    // Disallow comparing against `-0`
     // https://eslint.org/docs/lates/rules/no-compare-neg-zero
     'no-compare-neg-zero': 'error',
 
@@ -56,7 +56,7 @@ const baseRules = {
     // https://eslint.org/docs/lates/rules/no-cond-assign
     'no-cond-assign': ['error', 'always'],
 
-    // Disallow reassigning const variables
+    // Disallow reassigning `const` variables
     // https://eslint.org/docs/lates/rules/no-const-assign
     'no-const-assign': 'error',
 
@@ -68,7 +68,7 @@ const baseRules = {
     // https://eslint.org/docs/lates/rules/no-constant-condition
     'no-constant-condition': 'warn',
 
-    // Disallow returning value from constructor
+    // Disallow returning value from `constructor`
     // https://eslint.org/docs/lates/rules/no-constructor-return
     'no-constructor-return': 'error',
 
@@ -76,19 +76,19 @@ const baseRules = {
     // https://eslint.org/docs/lates/rules/no-control-regex
     'no-control-regex': 'error',
 
-    // Disallow the use of debugger
+    // Disallow the use of `debugger`
     // https://eslint.org/docs/lates/rules/no-debugger
     'no-debugger': 'error',
 
-    // Disallow duplicate arguments in function definitions
+    // Disallow duplicate arguments in `function` definitions
     // https://eslint.org/docs/lates/rules/no-dupe-args
     'no-dupe-args': 'error',
 
-    // Disallow duplicate class members
+    // Disallow duplicate `class` members
     // https://eslint.org/docs/lates/rules/no-dupe-class-members
     'no-dupe-class-members': 'error',
 
-    // Disallow duplicate conditions in if-else-if chains
+    // Disallow duplicate conditions in `if-else-if` chains
     // https://eslint.org/docs/lates/rules/no-dupe-else-if
     'no-dupe-else-if': 'error',
 
@@ -96,7 +96,7 @@ const baseRules = {
     // https://eslint.org/docs/lates/rules/no-dupe-keys
     'no-dupe-keys': 'error',
 
-    // Disallow duplicate case labels
+    // Disallow duplicate `case` labels
     // https://eslint.org/docs/latest/rules/no-duplicate-case
     'no-duplicate-case': 'error',
 
@@ -112,15 +112,15 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-empty-pattern
     'no-empty-pattern': 'error',
 
-    // Disallow reassigning exceptions in catch clauses
+    // Disallow reassigning exceptions in `catch` clauses
     // https://eslint.org/docs/latest/rules/no-ex-assign
     'no-ex-assign': 'error',
 
-    // Disallow fallthrough of case statements
+    // Disallow fallthrough of `case` statements
     // https://eslint.org/docs/latest/rules/no-fallthrough
     'no-fallthrough': 'error',
 
-    // Disallow reassigning function declarations
+    // Disallow reassigning `function` declarations
     // https://eslint.org/docs/latest/rules/no-func-assign
     'no-func-assign': 'error',
 
@@ -128,11 +128,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-import-assign
     'no-import-assign': 'error',
 
-    // Disallow variable or function declarations in nested blocks
+    // Disallow variable or `function` declarations in nested blocks
     // https://eslint.org/docs/latest/rules/no-inner-declarations
     'no-inner-declarations': 'error',
 
-    // Disallow invalid regular expression strings in RegExp constructors
+    // Disallow invalid regular expression strings in `RegExp` constructors
     // https://eslint.org/docs/latest/rules/no-invalid-regexp
     'no-invalid-regexp': 'error',
 
@@ -148,11 +148,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-misleading-character-class
     'no-misleading-character-class': 'error',
 
-    // Disallow new operators with global non-constructor functions
+    // Disallow `new` operators with global non-constructor functions
     // https://eslint.org/docs/latest/rules/no-new-native-nonconstructor
     'no-new-native-nonconstructor': 'off',
 
-    // Disallow new operators with the Symbol object
+    // Disallow `new` operators with the `Symbol` object
     // https://eslint.org/docs/latest/rules/no-new-symbol
     'no-new-symbol': 'error',
 
@@ -160,11 +160,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-obj-calls
     'no-obj-calls': 'error',
 
-    // Disallow returning values from Promise executor functions
+    // Disallow returning values from `Promise` executor functions
     // https://eslint.org/docs/latest/rules/no-promise-executor-return
     'no-promise-executor-return': 'error',
 
-    // Disallow calling some Object.prototype methods directly on objects
+    // Disallow calling some `Object.prototype` methods directly on objects
     // https://eslint.org/docs/latest/rules/no-prototype-builtins
     'no-prototype-builtins': 'error',
 
@@ -193,11 +193,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-template-curly-in-string
     'no-template-curly-in-string': 'error',
 
-    // Disallow this/super before calling super() in constructors
+    // Disallow `this`/`super` before calling `super()` in constructors
     // https://eslint.org/docs/latest/rules/no-this-before-super
     'no-this-before-super': 'error',
 
-    // Disallow the use of undeclared variables unless mentioned in /*global */ comments
+    // Disallow the use of undeclared variables unless mentioned in `/*global */` comments
     // https://eslint.org/docs/latest/rules/no-undef
     'no-undef': 'error',
 
@@ -209,7 +209,7 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-unmodified-loop-condition
     'no-unmodified-loop-condition': 'off',
 
-    // Disallow unreachable code after return, throw, continue, and break statements
+    // Disallow unreachable code after `return`, `throw`, `continue`, and `break` statements
     // https://eslint.org/docs/latest/rules/no-unreachable
     'no-unreachable': 'error',
 
@@ -222,7 +222,7 @@ const baseRules = {
       },
     ],
 
-    // Disallow control flow statements in finally blocks
+    // Disallow control flow statements in `finally` blocks
     // https://eslint.org/docs/latest/rules/no-unsafe-finally
     'no-unsafe-finally': 'error',
 
@@ -230,7 +230,7 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-unsafe-negation
     'no-unsafe-negation': 'error',
 
-    // Disallow use of optional chaining in contexts where the undefined value is not allowed
+    // Disallow use of optional chaining in contexts where the `undefined` value is not allowed
     // https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining
     'no-unsafe-optional-chaining': ['error', { disallowArithmeticOperators: true }],
 
@@ -250,15 +250,15 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-useless-backreference
     'no-useless-backreference': 'error',
 
-    // Disallow assignments that can lead to race conditions due to usage of await or yield
+    // Disallow assignments that can lead to race conditions due to usage of `await` or `yield`
     // https://eslint.org/docs/latest/rules/require-atomic-updates
     'require-atomic-updates': 'off',
 
-    // Require calls to isNaN() when checking for NaN
+    // Require calls to `isNaN()` when checking for `NaN`
     // https://eslint.org/docs/latest/rules/use-isnan
     'use-isnan': 'error',
 
-    // Enforce comparing typeof expressions against valid strings
+    // Enforce comparing `typeof` expressions against valid strings
     // https://eslint.org/docs/latest/rules/valid-typeof
     'valid-typeof': ['error', { requireStringLiterals: true }],
 
@@ -282,7 +282,7 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/block-scoped-var
     'block-scoped-var': 'error',
 
-    // Enforce camelcase naming convention
+    // Enforce `camelcase` naming convention
     // https://eslint.org/docs/latest/rules/camelcase
     camelcase: ['error', { properties: 'never', ignoreDestructuring: false }],
 
@@ -305,7 +305,7 @@ const baseRules = {
       },
     ],
 
-    // Enforce that class methods utilize this
+    // Enforce that class methods utilize `this`
     // https://eslint.org/docs/latest/rules/class-methods-use-this
     'class-methods-use-this': [
       'error',
@@ -318,7 +318,7 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/complexity
     complexity: ['off', 20],
 
-    // Require return statements to either always or never specify values
+    // Require `return` statements to either always or never specify values
     // https://eslint.org/docs/latest/rules/consistent-return
     'consistent-return': 'error',
 
@@ -330,11 +330,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/curly
     curly: ['error', 'multi-line'],
 
-    // Require default cases in switch statements
+    // Require `default` cases in `switch` statements
     // https://eslint.org/docs/latest/rules/default-case
     'default-case': ['error', { commentPattern: '^no default$' }],
 
-    // Enforce default clauses in switch statements to be last
+    // Enforce `default` clauses in `switch` statements to be last
     // https://eslint.org/docs/latest/rules/default-case-last
     'default-case-last': 'error',
 
@@ -346,11 +346,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/dot-notation
     'dot-notation': ['error', { allowKeywords: true }],
 
-    // Require the use of === and !==
+    // Require the use of `===` and `!==`
     // https://eslint.org/docs/latest/rules/eqeqeq
     eqeqeq: ['error', 'always', { null: 'ignore' }],
 
-    // Require function names to match the name of the variable or property to which they are assigned
+    // Require `function` names to match the name of the variable or property to which they are assigned
     // https://eslint.org/docs/latest/rules/func-name-matching
     'func-name-matching': [
       'off',
@@ -361,11 +361,11 @@ const baseRules = {
       },
     ],
 
-    // Require or disallow named function expressions
+    // Require or disallow named `function` expressions
     // https://eslint.org/docs/latest/rules/func-names
     'func-names': 'warn',
 
-    // Enforce the consistent use of either function declarations or expressions
+    // Enforce the consistent use of either `function` declarations or expressions
     // https://eslint.org/docs/latest/rules/func-style
     'func-style': ['off', 'expression'],
 
@@ -373,7 +373,7 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/grouped-accessor-pairs
     'grouped-accessor-pairs': 'error',
 
-    // Require for-in loops to include an if statement
+    // Require `for-in` loops to include an `if` statement
     // https://eslint.org/docs/latest/rules/guard-for-in
     'guard-for-in': 'error',
 
@@ -456,11 +456,11 @@ const baseRules = {
       },
     ],
 
-    // Disallow the use of alert, confirm, and prompt
+    // Disallow the use of `alert`, `confirm`, and `prompt`
     // https://eslint.org/docs/latest/rules/no-alert
     'no-alert': 'warn',
 
-    // Disallow Array constructors
+    // Disallow `Array` constructors
     // https://eslint.org/docs/latest/rules/no-array-constructor
     'no-array-constructor': 'error',
 
@@ -468,15 +468,15 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-bitwise
     'no-bitwise': 'error',
 
-    // Disallow the use of arguments.caller or arguments.callee
+    // Disallow the use of `arguments.caller` or `arguments.callee`
     // https://eslint.org/docs/latest/rules/no-caller
     'no-caller': 'error',
 
-    // Disallow lexical declarations in case clauses
+    // Disallow lexical declarations in `case` clauses
     // https://eslint.org/docs/latest/rules/no-case-declarations
     'no-case-declarations': 'error',
 
-    // Disallow the use of console
+    // Disallow the use of `console`
     // https://eslint.org/docs/latest/rules/no-console
     'no-console': [
       'error',
@@ -485,7 +485,7 @@ const baseRules = {
       },
     ],
 
-    // Disallow continue statements
+    // Disallow `continue` statements
     // https://eslint.org/docs/latest/rules/no-continue
     'no-continue': 'error',
 
@@ -497,7 +497,7 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-div-regex
     'no-div-regex': 'off',
 
-    // Disallow else blocks after return statements in if statements
+    // Disallow `else` blocks after `return` statements in `if` statements
     // https://eslint.org/docs/latest/rules/no-else-return
     'no-else-return': ['error', { allowElseIf: false }],
 
@@ -518,11 +518,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-empty-static-block
     'no-empty-static-block': 'off',
 
-    // Disallow null comparisons without type-checking operators
+    // Disallow `null` comparisons without type-checking operators
     // https://eslint.org/docs/latest/rules/no-eq-null
     'no-eq-null': 'off',
 
-    // Disallow the use of eval()
+    // Disallow the use of `eval()`
     // https://eslint.org/docs/latest/rules/no-eval
     'no-eval': 'error',
 
@@ -530,7 +530,7 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-extend-native
     'no-extend-native': 'error',
 
-    // Disallow unnecessary calls to .bind()
+    // Disallow unnecessary calls to `.bind()`
     // https://eslint.org/docs/latest/rules/no-extra-bind
     'no-extra-bind': 'error',
 
@@ -562,7 +562,7 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-implicit-globals
     'no-implicit-globals': 'off',
 
-    // Disallow the use of eval()-like methods
+    // Disallow the use of `eval()`-like methods
     // https://eslint.org/docs/latest/rules/no-implied-eval
     'no-implied-eval': 'error',
 
@@ -570,11 +570,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-inline-comments
     'no-inline-comments': 'off',
 
-    // Disallow use of this in contexts where the value of this is undefined
+    // Disallow use of `this` in contexts where the value of `this` is `undefined`
     // https://eslint.org/docs/latest/rules/no-invalid-this
     'no-invalid-this': 'off',
 
-    // Disallow the use of the __iterator__ property
+    // Disallow the use of the `__iterator__` property
     // https://eslint.org/docs/latest/rules/no-iterator
     'no-iterator': 'error',
 
@@ -590,11 +590,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-lone-blocks
     'no-lone-blocks': 'error',
 
-    // Disallow if statements as the only statement in else blocks
+    // Disallow `if` statements as the only statement in `else` blocks
     // https://eslint.org/docs/latest/rules/no-lonely-if
     'no-lonely-if': 'error',
 
-    // Disallow function declarations that contain unsafe references inside loop statements
+    // Disallow `function` declarations that contain unsafe references inside loop statements
     // https://eslint.org/docs/latest/rules/no-loop-func
     'no-loop-func': 'error',
 
@@ -626,23 +626,23 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-nested-ternary
     'no-nested-ternary': 'error',
 
-    // Disallow new operators outside of assignments or comparisons
+    // Disallow `new` operators outside of assignments or comparisons
     // https://eslint.org/docs/latest/rules/no-new
     'no-new': 'error',
 
-    // Disallow new operators with the Function object
+    // Disallow `new` operators with the `Function` object
     // https://eslint.org/docs/latest/rules/no-new-func
     'no-new-func': 'error',
 
-    // Disallow new operators with the String, Number, and Boolean objects
+    // Disallow `new` operators with the `String`, `Number`, and `Boolean` objects
     // https://eslint.org/docs/latest/rules/no-new-wrappers
     'no-new-wrappers': 'error',
 
-    // Disallow \8 and \9 escape sequences in string literals
+    // Disallow `\8` and `\9` escape sequences in string literals
     // https://eslint.org/docs/latest/rules/no-nonoctal-decimal-escape
     'no-nonoctal-decimal-escape': 'error',
 
-    // Disallow calls to the Object constructor without an argument
+    // Disallow calls to the `Object` constructor without an argument
     // https://eslint.org/docs/latest/rules/no-object-constructor
     'no-object-constructor': 'off',
 
@@ -654,8 +654,8 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-octal-escape
     'no-octal-escape': 'error',
 
-    //
-    //
+    // Disallow reassignment of `function` parameters
+    // https://eslint.org/docs/latest/rules/no-param-reassign
     'no-param-reassign': [
       'error',
       {
@@ -676,7 +676,7 @@ const baseRules = {
       },
     ],
 
-    // Disallow the unary operators ++ and --
+    // Disallow the unary operators `++` and `--`
     // https://eslint.org/docs/latest/rules/no-plusplus
     'no-plusplus': [
       'error',
@@ -685,7 +685,7 @@ const baseRules = {
       },
     ],
 
-    // Disallow the use of the __proto__ property
+    // Disallow the use of the `__proto__` property
     // https://eslint.org/docs/latest/rules/no-proto
     'no-proto': 'error',
 
@@ -795,50 +795,50 @@ const baseRules = {
       {
         object: 'arguments',
         property: 'callee',
-        message: 'arguments.callee is deprecated',
+        message: '`arguments.callee` is deprecated',
       },
       {
         object: 'global',
         property: 'isFinite',
-        message: 'Please use Number.isFinite instead',
+        message: 'Please use `Number.isFinite` instead',
       },
       {
         object: 'self',
         property: 'isFinite',
-        message: 'Please use Number.isFinite instead',
+        message: 'Please use `Number.isFinite` instead',
       },
       {
         object: 'window',
         property: 'isFinite',
-        message: 'Please use Number.isFinite instead',
+        message: 'Please use `Number.isFinite` instead',
       },
       {
         object: 'global',
         property: 'isNaN',
-        message: 'Please use Number.isNaN instead',
+        message: 'Please use `Number.isNaN` instead',
       },
       {
         object: 'self',
         property: 'isNaN',
-        message: 'Please use Number.isNaN instead',
+        message: 'Please use `Number.isNaN` instead',
       },
       {
         object: 'window',
         property: 'isNaN',
-        message: 'Please use Number.isNaN instead',
+        message: 'Please use `Number.isNaN` instead',
       },
       {
         property: '__defineGetter__',
-        message: 'Please use Object.defineProperty instead.',
+        message: 'Please use `Object.defineProperty` instead.',
       },
       {
         property: '__defineSetter__',
-        message: 'Please use Object.defineProperty instead.',
+        message: 'Please use `Object.defineProperty` instead.',
       },
       {
         object: 'Math',
         property: 'pow',
-        message: 'Use the exponentiation operator (**) instead.',
+        message: 'Use the exponentiation operator (`**`) instead.',
       },
     ],
 
@@ -849,7 +849,7 @@ const baseRules = {
       {
         selector: 'ForInStatement',
         message:
-          'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+          '`for..in` loops iterate over the entire prototype chain, which is virtually never what you want. Use `Object.{keys,values,entries}`, and iterate over the resulting array.',
       },
       {
         selector: 'ForOfStatement',
@@ -866,11 +866,11 @@ const baseRules = {
       },
     ],
 
-    // Disallow assignment operators in return statements
+    // Disallow assignment operators in `return` statements
     // https://eslint.org/docs/latest/rules/no-return-assign
     'no-return-assign': ['error', 'always'],
 
-    // Disallow javascript: urls
+    // Disallow `javascript:` urls
     // https://eslint.org/docs/latest/rules/no-script-url
     'no-script-url': 'error',
 
@@ -894,11 +894,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-throw-literal
     'no-throw-literal': 'error',
 
-    // Disallow initializing variables to undefined
+    // Disallow initializing variables to `undefined`
     // https://eslint.org/docs/latest/rules/no-undef-init
     'no-undef-init': 'error',
 
-    // Disallow the use of undefined as an identifier
+    // Disallow the use of `undefined` as an identifier
     // https://eslint.org/docs/latest/rules/no-undefined
     'no-undefined': 'off',
 
@@ -919,7 +919,7 @@ const baseRules = {
     'no-unneeded-ternary': ['error', { defaultAssignment: false }],
 
     // Disallow unused expressions
-    // no-unused-expressions
+    // https://eslint.org/docs/latest/rules/no-unused-expressions
     'no-unused-expressions': [
       'error',
       {
@@ -933,11 +933,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-unused-labels
     'no-unused-labels': 'error',
 
-    // Disallow unnecessary calls to .call() and .apply()
+    // Disallow unnecessary calls to `.call()` and `.apply()`
     // https://eslint.org/docs/latest/rules/no-useless-call
     'no-useless-call': 'off',
 
-    // Disallow unnecessary catch clauses
+    // Disallow unnecessary `catch` clauses
     // https://eslint.org/docs/latest/rules/no-useless-catch
     'no-useless-catch': 'error',
 
@@ -968,15 +968,15 @@ const baseRules = {
       },
     ],
 
-    // Require let or const instead of var
+    // Require `let` or `const` instead of `var`
     // https://eslint.org/docs/latest/rules/no-var
     'no-var': 'error',
 
-    // Disallow redundant return statements
+    // Disallow redundant `return` statements
     // https://eslint.org/docs/latest/rules/no-useless-return
     'no-useless-return': 'error',
 
-    // Disallow void operators
+    // Disallow `void` operators
     // https://eslint.org/docs/latest/rules/no-void
     'no-void': 'error',
 
@@ -984,7 +984,7 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/no-warning-comments
     'no-warning-comments': ['off', { terms: ['todo', 'fixme', 'xxx'], location: 'start' }],
 
-    // Disallow with statements
+    // Disallow `with` statements
     // https://eslint.org/docs/latest/rules/no-with
     'no-with': 'error',
 
@@ -1017,7 +1017,7 @@ const baseRules = {
       },
     ],
 
-    // Require const declarations for variables that are never reassigned after declared
+    // Require `const` declarations for variables that are never reassigned after declared
     // https://eslint.org/docs/latest/rules/prefer-const
     'prefer-const': [
       'error',
@@ -1046,7 +1046,7 @@ const baseRules = {
       },
     ],
 
-    // Disallow the use of Math.pow in favor of the ** operator
+    // Disallow the use of `Math.pow` in favor of the `**` operator
     // https://eslint.org/docs/latest/rules/prefer-exponentiation-operator
     'prefer-exponentiation-operator': 'error',
 
@@ -1054,23 +1054,23 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/prefer-named-capture-group
     'prefer-named-capture-group': 'off',
 
-    // Disallow parseInt() and Number.parseInt() in favor of binary, octal, and hexadecimal literals
+    // Disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
     // https://eslint.org/docs/latest/rules/prefer-numeric-literals
     'prefer-numeric-literals': 'error',
 
-    // Disallow use of Object.prototype.hasOwnProperty.call() and prefer use of Object.hasOwn()
+    // Disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()`
     // https://eslint.org/docs/latest/rules/prefer-object-has-own
     'prefer-object-has-own': 'off',
 
-    // Disallow using Object.assign with an object literal as the first argument and prefer the use of object spread instead
+    // Disallow using `Object.assign` with an object literal as the first argument and prefer the use of object spread instead
     // https://eslint.org/docs/latest/rules/prefer-object-spread
     'prefer-object-spread': 'error',
 
-    // Require using Error objects as Promise rejection reasons
+    // Require using `Error` objects as `Promise` rejection reasons
     // https://eslint.org/docs/latest/rules/prefer-promise-reject-errors
     'prefer-promise-reject-errors': ['error', { allowEmptyReject: true }],
 
-    // Disallow use of the RegExp constructor in favor of regular expression literals
+    // Disallow use of the `RegExp` constructor in favor of regular expression literals
     // https://eslint.org/docs/latest/rules/prefer-regex-literals
     'prefer-regex-literals': [
       'error',
@@ -1079,11 +1079,11 @@ const baseRules = {
       },
     ],
 
-    // Require rest parameters instead of arguments
+    // Require rest parameters instead of `arguments`
     // https://eslint.org/docs/latest/rules/prefer-rest-params
     'prefer-rest-params': 'error',
 
-    // Require spread operators instead of .apply()
+    // Require spread operators instead of `.apply()`
     // https://eslint.org/docs/latest/rules/prefer-spread
     'prefer-spread': 'error',
 
@@ -1091,23 +1091,23 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/prefer-template
     'prefer-template': 'error',
 
-    // Enforce the consistent use of the radix argument when using parseInt()
+    // Enforce the consistent use of the radix argument when using `parseInt()`
     // https://eslint.org/docs/latest/rules/radix
     radix: 'error',
 
-    // Disallow async functions which have no await expression
+    // Disallow `async` functions which have no `await` expression
     // https://eslint.org/docs/latest/rules/require-await
     'require-await': 'off',
 
-    // Enforce the use of u or v flag on RegExp
+    // Enforce the use of `u` or `v` flag on `RegExp`
     // https://eslint.org/docs/latest/rules/require-unicode-regexp
     'require-unicode-regexp': 'off',
 
-    // Require generator functions to contain yield
+    // Require generator functions to contain `yield`
     // https://eslint.org/docs/latest/rules/require-yield
     'require-yield': 'error',
 
-    // Enforce sorted import declarations within modules
+    // Enforce sorted `import` declarations within modules
     // https://eslint.org/docs/latest/rules/sort-imports
     'sort-imports': [
       'off',
@@ -1131,11 +1131,11 @@ const baseRules = {
     // https://eslint.org/docs/latest/rules/strict
     strict: ['error', 'never'],
 
-    // Require symbol descriptions
+    // Require `symbol` descriptions
     // https://eslint.org/docs/latest/rules/symbol-description
     'symbol-description': 'error',
 
-    // Require var declarations be placed at the top of their containing scope
+    // Require `var` declarations be placed at the top of their containing scope
     // https://eslint.org/docs/latest/rules/vars-on-top
     'vars-on-top': 'error',
 

@@ -18,11 +18,11 @@ const vitestRules = {
 
     // eslint-plugin-vitest https://github.com/veritem/eslint-plugin-vitest
 
-    // Require .spec test file pattern
+    // Require `.spec` test file pattern
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-filename.md
     '@vitest/consistent-test-filename': 'off',
 
-    // Enforce using test or it but not both
+    // Enforce using `test` or `it` but not both
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-it.md
     '@vitest/consistent-test-it': 'off',
 
@@ -30,11 +30,11 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/expect-expect.md
     '@vitest/expect-expect': 'off',
 
-    // Enforce a maximum number of expect per test
+    // Enforce a maximum number of `expect` per test
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/max-expects.md
     '@vitest/max-expects': 'off',
 
-    // Require describe block to be less than set max value or default value
+    // Require `describe` block to be less than set max value or default value
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/max-nested-describe.md
     '@vitest/max-nested-describe': 'off',
 
@@ -82,7 +82,7 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-identical-title.md
     '@vitest/no-identical-title': 'error',
 
-    // Disallow importing node:test
+    // Disallow importing `node:test`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-import-node-test.md
     '@vitest/no-import-node-test': 'off',
 
@@ -94,7 +94,7 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-large-snapshots.md
     '@vitest/no-large-snapshots': 'off',
 
-    // Disallow importing from mocks directory
+    // Disallow importing from `mocks` directory
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-mocks-import.md
     '@vitest/no-mocks-import': 'error',
 
@@ -102,23 +102,23 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-restricted-matchers.md
     '@vitest/no-restricted-matchers': 'off',
 
-    // Disallow specific vi. methods
+    // Disallow specific `vi.` methods
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-restricted-vi-methods.md
     '@vitest/no-restricted-vi-methods': 'off',
 
-    // Disallow using expect outside of it or test blocks
+    // Disallow using `expect` outside of `it` or `test` blocks
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-standalone-expect.md
     '@vitest/no-standalone-expect': 'off',
 
-    // Disallow using test as a prefix
+    // Disallow using `test` as a prefix
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-test-prefixes.md
     '@vitest/no-test-prefixes': 'off',
 
-    // Disallow return statements in tests
+    // Disallow `return` statements in tests
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-test-return-statement.md
     '@vitest/no-test-return-statement': 'off',
 
-    // Enforce using toBeCalledWith() or toHaveBeenCalledWith()
+    // Enforce using `toBeCalledWith()` or `toHaveBeenCalledWith()`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-with.md
     '@vitest/prefer-called-with': 'error',
 
@@ -126,7 +126,7 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-comparison-matcher.md
     '@vitest/prefer-comparison-matcher': 'off',
 
-    // Enforce using each rather than manual loops
+    // Enforce using `each` rather than manual loops
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-each.md
     '@vitest/prefer-each': 'off',
 
@@ -134,15 +134,15 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-equality-matcher.md
     '@vitest/prefer-equality-matcher': 'off',
 
-    // Enforce using expect assertions instead of callbacks
+    // Enforce using `expect` assertions instead of callbacks
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-assertions.md
     '@vitest/prefer-expect-assertions': 'off',
 
-    // Enforce using expect().resolves over expect(await ...) syntax
+    // Enforce using `expect().resolves` over `expect(await ...)` syntax
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-resolves.md
     '@vitest/prefer-expect-resolves': 'off',
 
-    // Enforce having hooks in consistent order (vitest/prefer-hooks-in-order)
+    // Enforce having hooks in consistent order (`vitest/prefer-hooks-in-order`)
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-hooks-in-order.md
     '@vitest/prefer-hooks-in-order': 'off',
 
@@ -162,7 +162,7 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-snapshot-hint.md
     '@vitest/prefer-snapshot-hint': 'off',
 
-    // Enforce using vi.spyOn
+    // Enforce using `vi.spyOn`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-spy-on.md
     '@vitest/prefer-spy-on': 'off',
 
@@ -170,31 +170,31 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-strict-equal.md
     '@vitest/prefer-strict-equal': 'error',
 
-    // Enforce using toBe()
+    // Enforce using `toBe()`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be.md
     '@vitest/prefer-to-be': 'off',
 
-    // Enforce using toBeFalsy()
+    // Enforce using `toBeFalsy()`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-falsy.md
     '@vitest/prefer-to-be-falsy': 'error',
 
-    // Enforce using toBeObject()
+    // Enforce using `toBeObject()`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-object.md
     '@vitest/prefer-to-be-object': 'error',
 
-    // Enforce using toBeTruthy
+    // Enforce using `toBeTruthy`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-truthy.md
     '@vitest/prefer-to-be-truthy': 'error',
 
-    // Enforce using toContain()
+    // Enforce using `toContain()`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-contain.md
     '@vitest/prefer-to-contain': 'error',
 
-    // Enforce using toHaveLength()
+    // Enforce using `toHaveLength()`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-have-length.md
     '@vitest/prefer-to-have-length': 'error',
 
-    // Enforce using test.todo
+    // Enforce using `test.todo`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-todo.md
     '@vitest/prefer-todo': 'off',
 
@@ -206,11 +206,11 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-local-test-context-for-concurrent-snapshots.md
     '@vitest/require-local-test-context-for-concurrent-snapshots': 'off',
 
-    // Require toThrow() to be called with an error message
+    // Require `toThrow()` to be called with an error message
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-to-throw-message.md
     '@vitest/require-to-throw-message': 'off',
 
-    // Enforce that all tests are in a top-level describe
+    // Enforce that all tests are in a top-level `describe`
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-top-level-describe.md
     '@vitest/require-top-level-describe': 'off',
 
@@ -218,11 +218,11 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/unbound-method.md
     '@vitest/unbound-method': 'off',
 
-    // Enforce valid describe callback
+    // Enforce valid `describe` callback
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-describe-callback.md
     '@vitest/valid-describe-callback': 'error',
 
-    // Enforce valid expect() usage
+    // Enforce valid `expect()` usage
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-expect.md
     '@vitest/valid-expect': 'error',
 

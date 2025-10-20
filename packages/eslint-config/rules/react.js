@@ -42,7 +42,7 @@ const reactRules = {
       },
     ],
 
-    // Disallow usage of button elements without an explicit type attribute
+    // Disallow usage of `button` elements without an explicit `type` attribute
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/button-has-type.md
     'react/button-has-type': [
       'error',
@@ -53,11 +53,11 @@ const reactRules = {
       },
     ],
 
-    // Enforce using onChange or readonly attribute when checked is used
+    // Enforce using `onChange` or `readonly` attribute when `checked` is used
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/checked-requires-onchange-or-readonly.md
     'react/checked-requires-onchange-or-readonly': 'off',
 
-    // Enforce all defaultProps have a corresponding non-required PropType
+    // Enforce all `defaultProps` have a corresponding non-required `PropType`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md
     'react/default-props-match-prop-types': ['error', { allowRequiredDefaults: false }],
 
@@ -65,7 +65,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md
     'react/destructuring-assignment': ['error', 'always'],
 
-    // Disallow missing displayName in a React component definition
+    // Disallow missing `displayName` in a React component definition
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/display-name.md
     'react/display-name': 'error',
 
@@ -81,11 +81,11 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-elements.md
     'react/forbid-elements': ['off', { forbid: [] }],
 
-    // Disallow using another component's propTypes
+    // Disallow using another component's `propTypes`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-foreign-prop-types.md
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
 
-    // Disallow certain propTypes
+    // Disallow certain `propTypes`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md
     'react/forbid-prop-types': [
       'error',
@@ -96,7 +96,7 @@ const reactRules = {
       },
     ],
 
-    // Enforce a specific function type for function components
+    // Enforce a specific `function` type for function components
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/function-component-definition.md
     'react/function-component-definition': [
       'error',
@@ -106,11 +106,10 @@ const reactRules = {
       },
     ],
 
-    // Ensure destructuring and symmetric naming of useState hook value and setter variables
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/hook-use-state.md
     'react/hook-use-state': 'off',
 
-    // Enforce sandbox attribute on iframe elements
+    // Enforce sandbox attribute on `iframe` elements
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/iframe-missing-sandbox.md
     'react/iframe-missing-sandbox': 'off',
 
@@ -203,7 +202,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-newline.md
     'react/jsx-newline': 'off',
 
-    // Disallow .bind() or arrow functions in JSX props
+    // Disallow `.bind()` or arrow functions in JSX props
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
     'react/jsx-no-bind': [
       'error',
@@ -236,7 +235,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-literals.md
     'react/jsx-no-literals': ['off', { noStrings: true }],
 
-    // Disallow usage of javascript: URLs
+    // Disallow usage of javascript: `URLs
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-script-url.md
     'react/jsx-no-script-url': [
       'error',
@@ -248,7 +247,7 @@ const reactRules = {
       ],
     ],
 
-    // Disallow target="_blank" attribute without rel="noreferrer"
+    // Disallow `target="_blank"` attribute without `rel="noreferrer"
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md
     'react/jsx-no-target-blank': ['error', { enforceDynamicLinks: 'always' }],
 
@@ -327,7 +326,7 @@ const reactRules = {
       },
     ],
 
-    // Disallow React to be incorrectly marked as unused
+    // Disallow `React` to be incorrectly marked as unused
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
     'react/jsx-uses-react': 'off',
 
@@ -350,7 +349,7 @@ const reactRules = {
       },
     ],
 
-    // Disallow when this.state is accessed within setState
+    // Disallow when `this.state` is accessed within `setState`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md
     'react/no-access-state-in-setstate': 'error',
 
@@ -358,7 +357,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-adjacent-inline-elements.md
     'react/no-adjacent-inline-elements': 'off',
 
-    // Disallow usage of Array index in keys
+    // Disallow usage of `Array` index in keys
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
     'react/no-array-index-key': 'error',
 
@@ -374,7 +373,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-danger.md
     'react/no-danger': 'warn',
 
-    // Disallow when a DOM element is using both children and dangerouslySetInnerHTML
+    // Disallow when a DOM element is using both `children` and `dangerouslySetInnerHTML`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md
     'react/no-danger-with-children': 'error',
 
@@ -382,19 +381,19 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md
     'react/no-deprecated': 'error',
 
-    // Disallow usage of setState in componentDidMount
+    // Disallow usage of `setState` in `componentDidMount`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-did-mount-set-state.md
     'react/no-did-mount-set-state': 'off',
 
-    // Disallow usage of setState in componentDidUpdate
+    // Disallow usage of `setState` in `componentDidUpdate`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-did-update-set-state.md
     'react/no-did-update-set-state': 'error',
 
-    // Disallow direct mutation of this.state
+    // Disallow direct mutation of `this.state`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-direct-mutation-state.md
     'react/no-direct-mutation-state': 'error',
 
-    // Disallow usage of findDOMNode
+    // Disallow usage of `findDOMNode`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
     'react/no-find-dom-node': 'error',
 
@@ -402,7 +401,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-invalid-html-attribute.md
     'react/no-invalid-html-attribute': 'error',
 
-    // Disallow usage of isMounted
+    // Disallow usage of `isMounted`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-is-mounted.md
     'react/no-is-mounted': 'error',
 
@@ -423,15 +422,15 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-object-type-as-default-prop.md
     'react/no-object-type-as-default-prop': 'off',
 
-    // Disallow usage of shouldComponentUpdate when extending React.PureComponent
+    // Disallow usage of `shouldComponentUpdate` when extending `React.PureComponent`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md
     'react/no-redundant-should-component-update': 'error',
 
-    // Disallow usage of the return value of ReactDOM.render
+    // Disallow usage of the return value of `ReactDOM.render`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md
     'react/no-render-return-value': 'error',
 
-    // Disallow usage of setState
+    // Disallow usage of `setState`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-set-state.md
     'react/no-set-state': 'off',
 
@@ -439,7 +438,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md
     'react/no-string-refs': 'error',
 
-    // Disallow this from being used in stateless functional components
+    // Disallow `this` from being used in stateless functional components
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md
     'react/no-this-in-sfc': 'error',
 
@@ -467,7 +466,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-class-component-methods.md
     'react/no-unused-class-component-methods': 'error',
 
-    // Disallow definitions of unused propTypes
+    // Disallow definitions of unused `propTypes`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md
     'react/no-unused-prop-types': [
       'error',
@@ -481,7 +480,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-unused-state.md
     'react/no-unused-state': 'error',
 
-    // Disallow usage of setState in componentWillUpdate
+    // Disallow usage of `setState` in `componentWillUpdate`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md
     'react/no-will-update-set-state': 'error',
 
@@ -489,7 +488,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md
     'react/prefer-es6-class': ['error', 'always'],
 
-    // Prefer exact proptype definitions
+    // Prefer exact `proptype` definitions
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-exact-props.md
     'react/prefer-exact-props': 'error',
 
@@ -497,7 +496,7 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-read-only-props.md
     'react/prefer-read-only-props': 'off',
 
-    // Enforce stateless components to be written as a pure function
+    // Enforce stateless components to be written as a pure `function`
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
     'react/prefer-stateless-function': ['error', { ignorePureComponents: true }],
 
@@ -512,11 +511,11 @@ const reactRules = {
       },
     ],
 
-    // Disallow missing React when using JSX
+    // Disallow missing `React` when using JSX
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md
     'react/react-in-jsx-scope': 'off',
 
-    // Enforce a defaultProps definition for every prop that is not a required prop
+    // Enforce a `defaultProps` definition for every prop that is not a required prop
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-default-props.md
     'react/require-default-props': [
       'error',
@@ -525,11 +524,11 @@ const reactRules = {
       },
     ],
 
-    // Enforce React components to have a shouldComponentUpdate method
+    // Enforce React components to have a `shouldComponentUpdate` method
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-optimization.md
     'react/require-optimization': ['off', { allowDecorators: [] }],
 
-    // Enforce ES5 or ES6 class for returning value in render function
+    // Enforce ES5 or ES6 class for returning value in `render` function
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/require-render-return.md
     'react/require-render-return': 'error',
 
@@ -613,11 +612,11 @@ const reactRules = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/static-property-placement.md
     'react/static-property-placement': ['error', 'property assignment'],
 
-    // Enforce style prop value is an object
+    // Enforce `style` prop value is an object
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md
     'react/style-prop-object': 'error',
 
-    // Disallow void DOM elements (e.g. <img />, <br />) from receiving children
+    // Disallow void DOM elements (e.g. `<img />`, `<br />`) from receiving children
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
     'react/void-dom-elements-no-children': 'error',
 
@@ -628,7 +627,7 @@ const reactRules = {
     // https://react.dev/reference/rules/rules-of-hooks
     'react-hooks/rules-of-hooks': 'error',
 
-    // Verify the list of the dependencies for Hooks like useEffect and similar
+    // Verify the list of the dependencies for Hooks like `useEffect` and similar
     // https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/src/ExhaustiveDeps.js
     // https://github.com/facebook/react/issues/14920
     'react-hooks/exhaustive-deps': 'warn',
@@ -706,46 +705,46 @@ const reactTestRules = {
     // eslint-plugin-jest-dom https://github.com/testing-library/eslint-plugin-jest-dom
 
     // Prefer toBeChecked over checking attributes
-    // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-checked.md
+    // Prefer `toBeChecked` over checking attributes
     'jest-dom/prefer-checked': 'error',
 
     // Prefer toBeEmpty over checking innerHTML
-    // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-empty.md
+    // Prefer `toBeEmpty` over checking `innerHTML`
     'jest-dom/prefer-empty': 'error',
 
     // Prefer toBeDisabled or toBeEnabled over checking attributes
-    // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-enabled-disabled.md
+    // Prefer `toBeDisabled` or `toBeEnabled` over checking attributes
     'jest-dom/prefer-enabled-disabled': 'error',
 
     // Prefer toHaveFocus over checking document.activeElement
-    // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-focus.md
+    // Prefer `toHaveFocus` over checking `document.activeElement`
     'jest-dom/prefer-focus': 'error',
 
     // Prefer .toBeInTheDocument() for asserting the existence of a DOM node
-    // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-in-document.md
+    // Prefer `.toBeInTheDocument()` for asserting the existence of a DOM node
     'jest-dom/prefer-in-document': 'error',
 
     // Prefer toBeRequired over checking properties
-    // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-required.md
+    // Prefer `toBeRequired` over checking properties
     'jest-dom/prefer-required': 'error',
 
-    // Prefer toHaveAttribute over checking getAttribute/hasAttribute
+    // Prefer `toHaveAttribute` over checking `getAttribute`/`hasAttribute`
     // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-to-have-attribute.md
     'jest-dom/prefer-to-have-attribute': 'error',
 
-    // Prefer toHaveClass over checking element className
+    // Prefer `toHaveClass` over checking element `className`
     // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-to-have-class.md
     'jest-dom/prefer-to-have-class': 'error',
 
-    // Prefer toHaveStyle over checking element style
+    // Prefer `toHaveStyle` over checking element `style`
     // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-to-have-style.md
     'jest-dom/prefer-to-have-style': 'error',
 
-    // Prefer toHaveTextContent over checking element.textContent
+    // Prefer `toHaveTextContent` over checking `element.textContent`
     // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-to-have-text-content.md
     'jest-dom/prefer-to-have-text-content': 'error',
 
-    // Prefer toHaveValue over checking element.value
+    // Prefer `toHaveValue` over checking `element.value`
     // https://github.com/testing-library/eslint-plugin-jest-dom/blob/main/docs/rules/prefer-to-have-value.md
     'jest-dom/prefer-to-have-value': 'error',
 
@@ -799,27 +798,27 @@ const reactTestRules = {
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-node-access.md
     'testing-library/no-node-access': 'error',
 
-    // Disallow the use of promises passed to a fireEvent method
+    // Disallow the use of promises passed to a `fireEvent` method
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-promise-in-fire-event.md
     'testing-library/no-promise-in-fire-event': 'error',
 
-    // Disallow the use of render in testing frameworks setup functions
+    // Disallow the use of `render` in testing frameworks setup functions
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-render-in-lifecycle.md
     'testing-library/no-render-in-lifecycle': 'error',
 
-    // Disallow wrapping Testing Library utils or empty callbacks in act
+    // Disallow wrapping Testing Library utils or empty callbacks in `act`
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-unnecessary-act.md
     'testing-library/no-unnecessary-act': 'error',
 
-    // Disallow the use of multiple expect calls inside waitFor
+    // Disallow the use of multiple `expect` calls inside `waitFor`
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-wait-for-multiple-assertions.md
     'testing-library/no-wait-for-multiple-assertions': 'error',
 
-    // Disallow the use of side effects in waitFor
+    // Disallow the use of side effects in `waitFor`
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-wait-for-side-effects.md
     'testing-library/no-wait-for-side-effects': 'error',
 
-    // Ensures no snapshot is generated inside of a waitFor call
+    // Ensures no snapshot is generated inside of a `waitFor` call
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/no-wait-for-snapshot.md
     'testing-library/no-wait-for-snapshot': 'error',
 
@@ -827,31 +826,31 @@ const reactTestRules = {
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/prefer-explicit-assert.md
     'testing-library/prefer-explicit-assert': 'off',
 
-    // Suggest using find(All)By* query instead of waitFor + get(All)By* to wait for elements
+    // Suggest using `find(All)By*` query instead of `waitFor` + `get(All)By*` to wait for elements
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/prefer-find-by.md
     'testing-library/prefer-find-by': 'error',
 
-    // Suggest using implicit assertions for getBy* & findBy* queries
+    // Suggest using implicit assertions for `getBy*` & `findBy*` queries
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/prefer-implicit-assert.md
     'testing-library/prefer-implicit-assert': 'off',
 
-    // Ensure appropriate get*/query* queries are used with their respective matchers
+    // Ensure appropriate `get*`/`query*` queries are used with their respective matchers
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/prefer-presence-queries.md
     'testing-library/prefer-presence-queries': 'error',
 
-    // Suggest using queryBy* queries when waiting for disappearance
+    // Suggest using `queryBy*` queries when waiting for disappearance
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/prefer-query-by-disappearance.md
     'testing-library/prefer-query-by-disappearance': 'error',
 
-    // Ensure the configured get*/query* query is used with the corresponding matchers
+    // Ensure the configured `get*`/`query*` query is used with the corresponding matchers
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/prefer-query-matchers.md
     'testing-library/prefer-query-matchers': 'error',
 
-    // Suggest using screen while querying
+    // Suggest using `screen` while querying
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/prefer-screen-queries.md
     'testing-library/prefer-screen-queries': 'error',
 
-    // Suggest using userEvent over fireEvent for simulating user interactions
+    // Suggest using `userEvent` over `fireEvent` for simulating user interactions
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/prefer-user-event.md
     'testing-library/prefer-user-event': 'off',
 
