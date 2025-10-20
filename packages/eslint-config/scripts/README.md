@@ -43,4 +43,3 @@ Run this script whenever:
 - You want to regenerate the documentation
 
 The script should be run before publishing a new version of the package to ensure the documentation is up to date.
-

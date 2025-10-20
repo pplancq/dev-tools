@@ -3,7 +3,6 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { execSync } from 'child_process';
 
 /* eslint-disable no-underscore-dangle */
 const __filename = fileURLToPath(import.meta.url);
@@ -267,14 +266,6 @@ function generateDocumentation() {
 
   // Write to file
   fs.writeFileSync(outputPath, content);
-
-  // Run prettier on the file if available
-  try {
-    execSync(`npx prettier --write "${outputPath}"`, { stdio: 'inherit' });
-    console.info(`Documentation formatted with Prettier`);
-  } catch {
-    console.warn('Prettier not available or failed to format, skipping...');
-  }
 
   console.info(`Documentation generated successfully at ${outputPath}`);
 
