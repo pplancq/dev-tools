@@ -1,3 +1,16 @@
+## @pplancq/react-template [2.7.5](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.4...@pplancq/react-template@2.7.5) (2025-10-20)
+
+### Bug Fixes
+
+* **deps:** update dependency @tanstack/react-query to ^5.90.5 ([52682ee](https://github.com/pplancq/dev-tools/commit/52682ee4307b20c87107f436519cbe0bf667e6c3))
+* **deps:** update dependency react-hook-form to ^7.65.0 ([0b9c715](https://github.com/pplancq/dev-tools/commit/0b9c715be11c4ae3eefd4dde56ee3bfdcdaf0edc))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 5.0.10
+* **@pplancq/prettier-config:** upgraded to 1.2.8
+
 ## @pplancq/react-template [2.7.4](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.3...@pplancq/react-template@2.7.4) (2025-10-13)
 
 ### Bug Fixes
