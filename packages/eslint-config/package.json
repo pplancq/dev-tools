@@ -10,6 +10,7 @@
     "directory": "packages/eslint-config"
   },
   "scripts": {
+    "docs:generate": "node scripts/generate-docs.mjs",
     "lint:eslint": "eslint \"**/*.{js,mjs}\"",
     "lint:eslint:fix": "eslint \"**/*.{js,mjs}\" --fix",
     "lint:prettier": "prettier \"**/*.!(js|mjs)\" --check --ignore-unknown",
