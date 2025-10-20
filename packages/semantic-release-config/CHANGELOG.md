@@ -1,3 +1,18 @@
+## @pplancq/semantic-release-config [2.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.6.8...@pplancq/semantic-release-config@2.0.0) (2025-10-20)
+
+### ⚠ BREAKING CHANGES
+
+* **semantic-release-config:** Minimum supported Node.js version is now ^22.14.0 or >=24.10.0.
+
+### Features
+
+* **semantic-release-config:** require Node ^22.14.0 || >=24.10.0 ([52a231f](https://github.com/pplancq/dev-tools/commit/52a231f2191d9e6ceb585890bfedd7a48e736284))
+
+### Bug Fixes
+
+* **deps:** update semantic-release monorepo ([21f4a0c](https://github.com/pplancq/dev-tools/commit/21f4a0cbb23135106e864e7db8407792e7a87e49))
+* **deps:** update semantic-release peer dependency range to <26 ([b385115](https://github.com/pplancq/dev-tools/commit/b38511584118e9e52911c6770272dc739d46fe65))
+
 ## @pplancq/semantic-release-config [1.6.8](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@1.6.7...@pplancq/semantic-release-config@1.6.8) (2025-09-15)
 
 ### Bug Fixes
