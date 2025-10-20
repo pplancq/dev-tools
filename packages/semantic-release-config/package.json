@@ -42,7 +42,7 @@
     "conventional-changelog-conventionalcommits": "^9.1.0"
   },
   "peerDependencies": {
-    "semantic-release": ">=22.0.12 <25"
+    "semantic-release": ">=22.0.12 <26"
   },
   "devDependencies": {
     "eslint": "^9.37.0",
