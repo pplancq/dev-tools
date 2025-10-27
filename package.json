@@ -71,7 +71,7 @@
     "npm": "11.6.2"
   },
   "optionalDependencies": {
-    "@rollup/rollup-darwin-arm64": "^4.52.4",
+    "@rollup/rollup-darwin-arm64": "^4.52.5",
     "@rollup/rollup-linux-x64-gnu": "^4.52.4",
     "@rspack/binding-darwin-arm64": "^1.5.8",
     "@rspack/binding-linux-x64-gnu": "^1.5.8",
