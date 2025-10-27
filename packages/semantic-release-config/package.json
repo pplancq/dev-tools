@@ -45,7 +45,7 @@
     "semantic-release": ">=22.0.12 <26"
   },
   "devDependencies": {
-    "eslint": "^9.37.0",
+    "eslint": "^9.38.0",
     "eslint-plugin-prettier": "^5.5.4",
     "lint-staged": "^16.2.4",
     "prettier": "^3.6.2"
