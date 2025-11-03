@@ -1,3 +1,14 @@
+## @pplancq/react-template [2.7.6](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.5...@pplancq/react-template@2.7.6) (2025-11-03)
+
+### Bug Fixes
+
+* **deps:** update dependency react-router to ^7.9.5 ([8aaa4ce](https://github.com/pplancq/dev-tools/commit/8aaa4ce0cc689a4b1444e2c17ec66b4797bd9ab3))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 5.0.12
+
 ## @pplancq/react-template [2.7.5](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.4...@pplancq/react-template@2.7.5) (2025-10-20)
 
 ### Bug Fixes
