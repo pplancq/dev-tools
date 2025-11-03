@@ -25,7 +25,8 @@
     "lint:eslint": "eslint \"**/*.{js,mjs,ts}\"",
     "lint:eslint:fix": "eslint \"**/*.{js,mjs,ts}\" --fix",
     "lint:prettier": "prettier \"**/*.!(js|mjs|ts)\" --check --ignore-unknown",
-    "lint:prettier:fix": "prettier \"**/*.!(js|mjs|ts)\" --write --ignore-unknown"
+    "lint:prettier:fix": "prettier \"**/*.!(js|mjs|ts)\" --write --ignore-unknown",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "create",
