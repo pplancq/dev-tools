@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [2.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.0...@pplancq/create-react-app@2.0.1) (2025-11-03)
+
+### Bug Fixes
+
+* **create-react-app:** fix version of create react app ([5f2b3ba](https://github.com/pplancq/dev-tools/commit/5f2b3bad525436b58b2e8504f65bf3bd9a1baed0))
+
 ## @pplancq/create-react-app [2.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@1.5.1...@pplancq/create-react-app@2.0.0) (2025-09-15)
 
 ### ⚠ BREAKING CHANGES
