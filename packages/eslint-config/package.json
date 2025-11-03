@@ -1,6 +1,6 @@
 {
   "name": "@pplancq/eslint-config",
-  "version": "5.0.11",
+  "version": "5.0.12",
   "license": "MIT",
   "description": "pplancq eslint config",
   "author": "pplancq <paul.plancq@outlook.fr>",

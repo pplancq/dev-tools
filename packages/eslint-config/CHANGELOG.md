@@ -1,3 +1,10 @@
+## @pplancq/eslint-config [5.0.12](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@5.0.11...@pplancq/eslint-config@5.0.12) (2025-11-03)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to ^1.4.0 ([6d25b84](https://github.com/pplancq/dev-tools/commit/6d25b84596a734e05f5773c38893936a1640ceff))
+* **deps:** update dependency eslint-plugin-react-hooks to ^7.0.1 ([837fd6d](https://github.com/pplancq/dev-tools/commit/837fd6de5d3080b113ee9757e7deec93a3e7404b))
+
 ## @pplancq/eslint-config [5.0.11](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@5.0.10...@pplancq/eslint-config@5.0.11) (2025-10-27)
 
 ### Bug Fixes
