@@ -56,7 +56,8 @@
   "release": {
     "extends": [
       "@pplancq/semantic-release-config"
-    ]
+    ],
+    "repositoryUrl": "https://github.com/pplancq/dev-tools"
   },
   "multi-release": {
     "deps": {
