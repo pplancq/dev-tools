@@ -8,7 +8,7 @@ const projectRoot = resolve(__dirname, '..');
 
 export const runCommand = (command, args = []) => {
   try {
-    execFileSync(command, args, { stdio: 'inherit' });
+    execFileSync(command, args, { shell: true, stdio: 'inherit' });
   } catch {}
 };
 

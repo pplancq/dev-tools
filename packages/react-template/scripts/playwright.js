@@ -2,7 +2,7 @@ import { spawnSync } from 'child_process';
 
 const runCommand = (cmd, args = []) => {
   console.info(`> ${cmd} ${args.join(' ')}`);
-  const result = spawnSync(cmd, args, { cwd: process.cwd(), stdio: 'inherit' });
+  const result = spawnSync(cmd, args, { shell: true, cwd: process.cwd(), stdio: 'inherit' });
   if (result.status !== 0) {
     throw result;
   }
