@@ -7,7 +7,11 @@ const execFileAsync = promisify(execFile);
 
 export const runCommand = async (command: string, args: string[] = [], options?: ExecFileOptions) => {
   try {
-    await execFileAsync(command, args, options);
+    const execOptions: ExecFileOptions = {
+      shell: true,
+      ...options,
+    };
+    await execFileAsync(command, args, execOptions);
   } catch {
     const commandStr = [command, ...args].join(' ');
     throw new RunCommandError(`Failed to execute ${commandStr}`);

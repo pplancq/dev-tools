@@ -15,7 +15,7 @@ vi.stubGlobal('process', {
 });
 
 describe('runCommand', () => {
-  it('should execute command successfully', async () => {
+  it('should execute command successfully with shell option enabled', async () => {
     (execFile as unknown as Mock).mockImplementation((command, args, options, callback) => {
       const cb = typeof options === 'function' ? options : callback;
       cb(null);
@@ -23,10 +23,10 @@ describe('runCommand', () => {
 
     await runCommand('echo', ['Hello World']);
 
-    expect(execFile).toHaveBeenCalledWith('echo', ['Hello World'], undefined, expect.any(Function));
+    expect(execFile).toHaveBeenCalledWith('echo', ['Hello World'], { shell: true }, expect.any(Function));
   });
 
-  it('should execute command with options successfully', async () => {
+  it('should execute command with options successfully and preserve shell option', async () => {
     const testOptions = { cwd: '/tmp' };
     (execFile as unknown as Mock).mockImplementation((command, args, options, callback) => {
       const cb = typeof options === 'function' ? options : callback;
@@ -35,7 +35,19 @@ describe('runCommand', () => {
 
     await runCommand('echo', ['Hello World'], testOptions);
 
-    expect(execFile).toHaveBeenCalledWith('echo', ['Hello World'], testOptions, expect.any(Function));
+    expect(execFile).toHaveBeenCalledWith('echo', ['Hello World'], { shell: true, cwd: '/tmp' }, expect.any(Function));
+  });
+
+  it('should allow user options to override shell option', async () => {
+    const testOptions = { shell: false, cwd: '/tmp' };
+    (execFile as unknown as Mock).mockImplementation((command, args, options, callback) => {
+      const cb = typeof options === 'function' ? options : callback;
+      cb(null);
+    });
+
+    await runCommand('echo', ['Hello World'], testOptions);
+
+    expect(execFile).toHaveBeenCalledWith('echo', ['Hello World'], { shell: false, cwd: '/tmp' }, expect.any(Function));
   });
 
   it('should throw an error if command is not valid', async () => {
