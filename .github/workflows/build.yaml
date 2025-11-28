@@ -29,7 +29,7 @@ jobs:
         run: npm ci
 
   commitlint:
-    if: github.event_name == 'pull_request'
+    if: github.event_name == 'pull_request' && !startsWith(github.head_ref, 'copilot/')
     name: CommitLint
     needs:
       - install
