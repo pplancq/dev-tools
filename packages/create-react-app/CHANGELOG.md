@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [2.0.2](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.1...@pplancq/create-react-app@2.0.2) (2025-12-01)
+
+### Bug Fixes
+
+* **create-react-app:** add shell option to child process spawning for Windows mise compatibility ([#1378](https://github.com/pplancq/dev-tools/issues/1378)) ([91d8379](https://github.com/pplancq/dev-tools/commit/91d83792a0ab8c59c646167b3abb913af3103590))
+
 ## @pplancq/create-react-app [2.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.0...@pplancq/create-react-app@2.0.1) (2025-11-03)
 
 ### Bug Fixes
