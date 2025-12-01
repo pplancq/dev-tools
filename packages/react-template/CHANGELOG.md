@@ -1,3 +1,15 @@
+## @pplancq/react-template [2.7.9](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.8...@pplancq/react-template@2.7.9) (2025-12-01)
+
+### Bug Fixes
+
+* **create-react-app:** add shell option to child process spawning for Windows mise compatibility ([#1378](https://github.com/pplancq/dev-tools/issues/1378)) ([91d8379](https://github.com/pplancq/dev-tools/commit/91d83792a0ab8c59c646167b3abb913af3103590))
+* **deps:** update react-query mono repo ([718e484](https://github.com/pplancq/dev-tools/commit/718e4843356eda0fcb8c43e0f4ff8e4a7599089e))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 5.0.15
+
 ## @pplancq/react-template [2.7.8](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.7...@pplancq/react-template@2.7.8) (2025-11-24)
 
 ### Bug Fixes
