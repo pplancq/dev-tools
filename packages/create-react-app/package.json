@@ -41,7 +41,7 @@
   ],
   "devDependencies": {
     "@clack/prompts": "^0.11.0",
-    "@rslib/core": "^0.18.0",
+    "@rslib/core": "^0.18.2",
     "@vitest/coverage-v8": "^4.0.14",
     "commander": "^14.0.2",
     "eslint": "^9.39.1",
