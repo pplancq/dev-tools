@@ -88,7 +88,7 @@
     "msw": "^2.12.2",
     "nodemon": "^3.1.11",
     "prettier": "^3.6.2",
-    "stylelint": "^16.25.0",
+    "stylelint": "^16.26.1",
     "stylelint-prettier": "^5.0.3",
     "stylelint-webpack-plugin": "^5.0.1",
     "tsc-files": "^1.1.4",
