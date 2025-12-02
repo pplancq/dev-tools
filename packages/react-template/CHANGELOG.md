@@ -1,3 +1,9 @@
+## @pplancq/react-template [2.7.10](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.9...@pplancq/react-template@2.7.10) (2025-12-02)
+
+### Bug Fixes
+
+* **react-template:** improve cross-platform shell command execution ([9ad7c7a](https://github.com/pplancq/dev-tools/commit/9ad7c7aea6106e20b807f58732a0f5321ea4ce35))
+
 ## @pplancq/react-template [2.7.9](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.8...@pplancq/react-template@2.7.9) (2025-12-01)
 
 ### Bug Fixes
