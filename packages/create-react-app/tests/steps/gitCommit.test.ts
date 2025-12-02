@@ -13,7 +13,7 @@ describe('gitCommit', () => {
     await gitCommit(testPath, false);
 
     expect(runCommand).toHaveBeenCalledWith('git', ['add', '.'], { cwd: testPath });
-    expect(runCommand).toHaveBeenCalledWith('git', ['commit', '--no-verify', '--message', 'Initial commit'], {
+    expect(runCommand).toHaveBeenCalledWith('git', ['commit', '--no-verify', '--message', '"Initial commit"'], {
       cwd: testPath,
     });
   });
