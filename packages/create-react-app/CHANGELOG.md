@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [2.0.3](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.2...@pplancq/create-react-app@2.0.3) (2025-12-02)
+
+### Bug Fixes
+
+* **create-react-app:** adjust shell option for cross-platform compatibility ([69c7d69](https://github.com/pplancq/dev-tools/commit/69c7d6997179d8dbf04cdb7a7ba3fefc7bb936f7))
+
 ## @pplancq/create-react-app [2.0.2](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.1...@pplancq/create-react-app@2.0.2) (2025-12-01)
 
 ### Bug Fixes
