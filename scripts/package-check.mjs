@@ -2,13 +2,14 @@
 import { execFileSync } from 'node:child_process';
 import { existsSync, renameSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { platform } from 'node:process';
 
 const __dirname = new URL('.', import.meta.url).pathname;
 const projectRoot = resolve(__dirname, '..');
 
 export const runCommand = (command, args = []) => {
   try {
-    execFileSync(command, args, { shell: true, stdio: 'inherit' });
+    execFileSync(command, args, { shell: platform === 'win32', stdio: 'inherit' });
   } catch {}
 };
 
