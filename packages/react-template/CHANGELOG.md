@@ -1,3 +1,19 @@
+## @pplancq/react-template [2.7.11](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.10...@pplancq/react-template@2.7.11) (2025-12-08)
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to ^20.2.0 ([71b8849](https://github.com/pplancq/dev-tools/commit/71b884925ffb1e3474347f8033bfe2e17a3cfaab))
+* **deps:** update dependency @tanstack/react-query to ^5.90.12 ([5012b9c](https://github.com/pplancq/dev-tools/commit/5012b9c1aa7b200507c74a3281519bf71b01984e))
+* **deps:** update dependency react-hook-form to ^7.68.0 ([52f97f9](https://github.com/pplancq/dev-tools/commit/52f97f91048dce7c74ac15b40d93e599bf164b59))
+* **deps:** update dependency react-router to ^7.10.1 ([d9e2ed7](https://github.com/pplancq/dev-tools/commit/d9e2ed76bc999f928a2beb1333663277c8f2e7a0))
+* **deps:** update react monorepo to ^19.2.1 ([504b923](https://github.com/pplancq/dev-tools/commit/504b92346754872cfba9241670cdd3a61fa927d4))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 5.0.16
+* **@pplancq/postcss-config:** upgraded to 2.1.17
+
 ## @pplancq/react-template [2.7.10](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.9...@pplancq/react-template@2.7.10) (2025-12-02)
 
 ### Bug Fixes
