@@ -42,7 +42,7 @@
   "devDependencies": {
     "@clack/prompts": "^0.11.0",
     "@rslib/core": "^0.18.2",
-    "@vitest/coverage-v8": "^4.0.14",
+    "@vitest/coverage-v8": "^4.0.15",
     "commander": "^14.0.2",
     "eslint": "^9.39.1",
     "eslint-plugin-prettier": "^5.5.4",
@@ -52,7 +52,7 @@
     "tsc-files": "^1.1.4",
     "typescript": "^5.9.3",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^4.0.14",
+    "vitest": "^4.0.15",
     "vitest-sonar-reporter": "^3.0.0"
   },
   "engines": {
