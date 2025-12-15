@@ -1,3 +1,14 @@
+## @pplancq/react-template [2.7.12](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.11...@pplancq/react-template@2.7.12) (2025-12-15)
+
+### Bug Fixes
+
+* **deps:** update react monorepo to ^19.2.3 ([d376fe7](https://github.com/pplancq/dev-tools/commit/d376fe75d7729200e596e3b598db797f252d3d1b))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 5.0.17
+
 ## @pplancq/react-template [2.7.11](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.10...@pplancq/react-template@2.7.11) (2025-12-08)
 
 ### Bug Fixes
