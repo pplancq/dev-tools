@@ -38,6 +38,8 @@ jobs:
 
       - name: Setup Node
         uses: pplancq/actions/setup-node@main
+        with:
+          use-mise: true
 
       - name: Install package
         run: npm ci

@@ -47,9 +47,6 @@
   "engines": {
     "node": ">=v18"
   },
-  "volta": {
-    "extends": "../../package.json"
-  },
   "prettier": "@pplancq/prettier-config",
   "lint-staged": {
     "*.(js|mjs)": "eslint --fix",

@@ -23,6 +23,7 @@ jobs:
       - name: Setup Node
         uses: pplancq/actions/setup-node@main
         with:
+          use-mise: true
           disabled-cache: true
 
       - name: Install package
