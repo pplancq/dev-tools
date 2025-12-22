@@ -44,7 +44,7 @@
     "@rslib/core": "^0.18.4",
     "@vitest/coverage-v8": "^4.0.15",
     "commander": "^14.0.2",
-    "eslint": "^9.39.1",
+    "eslint": "^9.39.2",
     "eslint-plugin-prettier": "^5.5.4",
     "lint-staged": "^16.2.7",
     "picocolors": "^1.1.1",
