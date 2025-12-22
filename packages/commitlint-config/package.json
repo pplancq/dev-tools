@@ -39,7 +39,7 @@
     "@commitlint/cli": "^19.0.3 || ^20.0.0"
   },
   "devDependencies": {
-    "eslint": "^9.39.1",
+    "eslint": "^9.39.2",
     "eslint-plugin-prettier": "^5.5.4",
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.4"
