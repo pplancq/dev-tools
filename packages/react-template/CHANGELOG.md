@@ -1,3 +1,18 @@
+## @pplancq/react-template [2.7.15](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.14...@pplancq/react-template@2.7.15) (2026-01-05)
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to ^20.3.0 ([63dbb01](https://github.com/pplancq/dev-tools/commit/63dbb01ce24cb4b1d9e5cb1a57bb023aefa7774c))
+* **deps:** update react-query mono repo ([b42386d](https://github.com/pplancq/dev-tools/commit/b42386d8350b6971f6e812d02da909028aa30ecc))
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 2.3.2
+* **@pplancq/eslint-config:** upgraded to 5.0.20
+* **@pplancq/postcss-config:** upgraded to 2.1.18
+* **@pplancq/prettier-config:** upgraded to 1.2.9
+
 ## @pplancq/react-template [2.7.14](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.13...@pplancq/react-template@2.7.14) (2025-12-31)
 
 ### Bug Fixes
