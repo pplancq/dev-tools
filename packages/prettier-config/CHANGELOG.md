@@ -1,3 +1,9 @@
+## @pplancq/prettier-config [1.2.9](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@1.2.8...@pplancq/prettier-config@1.2.9) (2026-01-05)
+
+### Bug Fixes
+
+* **deps:** update dependency prettier-plugin-properties to ^0.3.1 ([e85a6b3](https://github.com/pplancq/dev-tools/commit/e85a6b33d419a8f98bacb1b406becd5575d23a38))
+
 ## @pplancq/prettier-config [1.2.8](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@1.2.7...@pplancq/prettier-config@1.2.8) (2025-10-20)
 
 ### Bug Fixes
