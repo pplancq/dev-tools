@@ -48,7 +48,7 @@
     "eslint-plugin-prettier": "^5.5.4",
     "lint-staged": "^16.2.7",
     "picocolors": "^1.1.1",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.0",
     "tsc-files": "^1.1.4",
     "typescript": "^5.9.3",
     "vite-tsconfig-paths": "^6.0.3",
