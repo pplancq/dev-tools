@@ -89,7 +89,7 @@
     "nodemon": "^3.1.11",
     "prettier": "^3.8.0",
     "rsbuild-plugin-stylelint": "^1.0.1",
-    "stylelint": "^16.26.1",
+    "stylelint": "^17.0.0",
     "stylelint-prettier": "^5.0.3",
     "tsc-files": "^1.1.4",
     "typescript": "^5.9.3",
