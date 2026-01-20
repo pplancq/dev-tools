@@ -1,3 +1,9 @@
+## @pplancq/stylelint-config [4.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@4.0.6...@pplancq/stylelint-config@4.1.0) (2026-01-20)
+
+### Features
+
+* **stylelint-config:** implement stylelint-order plugin for property ordering ([b605077](https://github.com/pplancq/dev-tools/commit/b60507766e6aac0e0d020e17875562fee1ce3fbc))
+
 ## @pplancq/stylelint-config [4.0.6](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@4.0.5...@pplancq/stylelint-config@4.0.6) (2025-10-13)
 
 ### Bug Fixes
