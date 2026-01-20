@@ -49,6 +49,11 @@
     "prettier": "^3.8.0",
     "semantic-release": "^25.0.2"
   },
+  "overrides": {
+    "rsbuild-plugin-stylelint": {
+      "stylelint": "^17.0.0"
+    }
+  },
   "lint-staged": {
     "(package|package-lock).json": "npm run package:check",
     "*": "prettier --write --ignore-unknown"
