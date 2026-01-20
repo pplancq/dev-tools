@@ -1,4 +1,5 @@
 import postcssFlexbugsFixes from 'postcss-flexbugs-fixes';
+// eslint-disable-next-line import/no-unresolved
 import postcssPresetEnv from 'postcss-preset-env';
 import postcssNormalize from 'postcss-normalize';
 
