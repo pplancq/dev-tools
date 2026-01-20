@@ -2,7 +2,7 @@ import { defineConfig, loadEnv } from '@rsbuild/core';
 import { pluginEslint } from '@rsbuild/plugin-eslint';
 import { pluginReact } from '@rsbuild/plugin-react';
 import { pluginSass } from '@rsbuild/plugin-sass';
-import StylelintPlugin from 'stylelint-webpack-plugin';
+import { pluginStylelint } from 'rsbuild-plugin-stylelint';
 import packageJson from './package.json';
 
 const resolveModule = (module: string) => {
@@ -19,8 +19,6 @@ const { publicVars } = loadEnv({ prefixes: [process.env.ENV_PREFIX ?? 'FRONT_'] 
 const publicUrl = process.env.PUBLIC_URL ?? (packageJson as { homepage?: string }).homepage ?? '/';
 const publicPath = new URL(publicUrl.endsWith('/') ? publicUrl : `${publicUrl}/`, 'http://localhost').pathname;
 const disableSourceMap = (process.env.DISABLE_SOURCE_MAP ?? 'false') === 'true' ? false : 'source-map';
-const disableStyleLintPlugin =
-  (process.env.DISABLE_STYLELINT_PLUGIN ?? 'false') === 'true' || !resolveModule('stylelint');
 
 export default defineConfig(({ env }) => {
   const isProduction = env === 'production';
@@ -32,6 +30,10 @@ export default defineConfig(({ env }) => {
       !isProduction &&
         pluginEslint({
           enable: (process.env.DISABLE_ESLINT_PLUGIN ?? 'false') === 'true' || !resolveModule('eslint'),
+        }),
+      !isProduction &&
+        pluginStylelint({
+          enable: (process.env.DISABLE_STYLELINT_PLUGIN ?? 'false') === 'false' && resolveModule('stylelint'),
         }),
     ].filter(Boolean),
     source: {
@@ -59,19 +61,6 @@ export default defineConfig(({ env }) => {
     server: {
       port: parseInt(process.env.PORT ?? '3000', 10),
       open: (process.env.BROWSER ?? 'false') === 'true',
-    },
-    tools: {
-      rspack: {
-        plugins: [
-          !disableStyleLintPlugin &&
-            new StylelintPlugin({
-              extensions: ['css', 'scss', 'sass'],
-              stylelintPath: require.resolve('stylelint'),
-              failOnError: isProduction,
-              context: 'src',
-            }),
-        ].filter(Boolean),
-      },
     },
     html: {
       template: './index.html',
