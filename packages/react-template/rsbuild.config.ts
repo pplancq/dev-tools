@@ -29,7 +29,10 @@ export default defineConfig(({ env }) => {
       pluginSass(),
       !isProduction &&
         pluginEslint({
-          enable: (process.env.DISABLE_ESLINT_PLUGIN ?? 'false') === 'true' || !resolveModule('eslint'),
+          enable: (process.env.DISABLE_ESLINT_PLUGIN ?? 'false') === 'false' && resolveModule('eslint'),
+          eslintPluginOptions: {
+            configType: 'flat',
+          },
         }),
       !isProduction &&
         pluginStylelint({
