@@ -1,3 +1,22 @@
+## @pplancq/react-template [2.8.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.16...@pplancq/react-template@2.8.0) (2026-01-20)
+
+### Features
+
+* **react-template:** add rsbuild-plugin-stylelint dependency and update config ([7794c90](https://github.com/pplancq/dev-tools/commit/7794c909a9787de571fd3297e87d79f2c7efb8be))
+
+### Bug Fixes
+
+* **react-template:** correct eslint plugin enable logic and add options ([ffbd2d3](https://github.com/pplancq/dev-tools/commit/ffbd2d3581a3cc68bdca44d35478d18986ac0c13))
+* **deps:** update dependency @tanstack/react-query to ^5.90.18 ([96ec60d](https://github.com/pplancq/dev-tools/commit/96ec60d0519b0a97330781821f3990c0e824ea80))
+* **deps:** update dependency react-hook-form to ^7.71.1 ([4da0585](https://github.com/pplancq/dev-tools/commit/4da05851ff912aeebbeb23eafd0b6b29d8b4dce1))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 5.0.22
+* **@pplancq/postcss-config:** upgraded to 3.0.0
+* **@pplancq/stylelint-config:** upgraded to 4.1.0
+
 ## @pplancq/react-template [2.7.16](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.15...@pplancq/react-template@2.7.16) (2026-01-12)
 
 ### Bug Fixes
