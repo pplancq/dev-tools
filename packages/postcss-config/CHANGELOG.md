@@ -1,3 +1,18 @@
+## @pplancq/postcss-config [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/postcss-config@2.1.18...@pplancq/postcss-config@3.0.0) (2026-01-20)
+
+### ⚠ BREAKING CHANGES
+
+* **postcss-config:** Drop CommonJS support. See the [README](https://github.com/pplancq/dev-tools/blob/main/packages/postcss-config/README.md) for migration instructions.
+
+### Features
+
+* **postcss-config:** migrate to ESM and update configuration files ([93c5a13](https://github.com/pplancq/dev-tools/commit/93c5a13fadef45cbb1e722b42812e45ec2f9b9dd))
+
+### Bug Fixes
+
+* **deps:** update dependency postcss-preset-env to ^10.6.1 ([8e914a7](https://github.com/pplancq/dev-tools/commit/8e914a713d41dc309d9a347306b85d44ec78923d))
+* **deps:** update dependency postcss-preset-env to v11 ([fa83d2b](https://github.com/pplancq/dev-tools/commit/fa83d2b9b48f09a0e3618b1ae5b62b4942880e2d))
+
 ## @pplancq/postcss-config [2.1.18](https://github.com/pplancq/dev-tools/compare/@pplancq/postcss-config@2.1.17...@pplancq/postcss-config@2.1.18) (2026-01-05)
 
 ### Bug Fixes
