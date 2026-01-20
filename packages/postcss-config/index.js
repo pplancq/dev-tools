@@ -1,8 +1,9 @@
-const postcssFlexbugsFixes = require('postcss-flexbugs-fixes');
-const postcssPresetEnv = require('postcss-preset-env');
-const postcssNormalize = require('postcss-normalize');
+import postcssFlexbugsFixes from 'postcss-flexbugs-fixes';
+import postcssPresetEnv from 'postcss-preset-env';
+import postcssNormalize from 'postcss-normalize';
 
-module.exports = {
+// eslint-disable-next-line import/no-default-export
+export default {
   ident: 'postcss',
   config: false,
   plugins: [
