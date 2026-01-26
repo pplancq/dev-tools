@@ -42,7 +42,7 @@
     "eslint": "^9.39.2",
     "eslint-plugin-prettier": "^5.5.5",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.8.0"
+    "prettier": "^3.8.1"
   },
   "engines": {
     "node": ">=v18"
