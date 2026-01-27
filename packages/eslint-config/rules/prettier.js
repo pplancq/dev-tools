@@ -1,6 +1,6 @@
-const prettierPlugin = require('eslint-plugin-prettier');
+import prettierPlugin from 'eslint-plugin-prettier';
 
-const prettierRules = {
+export const prettierRules = {
   plugins: {
     prettier: prettierPlugin,
   },
@@ -134,8 +134,4 @@ const prettierRules = {
     'wrap-regex': 'off',
     'yield-star-spacing': 'off',
   },
-};
-
-module.exports = {
-  prettierRules,
 };

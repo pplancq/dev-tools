@@ -1,4 +1,40 @@
-# Migration Guide v3 to v4
+# Migration Guide
+
+## v5 to v6
+
+### ⚠️ Breaking Change: ESM Only from v6
+
+As of version 6.x, this package is **ESM-only**. CommonJS (`require`) is no longer supported.
+
+#### Migration from CommonJS to ESM
+
+**Old (CommonJS) usage:**
+
+```javascript
+// eslint.config.js
+const { defineConfig } = require('@pplancq/eslint-config');
+
+module.exports = defineConfig({
+  // your options here
+});
+```
+
+**New (ESM) usage:**
+
+```javascript
+// eslint.config.mjs (or eslint.config.js when using "type": "module")
+import { defineConfig } from '@pplancq/eslint-config';
+
+export default defineConfig({
+  // your options here
+});
+```
+
+If you are using a `.js` config file, ensure your environment supports ESM (e.g., Node.js >= 18, or set `"type": "module"` in your `package.json`).
+
+---
+
+## v3 to v4
 
 This guide will help you migrate from version 3 to version 4 of the `@pplancq/eslint-config` package, which now supports ESLint 9 and the new flat configuration.
 

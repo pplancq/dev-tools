@@ -1,11 +1,12 @@
-const { baseRules } = require('./rules/base');
-const { importRules } = require('./rules/import');
-const { reactJsxA11yRules } = require('./rules/react-jsx-a11y');
-const { reactRules, reactTypescriptRules, reactTestRules } = require('./rules/react');
-const { typescriptRules } = require('./rules/typescript');
-const { prettierRules } = require('./rules/prettier');
-const { vitestRules } = require('./rules/vitest');
-const { playwrightRules } = require('./rules/playwright');
+/* eslint-disable import/extensions */
+import { baseRules } from './rules/base.js';
+import { importRules } from './rules/import.js';
+import { reactJsxA11yRules } from './rules/react-jsx-a11y.js';
+import { reactRules, reactTypescriptRules, reactTestRules } from './rules/react.js';
+import { typescriptRules } from './rules/typescript.js';
+import { prettierRules } from './rules/prettier.js';
+import { vitestRules } from './rules/vitest.js';
+import { playwrightRules } from './rules/playwright.js';
 
 /**
  * define eslint flat config.
@@ -22,7 +23,7 @@ const { playwrightRules } = require('./rules/playwright');
  *
  * @returns {import('eslint').Linter.Config}
  */
-const defineConfig = ({
+export const defineConfig = ({
   tsFiles = ['**/*.ts?(x)'],
   unitTestFiles = ['**/*.{test,spec,steps}.{js,jsx,ts,tsx}'],
   unitE2eFiles = ['tests/**/*.{test,spec}.{js,jsx,ts,tsx}'],
@@ -62,8 +63,4 @@ const defineConfig = ({
     },
     ...extendConfig,
   ].filter(Boolean);
-};
-
-module.exports = {
-  defineConfig,
 };
