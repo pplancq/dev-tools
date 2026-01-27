@@ -24,9 +24,10 @@
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
+  "type": "module",
   "main": "index.js",
   "bin": {
-    "init-prettier-config": "bin/init.js"
+    "init-prettier-config": "bin/init.mjs"
   },
   "keywords": [
     "prettier",
