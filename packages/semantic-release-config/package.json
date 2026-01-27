@@ -24,9 +24,10 @@
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
+  "type": "module",
   "main": "index.js",
   "bin": {
-    "init-semantic-release-config": "bin/init.js"
+    "init-semantic-release-config": "bin/init.mjs"
   },
   "keywords": [
     "semantic-release",
