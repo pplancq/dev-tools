@@ -25,12 +25,7 @@
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
   "type": "module",
-  "exports": {
-    ".": {
-      "import": "./index.js",
-      "default": "./index.js"
-    }
-  },
+  "main": "index.js",
   "bin": {
     "init-postcss-config": "bin/init.mjs"
   },
