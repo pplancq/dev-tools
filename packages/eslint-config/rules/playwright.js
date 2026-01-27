@@ -1,7 +1,7 @@
-const playwrightPlugin = require('eslint-plugin-playwright');
-const globals = require('globals');
+import playwrightPlugin from 'eslint-plugin-playwright';
+import globals from 'globals';
 
-const playwrightRules = {
+export const playwrightRules = {
   plugins: {
     playwright: playwrightPlugin,
   },
@@ -220,8 +220,4 @@ const playwrightRules = {
     // https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/valid-title.md
     'playwright/valid-title': 'error',
   },
-};
-
-module.exports = {
-  playwrightRules,
 };

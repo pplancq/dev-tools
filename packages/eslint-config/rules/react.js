@@ -1,9 +1,9 @@
-const reactPlugin = require('eslint-plugin-react');
-const reactHooksPlugin = require('eslint-plugin-react-hooks');
-const testingLibraryPlugin = require('eslint-plugin-testing-library');
-const jestDom = require('eslint-plugin-jest-dom');
+import reactPlugin from 'eslint-plugin-react';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import testingLibraryPlugin from 'eslint-plugin-testing-library';
+import jestDom from 'eslint-plugin-jest-dom';
 
-const reactRules = {
+export const reactRules = {
   plugins: {
     react: reactPlugin,
     'react-hooks': reactHooksPlugin,
@@ -650,7 +650,7 @@ const reactRules = {
   },
 };
 
-const reactTypescriptRules = {
+export const reactTypescriptRules = {
   settings: {
     'import/resolver': {
       node: {
@@ -696,7 +696,7 @@ const reactTypescriptRules = {
   },
 };
 
-const reactTestRules = {
+export const reactTestRules = {
   plugins: {
     'testing-library': testingLibraryPlugin,
     'jest-dom': jestDom,
@@ -858,10 +858,4 @@ const reactTestRules = {
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/render-result-naming-convention.md
     'testing-library/render-result-naming-convention': 'error',
   },
-};
-
-module.exports = {
-  reactRules,
-  reactTypescriptRules,
-  reactTestRules,
 };

@@ -1,6 +1,6 @@
-const jsxA11yPlugin = require('eslint-plugin-jsx-a11y');
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 
-const reactJsxA11yRules = {
+export const reactJsxA11yRules = {
   plugins: {
     'jsx-a11y': jsxA11yPlugin,
   },
@@ -217,8 +217,4 @@ const reactJsxA11yRules = {
     // https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/tabindex-no-positive.md
     'jsx-a11y/tabindex-no-positive': 'error',
   },
-};
-
-module.exports = {
-  reactJsxA11yRules,
 };

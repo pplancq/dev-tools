@@ -1,6 +1,6 @@
-const vitestPlugin = require('@vitest/eslint-plugin');
+import vitestPlugin from '@vitest/eslint-plugin';
 
-const vitestRules = {
+export const vitestRules = {
   plugins: {
     '@vitest': vitestPlugin,
   },
@@ -230,8 +230,4 @@ const vitestRules = {
     // https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-title.md
     '@vitest/valid-title': 'warn',
   },
-};
-
-module.exports = {
-  vitestRules,
 };

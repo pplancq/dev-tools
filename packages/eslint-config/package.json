@@ -27,9 +27,10 @@
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
+  "type": "module",
   "main": "main.js",
   "bin": {
-    "init-eslint-config": "bin/init.js"
+    "init-eslint-config": "bin/init.mjs"
   },
   "keywords": [
     "eslint",

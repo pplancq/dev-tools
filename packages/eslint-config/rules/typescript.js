@@ -1,8 +1,8 @@
 /* eslint-disable import/no-unresolved */
-const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin');
-const typescriptEslintParser = require('@typescript-eslint/parser');
+import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
+import typescriptEslintParser from '@typescript-eslint/parser';
 
-const typescriptRules = {
+export const typescriptRules = {
   plugins: {
     '@typescript-eslint': typescriptEslintPlugin,
   },
@@ -563,8 +563,4 @@ const typescriptRules = {
     // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/use-unknown-in-catch-callback-variable.mdx
     '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
   },
-};
-
-module.exports = {
-  typescriptRules,
 };
