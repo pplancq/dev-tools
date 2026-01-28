@@ -14,7 +14,8 @@ const { result } = concurrently(commands, {
   maxProcesses: 1,
 });
 
-result.then(
-  () => process.exit(0),
-  () => process.exit(1),
-);
+try {
+  await result;
+} catch {
+  process.exit(1);
+}

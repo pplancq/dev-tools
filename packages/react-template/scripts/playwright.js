@@ -36,4 +36,12 @@ const main = async () => {
   runCommand('npx', ['playwright', ...playwrightArgs]);
 };
 
-main().catch(e => process.exit(e.status));
+try {
+  await main();
+} catch (e) {
+  const status =
+    e && typeof e === 'object' && 'status' in e && typeof e.status === 'number' && Number.isFinite(e.status)
+      ? e.status
+      : 1;
+  process.exit(status);
+}
