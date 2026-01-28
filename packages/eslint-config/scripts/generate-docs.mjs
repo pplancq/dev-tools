@@ -84,7 +84,7 @@ function extractDescription(ruleName, ruleFile) {
   const lines = fileContent.split('\n');
 
   // Find the rule name in the file
-  const rulePattern = new RegExp(String.raw`['"]${ruleName.replace('/', '/')}['"]:`);
+  const rulePattern = new RegExp(String.raw`['"]${ruleName}['"]:`);
 
   const ruleLineIndex = lines.findIndex(line => rulePattern.test(line));
   if (ruleLineIndex === -1) {
