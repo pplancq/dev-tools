@@ -1,15 +1,9 @@
-const enableMock = async () => {
-  if (import.meta.env.FRONT_MOCK_ENABLE === 'true') {
-    const { worker } = await import('@Mocks/browser');
+if (import.meta.env.FRONT_MOCK_ENABLE === 'true') {
+  const { worker } = await import('@Mocks/browser');
+  await worker.start({
+    onUnhandledRequest: 'warn',
+  });
+}
 
-    return worker.start({
-      onUnhandledRequest: 'warn',
-    });
-  }
-
-  return undefined;
-};
-
-await enableMock();
 const { default: AppReact } = await import('./bootstrap');
 customElements.define('app-react', AppReact);

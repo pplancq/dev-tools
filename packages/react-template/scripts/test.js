@@ -16,7 +16,6 @@ const { result } = concurrently(commands, {
 
 try {
   await result;
-  process.exit(0);
 } catch {
   process.exit(1);
 }

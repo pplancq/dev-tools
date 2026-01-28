@@ -39,5 +39,9 @@ const main = async () => {
 try {
   await main();
 } catch (e) {
-  process.exit(e.status);
+  const status =
+    e && typeof e === 'object' && 'status' in e && typeof e.status === 'number' && Number.isFinite(e.status)
+      ? e.status
+      : 1;
+  process.exit(status);
 }

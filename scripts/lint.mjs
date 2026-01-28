@@ -8,7 +8,6 @@ const { result } = concurrently(['npm:lint:*(!fix)'], {
 
 try {
   await result;
-  process.exit(0);
 } catch {
   process.exit(1);
 }
