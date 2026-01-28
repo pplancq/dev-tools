@@ -14,7 +14,7 @@ const main = async () => {
 
   let playwrightArgs = [...args];
 
-  if (args.indexOf('--watch') !== -1) {
+  if (args.includes('--watch')) {
     const filteredArgs = args.filter(a => a !== '--watch');
     runCommand('npx', [
       'nodemon',
@@ -28,7 +28,7 @@ const main = async () => {
     return;
   }
 
-  if (playwrightArgs.indexOf('--coverage') !== -1) {
+  if (playwrightArgs.includes('--coverage')) {
     process.env.ENABLED_COVERAGE = 'true';
     playwrightArgs = playwrightArgs.filter(p => p !== '--coverage');
   }
