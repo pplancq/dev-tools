@@ -7,7 +7,7 @@ const enableMock = async () => {
     });
   }
 
-  return Promise.resolve();
+  return undefined;
 };
 
 enableMock().then(() => {
