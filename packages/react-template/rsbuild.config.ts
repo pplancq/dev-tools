@@ -62,7 +62,7 @@ export default defineConfig(({ env }) => {
       ],
     },
     server: {
-      port: parseInt(process.env.PORT ?? '3000', 10),
+      port: Number.parseInt(process.env.PORT ?? '3000', 10),
       open: (process.env.BROWSER ?? 'false') === 'true',
     },
     html: {
