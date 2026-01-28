@@ -3,13 +3,12 @@ import { endProcess } from '@/helpers/endProcess';
 import { main } from '@/main';
 import { log, outro } from '@clack/prompts';
 
-main()
-  .then(() => {
-    outro('Happy hacking!');
-    endProcess();
-  })
-  .catch(error => {
-    log.error(error.message);
-    outro('Please check and try again.');
-    endProcess(true);
-  });
+try {
+  await main();
+  outro('Happy hacking!');
+  endProcess();
+} catch (error: unknown) {
+  log.error((error as Error).message);
+  outro('Please check and try again.');
+  endProcess(true);
+}

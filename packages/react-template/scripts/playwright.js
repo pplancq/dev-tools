@@ -36,4 +36,8 @@ const main = async () => {
   runCommand('npx', ['playwright', ...playwrightArgs]);
 };
 
-main().catch(e => process.exit(e.status));
+try {
+  await main();
+} catch (e) {
+  process.exit(e.status);
+}

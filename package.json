@@ -17,7 +17,7 @@
     "build": "npm run build --workspaces --if-present",
     "test": "vitest run",
     "test:watch": "vitest",
-    "lint": "node scripts/lint.js",
+    "lint": "node scripts/lint.mjs",
     "lint:eslint": "npm run lint:eslint --workspaces --if-present",
     "lint:eslint:fix": "npm run lint:eslint:fix --workspaces --if-present",
     "lint:stylelint": "npm run lint:stylelint --workspaces --if-present",

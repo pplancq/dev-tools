@@ -10,8 +10,6 @@ const enableMock = async () => {
   return undefined;
 };
 
-enableMock().then(() => {
-  import('./bootstrap').then(({ default: AppReact }) => {
-    customElements.define('app-react', AppReact);
-  });
-});
+await enableMock();
+const { default: AppReact } = await import('./bootstrap');
+customElements.define('app-react', AppReact);

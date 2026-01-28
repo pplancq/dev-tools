@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "ES2022",
     "lib": ["DOM", "ES2021"],
     "module": "ESNext",
     "strict": true,
