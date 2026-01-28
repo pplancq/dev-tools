@@ -7,7 +7,7 @@ function before(name) {
 }
 
 function border(name) {
-  const infix = name !== undefined ? `-${name}` : '';
+  const infix = name ? `-${name}` : '';
 
   return ['', '-width', '-style', '-color'].map(after(infix)).map(after('border'));
 }
@@ -17,7 +17,7 @@ function startEnd(name) {
 }
 
 function topRightBottomLeft(name) {
-  const prefix = name !== undefined ? `${name}-` : '';
+  const prefix = name ? `${name}-` : '';
   const properties = ['top', 'right', 'bottom', 'left'].map(after(prefix));
 
   return [name ?? [], properties].flat();
