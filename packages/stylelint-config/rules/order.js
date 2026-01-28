@@ -51,7 +51,8 @@ function contentItemsSelf(name) {
   return ['-content', '-items', '-self'].map(after(name));
 }
 
-module.exports = {
+// eslint-disable-next-line import/no-default-export
+export default {
   plugins: ['stylelint-order'],
   rules: {
     'order/properties-order': [
