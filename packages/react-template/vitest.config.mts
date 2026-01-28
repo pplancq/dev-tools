@@ -1,5 +1,5 @@
 import react from '@vitejs/plugin-react-swc';
-import { resolve } from 'path';
+import { resolve } from 'node:path';
 import { loadEnv } from 'vite';
 import svgr from 'vite-plugin-svgr';
 import viteTsconfigPaths from 'vite-tsconfig-paths';

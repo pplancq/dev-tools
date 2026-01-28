@@ -1,5 +1,5 @@
 import { RunCommandError } from '@/Error/RunCommandError';
-import type { ExecFileOptions } from 'child_process';
+import type { ExecFileOptions } from 'node:child_process';
 import { execFile } from 'node:child_process';
 import { platform } from 'node:process';
 import { promisify } from 'node:util';
