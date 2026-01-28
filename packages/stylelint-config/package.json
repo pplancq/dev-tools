@@ -26,13 +26,14 @@
   "bugs": {
     "url": "https://github.com/pplancq/dev-tools/issues"
   },
+  "type": "module",
   "main": "index.js",
   "exports": {
     ".": "./index.js",
     "./prettier": "./prettier.js"
   },
   "bin": {
-    "init-stylelint-config": "bin/init.js"
+    "init-stylelint-config": "bin/init.mjs"
   },
   "keywords": [
     "stylelint",
