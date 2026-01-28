@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-const { rmSync, readFileSync, writeFileSync, mkdirSync } = require('fs');
-const { resolve } = require('path');
+const { rmSync, readFileSync, writeFileSync, mkdirSync } = require('node:fs');
+const { resolve } = require('node:path');
 
 const resolveSrc = path => resolve(__dirname, `../src${path}`);
 
