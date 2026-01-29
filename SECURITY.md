@@ -5,13 +5,13 @@
 | Package Name                       | Version | Supported          |
 | ---------------------------------- | ------- | ------------------ |
 | `@pplancq/babel-config`            | 1.x     | :x:                |
-| `@pplancq/commitlint-config`       | 2.x     | :white_check_mark: |
-| `@pplancq/create-react-app`        | 1.x     | :white_check_mark: |
-| `@pplancq/eslint-config`           | 5.x     | :white_check_mark: |
-| `@pplancq/postcss-config`          | 2.x     | :white_check_mark: |
-| `@pplancq/prettier-config`         | 1.x     | :white_check_mark: |
-| `@pplancq/semantic-release-config` | 1.x     | :white_check_mark: |
-| `@pplancq/stylelint-config`        | 4.x     | :white_check_mark: |
+| `@pplancq/commitlint-config`       | 3.x     | :white_check_mark: |
+| `@pplancq/create-react-app`        | 2.x     | :white_check_mark: |
+| `@pplancq/eslint-config`           | 6.x     | :white_check_mark: |
+| `@pplancq/postcss-config`          | 3.x     | :white_check_mark: |
+| `@pplancq/prettier-config`         | 2.x     | :white_check_mark: |
+| `@pplancq/semantic-release-config` | 3.x     | :white_check_mark: |
+| `@pplancq/stylelint-config`        | 5.x     | :white_check_mark: |
 | `@pplancq/webpack-config`          | 1.x     | :x:                |
 | `@pplancq/react-template`          | 2.x     | :white_check_mark: |
 
