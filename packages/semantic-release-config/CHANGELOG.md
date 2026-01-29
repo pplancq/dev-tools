@@ -1,3 +1,13 @@
+## @pplancq/semantic-release-config [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@2.0.4...@pplancq/semantic-release-config@3.0.0) (2026-01-29)
+
+### ⚠ BREAKING CHANGES
+
+* **semantic-release-config:** Drop CommonJS support. See the [README](https://github.com/pplancq/dev-tools/blob/main/packages/semantic-release-config/README.md) for migration instructions.
+
+### Features
+
+* **semantic-release-config:** migrate to ESM and update configuration files ([8b1dc7f](https://github.com/pplancq/dev-tools/commit/8b1dc7f7b0416e28d3c548738b0fea3b7250d5d3))
+
 ## @pplancq/semantic-release-config [2.0.4](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@2.0.3...@pplancq/semantic-release-config@2.0.4) (2025-12-22)
 
 ### Bug Fixes
