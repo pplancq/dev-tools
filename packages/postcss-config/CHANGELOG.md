@@ -1,3 +1,9 @@
+## @pplancq/postcss-config [3.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/postcss-config@3.0.0...@pplancq/postcss-config@3.0.1) (2026-01-29)
+
+### Bug Fixes
+
+* **postcss-config:** update node engine requirement to >=20.19.0 ([5f9494b](https://github.com/pplancq/dev-tools/commit/5f9494b4c5eb344362303c860f2d87f9cb120dc9))
+
 ## @pplancq/postcss-config [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/postcss-config@2.1.18...@pplancq/postcss-config@3.0.0) (2026-01-20)
 
 ### ⚠ BREAKING CHANGES
