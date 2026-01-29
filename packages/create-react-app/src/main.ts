@@ -31,7 +31,8 @@ export const main = async () => {
 
   await gitCommit(repoDir, skipGitInit);
 
-  log.success(`${pc.yellow(String.raw`Success \o/`)}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
+  const successMessage = String.raw`Success \o/`;
+  log.success(`${pc.yellow(successMessage)}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
   note(
     `We suggest that you begin by typing:
  ${pc.cyan('cd')} ${projectName}${
