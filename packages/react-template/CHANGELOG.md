@@ -1,3 +1,19 @@
+## @pplancq/react-template [2.8.1](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.0...@pplancq/react-template@2.8.1) (2026-01-29)
+
+### Bug Fixes
+
+* **react-template:** simplify poolOptions to maxWorkers ([49a80ee](https://github.com/pplancq/dev-tools/commit/49a80ee245a5ba81d5263b39c488e76bd97de951))
+* **deps:** update dependency @tanstack/react-query to ^5.90.19 ([9dcea18](https://github.com/pplancq/dev-tools/commit/9dcea18c38567c6f5a7bf9d5ab361fe623b12ea5))
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 3.0.0
+* **@pplancq/eslint-config:** upgraded to 6.0.0
+* **@pplancq/postcss-config:** upgraded to 3.0.1
+* **@pplancq/prettier-config:** upgraded to 2.0.0
+* **@pplancq/stylelint-config:** upgraded to 5.0.0
+
 ## @pplancq/react-template [2.8.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.7.16...@pplancq/react-template@2.8.0) (2026-01-20)
 
 ### Features
