@@ -27,7 +27,7 @@ jobs:
         run: npm run package:check
 
       - name: Install package
-        run: npm ci
+        run: npm ci --ignore-scripts
 
   commitlint:
     if: github.event_name == 'pull_request' && !startsWith(github.head_ref, 'copilot/')
