@@ -268,7 +268,7 @@ export const importRules = {
   settings: {
     'import/extensions': ['.js', '.mjs', '.jsx'],
     'import/core-modules': [],
-    'import/ignore': ['node_modules', '\\.(coffee|scss|css|less|hbs|svg|json)$'],
+    'import/ignore': ['node_modules', String.raw`\.(coffee|scss|css|less|hbs|svg|json)$`],
     'import/resolver': {
       node: {
         extensions: ['.js'],
