@@ -1,3 +1,13 @@
+## @pplancq/commitlint-config [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@2.3.3...@pplancq/commitlint-config@3.0.0) (2026-01-29)
+
+### ⚠ BREAKING CHANGES
+
+* **commitlint-config:** Drop CommonJS support. See the [README](https://github.com/pplancq/dev-tools/blob/main/packages/commitlint-config/README.md) for migration instructions.
+
+### Features
+
+* **commitlint-config:** migrate to ESM and update configuration files ([4912f8a](https://github.com/pplancq/dev-tools/commit/4912f8a9df194d6ee86f721d38b71f48d3aa84d2))
+
 ## @pplancq/commitlint-config [2.3.3](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@2.3.2...@pplancq/commitlint-config@2.3.3) (2026-01-12)
 
 ### Bug Fixes
