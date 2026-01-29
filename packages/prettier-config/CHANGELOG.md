@@ -1,3 +1,13 @@
+## @pplancq/prettier-config [2.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@1.2.9...@pplancq/prettier-config@2.0.0) (2026-01-29)
+
+### ⚠ BREAKING CHANGES
+
+* **prettier-config:** Drop CommonJS support. See the [README](https://github.com/pplancq/dev-tools/blob/main/packages/prettier-config/README.md) for migration instructions.
+
+### Features
+
+* **prettier-config:** migrate to ESM and update configuration files ([616a0c0](https://github.com/pplancq/dev-tools/commit/616a0c0103222ba01e07479f29532fae6827d616))
+
 ## @pplancq/prettier-config [1.2.9](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@1.2.8...@pplancq/prettier-config@1.2.9) (2026-01-05)
 
 ### Bug Fixes
