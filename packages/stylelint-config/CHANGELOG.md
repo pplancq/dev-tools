@@ -1,3 +1,13 @@
+## @pplancq/stylelint-config [5.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@4.1.0...@pplancq/stylelint-config@5.0.0) (2026-01-29)
+
+### ⚠ BREAKING CHANGES
+
+* **stylelint-config:** Drop CommonJS support. See the [README](https://github.com/pplancq/dev-tools/blob/main/packages/stylelint-config/README.md) for migration instructions.
+
+### Features
+
+* **stylelint-config:** migrate to ESM and update configuration files ([f6b8912](https://github.com/pplancq/dev-tools/commit/f6b8912a3dcad9c07f0fba57546abbe4128b9947))
+
 ## @pplancq/stylelint-config [4.1.0](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@4.0.6...@pplancq/stylelint-config@4.1.0) (2026-01-20)
 
 ### Features
