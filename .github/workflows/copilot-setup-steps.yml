@@ -27,4 +27,7 @@ jobs:
           disabled-cache: true
 
       - name: Install package
-        run: npm ci
+        run: npm ci --ignore-scripts
+
+      - name: Run prepare (init Husky)
+        run: npm run prepare

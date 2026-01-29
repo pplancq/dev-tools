@@ -42,7 +42,7 @@ jobs:
           use-mise: true
 
       - name: Install package
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Config npm
         run: |
