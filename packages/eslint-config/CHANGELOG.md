@@ -1,3 +1,18 @@
+## @pplancq/eslint-config [6.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@5.0.22...@pplancq/eslint-config@6.0.0) (2026-01-29)
+
+### ⚠ BREAKING CHANGES
+
+* **eslint-config:** Drop CommonJS support. See the [README](https://github.com/pplancq/dev-tools/blob/main/packages/eslint-config/MIGRATION.md) for migration instructions.
+
+### Features
+
+* **eslint-config:** migrate to ESM and update configuration files ([e7f7e99](https://github.com/pplancq/dev-tools/commit/e7f7e991a542e19291da678f5b577be4823c1a97))
+
+### Bug Fixes
+
+* **deps:** update dependency globals to ^17.1.0 ([56a94ba](https://github.com/pplancq/dev-tools/commit/56a94bae889f75a38127f85e83b0151d9274882a))
+* **deps:** update typescript-eslint mono repo to ^8.53.1 ([e412c90](https://github.com/pplancq/dev-tools/commit/e412c90a67dcc790e8b45979523327cc8ed820ba))
+
 ## @pplancq/eslint-config [5.0.22](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@5.0.21...@pplancq/eslint-config@5.0.22) (2026-01-20)
 
 ### Bug Fixes
