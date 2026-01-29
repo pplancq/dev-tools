@@ -30,12 +30,7 @@ export default defineConfig(({ mode }) => {
         junit: 'junit-report.xml',
       },
       include: ['src/**/*.(spec|test|steps).[jt]s?(x)'],
-      poolOptions: {
-        forks: {
-          minForks: env.CI ? 1 : undefined,
-          maxForks: env.CI ? 2 : undefined,
-        },
-      },
+      maxWorkers: env.CI ? 2 : undefined,
       coverage: {
         enabled: env.CI === 'true',
         reporter: ['lcovonly', 'html', 'text', 'text-summary'],
