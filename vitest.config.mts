@@ -13,12 +13,7 @@ export default defineConfig(({ mode }) => {
         'vitest-sonar-reporter': 'sonar-report.xml',
         junit: 'junit-report.xml',
       },
-      poolOptions: {
-        forks: {
-          minForks: env.CI ? 1 : undefined,
-          maxForks: env.CI ? 2 : undefined,
-        },
-      },
+      maxWorkers: env.CI ? 2 : undefined,
       coverage: {
         enabled: env.CI === 'true',
         reporter: ['lcovonly', 'html', 'text', 'text-summary'],
