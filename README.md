@@ -3,6 +3,16 @@
 This repository aims to provide tools for developing ReactJS applications.\
 A React template is available to facilitate the creation of new React projects, particularly for creating micro front-end applications.
 
+## Sonarcloud Quality Metrics
+
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=pplancq_dev-tools&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=pplancq_dev-tools)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=pplancq_dev-tools&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=pplancq_dev-tools)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=pplancq_dev-tools&metric=bugs)](https://sonarcloud.io/summary/new_code?id=pplancq_dev-tools)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=pplancq_dev-tools&metric=coverage)](https://sonarcloud.io/summary/new_code?id=pplancq_dev-tools)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=pplancq_dev-tools&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=pplancq_dev-tools)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=pplancq_dev-tools&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=pplancq_dev-tools)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=pplancq_dev-tools&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=pplancq_dev-tools)
+
 ## Motivation
 
 With over 6 years of experience in developing React applications, I have always been on the lookout for tools that could streamline and enhance my workflow. When Facebook discontinued its Create React App project, I began searching for a new starter for my React applications.
