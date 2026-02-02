@@ -51,7 +51,7 @@
     "prettier": "^3.8.1",
     "tsc-files": "^1.1.4",
     "typescript": "^5.9.3",
-    "vite-tsconfig-paths": "^6.0.4",
+    "vite-tsconfig-paths": "^6.0.5",
     "vitest": "^4.0.18",
     "vitest-sonar-reporter": "^3.0.0"
   },
