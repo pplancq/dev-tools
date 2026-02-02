@@ -1,3 +1,9 @@
+## @pplancq/semantic-release-config [3.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@3.0.0...@pplancq/semantic-release-config@3.0.1) (2026-02-02)
+
+### Bug Fixes
+
+* **deps:** update dependency @semantic-release/github to ^12.0.3 ([2ec1aa8](https://github.com/pplancq/dev-tools/commit/2ec1aa826090d277cbcbc3bf38f301442159ac82))
+
 ## @pplancq/semantic-release-config [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@2.0.4...@pplancq/semantic-release-config@3.0.0) (2026-01-29)
 
 ### ⚠ BREAKING CHANGES
