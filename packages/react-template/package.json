@@ -13,7 +13,7 @@
   "bin": {
     "template-install": "bin/template-install.js"
   },
-  "packageManager": "npm@11.8.0",
+  "packageManager": "npm@11.9.0",
   "scripts": {
     "start": "rsbuild dev",
     "start:mock": "rsbuild dev --env-mode mock",
