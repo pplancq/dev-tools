@@ -1,3 +1,9 @@
+## @pplancq/eslint-config [6.0.2](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@6.0.1...@pplancq/eslint-config@6.0.2) (2026-02-09)
+
+### Bug Fixes
+
+* **deps:** update dependency globals to ^17.3.0 ([f26bdc2](https://github.com/pplancq/dev-tools/commit/f26bdc250d8cc41faecbf533243773fcdb4b25bc))
+
 ## @pplancq/eslint-config [6.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@6.0.0...@pplancq/eslint-config@6.0.1) (2026-02-02)
 
 ### Bug Fixes
