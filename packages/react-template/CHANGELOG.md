@@ -1,3 +1,17 @@
+## @pplancq/react-template [2.8.3](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.2...@pplancq/react-template@2.8.3) (2026-02-09)
+
+### Bug Fixes
+
+* **dev-tools:** remove overrides for stylelint dependencies ([a3af531](https://github.com/pplancq/dev-tools/commit/a3af531c9f64871c8b5ef01764feaa6f9c1455ba))
+* **deps:** update commitlint monorepo to ^20.4.1 ([86781f8](https://github.com/pplancq/dev-tools/commit/86781f808453b6d33d512cf01dfcec5df435669e))
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 3.0.2
+* **@pplancq/eslint-config:** upgraded to 6.0.2
+* **@pplancq/postcss-config:** upgraded to 3.0.3
+
 ## @pplancq/react-template [2.8.2](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.1...@pplancq/react-template@2.8.2) (2026-02-02)
 
 ### Bug Fixes
