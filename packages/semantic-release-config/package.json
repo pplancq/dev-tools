@@ -1,6 +1,6 @@
 {
   "name": "@pplancq/semantic-release-config",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "license": "MIT",
   "description": "pplancq semantic-release config",
   "author": "pplancq <paul.plancq@outlook.fr>",
