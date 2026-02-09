@@ -100,11 +100,6 @@
     "vitest-axe": "^1.0.0-pre.5",
     "vitest-sonar-reporter": "^3.0.0"
   },
-  "overrides": {
-    "rsbuild-plugin-stylelint": {
-      "stylelint": "$stylelint"
-    }
-  },
   "engines": {
     "node": ">=20.12.2"
   },
