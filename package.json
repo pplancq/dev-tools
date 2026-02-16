@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/pplancq/dev-tools"
   },
-  "packageManager": "npm@11.9.0",
+  "packageManager": "npm@11.10.0",
   "scripts": {
     "build": "npm run build --workspaces --if-present",
     "test": "vitest run",
