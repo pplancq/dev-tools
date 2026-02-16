@@ -40,7 +40,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: 'npm run start',
+    command: 'npm run build -- --env-mode test && npm run preview',
     url: appUrl,
     stdout: 'pipe',
     reuseExistingServer: !process.env.CI,
