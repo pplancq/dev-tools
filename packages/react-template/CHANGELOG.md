@@ -1,3 +1,15 @@
+## @pplancq/react-template [2.8.4](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.3...@pplancq/react-template@2.8.4) (2026-02-16)
+
+### Bug Fixes
+
+* **deps:** update dependency @msw/playwright to ^0.6.2 ([#1560](https://github.com/pplancq/dev-tools/issues/1560)) ([5628a4a](https://github.com/pplancq/dev-tools/commit/5628a4a9bd48426e215c0359759592ecc6bb96e4))
+* **deps:** update dependency @tanstack/react-query to ^5.90.21 ([#1558](https://github.com/pplancq/dev-tools/issues/1558)) ([267e328](https://github.com/pplancq/dev-tools/commit/267e328dbdda183b34fa240ecff7cbc6edf5827d))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 6.0.3
+
 ## @pplancq/react-template [2.8.3](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.2...@pplancq/react-template@2.8.3) (2026-02-09)
 
 ### Bug Fixes
