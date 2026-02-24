@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [2.0.4](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.3...@pplancq/create-react-app@2.0.4) (2026-02-24)
+
+### Bug Fixes
+
+* **deps:** update dependency @rslib/core to ^0.19.6 ([#1568](https://github.com/pplancq/dev-tools/issues/1568)) ([8e54a7c](https://github.com/pplancq/dev-tools/commit/8e54a7c484c25b352835813d6ffaf4df609842ec))
+
 ## @pplancq/create-react-app [2.0.3](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.2...@pplancq/create-react-app@2.0.3) (2025-12-02)
 
 ### Bug Fixes
