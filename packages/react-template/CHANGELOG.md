@@ -1,3 +1,18 @@
+## @pplancq/react-template [2.8.5](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.4...@pplancq/react-template@2.8.5) (2026-02-24)
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to ^20.4.2 ([#1571](https://github.com/pplancq/dev-tools/issues/1571)) ([ab3f6a4](https://github.com/pplancq/dev-tools/commit/ab3f6a4e36f6007fd79071268aefa3a01210f512))
+* **deps:** update dependency @msw/playwright to ^0.6.4 ([#1567](https://github.com/pplancq/dev-tools/issues/1567)) ([eb4525e](https://github.com/pplancq/dev-tools/commit/eb4525e726ea4dc886151959fc6765f220e64db1))
+* **deps:** update dependency jsdom to ^28.1.0 ([#1573](https://github.com/pplancq/dev-tools/issues/1573)) ([313c332](https://github.com/pplancq/dev-tools/commit/313c332b7f8a94629a0d4f1db617690fc5590919))
+* **deps:** update dependency nodemon to ^3.1.13 ([#1569](https://github.com/pplancq/dev-tools/issues/1569)) ([d56a6ee](https://github.com/pplancq/dev-tools/commit/d56a6eef413d11110f5b74c31833c94ae7ec2dea))
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 3.0.3
+* **@pplancq/eslint-config:** upgraded to 6.0.4
+
 ## @pplancq/react-template [2.8.4](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.3...@pplancq/react-template@2.8.4) (2026-02-16)
 
 ### Bug Fixes
