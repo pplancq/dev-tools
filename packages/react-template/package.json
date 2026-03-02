@@ -54,7 +54,7 @@
     "@tanstack/react-query-devtools": "^5.91.3",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-hook-form": "^7.71.1",
+    "react-hook-form": "^7.71.2",
     "react-router": "^7.13.0",
     "yup": "^1.7.1"
   },
