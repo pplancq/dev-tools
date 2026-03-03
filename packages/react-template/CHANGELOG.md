@@ -1,3 +1,17 @@
+## @pplancq/react-template [2.8.6](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.5...@pplancq/react-template@2.8.6) (2026-03-03)
+
+### Bug Fixes
+
+* **react-template:** restructure async IIFE for improved readability ([#1578](https://github.com/pplancq/dev-tools/issues/1578)) ([c5c4c8b](https://github.com/pplancq/dev-tools/commit/c5c4c8b58eb747daa29f4fd617bb042a5c5717b6)), closes [#1493](https://github.com/pplancq/dev-tools/issues/1493)
+* **deps:** update dependency react-hook-form to ^7.71.2 ([#1581](https://github.com/pplancq/dev-tools/issues/1581)) ([f9c53e0](https://github.com/pplancq/dev-tools/commit/f9c53e0f1779e5cd0b2ab913cad064fad6073728))
+* **deps:** update dependency react-router to ^7.13.1 ([#1582](https://github.com/pplancq/dev-tools/issues/1582)) ([554bed9](https://github.com/pplancq/dev-tools/commit/554bed93051af5b425271e75ac77f85a5bd906e4))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 6.0.5
+* **@pplancq/postcss-config:** upgraded to 3.0.4
+
 ## @pplancq/react-template [2.8.5](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.4...@pplancq/react-template@2.8.5) (2026-02-24)
 
 ### Bug Fixes
