@@ -1,3 +1,16 @@
+## @pplancq/react-template [2.8.7](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.6...@pplancq/react-template@2.8.7) (2026-03-10)
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to ^20.4.3 ([#1592](https://github.com/pplancq/dev-tools/issues/1592)) ([253f17b](https://github.com/pplancq/dev-tools/commit/253f17bac00980416dbeb145b4e87521f1416c59))
+* **deps:** update dependency @msw/playwright to ^0.6.5 ([#1591](https://github.com/pplancq/dev-tools/issues/1591)) ([1721453](https://github.com/pplancq/dev-tools/commit/1721453d6f7865a9903d4b10c4e07b2b213013f3))
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 3.0.4
+* **@pplancq/eslint-config:** upgraded to 6.0.6
+
 ## @pplancq/react-template [2.8.6](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.5...@pplancq/react-template@2.8.6) (2026-03-03)
 
 ### Bug Fixes
