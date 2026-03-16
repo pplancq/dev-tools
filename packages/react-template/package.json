@@ -84,7 +84,7 @@
     "eslint-plugin-prettier": "^5.5.5",
     "husky": "^9.1.7",
     "jsdom": "^28.1.0",
-    "lint-staged": "^16.3.2",
+    "lint-staged": "^16.3.3",
     "monocart-coverage-reports": "^2.12.9",
     "msw": "^2.12.10",
     "nodemon": "^3.1.14",
