@@ -46,7 +46,7 @@
     "commander": "^14.0.3",
     "eslint": "^9.39.4",
     "eslint-plugin-prettier": "^5.5.5",
-    "lint-staged": "^16.3.2",
+    "lint-staged": "^16.3.3",
     "picocolors": "^1.1.1",
     "prettier": "^3.8.1",
     "tsc-files": "^1.1.4",
