@@ -1,3 +1,16 @@
+## @pplancq/react-template [2.8.8](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.7...@pplancq/react-template@2.8.8) (2026-03-16)
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to ^20.4.4 ([#1604](https://github.com/pplancq/dev-tools/issues/1604)) ([4b96620](https://github.com/pplancq/dev-tools/commit/4b96620b2fd4a4c2f1adfefdfdb470225e3a0a2a))
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 3.0.5
+* **@pplancq/eslint-config:** upgraded to 6.0.7
+* **@pplancq/stylelint-config:** upgraded to 5.0.1
+
 ## @pplancq/react-template [2.8.7](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.6...@pplancq/react-template@2.8.7) (2026-03-10)
 
 ### Bug Fixes
