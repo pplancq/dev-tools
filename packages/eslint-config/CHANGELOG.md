@@ -1,3 +1,10 @@
+## @pplancq/eslint-config [6.0.7](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@6.0.6...@pplancq/eslint-config@6.0.7) (2026-03-16)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to ^1.6.11 ([#1605](https://github.com/pplancq/dev-tools/issues/1605)) ([e29318e](https://github.com/pplancq/dev-tools/commit/e29318e22f4ee97909f434f3af940be26f2e1340))
+* **deps:** update typescript-eslint mono repo to ^8.57.0 ([#1609](https://github.com/pplancq/dev-tools/issues/1609)) ([f268011](https://github.com/pplancq/dev-tools/commit/f268011e0a495f4324843ca9fe21f8ab8fd0ac23))
+
 ## @pplancq/eslint-config [6.0.6](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@6.0.5...@pplancq/eslint-config@6.0.6) (2026-03-10)
 
 ### Bug Fixes
