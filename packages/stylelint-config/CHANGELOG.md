@@ -1,3 +1,9 @@
+## @pplancq/stylelint-config [5.0.2](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@5.0.1...@pplancq/stylelint-config@5.0.2) (2026-03-23)
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-order to ^8.1.1 ([#1622](https://github.com/pplancq/dev-tools/issues/1622)) ([1beaa31](https://github.com/pplancq/dev-tools/commit/1beaa314e11593c25e6761362c9764d3266009a3))
+
 ## @pplancq/stylelint-config [5.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@5.0.0...@pplancq/stylelint-config@5.0.1) (2026-03-16)
 
 ### Bug Fixes
