@@ -1,3 +1,18 @@
+## @pplancq/react-template [2.8.9](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.8...@pplancq/react-template@2.8.9) (2026-03-23)
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to ^20.5.0 ([#1619](https://github.com/pplancq/dev-tools/issues/1619)) ([2430b27](https://github.com/pplancq/dev-tools/commit/2430b27a3b741ea0a3df36889a11464b602b946b))
+* **deps:** update dependency @tanstack/react-query to ^5.91.3 ([#1620](https://github.com/pplancq/dev-tools/issues/1620)) ([4c5f4b8](https://github.com/pplancq/dev-tools/commit/4c5f4b805ec0ef192a63387737761de6be73f239))
+* **deps:** update dependency jsdom to v29 ([#1623](https://github.com/pplancq/dev-tools/issues/1623)) ([b92c264](https://github.com/pplancq/dev-tools/commit/b92c26446625992e941062f0bed39922da401529))
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 3.0.6
+* **@pplancq/eslint-config:** upgraded to 6.0.8
+* **@pplancq/stylelint-config:** upgraded to 5.0.2
+
 ## @pplancq/react-template [2.8.8](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.7...@pplancq/react-template@2.8.8) (2026-03-16)
 
 ### Bug Fixes
