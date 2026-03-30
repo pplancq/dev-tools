@@ -1,12 +1,13 @@
 import { loadEnv } from 'vite';
-import viteTsconfigPaths from 'vite-tsconfig-paths';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
-    plugins: [viteTsconfigPaths()],
+    resolve: {
+      tsconfigPaths: true,
+    },
     test: {
       setupFiles: 'vitest.setup.ts',
       clearMocks: true,
