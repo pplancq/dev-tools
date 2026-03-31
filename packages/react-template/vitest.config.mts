@@ -1,8 +1,6 @@
-import react from '@vitejs/plugin-react-swc';
-import { resolve } from 'node:path';
+import react from '@vitejs/plugin-react';
 import { loadEnv } from 'vite';
 import svgr from 'vite-plugin-svgr';
-import viteTsconfigPaths from 'vite-tsconfig-paths';
 // eslint-disable-next-line import/no-unresolved
 import { defineConfig } from 'vitest/config';
 
@@ -10,14 +8,11 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
-    plugins: [
-      react(),
-      viteTsconfigPaths({
-        projects: [resolve(__dirname, './tsconfig.test.json')],
-      }),
-      svgr(),
-    ],
+    plugins: [react(), svgr()],
     envPrefix: env.ENV_PREFIX ?? 'FRONT_',
+    resolve: {
+      tsconfigPaths: true,
+    },
     test: {
       globals: true,
       environment: 'jsdom',

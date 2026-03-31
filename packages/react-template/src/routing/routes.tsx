@@ -1,7 +1,7 @@
 import { demoRoutes } from '@Front/pages/Demo';
 import { Layout } from '@Front/pages/Layout';
 import type { RouteObject } from 'react-router';
-import { UnexpectedError } from 'src/pages/UnexpectedError';
+import { UnexpectedError } from '@Front/pages/UnexpectedError';
 
 export const routeObject: RouteObject[] = [
   {

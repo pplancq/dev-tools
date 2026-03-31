@@ -26,6 +26,7 @@
     "lint:eslint:fix": "eslint \"**/*.{js,mjs,ts}\" --fix",
     "lint:prettier": "prettier \"**/*.!(js|mjs|ts)\" --check --ignore-unknown",
     "lint:prettier:fix": "prettier \"**/*.!(js|mjs|ts)\" --write --ignore-unknown",
+    "lint:tsc": "tsc --noEmit",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -42,6 +43,7 @@
   "devDependencies": {
     "@clack/prompts": "^1.1.0",
     "@rslib/core": "^0.20.1",
+    "@types/node": "^24.12.0",
     "@vitest/coverage-v8": "^4.1.2",
     "commander": "^14.0.3",
     "eslint": "^9.39.4",
@@ -50,8 +52,7 @@
     "picocolors": "^1.1.1",
     "prettier": "^3.8.1",
     "tsc-files": "^1.1.4",
-    "typescript": "^5.9.3",
-    "vite-tsconfig-paths": "^6.1.1",
+    "typescript": "^6.0.2",
     "vitest": "^4.1.2",
     "vitest-sonar-reporter": "^3.0.0"
   },
