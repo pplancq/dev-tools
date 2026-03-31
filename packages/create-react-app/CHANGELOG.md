@@ -1,3 +1,9 @@
+## @pplancq/create-react-app [2.0.5](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.4...@pplancq/create-react-app@2.0.5) (2026-03-31)
+
+### Bug Fixes
+
+* **deps:** update dependency typescript to v6 ([#1637](https://github.com/pplancq/dev-tools/issues/1637)) ([9cdf253](https://github.com/pplancq/dev-tools/commit/9cdf253b9e4ee73dbe2129a2346f649e36de9d1a))
+
 ## @pplancq/create-react-app [2.0.4](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.3...@pplancq/create-react-app@2.0.4) (2026-02-24)
 
 ### Bug Fixes
