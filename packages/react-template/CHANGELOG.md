@@ -1,3 +1,18 @@
+## @pplancq/react-template [2.8.10](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.9...@pplancq/react-template@2.8.10) (2026-03-31)
+
+### Bug Fixes
+
+* **deps:** update dependency msw to ^2.12.14 ([#1626](https://github.com/pplancq/dev-tools/issues/1626)) ([4be16f8](https://github.com/pplancq/dev-tools/commit/4be16f8f35c43e55e012f15faf05f58443095425))
+* **deps:** update dependency react-hook-form to ^7.72.0 ([#1635](https://github.com/pplancq/dev-tools/issues/1635)) ([029e523](https://github.com/pplancq/dev-tools/commit/029e52397adbe34a4b17785b09bbc3f385e15407))
+* **deps:** update dependency react-router to ^7.13.2 ([#1632](https://github.com/pplancq/dev-tools/issues/1632)) ([816c666](https://github.com/pplancq/dev-tools/commit/816c6669fb50f9937950345c81a557887873d71e))
+* **deps:** update dependency typescript to v6 ([#1637](https://github.com/pplancq/dev-tools/issues/1637)) ([9cdf253](https://github.com/pplancq/dev-tools/commit/9cdf253b9e4ee73dbe2129a2346f649e36de9d1a))
+* **deps:** update react-query mono repo to ^5.95.2 ([#1636](https://github.com/pplancq/dev-tools/issues/1636)) ([172730e](https://github.com/pplancq/dev-tools/commit/172730ee311b5d4b21f23c8aa0e28170f9313b0d))
+
+
+### Dependencies
+
+* **@pplancq/eslint-config:** upgraded to 6.0.9
+
 ## @pplancq/react-template [2.8.9](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.8...@pplancq/react-template@2.8.9) (2026-03-23)
 
 ### Bug Fixes
