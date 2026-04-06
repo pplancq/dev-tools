@@ -42,7 +42,7 @@
   ],
   "devDependencies": {
     "@clack/prompts": "^1.1.0",
-    "@rslib/core": "^0.20.1",
+    "@rslib/core": "^0.20.3",
     "@types/node": "^24.12.0",
     "@vitest/coverage-v8": "^4.1.2",
     "commander": "^14.0.3",
