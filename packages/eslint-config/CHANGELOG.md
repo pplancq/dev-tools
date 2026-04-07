@@ -1,3 +1,9 @@
+## @pplancq/eslint-config [6.0.10](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@6.0.9...@pplancq/eslint-config@6.0.10) (2026-04-07)
+
+### Bug Fixes
+
+* **deps:** update dependency @vitest/eslint-plugin to ^1.6.14 ([#1641](https://github.com/pplancq/dev-tools/issues/1641)) ([12c9e7b](https://github.com/pplancq/dev-tools/commit/12c9e7b6833bb2f12618c07f2abe00a574d8b811))
+
 ## @pplancq/eslint-config [6.0.9](https://github.com/pplancq/dev-tools/compare/@pplancq/eslint-config@6.0.8...@pplancq/eslint-config@6.0.9) (2026-03-31)
 
 ### Bug Fixes
