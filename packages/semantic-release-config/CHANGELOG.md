@@ -1,3 +1,9 @@
+## @pplancq/semantic-release-config [3.0.5](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@3.0.4...@pplancq/semantic-release-config@3.0.5) (2026-04-07)
+
+### Bug Fixes
+
+* **deps:** update dependency conventional-changelog-conventionalcommits to ^9.3.1 ([#1642](https://github.com/pplancq/dev-tools/issues/1642)) ([04e5758](https://github.com/pplancq/dev-tools/commit/04e575854c011b69dc3fde3fc0041ff1eb524b2d))
+
 ## @pplancq/semantic-release-config [3.0.4](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@3.0.3...@pplancq/semantic-release-config@3.0.4) (2026-03-10)
 
 ### Bug Fixes
