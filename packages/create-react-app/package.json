@@ -41,7 +41,7 @@
     "CHANGELOG.md"
   ],
   "devDependencies": {
-    "@clack/prompts": "^1.1.0",
+    "@clack/prompts": "^1.2.0",
     "@rslib/core": "^0.20.3",
     "@types/node": "^24.12.2",
     "@vitest/coverage-v8": "^4.1.2",
