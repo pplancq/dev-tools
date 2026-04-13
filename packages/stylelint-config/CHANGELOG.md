@@ -1,3 +1,9 @@
+## @pplancq/stylelint-config [5.0.3](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@5.0.2...@pplancq/stylelint-config@5.0.3) (2026-04-13)
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-recommended-scss to ^17.0.1 ([#1656](https://github.com/pplancq/dev-tools/issues/1656)) ([1b6a347](https://github.com/pplancq/dev-tools/commit/1b6a347010569f363012daae97183a7cf15b8d89))
+
 ## @pplancq/stylelint-config [5.0.2](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@5.0.1...@pplancq/stylelint-config@5.0.2) (2026-03-23)
 
 ### Bug Fixes
