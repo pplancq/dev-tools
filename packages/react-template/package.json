@@ -88,7 +88,7 @@
     "monocart-coverage-reports": "^2.12.9",
     "msw": "^2.13.2",
     "nodemon": "^3.1.14",
-    "prettier": "^3.8.2",
+    "prettier": "^3.8.3",
     "rsbuild-plugin-stylelint": "^1.1.0",
     "stylelint": "^17.6.0",
     "stylelint-prettier": "^5.0.3",
