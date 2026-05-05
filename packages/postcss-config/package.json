@@ -39,7 +39,7 @@
     "postcss-preset-env": "^11.2.1"
   },
   "devDependencies": {
-    "eslint": "^9.39.4",
+    "eslint": "^10.2.1",
     "eslint-plugin-prettier": "^5.5.5",
     "lint-staged": "^16.4.0",
     "prettier": "^3.8.3"

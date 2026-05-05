@@ -46,7 +46,7 @@
     "@types/node": "^24.12.2",
     "@vitest/coverage-v8": "^4.1.5",
     "commander": "^14.0.3",
-    "eslint": "^9.39.4",
+    "eslint": "^10.2.1",
     "eslint-plugin-prettier": "^5.5.5",
     "lint-staged": "^16.4.0",
     "picocolors": "^1.1.1",
