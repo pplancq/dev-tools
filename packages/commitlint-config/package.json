@@ -37,7 +37,7 @@
     "@commitlint/config-conventional": "^21.0.0"
   },
   "peerDependencies": {
-    "@commitlint/cli": "^19.0.3 || ^20.0.0"
+    "@commitlint/cli": "^21.0.0"
   },
   "devDependencies": {
     "eslint": "^9.39.4",
@@ -46,7 +46,7 @@
     "prettier": "^3.8.3"
   },
   "engines": {
-    "node": ">=v18"
+    "node": ">=22.12.0"
   },
   "prettier": "@pplancq/prettier-config",
   "lint-staged": {
