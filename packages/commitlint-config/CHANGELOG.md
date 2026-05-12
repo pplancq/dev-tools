@@ -2,7 +2,8 @@
 
 ### ⚠ BREAKING CHANGES
 
-* **commitlint-config:** update dependencies and engine requirements
+* **commitlint-config:** Node.js versions before 22.12.0 are no longer supported.
+* **commitlint-config:** Support for Commitlint versions 19 and 20 has been dropped.
 
 ### Features
 
