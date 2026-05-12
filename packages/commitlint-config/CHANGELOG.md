@@ -1,3 +1,17 @@
+## @pplancq/commitlint-config [4.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@3.0.7...@pplancq/commitlint-config@4.0.0) (2026-05-12)
+
+### ⚠ BREAKING CHANGES
+
+* **commitlint-config:** update dependencies and engine requirements
+
+### Features
+
+* **commitlint-config:** update dependencies and engine requirements ([dce5189](https://github.com/pplancq/dev-tools/commit/dce51891bab16150c7e16ab3eef2737e67c7f4d2))
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to v21 ([f7355b2](https://github.com/pplancq/dev-tools/commit/f7355b25fce8373ffbdcd1fe35680bcd6c9fd03c))
+
 ## @pplancq/commitlint-config [3.0.7](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@3.0.6...@pplancq/commitlint-config@3.0.7) (2026-05-04)
 
 ### Bug Fixes
