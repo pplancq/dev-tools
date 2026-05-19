@@ -1,3 +1,19 @@
+## @pplancq/react-template [2.8.17](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.16...@pplancq/react-template@2.8.17) (2026-05-19)
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to ^21.0.1 ([#1731](https://github.com/pplancq/dev-tools/issues/1731)) ([f0e49f8](https://github.com/pplancq/dev-tools/commit/f0e49f87cd972ddeaef49cc05ee49641d2165a7b))
+* **deps:** update dependency react-router to ^7.15.1 ([#1732](https://github.com/pplancq/dev-tools/issues/1732)) ([d53061d](https://github.com/pplancq/dev-tools/commit/d53061d24a95413a0c01c886f3260c207657c548))
+* **deps:** update react-query mono repo to ^5.100.10 ([#1733](https://github.com/pplancq/dev-tools/issues/1733)) ([3ff5eb6](https://github.com/pplancq/dev-tools/commit/3ff5eb673868b5c67f02209716f90689994dac03))
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 4.0.1
+* **@pplancq/eslint-config:** upgraded to 6.0.16
+* **@pplancq/postcss-config:** upgraded to 3.0.6
+* **@pplancq/prettier-config:** upgraded to 3.0.0
+
 ## @pplancq/react-template [2.8.16](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.15...@pplancq/react-template@2.8.16) (2026-05-12)
 
 ### Bug Fixes
