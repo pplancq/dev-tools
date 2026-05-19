@@ -1,3 +1,17 @@
+## @pplancq/prettier-config [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@2.0.2...@pplancq/prettier-config@3.0.0) (2026-05-19)
+
+### ⚠ BREAKING CHANGES
+
+* **prettier-config:** End of support for Node versions < 20.9.0.
+
+### Features
+
+* **prettier-config:** update Node engine requirement to >= 20.9.0 ([844ab9b](https://github.com/pplancq/dev-tools/commit/844ab9be24a366c386c3419b9f3a7b44f5df3ae1))
+
+### Bug Fixes
+
+* **deps:** update dependency prettier-plugin-gherkin to v4 ([522f9b2](https://github.com/pplancq/dev-tools/commit/522f9b22abb94b0f69692faa85e92d39f67b2f5c))
+
 ## @pplancq/prettier-config [2.0.2](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@2.0.1...@pplancq/prettier-config@2.0.2) (2026-05-12)
 
 ### Bug Fixes
