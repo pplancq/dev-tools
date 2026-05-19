@@ -1,3 +1,9 @@
+## @pplancq/commitlint-config [4.0.1](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@4.0.0...@pplancq/commitlint-config@4.0.1) (2026-05-19)
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to ^21.0.1 ([#1731](https://github.com/pplancq/dev-tools/issues/1731)) ([f0e49f8](https://github.com/pplancq/dev-tools/commit/f0e49f87cd972ddeaef49cc05ee49641d2165a7b))
+
 ## @pplancq/commitlint-config [4.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@3.0.7...@pplancq/commitlint-config@4.0.0) (2026-05-12)
 
 ### ⚠ BREAKING CHANGES
