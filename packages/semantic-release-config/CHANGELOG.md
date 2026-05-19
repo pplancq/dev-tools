@@ -1,3 +1,9 @@
+## @pplancq/semantic-release-config [3.0.6](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@3.0.5...@pplancq/semantic-release-config@3.0.6) (2026-05-19)
+
+### Bug Fixes
+
+* **deps:** update semantic-release monorepo ([#1734](https://github.com/pplancq/dev-tools/issues/1734)) ([7d6d6cb](https://github.com/pplancq/dev-tools/commit/7d6d6cb0ba8d919511947f88b6f6eb1ade2f9163))
+
 ## @pplancq/semantic-release-config [3.0.5](https://github.com/pplancq/dev-tools/compare/@pplancq/semantic-release-config@3.0.4...@pplancq/semantic-release-config@3.0.5) (2026-04-07)
 
 ### Bug Fixes
