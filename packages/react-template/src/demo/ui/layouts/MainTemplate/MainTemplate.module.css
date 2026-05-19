@@ -1,0 +1,21 @@
+.mainTemplateStyle {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  padding: 16px;
+}
