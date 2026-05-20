@@ -1,1 +1,0 @@
-export { demoRoutes } from './routes';

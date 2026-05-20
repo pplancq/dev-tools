@@ -1,0 +1,64 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header Component > should render the Header component correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <a
+      data-discover="true"
+      href="/"
+    >
+      <img
+        alt="logo"
+        class="logoStyle"
+        src="/src/demo/ui/assets/images/logo.png"
+        style="width: 50px;"
+      />
+    </a>
+    <nav>
+      <ul
+        class="navList"
+      >
+        <li>
+          <a
+            aria-current="page"
+            class="a active"
+            data-discover="true"
+            href="/"
+          >
+            Overview
+          </a>
+        </li>
+        <li>
+          <a
+            class="a"
+            data-discover="true"
+            href="/react-query"
+          >
+            React Query
+          </a>
+        </li>
+        <li>
+          <a
+            class="a"
+            data-discover="true"
+            href="/react-hook-form"
+          >
+            React Hook Form
+          </a>
+        </li>
+        <li>
+          <a
+            class="a"
+            data-discover="true"
+            href="/dependency-injection"
+          >
+            Dependency Injection
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`;

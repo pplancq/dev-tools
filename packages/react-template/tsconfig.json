@@ -23,7 +23,9 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@Front/*": ["./src/*"],
+      "@App/*": ["./src/app/*"],
+      "@Shared/*": ["./src/shared/*"],
+      "@Demo/*": ["./src/demo/*"],
       "@Mocks/*": ["./mocks/*"]
     }
   },

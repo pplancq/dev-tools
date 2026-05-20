@@ -1,4 +1,4 @@
-import AppReact from './bootstrap';
+import AppHTMLElement from '@App/AppHTMLElement';
 
 if (import.meta.env.FRONT_MOCK_ENABLE === 'true') {
   const { worker } = await import('@Mocks/browser');
@@ -7,4 +7,4 @@ if (import.meta.env.FRONT_MOCK_ENABLE === 'true') {
   });
 }
 
-customElements.define('app-react', AppReact);
+customElements.define('app-react', AppHTMLElement);

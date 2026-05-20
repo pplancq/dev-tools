@@ -81,64 +81,69 @@ Allows you to fix prettier lint errors.
 
 To remove the demo application.
 
-### `npm run migrate:vite`
-
-To migrate from webpack to vite.
-
 ## 🏗 <span id="project-structure">Project Structure</span>
 
-```
-📁 my-projet
+```text
+📁 my-project
 ├── 📁 src
-│   ├── 📁 ui
-│   │   ├── 📁 Atoms
-│   │   ├── 📁 Molecules
-│   │   ├── 📁 Organisms
-│   │   ├── 📁 Templates
-│   ├── 📁 components
-│   │   ├── 📁 formFields
-│   ├── 📁 providers
-│   ├── 📁 pages
-│   │   ├── 📁 homePage
-│   │   ├── 📁 page1
-│   │   │   ├── 📁 sousPage1
-│   ├── 📁 forms
-│   │   ├── 📁 hooks
-│   │   ├── 📁 risk
-│   │   ├── 📁 contact
-│   ├── 📁 hooks
-│   │   ├── 📁 api
-│   │   ├── 📁 useCustom1
-│   │   ├── 📁 useCustom2
-│   ├── 📁 utils
-│   │   ├── 📁 services
-│   │   ├── 📁 tests
-│   │   ├── 📁 helpers
-│   ├── 📁 routing
-│   ├── 📁 api
-│   ├── 📁 types
-│   ├── 📁 assets
-│   ├── 📁 config
+│   ├── 📄 README.md
+│   ├── 📁 app
+│   │   ├── 📄 README.md
+│   │   ├── 📄 App.tsx
+│   │   ├── 📄 AppHTMLElement.tsx
+│   │   ├── 📁 assets
+│   │   ├── 📁 config
+│   │   ├── 📁 providers
+│   │   └── 📁 routing
+│   ├── 📁 shared
+│   │   ├── 📄 README.md
+│   │   ├── 📁 application
+│   │   │   └── 📄 README.md
+│   │   ├── 📁 domain
+│   │   │   └── 📄 README.md
+│   │   ├── 📁 infrastructure
+│   │   │   └── 📄 README.md
+│   │   └── 📁 ui
+│   │       └── 📄 README.md
+│   ├── 📁 demo
+│   │   ├── 📄 README.md
+│   │   ├── 📁 application
+│   │   ├── 📁 domain
+│   │   ├── 📁 infrastructure
+│   │   ├── 📁 ui
+│   │   │   ├── 📁 assets
+│   │   │   ├── 📁 components
+│   │   │   ├── 📁 forms
+│   │   │   ├── 📁 hooks
+│   │   │   ├── 📁 layouts
+│   │   │   ├── 📁 pages
+│   │   │   └── 📁 routing
+│   │   ├── 📄 serviceDemo.ts
+│   │   └── 📄 serviceIdentifiers.ts
+│   ├── 📄 main.ts
+│   └── 📄 react-app-env.d.ts
 ```
 
 ### 📚 Folder Definitions
 
 Here is the project folder structure, with a brief description of each folder:
 
-| Folder                                               | Description                                                                                                                                                                                      |
-| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **📁 src**                                           | **_The root directory of the application source code._**                                                                                                                                         |
-| [**📁 ui**](./src/ui/README.md)                      | Contains reusable components designed to be used across projects. Components can be basic (Atoms), more complex (Molecules), higher-level components (Organisms), or page templates (Templates). |
-| [**📁&#160;components**](./src/components/README.md) | Contains project-specific reusable components, for example, form components using React Hook Form.                                                                                               |
-| [**📁 providers**](./src/providers/README.md)        | This folder contains context providers or custom hooks that provide data to the entire application.                                                                                              |
-| [**📁 pages**](./src/pages/README.md)                | Contains the pages of the application. Each subfolder represents a distinct page or view of the application.                                                                                     |
-| [**📁 forms**](./src/forms/README.md)                | Contains the forms of the application, grouping hooks related to forms.                                                                                                                          |
-| [**📁 hooks**](./src/hooks/README.md)                | Includes custom hooks for various application features, such as API calls with React Query.                                                                                                      |
-| [**📁 utils**](./src/utils/README.md)                | Contains utilities and services such as test files, utility functions, etc.                                                                                                                      |
-| [**📁 routing**](./src/routing/README.md)            | This folder is intended for native API calls using the `fetch`. function. These calls are essential for fetching real-time data from external sources, such as remote servers or web services.   |
-| [**📁 types**](./src/types/README.md)                | Provides TypeScript type definitions to enhance the robustness of your code.                                                                                                                     |
-| [**📁 assets**](./src/assets/README.md)              | Contains static files such as images, fonts, etc., used in the application.                                                                                                                      |
-| [**📁 config**](./src/config/README.md)              | Contains all the important configurations and utilities needed for our project.                                                                                                                  |
+| Folder                                                                | Description                                                                                                                                                |
+| --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **📁 src**                                                            | **_The root directory of the application source code._** It also contains [`src/README.md`](./src/README.md), which serves as the documentation index.     |
+| [**📁 app**](./src/app/README.md)                                     | Owns the application bootstrap layer: root app composition, custom element entry point, routing, providers, global configuration, and app-wide assets.     |
+| [**📁 shared**](./src/shared/README.md)                               | Contains only genuinely reusable cross-context code. In this starter it is intentionally conservative and avoids hosting demo-specific UI.                 |
+| [**📁 shared/application**](./src/shared/application/README.md)       | Shared application-layer abstractions, DTO helpers, or orchestration utilities that can be reused by several bounded contexts.                             |
+| [**📁 shared/domain**](./src/shared/domain/README.md)                 | Shared pure types and contracts. This folder must stay framework-free and focused on stable, reusable domain-facing definitions.                           |
+| [**📁 shared/infrastructure**](./src/shared/infrastructure/README.md) | Shared technical helpers backed by external tools or browser APIs, such as generic HTTP utilities.                                                         |
+| [**📁 shared/ui**](./src/shared/ui/README.md)                         | Shared UI-facing helpers with no feature identity. In the current template it mainly exists for common hooks such as DI-to-React integration.              |
+| [**📁 demo**](./src/demo/README.md)                                   | The example bounded context included in the starter. It demonstrates how to structure a feature using `application`, `domain`, `infrastructure`, and `ui`. |
+| **📁 demo/ui/components**                                             | Demo visual components and building blocks. The structure stays practical and readable instead of exposing `atoms`, `molecules`, or `organisms` folders.   |
+| **📁 demo/ui/layouts**                                                | Demo layouts used to compose pages.                                                                                                                        |
+| **📁 demo/ui/pages**                                                  | Demo pages such as the overview page and the example feature pages.                                                                                        |
+| **📁 demo/ui/forms**                                                  | Demo form composition and form-related UI pieces.                                                                                                          |
+| **📁 demo/ui/hooks**                                                  | Demo-specific React hooks, such as query hooks that connect the UI to the application layer.                                                               |
+| **📁 demo/ui/routing**                                                | Demo route definitions and route path constants consumed by the app router.                                                                                |
 
 ## 🏗 <span id="component-structure">React Component Structure</span>
 
@@ -171,7 +176,7 @@ export { ComponentName } from './ComponentName';
 This will allow importing a component like this:
 
 ```typescript
-import { ComponentName } from '@Front/ComponentName';
+import { ComponentName } from '@Demo/ui/components/ComponentName';
 ```
 
 #### 📄 ComponentName.tsx
@@ -236,13 +241,13 @@ export const ComponentName = () => {
 
 ## ⚠️ Caution with Environment Variables
 
-The webpack configuration of this project allows for environment variables to be included in the application bundle. This could potentially expose sensitive information if the bundle is publicly accessible.
+The build configuration of this project allows for environment variables to be included in the application bundle. This could potentially expose sensitive information if the bundle is publicly accessible.
 
 It is recommended to only include non-sensitive environment variables in the application bundle. Sensitive information should not be exposed even if the bundle is publicly accessible.
 
 Ensure you understand the security implications before including environment variables in your bundle.
 
-Please note that the web configuration pre-filters environment variables via the default prefix ‘FRONT*’. This means that only environment variables starting with ‘FRONT*’ will be included in the bundle. This is an additional layer of security to prevent the accidental exposure of sensitive environment variables.
+Please note that the build configuration pre-filters environment variables via the default prefix `FRONT*`. This means that only environment variables starting with `FRONT*` will be included in the bundle. This is an additional layer of security to prevent the accidental exposure of sensitive environment variables.
 
 ## 🙇 <span id="learnmore">Learn More</span>
 

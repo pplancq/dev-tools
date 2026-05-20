@@ -1,0 +1,1 @@
+export { DemoFooter } from './DemoFooter';

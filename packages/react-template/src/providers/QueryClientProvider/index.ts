@@ -1,1 +1,0 @@
-export { QueryClientProvider } from './QueryClientProvider';

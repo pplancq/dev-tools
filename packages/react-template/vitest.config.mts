@@ -18,7 +18,11 @@ export default defineConfig(({ mode }) => {
       environment: 'jsdom',
       setupFiles: 'vitest.setup.ts',
       clearMocks: true,
-      css: false,
+      css: {
+        modules: {
+          classNameStrategy: 'non-scoped',
+        },
+      },
       reporters: ['default', 'junit', 'vitest-sonar-reporter'],
       outputFile: {
         'vitest-sonar-reporter': 'sonar-report.xml',
