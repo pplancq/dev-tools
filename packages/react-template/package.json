@@ -71,7 +71,7 @@
     "@pplancq/stylelint-config": "*",
     "@rsbuild/core": "^2.0.6",
     "@rsbuild/plugin-eslint": "^2.0.0",
-    "@rsbuild/plugin-react": "^2.0.0",
+    "@rsbuild/plugin-react": "^2.0.1",
     "@rsbuild/plugin-sass": "^1.5.2",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
