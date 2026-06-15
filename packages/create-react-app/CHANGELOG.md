@@ -1,3 +1,13 @@
+## @pplancq/create-react-app [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.5...@pplancq/create-react-app@3.0.0) (2026-06-15)
+
+### ⚠ BREAKING CHANGES
+
+* **create-react-app:** create-react-app now requires Node >= 22.12.0, older Node versions are no longer supported.
+
+### Bug Fixes
+
+* **create-react-app:** bump node engine to 22.12.0 ([4404e01](https://github.com/pplancq/dev-tools/commit/4404e015a83d01a20be9db59c621c5e9d3ee893d))
+
 ## @pplancq/create-react-app [2.0.5](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.4...@pplancq/create-react-app@2.0.5) (2026-03-31)
 
 ### Bug Fixes
