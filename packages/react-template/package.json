@@ -60,7 +60,7 @@
     "yup": "^1.7.1"
   },
   "devDependencies": {
-    "@bdellegrazie/playwright-sonar-reporter": "^0.5.0",
+    "@bdellegrazie/playwright-sonar-reporter": "^0.5.1",
     "@commitlint/cli": "^21.0.2",
     "@msw/playwright": "^0.6.7",
     "@playwright/test": "^1.60.0",
