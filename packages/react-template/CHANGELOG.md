@@ -1,3 +1,30 @@
+## @pplancq/react-template [2.9.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.17...@pplancq/react-template@2.9.0) (2026-06-15)
+
+### Features
+
+* **react-template:** restructure react-template to Clean Architecture and DDD bounded contexts ([#1742](https://github.com/pplancq/dev-tools/issues/1742)) ([bbd8a9d](https://github.com/pplancq/dev-tools/commit/bbd8a9da2028a3f070993e38bd7140a5edbe6d2c))
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to ^21.0.2 ([#1769](https://github.com/pplancq/dev-tools/issues/1769)) ([f3c7f42](https://github.com/pplancq/dev-tools/commit/f3c7f42c1229060f6471d68a3bdfc0517543ef3a))
+* **deps:** update dependency @hookform/resolvers to ^5.4.0 ([#1755](https://github.com/pplancq/dev-tools/issues/1755)) ([e7f1d68](https://github.com/pplancq/dev-tools/commit/e7f1d68a868fba6247fe360b8e8b5e9fc6275be4))
+* **deps:** update dependency @rsbuild/core to ^2.0.12 ([#1744](https://github.com/pplancq/dev-tools/issues/1744)) ([22a93b3](https://github.com/pplancq/dev-tools/commit/22a93b3d027b2a88c4bc9f80ecbeb4af91e3f0e6))
+* **deps:** update dependency @rsbuild/plugin-eslint to ^2.0.2 ([#1759](https://github.com/pplancq/dev-tools/issues/1759)) ([eeaa6cb](https://github.com/pplancq/dev-tools/commit/eeaa6cbe616a365066611c39a3ccc36db6598b7c))
+* **deps:** update dependency @rsbuild/plugin-react to ^2.0.1 ([#1766](https://github.com/pplancq/dev-tools/issues/1766)) ([b1527e6](https://github.com/pplancq/dev-tools/commit/b1527e6097daf03e8dbe82959e14899cf11d1086))
+* **deps:** update dependency @rsbuild/plugin-sass to ^1.5.3 ([#1767](https://github.com/pplancq/dev-tools/issues/1767)) ([b25e848](https://github.com/pplancq/dev-tools/commit/b25e848e00e384b3a378ec243ce69c7151ff4c8c))
+* **deps:** update dependency monocart-coverage-reports to ^2.12.12 ([#1768](https://github.com/pplancq/dev-tools/issues/1768)) ([8a5ba24](https://github.com/pplancq/dev-tools/commit/8a5ba24051ff8f7eb6409b5ab6738ebdb01055d9))
+* **deps:** update dependency react-hook-form to ^7.78.0 ([#1756](https://github.com/pplancq/dev-tools/issues/1756)) ([2cccd51](https://github.com/pplancq/dev-tools/commit/2cccd5144d875d0accf485b256ef3d91ca8fe893))
+* **deps:** update dependency stylelint to ^17.13.0 ([#1752](https://github.com/pplancq/dev-tools/issues/1752)) ([acfc13f](https://github.com/pplancq/dev-tools/commit/acfc13f61041ffc9323a3e469c1b2e51fbf3bf9f))
+* **deps:** update react monorepo ([#1745](https://github.com/pplancq/dev-tools/issues/1745)) ([8424cfe](https://github.com/pplancq/dev-tools/commit/8424cfed2645554410e1e7df2632376b26b1fb04))
+* **deps:** update react-query mono repo to ^5.101.0 ([#1749](https://github.com/pplancq/dev-tools/issues/1749)) ([31d0cfd](https://github.com/pplancq/dev-tools/commit/31d0cfdedf9a5c1ed2779cff2a0b8a0fd8a8ac5d))
+* **deps:** update react-router monorepo to ^7.17.0 ([#1763](https://github.com/pplancq/dev-tools/issues/1763)) ([6cfffba](https://github.com/pplancq/dev-tools/commit/6cfffba0a99f0c0dcb4f271ace035e60b2d951d3))
+
+
+### Dependencies
+
+* **@pplancq/commitlint-config:** upgraded to 4.0.2
+* **@pplancq/eslint-config:** upgraded to 6.0.17
+
 ## @pplancq/react-template [2.8.17](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.16...@pplancq/react-template@2.8.17) (2026-05-19)
 
 ### Bug Fixes
