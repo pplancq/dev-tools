@@ -1,7 +1,7 @@
+import { Logo } from '@Demo/ui/components/Logo';
 import { render } from '@testing-library/react';
 import { expect } from 'vitest';
 import { axe } from 'vitest-axe';
-import { Logo } from '../Logo';
 
 describe('<Logo />', () => {
   it('should', async () => {

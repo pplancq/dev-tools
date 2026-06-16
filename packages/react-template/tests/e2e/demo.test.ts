@@ -1,5 +1,5 @@
+import { getUsers200 } from '@Mocks/handlers/userHandlers';
 import { expect } from '@playwright/test';
-import { getUsers200 } from '../mocks/handlers/userHandlers';
 import { describe, it } from './fixture/playwright.fixture';
 
 describe('Demo Test', () => {
@@ -11,7 +11,7 @@ describe('Demo Test', () => {
 
   it('should data fetching', async ({ page, network }) => {
     network.use(getUsers200);
-    await page.goto('/reactQueryDemo');
+    await page.goto('/react-query');
     await expect(page.getByText('Demo user')).toBeVisible();
   });
 });

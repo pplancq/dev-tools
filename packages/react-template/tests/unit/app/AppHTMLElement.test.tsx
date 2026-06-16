@@ -1,9 +1,9 @@
 import { App } from '@App/App';
+import AppHTMLElement from '@App/AppHTMLElement';
 import { waitFor } from '@testing-library/react';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { afterEach, beforeEach, describe, expect, it, type Mock, vi } from 'vitest';
-import AppHTMLElement from '../AppHTMLElement';
 
 vi.mock('@App/App', () => ({
   App: () => <div data-testid="app-mock">AppMock</div>,

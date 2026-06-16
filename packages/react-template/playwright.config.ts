@@ -3,7 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 const appUrl = 'http://localhost:3000';
 
 export default defineConfig({
-  testDir: 'tests',
+  testDir: 'tests/e2e',
   outputDir: 'test-results',
   fullyParallel: true,
   forbidOnly: Boolean(process.env.CI),
@@ -18,8 +18,8 @@ export default defineConfig({
       { outputFile: 'playwright-report/sonar-results.xml', sonarcloud: true },
     ],
   ],
-  globalSetup: 'tests/utils/playwright.globalSetup.ts',
-  globalTeardown: 'tests/utils/playwright.globalTeardown.ts',
+  globalSetup: 'tests/e2e/utils/playwright.globalSetup.ts',
+  globalTeardown: 'tests/e2e/utils/playwright.globalTeardown.ts',
   use: {
     baseURL: appUrl,
     trace: 'retain-on-failure',

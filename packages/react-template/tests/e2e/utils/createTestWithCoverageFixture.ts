@@ -1,7 +1,7 @@
 import type { PlaywrightTestArgs, PlaywrightWorkerArgs, TestFixture } from '@playwright/test';
 import { test } from '@playwright/test';
 import { CoverageReport } from 'monocart-coverage-reports';
-import { coverageOptions } from '../../mrc.playwright.config';
+import { coverageOptions } from '../../../mrc.playwright.config';
 
 export const createTestWithCoverageFixture = (): [
   TestFixture<string, PlaywrightTestArgs & PlaywrightWorkerArgs>,
