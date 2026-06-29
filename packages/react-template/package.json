@@ -81,7 +81,7 @@
     "@vitejs/plugin-react": "^6.0.2",
     "@vitest/coverage-v8": "^4.1.8",
     "concurrently": "^10.0.3",
-    "eslint": "^9.39.4",
+    "eslint": "^10.6.0",
     "eslint-plugin-prettier": "^5.5.6",
     "husky": "^9.1.7",
     "jsdom": "^29.1.1",
