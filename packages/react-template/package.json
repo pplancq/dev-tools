@@ -72,7 +72,7 @@
     "@rsbuild/core": "^2.0.12",
     "@rsbuild/plugin-eslint": "^2.0.2",
     "@rsbuild/plugin-react": "^2.0.1",
-    "@rsbuild/plugin-sass": "^1.5.3",
+    "@rsbuild/plugin-sass": "^2.0.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
