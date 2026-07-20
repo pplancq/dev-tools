@@ -8,6 +8,7 @@
 | `@pplancq/commitlint-config`       | 3.x     | :white_check_mark: |
 | `@pplancq/create-react-app`        | 2.x     | :white_check_mark: |
 | `@pplancq/eslint-config`           | 6.x     | :white_check_mark: |
+| `@pplancq/nx-release-plugin`       | 1.x     | :white_check_mark: |
 | `@pplancq/postcss-config`          | 3.x     | :white_check_mark: |
 | `@pplancq/prettier-config`         | 2.x     | :white_check_mark: |
 | `@pplancq/semantic-release-config` | 3.x     | :white_check_mark: |
