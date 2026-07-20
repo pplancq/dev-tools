@@ -1,0 +1,12 @@
+{
+  "$schema": "https://unpkg.com/nx/schemas/migrations-schema.json",
+  "name": "@pplancq/nx-release-plugin",
+  "version": "1.0.0",
+  "generators": {
+    "update-2-0-0": {
+      "version": "2.0.0",
+      "description": "Update nx release configuration to the plugin-based format.",
+      "factory": "./dist/migrations/update-2-0-0/update-2-0-0"
+    }
+  }
+}

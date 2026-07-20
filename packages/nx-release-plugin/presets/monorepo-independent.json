@@ -1,0 +1,24 @@
+{
+  "$schema": "https://unpkg.com/nx@23/schemas/nx-schema.json",
+  "release": {
+    "projects": ["packages/*"],
+    "projectsRelationship": "independent",
+    "releaseTag": {
+      "pattern": "{projectName}@{version}"
+    },
+    "git": {
+      "commitMessage": "chore(release): release {projectName}@{version} [skip ci]"
+    },
+    "changelog": {
+      "workspaceChangelog": false,
+      "projectChangelogs": {
+        "createRelease": "github",
+        "entryWhenNoChanges": false,
+        "renderer": "@pplancq/nx-release-plugin/changelog-renderer.cjs"
+      }
+    },
+    "conventionalCommits": {
+      "useCommitScope": true
+    }
+  }
+}
