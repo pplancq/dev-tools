@@ -1,0 +1,7 @@
+{
+  "$schema": "https://unpkg.com/nx@23/schemas/nx-schema.json",
+  "release": {
+    "projects": ["packages/*"],
+    "projectsRelationship": "fixed"
+  }
+}

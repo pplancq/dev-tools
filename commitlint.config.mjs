@@ -14,6 +14,7 @@ export default {
         'react-template',
         'semantic-release-config',
         'stylelint-config',
+        'nx-release-plugin',
         'deps',
         'release',
       ],

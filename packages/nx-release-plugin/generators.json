@@ -1,0 +1,13 @@
+{
+  "$schema": "https://unpkg.com/nx/schemas/generators-schema.json",
+  "name": "@pplancq/nx-release-plugin",
+  "version": "1.0.0",
+  "generators": {
+    "setup": {
+      "factory": "./dist/generators/setup/generator.js",
+      "schema": "./src/generators/setup/schema.json",
+      "description": "Generate or update nx.json with a shared Nx release preset.",
+      "aliases": ["init"]
+    }
+  }
+}

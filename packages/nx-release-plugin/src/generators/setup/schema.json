@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "cli": "nx",
+  "id": "NxReleaseSetup",
+  "title": "Nx Release Setup Generator",
+  "description": "Generate or update nx.json with a shared Nx release preset.",
+  "type": "object",
+  "properties": {
+    "preset": {
+      "type": "string",
+      "description": "Release preset to apply",
+      "enum": ["simple", "monorepo-fixed", "monorepo-independent"],
+      "default": "monorepo-fixed",
+      "x-prompt": {
+        "message": "Which release preset matches your repository?",
+        "type": "list",
+        "items": [
+          { "value": "simple", "label": "Simple repository (single package at root)" },
+          { "value": "monorepo-fixed", "label": "Monorepo with a single synchronized release" },
+          { "value": "monorepo-independent", "label": "Monorepo with independent package releases" }
+        ]
+      }
+    },
+    "projects": {
+      "type": "string",
+      "description": "Comma-separated list of projects to release",
+      "default": "packages/*",
+      "x-prompt": "Which projects should be released?"
+    }
+  },
+  "required": ["preset", "projects"]
+}
