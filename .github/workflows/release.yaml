@@ -59,6 +59,9 @@ jobs:
           npm config set access=public
           npm config set provenance=true
 
+      - name: Build nx release plugin
+        run: npm run build --workspace @pplancq/nx-release-plugin
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
