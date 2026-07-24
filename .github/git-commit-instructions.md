@@ -51,7 +51,7 @@ messages to ensure a readable history, automate changelog generation, and facili
    - If the commit is for `packages/postcss-config`, use the scope: `postcss-config`
    - If the commit is for `packages/prettier-config`, use the scope: `prettier-config`
    - If the commit is for `packages/react-template`, use the scope: `react-template`
-   - If the commit is for `packages/semantic-release-config`, use the scope: `semantic-release-config`
+   - If the commit is for `packages/nx-release-plugin`, use the scope: `nx-release-plugin`
    - If the commit is for `packages/stylelint-config`, use the scope: `stylelint-config`
    - For all other changes (and only if none of the above apply), use the scope: `dev-tools`
 
@@ -71,7 +71,6 @@ messages to ensure a readable history, automate changelog generation, and facili
      - `refactor(postcss-config): simplify config export`
      - `chore(prettier-config): update prettier version`
      - `docs(react-template): improve template documentation`
-     - `feat(semantic-release-config): add github label support`
      - `fix(stylelint-config): correct css property order`
      - `chore(dev-tools): update dependencies`
      - `docs(dev-tools): update main readme`
