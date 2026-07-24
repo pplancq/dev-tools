@@ -1,0 +1,104 @@
+{
+  "$schema": "https://unpkg.com/nx@23/schemas/nx-schema.json",
+  "release": {
+    "projects": ["packages/*"],
+    "version": {
+      "conventionalCommits": true,
+      "updateDependents": "auto",
+      "applyPreidToDependents": true,
+      "preserveMatchingDependencyRanges": true,
+      "versionPrefix": "auto"
+    },
+    "git": {
+      "commit": true,
+      "commitMessage": "chore(release): release {projectName}@{version} [skip ci]",
+      "tag": true,
+      "push": true,
+      "stageChanges": true
+    },
+    "changelog": {
+      "workspaceChangelog": false,
+      "projectChangelogs": {
+        "createRelease": "github",
+        "entryWhenNoChanges": false,
+        "renderer": "@pplancq/nx-release-plugin/changelog-renderer.cjs"
+      }
+    },
+    "conventionalCommits": {
+      "types": {
+        "feat": {
+          "semverBump": "minor",
+          "changelog": {
+            "title": "🎉 Features"
+          }
+        },
+        "fix": {
+          "semverBump": "patch",
+          "changelog": {
+            "title": "🐞 Bug Fixes"
+          }
+        },
+        "docs": {
+          "semverBump": "none",
+          "changelog": {
+            "title": "📚 Documentation"
+          }
+        },
+        "style": {
+          "semverBump": "none",
+          "changelog": {
+            "hidden": true
+          }
+        },
+        "refactor": {
+          "semverBump": "none",
+          "changelog": {
+            "title": "♻️ Code Refactoring"
+          }
+        },
+        "perf": {
+          "semverBump": "patch",
+          "changelog": {
+            "title": "🚀 Performance Improvements"
+          }
+        },
+        "test": {
+          "semverBump": "none",
+          "changelog": {
+            "hidden": true
+          }
+        },
+        "build": {
+          "semverBump": "none",
+          "changelog": {
+            "title": "🏗️ Build System"
+          }
+        },
+        "ci": {
+          "semverBump": "none",
+          "changelog": {
+            "title": "👷 CI"
+          }
+        },
+        "chore": {
+          "semverBump": "none",
+          "changelog": {
+            "hidden": true
+          }
+        },
+        "revert": {
+          "semverBump": "patch",
+          "changelog": {
+            "title": "⏪ Reverts"
+          }
+        }
+      },
+      "useCommitScope": true
+    },
+    "projectsRelationship": "independent",
+    "releaseTag": {
+      "pattern": "{projectName}@{version}"
+    }
+  },
+  "analytics": false
+}

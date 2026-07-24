@@ -25,7 +25,6 @@
     "lint:tsc": "npm run lint:tsc --workspaces --if-present",
     "lint:prettier": "npm run lint:prettier --workspaces --if-present",
     "lint:prettier:fix": "npm run lint:prettier:fix --workspaces --if-present",
-    "release": "multi-semantic-release",
     "package:check": "node ./scripts/package-check.mjs",
     "prepare": "husky"
   },
@@ -42,29 +41,16 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@anolilab/multi-semantic-release": "^4.4.5",
     "concurrently": "^10.0.3",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.8",
-    "prettier": "^3.9.5",
-    "semantic-release": "^25.0.7"
+    "prettier": "^3.9.5"
   },
   "lint-staged": {
     "(package|package-lock).json": "npm run package:check",
     "*": "prettier --write --ignore-unknown"
   },
   "prettier": "@pplancq/prettier-config",
-  "release": {
-    "extends": [
-      "@pplancq/semantic-release-config"
-    ],
-    "repositoryUrl": "https://github.com/pplancq/dev-tools"
-  },
-  "multi-release": {
-    "deps": {
-      "bump": "satisfy"
-    }
-  },
   "engines": {
     "node": ">= 20.12.2"
   }
