@@ -11,7 +11,7 @@
 | `@pplancq/nx-release-plugin`       | 1.x     | :white_check_mark: |
 | `@pplancq/postcss-config`          | 3.x     | :white_check_mark: |
 | `@pplancq/prettier-config`         | 2.x     | :white_check_mark: |
-| `@pplancq/semantic-release-config` | 3.x     | :white_check_mark: |
+| `@pplancq/semantic-release-config` | 3.x     | :x:                |
 | `@pplancq/stylelint-config`        | 5.x     | :white_check_mark: |
 | `@pplancq/webpack-config`          | 1.x     | :x:                |
 | `@pplancq/react-template`          | 2.x     | :white_check_mark: |
