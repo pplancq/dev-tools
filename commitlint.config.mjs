@@ -12,7 +12,6 @@ export default {
         'postcss-config',
         'prettier-config',
         'react-template',
-        'semantic-release-config',
         'stylelint-config',
         'nx-release-plugin',
         'deps',
