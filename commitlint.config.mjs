@@ -9,7 +9,6 @@ export default {
         'commitlint-config',
         'create-react-app',
         'eslint-config',
-        'postcss-config',
         'prettier-config',
         'react-template',
         'stylelint-config',

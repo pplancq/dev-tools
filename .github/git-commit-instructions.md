@@ -48,7 +48,6 @@ messages to ensure a readable history, automate changelog generation, and facili
    - If the commit is for `packages/commitlint-config`, use the scope: `commitlint-config`
    - If the commit is for `packages/create-react-app`, use the scope: `create-react-app`
    - If the commit is for `packages/eslint-config`, use the scope: `eslint-config`
-   - If the commit is for `packages/postcss-config`, use the scope: `postcss-config`
    - If the commit is for `packages/prettier-config`, use the scope: `prettier-config`
    - If the commit is for `packages/react-template`, use the scope: `react-template`
    - If the commit is for `packages/nx-release-plugin`, use the scope: `nx-release-plugin`
@@ -68,7 +67,6 @@ messages to ensure a readable history, automate changelog generation, and facili
      - `feat(commitlint-config): add new commitlint rule`
      - `fix(create-react-app): fix template path resolution`
      - `feat(eslint-config): add new typescript rule`
-     - `refactor(postcss-config): simplify config export`
      - `chore(prettier-config): update prettier version`
      - `docs(react-template): improve template documentation`
      - `fix(stylelint-config): correct css property order`
