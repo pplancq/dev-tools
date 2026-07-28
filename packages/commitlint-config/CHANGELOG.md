@@ -1,3 +1,9 @@
+## 4.0.3 (2026-07-28)
+
+### 📦 Dependencies
+
+- **deps:** update commitlint monorepo ([#1799](https://github.com/pplancq/dev-tools/pull/1799))
+
 ## @pplancq/commitlint-config [4.0.2](https://github.com/pplancq/dev-tools/compare/@pplancq/commitlint-config@4.0.1...@pplancq/commitlint-config@4.0.2) (2026-06-15)
 
 ### Bug Fixes

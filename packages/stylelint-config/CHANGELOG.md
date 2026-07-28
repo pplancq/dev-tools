@@ -1,3 +1,5 @@
+
+
 ## @pplancq/stylelint-config [5.0.3](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@5.0.2...@pplancq/stylelint-config@5.0.3) (2026-04-13)
 
 ### Bug Fixes

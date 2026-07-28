@@ -1,3 +1,5 @@
+
+
 ## @pplancq/create-react-app [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.5...@pplancq/create-react-app@3.0.0) (2026-06-15)
 
 ### ⚠ BREAKING CHANGES

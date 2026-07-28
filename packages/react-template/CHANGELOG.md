@@ -1,3 +1,42 @@
+## 2.10.0 (2026-07-28)
+
+### 🎉 Features
+
+- **react-template:** remove postcss-config dependency ([3b57e0e](https://github.com/pplancq/dev-tools/commit/3b57e0e))
+- **react-template:** restructure test directories ([4762120](https://github.com/pplancq/dev-tools/commit/4762120))
+
+### 📦 Dependencies
+
+- Updated @pplancq/commitlint-config to 4.0.3
+- Updated @pplancq/stylelint-config to 5.0.4
+- Updated @pplancq/prettier-config to 3.0.1
+- Updated @pplancq/eslint-config to 6.0.18
+- **deps:** update dependency @bdellegrazie/playwright-sonar-reporter to ^0.5.2 ([#1821](https://github.com/pplancq/dev-tools/pull/1821))
+- **deps:** update dependency react-hook-form to ^7.83.0 ([#1828](https://github.com/pplancq/dev-tools/pull/1828))
+- **deps:** update dependency inversify to ^8.2.3 ([#1817](https://github.com/pplancq/dev-tools/pull/1817))
+- **deps:** update dependency @rsbuild/core to ^2.1.8 ([#1816](https://github.com/pplancq/dev-tools/pull/1816))
+- **deps:** update dependency @testing-library/jest-dom to v7 ([#1831](https://github.com/pplancq/dev-tools/pull/1831))
+- **deps:** update dependency react-router to ^8.3.0 ([#1829](https://github.com/pplancq/dev-tools/pull/1829))
+- **deps:** update react-query mono repo to ^5.101.4 ([#1826](https://github.com/pplancq/dev-tools/pull/1826))
+- **deps:** update react monorepo to ^19.2.8 ([#1825](https://github.com/pplancq/dev-tools/pull/1825))
+- **deps:** update dependency @vitejs/plugin-react to ^6.0.4 ([#1822](https://github.com/pplancq/dev-tools/pull/1822))
+- **deps:** update dependency inversify to ^8.1.3 ([#1782](https://github.com/pplancq/dev-tools/pull/1782))
+- **deps:** update dependency react-hook-form to ^7.81.0 ([#1789](https://github.com/pplancq/dev-tools/pull/1789))
+- **deps:** update commitlint monorepo ([#1799](https://github.com/pplancq/dev-tools/pull/1799))
+- **deps:** update dependency @rsbuild/plugin-react to ^2.1.0 ([#1785](https://github.com/pplancq/dev-tools/pull/1785))
+- **deps:** update dependency @vitejs/plugin-react to ^6.0.3 ([#1794](https://github.com/pplancq/dev-tools/pull/1794))
+- **deps:** update react-query mono repo to ^5.101.2 ([#1796](https://github.com/pplancq/dev-tools/pull/1796))
+- **deps:** update dependency @playwright/test to ^1.61.1 ([#1788](https://github.com/pplancq/dev-tools/pull/1788))
+- **deps:** update dependency msw to ^2.15.0 ([#1809](https://github.com/pplancq/dev-tools/pull/1809))
+- **deps:** update dependency @rsbuild/core to ^2.1.5 ([#1780](https://github.com/pplancq/dev-tools/pull/1780))
+- **deps:** update dependency stylelint to ^17.14.0 ([#1798](https://github.com/pplancq/dev-tools/pull/1798))
+- **deps:** update dependency react-router to v8 ([#1792](https://github.com/pplancq/dev-tools/pull/1792))
+- **deps:** update dependency @rsbuild/plugin-sass to v2 ([#1801](https://github.com/pplancq/dev-tools/pull/1801))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## @pplancq/react-template [2.9.0](https://github.com/pplancq/dev-tools/compare/@pplancq/react-template@2.8.17...@pplancq/react-template@2.9.0) (2026-06-15)
 
 ### Features

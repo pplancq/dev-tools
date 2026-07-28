@@ -1,3 +1,9 @@
+## 3.0.1 (2026-07-28)
+
+### 📦 Dependencies
+
+- **deps:** update dependency prettier-plugin-sh to ^0.19.0 ([#1812](https://github.com/pplancq/dev-tools/pull/1812))
+
 ## @pplancq/prettier-config [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/prettier-config@2.0.2...@pplancq/prettier-config@3.0.0) (2026-05-19)
 
 ### ⚠ BREAKING CHANGES
