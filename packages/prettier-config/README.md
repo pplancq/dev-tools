@@ -49,3 +49,20 @@ export default {
 ```
 
 If you are using a `.js` config file, ensure your environment supports ESM (e.g., Node.js >= 18, or set "type": "module" in your package.json).
+
+## Migration from v3 to v4
+
+Version 4 aligns the shared config with Prettier's default recommendations. The following options are no longer overridden:
+
+- `singleQuote`: previously set to `true`, now uses Prettier's default (`false`).
+- `arrowParens`: previously set to `"avoid"`, now uses Prettier's default (`"always"`).
+
+As a result, strings will be formatted with double quotes and arrow functions with a single argument will include parentheses.
+
+### How to migrate
+
+After upgrading, run Prettier on your codebase to apply the new formatting:
+
+```shell
+npx prettier --write .
+```
