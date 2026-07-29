@@ -1,5 +1,5 @@
-import { defineNetworkFixture, type NetworkFixture } from '@msw/playwright';
-import type { PlaywrightTestArgs, PlaywrightWorkerArgs, TestFixture } from '@playwright/test';
+import { defineNetworkFixture, type NetworkFixture } from "@msw/playwright";
+import type { PlaywrightTestArgs, PlaywrightWorkerArgs, TestFixture } from "@playwright/test";
 
 export const createNetworkFixture = (): [
   TestFixture<NetworkFixture, PlaywrightTestArgs & PlaywrightWorkerArgs>,

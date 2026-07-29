@@ -1,6 +1,6 @@
-import { NavLink } from '@Demo/ui/components/NavLink/NavLink';
-import { useId } from 'react';
-import classes from './DemoNavigation.module.css';
+import { NavLink } from "@Demo/ui/components/NavLink/NavLink";
+import { useId } from "react";
+import classes from "./DemoNavigation.module.css";
 
 type DemoNavigationProps = {
   links: { label: string; url: string }[];

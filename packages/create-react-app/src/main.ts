@@ -1,19 +1,19 @@
-import { createRepository } from '@/steps/createRepository';
-import { getInteractiveArgs } from '@/steps/getInteractiveArgs';
-import { getPromptArgs } from '@/steps/getPromptArgs';
-import { gitCommit } from '@/steps/gitCommit';
-import { initializeGit } from '@/steps/initializeGit';
-import { installPackage } from '@/steps/installPackage';
-import { installTemplate } from '@/steps/installTemplate';
-import { postInstallTemplate } from '@/steps/postInstallTemplate';
-import { validatePromptArgs } from '@/steps/validatePromptArgs';
-import { intro, log, note } from '@clack/prompts';
-import pc from 'picocolors';
+import { createRepository } from "@/steps/createRepository";
+import { getInteractiveArgs } from "@/steps/getInteractiveArgs";
+import { getPromptArgs } from "@/steps/getPromptArgs";
+import { gitCommit } from "@/steps/gitCommit";
+import { initializeGit } from "@/steps/initializeGit";
+import { installPackage } from "@/steps/installPackage";
+import { installTemplate } from "@/steps/installTemplate";
+import { postInstallTemplate } from "@/steps/postInstallTemplate";
+import { validatePromptArgs } from "@/steps/validatePromptArgs";
+import { intro, log, note } from "@clack/prompts";
+import pc from "picocolors";
 
 export const main = async () => {
   const args = getPromptArgs();
 
-  intro(`Create ${pc.blue('React')} App`);
+  intro(`Create ${pc.blue("React")} App`);
 
   validatePromptArgs(args);
 
@@ -35,13 +35,13 @@ export const main = async () => {
   log.success(`${pc.yellow(successMessage)}  Created ${pc.green(projectName)} at ${pc.green(repoDir)}`);
   note(
     `We suggest that you begin by typing:
- ${pc.cyan('cd')} ${projectName}${
+ ${pc.cyan("cd")} ${projectName}${
    skipDepInstall
      ? `
- ${pc.cyan('npm install')}`
-     : ''
+ ${pc.cyan("npm install")}`
+     : ""
  }
- ${pc.cyan('npm start')}`,
-    'What next?',
+ ${pc.cyan("npm start")}`,
+    "What next?",
   );
 };

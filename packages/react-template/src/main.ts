@@ -1,10 +1,10 @@
-import AppHTMLElement from '@App/AppHTMLElement';
+import AppHTMLElement from "@App/AppHTMLElement";
 
-if (import.meta.env.FRONT_MOCK_ENABLE === 'true') {
-  const { worker } = await import('@Mocks/browser');
+if (import.meta.env.FRONT_MOCK_ENABLE === "true") {
+  const { worker } = await import("@Mocks/browser");
   await worker.start({
-    onUnhandledRequest: 'warn',
+    onUnhandledRequest: "warn",
   });
 }
 
-customElements.define('app-react', AppHTMLElement);
+customElements.define("app-react", AppHTMLElement);

@@ -1,5 +1,5 @@
-import { runCommand } from '@/helpers/runCommand';
-import { spinner } from '@clack/prompts';
+import { runCommand } from "@/helpers/runCommand";
+import { spinner } from "@clack/prompts";
 
 export const initializeGit = async (repoDir: string, skipGitInit: boolean) => {
   if (skipGitInit) {
@@ -8,9 +8,9 @@ export const initializeGit = async (repoDir: string, skipGitInit: boolean) => {
 
   const spinnerInstance = spinner();
 
-  spinnerInstance.start('Initializing git repository.');
+  spinnerInstance.start("Initializing git repository.");
 
-  await runCommand('git', ['init', '--initial-branch=main'], { cwd: repoDir });
+  await runCommand("git", ["init", "--initial-branch=main"], { cwd: repoDir });
 
-  spinnerInstance.stop('Git repository initialized.');
+  spinnerInstance.stop("Git repository initialized.");
 };

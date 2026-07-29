@@ -1,9 +1,9 @@
-import { queryClient } from '@App/config/queryClientConfig';
-import { serviceContainer } from '@App/config/serviceContainer';
-import { Providers } from '@App/providers/Providers/Providers';
-import { Router } from '@App/routing/Router';
+import { queryClient } from "@App/config/queryClientConfig";
+import { serviceContainer } from "@App/config/serviceContainer";
+import { Providers } from "@App/providers/Providers/Providers";
+import { Router } from "@App/routing/Router";
 
-import '@App/assets/css';
+import "@App/assets/css";
 
 type AppProps = {
   basename?: string;

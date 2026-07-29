@@ -1,4 +1,4 @@
-import type { Tree } from '@nx/devkit';
+import type { Tree } from "@nx/devkit";
 
 // eslint-disable-next-line import/no-default-export
 export default function updateReleaseConfig(

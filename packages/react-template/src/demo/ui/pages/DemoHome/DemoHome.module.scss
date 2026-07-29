@@ -40,7 +40,7 @@
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
       background-color: #f8f8f8;
-      content: '';
+      content: "";
     }
 
     &::after {
@@ -49,7 +49,7 @@
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
       background-color: #f8f8f8;
-      content: ' ';
+      content: " ";
     }
   }
 }
@@ -83,7 +83,7 @@
     width: 55px;
     height: 5px;
     background-color: #111;
-    content: '';
+    content: "";
   }
 
   &::after {
@@ -94,7 +94,7 @@
     max-width: 255px;
     height: 1px;
     background-color: #333;
-    content: '';
+    content: "";
   }
 }
 
@@ -177,7 +177,7 @@ li {
 code {
   padding: 2px 5px;
   border-radius: 4px;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   font-size: 14px;
   background-color: #f8f9fa;
 }

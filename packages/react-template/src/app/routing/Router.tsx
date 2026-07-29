@@ -1,5 +1,5 @@
-import { RouterProvider, createBrowserRouter } from 'react-router';
-import { routeObject } from './routes';
+import { createBrowserRouter, RouterProvider } from "react-router";
+import { routeObject } from "./routes";
 
 type RouterProps = {
   basename?: string;

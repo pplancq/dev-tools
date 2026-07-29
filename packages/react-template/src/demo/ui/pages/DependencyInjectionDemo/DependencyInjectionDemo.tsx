@@ -1,7 +1,7 @@
-import type { GetArchitecturePrinciplesUseCaseInterface } from '@Demo/application/use-cases/GetArchitecturePrinciplesUseCaseInterface';
-import { DEMO_SERVICES } from '@Demo/serviceIdentifiers';
-import { useService } from '@Shared/ui/hooks/useService/useService';
-import classes from './DependencyInjectionDemo.module.scss';
+import type { GetArchitecturePrinciplesUseCaseInterface } from "@Demo/application/use-cases/GetArchitecturePrinciplesUseCaseInterface";
+import { DEMO_SERVICES } from "@Demo/serviceIdentifiers";
+import { useService } from "@Shared/ui/hooks/useService/useService";
+import classes from "./DependencyInjectionDemo.module.scss";
 
 export const DependencyInjectionDemo = () => {
   const getArchitecturePrinciplesUseCase = useService<GetArchitecturePrinciplesUseCaseInterface>(

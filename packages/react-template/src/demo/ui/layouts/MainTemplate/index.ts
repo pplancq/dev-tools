@@ -1,1 +1,1 @@
-export { MainTemplate } from './MainTemplate';
+export { MainTemplate } from "./MainTemplate";

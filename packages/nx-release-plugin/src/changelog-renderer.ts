@@ -1,7 +1,7 @@
-import DefaultChangelogRenderer from 'nx/release/changelog-renderer';
-import type { ChangelogChange } from 'nx/release/changelog-renderer';
+import type { ChangelogChange } from "nx/release/changelog-renderer";
+import DefaultChangelogRenderer from "nx/release/changelog-renderer";
 
-const DEPENDENCY_SCOPE = 'deps';
+const DEPENDENCY_SCOPE = "deps";
 
 // eslint-disable-next-line import/no-default-export
 export default class CustomChangelogRenderer extends DefaultChangelogRenderer {
@@ -36,8 +36,8 @@ export default class CustomChangelogRenderer extends DefaultChangelogRenderer {
 
     return sections
       .filter(section => section.length > 0)
-      .map(section => section.join('\n').trim())
-      .join('\n\n')
+      .map(section => section.join("\n").trim())
+      .join("\n\n")
       .trim();
   }
 
@@ -85,7 +85,7 @@ export default class CustomChangelogRenderer extends DefaultChangelogRenderer {
   }
 
   private renderMergedDependenciesSection(): string[] {
-    const markdownLines: string[] = ['', '### 📦 Dependencies', ''];
+    const markdownLines: string[] = ["", "### 📦 Dependencies", ""];
 
     if (this.hasDependencyBumps()) {
       this.dependencyBumps?.forEach(({ dependencyName, newVersion }) => {
@@ -102,7 +102,7 @@ export default class CustomChangelogRenderer extends DefaultChangelogRenderer {
 
   // eslint-disable-next-line class-methods-use-this
   private withoutIssueReferences(change: ChangelogChange): ChangelogChange {
-    const githubReferences = change.githubReferences?.filter(reference => reference.type !== 'issue');
+    const githubReferences = change.githubReferences?.filter(reference => reference.type !== "issue");
     return { ...change, githubReferences };
   }
 

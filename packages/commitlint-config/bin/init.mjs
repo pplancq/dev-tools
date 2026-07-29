@@ -1,15 +1,15 @@
 #!/usr/bin/env node
-import { writeFileSync } from 'node:fs';
+import { writeFileSync } from "node:fs";
 
-console.info('Add commitlint config in commitlint.config.mjs');
+console.info("Add commitlint config in commitlint.config.mjs");
 
 writeFileSync(
-  'commitlint.config.mjs',
+  "commitlint.config.mjs",
   `export default {
   extends: ['@pplancq/commitlint-config'],
 };
 `,
   {
-    encoding: 'utf-8',
+    encoding: "utf-8",
   },
 );

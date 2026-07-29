@@ -1,6 +1,6 @@
-import type { DemoUser } from '@Demo/domain/entities/DemoUser';
-import type { DemoUserRepositoryInterface } from '@Demo/domain/repositories/DemoUserRepositoryInterface';
-import { fetchApi } from '@Shared/infrastructure/http/fetchApi';
+import type { DemoUser } from "@Demo/domain/entities/DemoUser";
+import type { DemoUserRepositoryInterface } from "@Demo/domain/repositories/DemoUserRepositoryInterface";
+import { fetchApi } from "@Shared/infrastructure/http/fetchApi";
 
 type DemoUserApiResponse = {
   id: number;
@@ -11,7 +11,7 @@ type DemoUserApiResponse = {
 };
 
 export class HttpDemoUserRepository implements DemoUserRepositoryInterface {
-  private readonly apiPath = 'https://jsonplaceholder.typicode.com/users';
+  private readonly apiPath = "https://jsonplaceholder.typicode.com/users";
 
   public readonly getAll = async (): Promise<DemoUser[]> => {
     const users = await fetchApi<DemoUserApiResponse[]>({

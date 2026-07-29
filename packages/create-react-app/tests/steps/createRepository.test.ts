@@ -1,15 +1,15 @@
-import { runCommand } from '@/helpers/runCommand';
-import { createRepository } from '@/steps/createRepository';
-import { existsSync, rmSync } from 'node:fs';
-import { resolve } from 'node:path';
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { runCommand } from "@/helpers/runCommand";
+import { createRepository } from "@/steps/createRepository";
+import { existsSync, rmSync } from "node:fs";
+import { resolve } from "node:path";
+import { afterEach, describe, expect, it, vi } from "vitest";
 
-vi.mock('@/helpers/runCommand', () => ({
+vi.mock("@/helpers/runCommand", () => ({
   runCommand: vi.fn(),
 }));
 
-describe('createRepository', () => {
-  const testDir = 'test-createRepository';
+describe("createRepository", () => {
+  const testDir = "test-createRepository";
   const testPath = resolve(process.cwd(), testDir);
 
   afterEach(() => {
@@ -18,16 +18,16 @@ describe('createRepository', () => {
     }
   });
 
-  it('should create a new directory for the project', async () => {
+  it("should create a new directory for the project", async () => {
     const { repoDir } = await createRepository(testDir);
 
     expect(repoDir).toStrictEqual(testPath);
     expect(existsSync(repoDir)).toBeTruthy();
   });
 
-  it('should initialize a new npm project', async () => {
+  it("should initialize a new npm project", async () => {
     await createRepository(testDir);
 
-    expect(runCommand).toHaveBeenCalledWith('npm', ['init', '-y'], { cwd: testPath });
+    expect(runCommand).toHaveBeenCalledWith("npm", ["init", "-y"], { cwd: testPath });
   });
 });

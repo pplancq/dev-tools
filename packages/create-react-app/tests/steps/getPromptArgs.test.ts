@@ -1,98 +1,98 @@
-import { getPromptArgs } from '@/steps/getPromptArgs';
-import process from 'node:process';
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import packageJson from '../../package.json';
+import { getPromptArgs } from "@/steps/getPromptArgs";
+import process from "node:process";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import packageJson from "../../package.json";
 
-describe('processArgv', () => {
+describe("processArgv", () => {
   let originalArgv: string[];
   const mockLog = vi.fn();
 
   beforeEach(() => {
     originalArgv = process.argv;
 
-    vi.spyOn(process, 'exit').mockImplementation(code => {
+    vi.spyOn(process, "exit").mockImplementation(code => {
       throw new Error(`process.exit called with code: ${code}`);
     });
 
-    vi.spyOn(process.stdout, 'write').mockImplementation(mockLog);
+    vi.spyOn(process.stdout, "write").mockImplementation(mockLog);
   });
 
   afterEach(() => {
     process.argv = originalArgv;
   });
 
-  it('should return the project name when a project name argument is provided', () => {
-    process.argv = ['node', 'script.js', 'my-awesome-project'];
+  it("should return the project name when a project name argument is provided", () => {
+    process.argv = ["node", "script.js", "my-awesome-project"];
 
     const result = getPromptArgs();
 
-    expect(result).toStrictEqual({ projectName: 'my-awesome-project' });
+    expect(result).toStrictEqual({ projectName: "my-awesome-project" });
   });
 
-  it('should return an empty object when no project name argument is provided', () => {
-    process.argv = ['node', 'script.js'];
+  it("should return an empty object when no project name argument is provided", () => {
+    process.argv = ["node", "script.js"];
 
     const result = getPromptArgs();
 
     expect(result).toStrictEqual({});
   });
 
-  it('should return skipDepInstall true when --skip-dep-install flag is provided', () => {
-    process.argv = ['node', 'script.js', '--skip-dep-install'];
+  it("should return skipDepInstall true when --skip-dep-install flag is provided", () => {
+    process.argv = ["node", "script.js", "--skip-dep-install"];
 
     const result = getPromptArgs();
 
     expect(result).toStrictEqual({ skipDepInstall: true });
   });
 
-  it('should not return skipDepInstall when --skip-dep-install flag is not provided', () => {
-    process.argv = ['node', 'script.js'];
+  it("should not return skipDepInstall when --skip-dep-install flag is not provided", () => {
+    process.argv = ["node", "script.js"];
 
     const result = getPromptArgs();
 
     expect(result).toStrictEqual({});
   });
 
-  it('should return skipGitInit true when --skip-git-init flag is provided', () => {
-    process.argv = ['node', 'script.js', '--skip-git-init'];
+  it("should return skipGitInit true when --skip-git-init flag is provided", () => {
+    process.argv = ["node", "script.js", "--skip-git-init"];
 
     const result = getPromptArgs();
 
     expect(result).toStrictEqual({ skipGitInit: true });
   });
 
-  it('should not return skipGitInit when --skip-git-init flag is not provided', () => {
-    process.argv = ['node', 'script.js'];
+  it("should not return skipGitInit when --skip-git-init flag is not provided", () => {
+    process.argv = ["node", "script.js"];
 
     const result = getPromptArgs();
 
     expect(result).toStrictEqual({});
   });
 
-  it.each([{ arg: '--template' }, { arg: '-t' }])(
-    'should return the template when $arg flag is provided',
+  it.each([{ arg: "--template" }, { arg: "-t" }])(
+    "should return the template when $arg flag is provided",
     ({ arg }) => {
-      process.argv = ['node', 'script.js', arg, 'my-template'];
+      process.argv = ["node", "script.js", arg, "my-template"];
 
       const result = getPromptArgs();
 
-      expect(result).toStrictEqual({ template: 'my-template' });
+      expect(result).toStrictEqual({ template: "my-template" });
     },
   );
 
-  it.each([{ arg: '--version' }, { arg: '-v' }])('should print version when $arg flag is provided', ({ arg }) => {
-    process.argv = ['node', 'script.js', arg];
+  it.each([{ arg: "--version" }, { arg: "-v" }])("should print version when $arg flag is provided", ({ arg }) => {
+    process.argv = ["node", "script.js", arg];
 
-    expect(() => getPromptArgs()).toThrow('process.exit called with code: 0');
+    expect(() => getPromptArgs()).toThrow("process.exit called with code: 0");
     expect(mockLog).toHaveBeenCalledWith(expect.stringContaining(packageJson.version));
   });
 
-  it.each([{ arg: '--help' }, { arg: '-h' }])(
-    'should print Exemples in help instructions when $arg flag is provided',
+  it.each([{ arg: "--help" }, { arg: "-h" }])(
+    "should print Exemples in help instructions when $arg flag is provided",
     ({ arg }) => {
-      process.argv = ['node', 'script.js', arg];
+      process.argv = ["node", "script.js", arg];
 
-      expect(() => getPromptArgs()).toThrow('process.exit called with code: 0');
+      expect(() => getPromptArgs()).toThrow("process.exit called with code: 0");
       expect(mockLog).toHaveBeenCalledWith(
         expect.stringContaining(`Examples:
   $ npm create @pplancq/react-app my-project

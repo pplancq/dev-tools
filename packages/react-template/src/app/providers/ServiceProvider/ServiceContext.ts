@@ -1,5 +1,5 @@
-import type { Container } from 'inversify';
-import { createContext } from 'react';
+import type { Container } from "inversify";
+import { createContext } from "react";
 
 export type ServiceContextValue = {
   container: Container;

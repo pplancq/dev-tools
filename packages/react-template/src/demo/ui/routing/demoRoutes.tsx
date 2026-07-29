@@ -1,12 +1,12 @@
-import { demoAppRoutes } from '@Demo/ui/routing/demoAppRoutes';
-import { DemoLayout } from '@Demo/ui/layouts/DemoLayout/DemoLayout';
-import { DemoHome } from '@Demo/ui/pages/DemoHome/DemoHome';
-import { DependencyInjectionDemo } from '@Demo/ui/pages/DependencyInjectionDemo/DependencyInjectionDemo';
-import { ReactHookFormDemo } from '@Demo/ui/pages/ReactHookFormDemo/ReactHookFormDemo';
-import { ReactQueryDemo } from '@Demo/ui/pages/ReactQueryDemo/ReactQueryDemo';
-import type { RouteObject } from 'react-router';
+import { DemoLayout } from "@Demo/ui/layouts/DemoLayout/DemoLayout";
+import { DemoHome } from "@Demo/ui/pages/DemoHome/DemoHome";
+import { DependencyInjectionDemo } from "@Demo/ui/pages/DependencyInjectionDemo/DependencyInjectionDemo";
+import { ReactHookFormDemo } from "@Demo/ui/pages/ReactHookFormDemo/ReactHookFormDemo";
+import { ReactQueryDemo } from "@Demo/ui/pages/ReactQueryDemo/ReactQueryDemo";
+import { demoAppRoutes } from "@Demo/ui/routing/demoAppRoutes";
+import type { RouteObject } from "react-router";
 
-const toRelativePath = (path: string) => path.replace(/^\//, '');
+const toRelativePath = (path: string) => path.replace(/^\//, "");
 
 export const demoRoutes: RouteObject = {
   element: <DemoLayout />,

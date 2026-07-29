@@ -1,5 +1,5 @@
-import { forwardRef, InputHTMLAttributes, useId } from 'react';
-import classes from './Input.module.scss';
+import { forwardRef, InputHTMLAttributes, useId } from "react";
+import classes from "./Input.module.scss";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
@@ -24,4 +24,4 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(({ label, hasError
   );
 });
 
-Input.displayName = 'Input';
+Input.displayName = "Input";

@@ -1,14 +1,14 @@
-import type { PlaywrightTestArgs, PlaywrightWorkerArgs, TestFixture } from '@playwright/test';
-import { test } from '@playwright/test';
-import { CoverageReport } from 'monocart-coverage-reports';
-import { coverageOptions } from '../../../mrc.playwright.config';
+import type { PlaywrightTestArgs, PlaywrightWorkerArgs, TestFixture } from "@playwright/test";
+import { test } from "@playwright/test";
+import { CoverageReport } from "monocart-coverage-reports";
+import { coverageOptions } from "../../../mrc.playwright.config";
 
 export const createTestWithCoverageFixture = (): [
   TestFixture<string, PlaywrightTestArgs & PlaywrightWorkerArgs>,
-  { scope: 'test'; auto: true },
+  { scope: "test"; auto: true },
 ] => [
   async ({ page }, use) => {
-    const isChromium = test.info().project.name === 'chromium';
+    const isChromium = test.info().project.name === "chromium";
 
     if (isChromium && coverageOptions.enabled) {
       await page.coverage.startJSCoverage({
@@ -16,7 +16,7 @@ export const createTestWithCoverageFixture = (): [
       });
     }
 
-    await use('testWithCoverage');
+    await use("testWithCoverage");
 
     if (isChromium && coverageOptions.enabled) {
       const coverageList = await page.coverage.stopJSCoverage();
@@ -25,7 +25,7 @@ export const createTestWithCoverageFixture = (): [
     }
   },
   {
-    scope: 'test',
+    scope: "test",
     auto: true,
   },
 ];

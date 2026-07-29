@@ -1,8 +1,8 @@
-import type { ProfileFormValues } from '@Demo/application/dtos/ProfileFormValues';
-import { ProfileForm } from '@Demo/ui/forms/ProfileForm/ProfileForm';
-import { useState } from 'react';
+import type { ProfileFormValues } from "@Demo/application/dtos/ProfileFormValues";
+import { ProfileForm } from "@Demo/ui/forms/ProfileForm/ProfileForm";
+import { useState } from "react";
 
-import classes from './ReactHookFormDemo.module.scss';
+import classes from "./ReactHookFormDemo.module.scss";
 
 export const ReactHookFormDemo = () => {
   const [profileData, setProfileData] = useState<ProfileFormValues>();

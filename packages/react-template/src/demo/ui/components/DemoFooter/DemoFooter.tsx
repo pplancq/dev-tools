@@ -1,9 +1,9 @@
-import logo from '@Demo/ui/assets/images/logo.png';
-import { demoAppRoutes } from '@Demo/ui/routing/demoAppRoutes';
-import { Logo } from '@Demo/ui/components/Logo/Logo';
-import { Link } from 'react-router';
+import logo from "@Demo/ui/assets/images/logo.png";
+import { Logo } from "@Demo/ui/components/Logo/Logo";
+import { demoAppRoutes } from "@Demo/ui/routing/demoAppRoutes";
+import { Link } from "react-router";
 
-import classes from './DemoFooter.module.css';
+import classes from "./DemoFooter.module.css";
 
 export const DemoFooter = () => {
   return (

@@ -1,8 +1,8 @@
-import { vi } from 'vitest';
+import { vi } from "vitest";
 
-process.env.NO_COLOR = 'true';
+process.env.NO_COLOR = "true";
 
-vi.mock('@clack/prompts', async (importOriginal: () => Promise<typeof import('@clack/prompts')>) => {
+vi.mock("@clack/prompts", async (importOriginal: () => Promise<typeof import("@clack/prompts")>) => {
   const actual = await importOriginal();
   return {
     ...actual,
