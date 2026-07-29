@@ -45,7 +45,7 @@ As of version 5.x, this package is ESM-only. CommonJS (`require`) is no longer s
 
 ```js
 // .stylelintrc.js or stylelint.config.js
-module.exports = { extends: ['@pplancq/stylelint-config'] };
+module.exports = { extends: ["@pplancq/stylelint-config"] };
 ```
 
 **New (ESM) usage:**
@@ -53,7 +53,7 @@ module.exports = { extends: ['@pplancq/stylelint-config'] };
 ```js
 // stylelint.config.mjs (or stylelint.config.js when using "type": "module")
 export default {
-  extends: ['@pplancq/stylelint-config'],
+  extends: ["@pplancq/stylelint-config"],
 };
 ```
 

@@ -34,14 +34,14 @@ As of version 2.x, this package is ESM-only. CommonJS (`require`) is no longer s
 
 ```js
 // .prettierrc.js or prettier.config.js
-module.exports = require('@pplancq/prettier-config');
+module.exports = require("@pplancq/prettier-config");
 ```
 
 **New (ESM) usage:**
 
 ```js
 // prettier.config.mjs (or prettier.config.js when using "type": "module")
-import defaultConfig from '@pplancq/prettier-config';
+import defaultConfig from "@pplancq/prettier-config";
 
 export default {
   ...defaultConfig,

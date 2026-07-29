@@ -1,6 +1,6 @@
-import type { PropsWithChildren, ReactNode } from 'react';
+import type { PropsWithChildren, ReactNode } from "react";
 
-import classes from './MainTemplate.module.css';
+import classes from "./MainTemplate.module.css";
 
 type MainTemplateProps = {
   headerProps: {

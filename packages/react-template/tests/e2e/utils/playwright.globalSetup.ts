@@ -1,10 +1,10 @@
-import type { FullConfig } from '@playwright/test';
-import { CoverageReport } from 'monocart-coverage-reports';
-import { coverageOptions } from '../../../mrc.playwright.config';
+import type { FullConfig } from "@playwright/test";
+import { CoverageReport } from "monocart-coverage-reports";
+import { coverageOptions } from "../../../mrc.playwright.config";
 
 const globalSetup = (config: FullConfig) => {
   if (config.webServer && coverageOptions.enabled) {
-    console.info('[playwright]  Coverage enabled with monocart');
+    console.info("[playwright]  Coverage enabled with monocart");
     const mcr = new CoverageReport(coverageOptions);
     mcr.cleanCache();
   }

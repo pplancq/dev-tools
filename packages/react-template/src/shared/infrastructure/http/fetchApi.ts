@@ -1,5 +1,5 @@
-import type { Json } from './fetchApi.type';
-import { HEADERS, METHODS, MIME_TYPES } from './constant';
+import { HEADERS, METHODS, MIME_TYPES } from "./constant";
+import type { Json } from "./fetchApi.type";
 
 export type FetchApiError = Error & {
   code?: number;
@@ -41,7 +41,7 @@ export const fetchApi = async <T extends Json | string>({
     throw error;
   }
 
-  if ((response.headers.get(HEADERS.contentType) ?? '').includes('json')) {
+  if ((response.headers.get(HEADERS.contentType) ?? "").includes("json")) {
     return JSON.parse(content) as T;
   }
 

@@ -1,20 +1,20 @@
-import { defineConfig } from '@rslib/core';
+import { defineConfig } from "@rslib/core";
 
 export default defineConfig({
   source: {
     entry: {
-      main: './src/index.ts',
+      main: "./src/index.ts",
     },
   },
   lib: [
     {
-      format: 'esm',
+      format: "esm",
       bundle: true,
       dts: false,
     },
   ],
   output: {
-    target: 'node',
+    target: "node",
     minify: true,
   },
 });

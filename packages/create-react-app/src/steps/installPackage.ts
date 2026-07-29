@@ -1,5 +1,5 @@
-import { runCommand } from '@/helpers/runCommand';
-import { spinner } from '@clack/prompts';
+import { runCommand } from "@/helpers/runCommand";
+import { spinner } from "@clack/prompts";
 
 export const installPackage = async (repoDir: string, skipDepInstall: boolean) => {
   if (skipDepInstall) {
@@ -8,9 +8,9 @@ export const installPackage = async (repoDir: string, skipDepInstall: boolean) =
 
   const spinnerInstance = spinner();
 
-  spinnerInstance.start('Installing packages. This might take a couple of minutes.');
+  spinnerInstance.start("Installing packages. This might take a couple of minutes.");
 
-  await runCommand('npm', ['install'], { cwd: repoDir });
+  await runCommand("npm", ["install"], { cwd: repoDir });
 
-  spinnerInstance.stop('Packages installed.');
+  spinnerInstance.stop("Packages installed.");
 };

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import { writeFileSync } from 'node:fs';
+import { writeFileSync } from "node:fs";
 
-console.info('Add eslint config in eslint.config.mjs');
+console.info("Add eslint config in eslint.config.mjs");
 
 writeFileSync(
-  'eslint.config.mjs',
+  "eslint.config.mjs",
   `import { defineConfig } from '@pplancq/eslint-config';
 
 export default defineConfig({
@@ -13,6 +13,6 @@ export default defineConfig({
 });
 `,
   {
-    encoding: 'utf-8',
+    encoding: "utf-8",
   },
 );

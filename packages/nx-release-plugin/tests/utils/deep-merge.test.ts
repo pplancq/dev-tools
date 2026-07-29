@@ -1,8 +1,8 @@
-import { describe, expect, it } from 'vitest';
-import { deepMerge } from '@/utils/deep-merge';
+import { deepMerge } from "@/utils/deep-merge";
+import { describe, expect, it } from "vitest";
 
-describe('deepMerge', () => {
-  it('should return a shallow copy of the target when source is empty', () => {
+describe("deepMerge", () => {
+  it("should return a shallow copy of the target when source is empty", () => {
     const target = { a: 1 };
 
     const result = deepMerge(target, {});
@@ -11,31 +11,31 @@ describe('deepMerge', () => {
     expect(result).not.toBe(target);
   });
 
-  it('should override primitive values', () => {
+  it("should override primitive values", () => {
     const result = deepMerge({ a: 1 }, { a: 2 });
 
     expect(result).toEqual({ a: 2 });
   });
 
-  it('should deeply merge nested objects', () => {
+  it("should deeply merge nested objects", () => {
     const result = deepMerge(
       { release: { version: { conventionalCommits: true } } },
-      { release: { version: { versionPrefix: 'auto' } } },
+      { release: { version: { versionPrefix: "auto" } } },
     );
 
     expect(result).toEqual({
       release: {
         version: {
           conventionalCommits: true,
-          versionPrefix: 'auto',
+          versionPrefix: "auto",
         },
       },
     });
   });
 
-  it('should replace arrays instead of merging them', () => {
-    const result = deepMerge({ projects: ['a'] }, { projects: ['b', 'c'] });
+  it("should replace arrays instead of merging them", () => {
+    const result = deepMerge({ projects: ["a"] }, { projects: ["b", "c"] });
 
-    expect(result).toEqual({ projects: ['b', 'c'] });
+    expect(result).toEqual({ projects: ["b", "c"] });
   });
 });

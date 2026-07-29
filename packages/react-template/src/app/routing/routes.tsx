@@ -1,9 +1,9 @@
-import { demoRoutes } from '@Demo/ui/routing/demoRoutes';
-import type { RouteObject } from 'react-router';
+import { demoRoutes } from "@Demo/ui/routing/demoRoutes";
+import type { RouteObject } from "react-router";
 
 export const routeObject: RouteObject[] = [
   {
-    path: '/',
+    path: "/",
     children: [demoRoutes],
   },
 ];

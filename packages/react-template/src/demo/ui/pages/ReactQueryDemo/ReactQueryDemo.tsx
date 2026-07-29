@@ -1,5 +1,5 @@
-import { useDemoUsersQuery } from '@Demo/ui/hooks/useDemoUsersQuery/useDemoUsersQuery';
-import classes from './ReactQueryDemo.module.scss';
+import { useDemoUsersQuery } from "@Demo/ui/hooks/useDemoUsersQuery/useDemoUsersQuery";
+import classes from "./ReactQueryDemo.module.scss";
 
 export const ReactQueryDemo = () => {
   const { data = [], isLoading, isError } = useDemoUsersQuery();

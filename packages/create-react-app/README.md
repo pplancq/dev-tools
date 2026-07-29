@@ -87,7 +87,7 @@ To create a custom template that works with this tool:
 // package.json
 {
   bin: {
-    'template-install': 'bin/template-install.js',
+    "template-install": "bin/template-install.js",
   },
 }
 ```

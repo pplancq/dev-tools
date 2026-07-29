@@ -1,13 +1,13 @@
-import { defineConfig } from '@pplancq/eslint-config';
+import { defineConfig } from "@pplancq/eslint-config";
 
 export default defineConfig({
-  enablePrettier: 'on',
+  enablePrettier: "on",
   extendConfig: [
     {
-      files: ['**/*.config.{js,cjs,mjs,ts,cts,mts}'],
+      files: ["**/*.config.{js,cjs,mjs,ts,cts,mts}"],
       rules: {
-        'import/no-default-export': 'off',
-        'import/no-extraneous-dependencies': 'off',
+        "import/no-default-export": "off",
+        "import/no-extraneous-dependencies": "off",
       },
     },
   ],

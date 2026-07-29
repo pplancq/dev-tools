@@ -2,25 +2,25 @@
 export default {
   overrides: [
     {
-      files: ['*.scss'],
-      extends: ['stylelint-config-recommended-scss'],
+      files: ["*.scss"],
+      extends: ["stylelint-config-recommended-scss"],
       rules: {
-        'import-notation': 'string',
+        "import-notation": "string",
       },
     },
     {
-      files: ['*.module.scss'],
+      files: ["*.module.scss"],
       rules: {
-        'selector-class-pattern': [
-          '^([a-z][a-z0-9]*)([A-Z][a-z0-9]+)*$',
+        "selector-class-pattern": [
+          "^([a-z][a-z0-9]*)([A-Z][a-z0-9]+)*$",
           {
             message: 'Expected class selector "%s" to be camelCase',
           },
         ],
-        'selector-pseudo-class-no-unknown': [
+        "selector-pseudo-class-no-unknown": [
           true,
           {
-            ignorePseudoClasses: ['global'],
+            ignorePseudoClasses: ["global"],
           },
         ],
       },

@@ -1,4 +1,4 @@
-import type { DemoUser } from '@Demo/domain/entities/DemoUser';
+import type { DemoUser } from "@Demo/domain/entities/DemoUser";
 
 export interface GetDemoUsersUseCaseInterface {
   execute: () => Promise<DemoUser[]>;

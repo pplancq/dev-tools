@@ -30,7 +30,7 @@ Alternatively, you can create an `eslint.config.mjs` file in the root of your pr
 
 ```javascript
 // eslint.config.mjs
-import { defineConfig } from '@pplancq/eslint-config';
+import { defineConfig } from "@pplancq/eslint-config";
 
 export default defineConfig({
   enableReact: true,

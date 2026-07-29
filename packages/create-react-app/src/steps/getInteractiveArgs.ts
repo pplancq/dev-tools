@@ -1,7 +1,7 @@
-import { checkCancel } from '@/helpers/checkCancel';
-import { validateProjectName } from '@/validates/validateProjectName';
-import { validateTemplateName } from '@/validates/validateTemplateName';
-import { confirm, group, text } from '@clack/prompts';
+import { checkCancel } from "@/helpers/checkCancel";
+import { validateProjectName } from "@/validates/validateProjectName";
+import { validateTemplateName } from "@/validates/validateTemplateName";
+import { confirm, group, text } from "@clack/prompts";
 
 type InteractiveArgs = {
   projectName?: string;
@@ -28,8 +28,8 @@ export const getInteractiveArgs = async ({
       projectName ||
       checkCancel(
         await text({
-          message: 'What is the name of your project?',
-          placeholder: 'my-project',
+          message: "What is the name of your project?",
+          placeholder: "my-project",
           validate: validateProjectName,
         }),
       ).toString(),
@@ -37,14 +37,14 @@ export const getInteractiveArgs = async ({
       skipDepInstall ||
       Boolean(
         checkCancel(
-          await confirm({ message: 'Do you want to skip installing dependencies (npm install)?', initialValue: false }),
+          await confirm({ message: "Do you want to skip installing dependencies (npm install)?", initialValue: false }),
         ),
       ),
     skipGitInit:
       skipGitInit ||
       Boolean(
         checkCancel(
-          await confirm({ message: 'Do you want to skip initializing a git repository?', initialValue: false }),
+          await confirm({ message: "Do you want to skip initializing a git repository?", initialValue: false }),
         ),
       ),
     template:
@@ -55,19 +55,19 @@ export const getInteractiveArgs = async ({
             useCustomTemplate: async () =>
               Boolean(
                 await confirm({
-                  message: 'Do you want to use a custom template?',
+                  message: "Do you want to use a custom template?",
                   initialValue: false,
                 }),
               ),
             template: async ({ results }) => {
               if (!results.useCustomTemplate) {
-                return '@pplancq/react-template';
+                return "@pplancq/react-template";
               }
 
               return (
                 await text({
-                  message: 'Enter the custom template name (e.g., @pplancq/react-template):',
-                  placeholder: '@pplancq/react-template',
+                  message: "Enter the custom template name (e.g., @pplancq/react-template):",
+                  placeholder: "@pplancq/react-template",
                   validate: validateTemplateName,
                 })
               ).toString();

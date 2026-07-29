@@ -1,13 +1,13 @@
-import type { ArchitecturePrincipleRepositoryInterface } from '@Demo/domain/repositories/ArchitecturePrincipleRepositoryInterface';
-import type { DemoUserRepositoryInterface } from '@Demo/domain/repositories/DemoUserRepositoryInterface';
-import { StaticArchitecturePrincipleRepository } from '@Demo/infrastructure/repositories/StaticArchitecturePrincipleRepository';
-import { HttpDemoUserRepository } from '@Demo/infrastructure/repositories/HttpDemoUserRepository';
-import { GetArchitecturePrinciplesUseCase } from '@Demo/application/use-cases/GetArchitecturePrinciplesUseCase';
-import type { GetArchitecturePrinciplesUseCaseInterface } from '@Demo/application/use-cases/GetArchitecturePrinciplesUseCaseInterface';
-import { GetDemoUsersUseCase } from '@Demo/application/use-cases/GetDemoUsersUseCase';
-import type { GetDemoUsersUseCaseInterface } from '@Demo/application/use-cases/GetDemoUsersUseCaseInterface';
-import { ContainerModule } from 'inversify';
-import { DEMO_SERVICES } from './serviceIdentifiers';
+import { GetArchitecturePrinciplesUseCase } from "@Demo/application/use-cases/GetArchitecturePrinciplesUseCase";
+import type { GetArchitecturePrinciplesUseCaseInterface } from "@Demo/application/use-cases/GetArchitecturePrinciplesUseCaseInterface";
+import { GetDemoUsersUseCase } from "@Demo/application/use-cases/GetDemoUsersUseCase";
+import type { GetDemoUsersUseCaseInterface } from "@Demo/application/use-cases/GetDemoUsersUseCaseInterface";
+import type { ArchitecturePrincipleRepositoryInterface } from "@Demo/domain/repositories/ArchitecturePrincipleRepositoryInterface";
+import type { DemoUserRepositoryInterface } from "@Demo/domain/repositories/DemoUserRepositoryInterface";
+import { HttpDemoUserRepository } from "@Demo/infrastructure/repositories/HttpDemoUserRepository";
+import { StaticArchitecturePrincipleRepository } from "@Demo/infrastructure/repositories/StaticArchitecturePrincipleRepository";
+import { ContainerModule } from "inversify";
+import { DEMO_SERVICES } from "./serviceIdentifiers";
 
 export const serviceDemo: ContainerModule = new ContainerModule(options => {
   options

@@ -1,7 +1,7 @@
-import image from '@Demo/ui/assets/images/templatePlugins.png';
-import { demoAppRoutes } from '@Demo/ui/routing/demoAppRoutes';
-import { NavLink } from '@Demo/ui/components/NavLink/NavLink';
-import classes from './DemoHome.module.scss';
+import image from "@Demo/ui/assets/images/templatePlugins.png";
+import { NavLink } from "@Demo/ui/components/NavLink/NavLink";
+import { demoAppRoutes } from "@Demo/ui/routing/demoAppRoutes";
+import classes from "./DemoHome.module.scss";
 
 export const DemoHome = () => {
   return (
@@ -18,8 +18,8 @@ export const DemoHome = () => {
           <span className={classes.centredText}>
             <p className={classes.paragraphStyle}>
               This template now starts from a <span className={classes.highlight}>Clean Architecture</span> inspired
-              structure with a dedicated <span className={classes.boldText}>app</span> bootstrap layer, a{' '}
-              <span className={classes.boldText}>shared</span> common layer, and a{' '}
+              structure with a dedicated <span className={classes.boldText}>app</span> bootstrap layer, a{" "}
+              <span className={classes.boldText}>shared</span> common layer, and a{" "}
               <span className={classes.boldText}>demo</span> bounded context.
             </p>
             <p className={classes.paragraphStyle}>

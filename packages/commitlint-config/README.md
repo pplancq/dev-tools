@@ -34,7 +34,7 @@ As of version 3.x, this package is ESM-only. CommonJS (`require`) is no longer s
 
 ```js
 // .commitlintrc.js or commitlint.config.js
-module.exports = { extends: ['@pplancq/commitlint-config'] };
+module.exports = { extends: ["@pplancq/commitlint-config"] };
 ```
 
 **New (ESM) usage:**
@@ -42,7 +42,7 @@ module.exports = { extends: ['@pplancq/commitlint-config'] };
 ```js
 // commitlint.config.mjs (or commitlint.config.js when using "type": "module")
 export default {
-  extends: ['@pplancq/commitlint-config'],
+  extends: ["@pplancq/commitlint-config"],
 };
 ```
 

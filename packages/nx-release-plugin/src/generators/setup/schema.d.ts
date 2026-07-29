@@ -1,4 +1,4 @@
 export interface SetupGeneratorSchema {
-  preset: 'simple' | 'monorepo-fixed' | 'monorepo-independent';
+  preset: "simple" | "monorepo-fixed" | "monorepo-independent";
   projects: string;
 }

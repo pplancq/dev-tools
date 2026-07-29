@@ -96,8 +96,8 @@ Declares unique `Symbol` identifiers for every service in the context:
 
 ```ts
 export const DEMO_SERVICES = Object.freeze({
-  DemoUserRepository: Symbol.for('Demo.DemoUserRepository'),
-  GetDemoUsersUseCase: Symbol.for('Demo.GetDemoUsersUseCase'),
+  DemoUserRepository: Symbol.for("Demo.DemoUserRepository"),
+  GetDemoUsersUseCase: Symbol.for("Demo.GetDemoUsersUseCase"),
   // ...
 });
 ```

@@ -1,1 +1,1 @@
-export { default as setupGenerator } from './generators/setup/generator';
+export { default as setupGenerator } from "./generators/setup/generator";

@@ -1,6 +1,6 @@
-import { App } from '@App/App';
-import { StrictMode } from 'react';
-import { createRoot, type Root } from 'react-dom/client';
+import { App } from "@App/App";
+import { StrictMode } from "react";
+import { createRoot, type Root } from "react-dom/client";
 
 // eslint-disable-next-line import/no-default-export
 export default class AppHTMLElement extends HTMLElement {
@@ -18,7 +18,7 @@ export default class AppHTMLElement extends HTMLElement {
     this.isMounted = true;
     this.root.render(
       <StrictMode>
-        <App basename={this.getAttribute('basename') ?? ''} />
+        <App basename={this.getAttribute("basename") ?? ""} />
       </StrictMode>,
     );
   }

@@ -1,7 +1,7 @@
-import { Command } from 'commander';
-import process from 'node:process';
-import pc from 'picocolors';
-import packageJson from '../../package.json';
+import { Command } from "commander";
+import process from "node:process";
+import pc from "picocolors";
+import packageJson from "../../package.json";
 
 type PromptArgsResult = {
   projectName?: string;
@@ -15,15 +15,15 @@ export const getPromptArgs = (): PromptArgsResult => {
 
   const cli = new Command(packageJson.name);
   cli
-    .argument('[project-name]', 'The name of the project to create.')
-    .option('-t, --template <template>', 'Specify a template for the project.')
-    .option('--skip-dep-install', 'Skip installing dependencies (npm install).')
-    .option('--skip-git-init', 'Skip initializing a git repository.')
-    .version(packageJson.version, '-v, --version')
-    .name(pc.green('create-react-app'))
-    .usage(`[options] ${pc.yellow('[project-name]')}`)
+    .argument("[project-name]", "The name of the project to create.")
+    .option("-t, --template <template>", "Specify a template for the project.")
+    .option("--skip-dep-install", "Skip installing dependencies (npm install).")
+    .option("--skip-git-init", "Skip initializing a git repository.")
+    .version(packageJson.version, "-v, --version")
+    .name(pc.green("create-react-app"))
+    .usage(`[options] ${pc.yellow("[project-name]")}`)
     .addHelpText(
-      'after',
+      "after",
       `
 Examples:
   $ npm create @pplancq/react-app my-project

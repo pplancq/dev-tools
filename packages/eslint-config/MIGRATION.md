@@ -12,7 +12,7 @@ As of version 6.x, this package is **ESM-only**. CommonJS (`require`) is no long
 
 ```javascript
 // eslint.config.js
-const { defineConfig } = require('@pplancq/eslint-config');
+const { defineConfig } = require("@pplancq/eslint-config");
 
 module.exports = defineConfig({
   // your options here
@@ -23,7 +23,7 @@ module.exports = defineConfig({
 
 ```javascript
 // eslint.config.mjs (or eslint.config.js when using "type": "module")
-import { defineConfig } from '@pplancq/eslint-config';
+import { defineConfig } from "@pplancq/eslint-config";
 
 export default defineConfig({
   // your options here
@@ -68,7 +68,7 @@ Create a new `eslint.config.mjs` file in the root of your project:
 
 ```javascript
 // eslint.config.mjs
-import { defineConfig } from '@pplancq/eslint-config';
+import { defineConfig } from "@pplancq/eslint-config";
 
 export default defineConfig({
   enableReact: true,
