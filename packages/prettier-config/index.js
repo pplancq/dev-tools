@@ -1,6 +1,5 @@
 /** @type {import('prettier').Config} */
 const config = {
-  arrowParens: "avoid",
   printWidth: 120,
   plugins: ["prettier-plugin-sh", "prettier-plugin-gherkin", "prettier-plugin-properties"],
   overrides: [
