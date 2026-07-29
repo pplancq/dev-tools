@@ -6,7 +6,7 @@ const config = {
   plugins: ['prettier-plugin-sh', 'prettier-plugin-gherkin', 'prettier-plugin-properties'],
   overrides: [
     {
-      files: ['Dockerfile'],
+      files: ['Dockerfile', '*.Dockerfile', 'Dockerfile.*'],
       options: {
         parser: 'sh',
         indent: 4,
