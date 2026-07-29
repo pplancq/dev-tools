@@ -10,7 +10,7 @@ describe("processArgv", () => {
   beforeEach(() => {
     originalArgv = process.argv;
 
-    vi.spyOn(process, "exit").mockImplementation(code => {
+    vi.spyOn(process, "exit").mockImplementation((code) => {
       throw new Error(`process.exit called with code: ${code}`);
     });
 

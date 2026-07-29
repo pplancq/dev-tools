@@ -9,7 +9,7 @@ import { StaticArchitecturePrincipleRepository } from "@Demo/infrastructure/repo
 import { ContainerModule } from "inversify";
 import { DEMO_SERVICES } from "./serviceIdentifiers";
 
-export const serviceDemo: ContainerModule = new ContainerModule(options => {
+export const serviceDemo: ContainerModule = new ContainerModule((options) => {
   options
     .bind<DemoUserRepositoryInterface>(DEMO_SERVICES.DemoUserRepository)
     .toDynamicValue(() => new HttpDemoUserRepository())
@@ -18,7 +18,8 @@ export const serviceDemo: ContainerModule = new ContainerModule(options => {
   options
     .bind<GetDemoUsersUseCaseInterface>(DEMO_SERVICES.GetDemoUsersUseCase)
     .toDynamicValue(
-      services => new GetDemoUsersUseCase(services.get<DemoUserRepositoryInterface>(DEMO_SERVICES.DemoUserRepository)),
+      (services) =>
+        new GetDemoUsersUseCase(services.get<DemoUserRepositoryInterface>(DEMO_SERVICES.DemoUserRepository)),
     )
     .inSingletonScope();
 
@@ -30,7 +31,7 @@ export const serviceDemo: ContainerModule = new ContainerModule(options => {
   options
     .bind<GetArchitecturePrinciplesUseCaseInterface>(DEMO_SERVICES.GetArchitecturePrinciplesUseCase)
     .toDynamicValue(
-      services =>
+      (services) =>
         new GetArchitecturePrinciplesUseCase(
           services.get<ArchitecturePrincipleRepositoryInterface>(DEMO_SERVICES.ArchitecturePrincipleRepository),
         ),

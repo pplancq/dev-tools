@@ -12,7 +12,7 @@ export const DemoNavigation = ({ links }: DemoNavigationProps) => {
   return (
     <nav>
       <ul className={classes.navList}>
-        {links.map(link => (
+        {links.map((link) => (
           <li key={`${id} ${link.label} ${link.url}`}>
             <NavLink to={link.url} className={classes.a}>
               {link.label}

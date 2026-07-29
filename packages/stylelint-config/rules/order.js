@@ -1,9 +1,9 @@
 function after(name) {
-  return suffix => `${name}${suffix}`;
+  return (suffix) => `${name}${suffix}`;
 }
 
 function before(name) {
-  return prefix => `${prefix}${name}`;
+  return (prefix) => `${prefix}${name}`;
 }
 
 function border(name) {

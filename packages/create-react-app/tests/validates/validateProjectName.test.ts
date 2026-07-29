@@ -23,7 +23,7 @@ vi.mock("node:fs", () => ({
 
 describe("validateProjectName", () => {
   it("should return empty string for valid project names", () => {
-    validNames.forEach(name => {
+    validNames.forEach((name) => {
       expect(validateProjectName(name)).toStrictEqual("");
     });
   });
@@ -46,7 +46,7 @@ describe("validateProjectName", () => {
       {},
       [],
     ];
-    invalidNames.forEach(name => {
+    invalidNames.forEach((name) => {
       expect(validateProjectName(name)).toMatch(/not valid/);
     });
   });
