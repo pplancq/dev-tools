@@ -1,19 +1,18 @@
 /** @type {import('prettier').Config} */
 const config = {
-  singleQuote: true,
-  arrowParens: 'avoid',
+  arrowParens: "avoid",
   printWidth: 120,
-  plugins: ['prettier-plugin-sh', 'prettier-plugin-gherkin', 'prettier-plugin-properties'],
+  plugins: ["prettier-plugin-sh", "prettier-plugin-gherkin", "prettier-plugin-properties"],
   overrides: [
     {
-      files: ['Dockerfile', '*.Dockerfile', 'Dockerfile.*'],
+      files: ["Dockerfile", "*.Dockerfile", "Dockerfile.*"],
       options: {
-        parser: 'sh',
+        parser: "sh",
         indent: 4,
       },
     },
     {
-      files: '*.properties',
+      files: "*.properties",
       options: {
         printWidth: 0,
       },
