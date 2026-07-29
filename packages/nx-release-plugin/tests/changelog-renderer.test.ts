@@ -6,7 +6,7 @@ const createRemoteReleaseClient = () =>
   ({
     getRemoteRepoData: vi.fn(() => ({ repo: "pplancq/dev-tools" })),
     formatReferences: vi.fn((references: NonNullable<ChangelogChange["githubReferences"]>) =>
-      references.map(reference => `#${reference.value}`).join(" "),
+      references.map((reference) => `#${reference.value}`).join(" "),
     ),
     applyUsernameToAuthors: vi.fn(),
     remoteReleaseProviderName: "GitHub" as const,

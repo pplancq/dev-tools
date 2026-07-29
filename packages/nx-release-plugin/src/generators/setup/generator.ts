@@ -9,7 +9,7 @@ const PRESET_DIR = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..", 
 const parseProjects = (projects: string): string[] =>
   projects
     .split(",")
-    .map(project => project.trim())
+    .map((project) => project.trim())
     .filter(Boolean);
 
 const buildReleaseConfig = (options: SetupGeneratorSchema) => {
@@ -45,7 +45,7 @@ export default async function setupGenerator(tree: Tree, options: SetupGenerator
   const releaseConfig = buildReleaseConfig(options);
 
   if (tree.exists("nx.json")) {
-    updateJson(tree, "nx.json", nxJson => {
+    updateJson(tree, "nx.json", (nxJson) => {
       const cleanedNxJson = withoutPluginExtends(nxJson);
       return deepMerge(cleanedNxJson, releaseConfig);
     });

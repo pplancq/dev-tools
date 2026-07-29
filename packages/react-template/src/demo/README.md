@@ -111,7 +111,7 @@ A `ContainerModule` that binds each service identifier to its concrete implement
 free of framework metadata:
 
 ```ts
-export const serviceDemo: ContainerModule = new ContainerModule(options => {
+export const serviceDemo: ContainerModule = new ContainerModule((options) => {
   options
     .bind<DemoUserRepositoryInterface>(DEMO_SERVICES.DemoUserRepository)
     .toDynamicValue(() => new HttpDemoUserRepository())
@@ -120,7 +120,8 @@ export const serviceDemo: ContainerModule = new ContainerModule(options => {
   options
     .bind<GetDemoUsersUseCaseInterface>(DEMO_SERVICES.GetDemoUsersUseCase)
     .toDynamicValue(
-      services => new GetDemoUsersUseCase(services.get<DemoUserRepositoryInterface>(DEMO_SERVICES.DemoUserRepository)),
+      (services) =>
+        new GetDemoUsersUseCase(services.get<DemoUserRepositoryInterface>(DEMO_SERVICES.DemoUserRepository)),
     )
     .inSingletonScope();
 });

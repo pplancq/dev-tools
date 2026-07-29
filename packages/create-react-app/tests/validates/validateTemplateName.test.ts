@@ -20,7 +20,7 @@ const validNames = [
 
 describe("validateTemplateName", () => {
   it("should return empty string for valid template names", () => {
-    validNames.forEach(name => {
+    validNames.forEach((name) => {
       expect(validateTemplateName(name)).toStrictEqual("");
     });
   });
@@ -43,7 +43,7 @@ describe("validateTemplateName", () => {
       {},
       [],
     ];
-    invalidNames.forEach(name => {
+    invalidNames.forEach((name) => {
       expect(validateTemplateName(name)).toMatch(/not valid/);
     });
   });

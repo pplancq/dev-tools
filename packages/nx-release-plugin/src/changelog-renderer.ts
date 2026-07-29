@@ -35,15 +35,15 @@ export default class CustomChangelogRenderer extends DefaultChangelogRenderer {
     }
 
     return sections
-      .filter(section => section.length > 0)
-      .map(section => section.join("\n").trim())
+      .filter((section) => section.length > 0)
+      .map((section) => section.join("\n").trim())
       .join("\n\n")
       .trim();
   }
 
   protected renderChangesByType(): string[] {
-    const dependencyChanges = this.relevantChanges.filter(change => change.scope?.trim() === DEPENDENCY_SCOPE);
-    const otherChanges = this.relevantChanges.filter(change => change.scope?.trim() !== DEPENDENCY_SCOPE);
+    const dependencyChanges = this.relevantChanges.filter((change) => change.scope?.trim() === DEPENDENCY_SCOPE);
+    const otherChanges = this.relevantChanges.filter((change) => change.scope?.trim() !== DEPENDENCY_SCOPE);
 
     const originalRelevantChanges = this.relevantChanges;
     this.relevantChanges = otherChanges;
@@ -59,7 +59,7 @@ export default class CustomChangelogRenderer extends DefaultChangelogRenderer {
           .filter(([type, group]) => changeTypes[type] && group.length > 0)
           .flatMap(([, group]) => group);
 
-        this.dependencyChangesLines = dependencyChangesToLog.map(change => this.formatChange(change));
+        this.dependencyChangesLines = dependencyChangesToLog.map((change) => this.formatChange(change));
       }
 
       return markdownLines;
@@ -102,14 +102,14 @@ export default class CustomChangelogRenderer extends DefaultChangelogRenderer {
 
   // eslint-disable-next-line class-methods-use-this
   private withoutIssueReferences(change: ChangelogChange): ChangelogChange {
-    const githubReferences = change.githubReferences?.filter(reference => reference.type !== "issue");
+    const githubReferences = change.githubReferences?.filter((reference) => reference.type !== "issue");
     return { ...change, githubReferences };
   }
 
   private static groupChangesByTypeFor(changes: ChangelogChange[]): Record<string, ChangelogChange[]> {
     const typeGroups: Record<string, ChangelogChange[]> = {};
 
-    changes.forEach(change => {
+    changes.forEach((change) => {
       const group = typeGroups[change.type] ?? [];
       group.push(change);
       typeGroups[change.type] = group;

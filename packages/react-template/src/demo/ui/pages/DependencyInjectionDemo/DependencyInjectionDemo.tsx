@@ -31,7 +31,7 @@ export const DependencyInjectionDemo = () => {
               </tr>
             </thead>
             <tbody>
-              {architecturePrinciples.map(principle => (
+              {architecturePrinciples.map((principle) => (
                 <tr key={`${principle.layer}-${principle.title}`}>
                   <td>{principle.layer}</td>
                   <td>{principle.title}</td>

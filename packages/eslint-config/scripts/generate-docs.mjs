@@ -11,14 +11,14 @@ const __dirname = path.dirname(__filename);
 
 /* eslint-disable import/extensions */
 // Load all rule files
-const baseRules = await import("../rules/base.js").then(m => m.default || m);
-const importRules = await import("../rules/import.js").then(m => m.default || m);
-const typescriptRules = await import("../rules/typescript.js").then(m => m.default || m);
-const reactRules = await import("../rules/react.js").then(m => m.default || m);
-const reactJsxA11yRules = await import("../rules/react-jsx-a11y.js").then(m => m.default || m);
-const vitestRules = await import("../rules/vitest.js").then(m => m.default || m);
-const playwrightRules = await import("../rules/playwright.js").then(m => m.default || m);
-const prettierRules = await import("../rules/prettier.js").then(m => m.default || m);
+const baseRules = await import("../rules/base.js").then((m) => m.default || m);
+const importRules = await import("../rules/import.js").then((m) => m.default || m);
+const typescriptRules = await import("../rules/typescript.js").then((m) => m.default || m);
+const reactRules = await import("../rules/react.js").then((m) => m.default || m);
+const reactJsxA11yRules = await import("../rules/react-jsx-a11y.js").then((m) => m.default || m);
+const vitestRules = await import("../rules/vitest.js").then((m) => m.default || m);
+const playwrightRules = await import("../rules/playwright.js").then((m) => m.default || m);
+const prettierRules = await import("../rules/prettier.js").then((m) => m.default || m);
 /* eslint-enable import/extensions */
 
 // Function to get plugin name from rule name
@@ -50,7 +50,7 @@ function getPluginName(ruleName) {
 
 // Function to get documentation URL for a rule
 function getRuleDocUrl(ruleName) {
-  const getRuleName = prefix => ruleName.replace(prefix, "");
+  const getRuleName = (prefix) => ruleName.replace(prefix, "");
 
   switch (true) {
     case ruleName.startsWith("@typescript-eslint/"):
@@ -86,7 +86,7 @@ function extractDescription(ruleName, ruleFile) {
   // Find the rule name in the file
   const rulePattern = new RegExp(String.raw`['"]${ruleName}['"]:`);
 
-  const ruleLineIndex = lines.findIndex(line => rulePattern.test(line));
+  const ruleLineIndex = lines.findIndex((line) => rulePattern.test(line));
   if (ruleLineIndex === -1) {
     return "";
   }
@@ -150,7 +150,7 @@ function generateMarkdownTable(rules) {
   let markdown = "| Rule | Mode | Description | Plugin |\n";
   markdown += "|------|------|-------------|--------|\n";
 
-  rules.forEach(rule => {
+  rules.forEach((rule) => {
     const name = `[${rule.name}](${rule.url})`;
     const { mode } = rule;
     const description = rule.description || "-";

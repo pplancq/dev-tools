@@ -18,7 +18,7 @@ export class HttpDemoUserRepository implements DemoUserRepositoryInterface {
       path: this.apiPath,
     });
 
-    return users.map(user => ({
+    return users.map((user) => ({
       id: user.id,
       name: user.name,
       username: user.username.toUpperCase(),

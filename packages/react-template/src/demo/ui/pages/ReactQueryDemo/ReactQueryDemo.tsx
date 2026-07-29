@@ -36,7 +36,7 @@ export const ReactQueryDemo = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {data.map(eachResult => (
+                  {data.map((eachResult) => (
                     <tr key={eachResult.id}>
                       <td>{eachResult.id}</td>
                       <td>{eachResult.name}</td>
