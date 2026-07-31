@@ -1,3 +1,7 @@
+// Core configuration.
+// Conventions:
+// - Standard class selectors: BEM (block__element--modifier)
+// - SCSS variables/mixins/functions/placeholders: camelCase
 // eslint-disable-next-line import/no-default-export
 export default {
   extends: ["stylelint-config-standard-scss"],
