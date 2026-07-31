@@ -6,8 +6,8 @@
 }
 
 %inputStyle {
-  margin: 10px;
   padding: 10px;
+  margin: 10px;
 }
 
 .inputStyle {
@@ -21,8 +21,8 @@
   border-radius: 2px;
 
   &:focus {
-    border: 2px solid red;
     outline: none !important;
+    border: 2px solid red;
   }
 }
 
