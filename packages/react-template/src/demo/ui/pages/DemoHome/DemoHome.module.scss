@@ -4,52 +4,52 @@
 
 .container {
   display: flex;
-  padding-top: 32px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 32px;
 }
 
 .bigTitleStyle {
   font-family: sans-serif;
   font-size: 40px;
   font-weight: 400;
-  letter-spacing: 1px;
+  color: #00008f;
   text-align: center;
   text-transform: uppercase;
-  color: #00008f;
+  letter-spacing: 1px;
 
   span {
     display: grid;
-    margin-top: 5px;
-    grid-template-columns: 1fr max-content 1fr;
     grid-template-rows: 27px 0;
-    align-items: center;
+    grid-template-columns: 1fr max-content 1fr;
     gap: 20px;
+    align-items: center;
+    margin-top: 5px;
     font-family: Raleway, sans-serif;
     font-size: 15px;
     font-weight: 500;
-    letter-spacing: 2px;
+    color: #444;
     text-transform: uppercase;
     word-spacing: 1px;
-    color: #444;
+    letter-spacing: 2px;
 
     &::before {
       display: block;
       height: 5px;
+      content: "";
+      background-color: #f8f8f8;
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
-      background-color: #f8f8f8;
-      content: "";
     }
 
     &::after {
       display: block;
       height: 5px;
+      content: " ";
+      background-color: #f8f8f8;
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
-      background-color: #f8f8f8;
-      content: " ";
     }
   }
 }
@@ -69,12 +69,12 @@
 
 .titleStyle {
   position: relative;
-  margin-left: 8px;
   padding-bottom: 10px;
+  margin-left: 8px;
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0;
   line-height: 1.5em;
+  letter-spacing: 0;
 
   &::before {
     position: absolute;
@@ -82,8 +82,8 @@
     left: 0;
     width: 55px;
     height: 5px;
-    background-color: #111;
     content: "";
+    background-color: #111;
   }
 
   &::after {
@@ -93,8 +93,8 @@
     width: 95%;
     max-width: 255px;
     height: 1px;
-    background-color: #333;
     content: "";
+    background-color: #333;
   }
 }
 
@@ -118,10 +118,10 @@
 }
 
 .a {
+  color: #00008f;
+  text-transform: uppercase;
   letter-spacing: 4px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: #00008f;
 }
 
 .a:hover {
@@ -132,8 +132,8 @@ table,
 th,
 td {
   padding: 6px;
-  border: 1px solid black;
   font-family: sans-serif;
+  border: 1px solid black;
 }
 
 .tableWrapper {
@@ -151,11 +151,11 @@ table {
 }
 
 .infoSection {
+  padding: 16px;
   margin: 16px;
   margin-bottom: 20px;
-  padding: 16px;
-  border-radius: 8px;
   background-color: #f5f5f5;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
 
   &:hover {
@@ -164,8 +164,8 @@ table {
 }
 
 ul {
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
@@ -176,8 +176,8 @@ li {
 
 code {
   padding: 2px 5px;
-  border-radius: 4px;
   font-family: "Courier New", monospace;
   font-size: 14px;
   background-color: #f8f9fa;
+  border-radius: 4px;
 }

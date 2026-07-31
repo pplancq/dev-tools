@@ -9,9 +9,9 @@
 .title {
   padding-top: 16px;
   font-size: 20px;
-  letter-spacing: 4px;
-  text-align: center;
   color: #00008f;
+  text-align: center;
+  letter-spacing: 4px;
 }
 
 .lineStyle {
@@ -24,9 +24,9 @@
 
 .profileSectionStyle {
   display: flex;
-  padding-top: 16px;
-  padding-bottom: 16px;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
