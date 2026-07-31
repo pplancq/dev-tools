@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
     inputs:
       dryRun:
-        description: 'Dry run'
+        description: "Dry run"
         required: false
         type: boolean
         default: false
       debug:
-        description: 'Debug mode'
+        description: "Debug mode"
         required: false
         type: boolean
         default: false
       releaseType:
-        description: 'Release type'
+        description: "Release type"
         required: false
         type: choice
         options:
@@ -70,7 +70,7 @@ jobs:
           GIT_COMMITTER_EMAIL: ${{ vars.GIT_COMMITTER_EMAIL }}
           GIT_COMMITTER_NAME: ${{ vars.GIT_COMMITTER_NAME }}
         run: |
-          ARGS=""
+          ARGS="--yes"
           if [ "${{ github.event.inputs.dryRun }}" = "true" ]; then
             ARGS="$ARGS --dry-run"
           fi
