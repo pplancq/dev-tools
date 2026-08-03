@@ -1,3 +1,23 @@
+## 2.10.1 (2026-08-03)
+
+### ♻️ Code Refactoring
+
+- **dev-tools:** update arrow function parentheses for consistency ([0104ebf](https://github.com/pplancq/dev-tools/commit/0104ebf))
+- **dev-tools:** update quotes to double quotes for consistency ([6b2d557](https://github.com/pplancq/dev-tools/commit/6b2d557))
+
+### 📦 Dependencies
+
+- Updated @pplancq/commitlint-config to 4.0.4
+- Updated @pplancq/stylelint-config to 6.0.0
+- Updated @pplancq/prettier-config to 4.0.0
+- Updated @pplancq/eslint-config to 6.0.19
+- **deps:** update dependency @playwright/test to ^1.62.1 ([#1841](https://github.com/pplancq/dev-tools/pull/1841))
+- **deps:** update dependency @hookform/resolvers to ^5.5.7 ([#1842](https://github.com/pplancq/dev-tools/pull/1842))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 2.10.0 (2026-07-28)
 
 ### 🎉 Features

@@ -1,3 +1,20 @@
+## 6.0.19 (2026-08-03)
+
+### ♻️ Code Refactoring
+
+- **dev-tools:** update arrow function parentheses for consistency ([0104ebf](https://github.com/pplancq/dev-tools/commit/0104ebf))
+- **dev-tools:** update quotes to double quotes for consistency ([6b2d557](https://github.com/pplancq/dev-tools/commit/6b2d557))
+
+### 📦 Dependencies
+
+- **deps:** update dependency eslint-plugin-jest-dom to ^5.7.0 ([#1843](https://github.com/pplancq/dev-tools/pull/1843))
+- **deps:** update dependency globals to ^17.8.0 ([#1845](https://github.com/pplancq/dev-tools/pull/1845))
+- **deps:** update dependency eslint-plugin-playwright to ^2.11.0 ([#1844](https://github.com/pplancq/dev-tools/pull/1844))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 6.0.18 (2026-07-28)
 
 ### 📦 Dependencies

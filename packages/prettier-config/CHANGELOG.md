@@ -1,3 +1,38 @@
+# 4.0.0 (2026-08-03)
+
+### 🎉 Features
+
+- ⚠️  **prettier-config:** bump minimum prettier peer dependency to 3.9.6 ([84807d8](https://github.com/pplancq/dev-tools/commit/84807d8))
+- ⚠️  **prettier-config:** use Prettier default arrow parentheses ([9b2be04](https://github.com/pplancq/dev-tools/commit/9b2be04))
+- ⚠️  **prettier-config:** switch to Prettier default double quotes ([027f9a7](https://github.com/pplancq/dev-tools/commit/027f9a7))
+- **prettier-config:** add additional Dockerfile patterns for formatting ([c1725e4](https://github.com/pplancq/dev-tools/commit/c1725e4))
+- **prettier-config:** remove nginx plugin and clean configuration ([fdfd2c3](https://github.com/pplancq/dev-tools/commit/fdfd2c3))
+
+### ♻️ Code Refactoring
+
+- **dev-tools:** update quotes to double quotes for consistency ([6b2d557](https://github.com/pplancq/dev-tools/commit/6b2d557))
+
+### 📚 Documentation
+
+- **prettier-config:** update README for migration from v3 to v4 ([1e8f0f5](https://github.com/pplancq/dev-tools/commit/1e8f0f5))
+
+### ⚠️  Breaking Changes
+
+- **prettier-config:** bump minimum prettier peer dependency to 3.9.6  ([84807d8](https://github.com/pplancq/dev-tools/commit/84807d8))
+  the package now requires prettier >= 3.9.6
+- **prettier-config:** use Prettier default arrow parentheses  ([9b2be04](https://github.com/pplancq/dev-tools/commit/9b2be04))
+  consumers upgrading to this version will see arrow functions with a single argument reformatted with parentheses.
+- **prettier-config:** switch to Prettier default double quotes  ([027f9a7](https://github.com/pplancq/dev-tools/commit/027f9a7))
+  consumers upgrading to this version will see their strings reformatted from single to double quotes.
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.0.19
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 3.0.1 (2026-07-28)
 
 ### 📦 Dependencies

@@ -1,3 +1,18 @@
+## 3.0.2 (2026-08-03)
+
+### ♻️ Code Refactoring
+
+- **dev-tools:** update arrow function parentheses for consistency ([0104ebf](https://github.com/pplancq/dev-tools/commit/0104ebf))
+- **dev-tools:** update quotes to double quotes for consistency ([6b2d557](https://github.com/pplancq/dev-tools/commit/6b2d557))
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.0.19
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 
 
 ## @pplancq/create-react-app [3.0.0](https://github.com/pplancq/dev-tools/compare/@pplancq/create-react-app@2.0.5...@pplancq/create-react-app@3.0.0) (2026-06-15)

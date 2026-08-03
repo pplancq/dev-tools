@@ -1,3 +1,34 @@
+# 6.0.0 (2026-08-03)
+
+### 🎉 Features
+
+- ⚠️  **stylelint-config:** migrate to stylelint-config-recess-order ([fdee5e6](https://github.com/pplancq/dev-tools/commit/fdee5e6))
+- ⚠️  **stylelint-config:** use stylelint-config-standard-scss and restructure rules ([9aef819](https://github.com/pplancq/dev-tools/commit/9aef819))
+
+### ♻️ Code Refactoring
+
+- **stylelint-config:** remove dynamic require for rule resolution ([b7feee5](https://github.com/pplancq/dev-tools/commit/b7feee5))
+- **dev-tools:** update quotes to double quotes for consistency ([6b2d557](https://github.com/pplancq/dev-tools/commit/6b2d557))
+
+### 📚 Documentation
+
+- **stylelint-config:** update README with configuration details and migration steps ([d8301c9](https://github.com/pplancq/dev-tools/commit/d8301c9))
+
+### ⚠️  Breaking Changes
+
+- **stylelint-config:** migrate to stylelint-config-recess-order  ([fdee5e6](https://github.com/pplancq/dev-tools/commit/fdee5e6))
+  CSS property ordering now follows recess-order instead of the previous custom order. Consuming projects may need to reformat their stylesheets.
+- **stylelint-config:** use stylelint-config-standard-scss and restructure rules  ([9aef819](https://github.com/pplancq/dev-tools/commit/9aef819))
+  class naming convention now enforces BEM for non-module files and camelCase for CSS modules. stylelint-config-standard-scss adds additional SCSS rules that may require code changes in consuming projects.
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.0.19
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 
 
 ## @pplancq/stylelint-config [5.0.3](https://github.com/pplancq/dev-tools/compare/@pplancq/stylelint-config@5.0.2...@pplancq/stylelint-config@5.0.3) (2026-04-13)
