@@ -52,7 +52,6 @@
   },
   "peerDependencies": {
     "eslint": "^9.14.0",
-    "eslint-plugin-prettier": "^5.0.1",
     "prettier": "^3.2.5"
   },
   "peerDependenciesMeta": {
@@ -65,7 +64,7 @@
   },
   "devDependencies": {
     "eslint": "^9.39.5",
-    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-prettier": "^5.5.6",
     "lint-staged": "^17.2.0",
     "prettier": "^3.9.6"
   },
@@ -75,6 +74,6 @@
   "prettier": "@pplancq/prettier-config",
   "lint-staged": {
     "*.(js|mjs)": "eslint --fix",
-    "*.!(js|mjs)": "prettier --write --ignore-unknown"
+    "*": "prettier --write --ignore-unknown"
   }
 }

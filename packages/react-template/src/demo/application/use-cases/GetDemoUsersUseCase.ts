@@ -5,7 +5,5 @@ import type { DemoUserRepositoryInterface } from "@Demo/domain/repositories/Demo
 export class GetDemoUsersUseCase implements GetDemoUsersUseCaseInterface {
   public constructor(private readonly demoUserRepository: DemoUserRepositoryInterface) {}
 
-  public readonly execute = async (): Promise<DemoUser[]> => {
-    return this.demoUserRepository.getAll();
-  };
+  public readonly execute = async (): Promise<DemoUser[]> => this.demoUserRepository.getAll();
 }

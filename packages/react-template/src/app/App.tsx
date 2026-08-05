@@ -9,10 +9,8 @@ type AppProps = {
   basename?: string;
 };
 
-export const App = ({ basename }: AppProps) => {
-  return (
-    <Providers queryClient={queryClient} container={serviceContainer}>
-      <Router basename={basename} />
-    </Providers>
-  );
-};
+export const App = ({ basename }: AppProps) => (
+  <Providers queryClient={queryClient} container={serviceContainer}>
+    <Router basename={basename} />
+  </Providers>
+);

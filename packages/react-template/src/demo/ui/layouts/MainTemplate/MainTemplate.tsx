@@ -12,15 +12,13 @@ type MainTemplateProps = {
   };
 };
 
-export const MainTemplate = ({ headerProps, footerProps, children }: PropsWithChildren<MainTemplateProps>) => {
-  return (
-    <div className={classes.mainTemplateStyle}>
-      <header className={classes.header}>
-        {headerProps.leftComponents}
-        {headerProps.rightComponents}
-      </header>
-      <main className={classes.main}>{children}</main>
-      <footer className={classes.footer}>{footerProps.footerContent}</footer>
-    </div>
-  );
-};
+export const MainTemplate = ({ headerProps, footerProps, children }: PropsWithChildren<MainTemplateProps>) => (
+  <div className={classes.mainTemplateStyle}>
+    <header className={classes.header}>
+      {headerProps.leftComponents}
+      {headerProps.rightComponents}
+    </header>
+    <main className={classes.main}>{children}</main>
+    <footer className={classes.footer}>{footerProps.footerContent}</footer>
+  </div>
+);

@@ -27,7 +27,5 @@ export class StaticArchitecturePrincipleRepository implements ArchitecturePrinci
     },
   ];
 
-  public readonly getAll = (): ArchitecturePrinciple[] => {
-    return this.architecturePrinciples;
-  };
+  public readonly getAll = (): ArchitecturePrinciple[] => this.architecturePrinciples;
 }

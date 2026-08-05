@@ -9,10 +9,8 @@ type ProvidersProps = PropsWithChildren<{
   container: Container;
 }>;
 
-export const Providers = ({ queryClient, container, children }: ProvidersProps) => {
-  return (
-    <ServiceProvider container={container}>
-      <QueryClientProvider queryClient={queryClient}>{children}</QueryClientProvider>
-    </ServiceProvider>
-  );
-};
+export const Providers = ({ queryClient, container, children }: ProvidersProps) => (
+  <ServiceProvider container={container}>
+    <QueryClientProvider queryClient={queryClient}>{children}</QueryClientProvider>
+  </ServiceProvider>
+);

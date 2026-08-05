@@ -1,23 +1,23 @@
-import { CoverageReportOptions } from 'monocart-coverage-reports';
+import { CoverageReportOptions } from "monocart-coverage-reports";
 
 export const coverageOptions: CoverageReportOptions = {
   enabled: process.env.CI ?? process.env.ENABLED_COVERAGE,
-  name: 'Playwright Coverage Report',
-  outputDir: './playwright-report/coverage',
-  baseDir: './src/',
+  name: "Playwright Coverage Report",
+  outputDir: "./playwright-report/coverage",
+  baseDir: "./src/",
   reports: [
-    'text',
-    'text-summary',
-    ['html', { subdir: 'html-coverage' }],
-    ['lcovonly', { file: 'lcov-coverage.info' }],
-    ['cobertura', { file: 'cobertura-coverage.xml' }],
+    "text",
+    "text-summary",
+    ["html", { subdir: "html-coverage" }],
+    ["lcovonly", { file: "lcov-coverage.info" }],
+    ["cobertura", { file: "cobertura-coverage.xml" }],
   ],
   sourceFilter: {
-    '**/node_modules/**': false,
-    '**/mocks/**': false,
-    '**/*.{test,spec,steps}.{js,jsx,ts,tsx}': false,
-    'vitest.setup.ts': false,
-    '**/*.{js,jsx,ts,tsx}': true,
+    "**/node_modules/**": false,
+    "**/mocks/**": false,
+    "**/*.{test,spec,steps}.{js,jsx,ts,tsx}": false,
+    "vitest.setup.ts": false,
+    "**/*.{js,jsx,ts,tsx}": true,
   },
   watermarks: {
     statements: [80, 90],

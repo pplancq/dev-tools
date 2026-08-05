@@ -6,6 +6,6 @@ type LogoProps = {
   size?: string;
 };
 
-export const Logo = ({ src, alt, size = "80px" }: LogoProps) => {
-  return <img className={classes.logoStyle} style={{ width: size }} src={src} alt={alt} />;
-};
+export const Logo = ({ src, alt, size = "80px" }: LogoProps) => (
+  <img className={classes.logoStyle} style={{ width: size }} src={src} alt={alt} />
+);

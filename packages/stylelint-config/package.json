@@ -12,8 +12,8 @@
   "scripts": {
     "lint:eslint": "eslint \"**/*.{js,mjs}\"",
     "lint:eslint:fix": "eslint \"**/*.{js,mjs}\" --fix",
-    "lint:prettier": "prettier \"**/*.!(js|mjs)\" --check --ignore-unknown",
-    "lint:prettier:fix": "prettier \"**/*.!(js|mjs)\" --write --ignore-unknown"
+    "lint:prettier": "prettier . --check --ignore-unknown",
+    "lint:prettier:fix": "prettier . --write --ignore-unknown"
   },
   "files": [
     "bin",
@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "eslint": "^9.39.5",
-    "eslint-plugin-prettier": "*",
+    "eslint-config-prettier": "^10.1.8",
     "lint-staged": "^17.2.0",
     "prettier": "^3.9.6"
   },

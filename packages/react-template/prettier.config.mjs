@@ -1,4 +1,4 @@
-import defaultConfig from '@pplancq/prettier-config';
+import defaultConfig from "@pplancq/prettier-config";
 
 export default {
   ...defaultConfig,
