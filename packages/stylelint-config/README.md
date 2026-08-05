@@ -26,6 +26,8 @@ This is the default configuration. To use, add `"stylelint": { "extends": ["@ppl
 
 ### Alternative configuration
 
+> ⚠️ **Deprecated:** `@pplancq/stylelint-config/prettier` is deprecated and will be removed in the next major release. Stylelint no longer handles formatting; use the default `@pplancq/stylelint-config` configuration and run Prettier separately for formatting.
+
 if you use prettier to format your css files, this package provides an alternative configuration that takes prettier directly into account.
 To do this, install the following additional packages:
 
