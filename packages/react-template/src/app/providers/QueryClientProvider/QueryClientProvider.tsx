@@ -6,11 +6,9 @@ type ClientProviderProps = {
   queryClient: QueryClient;
 };
 
-export const QueryClientProvider = ({ children, queryClient }: PropsWithChildren<ClientProviderProps>) => {
-  return (
-    <ReactQueryClientProvider client={queryClient}>
-      {children}
-      <ReactQueryDevtools initialIsOpen={false} />
-    </ReactQueryClientProvider>
-  );
-};
+export const QueryClientProvider = ({ children, queryClient }: PropsWithChildren<ClientProviderProps>) => (
+  <ReactQueryClientProvider client={queryClient}>
+    {children}
+    <ReactQueryDevtools initialIsOpen={false} />
+  </ReactQueryClientProvider>
+);

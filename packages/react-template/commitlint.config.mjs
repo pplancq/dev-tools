@@ -1,3 +1,3 @@
 export default {
-  extends: ['@pplancq/commitlint-config'],
+  extends: ["@pplancq/commitlint-config"],
 };

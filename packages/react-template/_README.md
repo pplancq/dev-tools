@@ -170,13 +170,13 @@ The tests folder may contain unit tests specific to the package. The idea is to 
 This file allows exposing the component and avoids having to redo imports if the file implementing the component changes its name.
 
 ```typescript
-export { ComponentName } from './ComponentName';
+export { ComponentName } from "./ComponentName";
 ```
 
 This will allow importing a component like this:
 
 ```typescript
-import { ComponentName } from '@Demo/ui/components/ComponentName';
+import { ComponentName } from "@Demo/ui/components/ComponentName";
 ```
 
 #### 📄 ComponentName.tsx

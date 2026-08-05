@@ -5,7 +5,5 @@ import type { ArchitecturePrincipleRepositoryInterface } from "@Demo/domain/repo
 export class GetArchitecturePrinciplesUseCase implements GetArchitecturePrinciplesUseCaseInterface {
   public constructor(private readonly architecturePrincipleRepository: ArchitecturePrincipleRepositoryInterface) {}
 
-  public readonly execute = (): ArchitecturePrinciple[] => {
-    return this.architecturePrincipleRepository.getAll();
-  };
+  public readonly execute = (): ArchitecturePrinciple[] => this.architecturePrincipleRepository.getAll();
 }
