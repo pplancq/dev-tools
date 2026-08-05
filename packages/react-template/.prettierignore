@@ -1,0 +1,7 @@
+.husky/
+LICENSE
+CHANGELOG.md
+sonar-project.properties
+build
+test-results
+playwright-report

@@ -1,3 +1,3 @@
 export default {
-  extends: ['@pplancq/stylelint-config/prettier'],
+  extends: ["@pplancq/stylelint-config"],
 };
