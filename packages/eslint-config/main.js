@@ -2,11 +2,18 @@
 import { baseRules } from "./rules/base.js";
 import { importRules } from "./rules/import.js";
 import { playwrightRules } from "./rules/playwright.js";
-import { prettierRules } from "./rules/prettier.js";
 import { reactJsxA11yRules } from "./rules/react-jsx-a11y.js";
 import { reactRules, reactTestRules, reactTypescriptRules } from "./rules/react.js";
 import { typescriptRules } from "./rules/typescript.js";
 import { vitestRules } from "./rules/vitest.js";
+
+let prettierRules = {};
+try {
+  const prettierConfig = await import("./rules/prettier.js");
+  prettierRules = prettierConfig.prettierRules;
+} catch {
+  // eslint-plugin-prettier is not installed
+}
 
 const isColorSupported =
   !process.env.NO_COLOR &&
