@@ -512,6 +512,10 @@ Additional active rules with `defineConfig({ enablePlaywright: true })`.
 
 Additional active rules with `defineConfig({ enablePrettier: 'on' })`.
 
+> ⚠️ **Deprecated:** `enablePrettier: 'on'` is deprecated and will be removed in the next major release.
+> Use `enablePrettier: 'disableStyleOnly'` and run Prettier separately for formatting.
+> This keeps the same behavior as `'on'` without running Prettier as an ESLint rule.
+
 This configuration enables Prettier and disables conflicting formatting rules.
 
 <!-- START_PRETTIER_RULES -->
