@@ -1,10 +1,9 @@
 import { defineConfig } from "@pplancq/eslint-config";
-import eslintConfigPrettier from "eslint-config-prettier/flat";
 
 export default defineConfig({
   enableVitest: true,
+  enablePrettier: "disableStyleOnly",
   extendConfig: [
-    eslintConfigPrettier,
     {
       ignores: ["dist"],
     },

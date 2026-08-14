@@ -64,7 +64,6 @@
     "@rslib/core": "^0.23.2",
     "@types/node": "^24.13.3",
     "eslint": "^9.39.5",
-    "eslint-config-prettier": "^10.1.8",
     "lint-staged": "^17.2.0",
     "nx": "^23.1.1",
     "prettier": "^3.9.6",

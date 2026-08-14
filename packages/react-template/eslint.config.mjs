@@ -1,5 +1,4 @@
 import { defineConfig } from "@pplancq/eslint-config";
-import eslintConfigPrettier from "eslint-config-prettier/flat";
 
 export default defineConfig({
   enableReact: true,
@@ -7,8 +6,8 @@ export default defineConfig({
   unitTestFiles: ["src/**/*.{test,spec,steps}.{js,jsx,ts,tsx}"],
   enablePlaywright: true,
   unitE2eFiles: ["tests/**/*.{test,spec}.{js,jsx,ts,tsx}"],
+  enablePrettier: "disableStyleOnly",
   extendConfig: [
-    eslintConfigPrettier,
     {
       ignores: ["build"],
     },

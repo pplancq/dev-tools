@@ -1,10 +1,8 @@
 import { defineConfig } from "@pplancq/eslint-config";
-import eslintConfigPrettier from "eslint-config-prettier/flat";
 
 export default defineConfig({
-  enablePrettier: "off",
+  enablePrettier: "disableStyleOnly",
   extendConfig: [
-    eslintConfigPrettier,
     {
       files: ["**/*.config.{js,cjs,mjs,ts,cts,mts}"],
       rules: {
