@@ -1,4 +1,5 @@
 /* eslint-disable import/extensions */
+import eslintConfigPrettier from "eslint-config-prettier/flat";
 import { baseRules } from "./rules/base.js";
 import { importRules } from "./rules/import.js";
 import { playwrightRules } from "./rules/playwright.js";
@@ -83,6 +84,7 @@ export const defineConfig = ({
     enableReact && reactTypescriptRules,
     enableReact && reactTestRules,
     enablePrettier !== "off" && prettierRules,
+    enablePrettier !== "off" && eslintConfigPrettier,
     enableVitest && vitestRules,
     enablePlaywright && playwrightRules,
     {
