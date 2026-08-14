@@ -1,3 +1,17 @@
+## 1.0.3 (2026-08-14)
+
+### 🐞 Bug Fixes
+
+- **nx-release-plugin:** hide changelog entries for certain types ([1815d64f](https://github.com/pplancq/dev-tools/commit/1815d64f))
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.1.0
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 1.0.2 (2026-08-03)
 
 ### ♻️ Code Refactoring

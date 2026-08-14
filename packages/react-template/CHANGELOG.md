@@ -1,3 +1,24 @@
+## 2.10.2 (2026-08-14)
+
+### 🐞 Bug Fixes
+
+- **react-template:** remove demo tests and format generated files after remove:demo ([#1851](https://github.com/pplancq/dev-tools/pull/1851))
+- **react-template:** remove deprecated prettier integration ([c3522b56](https://github.com/pplancq/dev-tools/commit/c3522b56))
+
+### 📦 Dependencies
+
+- Updated @pplancq/commitlint-config to 4.0.5
+- Updated @pplancq/stylelint-config to 6.1.0
+- Updated @pplancq/prettier-config to 4.0.1
+- Updated @pplancq/eslint-config to 6.1.0
+- **deps:** update testing-library monorepo ([#1853](https://github.com/pplancq/dev-tools/pull/1853))
+- **deps:** update dependency react-hook-form to ^7.85.0 ([#1860](https://github.com/pplancq/dev-tools/pull/1860))
+- **deps:** update dependency @hookform/resolvers to ^5.7.1 ([#1857](https://github.com/pplancq/dev-tools/pull/1857))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 2.10.1 (2026-08-03)
 
 ### ♻️ Code Refactoring

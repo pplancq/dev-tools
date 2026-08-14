@@ -1,3 +1,25 @@
+## 6.1.0 (2026-08-14)
+
+### 🎉 Features
+
+- **eslint-config:** use eslint-config-prettier dependency and integration ([87d6f88c](https://github.com/pplancq/dev-tools/commit/87d6f88c))
+- **eslint-config:** deprecate enablePrettier option ([906698a1](https://github.com/pplancq/dev-tools/commit/906698a1))
+
+### 🐞 Bug Fixes
+
+- **eslint-config:** dynamically import prettier rules if available ([bf595cd6](https://github.com/pplancq/dev-tools/commit/bf595cd6))
+
+### 📦 Dependencies
+
+- **deps:** update dependency @vitest/eslint-plugin to ^1.6.27 ([#1854](https://github.com/pplancq/dev-tools/pull/1854))
+- **deps:** update typescript-eslint mono repo to ^8.67.0 ([#1861](https://github.com/pplancq/dev-tools/pull/1861))
+- **deps:** update dependency globals to ^17.9.0 ([#1859](https://github.com/pplancq/dev-tools/pull/1859))
+- **deps:** update dependency eslint-plugin-jest-dom to ^5.10.1 ([#1858](https://github.com/pplancq/dev-tools/pull/1858))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 6.0.19 (2026-08-03)
 
 ### ♻️ Code Refactoring

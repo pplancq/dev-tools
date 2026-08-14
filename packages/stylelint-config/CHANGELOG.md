@@ -1,3 +1,17 @@
+## 6.1.0 (2026-08-14)
+
+### 🎉 Features
+
+- **stylelint-config:** deprecate prettier integration ([a4433735](https://github.com/pplancq/dev-tools/commit/a4433735))
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.1.0
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 # 6.0.0 (2026-08-03)
 
 ### 🎉 Features

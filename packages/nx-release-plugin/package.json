@@ -1,6 +1,6 @@
 {
   "name": "@pplancq/nx-release-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "description": "pplancq nx release plugin",
   "author": "pplancq <paul.plancq@outlook.fr>",
