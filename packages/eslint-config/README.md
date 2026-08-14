@@ -76,31 +76,6 @@ export default defineConfig({
 });
 ```
 
-If you prefer to completely remove the built-in Prettier integration, set `enablePrettier: 'off'` and install `eslint-config-prettier` to disable conflicting ESLint formatting rules:
-
-```shell
-npm install --save-dev prettier eslint-config-prettier
-```
-
-```javascript
-// eslint.config.mjs
-import { defineConfig } from "@pplancq/eslint-config";
-import eslintConfigPrettier from "eslint-config-prettier/flat";
-
-export default defineConfig({
-  enablePrettier: "off",
-  extendConfig: [eslintConfigPrettier],
-});
-```
-
-Note that `eslint-config-prettier` only disables formatting rules. Rules such as `arrow-body-style`, `curly` and `prefer-arrow-callback` are not formatting rules and will need to be disabled manually if you want to keep the previous behavior.
-
-If you still set `enablePrettier: 'on'`, you will need to install the following packages:
-
-```shell
-npm install --save-dev prettier eslint-plugin-prettier
-```
-
 ## Rules Documentation
 
 For a complete list of all active ESLint rules in each configuration, please refer to the [Rules Documentation](./docs/rules.md).
