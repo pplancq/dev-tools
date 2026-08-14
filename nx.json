@@ -41,7 +41,7 @@
         "docs": {
           "semverBump": "none",
           "changelog": {
-            "title": "📚 Documentation"
+            "hidden": true
           }
         },
         "style": {
@@ -53,7 +53,7 @@
         "refactor": {
           "semverBump": "none",
           "changelog": {
-            "title": "♻️ Code Refactoring"
+            "hidden": true
           }
         },
         "perf": {
@@ -71,13 +71,13 @@
         "build": {
           "semverBump": "none",
           "changelog": {
-            "title": "🏗️ Build System"
+            "hidden": true
           }
         },
         "ci": {
           "semverBump": "none",
           "changelog": {
-            "title": "👷 CI"
+            "hidden": true
           }
         },
         "chore": {
