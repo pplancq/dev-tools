@@ -47,7 +47,7 @@
     "@vitest/coverage-v8": "^4.1.10",
     "commander": "^15.0.0",
     "eslint": "^9.39.5",
-    "lint-staged": "^17.2.0",
+    "lint-staged": "^17.3.0",
     "picocolors": "^1.1.1",
     "prettier": "^3.9.6",
     "tsc-files": "^1.1.4",
