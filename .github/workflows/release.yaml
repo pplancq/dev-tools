@@ -70,14 +70,20 @@ jobs:
           GIT_COMMITTER_EMAIL: ${{ vars.GIT_COMMITTER_EMAIL }}
           GIT_COMMITTER_NAME: ${{ vars.GIT_COMMITTER_NAME }}
         run: |
-          ARGS="--yes"
+          RELEASE_TYPE="${{ github.event.inputs.releaseType }}"
+          ARGS=("--yes")
+
+          if [ "$RELEASE_TYPE" != "stable" ]; then
+            ARGS=("prerelease" "${ARGS[@]}")
+            ARGS+=("--preid" "$RELEASE_TYPE")
+          fi
+
           if [ "${{ github.event.inputs.dryRun }}" = "true" ]; then
-            ARGS="$ARGS --dry-run"
+            ARGS+=("--dry-run")
           fi
+
           if [ "${{ github.event.inputs.debug }}" = "true" ]; then
-            ARGS="$ARGS --verbose"
+            ARGS+=("--verbose")
           fi
-          if [ "${{ github.event.inputs.releaseType }}" != "stable" ]; then
-            ARGS="$ARGS --preid=${{ github.event.inputs.releaseType }}"
-          fi
-          npx nx release $ARGS
+
+          npx nx release "${ARGS[@]}"
