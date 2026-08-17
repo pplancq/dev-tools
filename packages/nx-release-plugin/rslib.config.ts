@@ -40,5 +40,11 @@ export default defineConfig({
   ],
   output: {
     target: "node",
+    copy: [
+      {
+        from: "./src/generators/setup/schema.json",
+        to: "./generators/setup/schema.json",
+      },
+    ],
   },
 });

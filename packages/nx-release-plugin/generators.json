@@ -5,7 +5,7 @@
   "generators": {
     "setup": {
       "factory": "./dist/generators/setup/generator.js",
-      "schema": "./src/generators/setup/schema.json",
+      "schema": "./dist/generators/setup/schema.json",
       "description": "Generate or update nx.json with a shared Nx release preset.",
       "aliases": ["init"]
     }
