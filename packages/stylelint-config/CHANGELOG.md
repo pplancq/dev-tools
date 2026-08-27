@@ -1,3 +1,10 @@
+## 6.1.1 (2026-08-27)
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.1.1
+- **deps:** update dependency stylelint-config-recess-order to ^7.8.0 ([#1867](https://github.com/pplancq/dev-tools/pull/1867))
+
 ## 6.1.0 (2026-08-14)
 
 ### 🎉 Features

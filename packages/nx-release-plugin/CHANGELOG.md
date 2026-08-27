@@ -1,3 +1,18 @@
+## 1.0.4 (2026-08-27)
+
+### 🐞 Bug Fixes
+
+- **nx-release-plugin:** set preserveMatchingDependencyRanges to false ([943eb1fc](https://github.com/pplancq/dev-tools/commit/943eb1fc))
+- **nx-release-plugin:** update schema path and add copy configuration ([b1f45f52](https://github.com/pplancq/dev-tools/commit/b1f45f52))
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.1.1
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 1.0.3 (2026-08-14)
 
 ### 🐞 Bug Fixes

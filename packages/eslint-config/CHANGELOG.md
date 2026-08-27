@@ -1,3 +1,9 @@
+## 6.1.1 (2026-08-27)
+
+### 📦 Dependencies
+
+- **deps:** update dependency globals to ^17.11.0 ([#1866](https://github.com/pplancq/dev-tools/pull/1866))
+
 ## 6.1.0 (2026-08-14)
 
 ### 🎉 Features

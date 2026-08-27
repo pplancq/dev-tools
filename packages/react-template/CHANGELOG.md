@@ -1,3 +1,18 @@
+## 2.10.3 (2026-08-27)
+
+### 📦 Dependencies
+
+- Updated @pplancq/commitlint-config to 4.0.6
+- Updated @pplancq/stylelint-config to 6.1.1
+- Updated @pplancq/prettier-config to 4.0.2
+- Updated @pplancq/eslint-config to 6.1.1
+- **deps:** update dependency @hookform/resolvers to ^5.9.1 ([#1865](https://github.com/pplancq/dev-tools/pull/1865))
+- **deps:** update dependency concurrently to ^10.0.5 ([#1868](https://github.com/pplancq/dev-tools/pull/1868))
+- **deps:** update dependency @vitejs/plugin-react to ^6.1.0 ([#1870](https://github.com/pplancq/dev-tools/pull/1870))
+- **deps:** update dependency @testing-library/user-event to ^14.6.6 ([#1863](https://github.com/pplancq/dev-tools/pull/1863))
+- **deps:** update commitlint monorepo to ^21.2.2 ([#1864](https://github.com/pplancq/dev-tools/pull/1864))
+- **deps:** update dependency @rsbuild/core to ^2.1.13 ([#1862](https://github.com/pplancq/dev-tools/pull/1862))
+
 ## 2.10.2 (2026-08-14)
 
 ### 🐞 Bug Fixes
