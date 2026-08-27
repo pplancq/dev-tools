@@ -6,7 +6,7 @@
       "conventionalCommits": true,
       "updateDependents": "auto",
       "applyPreidToDependents": true,
-      "preserveMatchingDependencyRanges": true,
+      "preserveMatchingDependencyRanges": false,
       "versionPrefix": "auto"
     },
     "git": {
