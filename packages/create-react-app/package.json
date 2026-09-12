@@ -43,7 +43,7 @@
   "devDependencies": {
     "@clack/prompts": "^1.7.0",
     "@rslib/core": "^0.23.2",
-    "@types/node": "^24.13.3",
+    "@types/node": "^24.13.4",
     "@vitest/coverage-v8": "^4.1.11",
     "commander": "^15.0.0",
     "eslint": "^9.39.5",
