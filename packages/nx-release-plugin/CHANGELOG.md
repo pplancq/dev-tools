@@ -1,3 +1,14 @@
+## 1.0.5 (2026-09-15)
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.1.2
+- **deps:** update nx monorepo to ^23.2.1 ([#1873](https://github.com/pplancq/dev-tools/pull/1873))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 1.0.4 (2026-08-27)
 
 ### 🐞 Bug Fixes

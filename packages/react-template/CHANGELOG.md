@@ -1,3 +1,21 @@
+## 2.10.4 (2026-09-15)
+
+### 📦 Dependencies
+
+- Updated @pplancq/commitlint-config to 4.0.7
+- Updated @pplancq/stylelint-config to 6.1.2
+- Updated @pplancq/prettier-config to 4.0.3
+- Updated @pplancq/eslint-config to 6.1.2
+- **deps:** update react monorepo to ^19.3.0 ([#1872](https://github.com/pplancq/dev-tools/pull/1872))
+- **deps:** update dependency @vitejs/plugin-react to ^6.1.1 ([#1881](https://github.com/pplancq/dev-tools/pull/1881))
+- **deps:** update dependency react-router to ^8.3.1 ([#1882](https://github.com/pplancq/dev-tools/pull/1882))
+- **deps:** update dependency @playwright/test to ^1.63.0 ([#1887](https://github.com/pplancq/dev-tools/pull/1887))
+- **deps:** update testing-library monorepo ([#1871](https://github.com/pplancq/dev-tools/pull/1871))
+- **deps:** update react-query mono repo to ^5.102.8 ([#1879](https://github.com/pplancq/dev-tools/pull/1879))
+- **deps:** update dependency @rsbuild/core to ^2.2.5 ([#1874](https://github.com/pplancq/dev-tools/pull/1874))
+- **deps:** update dependency monocart-coverage-reports to ^2.13.0 ([#1876](https://github.com/pplancq/dev-tools/pull/1876))
+- **deps:** update dependency react-hook-form to ^7.88.0 ([#1878](https://github.com/pplancq/dev-tools/pull/1878))
+
 ## 2.10.3 (2026-08-27)
 
 ### 📦 Dependencies
