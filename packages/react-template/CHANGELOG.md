@@ -1,3 +1,16 @@
+## 2.10.5 (2026-09-21)
+
+### 📦 Dependencies
+
+- Updated @pplancq/commitlint-config to 4.0.8
+- Updated @pplancq/stylelint-config to 6.1.3
+- Updated @pplancq/prettier-config to 5.0.0
+- Updated @pplancq/eslint-config to 6.1.3
+- **deps:** update dependency jsdom to ^30.1.0 ([#1896](https://github.com/pplancq/dev-tools/pull/1896))
+- **deps:** update dependency react-router to ^8.4.0 ([#1898](https://github.com/pplancq/dev-tools/pull/1898))
+- **deps:** update react-query mono repo to ^5.103.1 ([#1899](https://github.com/pplancq/dev-tools/pull/1899))
+- **deps:** update dependency @rsbuild/core to ^2.2.8 ([#1891](https://github.com/pplancq/dev-tools/pull/1891))
+
 ## 2.10.4 (2026-09-15)
 
 ### 📦 Dependencies

@@ -1,3 +1,9 @@
+## 6.1.3 (2026-09-21)
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.1.3
+
 ## 6.1.2 (2026-09-15)
 
 ### 📦 Dependencies

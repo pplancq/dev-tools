@@ -1,3 +1,9 @@
+## 6.1.3 (2026-09-21)
+
+### 📦 Dependencies
+
+- **deps:** update dependency eslint-plugin-playwright to ^2.12.0 ([#1897](https://github.com/pplancq/dev-tools/pull/1897))
+
 ## 6.1.2 (2026-09-15)
 
 ### 📦 Dependencies

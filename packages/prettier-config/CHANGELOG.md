@@ -1,3 +1,22 @@
+# 5.0.0 (2026-09-21)
+
+### 🎉 Features
+
+- ⚠️  **prettier-config:** add prettier-plugin-yaml to shared preset ([#1901](https://github.com/pplancq/dev-tools/pull/1901))
+
+### ⚠️  Breaking Changes
+
+- **prettier-config:** add prettier-plugin-yaml to shared preset  ([#1901](https://github.com/pplancq/dev-tools/pull/1901))
+  YAML files are now formatted with prettier-plugin-yaml instead of Prettier's built-in YAML printer. Consumers must run Prettier on their YAML files after upgrading to avoid CI check failures.
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.1.3
+
+### ❤️ Thank You
+
+- pplancq @pplancq
+
 ## 4.0.3 (2026-09-15)
 
 ### 📦 Dependencies
