@@ -59,6 +59,21 @@ Version 4 aligns the shared config with Prettier's default recommendations. The 
 
 As a result, strings will be formatted with double quotes and arrow functions with a single argument will include parentheses.
 
+## YAML formatting
+
+This preset includes [`prettier-plugin-yaml`](https://github.com/porada/prettier-plugin-yaml), registered last so it takes precedence over any other YAML formatters. It formats `*.yaml`, `*.yml`, and YAML front matter files.
+
+The plugin adds extra YAML options. This preset keeps them neutral to stay close to Prettier’s built-in YAML output and limit reformatting across consumer projects:
+
+| Option                | Value       | Description                                                      |
+| --------------------- | ----------- | ---------------------------------------------------------------- |
+| `yamlQuoteKeys`       | `false`     | Only quote mapping keys that require quoting.                    |
+| `yamlQuoteValues`     | `false`     | Only quote string values that require quoting.                   |
+| `yamlCollectionStyle` | `undefined` | Use Prettier’s default heuristics for block or flow collections. |
+| `yamlBlockStyle`      | `undefined` | Use Prettier’s default heuristics for multi-line string blocks.  |
+
+You can override these values in your own Prettier config if needed.
+
 ### How to migrate
 
 After upgrading, run Prettier on your codebase to apply the new formatting:
