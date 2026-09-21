@@ -1,3 +1,17 @@
+## 4.0.4 (2026-09-21)
+
+### 🎉 Features
+
+- **prettier-config:** add `prettier-plugin-yaml` to the shared preset
+
+### 📚 Documentation
+
+- **prettier-config:** document YAML support and plugin options in README
+
+### 📦 Dependencies
+
+- Added `prettier-plugin-yaml` 1.3.1
+
 ## 4.0.3 (2026-09-15)
 
 ### 📦 Dependencies
