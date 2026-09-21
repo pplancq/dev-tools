@@ -44,7 +44,7 @@
     "@clack/prompts": "^1.8.0",
     "@rslib/core": "^1.0.0",
     "@types/node": "^24.13.4",
-    "@vitest/coverage-v8": "^5.0.0",
+    "@vitest/coverage-v8": "^5.0.1",
     "commander": "^15.0.0",
     "eslint": "^9.39.5",
     "lint-staged": "^17.5.1",
@@ -52,7 +52,7 @@
     "prettier": "^3.9.6",
     "tsc-files": "^1.1.4",
     "typescript": "^6.0.3",
-    "vitest": "^5.0.0",
+    "vitest": "^5.0.1",
     "vitest-sonar-reporter": "^3.0.0"
   },
   "engines": {
