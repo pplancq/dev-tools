@@ -63,7 +63,7 @@
   "devDependencies": {
     "@rslib/core": "^1.0.1",
     "@types/node": "^24.13.5",
-    "eslint": "^9.39.5",
+    "eslint": "^10.11.0",
     "lint-staged": "^17.5.1",
     "nx": "^23.2.1",
     "prettier": "^3.9.8",
