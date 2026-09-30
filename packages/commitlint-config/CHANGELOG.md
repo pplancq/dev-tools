@@ -1,3 +1,10 @@
+## 4.0.9 (2026-09-30)
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.1.4
+- **deps:** update commitlint monorepo to ^21.2.3 ([#1907](https://github.com/pplancq/dev-tools/pull/1907))
+
 ## 4.0.8 (2026-09-21)
 
 ### 📦 Dependencies

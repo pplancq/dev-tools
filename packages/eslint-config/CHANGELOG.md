@@ -1,3 +1,9 @@
+## 6.1.4 (2026-09-30)
+
+### 📦 Dependencies
+
+- **deps:** update typescript-eslint mono repo to ^8.70.1 ([#1909](https://github.com/pplancq/dev-tools/pull/1909))
+
 ## 6.1.3 (2026-09-21)
 
 ### 📦 Dependencies

@@ -1,3 +1,10 @@
+## 5.0.1 (2026-09-30)
+
+### 📦 Dependencies
+
+- Updated @pplancq/eslint-config to 6.1.4
+- **deps:** update dependency prettier-plugin-sh to ^0.20.2 ([#1911](https://github.com/pplancq/dev-tools/pull/1911))
+
 # 5.0.0 (2026-09-21)
 
 ### 🎉 Features
