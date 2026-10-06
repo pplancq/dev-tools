@@ -62,7 +62,7 @@
   "devDependencies": {
     "@bdellegrazie/playwright-sonar-reporter": "^0.5.2",
     "@commitlint/cli": "^21.2.3",
-    "@msw/playwright": "^0.6.7",
+    "@msw/playwright": "^0.7.0",
     "@playwright/test": "^1.63.0",
     "@pplancq/commitlint-config": "^4.0.9",
     "@pplancq/eslint-config": "^6.1.4",

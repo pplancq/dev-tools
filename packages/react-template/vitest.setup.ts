@@ -7,7 +7,7 @@ import * as matchers from "vitest-axe/matchers";
 expect.extend(matchers);
 
 beforeAll(() => {
-  server.listen({ onUnhandledRequest: "error" });
+  server.listen({ onUnhandledFrame: "error" });
 });
 
 afterAll(() => {
