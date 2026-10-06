@@ -1,3 +1,10 @@
+## 6.1.5 (2026-10-06)
+
+### 📦 Dependencies
+
+- **deps:** update dependency globals to ^17.13.0 ([#1922](https://github.com/pplancq/dev-tools/pull/1922))
+- **deps:** update typescript-eslint mono repo to ^8.71.0 ([#1924](https://github.com/pplancq/dev-tools/pull/1924))
+
 ## 6.1.4 (2026-09-30)
 
 ### 📦 Dependencies

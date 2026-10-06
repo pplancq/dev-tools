@@ -1,3 +1,13 @@
+## 2.10.7 (2026-10-06)
+
+### 📦 Dependencies
+
+- Updated @pplancq/commitlint-config to 4.0.10
+- Updated @pplancq/stylelint-config to 6.1.5
+- Updated @pplancq/prettier-config to 5.0.2
+- Updated @pplancq/eslint-config to 6.1.5
+- **deps:** update dependency react-hook-form to ^7.89.0 ([#1923](https://github.com/pplancq/dev-tools/pull/1923))
+
 ## 2.10.6 (2026-09-30)
 
 ### 📦 Dependencies
