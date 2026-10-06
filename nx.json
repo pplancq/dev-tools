@@ -100,5 +100,10 @@
       "pattern": "{projectName}@{version}"
     }
   },
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
   "analytics": false
 }
