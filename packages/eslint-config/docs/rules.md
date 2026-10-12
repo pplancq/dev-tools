@@ -2,6 +2,8 @@
 
 This documentation lists all active ESLint rules in the `@pplancq/eslint-config` configuration.
 
+> **Rules naming:** this page lists the rule names used with `rulesNaming: 'modern'` (`import-x/xxx`, `jsx-a11y-x/xxx`). With the default `rulesNaming: 'legacy'`, replace `import-x/` by `import/` and `jsx-a11y-x/` by `jsx-a11y/`. See [Rules naming](../README.md#rules-naming).
+
 ## Table of Contents
 
 - [Base Configuration](#base-configuration)
