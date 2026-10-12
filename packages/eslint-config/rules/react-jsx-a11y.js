@@ -6,7 +6,8 @@ export const reactJsxA11yRules = {
   },
   rules: {
     // eslint-plugin-jsx-a11y-x https://github.com/eslint-community/eslint-plugin-jsx-a11y-x
-    // The plugin is registered under the "jsx-a11y" namespace to stay compatible with eslint-plugin-jsx-a11y rule names.
+    // Legacy naming: the plugin is registered under the "jsx-a11y" namespace to stay compatible with eslint-plugin-jsx-a11y rule names.
+    // Use ./react-jsx-a11y-x.js for the jsx-a11y-x/xxx naming.
 
     // Enforce all elements that require alternative text have meaningful information to relay back to end user.
     // https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/blob/main/docs/rules/alt-text.md

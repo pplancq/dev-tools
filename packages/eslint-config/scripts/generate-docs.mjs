@@ -15,7 +15,7 @@ const baseRules = await import("../rules/base.js").then((m) => m.default || m);
 const importRules = await import("../rules/import.js").then((m) => m.default || m);
 const typescriptRules = await import("../rules/typescript.js").then((m) => m.default || m);
 const reactRules = await import("../rules/react.js").then((m) => m.default || m);
-const reactJsxA11yRules = await import("../rules/react-jsx-a11y.js").then((m) => m.default || m);
+const reactJsxA11yXRules = await import("../rules/react-jsx-a11y-x.js").then((m) => m.default || m);
 const vitestRules = await import("../rules/vitest.js").then((m) => m.default || m);
 const playwrightRules = await import("../rules/playwright.js").then((m) => m.default || m);
 const prettierRules = await import("../rules/prettier.js").then((m) => m.default || m);
@@ -31,7 +31,7 @@ function getPluginName(ruleName) {
     case ruleName.startsWith("react/"):
     case ruleName.startsWith("react-hooks/"):
       return "eslint-plugin-react";
-    case ruleName.startsWith("jsx-a11y/"):
+    case ruleName.startsWith("jsx-a11y-x/"):
       return "eslint-plugin-jsx-a11y-x";
     case ruleName.startsWith("@vitest/"):
       return "@vitest/eslint-plugin";
@@ -61,8 +61,8 @@ function getRuleDocUrl(ruleName) {
       return `https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#${getRuleName("react-hooks/")}`;
     case ruleName.startsWith("react/"):
       return `https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/${getRuleName("react/")}.md`;
-    case ruleName.startsWith("jsx-a11y/"):
-      return `https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/blob/main/docs/rules/${getRuleName("jsx-a11y/")}.md`;
+    case ruleName.startsWith("jsx-a11y-x/"):
+      return `https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/blob/main/docs/rules/${getRuleName("jsx-a11y-x/")}.md`;
     case ruleName.startsWith("@vitest/"):
       return `https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/${getRuleName("@vitest/")}.md`;
     case ruleName.startsWith("playwright/"):
@@ -202,8 +202,8 @@ function generateDocumentation() {
   );
   const reactTestRulesProcessed = processRules(reactRules.reactTestRules, path.join(rootDir, "rules", "react.js"));
   const reactJsxA11yRulesProcessed = processRules(
-    reactJsxA11yRules.reactJsxA11yRules,
-    path.join(rootDir, "rules", "react-jsx-a11y.js"),
+    reactJsxA11yXRules.reactJsxA11yXRules,
+    path.join(rootDir, "rules", "react-jsx-a11y-x.js"),
   );
 
   console.info("Processing Vitest rules...");
