@@ -15,7 +15,7 @@ const baseRules = await import("../rules/base.js").then((m) => m.default || m);
 const importRules = await import("../rules/import.js").then((m) => m.default || m);
 const typescriptRules = await import("../rules/typescript.js").then((m) => m.default || m);
 const reactRules = await import("../rules/react.js").then((m) => m.default || m);
-const reactJsxA11yXRules = await import("../rules/react-jsx-a11y-x.js").then((m) => m.default || m);
+const reactJsxA11yRules = await import("../rules/react-jsx-a11y.js").then((m) => m.default || m);
 const vitestRules = await import("../rules/vitest.js").then((m) => m.default || m);
 const playwrightRules = await import("../rules/playwright.js").then((m) => m.default || m);
 const prettierRules = await import("../rules/prettier.js").then((m) => m.default || m);
@@ -26,8 +26,8 @@ function getPluginName(ruleName) {
   switch (true) {
     case ruleName.startsWith("@typescript-eslint/"):
       return "@typescript-eslint/eslint-plugin";
-    case ruleName.startsWith("import/"):
-      return "eslint-plugin-import";
+    case ruleName.startsWith("import-x/"):
+      return "eslint-plugin-import-x";
     case ruleName.startsWith("react/"):
     case ruleName.startsWith("react-hooks/"):
       return "eslint-plugin-react";
@@ -55,8 +55,8 @@ function getRuleDocUrl(ruleName) {
   switch (true) {
     case ruleName.startsWith("@typescript-eslint/"):
       return `https://typescript-eslint.io/rules/${getRuleName("@typescript-eslint/")}`;
-    case ruleName.startsWith("import/"):
-      return `https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/${getRuleName("import/")}.md`;
+    case ruleName.startsWith("import-x/"):
+      return `https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/${getRuleName("import-x/")}.md`;
     case ruleName.startsWith("react-hooks/"):
       return `https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#${getRuleName("react-hooks/")}`;
     case ruleName.startsWith("react/"):
@@ -187,36 +187,39 @@ function generateDocumentation() {
 
   // Process each configuration section
   console.info("Processing base rules...");
-  const baseRulesProcessed = processRules(baseRules.baseRules, path.join(rootDir, "rules", "base.js"));
-  const importRulesProcessed = processRules(importRules.importRules, path.join(rootDir, "rules", "import.js"));
+  const baseRulesProcessed = processRules(baseRules.baseRules(), path.join(rootDir, "rules", "base.js"));
+  const importRulesProcessed = processRules(importRules.importRules(), path.join(rootDir, "rules", "import.js"));
   const typescriptRulesProcessed = processRules(
-    typescriptRules.typescriptRules,
+    typescriptRules.typescriptRules(),
     path.join(rootDir, "rules", "typescript.js"),
   );
 
   console.info("Processing React rules...");
-  const reactRulesProcessed = processRules(reactRules.reactRules, path.join(rootDir, "rules", "react.js"));
+  const reactRulesProcessed = processRules(reactRules.reactRules(), path.join(rootDir, "rules", "react.js"));
   const reactTypescriptRulesProcessed = processRules(
-    reactRules.reactTypescriptRules,
+    reactRules.reactTypescriptRules(),
     path.join(rootDir, "rules", "react.js"),
   );
-  const reactTestRulesProcessed = processRules(reactRules.reactTestRules, path.join(rootDir, "rules", "react.js"));
+  const reactTestRulesProcessed = processRules(reactRules.reactTestRules(), path.join(rootDir, "rules", "react.js"));
   const reactJsxA11yRulesProcessed = processRules(
-    reactJsxA11yXRules.reactJsxA11yXRules,
-    path.join(rootDir, "rules", "react-jsx-a11y-x.js"),
+    reactJsxA11yRules.reactJsxA11yRules(),
+    path.join(rootDir, "rules", "react-jsx-a11y.js"),
   );
 
   console.info("Processing Vitest rules...");
-  const vitestRulesProcessed = processRules(vitestRules.vitestRules, path.join(rootDir, "rules", "vitest.js"));
+  const vitestRulesProcessed = processRules(vitestRules.vitestRules(), path.join(rootDir, "rules", "vitest.js"));
 
   console.info("Processing Playwright rules...");
   const playwrightRulesProcessed = processRules(
-    playwrightRules.playwrightRules,
+    playwrightRules.playwrightRules(),
     path.join(rootDir, "rules", "playwright.js"),
   );
 
   console.info("Processing Prettier rules...");
-  const prettierRulesProcessed = processRules(prettierRules.prettierRules, path.join(rootDir, "rules", "prettier.js"));
+  const prettierRulesProcessed = processRules(
+    prettierRules.prettierRules(),
+    path.join(rootDir, "rules", "prettier.js"),
+  );
 
   // Combine all base rules (base + import + typescript)
   const allBaseRules = [...baseRulesProcessed, ...importRulesProcessed, ...typescriptRulesProcessed];

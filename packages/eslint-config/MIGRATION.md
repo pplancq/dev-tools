@@ -1,5 +1,47 @@
 # Migration Guide
 
+## Rules naming (`rulesNaming`)
+
+`eslint-plugin-import` and `eslint-plugin-jsx-a11y` are replaced by their forks `eslint-plugin-import-x` and `eslint-plugin-jsx-a11y-x`, which support ESLint 10. This is **not a breaking change**: the default `rulesNaming: 'legacy'` keeps the historical rule names. The default will become `'modern'` in the next major release.
+
+| Plugin                     | `legacy` (default) | `modern`         |
+| -------------------------- | ------------------ | ---------------- |
+| `eslint-plugin-import-x`   | `import/xxx`       | `import-x/xxx`   |
+| `eslint-plugin-jsx-a11y-x` | `jsx-a11y/xxx`     | `jsx-a11y-x/xxx` |
+
+### Migrate to `modern`
+
+1. Set the option:
+
+   ```javascript
+   // eslint.config.mjs
+   import { defineConfig } from "@pplancq/eslint-config";
+
+   export default defineConfig({
+     rulesNaming: "modern",
+   });
+   ```
+
+2. Rename everything that references the old namespaces:
+   - the rules in your configuration (`extendConfig`) and in `eslint-disable` / `eslint-enable` comments: `import/xxx` → `import-x/xxx`, `jsx-a11y/xxx` → `jsx-a11y-x/xxx`;
+   - the `import/*` settings: `import/resolver` → `import-x/resolver`, `import/core-modules` → `import-x/core-modules`, etc.
+
+   In `modern` mode the `import/*` settings are **not** copied: `eslint-plugin-import-x` ignores them.
+
+### `legacy` mode and settings
+
+`eslint-plugin-import-x` only reads the `import-x/*` settings, whatever the namespace the rules are registered under. To avoid a breaking change, with `rulesNaming: 'legacy'` the `import/*` settings found in `extendConfig` are copied to `import-x/*` (the original keys are kept, an existing `import-x/*` setting always wins) and a warning lists them. Rename them to `import-x/*` to remove the warning.
+
+### Things to check
+
+- **Module resolution**: `eslint-plugin-import-x` resolves packages that only expose ESM `exports`, which the former resolver could not resolve. Rules such as `no-extraneous-dependencies` may now report these packages (for example a package listed in `devDependencies` and imported by a script that is not a test or a config file). Move it to `dependencies`, or turn the rule off for those files.
+- **Plugin registered twice**: if your configuration registers `eslint-plugin-import` yourself under the `import` namespace, ESLint fails with `Cannot redefine plugin "import"`. Remove your own registration and rely on `defineConfig`, or register it under another namespace.
+- **Direct dependency**: `@pplancq/eslint-config` no longer installs `eslint-plugin-import`. If your own configuration imports it, install it yourself.
+- **Rule options**: the options of the rules defined by this configuration are validated against `eslint-plugin-import-x`. If you override a rule with custom options, check them against the [eslint-plugin-import-x documentation](https://github.com/un-ts/eslint-plugin-import-x#rules).
+- **Messages**: the only difference noticed on the rules enabled by this configuration is cosmetic (`no-extraneous-dependencies` suggests `npm i xxx` instead of `npm i -S xxx`).
+
+---
+
 ## v5 to v6
 
 ### ⚠️ Breaking Change: ESM Only from v6

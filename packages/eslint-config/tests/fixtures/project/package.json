@@ -1,0 +1,1 @@
+{ "name": "fixture", "private": true, "type": "module", "dependencies": { "globals": "*" }, "devDependencies": { "prettier": "*" } }

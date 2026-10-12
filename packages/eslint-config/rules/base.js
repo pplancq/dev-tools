@@ -1,6 +1,6 @@
 import globals from "globals";
 
-export const baseRules = {
+export const baseRules = () => ({
   languageOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
@@ -1455,4 +1455,4 @@ export const baseRules = {
     "wrap-regex": "off",
     "yield-star-spacing": ["error", "after"],
   },
-};
+});

@@ -12,7 +12,7 @@ export default defineConfig({
       ignores: ["build"],
     },
     {
-      files: ["mocks/**/*"],
+      files: ["mocks/**/*", "scripts/**/*"],
       rules: {
         "import/no-extraneous-dependencies": "off",
       },
