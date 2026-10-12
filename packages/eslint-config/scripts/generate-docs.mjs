@@ -26,8 +26,8 @@ function getPluginName(ruleName) {
   switch (true) {
     case ruleName.startsWith("@typescript-eslint/"):
       return "@typescript-eslint/eslint-plugin";
-    case ruleName.startsWith("import/"):
-      return "eslint-plugin-import";
+    case ruleName.startsWith("import-x/"):
+      return "eslint-plugin-import-x";
     case ruleName.startsWith("react/"):
     case ruleName.startsWith("react-hooks/"):
       return "eslint-plugin-react";
@@ -55,8 +55,8 @@ function getRuleDocUrl(ruleName) {
   switch (true) {
     case ruleName.startsWith("@typescript-eslint/"):
       return `https://typescript-eslint.io/rules/${getRuleName("@typescript-eslint/")}`;
-    case ruleName.startsWith("import/"):
-      return `https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/${getRuleName("import/")}.md`;
+    case ruleName.startsWith("import-x/"):
+      return `https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/${getRuleName("import-x/")}.md`;
     case ruleName.startsWith("react-hooks/"):
       return `https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#${getRuleName("react-hooks/")}`;
     case ruleName.startsWith("react/"):

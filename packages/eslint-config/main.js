@@ -6,6 +6,7 @@ import { playwrightRules } from "./rules/playwright.js";
 import { reactJsxA11yRules } from "./rules/react-jsx-a11y.js";
 import { reactRules, reactTestRules, reactTypescriptRules } from "./rules/react.js";
 import { typescriptRules } from "./rules/typescript.js";
+import { prefix } from "./rules/utils.js";
 import { vitestRules } from "./rules/vitest.js";
 
 let createPrettierRules = () => ({});
@@ -63,7 +64,10 @@ export const defineConfig = ({
   enablePrettier = "off",
   extendConfig = [],
 } = {}) => {
-  const ns = { jsxA11y: rulesNaming === "modern" ? "jsx-a11y-x" : "jsx-a11y" };
+  const ns = {
+    jsxA11y: rulesNaming === "modern" ? "jsx-a11y-x" : "jsx-a11y",
+    import: rulesNaming === "modern" ? "import-x" : "import",
+  };
 
   if (enablePrettier === "on") {
     console.warn(
@@ -83,23 +87,27 @@ export const defineConfig = ({
   }
 
   return [
-    importRules(),
+    importRules(ns),
     baseRules(),
     enableReact && reactJsxA11yRules(ns),
-    typescriptRules({ files: tsFiles }),
-    enableReact && reactRules(),
-    enableReact && reactTypescriptRules({ files: tsFiles }),
+    typescriptRules({ files: tsFiles, ...ns }),
+    enableReact && reactRules(ns),
+    enableReact && reactTypescriptRules({ files: tsFiles, ...ns }),
     enableReact && reactTestRules({ files: unitTestFiles }),
     enablePrettier !== "off" && prettierRules,
     enablePrettier !== "off" && eslintConfigPrettier,
-    enableVitest && vitestRules({ files: unitTestFiles }),
+    enableVitest && vitestRules({ files: unitTestFiles, ...ns }),
     enablePlaywright && playwrightRules({ files: unitE2eFiles }),
     {
       files: ["eslint.config.*"],
-      rules: {
-        "import/no-extraneous-dependencies": "off",
-        "import/no-default-export": "off",
-      },
+      rules: prefix(
+        {
+          "import-x/no-extraneous-dependencies": "off",
+          "import-x/no-default-export": "off",
+        },
+        "import-x",
+        ns.import,
+      ),
     },
     ...extendConfig,
   ].filter(Boolean);

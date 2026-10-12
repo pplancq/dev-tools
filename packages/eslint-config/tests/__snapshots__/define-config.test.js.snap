@@ -5,16 +5,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -28,13 +28,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -66,16 +66,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -89,13 +89,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -111,16 +111,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -134,13 +134,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -172,16 +172,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -195,13 +195,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -246,16 +246,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -269,13 +269,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -304,16 +304,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -327,13 +327,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -378,16 +378,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -401,13 +401,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -450,16 +450,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -473,13 +473,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -506,16 +506,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -529,13 +529,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -578,16 +578,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -601,13 +601,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -663,16 +663,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -686,13 +686,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -732,16 +732,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -755,13 +755,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -817,16 +817,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -840,13 +840,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -869,7 +869,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -878,16 +878,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -901,20 +901,20 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -923,16 +923,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -946,13 +946,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -975,7 +975,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -984,16 +984,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1007,13 +1007,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -1049,7 +1049,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -1058,16 +1058,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1081,13 +1081,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -1107,7 +1107,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -1116,16 +1116,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1139,13 +1139,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -1181,7 +1181,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -1190,16 +1190,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1213,13 +1213,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -1242,7 +1242,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -1253,7 +1253,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -1262,16 +1262,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1285,20 +1285,20 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -1309,7 +1309,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -1318,16 +1318,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1341,13 +1341,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -1370,7 +1370,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -1381,7 +1381,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -1390,16 +1390,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1413,13 +1413,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -1442,7 +1442,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -1466,7 +1466,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -1475,16 +1475,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1498,20 +1498,20 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -1535,7 +1535,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -1544,16 +1544,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1567,13 +1567,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -1596,7 +1596,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -1620,7 +1620,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -1629,16 +1629,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1661,18 +1661,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -1680,7 +1680,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -1688,11 +1688,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -1736,16 +1736,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1768,18 +1768,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -1787,7 +1787,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -1795,11 +1795,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -1827,16 +1827,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1859,18 +1859,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -1878,7 +1878,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -1886,11 +1886,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -1934,16 +1934,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -1966,18 +1966,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -1985,7 +1985,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -1993,11 +1993,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -2054,16 +2054,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -2086,18 +2086,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -2105,7 +2105,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -2113,11 +2113,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -2158,16 +2158,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -2190,18 +2190,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -2209,7 +2209,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -2217,11 +2217,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -2278,16 +2278,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -2310,18 +2310,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -2329,7 +2329,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -2337,11 +2337,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -2396,16 +2396,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -2428,18 +2428,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -2447,7 +2447,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -2455,11 +2455,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -2498,16 +2498,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -2530,18 +2530,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -2549,7 +2549,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -2557,11 +2557,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -2616,16 +2616,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -2648,18 +2648,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -2667,7 +2667,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -2675,11 +2675,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -2747,16 +2747,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -2779,18 +2779,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -2798,7 +2798,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -2806,11 +2806,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -2862,16 +2862,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "da592539e1e6",
       "plugins": [
         "import",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -2894,18 +2894,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "b641358a78c1",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "070b780ef0ec",
       "plugins": [
         "react",
         "react-hooks",
@@ -2913,7 +2913,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -2921,11 +2921,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "64ed62cd7353",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -2993,16 +2993,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -3025,18 +3025,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -3044,7 +3044,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -3052,11 +3052,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -3091,7 +3091,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -3100,16 +3100,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -3132,18 +3132,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -3151,7 +3151,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -3159,11 +3159,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -3182,7 +3182,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -3191,16 +3191,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -3223,18 +3223,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -3242,7 +3242,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -3250,11 +3250,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -3289,7 +3289,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -3298,16 +3298,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -3330,18 +3330,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -3349,7 +3349,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -3357,11 +3357,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -3409,7 +3409,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -3418,16 +3418,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -3450,18 +3450,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -3469,7 +3469,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -3477,11 +3477,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -3513,7 +3513,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -3522,16 +3522,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -3554,18 +3554,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -3573,7 +3573,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -3581,11 +3581,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -3633,7 +3633,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -3642,16 +3642,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -3674,18 +3674,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -3693,7 +3693,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -3701,11 +3701,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -3740,7 +3740,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -3751,7 +3751,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -3760,16 +3760,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -3792,18 +3792,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -3811,7 +3811,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -3819,11 +3819,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -3842,7 +3842,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -3853,7 +3853,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -3862,16 +3862,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -3894,18 +3894,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -3913,7 +3913,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -3921,11 +3921,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -3960,7 +3960,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -3971,7 +3971,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -3980,16 +3980,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -4012,18 +4012,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -4031,7 +4031,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -4039,11 +4039,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -4078,7 +4078,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -4102,7 +4102,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -4111,16 +4111,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"off"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -4143,18 +4143,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -4162,7 +4162,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -4170,11 +4170,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -4193,7 +4193,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -4217,7 +4217,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -4226,16 +4226,16 @@ exports[`defineConfig > should resolve each option combination into the same blo
   "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"on"}": [
     {
       "files": undefined,
-      "hash": "e6bbcabf7be4",
+      "hash": "54219659e10e",
       "plugins": [
-        "import",
+        "import-x",
       ],
       "rules": 45,
       "settings": [
-        "import/extensions",
-        "import/core-modules",
-        "import/ignore",
-        "import/resolver",
+        "import-x/extensions",
+        "import-x/core-modules",
+        "import-x/ignore",
+        "import-x/resolver",
       ],
     },
     {
@@ -4258,18 +4258,18 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "034caf0b0d39",
+      "hash": "7098a1cf46ff",
       "plugins": [
         "@typescript-eslint",
       ],
       "rules": 146,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
       "files": undefined,
-      "hash": "29bbeb58660e",
+      "hash": "82aca296eac4",
       "plugins": [
         "react",
         "react-hooks",
@@ -4277,7 +4277,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "rules": 105,
       "settings": [
         "react",
-        "import/resolver",
+        "import-x/resolver",
         "propWrapperFunctions",
       ],
     },
@@ -4285,11 +4285,11 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.ts?(x)",
       ],
-      "hash": "f087056f1fb4",
+      "hash": "608178e473b2",
       "plugins": [],
       "rules": 3,
       "settings": [
-        "import/resolver",
+        "import-x/resolver",
       ],
     },
     {
@@ -4324,7 +4324,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
       ],
-      "hash": "250854bca868",
+      "hash": "4be7afaa6985",
       "plugins": [
         "@vitest",
       ],
@@ -4348,7 +4348,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": [
         "eslint.config.*",
       ],
-      "hash": "70f7bfbbf706",
+      "hash": "02641d9f1dd7",
       "plugins": [],
       "rules": 2,
       "settings": [],
@@ -4514,17 +4514,17 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
       "import/unambiguous": "off",
     },
     "settings": {
-      "import/core-modules": [],
-      "import/extensions": [
+      "import-x/core-modules": [],
+      "import-x/extensions": [
         ".js",
         ".mjs",
         ".jsx",
       ],
-      "import/ignore": [
+      "import-x/ignore": [
         "node_modules",
         "\\.(coffee|scss|css|less|hbs|svg|json)$",
       ],
-      "import/resolver": {
+      "import-x/resolver": {
         "node": {
           "extensions": [
             ".js",
@@ -4787,7 +4787,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
       ],
     },
     "settings": {
-      "import/resolver": {
+      "import-x/resolver": {
         "node": {
           "extensions": [
             ".js",
@@ -4815,7 +4815,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
       ],
     },
     "settings": {
-      "import/resolver": {
+      "import-x/resolver": {
         "node": {
           "extensions": [
             ".js",
@@ -4852,7 +4852,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
       ],
     },
     "settings": {
-      "import/resolver": {
+      "import-x/resolver": {
         "node": {
           "extensions": [
             ".js",
@@ -4942,21 +4942,21 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
   {
     "files": undefined,
     "plugins": [
-      "import",
+      "import-x",
     ],
     "rules": {
-      "import/consistent-type-specifier-style": "off",
-      "import/default": "off",
-      "import/dynamic-import-chunkname": [
+      "import-x/consistent-type-specifier-style": "off",
+      "import-x/default": "off",
+      "import-x/dynamic-import-chunkname": [
         "off",
         {
           "importFunctions": [],
           "webpackChunknameFormat": "[0-9a-zA-Z-_/.]+",
         },
       ],
-      "import/export": "error",
-      "import/exports-last": "off",
-      "import/extensions": [
+      "import-x/export": "error",
+      "import-x/exports-last": "off",
+      "import-x/extensions": [
         "error",
         "ignorePackages",
         {
@@ -4965,21 +4965,21 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
           "mjs": "never",
         },
       ],
-      "import/first": "error",
-      "import/group-exports": "off",
-      "import/imports-first": "off",
-      "import/max-dependencies": [
+      "import-x/first": "error",
+      "import-x/group-exports": "off",
+      "import-x/imports-first": "off",
+      "import-x/max-dependencies": [
         "off",
         {
           "max": 10,
         },
       ],
-      "import/named": "error",
-      "import/namespace": "off",
-      "import/newline-after-import": "error",
-      "import/no-absolute-path": "error",
-      "import/no-amd": "error",
-      "import/no-anonymous-default-export": [
+      "import-x/named": "error",
+      "import-x/namespace": "off",
+      "import-x/newline-after-import": "error",
+      "import-x/no-absolute-path": "error",
+      "import-x/no-amd": "error",
+      "import-x/no-anonymous-default-export": [
         "off",
         {
           "allowAnonymousClass": false,
@@ -4990,19 +4990,19 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
           "allowObject": false,
         },
       ],
-      "import/no-commonjs": "off",
-      "import/no-cycle": [
+      "import-x/no-commonjs": "off",
+      "import-x/no-cycle": [
         "error",
         {
           "maxDepth": "∞",
         },
       ],
-      "import/no-default-export": "error",
-      "import/no-deprecated": "off",
-      "import/no-duplicates": "error",
-      "import/no-dynamic-require": "error",
-      "import/no-empty-named-blocks": "off",
-      "import/no-extraneous-dependencies": [
+      "import-x/no-default-export": "error",
+      "import-x/no-deprecated": "off",
+      "import-x/no-duplicates": "error",
+      "import-x/no-dynamic-require": "error",
+      "import-x/no-empty-named-blocks": "off",
+      "import-x/no-extraneous-dependencies": [
         "error",
         {
           "devDependencies": [
@@ -5032,38 +5032,38 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
           "optionalDependencies": false,
         },
       ],
-      "import/no-import-module-exports": [
+      "import-x/no-import-module-exports": [
         "error",
         {
           "exceptions": [],
         },
       ],
-      "import/no-internal-modules": [
+      "import-x/no-internal-modules": [
         "off",
         {
           "allow": [],
         },
       ],
-      "import/no-mutable-exports": "error",
-      "import/no-named-as-default": "error",
-      "import/no-named-as-default-member": "error",
-      "import/no-named-default": "error",
-      "import/no-named-export": "off",
-      "import/no-namespace": "off",
-      "import/no-nodejs-modules": "off",
-      "import/no-relative-packages": "error",
-      "import/no-relative-parent-imports": "off",
-      "import/no-restricted-paths": "off",
-      "import/no-self-import": "error",
-      "import/no-unassigned-import": "off",
-      "import/no-unresolved": [
+      "import-x/no-mutable-exports": "error",
+      "import-x/no-named-as-default": "error",
+      "import-x/no-named-as-default-member": "error",
+      "import-x/no-named-default": "error",
+      "import-x/no-named-export": "off",
+      "import-x/no-namespace": "off",
+      "import-x/no-nodejs-modules": "off",
+      "import-x/no-relative-packages": "error",
+      "import-x/no-relative-parent-imports": "off",
+      "import-x/no-restricted-paths": "off",
+      "import-x/no-self-import": "error",
+      "import-x/no-unassigned-import": "off",
+      "import-x/no-unresolved": [
         "error",
         {
           "caseSensitive": true,
           "commonjs": true,
         },
       ],
-      "import/no-unused-modules": [
+      "import-x/no-unused-modules": [
         "off",
         {
           "ignoreExports": [],
@@ -5071,14 +5071,14 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
           "unusedExports": true,
         },
       ],
-      "import/no-useless-path-segments": [
+      "import-x/no-useless-path-segments": [
         "error",
         {
           "commonjs": true,
         },
       ],
-      "import/no-webpack-loader-syntax": "error",
-      "import/order": [
+      "import-x/no-webpack-loader-syntax": "error",
+      "import-x/order": [
         "error",
         {
           "groups": [
@@ -5090,21 +5090,21 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
           ],
         },
       ],
-      "import/prefer-default-export": "off",
-      "import/unambiguous": "off",
+      "import-x/prefer-default-export": "off",
+      "import-x/unambiguous": "off",
     },
     "settings": {
-      "import/core-modules": [],
-      "import/extensions": [
+      "import-x/core-modules": [],
+      "import-x/extensions": [
         ".js",
         ".mjs",
         ".jsx",
       ],
-      "import/ignore": [
+      "import-x/ignore": [
         "node_modules",
         "\\.(coffee|scss|css|less|hbs|svg|json)$",
       ],
-      "import/resolver": {
+      "import-x/resolver": {
         "node": {
           "extensions": [
             ".js",
@@ -5357,7 +5357,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
       "@typescript-eslint",
     ],
     "rules": {
-      "import/extensions": [
+      "import-x/extensions": [
         "error",
         "ignorePackages",
         {
@@ -5367,7 +5367,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
       ],
     },
     "settings": {
-      "import/resolver": {
+      "import-x/resolver": {
         "node": {
           "extensions": [
             ".js",
@@ -5385,7 +5385,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
       "react-hooks",
     ],
     "rules": {
-      "import/extensions": [
+      "import-x/extensions": [
         "error",
         "ignorePackages",
         {
@@ -5395,7 +5395,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
       ],
     },
     "settings": {
-      "import/resolver": {
+      "import-x/resolver": {
         "node": {
           "extensions": [
             ".js",
@@ -5420,7 +5420,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
     ],
     "plugins": undefined,
     "rules": {
-      "import/extensions": [
+      "import-x/extensions": [
         "error",
         "ignorePackages",
         {
@@ -5432,7 +5432,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
       ],
     },
     "settings": {
-      "import/resolver": {
+      "import-x/resolver": {
         "node": {
           "extensions": [
             ".js",
@@ -5477,7 +5477,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
       "@vitest",
     ],
     "rules": {
-      "import/no-extraneous-dependencies": "off",
+      "import-x/no-extraneous-dependencies": "off",
     },
     "settings": undefined,
   },
@@ -5509,8 +5509,8 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
     ],
     "plugins": undefined,
     "rules": {
-      "import/no-default-export": "off",
-      "import/no-extraneous-dependencies": "off",
+      "import-x/no-default-export": "off",
+      "import-x/no-extraneous-dependencies": "off",
     },
     "settings": undefined,
   },

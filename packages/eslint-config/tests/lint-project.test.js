@@ -5,7 +5,15 @@ import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
 import { defineConfig } from "@pplancq/eslint-config";
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), "fixtures", "project");
-const rootPattern = new RegExp(`${root.replaceAll(/[$()*+.?[\\\]^{|}]/g, String.raw`\$&`)}|/private${root}`, "g");
+const repoRoot = path.resolve(root, "../../../../..");
+
+const escapeRegExp = (value) => value.replaceAll(/[$()*+.?[\\\]^{|}]/g, String.raw`\$&`);
+const pathPattern = (location) => new RegExp(`(/private)?${escapeRegExp(location)}`, "g");
+const rootPattern = pathPattern(root);
+const repoRootPattern = pathPattern(repoRoot);
+
+// Messages can contain absolute paths, which depend on the machine
+const normalize = (message) => message.replaceAll(rootPattern, "<root>").replaceAll(repoRootPattern, "<repo>");
 
 const originalCwd = process.cwd();
 
@@ -36,7 +44,7 @@ const lint = async (options, patterns) => {
       .filter((message) => /^(import|import-x|jsx-a11y|jsx-a11y-x)\//.test(message.ruleId ?? ""))
       .map(
         (message) =>
-          `${path.relative(root, result.filePath)}:${message.line} ${message.ruleId} | ${message.message.replaceAll(rootPattern, "<root>")}`,
+          `${path.relative(root, result.filePath)}:${message.line} ${message.ruleId} | ${normalize(message.message)}`,
       ),
   );
 };
