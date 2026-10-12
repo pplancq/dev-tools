@@ -36,7 +36,7 @@ const bold = isColorSupported ? (text) => `\x1b[1m${text}\x1b[22m` : (text) => t
  * @param {string[]} [options.unitTestFiles=['**\/*.{test,spec,steps}.{js,jsx,ts,tsx}']]
  * @param {string[]} [options.unitE2eFiles=['tests/**\/*.{test,spec}.{js,jsx,ts,tsx}']]
  * @param {boolean} [options.enableReact=false]
- * @param {'legacy' | 'modern'} [options.reactA11y='legacy']
+ * @param {'legacy' | 'modern'} [options.rulesNaming='legacy']
  *   - `'legacy'`: registers `eslint-plugin-jsx-a11y-x` under the `jsx-a11y` namespace (rules named `jsx-a11y/xxx`).
  *   - `'modern'`: registers `eslint-plugin-jsx-a11y-x` under its own namespace (rules named `jsx-a11y-x/xxx`).
  * @param {boolean} [options.enableVitest=false]
@@ -58,7 +58,7 @@ export const defineConfig = ({
   unitTestFiles = ["**/*.{test,spec,steps}.{js,jsx,ts,tsx}"],
   unitE2eFiles = ["tests/**/*.{test,spec}.{js,jsx,ts,tsx}"],
   enableReact = false,
-  reactA11y = "legacy",
+  rulesNaming = "legacy",
   enableVitest = false,
   enablePlaywright = false,
   enablePrettier = "off",
@@ -76,9 +76,9 @@ export const defineConfig = ({
     );
   }
 
-  if (enableReact && reactA11y === "legacy") {
+  if (enableReact && rulesNaming === "legacy") {
     console.warn(
-      `${bold(yellow("WARNING:"))} [reactA11y: 'legacy'] the JSX a11y rules use the legacy 'jsx-a11y/xxx' names. In the next major release, the default will become 'modern' ('jsx-a11y-x/xxx'). Set reactA11y: 'modern' to migrate now.`,
+      `${bold(yellow("WARNING:"))} [rulesNaming: 'legacy'] the JSX a11y rules use the legacy 'jsx-a11y/xxx' names. In the next major release, the default will become 'modern' ('jsx-a11y-x/xxx'). Set rulesNaming: 'modern' to migrate now.`,
     );
   }
 
@@ -89,7 +89,7 @@ export const defineConfig = ({
   return [
     importRules,
     baseRules,
-    enableReact && (reactA11y === "modern" ? reactJsxA11yXRules : reactJsxA11yRules),
+    enableReact && (rulesNaming === "modern" ? reactJsxA11yXRules : reactJsxA11yRules),
     typescriptRules,
     enableReact && reactRules,
     enableReact && reactTypescriptRules,

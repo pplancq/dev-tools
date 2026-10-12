@@ -297,8 +297,8 @@ Additional active rules with `defineConfig({ enableReact: true })`.
 
 This configuration adds React, React Hooks, JSX a11y, and Testing Library rules to the base rules.
 
-> **Note on JSX a11y rule names:** the `jsx-a11y-x/*` rules below are documented for `defineConfig({ enableReact: true, reactA11y: "modern" })`.
-> With the default `reactA11y: "legacy"` option, the same rules are registered under the `jsx-a11y` namespace, so their names are `jsx-a11y/xxx` instead of `jsx-a11y-x/xxx` (e.g. `jsx-a11y-x/alt-text` becomes `jsx-a11y/alt-text`).
+> **Note on JSX a11y rule names:** the `jsx-a11y-x/*` rules below are documented for `defineConfig({ enableReact: true, rulesNaming: "modern" })`.
+> With the default `rulesNaming: "legacy"` option, the same rules are registered under the `jsx-a11y` namespace, so their names are `jsx-a11y/xxx` instead of `jsx-a11y-x/xxx` (e.g. `jsx-a11y-x/alt-text` becomes `jsx-a11y/alt-text`).
 
 <!-- START_REACT_RULES -->
 
