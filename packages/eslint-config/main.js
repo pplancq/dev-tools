@@ -6,7 +6,7 @@ import { playwrightRules } from "./rules/playwright.js";
 import { reactJsxA11yRules } from "./rules/react-jsx-a11y.js";
 import { reactRules, reactTestRules, reactTypescriptRules } from "./rules/react.js";
 import { typescriptRules } from "./rules/typescript.js";
-import { prefix } from "./rules/utils.js";
+import { mapLegacyImportSettings, prefix } from "./rules/utils.js";
 import { vitestRules } from "./rules/vitest.js";
 
 let createPrettierRules = () => ({});
@@ -37,8 +37,11 @@ const bold = isColorSupported ? (text) => `\x1b[1m${text}\x1b[22m` : (text) => t
  * @param {string[]} [options.unitE2eFiles=['tests/**\/*.{test,spec}.{js,jsx,ts,tsx}']]
  * @param {boolean} [options.enableReact=false]
  * @param {'legacy' | 'modern'} [options.rulesNaming='legacy']
- *   - `'legacy'`: registers `eslint-plugin-jsx-a11y-x` under the `jsx-a11y` namespace (rules named `jsx-a11y/xxx`).
- *   - `'modern'`: registers `eslint-plugin-jsx-a11y-x` under its own namespace (rules named `jsx-a11y-x/xxx`).
+ *   - `'legacy'`: registers `eslint-plugin-import-x` under the `import` namespace (rules named `import/xxx`)
+ *     and `eslint-plugin-jsx-a11y-x` under the `jsx-a11y` namespace (rules named `jsx-a11y/xxx`).
+ *     The `import/*` settings found in `extendConfig` are copied to `import-x/*`, the only prefix `eslint-plugin-import-x` reads.
+ *   - `'modern'`: registers `eslint-plugin-import-x` under its own namespace (rules named `import-x/xxx`)
+ *     and `eslint-plugin-jsx-a11y-x` under its own namespace (rules named `jsx-a11y-x/xxx`).
  * @param {boolean} [options.enableVitest=false]
  * @param {boolean} [options.enablePlaywright=false]
  * @param {'off' | 'on' | 'disableStyleOnly'} [options.enablePrettier='off']
@@ -75,9 +78,22 @@ export const defineConfig = ({
     );
   }
 
-  if (enableReact && rulesNaming === "legacy") {
+  const legacyNaming = rulesNaming === "legacy";
+  if (legacyNaming) {
+    const legacyNames = enableReact ? "'import/xxx' and 'jsx-a11y/xxx'" : "'import/xxx'";
+    const modernNames = enableReact ? "'import-x/xxx' and 'jsx-a11y-x/xxx'" : "'import-x/xxx'";
     console.warn(
-      `${bold(yellow("WARNING:"))} [rulesNaming: 'legacy'] the JSX a11y rules use the legacy 'jsx-a11y/xxx' names. In the next major release, the default will become 'modern' ('jsx-a11y-x/xxx'). Set rulesNaming: 'modern' to migrate now.`,
+      `${bold(yellow("WARNING:"))} [rulesNaming: 'legacy'] the rules use the legacy ${legacyNames} names. In the next major release, the default will become 'modern' (${modernNames}). Set rulesNaming: 'modern' to migrate now.`,
+    );
+  }
+
+  const { configs: extendedConfig, mapped: mappedSettings } = legacyNaming
+    ? mapLegacyImportSettings(extendConfig)
+    : { configs: extendConfig, mapped: [] };
+
+  if (mappedSettings.length > 0) {
+    console.warn(
+      `${bold(yellow("WARNING:"))} [rulesNaming: 'legacy'] eslint-plugin-import-x only reads the 'import-x/*' settings. The following settings were copied automatically: ${mappedSettings.map((setting) => `'${setting}'`).join(", ")}. Rename them to 'import-x/*' in your configuration.`,
     );
   }
 
@@ -109,6 +125,6 @@ export const defineConfig = ({
         ns.import,
       ),
     },
-    ...extendConfig,
+    ...extendedConfig,
   ].filter(Boolean);
 };
