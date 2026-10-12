@@ -4,7 +4,6 @@ import { baseRules } from "./rules/base.js";
 import { importRules } from "./rules/import.js";
 import { playwrightRules } from "./rules/playwright.js";
 import { reactJsxA11yRules } from "./rules/react-jsx-a11y.js";
-import { reactJsxA11yXRules } from "./rules/react-jsx-a11y-x.js";
 import { reactRules, reactTestRules, reactTypescriptRules } from "./rules/react.js";
 import { typescriptRules } from "./rules/typescript.js";
 import { vitestRules } from "./rules/vitest.js";
@@ -89,7 +88,7 @@ export const defineConfig = ({
   return [
     importRules,
     baseRules,
-    enableReact && (rulesNaming === "modern" ? reactJsxA11yXRules : reactJsxA11yRules),
+    enableReact && reactJsxA11yRules({ jsxA11y: rulesNaming === "modern" ? "jsx-a11y-x" : "jsx-a11y" }),
     typescriptRules,
     enableReact && reactRules,
     enableReact && reactTypescriptRules,

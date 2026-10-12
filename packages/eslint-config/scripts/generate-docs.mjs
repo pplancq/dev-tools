@@ -15,7 +15,7 @@ const baseRules = await import("../rules/base.js").then((m) => m.default || m);
 const importRules = await import("../rules/import.js").then((m) => m.default || m);
 const typescriptRules = await import("../rules/typescript.js").then((m) => m.default || m);
 const reactRules = await import("../rules/react.js").then((m) => m.default || m);
-const reactJsxA11yXRules = await import("../rules/react-jsx-a11y-x.js").then((m) => m.default || m);
+const reactJsxA11yRules = await import("../rules/react-jsx-a11y.js").then((m) => m.default || m);
 const vitestRules = await import("../rules/vitest.js").then((m) => m.default || m);
 const playwrightRules = await import("../rules/playwright.js").then((m) => m.default || m);
 const prettierRules = await import("../rules/prettier.js").then((m) => m.default || m);
@@ -202,8 +202,8 @@ function generateDocumentation() {
   );
   const reactTestRulesProcessed = processRules(reactRules.reactTestRules, path.join(rootDir, "rules", "react.js"));
   const reactJsxA11yRulesProcessed = processRules(
-    reactJsxA11yXRules.reactJsxA11yXRules,
-    path.join(rootDir, "rules", "react-jsx-a11y-x.js"),
+    reactJsxA11yRules.reactJsxA11yRules(),
+    path.join(rootDir, "rules", "react-jsx-a11y.js"),
   );
 
   console.info("Processing Vitest rules...");
