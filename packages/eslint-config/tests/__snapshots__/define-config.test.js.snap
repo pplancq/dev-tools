@@ -1,0 +1,5518 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`defineConfig > should resolve each option combination into the same blocks 1`] = `
+{
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":false,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":false,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":false,"enablePlaywright":true,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":false,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"legacy","enableVitest":true,"enablePlaywright":true,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "084a855c314d",
+      "plugins": [
+        "jsx-a11y",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":false,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":false,"enablePlaywright":true,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":false,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"disableStyleOnly"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"off"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+  "{"enableReact":true,"rulesNaming":"modern","enableVitest":true,"enablePlaywright":true,"enablePrettier":"on"}": [
+    {
+      "files": undefined,
+      "hash": "e6bbcabf7be4",
+      "plugins": [
+        "import",
+      ],
+      "rules": 45,
+      "settings": [
+        "import/extensions",
+        "import/core-modules",
+        "import/ignore",
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "d662283a8a67",
+      "plugins": [],
+      "rules": 291,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "b1c1c9dbe35a",
+      "plugins": [
+        "jsx-a11y-x",
+      ],
+      "rules": 36,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "034caf0b0d39",
+      "plugins": [
+        "@typescript-eslint",
+      ],
+      "rules": 146,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": undefined,
+      "hash": "29bbeb58660e",
+      "plugins": [
+        "react",
+        "react-hooks",
+      ],
+      "rules": 105,
+      "settings": [
+        "react",
+        "import/resolver",
+        "propWrapperFunctions",
+      ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "hash": "f087056f1fb4",
+      "plugins": [],
+      "rules": 3,
+      "settings": [
+        "import/resolver",
+      ],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "63baafa31db2",
+      "plugins": [
+        "jest-dom",
+        "testing-library",
+      ],
+      "rules": 38,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "eecc3eb376f9",
+      "plugins": [
+        "prettier",
+      ],
+      "rules": 1,
+      "settings": [],
+    },
+    {
+      "files": undefined,
+      "hash": "63534ca216ff",
+      "plugins": [],
+      "rules": 358,
+      "settings": [],
+    },
+    {
+      "files": [
+        "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "250854bca868",
+      "plugins": [
+        "@vitest",
+      ],
+      "rules": 54,
+      "settings": [],
+    },
+    {
+      "files": [
+        "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+      ],
+      "hash": "259fe8bf1f12",
+      "plugins": [
+        "playwright",
+      ],
+      "rules": 50,
+      "settings": [
+        "playwright",
+      ],
+    },
+    {
+      "files": [
+        "eslint.config.*",
+      ],
+      "hash": "70f7bfbbf706",
+      "plugins": [],
+      "rules": 2,
+      "settings": [],
+    },
+  ],
+}
+`;
+
+exports[`defineConfig > should resolve import and JSX a11y rules with rulesNaming 'legacy' 1`] = `
+[
+  {
+    "files": undefined,
+    "plugins": [
+      "import",
+    ],
+    "rules": {
+      "import/consistent-type-specifier-style": "off",
+      "import/default": "off",
+      "import/dynamic-import-chunkname": [
+        "off",
+        {
+          "importFunctions": [],
+          "webpackChunknameFormat": "[0-9a-zA-Z-_/.]+",
+        },
+      ],
+      "import/export": "error",
+      "import/exports-last": "off",
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+          "mjs": "never",
+        },
+      ],
+      "import/first": "error",
+      "import/group-exports": "off",
+      "import/imports-first": "off",
+      "import/max-dependencies": [
+        "off",
+        {
+          "max": 10,
+        },
+      ],
+      "import/named": "error",
+      "import/namespace": "off",
+      "import/newline-after-import": "error",
+      "import/no-absolute-path": "error",
+      "import/no-amd": "error",
+      "import/no-anonymous-default-export": [
+        "off",
+        {
+          "allowAnonymousClass": false,
+          "allowAnonymousFunction": false,
+          "allowArray": false,
+          "allowArrowFunction": false,
+          "allowLiteral": false,
+          "allowObject": false,
+        },
+      ],
+      "import/no-commonjs": "off",
+      "import/no-cycle": [
+        "error",
+        {
+          "maxDepth": "∞",
+        },
+      ],
+      "import/no-default-export": "error",
+      "import/no-deprecated": "off",
+      "import/no-duplicates": "error",
+      "import/no-dynamic-require": "error",
+      "import/no-empty-named-blocks": "off",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "test/**",
+            "tests/**",
+            "spec/**",
+            "**/__tests__/**",
+            "**/__mocks__/**",
+            "test.{js,jsx}",
+            "test-*.{js,jsx}",
+            "**/*{.,_}{test,spec}.{js,jsx}",
+            "**/jest.config.js",
+            "**/jest.setup.js",
+            "**/vue.config.js",
+            "**/webpack.config.js",
+            "**/webpack.config.*.js",
+            "**/rollup.config.js",
+            "**/rollup.config.*.js",
+            "**/gulpfile.js",
+            "**/gulpfile.*.js",
+            "**/Gruntfile{,.js}",
+            "**/protractor.conf.js",
+            "**/protractor.conf.*.js",
+            "**/karma.conf.js",
+            "**/.eslintrc.js",
+          ],
+          "optionalDependencies": false,
+        },
+      ],
+      "import/no-import-module-exports": [
+        "error",
+        {
+          "exceptions": [],
+        },
+      ],
+      "import/no-internal-modules": [
+        "off",
+        {
+          "allow": [],
+        },
+      ],
+      "import/no-mutable-exports": "error",
+      "import/no-named-as-default": "error",
+      "import/no-named-as-default-member": "error",
+      "import/no-named-default": "error",
+      "import/no-named-export": "off",
+      "import/no-namespace": "off",
+      "import/no-nodejs-modules": "off",
+      "import/no-relative-packages": "error",
+      "import/no-relative-parent-imports": "off",
+      "import/no-restricted-paths": "off",
+      "import/no-self-import": "error",
+      "import/no-unassigned-import": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "caseSensitive": true,
+          "commonjs": true,
+        },
+      ],
+      "import/no-unused-modules": [
+        "off",
+        {
+          "ignoreExports": [],
+          "missingExports": true,
+          "unusedExports": true,
+        },
+      ],
+      "import/no-useless-path-segments": [
+        "error",
+        {
+          "commonjs": true,
+        },
+      ],
+      "import/no-webpack-loader-syntax": "error",
+      "import/order": [
+        "error",
+        {
+          "groups": [
+            [
+              "builtin",
+              "external",
+              "internal",
+            ],
+          ],
+        },
+      ],
+      "import/prefer-default-export": "off",
+      "import/unambiguous": "off",
+    },
+    "settings": {
+      "import/core-modules": [],
+      "import/extensions": [
+        ".js",
+        ".mjs",
+        ".jsx",
+      ],
+      "import/ignore": [
+        "node_modules",
+        "\\.(coffee|scss|css|less|hbs|svg|json)$",
+      ],
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+          ],
+        },
+      },
+    },
+  },
+  {
+    "files": undefined,
+    "plugins": undefined,
+    "rules": {},
+    "settings": undefined,
+  },
+  {
+    "files": undefined,
+    "plugins": [
+      "jsx-a11y",
+    ],
+    "rules": {
+      "jsx-a11y/alt-text": [
+        "error",
+        {
+          "area": [],
+          "elements": [
+            "img",
+            "object",
+            "area",
+            "input[type="image"]",
+          ],
+          "img": [],
+          "input[type="image"]": [],
+          "object": [],
+        },
+      ],
+      "jsx-a11y/anchor-ambiguous-text": "off",
+      "jsx-a11y/anchor-has-content": [
+        "error",
+        {
+          "components": [],
+        },
+      ],
+      "jsx-a11y/anchor-is-valid": [
+        "error",
+        {
+          "aspects": [
+            "noHref",
+            "invalidHref",
+            "preferButton",
+          ],
+          "components": [
+            "Link",
+          ],
+          "specialLink": [
+            "to",
+          ],
+        },
+      ],
+      "jsx-a11y/aria-activedescendant-has-tabindex": "error",
+      "jsx-a11y/aria-props": "error",
+      "jsx-a11y/aria-proptypes": "error",
+      "jsx-a11y/aria-role": [
+        "error",
+        {
+          "ignoreNonDOM": false,
+        },
+      ],
+      "jsx-a11y/aria-unsupported-elements": "error",
+      "jsx-a11y/autocomplete-valid": [
+        "off",
+        {
+          "inputComponents": [],
+        },
+      ],
+      "jsx-a11y/click-events-have-key-events": "error",
+      "jsx-a11y/control-has-associated-label": [
+        "error",
+        {
+          "controlComponents": [],
+          "depth": 5,
+          "ignoreElements": [
+            "audio",
+            "canvas",
+            "embed",
+            "input",
+            "textarea",
+            "tr",
+            "video",
+          ],
+          "ignoreRoles": [
+            "grid",
+            "listbox",
+            "menu",
+            "menubar",
+            "radiogroup",
+            "row",
+            "tablist",
+            "toolbar",
+            "tree",
+            "treegrid",
+          ],
+          "labelAttributes": [
+            "label",
+          ],
+        },
+      ],
+      "jsx-a11y/heading-has-content": [
+        "error",
+        {
+          "components": [
+            "",
+          ],
+        },
+      ],
+      "jsx-a11y/html-has-lang": "error",
+      "jsx-a11y/iframe-has-title": "error",
+      "jsx-a11y/img-redundant-alt": "error",
+      "jsx-a11y/interactive-supports-focus": "error",
+      "jsx-a11y/label-has-associated-control": [
+        "error",
+        {
+          "assert": "both",
+          "controlComponents": [],
+          "depth": 25,
+          "labelAttributes": [],
+          "labelComponents": [],
+        },
+      ],
+      "jsx-a11y/lang": "error",
+      "jsx-a11y/media-has-caption": [
+        "error",
+        {
+          "audio": [],
+          "track": [],
+          "video": [],
+        },
+      ],
+      "jsx-a11y/mouse-events-have-key-events": "error",
+      "jsx-a11y/no-access-key": "error",
+      "jsx-a11y/no-aria-hidden-on-focusable": "off",
+      "jsx-a11y/no-autofocus": [
+        "error",
+        {
+          "ignoreNonDOM": true,
+        },
+      ],
+      "jsx-a11y/no-distracting-elements": [
+        "error",
+        {
+          "elements": [
+            "marquee",
+            "blink",
+          ],
+        },
+      ],
+      "jsx-a11y/no-interactive-element-to-noninteractive-role": [
+        "error",
+        {
+          "tr": [
+            "none",
+            "presentation",
+          ],
+        },
+      ],
+      "jsx-a11y/no-noninteractive-element-interactions": [
+        "error",
+        {
+          "handlers": [
+            "onClick",
+            "onMouseDown",
+            "onMouseUp",
+            "onKeyPress",
+            "onKeyDown",
+            "onKeyUp",
+          ],
+        },
+      ],
+      "jsx-a11y/no-noninteractive-element-to-interactive-role": [
+        "error",
+        {
+          "li": [
+            "menuitem",
+            "option",
+            "row",
+            "tab",
+            "treeitem",
+          ],
+          "ol": [
+            "listbox",
+            "menu",
+            "menubar",
+            "radiogroup",
+            "tablist",
+            "tree",
+            "treegrid",
+          ],
+          "table": [
+            "grid",
+          ],
+          "td": [
+            "gridcell",
+          ],
+          "ul": [
+            "listbox",
+            "menu",
+            "menubar",
+            "radiogroup",
+            "tablist",
+            "tree",
+            "treegrid",
+          ],
+        },
+      ],
+      "jsx-a11y/no-noninteractive-tabindex": [
+        "error",
+        {
+          "roles": [
+            "tabpanel",
+          ],
+          "tags": [],
+        },
+      ],
+      "jsx-a11y/no-redundant-roles": "error",
+      "jsx-a11y/no-static-element-interactions": [
+        "error",
+        {
+          "handlers": [
+            "onClick",
+            "onMouseDown",
+            "onMouseUp",
+            "onKeyPress",
+            "onKeyDown",
+            "onKeyUp",
+          ],
+        },
+      ],
+      "jsx-a11y/prefer-tag-over-role": "off",
+      "jsx-a11y/role-has-required-aria-props": "error",
+      "jsx-a11y/role-supports-aria-props": "error",
+      "jsx-a11y/scope": "error",
+      "jsx-a11y/tabindex-no-positive": "error",
+    },
+    "settings": undefined,
+  },
+  {
+    "files": [
+      "**/*.ts?(x)",
+    ],
+    "plugins": [
+      "@typescript-eslint",
+    ],
+    "rules": {
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "ts": "never",
+        },
+      ],
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".ts",
+          ],
+        },
+        "typescript": true,
+      },
+    },
+  },
+  {
+    "files": undefined,
+    "plugins": [
+      "react",
+      "react-hooks",
+    ],
+    "rules": {
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+        },
+      ],
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".jsx",
+          ],
+        },
+      },
+      "propWrapperFunctions": [
+        "forbidExtraProps",
+        "exact",
+        "Object.freeze",
+      ],
+      "react": {
+        "pragma": "React",
+        "version": "detect",
+      },
+    },
+  },
+  {
+    "files": [
+      "**/*.ts?(x)",
+    ],
+    "plugins": undefined,
+    "rules": {
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+          "ts": "never",
+          "tsx": "never",
+        },
+      ],
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx",
+          ],
+        },
+      },
+    },
+  },
+  {
+    "files": [
+      "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+    ],
+    "plugins": [
+      "jest-dom",
+      "testing-library",
+    ],
+    "rules": {},
+    "settings": undefined,
+  },
+  {
+    "files": undefined,
+    "plugins": [
+      "prettier",
+    ],
+    "rules": {},
+    "settings": undefined,
+  },
+  {
+    "files": undefined,
+    "plugins": undefined,
+    "rules": {},
+    "settings": undefined,
+  },
+  {
+    "files": [
+      "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+    ],
+    "plugins": [
+      "@vitest",
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": "off",
+    },
+    "settings": undefined,
+  },
+  {
+    "files": [
+      "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+    ],
+    "plugins": [
+      "playwright",
+    ],
+    "rules": {},
+    "settings": {
+      "playwright": {
+        "globalAliases": {
+          "expect": [
+            "expect",
+          ],
+          "test": [
+            "test",
+            "it",
+          ],
+        },
+      },
+    },
+  },
+  {
+    "files": [
+      "eslint.config.*",
+    ],
+    "plugins": undefined,
+    "rules": {
+      "import/no-default-export": "off",
+      "import/no-extraneous-dependencies": "off",
+    },
+    "settings": undefined,
+  },
+]
+`;
+
+exports[`defineConfig > should resolve import and JSX a11y rules with rulesNaming 'modern' 1`] = `
+[
+  {
+    "files": undefined,
+    "plugins": [
+      "import",
+    ],
+    "rules": {
+      "import/consistent-type-specifier-style": "off",
+      "import/default": "off",
+      "import/dynamic-import-chunkname": [
+        "off",
+        {
+          "importFunctions": [],
+          "webpackChunknameFormat": "[0-9a-zA-Z-_/.]+",
+        },
+      ],
+      "import/export": "error",
+      "import/exports-last": "off",
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+          "mjs": "never",
+        },
+      ],
+      "import/first": "error",
+      "import/group-exports": "off",
+      "import/imports-first": "off",
+      "import/max-dependencies": [
+        "off",
+        {
+          "max": 10,
+        },
+      ],
+      "import/named": "error",
+      "import/namespace": "off",
+      "import/newline-after-import": "error",
+      "import/no-absolute-path": "error",
+      "import/no-amd": "error",
+      "import/no-anonymous-default-export": [
+        "off",
+        {
+          "allowAnonymousClass": false,
+          "allowAnonymousFunction": false,
+          "allowArray": false,
+          "allowArrowFunction": false,
+          "allowLiteral": false,
+          "allowObject": false,
+        },
+      ],
+      "import/no-commonjs": "off",
+      "import/no-cycle": [
+        "error",
+        {
+          "maxDepth": "∞",
+        },
+      ],
+      "import/no-default-export": "error",
+      "import/no-deprecated": "off",
+      "import/no-duplicates": "error",
+      "import/no-dynamic-require": "error",
+      "import/no-empty-named-blocks": "off",
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "test/**",
+            "tests/**",
+            "spec/**",
+            "**/__tests__/**",
+            "**/__mocks__/**",
+            "test.{js,jsx}",
+            "test-*.{js,jsx}",
+            "**/*{.,_}{test,spec}.{js,jsx}",
+            "**/jest.config.js",
+            "**/jest.setup.js",
+            "**/vue.config.js",
+            "**/webpack.config.js",
+            "**/webpack.config.*.js",
+            "**/rollup.config.js",
+            "**/rollup.config.*.js",
+            "**/gulpfile.js",
+            "**/gulpfile.*.js",
+            "**/Gruntfile{,.js}",
+            "**/protractor.conf.js",
+            "**/protractor.conf.*.js",
+            "**/karma.conf.js",
+            "**/.eslintrc.js",
+          ],
+          "optionalDependencies": false,
+        },
+      ],
+      "import/no-import-module-exports": [
+        "error",
+        {
+          "exceptions": [],
+        },
+      ],
+      "import/no-internal-modules": [
+        "off",
+        {
+          "allow": [],
+        },
+      ],
+      "import/no-mutable-exports": "error",
+      "import/no-named-as-default": "error",
+      "import/no-named-as-default-member": "error",
+      "import/no-named-default": "error",
+      "import/no-named-export": "off",
+      "import/no-namespace": "off",
+      "import/no-nodejs-modules": "off",
+      "import/no-relative-packages": "error",
+      "import/no-relative-parent-imports": "off",
+      "import/no-restricted-paths": "off",
+      "import/no-self-import": "error",
+      "import/no-unassigned-import": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "caseSensitive": true,
+          "commonjs": true,
+        },
+      ],
+      "import/no-unused-modules": [
+        "off",
+        {
+          "ignoreExports": [],
+          "missingExports": true,
+          "unusedExports": true,
+        },
+      ],
+      "import/no-useless-path-segments": [
+        "error",
+        {
+          "commonjs": true,
+        },
+      ],
+      "import/no-webpack-loader-syntax": "error",
+      "import/order": [
+        "error",
+        {
+          "groups": [
+            [
+              "builtin",
+              "external",
+              "internal",
+            ],
+          ],
+        },
+      ],
+      "import/prefer-default-export": "off",
+      "import/unambiguous": "off",
+    },
+    "settings": {
+      "import/core-modules": [],
+      "import/extensions": [
+        ".js",
+        ".mjs",
+        ".jsx",
+      ],
+      "import/ignore": [
+        "node_modules",
+        "\\.(coffee|scss|css|less|hbs|svg|json)$",
+      ],
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+          ],
+        },
+      },
+    },
+  },
+  {
+    "files": undefined,
+    "plugins": undefined,
+    "rules": {},
+    "settings": undefined,
+  },
+  {
+    "files": undefined,
+    "plugins": [
+      "jsx-a11y-x",
+    ],
+    "rules": {
+      "jsx-a11y-x/alt-text": [
+        "error",
+        {
+          "area": [],
+          "elements": [
+            "img",
+            "object",
+            "area",
+            "input[type="image"]",
+          ],
+          "img": [],
+          "input[type="image"]": [],
+          "object": [],
+        },
+      ],
+      "jsx-a11y-x/anchor-ambiguous-text": "off",
+      "jsx-a11y-x/anchor-has-content": [
+        "error",
+        {
+          "components": [],
+        },
+      ],
+      "jsx-a11y-x/anchor-is-valid": [
+        "error",
+        {
+          "aspects": [
+            "noHref",
+            "invalidHref",
+            "preferButton",
+          ],
+          "components": [
+            "Link",
+          ],
+          "specialLink": [
+            "to",
+          ],
+        },
+      ],
+      "jsx-a11y-x/aria-activedescendant-has-tabindex": "error",
+      "jsx-a11y-x/aria-props": "error",
+      "jsx-a11y-x/aria-proptypes": "error",
+      "jsx-a11y-x/aria-role": [
+        "error",
+        {
+          "ignoreNonDOM": false,
+        },
+      ],
+      "jsx-a11y-x/aria-unsupported-elements": "error",
+      "jsx-a11y-x/autocomplete-valid": [
+        "off",
+        {
+          "inputComponents": [],
+        },
+      ],
+      "jsx-a11y-x/click-events-have-key-events": "error",
+      "jsx-a11y-x/control-has-associated-label": [
+        "error",
+        {
+          "controlComponents": [],
+          "depth": 5,
+          "ignoreElements": [
+            "audio",
+            "canvas",
+            "embed",
+            "input",
+            "textarea",
+            "tr",
+            "video",
+          ],
+          "ignoreRoles": [
+            "grid",
+            "listbox",
+            "menu",
+            "menubar",
+            "radiogroup",
+            "row",
+            "tablist",
+            "toolbar",
+            "tree",
+            "treegrid",
+          ],
+          "labelAttributes": [
+            "label",
+          ],
+        },
+      ],
+      "jsx-a11y-x/heading-has-content": [
+        "error",
+        {
+          "components": [
+            "",
+          ],
+        },
+      ],
+      "jsx-a11y-x/html-has-lang": "error",
+      "jsx-a11y-x/iframe-has-title": "error",
+      "jsx-a11y-x/img-redundant-alt": "error",
+      "jsx-a11y-x/interactive-supports-focus": "error",
+      "jsx-a11y-x/label-has-associated-control": [
+        "error",
+        {
+          "assert": "both",
+          "controlComponents": [],
+          "depth": 25,
+          "labelAttributes": [],
+          "labelComponents": [],
+        },
+      ],
+      "jsx-a11y-x/lang": "error",
+      "jsx-a11y-x/media-has-caption": [
+        "error",
+        {
+          "audio": [],
+          "track": [],
+          "video": [],
+        },
+      ],
+      "jsx-a11y-x/mouse-events-have-key-events": "error",
+      "jsx-a11y-x/no-access-key": "error",
+      "jsx-a11y-x/no-aria-hidden-on-focusable": "off",
+      "jsx-a11y-x/no-autofocus": [
+        "error",
+        {
+          "ignoreNonDOM": true,
+        },
+      ],
+      "jsx-a11y-x/no-distracting-elements": [
+        "error",
+        {
+          "elements": [
+            "marquee",
+            "blink",
+          ],
+        },
+      ],
+      "jsx-a11y-x/no-interactive-element-to-noninteractive-role": [
+        "error",
+        {
+          "tr": [
+            "none",
+            "presentation",
+          ],
+        },
+      ],
+      "jsx-a11y-x/no-noninteractive-element-interactions": [
+        "error",
+        {
+          "handlers": [
+            "onClick",
+            "onMouseDown",
+            "onMouseUp",
+            "onKeyPress",
+            "onKeyDown",
+            "onKeyUp",
+          ],
+        },
+      ],
+      "jsx-a11y-x/no-noninteractive-element-to-interactive-role": [
+        "error",
+        {
+          "li": [
+            "menuitem",
+            "option",
+            "row",
+            "tab",
+            "treeitem",
+          ],
+          "ol": [
+            "listbox",
+            "menu",
+            "menubar",
+            "radiogroup",
+            "tablist",
+            "tree",
+            "treegrid",
+          ],
+          "table": [
+            "grid",
+          ],
+          "td": [
+            "gridcell",
+          ],
+          "ul": [
+            "listbox",
+            "menu",
+            "menubar",
+            "radiogroup",
+            "tablist",
+            "tree",
+            "treegrid",
+          ],
+        },
+      ],
+      "jsx-a11y-x/no-noninteractive-tabindex": [
+        "error",
+        {
+          "roles": [
+            "tabpanel",
+          ],
+          "tags": [],
+        },
+      ],
+      "jsx-a11y-x/no-redundant-roles": "error",
+      "jsx-a11y-x/no-static-element-interactions": [
+        "error",
+        {
+          "handlers": [
+            "onClick",
+            "onMouseDown",
+            "onMouseUp",
+            "onKeyPress",
+            "onKeyDown",
+            "onKeyUp",
+          ],
+        },
+      ],
+      "jsx-a11y-x/prefer-tag-over-role": "off",
+      "jsx-a11y-x/role-has-required-aria-props": "error",
+      "jsx-a11y-x/role-supports-aria-props": "error",
+      "jsx-a11y-x/scope": "error",
+      "jsx-a11y-x/tabindex-no-positive": "error",
+    },
+    "settings": undefined,
+  },
+  {
+    "files": [
+      "**/*.ts?(x)",
+    ],
+    "plugins": [
+      "@typescript-eslint",
+    ],
+    "rules": {
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "ts": "never",
+        },
+      ],
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".ts",
+          ],
+        },
+        "typescript": true,
+      },
+    },
+  },
+  {
+    "files": undefined,
+    "plugins": [
+      "react",
+      "react-hooks",
+    ],
+    "rules": {
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+        },
+      ],
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".jsx",
+          ],
+        },
+      },
+      "propWrapperFunctions": [
+        "forbidExtraProps",
+        "exact",
+        "Object.freeze",
+      ],
+      "react": {
+        "pragma": "React",
+        "version": "detect",
+      },
+    },
+  },
+  {
+    "files": [
+      "**/*.ts?(x)",
+    ],
+    "plugins": undefined,
+    "rules": {
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+          "ts": "never",
+          "tsx": "never",
+        },
+      ],
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx",
+          ],
+        },
+      },
+    },
+  },
+  {
+    "files": [
+      "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+    ],
+    "plugins": [
+      "jest-dom",
+      "testing-library",
+    ],
+    "rules": {},
+    "settings": undefined,
+  },
+  {
+    "files": undefined,
+    "plugins": [
+      "prettier",
+    ],
+    "rules": {},
+    "settings": undefined,
+  },
+  {
+    "files": undefined,
+    "plugins": undefined,
+    "rules": {},
+    "settings": undefined,
+  },
+  {
+    "files": [
+      "**/*.{test,spec,steps}.{js,jsx,ts,tsx}",
+    ],
+    "plugins": [
+      "@vitest",
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": "off",
+    },
+    "settings": undefined,
+  },
+  {
+    "files": [
+      "tests/**/*.{test,spec}.{js,jsx,ts,tsx}",
+    ],
+    "plugins": [
+      "playwright",
+    ],
+    "rules": {},
+    "settings": {
+      "playwright": {
+        "globalAliases": {
+          "expect": [
+            "expect",
+          ],
+          "test": [
+            "test",
+            "it",
+          ],
+        },
+      },
+    },
+  },
+  {
+    "files": [
+      "eslint.config.*",
+    ],
+    "plugins": undefined,
+    "rules": {
+      "import/no-default-export": "off",
+      "import/no-extraneous-dependencies": "off",
+    },
+    "settings": undefined,
+  },
+]
+`;
