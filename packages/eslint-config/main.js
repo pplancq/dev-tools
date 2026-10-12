@@ -4,6 +4,7 @@ import { baseRules } from "./rules/base.js";
 import { importRules } from "./rules/import.js";
 import { playwrightRules } from "./rules/playwright.js";
 import { reactJsxA11yRules } from "./rules/react-jsx-a11y.js";
+import { reactJsxA11yXRules } from "./rules/react-jsx-a11y-x.js";
 import { reactRules, reactTestRules, reactTypescriptRules } from "./rules/react.js";
 import { typescriptRules } from "./rules/typescript.js";
 import { vitestRules } from "./rules/vitest.js";
@@ -35,6 +36,9 @@ const bold = isColorSupported ? (text) => `\x1b[1m${text}\x1b[22m` : (text) => t
  * @param {string[]} [options.unitTestFiles=['**\/*.{test,spec,steps}.{js,jsx,ts,tsx}']]
  * @param {string[]} [options.unitE2eFiles=['tests/**\/*.{test,spec}.{js,jsx,ts,tsx}']]
  * @param {boolean} [options.enableReact=false]
+ * @param {'legacy' | 'modern'} [options.rulesNaming='legacy']
+ *   - `'legacy'`: registers `eslint-plugin-jsx-a11y-x` under the `jsx-a11y` namespace (rules named `jsx-a11y/xxx`).
+ *   - `'modern'`: registers `eslint-plugin-jsx-a11y-x` under its own namespace (rules named `jsx-a11y-x/xxx`).
  * @param {boolean} [options.enableVitest=false]
  * @param {boolean} [options.enablePlaywright=false]
  * @param {'off' | 'on' | 'disableStyleOnly'} [options.enablePrettier='off']
@@ -54,6 +58,7 @@ export const defineConfig = ({
   unitTestFiles = ["**/*.{test,spec,steps}.{js,jsx,ts,tsx}"],
   unitE2eFiles = ["tests/**/*.{test,spec}.{js,jsx,ts,tsx}"],
   enableReact = false,
+  rulesNaming = "legacy",
   enableVitest = false,
   enablePlaywright = false,
   enablePrettier = "off",
@@ -71,6 +76,12 @@ export const defineConfig = ({
     );
   }
 
+  if (enableReact && rulesNaming === "legacy") {
+    console.warn(
+      `${bold(yellow("WARNING:"))} [rulesNaming: 'legacy'] the JSX a11y rules use the legacy 'jsx-a11y/xxx' names. In the next major release, the default will become 'modern' ('jsx-a11y-x/xxx'). Set rulesNaming: 'modern' to migrate now.`,
+    );
+  }
+
   if (enablePrettier === "disableStyleOnly") {
     prettierRules.rules["prettier/prettier"] = "off";
   }
@@ -78,7 +89,7 @@ export const defineConfig = ({
   return [
     importRules,
     baseRules,
-    enableReact && reactJsxA11yRules,
+    enableReact && (rulesNaming === "modern" ? reactJsxA11yXRules : reactJsxA11yRules),
     typescriptRules,
     enableReact && reactRules,
     enableReact && reactTypescriptRules,
