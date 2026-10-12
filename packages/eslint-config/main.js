@@ -28,6 +28,49 @@ const isColorSupported =
 const yellow = isColorSupported ? (text) => `\x1b[33m${text}\x1b[39m` : (text) => text;
 const bold = isColorSupported ? (text) => `\x1b[1m${text}\x1b[22m` : (text) => text;
 
+const warn = (message) => console.warn(`${bold(yellow("WARNING:"))} ${message}`);
+
+const resolveNamespaces = (rulesNaming) => {
+  const modern = rulesNaming === "modern";
+
+  return {
+    jsxA11y: modern ? "jsx-a11y-x" : "jsx-a11y",
+    import: modern ? "import-x" : "import",
+  };
+};
+
+const warnLegacyNaming = (enableReact) => {
+  const legacyNames = enableReact ? "'import/xxx' and 'jsx-a11y/xxx'" : "'import/xxx'";
+  const modernNames = enableReact ? "'import-x/xxx' and 'jsx-a11y-x/xxx'" : "'import-x/xxx'";
+
+  warn(
+    `[rulesNaming: 'legacy'] the rules use the legacy ${legacyNames} names. In the next major release, the default will become 'modern' (${modernNames}). Set rulesNaming: 'modern' to migrate now.`,
+  );
+};
+
+const resolvePrettierRules = (enablePrettier) => {
+  const prettierRules = createPrettierRules();
+
+  if (enablePrettier === "disableStyleOnly") {
+    prettierRules.rules["prettier/prettier"] = "off";
+  }
+
+  return prettierRules;
+};
+
+const resolveExtendConfig = (extendConfig) => {
+  const { configs, mapped } = mapLegacyImportSettings(extendConfig);
+
+  if (mapped.length > 0) {
+    const settings = mapped.map((setting) => `'${setting}'`).join(", ");
+    warn(
+      `[rulesNaming: 'legacy'] eslint-plugin-import-x only reads the 'import-x/*' settings. The following settings were copied automatically: ${settings}. Rename them to 'import-x/*' in your configuration.`,
+    );
+  }
+
+  return configs;
+};
+
 /**
  * define eslint flat config.
  *
@@ -67,40 +110,22 @@ export const defineConfig = ({
   enablePrettier = "off",
   extendConfig = [],
 } = {}) => {
-  const ns = {
-    jsxA11y: rulesNaming === "modern" ? "jsx-a11y-x" : "jsx-a11y",
-    import: rulesNaming === "modern" ? "import-x" : "import",
-  };
+  const ns = resolveNamespaces(rulesNaming);
+  const legacyNaming = rulesNaming === "legacy";
 
   if (enablePrettier === "on") {
-    console.warn(
-      `${bold(yellow("WARNING:"))} [enablePrettier: 'on'] is deprecated and will be removed in the next major release. Use 'disableStyleOnly' and run Prettier separately for formatting.`,
+    warn(
+      "[enablePrettier: 'on'] is deprecated and will be removed in the next major release. Use 'disableStyleOnly' and run Prettier separately for formatting.",
     );
   }
 
-  const legacyNaming = rulesNaming === "legacy";
   if (legacyNaming) {
-    const legacyNames = enableReact ? "'import/xxx' and 'jsx-a11y/xxx'" : "'import/xxx'";
-    const modernNames = enableReact ? "'import-x/xxx' and 'jsx-a11y-x/xxx'" : "'import-x/xxx'";
-    console.warn(
-      `${bold(yellow("WARNING:"))} [rulesNaming: 'legacy'] the rules use the legacy ${legacyNames} names. In the next major release, the default will become 'modern' (${modernNames}). Set rulesNaming: 'modern' to migrate now.`,
-    );
+    warnLegacyNaming(enableReact);
   }
 
-  const { configs: extendedConfig, mapped: mappedSettings } = legacyNaming
-    ? mapLegacyImportSettings(extendConfig)
-    : { configs: extendConfig, mapped: [] };
+  const extendedConfig = legacyNaming ? resolveExtendConfig(extendConfig) : extendConfig;
 
-  if (mappedSettings.length > 0) {
-    console.warn(
-      `${bold(yellow("WARNING:"))} [rulesNaming: 'legacy'] eslint-plugin-import-x only reads the 'import-x/*' settings. The following settings were copied automatically: ${mappedSettings.map((setting) => `'${setting}'`).join(", ")}. Rename them to 'import-x/*' in your configuration.`,
-    );
-  }
-
-  const prettierRules = createPrettierRules();
-  if (enablePrettier === "disableStyleOnly") {
-    prettierRules.rules["prettier/prettier"] = "off";
-  }
+  const prettierRules = resolvePrettierRules(enablePrettier);
 
   return [
     importRules(ns),
