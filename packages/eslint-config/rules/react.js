@@ -3,7 +3,7 @@ import reactPlugin from "eslint-plugin-react";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 import testingLibraryPlugin from "eslint-plugin-testing-library";
 
-export const reactRules = {
+export const reactRules = () => ({
   plugins: {
     react: reactPlugin,
     "react-hooks": reactHooksPlugin,
@@ -648,9 +648,9 @@ export const reactRules = {
       "Object.freeze", // https://tc39.github.io/ecma262/#sec-object.freeze
     ],
   },
-};
+});
 
-export const reactTypescriptRules = {
+export const reactTypescriptRules = ({ files } = {}) => ({
   settings: {
     "import/resolver": {
       node: {
@@ -694,9 +694,10 @@ export const reactTypescriptRules = {
       },
     ],
   },
-};
+  files,
+});
 
-export const reactTestRules = {
+export const reactTestRules = ({ files } = {}) => ({
   plugins: {
     "testing-library": testingLibraryPlugin,
     "jest-dom": jestDom,
@@ -858,4 +859,5 @@ export const reactTestRules = {
     // https://github.com/testing-library/eslint-plugin-testing-library/blob/main/docs/rules/render-result-naming-convention.md
     "testing-library/render-result-naming-convention": "error",
   },
-};
+  files,
+});

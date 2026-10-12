@@ -187,36 +187,39 @@ function generateDocumentation() {
 
   // Process each configuration section
   console.info("Processing base rules...");
-  const baseRulesProcessed = processRules(baseRules.baseRules, path.join(rootDir, "rules", "base.js"));
-  const importRulesProcessed = processRules(importRules.importRules, path.join(rootDir, "rules", "import.js"));
+  const baseRulesProcessed = processRules(baseRules.baseRules(), path.join(rootDir, "rules", "base.js"));
+  const importRulesProcessed = processRules(importRules.importRules(), path.join(rootDir, "rules", "import.js"));
   const typescriptRulesProcessed = processRules(
-    typescriptRules.typescriptRules,
+    typescriptRules.typescriptRules(),
     path.join(rootDir, "rules", "typescript.js"),
   );
 
   console.info("Processing React rules...");
-  const reactRulesProcessed = processRules(reactRules.reactRules, path.join(rootDir, "rules", "react.js"));
+  const reactRulesProcessed = processRules(reactRules.reactRules(), path.join(rootDir, "rules", "react.js"));
   const reactTypescriptRulesProcessed = processRules(
-    reactRules.reactTypescriptRules,
+    reactRules.reactTypescriptRules(),
     path.join(rootDir, "rules", "react.js"),
   );
-  const reactTestRulesProcessed = processRules(reactRules.reactTestRules, path.join(rootDir, "rules", "react.js"));
+  const reactTestRulesProcessed = processRules(reactRules.reactTestRules(), path.join(rootDir, "rules", "react.js"));
   const reactJsxA11yRulesProcessed = processRules(
     reactJsxA11yRules.reactJsxA11yRules(),
     path.join(rootDir, "rules", "react-jsx-a11y.js"),
   );
 
   console.info("Processing Vitest rules...");
-  const vitestRulesProcessed = processRules(vitestRules.vitestRules, path.join(rootDir, "rules", "vitest.js"));
+  const vitestRulesProcessed = processRules(vitestRules.vitestRules(), path.join(rootDir, "rules", "vitest.js"));
 
   console.info("Processing Playwright rules...");
   const playwrightRulesProcessed = processRules(
-    playwrightRules.playwrightRules,
+    playwrightRules.playwrightRules(),
     path.join(rootDir, "rules", "playwright.js"),
   );
 
   console.info("Processing Prettier rules...");
-  const prettierRulesProcessed = processRules(prettierRules.prettierRules, path.join(rootDir, "rules", "prettier.js"));
+  const prettierRulesProcessed = processRules(
+    prettierRules.prettierRules(),
+    path.join(rootDir, "rules", "prettier.js"),
+  );
 
   // Combine all base rules (base + import + typescript)
   const allBaseRules = [...baseRulesProcessed, ...importRulesProcessed, ...typescriptRulesProcessed];

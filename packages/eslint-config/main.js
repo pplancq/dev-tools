@@ -8,10 +8,10 @@ import { reactRules, reactTestRules, reactTypescriptRules } from "./rules/react.
 import { typescriptRules } from "./rules/typescript.js";
 import { vitestRules } from "./rules/vitest.js";
 
-let prettierRules = {};
+let createPrettierRules = () => ({});
 try {
   const prettierConfig = await import("./rules/prettier.js");
-  prettierRules = prettierConfig.prettierRules;
+  createPrettierRules = prettierConfig.prettierRules;
 } catch {
   // eslint-plugin-prettier is not installed
 }
@@ -63,11 +63,7 @@ export const defineConfig = ({
   enablePrettier = "off",
   extendConfig = [],
 } = {}) => {
-  typescriptRules.files = tsFiles;
-  reactTypescriptRules.files = tsFiles;
-  reactTestRules.files = unitTestFiles;
-  vitestRules.files = unitTestFiles;
-  playwrightRules.files = unitE2eFiles;
+  const ns = { jsxA11y: rulesNaming === "modern" ? "jsx-a11y-x" : "jsx-a11y" };
 
   if (enablePrettier === "on") {
     console.warn(
@@ -81,22 +77,23 @@ export const defineConfig = ({
     );
   }
 
+  const prettierRules = createPrettierRules();
   if (enablePrettier === "disableStyleOnly") {
     prettierRules.rules["prettier/prettier"] = "off";
   }
 
   return [
-    importRules,
-    baseRules,
-    enableReact && reactJsxA11yRules({ jsxA11y: rulesNaming === "modern" ? "jsx-a11y-x" : "jsx-a11y" }),
-    typescriptRules,
-    enableReact && reactRules,
-    enableReact && reactTypescriptRules,
-    enableReact && reactTestRules,
+    importRules(),
+    baseRules(),
+    enableReact && reactJsxA11yRules(ns),
+    typescriptRules({ files: tsFiles }),
+    enableReact && reactRules(),
+    enableReact && reactTypescriptRules({ files: tsFiles }),
+    enableReact && reactTestRules({ files: unitTestFiles }),
     enablePrettier !== "off" && prettierRules,
     enablePrettier !== "off" && eslintConfigPrettier,
-    enableVitest && vitestRules,
-    enablePlaywright && playwrightRules,
+    enableVitest && vitestRules({ files: unitTestFiles }),
+    enablePlaywright && playwrightRules({ files: unitE2eFiles }),
     {
       files: ["eslint.config.*"],
       rules: {

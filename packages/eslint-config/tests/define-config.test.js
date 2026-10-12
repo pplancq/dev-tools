@@ -93,6 +93,16 @@ describe("defineConfig", () => {
     expect(summaries).toMatchSnapshot();
   });
 
+  it("should not share state between calls", () => {
+    const findPrettier = (config) => config.find((block) => block.plugins?.prettier);
+
+    defineConfig({ enablePrettier: "disableStyleOnly", tsFiles: ["custom/**/*.ts"] });
+    const config = defineConfig({ enablePrettier: "on" });
+
+    expect(findPrettier(config).rules["prettier/prettier"]).toBe("error");
+    expect(config.find((block) => block.languageOptions?.parser).files).toStrictEqual(["**/*.ts?(x)"]);
+  });
+
   it("should append extendConfig at the end", () => {
     const extension = { rules: { "no-console": "error" } };
 
