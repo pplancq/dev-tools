@@ -32,7 +32,7 @@ function getPluginName(ruleName) {
     case ruleName.startsWith("react-hooks/"):
       return "eslint-plugin-react";
     case ruleName.startsWith("jsx-a11y/"):
-      return "eslint-plugin-jsx-a11y";
+      return "eslint-plugin-jsx-a11y-x";
     case ruleName.startsWith("@vitest/"):
       return "@vitest/eslint-plugin";
     case ruleName.startsWith("playwright/"):
@@ -62,7 +62,7 @@ function getRuleDocUrl(ruleName) {
     case ruleName.startsWith("react/"):
       return `https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/${getRuleName("react/")}.md`;
     case ruleName.startsWith("jsx-a11y/"):
-      return `https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/${getRuleName("jsx-a11y/")}.md`;
+      return `https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/blob/main/docs/rules/${getRuleName("jsx-a11y/")}.md`;
     case ruleName.startsWith("@vitest/"):
       return `https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/${getRuleName("@vitest/")}.md`;
     case ruleName.startsWith("playwright/"):
