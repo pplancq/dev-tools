@@ -51,7 +51,7 @@ const warnLegacyNaming = (enableReact) => {
 const resolvePrettierRules = (enablePrettier) => {
   const prettierRules = createPrettierRules();
 
-  if (enablePrettier === "disableStyleOnly") {
+  if (enablePrettier === "disableStyleOnly" && prettierRules.rules?.["prettier/prettier"] !== undefined) {
     prettierRules.rules["prettier/prettier"] = "off";
   }
 
