@@ -45,7 +45,7 @@
   "devDependencies": {
     "eslint": "^9.39.5",
     "lint-staged": "^17.6.0",
-    "prettier": "^3.9.9"
+    "prettier": "^3.9.10"
   },
   "engines": {
     "node": ">=20.9.0"
