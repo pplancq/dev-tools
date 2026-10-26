@@ -39,12 +39,20 @@ const pickMigratedParts = (config) => {
 
 const hash = (value) => createHash("sha256").update(JSON.stringify(value)).digest("hex").slice(0, 12);
 
+// typescript-eslint rule options change between releases, so they are excluded from the hash to keep the snapshot stable on dependency updates
+const withoutTypescriptEslintRules = (config) => ({
+  ...config,
+  rules: Object.fromEntries(
+    Object.entries(config.rules ?? {}).filter(([name]) => !name.startsWith("@typescript-eslint/")),
+  ),
+});
+
 const summarize = (config) => ({
   files: config.files,
   plugins: Object.keys(config.plugins ?? {}).sort(),
   rules: Object.keys(config.rules ?? {}).length,
   settings: Object.keys(config.settings ?? {}),
-  hash: hash(serialize(config)),
+  hash: hash(serialize(withoutTypescriptEslintRules(config))),
 });
 
 const combinations = () =>
