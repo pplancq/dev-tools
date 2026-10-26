@@ -61,7 +61,7 @@
   },
   "devDependencies": {
     "@bdellegrazie/playwright-sonar-reporter": "^0.5.2",
-    "@commitlint/cli": "^21.2.3",
+    "@commitlint/cli": "^21.2.4",
     "@msw/playwright": "^0.7.0",
     "@playwright/test": "^1.64.0",
     "@pplancq/commitlint-config": "^4.0.10",
