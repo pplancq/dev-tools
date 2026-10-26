@@ -82,7 +82,7 @@
     "concurrently": "^10.0.6",
     "eslint": "^9.39.5",
     "husky": "^9.1.7",
-    "jsdom": "^30.1.2",
+    "jsdom": "^30.1.3",
     "lint-staged": "^17.6.0",
     "monocart-coverage-reports": "^2.13.2",
     "msw": "^3.0.2",
