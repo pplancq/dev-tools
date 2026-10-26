@@ -1,3 +1,38 @@
+## 2.10.8 (2026-10-26)
+
+### 🎉 Features
+
+- **eslint-config:** migrate import rules to eslint-plugin-import-x ([#1938](https://github.com/pplancq/dev-tools/pull/1938))
+
+### 📦 Dependencies
+
+- Updated @pplancq/commitlint-config to 4.0.11
+- Updated @pplancq/stylelint-config to 6.1.6
+- Updated @pplancq/prettier-config to 5.0.3
+- Updated @pplancq/eslint-config to 6.2.0
+- **deps:** update dependency @hookform/resolvers to v6 ([#1966](https://github.com/pplancq/dev-tools/pull/1966))
+- **deps:** update dependency react-hook-form to ^7.90.0 ([#1954](https://github.com/pplancq/dev-tools/pull/1954))
+- **deps:** update react ecosystem to ^19.3.1 ([#1969](https://github.com/pplancq/dev-tools/pull/1969))
+- **deps:** update commitlint monorepo to ^21.2.4 ([#1960](https://github.com/pplancq/dev-tools/pull/1960))
+- **deps:** update react-query mono repo to ^5.104.5 ([#1951](https://github.com/pplancq/dev-tools/pull/1951))
+- **deps:** update dependency @rsbuild/core to ^2.2.14 ([#1941](https://github.com/pplancq/dev-tools/pull/1941))
+- **deps:** update dependency msw to ^3.0.3 ([#1945](https://github.com/pplancq/dev-tools/pull/1945))
+- **deps:** update dependency jsdom to ^30.1.3 ([#1944](https://github.com/pplancq/dev-tools/pull/1944))
+- **deps:** update dependency @playwright/test to ^1.64.1 ([#1940](https://github.com/pplancq/dev-tools/pull/1940))
+- **deps:** update dependency @testing-library/user-event to ^14.6.8 ([#1942](https://github.com/pplancq/dev-tools/pull/1942))
+- **deps:** update dependency react-router to ^8.5.0 ([#1964](https://github.com/pplancq/dev-tools/pull/1964))
+- **deps:** update dependency monocart-coverage-reports to ^2.13.2 ([#1930](https://github.com/pplancq/dev-tools/pull/1930))
+- **deps:** update dependency concurrently to ^10.0.6 ([#1928](https://github.com/pplancq/dev-tools/pull/1928))
+- **deps:** update dependency @playwright/test to ^1.64.0 ([#1935](https://github.com/pplancq/dev-tools/pull/1935))
+- **deps:** update react-query mono repo to ^5.104.1 ([#1933](https://github.com/pplancq/dev-tools/pull/1933))
+- **deps:** update dependency jsdom to ^30.1.2 ([#1929](https://github.com/pplancq/dev-tools/pull/1929))
+- **deps:** update dependency @vitejs/plugin-react to ^6.1.2 ([#1927](https://github.com/pplancq/dev-tools/pull/1927))
+- **deps:** update dependency @rsbuild/core to ^2.2.12 ([#1926](https://github.com/pplancq/dev-tools/pull/1926))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 2.10.7 (2026-10-06)
 
 ### 📦 Dependencies

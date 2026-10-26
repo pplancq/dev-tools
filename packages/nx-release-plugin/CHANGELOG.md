@@ -1,3 +1,13 @@
+## 1.0.9 (2026-10-26)
+
+### 📦 Dependencies
+
+- **deps:** update nx monorepo to ^23.3.0 ([#1936](https://github.com/pplancq/dev-tools/pull/1936))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 
 
 ## 1.0.7 (2026-09-30)

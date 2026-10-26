@@ -1,3 +1,27 @@
+## 6.2.0 (2026-10-26)
+
+### 🎉 Features
+
+- **eslint-config:** migrate import rules to eslint-plugin-import-x ([#1938](https://github.com/pplancq/dev-tools/pull/1938))
+- **eslint-config:** migrate JSX a11y rules to eslint-plugin-jsx-a11y-x ([#1937](https://github.com/pplancq/dev-tools/pull/1937))
+
+### 🐞 Bug Fixes
+
+- **eslint-config:** support disableStyleOnly without eslint-plugin-prettier ([#1956](https://github.com/pplancq/dev-tools/pull/1956))
+- **eslint-config:** remove unneeded eslint-import-resolver-node dependency ([#1939](https://github.com/pplancq/dev-tools/pull/1939))
+
+### 📦 Dependencies
+
+- **deps:** update typescript-eslint mono repo to ^8.71.2 ([#1952](https://github.com/pplancq/dev-tools/pull/1952))
+- **deps:** update dependency @vitest/eslint-plugin to ^1.6.28 ([#1962](https://github.com/pplancq/dev-tools/pull/1962))
+- **deps:** update typescript-eslint mono repo to ^8.71.1 ([#1934](https://github.com/pplancq/dev-tools/pull/1934))
+- **deps:** update dependency eslint-plugin-playwright to ^2.12.1 ([#1932](https://github.com/pplancq/dev-tools/pull/1932))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+- pplancq @pplancq
+
 ## 6.1.5 (2026-10-06)
 
 ### 📦 Dependencies

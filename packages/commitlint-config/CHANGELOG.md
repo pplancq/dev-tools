@@ -1,3 +1,9 @@
+## 4.0.11 (2026-10-26)
+
+### 📦 Dependencies
+
+- **deps:** update commitlint monorepo to ^21.2.4 ([#1960](https://github.com/pplancq/dev-tools/pull/1960))
+
 
 
 ## 4.0.9 (2026-09-30)
