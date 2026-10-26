@@ -1,4 +1,3 @@
-import { createHash } from "node:crypto";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { defineConfig } from "@pplancq/eslint-config";
 
@@ -37,14 +36,11 @@ const pickMigratedParts = (config) => {
   };
 };
 
-const hash = (value) => createHash("sha256").update(JSON.stringify(value)).digest("hex").slice(0, 12);
-
+// Only the structure of each block is summarized: rule sets and options come from third-party plugins and change on every update
 const summarize = (config) => ({
   files: config.files,
   plugins: Object.keys(config.plugins ?? {}).sort(),
-  rules: Object.keys(config.rules ?? {}).length,
   settings: Object.keys(config.settings ?? {}),
-  hash: hash(serialize(config)),
 });
 
 const combinations = () =>
