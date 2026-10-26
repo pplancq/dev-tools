@@ -12,7 +12,7 @@
     "type": "git",
     "url": "https://github.com/pplancq/dev-tools"
   },
-  "packageManager": "npm@12.2.0",
+  "packageManager": "npm@12.2.1",
   "scripts": {
     "build": "npm run build --workspaces --if-present",
     "test": "vitest run",
@@ -46,7 +46,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "nx": "^23.3.0",
-    "prettier": "^3.9.9"
+    "prettier": "^3.9.10"
   },
   "lint-staged": {
     "(package|package-lock).json": "npm run package:check",
