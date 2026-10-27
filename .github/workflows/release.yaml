@@ -4,17 +4,17 @@ on:
   workflow_dispatch:
     inputs:
       dryRun:
-        description: "Dry run"
+        description: Dry run
         required: false
         type: boolean
         default: false
       debug:
-        description: "Debug mode"
+        description: Debug mode
         required: false
         type: boolean
         default: false
       releaseType:
-        description: "Release type"
+        description: Release type
         required: false
         type: choice
         options:
@@ -23,6 +23,11 @@ on:
           - beta
           - rc
         default: stable
+      firstRelease:
+        description: First release (allow missing previous release reference)
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -41,49 +46,16 @@ jobs:
       id-token: write
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-        with:
-          fetch-depth: 0
-
-      - name: Setup Node
-        uses: pplancq/actions/setup-node@2c562638cd9f0ca64f237af46f6052e71b2536b8 # v1.1.5
-        with:
-          use-mise: true
-
-      - name: Install package
-        run: npm ci --ignore-scripts
-
-      - name: Config npm
-        run: |
-          npm config set access=public
-          npm config set provenance=true
-
-      - name: Build nx release plugin
-        run: npm run build --workspace @pplancq/nx-release-plugin
-
       - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_AUTHOR_EMAIL: ${{ vars.GIT_AUTHOR_EMAIL }}
-          GIT_AUTHOR_NAME: ${{ vars.GIT_AUTHOR_NAME }}
-          GIT_COMMITTER_EMAIL: ${{ vars.GIT_COMMITTER_EMAIL }}
-          GIT_COMMITTER_NAME: ${{ vars.GIT_COMMITTER_NAME }}
-        run: |
-          RELEASE_TYPE="${{ github.event.inputs.releaseType }}"
-          ARGS=("--yes")
-
-          if [ "$RELEASE_TYPE" != "stable" ]; then
-            ARGS=("prerelease" "${ARGS[@]}")
-            ARGS+=("--preid" "$RELEASE_TYPE")
-          fi
-
-          if [ "${{ github.event.inputs.dryRun }}" = "true" ]; then
-            ARGS+=("--dry-run")
-          fi
-
-          if [ "${{ github.event.inputs.debug }}" = "true" ]; then
-            ARGS+=("--verbose")
-          fi
-
-          npx nx release "${ARGS[@]}"
+        uses: pplancq/actions/nx-release@2c562638cd9f0ca64f237af46f6052e71b2536b8 # v1.1.5
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: ${{ inputs.releaseType }}
+          first-release: ${{ inputs.firstRelease }}
+          dry-run: ${{ inputs.dryRun }}
+          debug: ${{ inputs.debug }}
+          build-command: npm run build --workspace @pplancq/nx-release-plugin
+          git-author-email: ${{ vars.GIT_AUTHOR_EMAIL }}
+          git-author-name: ${{ vars.GIT_AUTHOR_NAME }}
+          git-committer-email: ${{ vars.GIT_COMMITTER_EMAIL }}
+          git-committer-name: ${{ vars.GIT_COMMITTER_NAME }}
