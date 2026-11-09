@@ -41,11 +41,11 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@nx/js": "^23.3.0",
+    "@nx/js": "^23.3.1",
     "concurrently": "^10.0.6",
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
-    "nx": "^23.3.0",
+    "nx": "^23.3.1",
     "prettier": "^3.9.10"
   },
   "lint-staged": {
