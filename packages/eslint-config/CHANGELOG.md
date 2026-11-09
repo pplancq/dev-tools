@@ -1,3 +1,15 @@
+## 6.2.1 (2026-11-09)
+
+### 📦 Dependencies
+
+- **deps:** update nx tooling to ^23.3.1 ([#1979](https://github.com/pplancq/dev-tools/pull/1979))
+- **deps:** update typescript-eslint mono repo to ^8.72.1 ([#1985](https://github.com/pplancq/dev-tools/pull/1985))
+- **deps:** update dependency eslint-plugin-playwright to ^2.12.2 ([#1976](https://github.com/pplancq/dev-tools/pull/1976))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 6.2.0 (2026-10-26)
 
 ### 🎉 Features

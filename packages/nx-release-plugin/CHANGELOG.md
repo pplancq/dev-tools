@@ -1,3 +1,13 @@
+## 1.0.10 (2026-11-09)
+
+### 📦 Dependencies
+
+- **deps:** update nx tooling to ^23.3.1 ([#1979](https://github.com/pplancq/dev-tools/pull/1979))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 1.0.9 (2026-10-26)
 
 ### 📦 Dependencies

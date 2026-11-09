@@ -1,3 +1,16 @@
+## 2.10.9 (2026-11-09)
+
+### 📦 Dependencies
+
+- Updated @pplancq/commitlint-config to 4.0.12
+- Updated @pplancq/stylelint-config to 6.1.7
+- Updated @pplancq/prettier-config to 5.0.4
+- Updated @pplancq/eslint-config to 6.2.1
+- **deps:** update dependency react-hook-form to ^7.91.0 ([#1982](https://github.com/pplancq/dev-tools/pull/1982))
+- **deps:** update react-query mono repo to ^5.105.0 ([#1984](https://github.com/pplancq/dev-tools/pull/1984))
+- **deps:** update dependency react-router to ^8.5.1 ([#1977](https://github.com/pplancq/dev-tools/pull/1977))
+- **deps:** update dependency @hookform/resolvers to ^6.0.2 ([#1975](https://github.com/pplancq/dev-tools/pull/1975))
+
 ## 2.10.8 (2026-10-26)
 
 ### 🎉 Features

@@ -1,3 +1,10 @@
+## 6.1.7 (2026-11-09)
+
+### 📦 Dependencies
+
+- **deps:** update dependency stylelint-config-recess-order to ^7.9.0 ([#1983](https://github.com/pplancq/dev-tools/pull/1983))
+- **deps:** update dependency stylelint-order to ^8.1.3 ([#1978](https://github.com/pplancq/dev-tools/pull/1978))
+
 ## 6.1.6 (2026-10-26)
 
 ### 📦 Dependencies
