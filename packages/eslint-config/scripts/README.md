@@ -18,9 +18,10 @@ This script:
 
 1. Loads all rule configuration files from the `rules/` directory
 2. Extracts active rules (those set to 'warn' or 'error')
-3. Generates markdown tables for each configuration type
-4. Updates the `docs/rules.md` file by replacing content between HTML comment markers
-5. Runs Prettier to format the output file
+3. Resolves each rule's plugin name and documentation URL from its namespace
+4. Generates markdown tables for each configuration type
+5. Updates the `docs/rules.md` file by replacing content between HTML comment markers
+6. Runs Prettier to format the output file
 
 ### Template Markers
 
