@@ -4,7 +4,7 @@ import { baseRules } from "./rules/base.js";
 import { importRules } from "./rules/import.js";
 import { playwrightRules } from "./rules/playwright.js";
 import { reactJsxA11yRules } from "./rules/react-jsx-a11y.js";
-import { reactRules, reactTestRules, reactTypescriptRules } from "./rules/react.js";
+import { reactRules, reactTestRules, reactTypeCheckedRules, reactTypescriptRules } from "./rules/react.js";
 import { typescriptRules } from "./rules/typescript.js";
 import { mapLegacyImportSettings, prefix } from "./rules/utils.js";
 import { vitestRules } from "./rules/vitest.js";
@@ -42,9 +42,12 @@ const resolveNamespaces = (rulesNaming) => {
 const warnLegacyNaming = (enableReact) => {
   const legacyNames = enableReact ? "'import/xxx' and 'jsx-a11y/xxx'" : "'import/xxx'";
   const modernNames = enableReact ? "'import-x/xxx' and 'jsx-a11y-x/xxx'" : "'import-x/xxx'";
+  const reactNamingNote = enableReact
+    ? " React rules always use their fork namespaces, independently of this option."
+    : "";
 
   warn(
-    `[rulesNaming: 'legacy'] the rules use the legacy ${legacyNames} names. In the next major release, the default will become 'modern' (${modernNames}). Set rulesNaming: 'modern' to migrate now.`,
+    `[rulesNaming: 'legacy'] the rules use the legacy ${legacyNames} names. In the next major release, the default will become 'modern' (${modernNames}). Set rulesNaming: 'modern' to migrate now.${reactNamingNote}`,
   );
 };
 
@@ -85,6 +88,7 @@ const resolveExtendConfig = (extendConfig) => {
  *     The `import/*` settings found in `extendConfig` are copied to `import-x/*`, the only prefix `eslint-plugin-import-x` reads.
  *   - `'modern'`: registers `eslint-plugin-import-x` under its own namespace (rules named `import-x/xxx`)
  *     and `eslint-plugin-jsx-a11y-x` under its own namespace (rules named `jsx-a11y-x/xxx`).
+ *     React rule namespaces are always the same and are not affected by this option.
  * @param {boolean} [options.enableVitest=false]
  * @param {boolean} [options.enablePlaywright=false]
  * @param {'off' | 'on' | 'disableStyleOnly'} [options.enablePrettier='off']
@@ -134,6 +138,7 @@ export const defineConfig = ({
     typescriptRules({ files: tsFiles, ...ns }),
     enableReact && reactRules(ns),
     enableReact && reactTypescriptRules({ files: tsFiles, ...ns }),
+    enableReact && reactTypeCheckedRules({ files: tsFiles }),
     enableReact && reactTestRules({ files: unitTestFiles }),
     enablePrettier !== "off" && prettierRules,
     enablePrettier !== "off" && eslintConfigPrettier,

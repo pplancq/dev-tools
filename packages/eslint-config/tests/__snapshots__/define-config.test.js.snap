@@ -2,110 +2,42 @@
 
 exports[`defineConfig > should expose React rule keys when React is enabled 1`] = `
 [
+  "@stylistic/jsx-curly-brace-presence",
+  "@stylistic/jsx-self-closing-comp",
+  "react-dom/no-dangerously-set-innerhtml",
+  "react-dom/no-dangerously-set-innerhtml-with-children",
+  "react-dom/no-find-dom-node",
+  "react-dom/no-hydrate",
+  "react-dom/no-missing-button-type",
+  "react-dom/no-render",
+  "react-dom/no-render-return-value",
+  "react-dom/no-script-url",
+  "react-dom/no-unknown-property",
+  "react-dom/no-unsafe-target-blank",
+  "react-dom/no-void-elements-with-children",
   "react-hooks/exhaustive-deps",
   "react-hooks/rules-of-hooks",
-  "react/boolean-prop-naming",
-  "react/button-has-type",
-  "react/checked-requires-onchange-or-readonly",
-  "react/default-props-match-prop-types",
-  "react/destructuring-assignment",
-  "react/display-name",
-  "react/forbid-component-props",
-  "react/forbid-dom-props",
-  "react/forbid-elements",
-  "react/forbid-foreign-prop-types",
-  "react/forbid-prop-types",
-  "react/function-component-definition",
-  "react/hook-use-state",
-  "react/iframe-missing-sandbox",
-  "react/jsx-boolean-value",
-  "react/jsx-child-element-spacing",
-  "react/jsx-closing-bracket-location",
-  "react/jsx-closing-tag-location",
-  "react/jsx-curly-brace-presence",
-  "react/jsx-curly-newline",
-  "react/jsx-curly-spacing",
-  "react/jsx-equals-spacing",
-  "react/jsx-filename-extension",
-  "react/jsx-first-prop-new-line",
-  "react/jsx-fragments",
-  "react/jsx-handler-names",
-  "react/jsx-indent",
-  "react/jsx-indent-props",
-  "react/jsx-key",
-  "react/jsx-max-depth",
-  "react/jsx-max-props-per-line",
-  "react/jsx-newline",
-  "react/jsx-no-bind",
-  "react/jsx-no-comment-textnodes",
-  "react/jsx-no-constructed-context-values",
-  "react/jsx-no-duplicate-props",
-  "react/jsx-no-leaked-render",
-  "react/jsx-no-literals",
-  "react/jsx-no-script-url",
-  "react/jsx-no-target-blank",
-  "react/jsx-no-undef",
-  "react/jsx-no-useless-fragment",
-  "react/jsx-one-expression-per-line",
-  "react/jsx-pascal-case",
-  "react/jsx-props-no-multi-spaces",
-  "react/jsx-props-no-spread-multi",
-  "react/jsx-props-no-spreading",
-  "react/jsx-sort-default-props",
-  "react/jsx-sort-props",
-  "react/jsx-space-before-closing",
-  "react/jsx-tag-spacing",
-  "react/jsx-uses-react",
-  "react/jsx-uses-vars",
-  "react/jsx-wrap-multilines",
-  "react/no-access-state-in-setstate",
-  "react/no-adjacent-inline-elements",
-  "react/no-array-index-key",
-  "react/no-arrow-function-lifecycle",
-  "react/no-children-prop",
-  "react/no-danger",
-  "react/no-danger-with-children",
-  "react/no-deprecated",
-  "react/no-did-mount-set-state",
-  "react/no-did-update-set-state",
-  "react/no-direct-mutation-state",
-  "react/no-find-dom-node",
-  "react/no-invalid-html-attribute",
-  "react/no-is-mounted",
-  "react/no-multi-comp",
-  "react/no-namespace",
-  "react/no-object-type-as-default-prop",
-  "react/no-redundant-should-component-update",
-  "react/no-render-return-value",
-  "react/no-set-state",
-  "react/no-string-refs",
-  "react/no-this-in-sfc",
-  "react/no-typos",
-  "react/no-unescaped-entities",
-  "react/no-unknown-property",
-  "react/no-unsafe",
-  "react/no-unstable-nested-components",
-  "react/no-unused-class-component-methods",
-  "react/no-unused-prop-types",
-  "react/no-unused-state",
-  "react/no-will-update-set-state",
-  "react/prefer-es6-class",
-  "react/prefer-exact-props",
-  "react/prefer-read-only-props",
-  "react/prefer-stateless-function",
-  "react/prop-types",
-  "react/react-in-jsx-scope",
-  "react/require-default-props",
-  "react/require-optimization",
-  "react/require-render-return",
-  "react/self-closing-comp",
-  "react/sort-comp",
-  "react/sort-default-props",
-  "react/sort-prop-types",
-  "react/state-in-constructor",
-  "react/static-property-placement",
-  "react/style-prop-object",
-  "react/void-dom-elements-no-children",
+  "react-jsx/no-children-prop",
+  "react-jsx/no-comment-textnodes",
+  "react-jsx/no-key-after-spread",
+  "react-jsx/no-namespace",
+  "react-jsx/no-useless-fragment",
+  "react-x/no-access-state-in-setstate",
+  "react-x/no-array-index-key",
+  "react-x/no-component-will-mount",
+  "react-x/no-component-will-receive-props",
+  "react-x/no-component-will-update",
+  "react-x/no-direct-mutation-state",
+  "react-x/no-leaked-conditional-rendering",
+  "react-x/no-missing-component-display-name",
+  "react-x/no-missing-context-display-name",
+  "react-x/no-missing-key",
+  "react-x/no-nested-component-definitions",
+  "react-x/no-set-state-in-component-did-update",
+  "react-x/no-set-state-in-component-will-update",
+  "react-x/no-unstable-context-value",
+  "react-x/no-unused-class-component-members",
+  "react-x/no-unused-state",
 ]
 `;
 
@@ -1470,13 +1402,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -1487,6 +1421,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -1557,13 +1498,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -1574,6 +1517,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -1632,13 +1582,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -1649,6 +1601,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -1719,13 +1678,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -1736,6 +1697,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -1817,13 +1785,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -1834,6 +1804,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -1903,13 +1880,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -1920,6 +1899,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2001,13 +1987,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2018,6 +2006,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2097,13 +2092,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2114,6 +2111,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2181,13 +2185,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2198,6 +2204,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2277,13 +2290,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2294,6 +2309,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2384,13 +2406,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2401,6 +2425,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2479,13 +2510,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2496,6 +2529,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2586,13 +2626,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2603,6 +2645,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2673,13 +2722,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2690,6 +2741,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2748,13 +2806,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2765,6 +2825,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2835,13 +2902,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2852,6 +2921,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -2933,13 +3009,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -2950,6 +3028,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -3019,13 +3104,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -3036,6 +3123,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -3117,13 +3211,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -3134,6 +3230,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -3213,13 +3316,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -3230,6 +3335,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -3297,13 +3409,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -3314,6 +3428,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -3393,13 +3514,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -3410,6 +3533,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -3500,13 +3630,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -3517,6 +3649,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -3595,13 +3734,15 @@ exports[`defineConfig > should resolve each option combination into the same blo
     {
       "files": undefined,
       "plugins": [
-        "react",
+        "@stylistic",
+        "react-dom",
         "react-hooks",
+        "react-jsx",
+        "react-x",
       ],
       "settings": [
-        "react",
+        "react-x",
         "import-x/resolver",
-        "propWrapperFunctions",
       ],
     },
     {
@@ -3612,6 +3753,13 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "settings": [
         "import-x/resolver",
       ],
+    },
+    {
+      "files": [
+        "**/*.ts?(x)",
+      ],
+      "plugins": [],
+      "settings": [],
     },
     {
       "files": [
@@ -4110,8 +4258,11 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
   {
     "files": undefined,
     "plugins": [
-      "react",
+      "@stylistic",
+      "react-dom",
       "react-hooks",
+      "react-jsx",
+      "react-x",
     ],
     "rules": {
       "import/extensions": [
@@ -4132,13 +4283,9 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
           ],
         },
       },
-      "propWrapperFunctions": [
-        "forbidExtraProps",
-        "exact",
-        "Object.freeze",
-      ],
-      "react": {
-        "pragma": "React",
+      "react-x": {
+        "importSource": "react",
+        "polymorphicPropName": "as",
         "version": "detect",
       },
     },
@@ -4172,6 +4319,14 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
         },
       },
     },
+  },
+  {
+    "files": [
+      "**/*.ts?(x)",
+    ],
+    "plugins": undefined,
+    "rules": {},
+    "settings": undefined,
   },
   {
     "files": [
@@ -4690,8 +4845,11 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
   {
     "files": undefined,
     "plugins": [
-      "react",
+      "@stylistic",
+      "react-dom",
       "react-hooks",
+      "react-jsx",
+      "react-x",
     ],
     "rules": {
       "import-x/extensions": [
@@ -4712,13 +4870,9 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
           ],
         },
       },
-      "propWrapperFunctions": [
-        "forbidExtraProps",
-        "exact",
-        "Object.freeze",
-      ],
-      "react": {
-        "pragma": "React",
+      "react-x": {
+        "importSource": "react",
+        "polymorphicPropName": "as",
         "version": "detect",
       },
     },
@@ -4752,6 +4906,14 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
         },
       },
     },
+  },
+  {
+    "files": [
+      "**/*.ts?(x)",
+    ],
+    "plugins": undefined,
+    "rules": {},
+    "settings": undefined,
   },
   {
     "files": [
