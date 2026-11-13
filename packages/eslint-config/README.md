@@ -108,6 +108,8 @@ When `enableReact: true`, the `pplancq-react` plugin enforces these conventions:
 
 ## Migration
 
+For React rules intentionally left off during the migration, see the [future rules memo](./docs/future-rules.md).
+
 To switch to the forks naming (`rulesNaming: 'modern'`), please refer to the [Migration Guide](./MIGRATION.md#rules-naming-rulesnaming).
 
 To upgrade from v6 to v7, including the React rule changes, see the [v6 to v7 migration guide](./MIGRATION.md#v6-to-v7).
