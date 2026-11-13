@@ -4,6 +4,9 @@ exports[`defineConfig > should expose React rule keys when React is enabled 1`] 
 [
   "@stylistic/jsx-curly-brace-presence",
   "@stylistic/jsx-self-closing-comp",
+  "pplancq-react/destructuring-assignment",
+  "pplancq-react/jsx-boolean-value",
+  "pplancq-react/no-multi-comp",
   "react-dom/no-dangerously-set-innerhtml",
   "react-dom/no-dangerously-set-innerhtml-with-children",
   "react-dom/no-find-dom-node",
@@ -1403,6 +1406,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -1499,6 +1503,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -1583,6 +1588,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -1679,6 +1685,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -1786,6 +1793,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -1881,6 +1889,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -1988,6 +1997,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -2093,6 +2103,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -2186,6 +2197,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -2291,6 +2303,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -2407,6 +2420,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -2511,6 +2525,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -2627,6 +2642,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -2723,6 +2739,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -2807,6 +2824,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -2903,6 +2921,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -3010,6 +3029,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -3105,6 +3125,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -3212,6 +3233,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -3317,6 +3339,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -3410,6 +3433,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -3515,6 +3539,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -3631,6 +3656,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -3735,6 +3761,7 @@ exports[`defineConfig > should resolve each option combination into the same blo
       "files": undefined,
       "plugins": [
         "@stylistic",
+        "pplancq-react",
         "react-dom",
         "react-hooks",
         "react-jsx",
@@ -4259,6 +4286,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
     "files": undefined,
     "plugins": [
       "@stylistic",
+      "pplancq-react",
       "react-dom",
       "react-hooks",
       "react-jsx",
@@ -4846,6 +4874,7 @@ exports[`defineConfig > should resolve import and JSX a11y rules with rulesNamin
     "files": undefined,
     "plugins": [
       "@stylistic",
+      "pplancq-react",
       "react-dom",
       "react-hooks",
       "react-jsx",

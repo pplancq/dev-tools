@@ -6,6 +6,7 @@ import reactXPlugin from "eslint-plugin-react-x";
 import testingLibraryPlugin from "eslint-plugin-testing-library";
 import stylisticPlugin from "@stylistic/eslint-plugin";
 /* eslint-disable import/extensions */
+import { pplancqReactPlugin } from "./react-custom/index.js";
 import { prefix } from "./utils.js";
 /* eslint-enable import/extensions */
 
@@ -16,6 +17,7 @@ export const reactRules = ({ import: importNs = "import-x" } = {}) => ({
     "react-hooks": reactHooksPlugin,
     "react-jsx": reactJsxPlugin,
     "react-x": reactXPlugin,
+    "pplancq-react": pplancqReactPlugin,
   },
   languageOptions: {
     parserOptions: {
@@ -152,6 +154,17 @@ export const reactRules = ({ import: importNs = "import-x" } = {}) => ({
       // Verify dependencies for Hooks such as useEffect
       // https://github.com/facebook/react/issues/14920
       "react-hooks/exhaustive-deps": "warn",
+
+      // pplancq-react (local plugin)
+      // Prefer shorthand for boolean JSX attributes
+      // https://github.com/pplancq/dev-tools/blob/main/packages/eslint-config/README.md#custom-react-rules
+      "pplancq-react/jsx-boolean-value": "error",
+      // Enforce destructuring assignment for component props, state, and context
+      // https://github.com/pplancq/dev-tools/blob/main/packages/eslint-config/README.md#custom-react-rules
+      "pplancq-react/destructuring-assignment": "error",
+      // Disallow multiple component definitions in a file
+      // https://github.com/pplancq/dev-tools/blob/main/packages/eslint-config/README.md#custom-react-rules
+      "pplancq-react/no-multi-comp": "error",
     },
     "import-x",
     importNs,
