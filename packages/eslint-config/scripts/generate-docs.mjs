@@ -39,9 +39,8 @@ function getPluginName(ruleName) {
       return "@stylistic/eslint-plugin";
     case ruleName.startsWith("pplancq-react/"):
       return "pplancq-react (local plugin)";
-    case ruleName.startsWith("react/"):
     case ruleName.startsWith("react-hooks/"):
-      return "eslint-plugin-react";
+      return "eslint-plugin-react-hooks";
     case ruleName.startsWith("jsx-a11y-x/"):
       return "eslint-plugin-jsx-a11y-x";
     case ruleName.startsWith("@vitest/"):
@@ -80,8 +79,6 @@ function getRuleDocUrl(ruleName) {
       return `https://eslint.style/rules/${getRuleName("@stylistic/")}`;
     case ruleName.startsWith("pplancq-react/"):
       return "https://github.com/pplancq/dev-tools/blob/main/packages/eslint-config/README.md#custom-react-rules";
-    case ruleName.startsWith("react/"):
-      return `https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/${getRuleName("react/")}.md`;
     case ruleName.startsWith("jsx-a11y-x/"):
       return `https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/blob/main/docs/rules/${getRuleName("jsx-a11y-x/")}.md`;
     case ruleName.startsWith("@vitest/"):
@@ -221,6 +218,10 @@ async function generateDocumentation() {
     reactRules.reactTypescriptRules(),
     path.join(rootDir, "rules", "react.js"),
   );
+  const reactTypeCheckedRulesProcessed = processRules(
+    reactRules.reactTypeCheckedRules(),
+    path.join(rootDir, "rules", "react.js"),
+  );
   const reactTestRulesProcessed = processRules(reactRules.reactTestRules(), path.join(rootDir, "rules", "react.js"));
   const reactJsxA11yRulesProcessed = processRules(
     reactJsxA11yRules.reactJsxA11yRules(),
@@ -249,6 +250,7 @@ async function generateDocumentation() {
   const allReactRules = [
     ...reactRulesProcessed,
     ...reactTypescriptRulesProcessed,
+    ...reactTypeCheckedRulesProcessed,
     ...reactTestRulesProcessed,
     ...reactJsxA11yRulesProcessed,
   ];

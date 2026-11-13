@@ -82,15 +82,32 @@ describe("defineConfig", () => {
   });
 
   it("should expose React rule keys when React is enabled", () => {
-    const reactRuleKeys = [
-      ...new Set(
-        defineConfig({ enableReact: true })
-          .flatMap((block) => Object.keys(block.rules ?? {}))
-          .filter((ruleName) => /^(react|react-hooks)\//.test(ruleName)),
-      ),
-    ].sort();
+    const getReactRuleKeys = (rulesNaming) =>
+      [
+        ...new Set(
+          defineConfig({ enableReact: true, rulesNaming })
+            .flatMap((block) => Object.keys(block.rules ?? {}))
+            .filter((ruleName) => /^(react|react-x|react-jsx|react-dom|react-hooks|@stylistic)\//.test(ruleName)),
+        ),
+      ].sort();
 
-    expect(reactRuleKeys).toMatchSnapshot();
+    const legacyRuleKeys = getReactRuleKeys("legacy");
+    const modernRuleKeys = getReactRuleKeys("modern");
+
+    expect(legacyRuleKeys).toMatchSnapshot();
+    expect(modernRuleKeys).toStrictEqual(legacyRuleKeys);
+    expect(legacyRuleKeys.some((ruleName) => ruleName.startsWith("react/"))).toBeFalsy();
+  });
+
+  it("should enable leaked conditional rendering only with TypeScript project services", () => {
+    const config = defineConfig({ enableReact: true });
+    const ruleBlock = config.find((block) => block.rules?.["react-x/no-leaked-conditional-rendering"]);
+
+    expect(ruleBlock).toMatchObject({
+      files: ["**/*.ts?(x)"],
+      ignores: ["**/*.ts"],
+      languageOptions: { parserOptions: { projectService: true } },
+    });
   });
 
   it("should resolve each option combination into the same blocks", () => {

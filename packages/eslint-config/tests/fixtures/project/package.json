@@ -1,1 +1,1 @@
-{ "name": "fixture", "private": true, "type": "module", "dependencies": { "globals": "*" }, "devDependencies": { "prettier": "*" } }
+{ "name": "fixture", "private": true, "type": "module", "dependencies": { "globals": "*", "react-dom": "*" }, "devDependencies": { "prettier": "*" } }

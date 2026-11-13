@@ -118,5 +118,6 @@ describe("defineConfig legacy settings", () => {
     expect(messages).toHaveLength(2);
     expect(messages[0]).toContain("legacy 'import/xxx' names");
     expect(messages[1]).toContain("'import/xxx' and 'jsx-a11y/xxx'");
+    expect(messages[1]).toContain("React rules always use their fork namespaces");
   });
 });

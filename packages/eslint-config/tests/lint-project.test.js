@@ -41,7 +41,11 @@ const lint = async (options, patterns) => {
 
   return results.flatMap((result) =>
     result.messages
-      .filter((message) => /^(import|import-x|jsx-a11y|jsx-a11y-x|react|react-hooks)\//.test(message.ruleId ?? ""))
+      .filter((message) =>
+        /^(import|import-x|jsx-a11y|jsx-a11y-x|react|react-x|react-jsx|react-dom|react-hooks|@stylistic)\//.test(
+          message.ruleId ?? "",
+        ),
+      )
       .map(
         (message) =>
           `${path.relative(root, result.filePath)}:${message.line} ${message.ruleId} | ${normalize(message.message)}`,
@@ -61,16 +65,36 @@ describe("lint a project", () => {
     },
   );
 
-  it("should report setState in componentDidUpdate for React versions before 16.3", async () => {
+  it("should preserve the deprecated lifecycle rules without duplicate deprecation coverage", async () => {
     const issues = await lint(
       {
         enableReact: true,
-        extendConfig: [{ settings: { react: { version: "16.2.0" } } }],
+        extendConfig: [{ settings: { "react-x": { version: "18.2.0" } } }],
       },
       ["src/react-rules.tsx"],
     );
+    const expectedRules = [
+      "react-x/no-component-will-mount",
+      "react-x/no-component-will-receive-props",
+      "react-x/no-component-will-update",
+      "react-dom/no-render",
+      "react-dom/no-hydrate",
+      "react-dom/no-find-dom-node",
+      "react-dom/no-render-return-value",
+    ];
+    const configuredRules = defineConfig({ enableReact: true })
+      .flatMap((block) => Object.keys(block.rules ?? {}))
+      .filter((ruleName) => expectedRules.includes(ruleName));
 
-    expect(issues.join("\n")).toContain("react/no-did-update-set-state");
+    expect(expectedRules.every((ruleName) => issues.some((issue) => issue.includes(ruleName)))).toBeTruthy();
+    expect(configuredRules).toHaveLength(expectedRules.length);
+    expect(new Set(configuredRules)).toStrictEqual(new Set(expectedRules));
+  });
+
+  it("should analyze leaked conditional rendering with type information", async () => {
+    const issues = await lint({ enableReact: true }, ["src/react-rules.tsx"]);
+
+    expect(issues.join("\n")).toContain("react-x/no-leaked-conditional-rendering");
   });
 
   it("should keep the clean React fixture free of lint issues", async () => {

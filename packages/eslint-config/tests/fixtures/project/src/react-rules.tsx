@@ -1,18 +1,24 @@
+import ReactDOM from "react-dom";
+
 const React = globalThis.React;
-const ReactDOM = globalThis.ReactDOM;
 const values = ["first", "second"];
 
 export const MissingKey = () => values.map((value) => <span>{value}</span>);
 export const ArrayIndexKey = () => values.map((value, index) => <span key={index}>{value}</span>);
 
 const ExampleContext = React.createContext(null);
+ExampleContext.displayName = "ExampleContext";
 export const UnstableContextValue = () => (
   <ExampleContext.Provider value={{ enabled: true }}>
     <span />
   </ExampleContext.Provider>
 );
+export const MissingContextDisplayName = React.createContext(null);
 
-export const LeakedConditionalRender = ({ count }) => <div>{count && <span />}</div>;
+export const LeakedConditionalRender = ({ count }: { count: number }) => <div>{count && <span />}</div>;
+
+const spreadProps = { key: "spread" };
+export const KeyAfterSpread = () => <span {...spreadProps} key="explicit" />;
 
 export const ParentWithNestedComponent = () => {
   const Nested = () => <span />;
@@ -38,6 +44,14 @@ export const UnsafeTargetBlank = () => (
     Open externally
   </a>
 );
+export const UnusedStateHook = () => {
+  const [unused, setUnused] = React.useState(false);
+  return (
+    <button type="button" onClick={() => setUnused(true)}>
+      Update
+    </button>
+  );
+};
 export const DangerousHtml = () => <div dangerouslySetInnerHTML={{ __html: "content" }} />;
 export const DangerousHtmlWithChildren = () => (
   <div dangerouslySetInnerHTML={{ __html: "content" }}>content</div>
@@ -64,6 +78,8 @@ class LegacyComponent extends React.Component {
   state = { count: 0, unused: true };
 
   componentWillMount() {}
+
+  componentWillReceiveProps() {}
 
   componentDidUpdate() {
     this.setState({ count: this.state.count + 1 });
