@@ -47,7 +47,7 @@ const warnLegacyNaming = (enableReact) => {
     : "";
 
   warn(
-    `[rulesNaming: 'legacy'] the rules use the legacy ${legacyNames} names. In the next major release, the default will become 'modern' (${modernNames}). Set rulesNaming: 'modern' to migrate now.${reactNamingNote}`,
+    `[rulesNaming: 'legacy'] the rules use the legacy ${legacyNames} names (the current default). Set rulesNaming: 'modern' to use ${modernNames}.${reactNamingNote}`,
   );
 };
 
