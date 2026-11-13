@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import prettier from "prettier";
 
 /* eslint-disable no-underscore-dangle */
 const __filename = fileURLToPath(import.meta.url);
@@ -28,6 +29,16 @@ function getPluginName(ruleName) {
       return "@typescript-eslint/eslint-plugin";
     case ruleName.startsWith("import-x/"):
       return "eslint-plugin-import-x";
+    case ruleName.startsWith("react-x/"):
+      return "eslint-plugin-react-x";
+    case ruleName.startsWith("react-jsx/"):
+      return "eslint-plugin-react-jsx";
+    case ruleName.startsWith("react-dom/"):
+      return "eslint-plugin-react-dom";
+    case ruleName.startsWith("@stylistic/"):
+      return "@stylistic/eslint-plugin";
+    case ruleName.startsWith("pplancq-react/"):
+      return "pplancq-react (local plugin)";
     case ruleName.startsWith("react/"):
     case ruleName.startsWith("react-hooks/"):
       return "eslint-plugin-react";
@@ -59,6 +70,16 @@ function getRuleDocUrl(ruleName) {
       return `https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/${getRuleName("import-x/")}.md`;
     case ruleName.startsWith("react-hooks/"):
       return `https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#${getRuleName("react-hooks/")}`;
+    case ruleName.startsWith("react-x/"):
+      return `https://eslint-react.xyz/docs/rules/${getRuleName("react-x/")}`;
+    case ruleName.startsWith("react-jsx/"):
+      return `https://eslint-react.xyz/docs/rules/jsx-${getRuleName("react-jsx/")}`;
+    case ruleName.startsWith("react-dom/"):
+      return `https://eslint-react.xyz/docs/rules/dom-${getRuleName("react-dom/")}`;
+    case ruleName.startsWith("@stylistic/"):
+      return `https://eslint.style/rules/${getRuleName("@stylistic/")}`;
+    case ruleName.startsWith("pplancq-react/"):
+      return "https://github.com/pplancq/dev-tools/blob/main/packages/eslint-config/README.md#custom-react-rules";
     case ruleName.startsWith("react/"):
       return `https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/${getRuleName("react/")}.md`;
     case ruleName.startsWith("jsx-a11y-x/"):
@@ -175,7 +196,7 @@ function replaceBetweenMarkers(content, startMarker, endMarker, newContent) {
 }
 
 // Main function to generate documentation
-function generateDocumentation() {
+async function generateDocumentation() {
   const rootDir = path.join(__dirname, "..");
   const docsDir = path.join(rootDir, "docs");
   const outputPath = path.join(docsDir, "rules.md");
@@ -267,8 +288,14 @@ function generateDocumentation() {
     generateMarkdownTable(prettierRulesProcessed),
   );
 
+  const prettierConfig = await prettier.resolveConfig(outputPath);
+  const formattedContent = await prettier.format(content, {
+    ...prettierConfig,
+    filepath: outputPath,
+  });
+
   // Write to file
-  fs.writeFileSync(outputPath, content);
+  fs.writeFileSync(outputPath, formattedContent);
 
   console.info(`Documentation generated successfully at ${outputPath}`);
 
@@ -277,7 +304,7 @@ function generateDocumentation() {
 
 // Run the generator
 try {
-  generateDocumentation();
+  await generateDocumentation();
   process.exit(0);
 } catch (error) {
   console.error("Error generating documentation:", error);
