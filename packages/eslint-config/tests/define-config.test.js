@@ -81,6 +81,18 @@ describe("defineConfig", () => {
     expect(config.map(pickMigratedParts)).toMatchSnapshot();
   });
 
+  it("should expose React rule keys when React is enabled", () => {
+    const reactRuleKeys = [
+      ...new Set(
+        defineConfig({ enableReact: true })
+          .flatMap((block) => Object.keys(block.rules ?? {}))
+          .filter((ruleName) => /^(react|react-hooks)\//.test(ruleName)),
+      ),
+    ].sort();
+
+    expect(reactRuleKeys).toMatchSnapshot();
+  });
+
   it("should resolve each option combination into the same blocks", () => {
     const summaries = Object.fromEntries(
       combinations().map((options) => [JSON.stringify(options), defineConfig(options).map(summarize)]),

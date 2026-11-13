@@ -41,7 +41,7 @@ const lint = async (options, patterns) => {
 
   return results.flatMap((result) =>
     result.messages
-      .filter((message) => /^(import|import-x|jsx-a11y|jsx-a11y-x)\//.test(message.ruleId ?? ""))
+      .filter((message) => /^(import|import-x|jsx-a11y|jsx-a11y-x|react|react-hooks)\//.test(message.ruleId ?? ""))
       .map(
         (message) =>
           `${path.relative(root, result.filePath)}:${message.line} ${message.ruleId} | ${normalize(message.message)}`,
@@ -55,9 +55,25 @@ describe("lint a project", () => {
   });
 
   it.each(["legacy", "modern"])(
-    "should report import and JSX a11y issues with React and rulesNaming '%s'",
+    "should report import, React, and JSX a11y issues with rulesNaming '%s'",
     async (rulesNaming) => {
       expect(await lint({ enableReact: true, rulesNaming }, ["src/**/*.{ts,tsx,js,jsx}"])).toMatchSnapshot();
     },
   );
+
+  it("should report setState in componentDidUpdate for React versions before 16.3", async () => {
+    const issues = await lint(
+      {
+        enableReact: true,
+        extendConfig: [{ settings: { react: { version: "16.2.0" } } }],
+      },
+      ["src/react-rules.tsx"],
+    );
+
+    expect(issues.join("\n")).toContain("react/no-did-update-set-state");
+  });
+
+  it("should keep the clean React fixture free of lint issues", async () => {
+    expect(await lint({ enableReact: true }, ["src/react-clean.tsx"])).toStrictEqual([]);
+  });
 });
