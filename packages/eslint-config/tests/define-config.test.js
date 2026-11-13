@@ -87,7 +87,9 @@ describe("defineConfig", () => {
         ...new Set(
           defineConfig({ enableReact: true, rulesNaming })
             .flatMap((block) => Object.keys(block.rules ?? {}))
-            .filter((ruleName) => /^(react|react-x|react-jsx|react-dom|react-hooks|@stylistic)\//.test(ruleName)),
+            .filter((ruleName) =>
+              /^(react|react-x|react-jsx|react-dom|react-hooks|pplancq-react|@stylistic)\//.test(ruleName),
+            ),
         ),
       ].sort();
 

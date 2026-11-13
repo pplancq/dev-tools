@@ -94,6 +94,14 @@ export default defineConfig({
 
 For a complete list of all active ESLint rules in each configuration, please refer to the [Rules Documentation](./docs/rules.md).
 
+## Custom React rules
+
+When `enableReact: true`, the `pplancq-react` plugin enforces these conventions:
+
+- `jsx-boolean-value` prefers shorthand boolean attributes and autofixes `flag={true}` to `flag`.
+- `destructuring-assignment` requires destructuring component props, class state, and context.
+- `no-multi-comp` limits each file to one React component, including stateless components.
+
 ## Migration
 
 To switch to the forks naming (`rulesNaming: 'modern'`), please refer to the [Migration Guide](./MIGRATION.md#rules-naming-rulesnaming).
