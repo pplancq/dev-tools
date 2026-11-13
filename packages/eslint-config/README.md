@@ -6,13 +6,16 @@ This package provides a simplified and customizable ESLint configuration for you
 
 ### Prerequisites
 
-- Node.js 18.18.0 or higher
+- Node.js `^20.19.0 || ^22.13.0 || >=24`
+- ESLint `^9.14.0` or `^10.0.0`
 
 ### Installation
 
 ```shell
-npm install --save-dev eslint@9 @pplancq/eslint-config
+npm install --save-dev eslint@^9.14.0 @pplancq/eslint-config
 ```
+
+For ESLint 10, install `eslint@^10.0.0` instead.
 
 ## Usage
 
@@ -48,7 +51,7 @@ The following options can be passed to the `defineConfig` function. All options 
 | unitTestFiles    | ['**/*.{test,spec,steps}.{js,jsx,ts,tsx}'] | Patterns for unit test files                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | unitE2eFiles     | ['tests/**/*.{test,spec}.{js,jsx,ts,tsx}'] | Patterns for end-to-end (E2E) test files (ex: Playwright)                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | enableReact      | false                                      | Enables rules for React and Testing Library files                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| rulesNaming      | 'legacy'                                   | Naming of the rules of the plugins replaced by a fork (`eslint-plugin-import-x` and `eslint-plugin-jsx-a11y-x`). 'legacy' (default) keeps the historical rule names (`import/xxx`, `jsx-a11y/xxx`)<br/>'modern' uses the forks namespaces (`import-x/xxx`, `jsx-a11y-x/xxx`), as listed in the [rules documentation](./docs/rules.md). See [Rules naming](#rules-naming)                                                                                                                              |
+| rulesNaming      | 'legacy'                                   | Naming of `eslint-plugin-import-x` and `eslint-plugin-jsx-a11y-x` rules only. 'legacy' (default) keeps the historical names (`import/xxx`, `jsx-a11y/xxx`); 'modern' uses `import-x/xxx` and `jsx-a11y-x/xxx`. React rules always use their v7 namespaces and are not affected. See [Rules naming](#rules-naming) and the [v6 to v7 migration guide](./MIGRATION.md#v6-to-v7).                                                                                                                        |
 | enableVitest     | false                                      | Enables rules for Vitest files                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | enablePlaywright | false                                      | Enables rules for Playwright E2E test files                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | enablePrettier   | 'off'                                      | 'off' disables Prettier integration (default). Recommended when using Prettier separately; install `eslint-config-prettier` to disable conflicting ESLint formatting rules<br/>'on' enables Prettier as an ESLint rule. **Deprecated**, will be removed in the next major release<br/>'disableStyleOnly' disables conflicting ESLint formatting rules without running Prettier as an ESLint rule. Recommended transition option to keep the same behavior as `'on'` while running Prettier separately |
@@ -56,16 +59,17 @@ The following options can be passed to the `defineConfig` function. All options 
 
 ### Rules naming
 
-The `import` and `jsx-a11y` plugins are replaced by their maintained forks, [`eslint-plugin-import-x`](https://github.com/un-ts/eslint-plugin-import-x) and [`eslint-plugin-jsx-a11y-x`](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x), which support ESLint 10. The `rulesNaming` option lets you migrate without breaking your configuration:
+The `import` and `jsx-a11y` plugins are replaced by their maintained forks, [`eslint-plugin-import-x`](https://github.com/un-ts/eslint-plugin-import-x) and [`eslint-plugin-jsx-a11y-x`](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x), which support ESLint 10. The `rulesNaming` option controls only these plugins. React rules use `react-x/`, `react-dom/`, `react-jsx/`, `@stylistic/`, and `pplancq-react/` in both modes.
 
-| `rulesNaming`        | Rules                            | Settings                 |
-| -------------------- | -------------------------------- | ------------------------ |
-| `'legacy'` (default) | `import/xxx`, `jsx-a11y/xxx`     | `import-x/*` (see below) |
-| `'modern'`           | `import-x/xxx`, `jsx-a11y-x/xxx` | `import-x/*`             |
+| `rulesNaming`        | Rules                                                                                | Settings                 |
+| -------------------- | ------------------------------------------------------------------------------------ | ------------------------ |
+| `'legacy'` (default) | `import/xxx`, `jsx-a11y/xxx`                                                         | `import-x/*` (see below) |
+| `'modern'`           | `import-x/xxx`, `jsx-a11y-x/xxx`                                                     | `import-x/*`             |
+| Both values          | React rules: `react-x/`, `react-dom/`, `react-jsx/`, `@stylistic/`, `pplancq-react/` | `settings["react-x"]`    |
 
-- The [rules documentation](./docs/rules.md) lists the `modern` names. With `'legacy'`, replace `import-x/` by `import/` and `jsx-a11y-x/` by `jsx-a11y/`.
+- The [rules documentation](./docs/rules.md) lists the active names. With `'legacy'`, replace `import-x/` by `import/` and `jsx-a11y-x/` by `jsx-a11y/`; React rule names are unchanged.
 - `eslint-plugin-import-x` only reads the `import-x/*` settings, whatever the rules namespace. In `legacy` mode, the `import/*` settings found in `extendConfig` (for example `import/resolver`) are copied automatically to `import-x/*` and a warning lists them.
-- The default will become `'modern'` in the next major release. See the [Migration Guide](./MIGRATION.md#rules-naming-rulesnaming) to migrate now.
+- See the [v6 to v7 migration guide](./MIGRATION.md#v6-to-v7) for React rule mapping and upgrade steps. The [Rules naming migration guide](./MIGRATION.md#rules-naming-rulesnaming) covers switching import and jsx-a11y rules to `'modern'`.
 
 ### Prettier Configuration
 
@@ -106,4 +110,6 @@ When `enableReact: true`, the `pplancq-react` plugin enforces these conventions:
 
 To switch to the forks naming (`rulesNaming: 'modern'`), please refer to the [Migration Guide](./MIGRATION.md#rules-naming-rulesnaming).
 
-If you are upgrading from version 3 to version 4 of `@pplancq/eslint-config`, please refer to the [Migration Guide](./MIGRATION.md#migration-guide-pplancqeslint-config-v3-to-v4) for detailed instructions.
+To upgrade from v6 to v7, including the React rule changes, see the [v6 to v7 migration guide](./MIGRATION.md#v6-to-v7).
+
+If you are upgrading from version 3 to version 4 of `@pplancq/eslint-config`, please refer to the [Migration Guide](./MIGRATION.md#v3-to-v4) for detailed instructions.
