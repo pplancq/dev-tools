@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Release
-        uses: pplancq/actions/nx-release@2c562638cd9f0ca64f237af46f6052e71b2536b8 # v1.1.5
+        uses: pplancq/actions/nx-release@e3d830a1a73fbec52eb03d74c4cb1c8213113e53 # v1.1.6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           release-type: ${{ inputs.releaseType }}
