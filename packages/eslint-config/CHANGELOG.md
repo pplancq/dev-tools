@@ -1,3 +1,33 @@
+# 7.0.0 (2026-11-16)
+
+### 🎉 Features
+
+- **eslint-config:** add jsx-boolean-value, destructuring-assignment and no-multi-comp custom rules ([33ba36cf](https://github.com/pplancq/dev-tools/commit/33ba36cf))
+- ⚠️  **eslint-config:** replace eslint-plugin-react with eslint-react forks ([dca2a4b8](https://github.com/pplancq/dev-tools/commit/dca2a4b8))
+- ⚠️  **eslint-config:** add eslint-react forks and raise node and eslint requirements ([d992ff95](https://github.com/pplancq/dev-tools/commit/d992ff95))
+
+### 🐞 Bug Fixes
+
+- **eslint-config:** avoid flag comparison warning ([e52a1930](https://github.com/pplancq/dev-tools/commit/e52a1930))
+- **eslint-config:** clarify forward ref flag check ([6125b6a3](https://github.com/pplancq/dev-tools/commit/6125b6a3))
+- **eslint-config:** address React migration review feedback ([87d2168a](https://github.com/pplancq/dev-tools/commit/87d2168a))
+
+### ⚠️  Breaking Changes
+
+- **eslint-config:** replace eslint-plugin-react with eslint-react forks  ([dca2a4b8](https://github.com/pplancq/dev-tools/commit/dca2a4b8))
+  react/xxx rules are replaced by react-x/, react-dom/, react-jsx/ and @stylistic/ rules, about 50 rules are removed, see MIGRATION.md
+- **eslint-config:** add eslint-react forks and raise node and eslint requirements  ([d992ff95](https://github.com/pplancq/dev-tools/commit/d992ff95))
+  requires Node ^20.19.0 || ^22.13.0 || >=24 and eslint ^9.14.0 || ^10.0.0
+
+### 📦 Dependencies
+
+- **deps:** update typescript-eslint mono repo to ^8.72.2 ([#1997](https://github.com/pplancq/dev-tools/pull/1997))
+- **deps:** update dependency globals to ^17.14.0 ([#2000](https://github.com/pplancq/dev-tools/pull/2000))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 6.2.1 (2026-11-09)
 
 ### 📦 Dependencies

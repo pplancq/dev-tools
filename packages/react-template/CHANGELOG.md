@@ -1,3 +1,29 @@
+## 2.10.10 (2026-11-16)
+
+### 🎉 Features
+
+- ⚠️  **eslint-config:** replace eslint-plugin-react with eslint-react forks ([dca2a4b8](https://github.com/pplancq/dev-tools/commit/dca2a4b8))
+
+### ⚠️  Breaking Changes
+
+- **eslint-config:** replace eslint-plugin-react with eslint-react forks  ([dca2a4b8](https://github.com/pplancq/dev-tools/commit/dca2a4b8))
+  react/xxx rules are replaced by react-x/, react-dom/, react-jsx/ and @stylistic/ rules, about 50 rules are removed, see MIGRATION.md
+
+### 📦 Dependencies
+
+- Updated @pplancq/stylelint-config to 6.1.8
+- Updated @pplancq/eslint-config to 7.0.0
+- **deps:** update e2e testing tools ([#1999](https://github.com/pplancq/dev-tools/pull/1999))
+- **deps:** update dependency @vitejs/plugin-react to ^6.2.1 ([#1998](https://github.com/pplancq/dev-tools/pull/1998))
+- **deps:** update dependency inversify to ^8.2.4 ([#1996](https://github.com/pplancq/dev-tools/pull/1996))
+- **deps:** update react-query mono repo to ^5.106.1 ([#2002](https://github.com/pplancq/dev-tools/pull/2002))
+- **deps:** update dependency msw to ^3.0.5 ([#1990](https://github.com/pplancq/dev-tools/pull/1990))
+- **deps:** update dependency concurrently to ^10.0.7 ([#1989](https://github.com/pplancq/dev-tools/pull/1989))
+
+### ❤️ Thank You
+
+- Paul PLANCQ
+
 ## 2.10.9 (2026-11-09)
 
 ### 📦 Dependencies
