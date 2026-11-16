@@ -2,12 +2,7 @@
 
 ### 🎉 Features
 
-- ⚠️  **eslint-config:** replace eslint-plugin-react with eslint-react forks ([dca2a4b8](https://github.com/pplancq/dev-tools/commit/dca2a4b8))
-
-### ⚠️  Breaking Changes
-
-- **eslint-config:** replace eslint-plugin-react with eslint-react forks  ([dca2a4b8](https://github.com/pplancq/dev-tools/commit/dca2a4b8))
-  react/xxx rules are replaced by react-x/, react-dom/, react-jsx/ and @stylistic/ rules, about 50 rules are removed, see MIGRATION.md
+-  **eslint-config:** replace eslint-plugin-react with eslint-react forks ([dca2a4b8](https://github.com/pplancq/dev-tools/commit/dca2a4b8))
 
 ### 📦 Dependencies
 
