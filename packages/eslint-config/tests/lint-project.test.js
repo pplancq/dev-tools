@@ -53,6 +53,15 @@ const lint = async (options, patterns) => {
   );
 };
 
+const lintText = async (options, code, filePath) => {
+  const eslint = new ESLint({ cwd: root, overrideConfigFile: true, overrideConfig: defineConfig(options) });
+  const [result] = await eslint.lintText(code, { filePath: path.join(root, filePath) });
+
+  expect(result.messages.filter((message) => message.fatal)).toStrictEqual([]);
+
+  return result.messages.map((message) => message.ruleId);
+};
+
 describe("lint a project", () => {
   it("should report import issues on TypeScript and JavaScript files", async () => {
     expect(await lint({ enableReact: false }, ["src/**/*.{ts,js}"])).toMatchSnapshot();
@@ -99,5 +108,36 @@ describe("lint a project", () => {
 
   it("should keep the clean React fixture free of lint issues", async () => {
     expect(await lint({ enableReact: true }, ["src/react-clean.tsx"])).toStrictEqual([]);
+  });
+
+  it("should report a key placed after a spread", async () => {
+    const code = 'export const A = ({ p }) => <span {...p} key="k" />;\n';
+
+    expect(await lintText({ enableReact: true }, code, "src/virtual.js")).toContain("react-jsx/no-key-after-spread");
+    expect(
+      await lintText({ enableReact: true }, 'export const A = ({ p }) => <span key="k" {...p} />;\n', "src/virtual.js"),
+    ).not.toContain("react-jsx/no-key-after-spread");
+  });
+
+  it("should require a display name on contexts", async () => {
+    const invalid = 'import { createContext } from "react";\nexport const Ctx = createContext(null);\n';
+    const valid = `${invalid}Ctx.displayName = "Ctx";\n`;
+
+    expect(await lintText({ enableReact: true }, invalid, "src/virtual.js")).toContain(
+      "react-x/no-missing-context-display-name",
+    );
+    expect(await lintText({ enableReact: true }, valid, "src/virtual.js")).not.toContain(
+      "react-x/no-missing-context-display-name",
+    );
+  });
+
+  it("should apply no-leaked-conditional-rendering only with type information", async () => {
+    const code = "export const A = ({ count }: { count: number }) => <div>{count && <span />}</div>;\n";
+    const rule = "react-x/no-leaked-conditional-rendering";
+
+    expect(await lintText({ enableReact: true }, code, "src/react-rules.tsx")).toContain(rule);
+    expect(
+      await lintText({ enableReact: true }, code.replace(": { count: number }", ""), "src/virtual.js"),
+    ).not.toContain(rule);
   });
 });
