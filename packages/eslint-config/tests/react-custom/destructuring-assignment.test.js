@@ -38,6 +38,18 @@ describe("pplancq-react/destructuring-assignment", () => {
     ]);
   });
 
+  it("should ignore ref access in a memoized forwardRef component", async () => {
+    const source = [
+      'import { forwardRef, memo } from "react";',
+      "const Button = memo(forwardRef((props, ref) => <button ref={ref}>{props.label}{ref.current}</button>));",
+    ].join("\n");
+    const { messages } = await lintReactCustom(source);
+
+    expect(messages.map(({ ruleId, column }) => ({ ruleId, column }))).toStrictEqual([
+      { ruleId: "pplancq-react/destructuring-assignment", column: 67 },
+    ]);
+  });
+
   it("should continue to report property access on legacy context", async () => {
     const source = "const Button = (props, context) => <button>{context.theme}</button>;";
     const { messages } = await lintReactCustom(source);
