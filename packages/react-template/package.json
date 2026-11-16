@@ -68,7 +68,7 @@
     "@pplancq/eslint-config": "^6.2.1",
     "@pplancq/prettier-config": "^5.0.4",
     "@pplancq/stylelint-config": "^6.1.7",
-    "@rsbuild/core": "^2.3.0",
+    "@rsbuild/core": "^2.3.2",
     "@rsbuild/plugin-eslint": "^2.0.2",
     "@rsbuild/plugin-react": "^2.1.1",
     "@rsbuild/plugin-sass": "^2.0.1",
