@@ -63,7 +63,8 @@ export const destructuringAssignment =
         query.all(program).forEach((component) => {
           const { node } = component;
           // eslint-disable-next-line no-bitwise -- Component flags are a bitmask.
-          const parameterCount = component.flag & flag.component.ForwardRef ? 1 : 2;
+          const isForwardRef = (component.flag & flag.component.ForwardRef) !== 0n;
+          const parameterCount = isForwardRef ? 1 : 2;
 
           node.params.slice(0, parameterCount).forEach((parameter) => {
             reportUndestructuredParameter(context, node, parameter);
