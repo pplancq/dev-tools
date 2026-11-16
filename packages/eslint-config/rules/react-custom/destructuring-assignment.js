@@ -4,12 +4,14 @@ import { findParentClass, getStaticPropertyName, isReactClassComponent } from ".
 /* eslint-enable import/extensions */
 
 const reportUndestructuredParameter = (context, node, parameter) => {
-  if (parameter.type !== "Identifier") {
+  const binding = parameter.type === "AssignmentPattern" ? parameter.left : parameter;
+
+  if (binding.type !== "Identifier") {
     return;
   }
 
   const scope = context.sourceCode.getScope(node);
-  const variable = scope.variables.find(({ name }) => name === parameter.name);
+  const variable = scope.variables.find(({ name }) => name === binding.name);
 
   (variable?.references ?? []).forEach((reference) => {
     const memberExpression = reference.identifier.parent;
@@ -27,7 +29,7 @@ const reportUndestructuredParameter = (context, node, parameter) => {
 
 export const destructuringAssignment =
   (mode = "always") =>
-  (context, { collect }) => {
+  (context, { collect, flag }) => {
     const { query, visitor } = collect.components(context);
 
     return merge(visitor, {
@@ -58,8 +60,12 @@ export const destructuringAssignment =
           return;
         }
 
-        query.all(program).forEach(({ node }) => {
-          node.params.slice(0, 2).forEach((parameter) => {
+        query.all(program).forEach((component) => {
+          const { node } = component;
+          // eslint-disable-next-line no-bitwise -- Component flags are a bitmask.
+          const parameterCount = component.flag & flag.component.ForwardRef ? 1 : 2;
+
+          node.params.slice(0, parameterCount).forEach((parameter) => {
             reportUndestructuredParameter(context, node, parameter);
           });
         });
