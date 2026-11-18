@@ -88,6 +88,7 @@ Rules that were already `off` remain unenforced.
 
 - `react-x/no-missing-key` ignores elements with a spread; `react-jsx/no-key-after-spread` separately catches a `key` placed after the spread.
 - `react-x/no-missing-component-display-name` is less strict than the old `display-name` rule. The new `react-x/no-missing-context-display-name` also requires display names on React contexts.
+- `react-x/no-missing-context-display-name` can autofix a missing context display name. Whether to assign `displayName` only in development (for example, to avoid including it in production bundles) is a project-specific choice, not a requirement of this rule; the autofixed unconditional assignment is also valid.
 - `react-x/no-unused-state` is experimental in the fork.
 - `react-x/no-leaked-conditional-rendering` is enabled for TypeScript JSX files with project services to provide type information. JavaScript files do not get this type-aware check.
 - Type-aware analysis relies on `parserOptions.projectService: true` for `.tsx` files. Every `.tsx` file must be included in a `tsconfig.json`, otherwise ESLint reports a parsing error for it. If a project cannot meet this requirement, override the block with `extendConfig` (set `languageOptions.parserOptions.projectService` to `false` and `react-x/no-leaked-conditional-rendering` to `"off"`).
