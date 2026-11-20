@@ -1,4 +1,4 @@
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 import { baseRules } from "./rules/base.js";
 import { importRules } from "./rules/import.js";

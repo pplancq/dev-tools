@@ -1,7 +1,7 @@
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import { merge } from "@eslint-react/kit";
 import { isReactClassComponent } from "./component-utils.js";
-/* eslint-enable import/extensions */
+/* eslint-enable import-x/extensions */
 
 const getComponentName = ({ node, name }) => name ?? node.id?.name ?? "anonymous";
 const getStart = ({ node }) => node.range?.[0] ?? node.start ?? 0;

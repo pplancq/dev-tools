@@ -1,7 +1,7 @@
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import { merge } from "@eslint-react/kit";
 import { findParentClass, getStaticPropertyName, isReactClassComponent } from "./component-utils.js";
-/* eslint-enable import/extensions */
+/* eslint-enable import-x/extensions */
 
 const reportUndestructuredParameter = (context, node, parameter) => {
   const binding = parameter.type === "AssignmentPattern" ? parameter.left : parameter;

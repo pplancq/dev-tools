@@ -1,6 +1,6 @@
 import { defineConfig } from "@pplancq/eslint-config";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-// eslint-disable-next-line import/extensions
+// eslint-disable-next-line import-x/extensions
 import { mapLegacyImportSettings } from "../rules/utils.js";
 
 describe("mapLegacyImportSettings", () => {

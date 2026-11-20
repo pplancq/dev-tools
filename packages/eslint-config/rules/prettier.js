@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
+// eslint-disable-next-line import-x/no-extraneous-dependencies
 import prettierPlugin from "eslint-plugin-prettier";
 
 export const prettierRules = () => ({

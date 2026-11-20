@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import { lintReactCustom } from "./utils.js";
-/* eslint-enable import/extensions */
+/* eslint-enable import-x/extensions */
 
 describe("pplancq-react/destructuring-assignment", () => {
   it("should report property access on component props", async () => {

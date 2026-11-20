@@ -1,4 +1,4 @@
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import typescriptEslintPlugin from "@typescript-eslint/eslint-plugin";
 import typescriptEslintParser from "@typescript-eslint/parser";
 import { prefix } from "./utils.js";
