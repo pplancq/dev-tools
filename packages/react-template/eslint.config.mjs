@@ -1,6 +1,7 @@
 import { defineConfig } from "@pplancq/eslint-config";
 
 export default defineConfig({
+  rulesNaming: "modern",
   enableReact: true,
   enableVitest: true,
   unitTestFiles: ["src/**/*.{test,spec,steps}.{js,jsx,ts,tsx}"],
@@ -14,14 +15,14 @@ export default defineConfig({
     {
       files: ["mocks/**/*", "scripts/**/*"],
       rules: {
-        "import/no-extraneous-dependencies": "off",
+        "import-x/no-extraneous-dependencies": "off",
       },
     },
     {
       files: ["**/*.config.{js,cjs,mjs,ts,cts,mts}"],
       rules: {
-        "import/no-default-export": "off",
-        "import/no-extraneous-dependencies": "off",
+        "import-x/no-default-export": "off",
+        "import-x/no-extraneous-dependencies": "off",
       },
     },
   ],

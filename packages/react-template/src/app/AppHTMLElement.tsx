@@ -2,7 +2,7 @@ import { App } from "@App/App";
 import { StrictMode } from "react";
 import { createRoot, type Root } from "react-dom/client";
 
-// eslint-disable-next-line import/no-default-export
+// eslint-disable-next-line import-x/no-default-export
 export default class AppHTMLElement extends HTMLElement {
   private readonly root: Root;
 
