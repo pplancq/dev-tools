@@ -61,6 +61,8 @@ The following options can be passed to the `defineConfig` function. All options 
 
 The `import` and `jsx-a11y` plugins are replaced by their maintained forks, [`eslint-plugin-import-x`](https://github.com/un-ts/eslint-plugin-import-x) and [`eslint-plugin-jsx-a11y-x`](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x), which support ESLint 10. The `rulesNaming` option controls only these plugins. React rules use `react-x/`, `react-dom/`, `react-jsx/`, `@stylistic/`, and `pplancq-react/` in both modes.
 
+The default remains `'legacy'` in v7; the default is planned to switch to `'modern'` in v8.
+
 | `rulesNaming`        | Rules                                                                                | Settings                 |
 | -------------------- | ------------------------------------------------------------------------------------ | ------------------------ |
 | `'legacy'` (default) | `import/xxx`, `jsx-a11y/xxx`                                                         | `import-x/*` (see below) |
