@@ -1,9 +1,9 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { ESLint } from "eslint";
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import { defineConfig } from "../../main.js";
-/* eslint-enable import/extensions */
+/* eslint-enable import-x/extensions */
 
 const projectRoot = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "fixtures", "project");
 const filePath = path.join(projectRoot, "src", "react-custom.js");

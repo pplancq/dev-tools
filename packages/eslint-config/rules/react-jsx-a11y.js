@@ -1,7 +1,7 @@
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import jsxA11yPlugin from "eslint-plugin-jsx-a11y-x";
 import { prefix } from "./utils.js";
-/* eslint-enable import/extensions */
+/* eslint-enable import-x/extensions */
 
 /**
  * Rules are written with the `jsx-a11y-x` namespace and renamed with `jsxA11y` when needed

@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 /* eslint-enable no-underscore-dangle */
 
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 // Load all rule files
 const baseRules = await import("../rules/base.js").then((m) => m.default || m);
 const importRules = await import("../rules/import.js").then((m) => m.default || m);
@@ -20,7 +20,7 @@ const reactJsxA11yRules = await import("../rules/react-jsx-a11y.js").then((m) =>
 const vitestRules = await import("../rules/vitest.js").then((m) => m.default || m);
 const playwrightRules = await import("../rules/playwright.js").then((m) => m.default || m);
 const prettierRules = await import("../rules/prettier.js").then((m) => m.default || m);
-/* eslint-enable import/extensions */
+/* eslint-enable import-x/extensions */
 
 // Function to get plugin name from rule name
 function getPluginName(ruleName) {

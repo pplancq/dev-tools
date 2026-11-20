@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import { lintReactCustom } from "./utils.js";
-/* eslint-enable import/extensions */
+/* eslint-enable import-x/extensions */
 
 describe("pplancq-react/no-multi-comp", () => {
   it("should report a second stateless component and leave the source unchanged", async () => {

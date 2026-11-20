@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-// eslint-disable-next-line import/extensions
+// eslint-disable-next-line import-x/extensions
 import { prefix } from "../rules/utils.js";
 
 describe("prefix", () => {

@@ -40,7 +40,7 @@ const withoutPluginExtends = (nxJson: Record<string, unknown>): Record<string, u
   return rest;
 };
 
-// eslint-disable-next-line import/no-default-export
+// eslint-disable-next-line import-x/no-default-export
 export default async function setupGenerator(tree: Tree, options: SetupGeneratorSchema) {
   const releaseConfig = buildReleaseConfig(options);
 

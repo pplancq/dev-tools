@@ -1,7 +1,7 @@
 import vitestPlugin from "@vitest/eslint-plugin";
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import { prefix } from "./utils.js";
-/* eslint-enable import/extensions */
+/* eslint-enable import-x/extensions */
 
 export const vitestRules = ({ files, import: importNs = "import-x" } = {}) => ({
   plugins: {

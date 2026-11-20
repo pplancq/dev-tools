@@ -13,7 +13,7 @@ console.warn(
   `\n${bold(yellow("WARNING:"))} [@pplancq/stylelint-config/prettier] This configuration is deprecated and will be removed in the next major release. Use \`@pplancq/stylelint-config\` instead, and run Prettier separately for formatting.\n`,
 );
 
-// eslint-disable-next-line import/no-default-export
+// eslint-disable-next-line import-x/no-default-export
 export default {
   extends: ["./index.js", "./rules/prettier.js"],
 };

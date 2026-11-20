@@ -5,10 +5,10 @@ import reactJsxPlugin from "eslint-plugin-react-jsx";
 import reactXPlugin from "eslint-plugin-react-x";
 import testingLibraryPlugin from "eslint-plugin-testing-library";
 import stylisticPlugin from "@stylistic/eslint-plugin";
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import { pplancqReactPlugin } from "./react-custom/index.js";
 import { prefix } from "./utils.js";
-/* eslint-enable import/extensions */
+/* eslint-enable import-x/extensions */
 
 export const reactRules = ({ import: importNs = "import-x" } = {}) => ({
   plugins: {

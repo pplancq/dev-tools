@@ -1,6 +1,6 @@
 import type { Tree } from "@nx/devkit";
 
-// eslint-disable-next-line import/no-default-export
+// eslint-disable-next-line import-x/no-default-export
 export default function updateReleaseConfig(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   _tree: Tree,

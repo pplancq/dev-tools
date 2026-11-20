@@ -1,7 +1,7 @@
-/* eslint-disable import/extensions */
+/* eslint-disable import-x/extensions */
 import importXPlugin from "eslint-plugin-import-x";
 import { prefix } from "./utils.js";
-/* eslint-enable import/extensions */
+/* eslint-enable import-x/extensions */
 
 export const importRules = ({ import: importNs = "import-x" } = {}) => ({
   plugins: {
