@@ -8,6 +8,7 @@ This documentation lists all active ESLint rules in the `@pplancq/eslint-config`
 
 - [Base Configuration](#base-configuration)
 - [React Configuration](#react-configuration)
+  - [Optional React Effects Rules](#optional-react-effects-rules)
 - [Vitest Configuration](#vitest-configuration)
 - [Playwright Configuration](#playwright-configuration)
 - [Prettier Configuration](#prettier-configuration)
@@ -411,6 +412,26 @@ This configuration adds React, React Hooks, JSX a11y, and Testing Library rules 
 | [jsx-a11y-x/tabindex-no-positive](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/blob/main/docs/rules/tabindex-no-positive.md)                                                   | error | Enforce `tabIndex` value is not greater than zero.                                                                                 | eslint-plugin-jsx-a11y-x      |
 
 <!-- END_REACT_RULES -->
+
+### Optional React Effects Rules
+
+Opt in to these warnings with `enableReactYouMightNotNeedAnEffectRules: true` and `enableReact: true`. They are disabled by default in v7 and planned to be enabled by default in v8. See the [README](../README.md#react-effects-rules) for configuration and overrides.
+
+<!-- START_REACT_EFFECTS_RULES -->
+
+| Rule                                                                                                                                                                                 | Mode | Description                                                          | Plugin                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---- | -------------------------------------------------------------------- | ------------------------------------------------ |
+| [reactYouMightNotNeedAnEffect/no-adjust-state-on-prop-change](https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-adjust-state-on-prop-change)       | warn | Disallow adjusting state in an effect when an external value changes | eslint-plugin-react-you-might-not-need-an-effect |
+| [reactYouMightNotNeedAnEffect/no-chain-state-updates](https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-chain-state-updates)                       | warn | Disallow chaining state updates in an effect                         | eslint-plugin-react-you-might-not-need-an-effect |
+| [reactYouMightNotNeedAnEffect/no-derived-state](https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-derived-state)                                   | warn | Disallow storing derived state in an effect                          | eslint-plugin-react-you-might-not-need-an-effect |
+| [reactYouMightNotNeedAnEffect/no-event-handler](https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-event-handler)                                   | warn | Disallow using state and an effect as an event handler               | eslint-plugin-react-you-might-not-need-an-effect |
+| [reactYouMightNotNeedAnEffect/no-external-store-subscription](https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-external-store-subscription)       | warn | Disallow subscribing to an external store in an effect               | eslint-plugin-react-you-might-not-need-an-effect |
+| [reactYouMightNotNeedAnEffect/no-initialize-state](https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-initialize-state)                             | warn | Disallow initializing state in an effect                             | eslint-plugin-react-you-might-not-need-an-effect |
+| [reactYouMightNotNeedAnEffect/no-pass-data-to-parent](https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-pass-data-to-parent)                       | warn | Disallow passing data to parents in an effect                        | eslint-plugin-react-you-might-not-need-an-effect |
+| [reactYouMightNotNeedAnEffect/no-pass-live-state-to-parent](https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-pass-live-state-to-parent)           | warn | Disallow passing live state to parents in an effect                  | eslint-plugin-react-you-might-not-need-an-effect |
+| [reactYouMightNotNeedAnEffect/no-reset-all-state-on-prop-change](https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-reset-all-state-on-prop-change) | warn | Disallow resetting all state in an effect when a prop changes        | eslint-plugin-react-you-might-not-need-an-effect |
+
+<!-- END_REACT_EFFECTS_RULES -->
 
 ## Vitest Configuration
 

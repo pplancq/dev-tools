@@ -3,6 +3,7 @@ import reactDomPlugin from "eslint-plugin-react-dom";
 import reactHooksPlugin from "eslint-plugin-react-hooks";
 import reactJsxPlugin from "eslint-plugin-react-jsx";
 import reactXPlugin from "eslint-plugin-react-x";
+import reactYouMightNotNeedAnEffectPlugin from "eslint-plugin-react-you-might-not-need-an-effect";
 import testingLibraryPlugin from "eslint-plugin-testing-library";
 import stylisticPlugin from "@stylistic/eslint-plugin";
 /* eslint-disable import-x/extensions */
@@ -10,13 +11,19 @@ import { pplancqReactPlugin } from "./react-custom/index.js";
 import { prefix } from "./utils.js";
 /* eslint-enable import-x/extensions */
 
-export const reactRules = ({ import: importNs = "import-x" } = {}) => ({
+export const reactRules = ({
+  import: importNs = "import-x",
+  enableReactYouMightNotNeedAnEffectRules = false,
+} = {}) => ({
   plugins: {
     "@stylistic": stylisticPlugin,
     "react-dom": reactDomPlugin,
     "react-hooks": reactHooksPlugin,
     "react-jsx": reactJsxPlugin,
     "react-x": reactXPlugin,
+    ...(enableReactYouMightNotNeedAnEffectRules && {
+      reactYouMightNotNeedAnEffect: reactYouMightNotNeedAnEffectPlugin,
+    }),
     "pplancq-react": pplancqReactPlugin,
   },
   languageOptions: {
@@ -154,6 +161,37 @@ export const reactRules = ({ import: importNs = "import-x" } = {}) => ({
       // Verify dependencies for Hooks such as useEffect
       // https://github.com/facebook/react/issues/14920
       "react-hooks/exhaustive-deps": "warn",
+
+      // eslint-plugin-react-you-might-not-need-an-effect https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect
+      ...(enableReactYouMightNotNeedAnEffectRules && {
+        // Disallow storing derived state in an effect
+        // https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-derived-state
+        "reactYouMightNotNeedAnEffect/no-derived-state": "warn",
+        // Disallow chaining state updates in an effect
+        // https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-chain-state-updates
+        "reactYouMightNotNeedAnEffect/no-chain-state-updates": "warn",
+        // Disallow using state and an effect as an event handler
+        // https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-event-handler
+        "reactYouMightNotNeedAnEffect/no-event-handler": "warn",
+        // Disallow adjusting state in an effect when an external value changes
+        // https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-adjust-state-on-prop-change
+        "reactYouMightNotNeedAnEffect/no-adjust-state-on-prop-change": "warn",
+        // Disallow resetting all state in an effect when a prop changes
+        // https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-reset-all-state-on-prop-change
+        "reactYouMightNotNeedAnEffect/no-reset-all-state-on-prop-change": "warn",
+        // Disallow passing live state to parents in an effect
+        // https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-pass-live-state-to-parent
+        "reactYouMightNotNeedAnEffect/no-pass-live-state-to-parent": "warn",
+        // Disallow passing data to parents in an effect
+        // https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-pass-data-to-parent
+        "reactYouMightNotNeedAnEffect/no-pass-data-to-parent": "warn",
+        // Disallow subscribing to an external store in an effect
+        // https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-external-store-subscription
+        "reactYouMightNotNeedAnEffect/no-external-store-subscription": "warn",
+        // Disallow initializing state in an effect
+        // https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#no-initialize-state
+        "reactYouMightNotNeedAnEffect/no-initialize-state": "warn",
+      }),
 
       // pplancq-react (local plugin)
       // Prefer shorthand for boolean JSX attributes

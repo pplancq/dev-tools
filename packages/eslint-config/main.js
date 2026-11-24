@@ -82,6 +82,8 @@ const resolveExtendConfig = (extendConfig) => {
  * @param {string[]} [options.unitTestFiles=['**\/*.{test,spec,steps}.{js,jsx,ts,tsx}']]
  * @param {string[]} [options.unitE2eFiles=['tests/**\/*.{test,spec}.{js,jsx,ts,tsx}']]
  * @param {boolean} [options.enableReact=false]
+ * @param {boolean} [options.enableReactYouMightNotNeedAnEffectRules=false]
+ *   - `false`: leaves these rules disabled for now; they will be enabled by default in v8.
  * @param {'legacy' | 'modern'} [options.rulesNaming='legacy']
  *   - `'legacy'`: registers `eslint-plugin-import-x` under the `import` namespace (rules named `import/xxx`)
  *     and `eslint-plugin-jsx-a11y-x` under the `jsx-a11y` namespace (rules named `jsx-a11y/xxx`).
@@ -108,6 +110,7 @@ export const defineConfig = ({
   unitTestFiles = ["**/*.{test,spec,steps}.{js,jsx,ts,tsx}"],
   unitE2eFiles = ["tests/**/*.{test,spec}.{js,jsx,ts,tsx}"],
   enableReact = false,
+  enableReactYouMightNotNeedAnEffectRules = false,
   rulesNaming = "legacy",
   enableVitest = false,
   enablePlaywright = false,
@@ -120,6 +123,12 @@ export const defineConfig = ({
   if (enablePrettier === "on") {
     warn(
       "[enablePrettier: 'on'] is deprecated and will be removed in the next major release. Use 'disableStyleOnly' and run Prettier separately for formatting.",
+    );
+  }
+
+  if (enableReact && !enableReactYouMightNotNeedAnEffectRules) {
+    warn(
+      "[enableReactYouMightNotNeedAnEffectRules: false] these rules will be enabled by default in v8. Set the option to true to opt in now.",
     );
   }
 
@@ -136,7 +145,7 @@ export const defineConfig = ({
     baseRules(),
     enableReact && reactJsxA11yRules(ns),
     typescriptRules({ files: tsFiles, ...ns }),
-    enableReact && reactRules(ns),
+    enableReact && reactRules({ ...ns, enableReactYouMightNotNeedAnEffectRules }),
     enableReact && reactTypescriptRules({ files: tsFiles, ...ns }),
     enableReact && reactTypeCheckedRules({ files: tsFiles }),
     enableReact && reactTestRules({ files: unitTestFiles }),

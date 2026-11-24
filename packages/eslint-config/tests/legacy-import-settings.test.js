@@ -113,7 +113,9 @@ describe("defineConfig legacy settings", () => {
     defineConfig({ rulesNaming: "legacy", enableReact: true });
     defineConfig({ rulesNaming: "modern" });
 
-    const messages = warn.mock.calls.map(([message]) => message);
+    const messages = warn.mock.calls
+      .map(([message]) => message)
+      .filter((message) => message.includes("[rulesNaming: 'legacy']"));
 
     expect(messages).toHaveLength(2);
     expect(messages[0]).toContain("legacy 'import/xxx' names");
