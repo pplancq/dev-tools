@@ -60,6 +60,18 @@ const combinations = () =>
     ),
   );
 
+const reactYouMightNotNeedAnEffectRuleNames = [
+  "reactYouMightNotNeedAnEffect/no-derived-state",
+  "reactYouMightNotNeedAnEffect/no-chain-state-updates",
+  "reactYouMightNotNeedAnEffect/no-event-handler",
+  "reactYouMightNotNeedAnEffect/no-adjust-state-on-prop-change",
+  "reactYouMightNotNeedAnEffect/no-reset-all-state-on-prop-change",
+  "reactYouMightNotNeedAnEffect/no-pass-live-state-to-parent",
+  "reactYouMightNotNeedAnEffect/no-pass-data-to-parent",
+  "reactYouMightNotNeedAnEffect/no-external-store-subscription",
+  "reactYouMightNotNeedAnEffect/no-initialize-state",
+];
+
 describe("defineConfig", () => {
   beforeEach(() => {
     vi.spyOn(console, "warn").mockImplementation(() => {});
@@ -110,6 +122,74 @@ describe("defineConfig", () => {
       ignores: ["**/*.ts"],
       languageOptions: { parserOptions: { projectService: true } },
     });
+  });
+
+  it("should keep the React effects rules disabled by default", () => {
+    const config = defineConfig({ enableReact: true });
+    const explicitlyDisabledConfig = defineConfig({
+      enableReact: true,
+      enableReactYouMightNotNeedAnEffectRules: false,
+    });
+    const configuredRules = config.flatMap((block) => Object.keys(block.rules ?? {}));
+
+    expect(config).toStrictEqual(explicitlyDisabledConfig);
+    expect(configuredRules.filter((ruleName) => ruleName.startsWith("reactYouMightNotNeedAnEffect/"))).toStrictEqual(
+      [],
+    );
+  });
+
+  it("should enable the React effects rules as warnings when opted in", () => {
+    const config = defineConfig({
+      enableReact: true,
+      enableReactYouMightNotNeedAnEffectRules: true,
+    });
+    const configuredRules = Object.assign({}, ...config.map((block) => block.rules ?? {}));
+
+    expect(
+      Object.fromEntries(
+        reactYouMightNotNeedAnEffectRuleNames.map((ruleName) => [ruleName, configuredRules[ruleName]]),
+      ),
+    ).toStrictEqual(Object.fromEntries(reactYouMightNotNeedAnEffectRuleNames.map((ruleName) => [ruleName, "warn"])));
+  });
+
+  it("should only warn about the future default when React is enabled", () => {
+    defineConfig({ enableReact: true, rulesNaming: "modern" });
+
+    expect(console.warn).toHaveBeenCalledWith(expect.stringContaining("enabled by default in v8"));
+
+    vi.mocked(console.warn).mockClear();
+    const disabledReactConfig = defineConfig({
+      enableReact: false,
+      enableReactYouMightNotNeedAnEffectRules: false,
+      rulesNaming: "modern",
+    });
+
+    expect(console.warn).not.toHaveBeenCalled();
+
+    vi.mocked(console.warn).mockClear();
+    const optedInWithoutReact = defineConfig({
+      enableReact: false,
+      enableReactYouMightNotNeedAnEffectRules: true,
+      rulesNaming: "modern",
+    });
+    const configuredRules = [...disabledReactConfig, ...optedInWithoutReact].flatMap((block) =>
+      Object.keys(block.rules ?? {}),
+    );
+
+    expect(console.warn).not.toHaveBeenCalled();
+    expect(configuredRules.filter((ruleName) => ruleName.startsWith("reactYouMightNotNeedAnEffect/"))).toStrictEqual(
+      [],
+    );
+  });
+
+  it("should not warn about the future default when the rules are enabled", () => {
+    defineConfig({
+      enableReact: true,
+      enableReactYouMightNotNeedAnEffectRules: true,
+      rulesNaming: "modern",
+    });
+
+    expect(console.warn).not.toHaveBeenCalled();
   });
 
   it("should resolve each option combination into the same blocks", () => {

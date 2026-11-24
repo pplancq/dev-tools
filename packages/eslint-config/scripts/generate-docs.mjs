@@ -41,6 +41,8 @@ function getPluginName(ruleName) {
       return "pplancq-react (local plugin)";
     case ruleName.startsWith("react-hooks/"):
       return "eslint-plugin-react-hooks";
+    case ruleName.startsWith("reactYouMightNotNeedAnEffect/"):
+      return "eslint-plugin-react-you-might-not-need-an-effect";
     case ruleName.startsWith("jsx-a11y-x/"):
       return "eslint-plugin-jsx-a11y-x";
     case ruleName.startsWith("@vitest/"):
@@ -69,6 +71,8 @@ function getRuleDocUrl(ruleName) {
       return `https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/${getRuleName("import-x/")}.md`;
     case ruleName.startsWith("react-hooks/"):
       return `https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#${getRuleName("react-hooks/")}`;
+    case ruleName.startsWith("reactYouMightNotNeedAnEffect/"):
+      return `https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#${getRuleName("reactYouMightNotNeedAnEffect/")}`;
     case ruleName.startsWith("react-x/"):
       return `https://eslint-react.xyz/docs/rules/${getRuleName("react-x/")}`;
     case ruleName.startsWith("react-jsx/"):
@@ -214,6 +218,10 @@ async function generateDocumentation() {
 
   console.info("Processing React rules...");
   const reactRulesProcessed = processRules(reactRules.reactRules(), path.join(rootDir, "rules", "react.js"));
+  const reactEffectsRulesProcessed = processRules(
+    reactRules.reactRules({ enableReactYouMightNotNeedAnEffectRules: true }),
+    path.join(rootDir, "rules", "react.js"),
+  ).filter((rule) => rule.name.startsWith("reactYouMightNotNeedAnEffect/"));
   const reactTypescriptRulesProcessed = processRules(
     reactRules.reactTypescriptRules(),
     path.join(rootDir, "rules", "react.js"),
@@ -270,6 +278,12 @@ async function generateDocumentation() {
     "<!-- START_REACT_RULES -->",
     "<!-- END_REACT_RULES -->",
     generateMarkdownTable(allReactRules),
+  );
+  content = replaceBetweenMarkers(
+    content,
+    "<!-- START_REACT_EFFECTS_RULES -->",
+    "<!-- END_REACT_EFFECTS_RULES -->",
+    generateMarkdownTable(reactEffectsRulesProcessed),
   );
   content = replaceBetweenMarkers(
     content,

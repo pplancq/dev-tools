@@ -74,6 +74,24 @@ describe("lint a project", () => {
     },
   );
 
+  it("should allow overriding the React effects rules through extendConfig", async () => {
+    const overriddenRule = "reactYouMightNotNeedAnEffect/no-derived-state";
+    const retainedRule = "reactYouMightNotNeedAnEffect/no-event-handler";
+    const eslint = new ESLint({
+      cwd: root,
+      overrideConfigFile: true,
+      overrideConfig: defineConfig({
+        enableReact: true,
+        enableReactYouMightNotNeedAnEffectRules: true,
+        extendConfig: [{ rules: { [overriddenRule]: "off" } }],
+      }),
+    });
+    const config = await eslint.calculateConfigForFile(path.join(root, "src/react-clean.tsx"));
+
+    expect(config.rules[overriddenRule][0]).toBe(0);
+    expect(config.rules[retainedRule][0]).toBe(1);
+  });
+
   it("should preserve the deprecated lifecycle rules without duplicate deprecation coverage", async () => {
     const issues = await lint(
       {
