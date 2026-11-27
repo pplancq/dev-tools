@@ -39,7 +39,7 @@
     "config"
   ],
   "dependencies": {
-    "@eslint-react/kit": "^5.30.2",
+    "@eslint-react/kit": "^5.30.6",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@typescript-eslint/eslint-plugin": "^8.72.2",
     "@typescript-eslint/parser": "^8.72.2",
