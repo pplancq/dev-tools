@@ -70,7 +70,7 @@ function getRuleDocUrl(ruleName) {
     case ruleName.startsWith("import-x/"):
       return `https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/${getRuleName("import-x/")}.md`;
     case ruleName.startsWith("react-hooks/"):
-      return `https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#${getRuleName("react-hooks/")}`;
+      return `https://react.dev/reference/eslint-plugin-react-hooks/lints/${getRuleName("react-hooks/")}`;
     case ruleName.startsWith("reactYouMightNotNeedAnEffect/"):
       return `https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect#${getRuleName("reactYouMightNotNeedAnEffect/")}`;
     case ruleName.startsWith("react-x/"):
@@ -218,6 +218,11 @@ async function generateDocumentation() {
 
   console.info("Processing React rules...");
   const reactRulesProcessed = processRules(reactRules.reactRules(), path.join(rootDir, "rules", "react.js"));
+  const defaultReactRuleNames = new Set(reactRulesProcessed.map((rule) => rule.name));
+  const additionalReactHooksRulesProcessed = processRules(
+    reactRules.reactRules({ enableAdditionalReactHooksRules: true }),
+    path.join(rootDir, "rules", "react.js"),
+  ).filter((rule) => rule.name.startsWith("react-hooks/") && !defaultReactRuleNames.has(rule.name));
   const reactEffectsRulesProcessed = processRules(
     reactRules.reactRules({ enableReactYouMightNotNeedAnEffectRules: true }),
     path.join(rootDir, "rules", "react.js"),
@@ -278,6 +283,12 @@ async function generateDocumentation() {
     "<!-- START_REACT_RULES -->",
     "<!-- END_REACT_RULES -->",
     generateMarkdownTable(allReactRules),
+  );
+  content = replaceBetweenMarkers(
+    content,
+    "<!-- START_ADDITIONAL_REACT_HOOKS_RULES -->",
+    "<!-- END_ADDITIONAL_REACT_HOOKS_RULES -->",
+    generateMarkdownTable(additionalReactHooksRulesProcessed),
   );
   content = replaceBetweenMarkers(
     content,

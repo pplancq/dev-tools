@@ -13,6 +13,7 @@ import { prefix } from "./utils.js";
 
 export const reactRules = ({
   import: importNs = "import-x",
+  enableAdditionalReactHooksRules = false,
   enableReactYouMightNotNeedAnEffectRules = false,
 } = {}) => ({
   plugins: {
@@ -161,6 +162,51 @@ export const reactRules = ({
       // Verify dependencies for Hooks such as useEffect
       // https://github.com/facebook/react/issues/14920
       "react-hooks/exhaustive-deps": "warn",
+
+      ...(enableAdditionalReactHooksRules && {
+        // Disallow recreating components during render
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/static-components
+        "react-hooks/static-components": "error",
+        // Validate useMemo usage
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/use-memo
+        "react-hooks/use-memo": "error",
+        // Preserve existing manual memoization during compilation
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/preserve-manual-memoization
+        "react-hooks/preserve-manual-memoization": "error",
+        // Disallow mutating props, state, and other immutable values
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/immutability
+        "react-hooks/immutability": "error",
+        // Disallow mutating global variables during render
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/globals
+        "react-hooks/globals": "error",
+        // Disallow reading or writing refs during render
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/refs
+        "react-hooks/refs": "error",
+        // Disallow synchronous state updates in effects
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect
+        "react-hooks/set-state-in-effect": "error",
+        // Require error boundaries instead of try/catch for child errors
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/error-boundaries
+        "react-hooks/error-boundaries": "error",
+        // Disallow known impure functions during render
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/purity
+        "react-hooks/purity": "error",
+        // Disallow unconditional state updates during render
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-render
+        "react-hooks/set-state-in-render": "error",
+        // Validate React Compiler configuration
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/config
+        "react-hooks/config": "error",
+        // Validate React Compiler gating configuration
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/gating
+        "react-hooks/gating": "error",
+        // Detect libraries incompatible with memoization
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/incompatible-library
+        "react-hooks/incompatible-library": "warn",
+        // Detect syntax unsupported by React Compiler
+        // https://react.dev/reference/eslint-plugin-react-hooks/lints/unsupported-syntax
+        "react-hooks/unsupported-syntax": "warn",
+      }),
 
       // eslint-plugin-react-you-might-not-need-an-effect https://github.com/nickjvandyke/eslint-plugin-react-you-might-not-need-an-effect
       ...(enableReactYouMightNotNeedAnEffectRules && {

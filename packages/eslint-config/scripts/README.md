@@ -29,6 +29,8 @@ The script uses HTML comment markers in `docs/rules.md` to determine where to in
 
 - `<!-- START_BASE_RULES -->` / `<!-- END_BASE_RULES -->` - Base configuration rules
 - `<!-- START_REACT_RULES -->` / `<!-- END_REACT_RULES -->` - React configuration rules
+- `<!-- START_ADDITIONAL_REACT_HOOKS_RULES -->` / `<!-- END_ADDITIONAL_REACT_HOOKS_RULES -->` - Optional React Hooks rules
+- `<!-- START_REACT_EFFECTS_RULES -->` / `<!-- END_REACT_EFFECTS_RULES -->` - Optional React effects rules
 - `<!-- START_VITEST_RULES -->` / `<!-- END_VITEST_RULES -->` - Vitest configuration rules
 - `<!-- START_PLAYWRIGHT_RULES -->` / `<!-- END_PLAYWRIGHT_RULES -->` - Playwright configuration rules
 - `<!-- START_PRETTIER_RULES -->` / `<!-- END_PRETTIER_RULES -->` - Prettier configuration rules

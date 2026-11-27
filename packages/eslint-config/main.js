@@ -51,6 +51,20 @@ const warnLegacyNaming = (enableReact) => {
   );
 };
 
+const warnReactDefaults = (enableReact, enableReactYouMightNotNeedAnEffectRules, enableAdditionalReactHooksRules) => {
+  if (enableReact && !enableReactYouMightNotNeedAnEffectRules) {
+    warn(
+      "[enableReactYouMightNotNeedAnEffectRules: false] these rules will be enabled by default in v8. Set the option to true to opt in now.",
+    );
+  }
+
+  if (enableReact && !enableAdditionalReactHooksRules) {
+    warn(
+      "[enableAdditionalReactHooksRules: false] these rules will be enabled by default in v8. Set the option to true to opt in now.",
+    );
+  }
+};
+
 const resolvePrettierRules = (enablePrettier) => {
   const prettierRules = createPrettierRules();
 
@@ -82,6 +96,8 @@ const resolveExtendConfig = (extendConfig) => {
  * @param {string[]} [options.unitTestFiles=['**\/*.{test,spec,steps}.{js,jsx,ts,tsx}']]
  * @param {string[]} [options.unitE2eFiles=['tests/**\/*.{test,spec}.{js,jsx,ts,tsx}']]
  * @param {boolean} [options.enableReact=false]
+ * @param {boolean} [options.enableAdditionalReactHooksRules=false]
+ *   - `false`: leaves these rules disabled for now; they will be enabled by default in v8.
  * @param {boolean} [options.enableReactYouMightNotNeedAnEffectRules=false]
  *   - `false`: leaves these rules disabled for now; they will be enabled by default in v8.
  * @param {'legacy' | 'modern'} [options.rulesNaming='legacy']
@@ -110,6 +126,7 @@ export const defineConfig = ({
   unitTestFiles = ["**/*.{test,spec,steps}.{js,jsx,ts,tsx}"],
   unitE2eFiles = ["tests/**/*.{test,spec}.{js,jsx,ts,tsx}"],
   enableReact = false,
+  enableAdditionalReactHooksRules = false,
   enableReactYouMightNotNeedAnEffectRules = false,
   rulesNaming = "legacy",
   enableVitest = false,
@@ -126,11 +143,7 @@ export const defineConfig = ({
     );
   }
 
-  if (enableReact && !enableReactYouMightNotNeedAnEffectRules) {
-    warn(
-      "[enableReactYouMightNotNeedAnEffectRules: false] these rules will be enabled by default in v8. Set the option to true to opt in now.",
-    );
-  }
+  warnReactDefaults(enableReact, enableReactYouMightNotNeedAnEffectRules, enableAdditionalReactHooksRules);
 
   if (legacyNaming) {
     warnLegacyNaming(enableReact);
@@ -145,7 +158,7 @@ export const defineConfig = ({
     baseRules(),
     enableReact && reactJsxA11yRules(ns),
     typescriptRules({ files: tsFiles, ...ns }),
-    enableReact && reactRules({ ...ns, enableReactYouMightNotNeedAnEffectRules }),
+    enableReact && reactRules({ ...ns, enableAdditionalReactHooksRules, enableReactYouMightNotNeedAnEffectRules }),
     enableReact && reactTypescriptRules({ files: tsFiles, ...ns }),
     enableReact && reactTypeCheckedRules({ files: tsFiles }),
     enableReact && reactTestRules({ files: unitTestFiles }),
