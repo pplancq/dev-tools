@@ -72,6 +72,23 @@ const reactYouMightNotNeedAnEffectRuleNames = [
   "reactYouMightNotNeedAnEffect/no-initialize-state",
 ];
 
+const additionalReactHooksRuleLevels = {
+  "react-hooks/static-components": "error",
+  "react-hooks/use-memo": "error",
+  "react-hooks/preserve-manual-memoization": "error",
+  "react-hooks/immutability": "error",
+  "react-hooks/globals": "error",
+  "react-hooks/refs": "error",
+  "react-hooks/set-state-in-effect": "error",
+  "react-hooks/error-boundaries": "error",
+  "react-hooks/purity": "error",
+  "react-hooks/set-state-in-render": "error",
+  "react-hooks/config": "error",
+  "react-hooks/gating": "error",
+  "react-hooks/incompatible-library": "warn",
+  "react-hooks/unsupported-syntax": "warn",
+};
+
 describe("defineConfig", () => {
   beforeEach(() => {
     vi.spyOn(console, "warn").mockImplementation(() => {});
@@ -111,6 +128,75 @@ describe("defineConfig", () => {
     expect(legacyRuleKeys).toMatchSnapshot();
     expect(modernRuleKeys).toStrictEqual(legacyRuleKeys);
     expect(legacyRuleKeys.some((ruleName) => ruleName.startsWith("react/"))).toBeFalsy();
+  });
+
+  it("should keep additional React Hooks rules disabled by default", () => {
+    const config = defineConfig({ enableReact: true });
+    const explicitlyDisabledConfig = defineConfig({
+      enableReact: true,
+      enableAdditionalReactHooksRules: false,
+    });
+    const configuredRules = Object.assign({}, ...config.map((block) => block.rules ?? {}));
+
+    expect(config).toStrictEqual(explicitlyDisabledConfig);
+    expect(
+      Object.keys(additionalReactHooksRuleLevels).filter((ruleName) => configuredRules[ruleName] !== undefined),
+    ).toStrictEqual([]);
+    expect(configuredRules["react-hooks/rules-of-hooks"]).toBe("error");
+    expect(configuredRules["react-hooks/exhaustive-deps"]).toBe("warn");
+  });
+
+  it("should enable additional React Hooks rules at their recommended levels when opted in", () => {
+    const config = defineConfig({
+      enableReact: true,
+      enableAdditionalReactHooksRules: true,
+    });
+    const configuredRules = Object.assign({}, ...config.map((block) => block.rules ?? {}));
+
+    expect(
+      Object.fromEntries(
+        Object.keys(additionalReactHooksRuleLevels).map((ruleName) => [ruleName, configuredRules[ruleName]]),
+      ),
+    ).toStrictEqual(additionalReactHooksRuleLevels);
+    expect(configuredRules["react-hooks/rules-of-hooks"]).toBe("error");
+    expect(configuredRules["react-hooks/exhaustive-deps"]).toBe("warn");
+  });
+
+  it("should ignore additional React Hooks rules when React is disabled", () => {
+    const configs = [false, true].map((enableAdditionalReactHooksRules) =>
+      defineConfig({
+        enableReact: false,
+        enableAdditionalReactHooksRules,
+        enableReactYouMightNotNeedAnEffectRules: true,
+        rulesNaming: "modern",
+      }),
+    );
+    const configuredRules = configs.flatMap((config) => config.flatMap((block) => Object.keys(block.rules ?? {})));
+
+    expect(console.warn).not.toHaveBeenCalled();
+    expect(configuredRules.filter((ruleName) => ruleName in additionalReactHooksRuleLevels)).toStrictEqual([]);
+  });
+
+  it("should warn that additional React Hooks rules will be enabled by default in v8", () => {
+    defineConfig({
+      enableReact: true,
+      enableReactYouMightNotNeedAnEffectRules: true,
+      rulesNaming: "modern",
+    });
+
+    expect(console.warn).toHaveBeenCalledWith(
+      expect.stringContaining("[enableAdditionalReactHooksRules: false] these rules will be enabled by default in v8"),
+    );
+
+    vi.mocked(console.warn).mockClear();
+    defineConfig({
+      enableReact: true,
+      enableAdditionalReactHooksRules: true,
+      enableReactYouMightNotNeedAnEffectRules: true,
+      rulesNaming: "modern",
+    });
+
+    expect(console.warn).not.toHaveBeenCalled();
   });
 
   it("should enable leaked conditional rendering only with TypeScript project services", () => {
@@ -185,6 +271,7 @@ describe("defineConfig", () => {
   it("should not warn about the future default when the rules are enabled", () => {
     defineConfig({
       enableReact: true,
+      enableAdditionalReactHooksRules: true,
       enableReactYouMightNotNeedAnEffectRules: true,
       rulesNaming: "modern",
     });
@@ -216,5 +303,24 @@ describe("defineConfig", () => {
     const config = defineConfig({ extendConfig: [extension] });
 
     expect(config.at(-1)).toBe(extension);
+  });
+
+  it("should allow extendConfig to override additional React Hooks rules", () => {
+    const extension = {
+      rules: {
+        "react-hooks/immutability": "off",
+        "react-hooks/incompatible-library": "error",
+      },
+    };
+    const config = defineConfig({
+      enableReact: true,
+      enableAdditionalReactHooksRules: true,
+      extendConfig: [extension],
+    });
+    const configuredRules = Object.assign({}, ...config.map((block) => block.rules ?? {}));
+
+    expect(config.at(-1)).toBe(extension);
+    expect(configuredRules["react-hooks/immutability"]).toBe("off");
+    expect(configuredRules["react-hooks/incompatible-library"]).toBe("error");
   });
 });

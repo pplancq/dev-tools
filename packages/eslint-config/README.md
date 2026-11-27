@@ -51,6 +51,7 @@ The following options can be passed to the `defineConfig` function. All options 
 | unitTestFiles                           | ['**/*.{test,spec,steps}.{js,jsx,ts,tsx}'] | Patterns for unit test files                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | unitE2eFiles                            | ['tests/**/*.{test,spec}.{js,jsx,ts,tsx}'] | Patterns for end-to-end (E2E) test files (ex: Playwright)                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | enableReact                             | false                                      | Enables rules for React and Testing Library files                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| enableAdditionalReactHooksRules         | false                                      | Opts in to additional React Hooks rules. Applies only when `enableReact` is `true`; these rules will be enabled by default in v8.                                                                                                                                                                                                                                                                                                                                                                     |
 | enableReactYouMightNotNeedAnEffectRules | false                                      | Opts in to warnings for unnecessary React effects. Applies only when `enableReact` is `true`; these rules will be enabled by default in v8.                                                                                                                                                                                                                                                                                                                                                           |
 | rulesNaming                             | 'legacy'                                   | Naming of `eslint-plugin-import-x` and `eslint-plugin-jsx-a11y-x` rules only. 'legacy' (default) keeps the historical names (`import/xxx`, `jsx-a11y/xxx`); 'modern' uses `import-x/xxx` and `jsx-a11y-x/xxx`. React rules always use their v7 namespaces and are not affected. See [Rules naming](#rules-naming) and the [v6 to v7 migration guide](./MIGRATION.md#v6-to-v7).                                                                                                                        |
 | enableVitest                            | false                                      | Enables rules for Vitest files                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -88,6 +89,27 @@ export default defineConfig({
     {
       rules: {
         "reactYouMightNotNeedAnEffect/no-derived-state": "off",
+      },
+    },
+  ],
+});
+```
+
+### Additional React Hooks rules
+
+Set `enableAdditionalReactHooksRules: true` together with `enableReact: true` to opt in to additional rules from `eslint-plugin-react-hooks`. In v7, the option defaults to `false` and the configuration warns when React is enabled without opting in; these rules will be enabled by default in v8. The option has no effect when React is disabled. The rules are configured individually rather than by extending the plugin's recommended preset.
+
+Use `extendConfig` to override any individual rule:
+
+```javascript
+export default defineConfig({
+  enableReact: true,
+  enableAdditionalReactHooksRules: true,
+  extendConfig: [
+    {
+      rules: {
+        "react-hooks/immutability": "off",
+        "react-hooks/incompatible-library": "error",
       },
     },
   ],

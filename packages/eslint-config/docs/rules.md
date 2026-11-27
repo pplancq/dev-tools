@@ -8,6 +8,7 @@ This documentation lists all active ESLint rules in the `@pplancq/eslint-config`
 
 - [Base Configuration](#base-configuration)
 - [React Configuration](#react-configuration)
+  - [Optional React Hooks Rules](#optional-react-hooks-rules)
   - [Optional React Effects Rules](#optional-react-effects-rules)
 - [Vitest Configuration](#vitest-configuration)
 - [Playwright Configuration](#playwright-configuration)
@@ -324,8 +325,8 @@ This configuration adds React, React Hooks, JSX a11y, and Testing Library rules 
 | [react-dom/no-unknown-property](https://eslint-react.xyz/docs/rules/dom-no-unknown-property)                                                                                                   | error | Disallow unknown DOM properties                                                                                                    | eslint-plugin-react-dom       |
 | [react-dom/no-unsafe-target-blank](https://eslint-react.xyz/docs/rules/dom-no-unsafe-target-blank)                                                                                             | error | Require safe rel attributes on links opening a new tab                                                                             | eslint-plugin-react-dom       |
 | [react-dom/no-void-elements-with-children](https://eslint-react.xyz/docs/rules/dom-no-void-elements-with-children)                                                                             | error | Disallow children on void DOM elements                                                                                             | eslint-plugin-react-dom       |
-| [react-hooks/exhaustive-deps](https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#exhaustive-deps)                                                        | warn  | Verify dependencies for Hooks such as useEffect                                                                                    | eslint-plugin-react-hooks     |
-| [react-hooks/rules-of-hooks](https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#rules-of-hooks)                                                          | error | Enforce Rules of Hooks                                                                                                             | eslint-plugin-react-hooks     |
+| [react-hooks/exhaustive-deps](https://react.dev/reference/eslint-plugin-react-hooks/lints/exhaustive-deps)                                                                                     | warn  | Verify dependencies for Hooks such as useEffect                                                                                    | eslint-plugin-react-hooks     |
+| [react-hooks/rules-of-hooks](https://react.dev/reference/eslint-plugin-react-hooks/lints/rules-of-hooks)                                                                                       | error | Enforce Rules of Hooks                                                                                                             | eslint-plugin-react-hooks     |
 | [react-jsx/no-children-prop](https://eslint-react.xyz/docs/rules/jsx-no-children-prop)                                                                                                         | error | Disallow passing children as a prop                                                                                                | eslint-plugin-react-jsx       |
 | [react-jsx/no-comment-textnodes](https://eslint-react.xyz/docs/rules/jsx-no-comment-textnodes)                                                                                                 | error | Disallow comments that are rendered as JSX text                                                                                    | eslint-plugin-react-jsx       |
 | [react-jsx/no-key-after-spread](https://eslint-react.xyz/docs/rules/jsx-no-key-after-spread)                                                                                                   | error | Disallow key props after a JSX spread                                                                                              | eslint-plugin-react-jsx       |
@@ -412,6 +413,31 @@ This configuration adds React, React Hooks, JSX a11y, and Testing Library rules 
 | [jsx-a11y-x/tabindex-no-positive](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/blob/main/docs/rules/tabindex-no-positive.md)                                                   | error | Enforce `tabIndex` value is not greater than zero.                                                                                 | eslint-plugin-jsx-a11y-x      |
 
 <!-- END_REACT_RULES -->
+
+### Optional React Hooks Rules
+
+Opt in to these rules with `enableAdditionalReactHooksRules: true` and `enableReact: true`. They are disabled by default in v7 and planned to be enabled by default in v8. See the [README](../README.md#additional-react-hooks-rules) for configuration and overrides.
+
+<!-- START_ADDITIONAL_REACT_HOOKS_RULES -->
+
+| Rule                                                                                                                               | Mode  | Description                                                    | Plugin                    |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ----- | -------------------------------------------------------------- | ------------------------- |
+| [react-hooks/config](https://react.dev/reference/eslint-plugin-react-hooks/lints/config)                                           | error | Validate React Compiler configuration                          | eslint-plugin-react-hooks |
+| [react-hooks/error-boundaries](https://react.dev/reference/eslint-plugin-react-hooks/lints/error-boundaries)                       | error | Require error boundaries instead of try/catch for child errors | eslint-plugin-react-hooks |
+| [react-hooks/gating](https://react.dev/reference/eslint-plugin-react-hooks/lints/gating)                                           | error | Validate React Compiler gating configuration                   | eslint-plugin-react-hooks |
+| [react-hooks/globals](https://react.dev/reference/eslint-plugin-react-hooks/lints/globals)                                         | error | Disallow mutating global variables during render               | eslint-plugin-react-hooks |
+| [react-hooks/immutability](https://react.dev/reference/eslint-plugin-react-hooks/lints/immutability)                               | error | Disallow mutating props, state, and other immutable values     | eslint-plugin-react-hooks |
+| [react-hooks/incompatible-library](https://react.dev/reference/eslint-plugin-react-hooks/lints/incompatible-library)               | warn  | Detect libraries incompatible with memoization                 | eslint-plugin-react-hooks |
+| [react-hooks/preserve-manual-memoization](https://react.dev/reference/eslint-plugin-react-hooks/lints/preserve-manual-memoization) | error | Preserve existing manual memoization during compilation        | eslint-plugin-react-hooks |
+| [react-hooks/purity](https://react.dev/reference/eslint-plugin-react-hooks/lints/purity)                                           | error | Disallow known impure functions during render                  | eslint-plugin-react-hooks |
+| [react-hooks/refs](https://react.dev/reference/eslint-plugin-react-hooks/lints/refs)                                               | error | Disallow reading or writing refs during render                 | eslint-plugin-react-hooks |
+| [react-hooks/set-state-in-effect](https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-effect)                 | error | Disallow synchronous state updates in effects                  | eslint-plugin-react-hooks |
+| [react-hooks/set-state-in-render](https://react.dev/reference/eslint-plugin-react-hooks/lints/set-state-in-render)                 | error | Disallow unconditional state updates during render             | eslint-plugin-react-hooks |
+| [react-hooks/static-components](https://react.dev/reference/eslint-plugin-react-hooks/lints/static-components)                     | error | Disallow recreating components during render                   | eslint-plugin-react-hooks |
+| [react-hooks/unsupported-syntax](https://react.dev/reference/eslint-plugin-react-hooks/lints/unsupported-syntax)                   | warn  | Detect syntax unsupported by React Compiler                    | eslint-plugin-react-hooks |
+| [react-hooks/use-memo](https://react.dev/reference/eslint-plugin-react-hooks/lints/use-memo)                                       | error | Validate useMemo usage                                         | eslint-plugin-react-hooks |
+
+<!-- END_ADDITIONAL_REACT_HOOKS_RULES -->
 
 ### Optional React Effects Rules
 
