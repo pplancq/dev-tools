@@ -51,6 +51,20 @@ const warnLegacyNaming = (enableReact) => {
   );
 };
 
+const warnReactDefaults = (enableReact, enableReactYouMightNotNeedAnEffectRules, enableAdditionalReactHooksRules) => {
+  if (enableReact && !enableReactYouMightNotNeedAnEffectRules) {
+    warn(
+      "[enableReactYouMightNotNeedAnEffectRules: false] these rules will be enabled by default in v8. Set the option to true to opt in now.",
+    );
+  }
+
+  if (enableReact && !enableAdditionalReactHooksRules) {
+    warn(
+      "[enableAdditionalReactHooksRules: false] these rules will be enabled by default in v8. Set the option to true to opt in now.",
+    );
+  }
+};
+
 const resolvePrettierRules = (enablePrettier) => {
   const prettierRules = createPrettierRules();
 
@@ -129,17 +143,7 @@ export const defineConfig = ({
     );
   }
 
-  if (enableReact && !enableReactYouMightNotNeedAnEffectRules) {
-    warn(
-      "[enableReactYouMightNotNeedAnEffectRules: false] these rules will be enabled by default in v8. Set the option to true to opt in now.",
-    );
-  }
-
-  if (enableReact && !enableAdditionalReactHooksRules) {
-    warn(
-      "[enableAdditionalReactHooksRules: false] these rules will be enabled by default in v8. Set the option to true to opt in now.",
-    );
-  }
+  warnReactDefaults(enableReact, enableReactYouMightNotNeedAnEffectRules, enableAdditionalReactHooksRules);
 
   if (legacyNaming) {
     warnLegacyNaming(enableReact);
