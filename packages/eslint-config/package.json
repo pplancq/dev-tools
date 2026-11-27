@@ -39,7 +39,7 @@
     "config"
   ],
   "dependencies": {
-    "@eslint-react/kit": "^5.30.2",
+    "@eslint-react/kit": "^5.30.6",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@typescript-eslint/eslint-plugin": "^8.72.2",
     "@typescript-eslint/parser": "^8.72.2",
@@ -50,9 +50,9 @@
     "eslint-plugin-jest-dom": "^5.10.1",
     "eslint-plugin-jsx-a11y-x": "^0.2.0",
     "eslint-plugin-playwright": "^2.12.2",
-    "eslint-plugin-react-dom": "^5.30.2",
+    "eslint-plugin-react-dom": "^5.30.6",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-jsx": "^5.30.2",
+    "eslint-plugin-react-jsx": "^5.30.6",
     "eslint-plugin-react-x": "^5.30.6",
     "eslint-plugin-react-you-might-not-need-an-effect": "^1.3.1",
     "eslint-plugin-testing-library": "^7.16.2",
